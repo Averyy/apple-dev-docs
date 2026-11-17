@@ -140,7 +140,7 @@ Use the [`GCController`](./gccontroller.md) to perform common controller-related
 
 A player index associates a controller with a specific player. Set [`playerIndex`](./gccontroller/playerindex.md) to associate each player with the controller they’re using. For example, in a two-player game where both players are using controllers, you set one controller to [`GCControllerPlayerIndex.index1`](./gccontrollerplayerindex/index1.md) and the other to [`GCControllerPlayerIndex.index2`](./gccontrollerplayerindex/index2.md). If the controller supports it, setting the player index causes a matching LED on the controller to light up.
 
-When a controller is no longer in use by a player, use `GCControllerPlayerIndex/indexunset`.
+When a controller is no longer in use by a player, use [`GCControllerPlayerIndex.indexUnset`](./gccontrollerplayerindex/indexunset.md).
 
 ```swift
 private func assignControllersInOrder() {
@@ -172,13 +172,13 @@ When you add controller support, you choose which controller profiles to support
 
 You configure input handling based on the controller’s available input profile that you specify with [`GCSupportedGameControllers`](../BundleResources/information-property-list/gcsupportedgamecontrollers.md). The framework supports the following game controller profiles:
 
-- **`Extended`**: Represents an Xbox-like, or console controller-like controller — supporting all controls found on an Xbox controller.
-- **`DualShock`**: Represents a PlayStation DUALSHOCK 4 controller for PS4.
-- **`DualSense`**: Represents a PlayStation DualSense controller for PS5.
-- **`Xbox`**: Represents an Xbox controller.
-- **`Micro`**: Represents a directional pad with motion, like the 1st generation Siri Remote.
-- **`Directional`**: Represents a directional pad without motion or rotation, like the second generation Siri Remote.
-- **`Spatial`**: Represents a spatial gamepad, like a PlayStation VR2 Sense Controller.
+- **[`GCExtendedGamepad`](./gcextendedgamepad.md)**: Represents an Xbox-like, or console controller-like controller — supporting all controls found on an Xbox controller.
+- **[`GCDualShockGamepad`](./gcdualshockgamepad.md)**: Represents a PlayStation DUALSHOCK 4 controller for PS4.
+- **[`GCDualSenseGamepad`](./gcdualsensegamepad.md)**: Represents a PlayStation DualSense controller for PS5.
+- **[`GCXboxGamepad`](./gcxboxgamepad.md)**: Represents an Xbox controller.
+- **[`GCMicroGamepad`](./gcmicrogamepad.md)**: Represents a directional pad with motion, like the 1st generation Siri Remote.
+- **[`GCDirectionalGamepad`](./gcdirectionalgamepad.md)**: Represents a directional pad without motion or rotation, like the second generation Siri Remote.
+- **`SpatialGamepad`**: Represents a spatial gamepad, like a PlayStation VR2 Sense Controller.
 
 The framework maps the actual physical control data to the elements of the profile you choose. When you choose a gamepad representation, you assign a callback for the associated input you want from the profile, like [`GCExtendedGamepad`](./gcextendedgamepad.md):
 

@@ -100,6 +100,8 @@ For more information on formatting attributed text with `TextEditor`, see [`init
   Sets the style for text fields within this view.
 - [struct SecureField](./securefield.md)
   A control into which people securely enter private text.
+- [struct TextFieldLink](./textfieldlink.md)
+  A control that requests text input from the user when pressed.
 
 
 ---

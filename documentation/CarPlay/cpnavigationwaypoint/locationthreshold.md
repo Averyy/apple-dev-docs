@@ -21,6 +21,15 @@ var locationThreshold: Measurement<UnitLength>? { get }
 @property (nonatomic, readonly, nullable) NSMeasurement<NSUnitLength *> * locationThreshold;
 ```
 
+## See Also
+
+### Getting the waypoint location
+- [var centerPoint: CPLocationCoordinate3D](./centerpoint.md)
+  centerPoint is a CPLocationCoordinate3D representing the primary coordinate location of the waypoint.
+- [var entryPoints: [CPLocationCoordinate3D]](./entrypoints-obhb.md)
+- [var timeZone: TimeZone?](./timezone.md)
+  The timezone for the waypoint.
+
 
 ---
 

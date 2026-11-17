@@ -57,7 +57,7 @@ In all these cell styles, the larger of the text labels is accessed using the [`
 - [init(style: UITableViewCell.CellStyle, reuseIdentifier: String?)](./init%28style,reuseidentifier%29.md)
   Initializes a table cell with a style and a reuse identifier and returns it to the caller.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
-  Creates a table view from data in an unarchiver.
+  Creates a table view cell from data in an unarchiver.
 
 
 ---

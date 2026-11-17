@@ -24,6 +24,10 @@ func removeGraph(_ name: String)
 - (void) removeGraph:(NSString *) name;
 ```
 
+## Parameters
+
+- `name`: The name of the graph to remove from the scene.
+
 ## See Also
 
 ### Managing Pathfinding Graphs

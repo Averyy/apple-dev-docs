@@ -15,7 +15,7 @@ A Boolean value indicating whether the app shares files.
 
 ## Details
 
-- **Name**: `UIFileSharingEnabled` (Application supports iTunes file sharing)
+- **Name**: `UIFileSharingEnabled` (Application supports file sharing)
 - **Type**: boolean
 
 ## Discussion

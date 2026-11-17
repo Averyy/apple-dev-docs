@@ -21,6 +21,7 @@ struct Parameters
 - [var cameraPosition: CameraFrameProvider.CameraPosition](./parameters-swift.struct/cameraposition.md)
   The camera position.
 - [var cameraType: CameraFrameProvider.CameraType](./parameters-swift.struct/cameratype.md)
+  The camera type.
 - [var captureTimestamp: TimeInterval](./parameters-swift.struct/capturetimestamp.md)
   The capture timestamp.
 - [var colorTemperature: Int](./parameters-swift.struct/colortemperature.md)
@@ -30,6 +31,7 @@ struct Parameters
 - [var extrinsics: simd_float4x4](./parameters-swift.struct/extrinsics.md)
   The camera extrinsics.
 - [var intrinsics: simd_float3x3](./parameters-swift.struct/intrinsics.md)
+  The camera intrinsics.
 - [var midExposureTimestamp: TimeInterval](./parameters-swift.struct/midexposuretimestamp.md)
   The mid exposure timestamp.
 ### Operators
@@ -50,9 +52,10 @@ struct Parameters
 ## See Also
 
 ### Inspecting camera frame samples
+- [var buffer: CVReadOnlyPixelBuffer](./buffer.md)
+  The pixel buffer.
 - [var parameters: CameraFrame.Sample.Parameters](./parameters-swift.property.md)
   The frame’s parameters.
-- [var pixelBuffer: CVPixelBuffer](./pixelbuffer.md)
 
 
 ---

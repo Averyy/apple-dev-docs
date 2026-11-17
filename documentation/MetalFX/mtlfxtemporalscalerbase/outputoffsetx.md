@@ -12,7 +12,7 @@ The horizontal offset, in pixels, of the region within the output texture to wri
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
-- tvOS 27.1+
+- tvOS 27.2+
 
 ## Declaration
 

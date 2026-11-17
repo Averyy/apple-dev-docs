@@ -4,6 +4,8 @@
 **Kind**: property  
 **Role**: Instance Property
 
+The AR resource group name for this object.
+
 **Availability**:
 - iOS 13.0+ - Deprecated in 27.0
 - iPadOS 13.0+ - Deprecated in 27.0

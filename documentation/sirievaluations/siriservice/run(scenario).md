@@ -18,11 +18,15 @@ Runs a scenario through Siri and returns what Siri did, for your evaluation to g
 static func run(scenario: SiriScenario) async throws -> SiriScenarioSubject
 ```
 
+## Mentions
+
+- [Evaluating your app’s integration with Siri](../evaluating-your-apps-integration-with-siri.md)
+
 ## Discussion
 
-Call it from your evaluation’s `subject(from:)`, with any setup the scenario needs before it. If you clean up after it, record a failure instead of throwing: a `subject(from:)` that throws discards the run, so the scenario drops out of every average. It runs only in a UI test target.
+Call it from your evaluation’s `subject(from:)`, with any setup the scenario needs before it. If you clean up after it, record a failure instead of throwing: a `subject(from:)` that throws discards the run, so the scenario drops out of every average. It runs only in a UI test target, on an OS build this Xcode supports.
 
-If the run stops partway, the turns that ran are graded and the report’s Diagnostics shows how many completed. If it can’t start, it throws.
+If the run stops partway, the turns that ran are graded and the report’s Diagnostics shows how many completed. If it stopped because Siri asked to confirm something the test can’t answer, or that couldn’t be ruled out, the running test fails with the reason. If it can’t start, it throws.
 
 
 ---

@@ -31,7 +31,7 @@ var horizontalScrollIndicatorVisibility: ScrollIndicatorVisibility { get set }
 - [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](../view/scrollindicators%28_,axes%29.md)
   Sets the visibility of scroll indicators within this view.
 - [var verticalScrollIndicatorVisibility: ScrollIndicatorVisibility](./verticalscrollindicatorvisibility.md)
-  The visiblity to apply to scroll indicators of any vertically scrollable content.
+  The visibility to apply to scroll indicators of any vertically scrollable content.
 - [struct ScrollIndicatorVisibility](../scrollindicatorvisibility.md)
   The visibility of scroll indicators of a UI element.
 

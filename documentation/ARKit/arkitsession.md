@@ -43,7 +43,7 @@ Because a [`PlaneDetectionProvider`](./planedetectionprovider.md) instance’s r
 
 ### Starting and stopping a session
 - [convenience init()](./arkitsession/init%28%29.md)
-  Creates a new session.
+  Creates a session.
 - [func run([any DataProvider]) async throws](./arkitsession/run%28_%29.md)
   Runs a session with the data providers you supply.
 - [func stop()](./arkitsession/stop%28%29.md)
@@ -61,19 +61,19 @@ Because a [`PlaneDetectionProvider`](./planedetectionprovider.md) instance’s r
   The authorization states for a type of ARKit data.
 ### Observing a session
 - [var events: ARKitSession.Events](./arkitsession/events-swift.property.md)
-  An asynchronous sequence of events that provide updates to the current authorization status of the session.
+  An asynchronous sequence of events that describe changes to the session, such as authorization changes and data-provider state changes.
 - [ARKitSession.Events](./arkitsession/events-swift.struct.md)
   A sequence of events.
 - [ARKitSession.Event](./arkitsession/event.md)
   Enumeration of possible session events.
-- [var description: String](./arkitsession/description.md)
-  A textual representation of this session.
 ### Initializers
 - [convenience init(device: RemoteDeviceIdentifier)](./arkitsession/init%28device%29.md)
   Create a new session connected to the specified device.
 ### Instance Properties
 - [var dataProviders: [any DataProvider]](./arkitsession/dataproviders.md)
   A list of all data providers on this session.
+- [var description: String](./arkitsession/description.md)
+  A textual representation of this session.
 
 ## Relationships
 

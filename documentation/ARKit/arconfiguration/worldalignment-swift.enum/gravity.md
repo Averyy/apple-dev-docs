@@ -26,6 +26,8 @@ The y-axis matches the direction of gravity as detected by the device’s motion
 
 The position and orientation of the device as of when the session configuration is first run determine the rest of the coordinate system: For the z-axis, ARKit chooses a basis vector `(0,0,-1)` pointing in the direction the device camera faces and perpendicular to the gravity axis. ARKit chooses a x-axis based on the z- and y-axes using the right hand rule—that is, the basis vector `(1,0,0)` is orthogonal to the other two axes, and (for a viewer looking in the negative-z direction) points toward the right.
 
+## Discussion
+
 ![](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2891463@2x.png)
 
 ## See Also

@@ -20,7 +20,7 @@ static let manual: MultiSeatInvitationBehavior
 
 ## Discussion
 
-To present the invitation sheet at a time you choose, use the [`multiSeatInvitationSheet(isPresented:subscriptionGroupID:onCompletion:)`](../../SwiftUI/view/multiseatinvitationsheet%28ispresented,subscriptiongroupid,oncompletion%29.md) view modifier.
+To present the invitation sheet at a time you choose, use the https://developer.apple.com/documentation/swiftui/view/multiseatinvitationsheet(ispresented:subscriptiongroupid:oncompletion:) view modifier.
 
 ## See Also
 

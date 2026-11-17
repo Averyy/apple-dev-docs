@@ -21,7 +21,7 @@ CPManeuverStateExecute
 
 ## See Also
 
-### Enumeration Cases
+### Getting the maneuver state
 - [CPManeuverState.prepare](./prepare.md)
 - [CPManeuverState.initial](./initial.md)
 - [CPManeuverState.continue](./continue.md)

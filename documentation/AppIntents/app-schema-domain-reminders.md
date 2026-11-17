@@ -51,9 +51,9 @@ For more information about making your app’s actions available to Apple Intell
   Identifies entity schemas in the reminders domain.
 ### Types for static parameters
 - [var listType: some AppSchemaEnum](./appschema/remindersenum/listtype.md)
-  An enum schema for a list type parameter.
+  An enum schema for a list type.
 - [var locationTriggerEvent: some AppSchemaEnum](./appschema/remindersenum/locationtriggerevent.md)
-  An enum schema for a location trigger event parameter.
+  An enum schema for a location trigger event.
 - [AppSchema.RemindersEnum](./appschema/remindersenum.md)
   Identifies enum schemas in the reminders domain.
 

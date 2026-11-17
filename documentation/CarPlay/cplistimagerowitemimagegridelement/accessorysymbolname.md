@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The name of the system symbol image to use as accessory.
+The name of an image to display next to the element’s title.
 
 **Availability**:
 - iOS 26.0+
@@ -20,6 +20,16 @@ var accessorySymbolName: String? { get set }
 ```objc
 @property (nonatomic, copy, nullable) NSString * accessorySymbolName;
 ```
+
+## Discussion
+
+This property contains the name of an SF Symbol or the name of a custom image resource in your app’s main bundle. If the value of this property is `nil`, or if the system can’t find the image using the provided name, the element doesn’t display the image.
+
+## See Also
+
+### Getting the element’s content
+- [var title: String](./title.md)
+  The primary text for the element.
 
 
 ---

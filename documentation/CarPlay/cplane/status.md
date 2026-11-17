@@ -27,11 +27,9 @@ One of the [`CPLaneStatus`](../cplanestatus.md) values that describes the laneâ€
 
 ## See Also
 
-### Properties
-- [var primaryAngle: Measurement<UnitAngle>](./primaryangle.md)
-  A value that represents the angle the framework highlights if this lane is preferred or good.
-- [var secondaryAngles: [Measurement<UnitAngle>]](./secondaryangles.md)
-  A list of the remaining angles of this lane guidance.
+### Getting the lane status
+- [enum CPLaneStatus](../cplanestatus.md)
+  Values that describe the status or preferability of a lane.
 
 
 ---

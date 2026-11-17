@@ -53,7 +53,12 @@ let redCase = colorEnum.makeCase("red") // Matches `Color.red`.
 ### Conforms To
 - [AppIntentTypeDefinition](./appintenttypedefinition.md)
 - [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
 - [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

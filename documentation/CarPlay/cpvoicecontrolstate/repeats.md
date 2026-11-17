@@ -27,7 +27,7 @@ The animation repeats when this property is [`true`](../../Swift/true.md); other
 
 ## See Also
 
-### Getting State Information
+### Getting the state information
 - [var identifier: String](./identifier.md)
   The string that your app uses to identify the voice control state.
 - [var titleVariants: [String]?](./titlevariants.md)

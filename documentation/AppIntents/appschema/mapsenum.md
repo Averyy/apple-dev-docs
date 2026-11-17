@@ -23,19 +23,19 @@ protocol MapsEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var amenity: some AppSchemaEnum](./mapsenum/amenity.md)
-  An enum schema for an amenity parameter.
+  An enum schema for an amenity.
 - [var incident: some AppSchemaEnum](./mapsenum/incident.md)
-  An enum schema for an incident parameter.
+  An enum schema for an incident.
 - [var navigationPreferences: some AppSchemaEnum](./mapsenum/navigationpreferences.md)
-  An enum schema for a navigation preferences parameter.
+  An enum schema for a navigation preferences.
 - [var operatingStatus: some AppSchemaEnum](./mapsenum/operatingstatus.md)
-  An enum schema for an operating status parameter.
+  An enum schema for an operating status.
 - [var priceRange: some AppSchemaEnum](./mapsenum/pricerange.md)
-  An enum schema for a price range parameter.
+  An enum schema for a price range.
 - [var ratingDescriptor: some AppSchemaEnum](./mapsenum/ratingdescriptor.md)
-  An enum schema for a rating descriptor parameter.
+  An enum schema for a rating descriptor.
 - [var transportType: some AppSchemaEnum](./mapsenum/transporttype.md)
-  An enum schema for a transport type parameter.
+  An enum schema for a transport type.
 
 ## Relationships
 
@@ -48,19 +48,19 @@ protocol MapsEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var amenity: some AppSchemaEnum](./mapsenum/amenity.md)
-  An enum schema for an amenity parameter.
+  An enum schema for an amenity.
 - [var incident: some AppSchemaEnum](./mapsenum/incident.md)
-  An enum schema for an incident parameter.
+  An enum schema for an incident.
 - [var navigationPreferences: some AppSchemaEnum](./mapsenum/navigationpreferences.md)
-  An enum schema for a navigation preferences parameter.
+  An enum schema for a navigation preferences.
 - [var operatingStatus: some AppSchemaEnum](./mapsenum/operatingstatus.md)
-  An enum schema for an operating status parameter.
+  An enum schema for an operating status.
 - [var priceRange: some AppSchemaEnum](./mapsenum/pricerange.md)
-  An enum schema for a price range parameter.
+  An enum schema for a price range.
 - [var ratingDescriptor: some AppSchemaEnum](./mapsenum/ratingdescriptor.md)
-  An enum schema for a rating descriptor parameter.
+  An enum schema for a rating descriptor.
 - [var transportType: some AppSchemaEnum](./mapsenum/transporttype.md)
-  An enum schema for a transport type parameter.
+  An enum schema for a transport type.
 
 
 ---

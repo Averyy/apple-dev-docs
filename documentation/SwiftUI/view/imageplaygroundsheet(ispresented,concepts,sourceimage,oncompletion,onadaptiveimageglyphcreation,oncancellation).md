@@ -7,11 +7,11 @@
 Presents the system sheet to create an image or Genmoji using one or more concepts and an optional starting image.
 
 **Availability**:
-- iOS 18.1+
-- iPadOS 18.1+
-- Mac Catalyst 18.1+
-- macOS 15.1+
-- visionOS 2.4+
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

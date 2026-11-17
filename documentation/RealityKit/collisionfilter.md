@@ -60,6 +60,7 @@ Use Collision filters in combination with collision groups to define which entit
 - [class ShapeResource](./shaperesource.md)
   A representation of a shape.
 - [enum ShapeResourceError](./shaperesourceerror.md)
+  Errors that can occur when generating a static mesh or convex polyhedron shape resource.
 - [struct CollisionGroup](./collisiongroup.md)
   A bitmask used to define the collision group to which an entity belongs.
 - [class TriggerVolume](./triggervolume.md)

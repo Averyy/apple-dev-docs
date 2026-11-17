@@ -1,6 +1,7 @@
 # Protocol implementations
 
-**Framework**: PencilKit
+**Framework**: PencilKit  
+**Role**: Article
 
 Access the stroke path’s implementations of protocol methods.
 

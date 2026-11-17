@@ -50,9 +50,9 @@ If ARKit fails to populate a location anchor, the session calls [`session(_:didR
 - [convenience init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance?)](./argeoanchor/init%28coordinate,altitude%29.md)
   Initializes a location anchor with the given coordinate and altitude.
 - [init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance)](./argeoanchor/init%28name,coordinate,altitude%29-8sbh4.md)
-  Initializes a named location anchor with the given coordinates and altitude.
+  Initializes a named location anchor with the given coordinate and altitude.
 - [convenience init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance?)](./argeoanchor/init%28name,coordinate,altitude%29-csze.md)
-  Initializes a named location anchor with the given coordinates and altitude.
+  Initializes a named location anchor with the given coordinate and altitude.
 - [- initWithCoordinate:](./argeoanchor/initwithcoordinate_.md)
   Initializes a new location anchor with the given coordinates.
 - [- initWithCoordinate:altitude:](./argeoanchor/initwithcoordinate_altitude_.md)
@@ -61,10 +61,10 @@ If ARKit fails to populate a location anchor, the session calls [`session(_:didR
   Initializes a named location anchor with the given coordinates.
 ### Accessing Latitude and Longitude
 - [var coordinate: CLLocationCoordinate2D](./argeoanchor/coordinate.md)
-  The lattitude and longitude of the anchor’s geographic location.
+  The latitude and longitude of the anchor’s geographic location.
 ### Defining Altitude
 - [var altitude: CLLocationDistance?](./argeoanchor/altitude-89k4x.md)
-  Vertical distance, in meters, between this anchor and sea level.
+  Vertical distance, in meters, between this anchor and sea level, or `nil` if the altitude is unknown.
 - [var altitudeSource: ARGeoAnchor.AltitudeSource](./argeoanchor/altitudesource-swift.property.md)
   A record of the source from which an altitude came.
 - [ARGeoAnchor.AltitudeSource](./argeoanchor/altitudesource-swift.enum.md)

@@ -26,6 +26,9 @@ struct PHPickerResult
   The local identifier of the selected asset.
 - [let itemProvider: NSItemProvider](./phpickerresult-swift.struct/itemprovider.md)
   Representations of the selected asset.
+### Instance Methods
+- [func requestThumbnailImageURL(preferredSize: PHPickerResultThumbnailSize, resultHandler: (Result<URL, any Error>) -> Void)](./phpickerresult-swift.struct/requestthumbnailimageurl%28preferredsize,resulthandler%29.md)
+  Returns a thumbnail using the provided `PHPickerResultThumbnailSize`.
 
 ## Relationships
 

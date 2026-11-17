@@ -45,7 +45,7 @@ For more information about app schemas, see [App schema domains](./app-schema-do
   Identifies entity schemas in the reader domain.
 ### Types for static parameters
 - [var documentKind: some AppSchemaEnum](./appschema/readerenum/documentkind.md)
-  An enum schema for a document kind parameter.
+  An enum schema for a document kind.
 - [AppSchema.ReaderEnum](./appschema/readerenum.md)
   Identifies enum schemas in the reader domain.
 

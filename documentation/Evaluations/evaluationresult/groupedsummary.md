@@ -41,7 +41,7 @@ Text Quality:
 
 ### Formatting results
 - [func jsonRepresentableDataFrame(of: EvaluationResult.DataFrameKind) throws -> DataFrame](./jsonrepresentabledataframe%28of%29.md)
-  Transforms a DataFrame into one with column types compatible with JSON representation.
+  Transforms a data frame into one with column types compatible with JSON representation.
 
 
 ---

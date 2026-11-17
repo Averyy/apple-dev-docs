@@ -23,7 +23,7 @@ var handler: CPAlertActionHandler { get }
 
 ## See Also
 
-### Getting the Action Handler
+### Getting the handler
 - [typealias CPAlertActionHandler](../cpalertactionhandler.md)
   The declaration for an alert action handler.
 

@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+Function for enumerating a collection of plane anchors.
+
 **Availability**:
 - visionOS 1.0+
 
@@ -13,11 +15,20 @@
 typedef _Bool (*)(void *, NSObject<OS_ar_plane_anchor> *) ar_plane_anchors_enumerator_function_t;
 ```
 
+## Return Value
+
+`true` to continue enumerating, or `false` to stop enumerating.
+
+## Parameters
+
+- `context`: The application-defined context.
+- `plane_anchor`: The plane anchor.
+
 ## See Also
 
 ### Plane detection
 - [ar_plane_alignment_t](./ar_plane_alignment_t.md)
-  The kinds of alignment — horizontal or vertical — that a plane anchor can have.
+  Option set describing possible orientation alignments of a detected plane.
 - [ar_plane_classification_t](./ar_plane_classification_t.md)
   The kinds of object classification a plane anchor can have.
 - [ar_plane_classification_ceiling](./ar_plane_classification_t/ar_plane_classification_ceiling.md)
@@ -43,7 +54,7 @@ typedef _Bool (*)(void *, NSObject<OS_ar_plane_anchor> *) ar_plane_anchors_enume
 - [ar_plane_anchor_get_alignment](./ar_plane_anchor_get_alignment.md)
   Gets the alignment — horizontal or vertical — of a plane anchor relative to gravity.
 - [ar_plane_anchor_get_geometry](./ar_plane_anchor_get_geometry.md)
-  Gets the shape of a plane anchor.
+  Gets the geometry of a plane anchor.
 - [ar_plane_anchor_get_plane_classification](./ar_plane_anchor_get_plane_classification.md)
   Gets the kind of real-world object that ARKit determines the plane anchor might be.
 

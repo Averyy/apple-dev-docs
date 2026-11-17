@@ -15,6 +15,14 @@ Copies a reference to a Core Foundation error object that represents the specifi
 extern CFErrorRefar_error_copy_cf_error(ar_error_t error);
 ```
 
+## Return Value
+
+The `CFErrorRef`. The caller is responsible for calling `CFRelease` on the returned pointer.
+
+## Parameters
+
+- `error`: The `ar_error_t` instance.
+
 ## See Also
 
 ### Errors

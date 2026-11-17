@@ -27,9 +27,13 @@ You need to provide at least one variant. Present the variant strings as localiz
 
 ## See Also
 
-### Getting Route Choices
-- [var routeChoices: [CPRouteChoice]](./routechoices.md)
-  The list of route choices for the trip.
+### Deprecated
+- [convenience init(origin: MKMapItem, destination: MKMapItem, routeChoices: [CPRouteChoice])](./init%28origin,destination,routechoices%29.md)
+  Creates a trip with an origin, destination, and route choices.
+- [var origin: MKMapItem](./origin.md)
+  The trip’s origin.
+- [var destination: MKMapItem](./destination.md)
+  The trip’s destination.
 
 
 ---

@@ -17,7 +17,7 @@ var detectionRate: Float
 
 ## Discussion
 
-The framework clamps this value to between `0` and `30` Hz.
+The framework clamps this value to between `0` and `30` Hz. The default is `2`.
 
 ## See Also
 

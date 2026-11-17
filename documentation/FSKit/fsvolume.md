@@ -102,6 +102,9 @@ Your volume can provide additional functionality by conforming to other volume h
 ### Protocols
 - [FSVolume.CommonOperations](./fsvolume/commonoperations.md)
   Methods common to `FSVolumeHandler` and `FSVolumeOperations`
+### Structures
+- [FSVolume.RenameFlags](./fsvolume/renameflags.md)
+  Behavior flags for a rename operation, corresponding to the flags accepted by `renamex_np(2)`.
 
 ## Relationships
 

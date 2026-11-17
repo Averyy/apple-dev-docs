@@ -27,12 +27,6 @@ When [`false`](../../Swift/false.md), CarPlay doesn’t call the button’s hand
 
 The default value is [`true`](../../Swift/true.md).
 
-## See Also
-
-### Configuring the Button’s Attributes
-- [var title: String?](./title.md)
-  The button’s title.
-
 
 ---
 

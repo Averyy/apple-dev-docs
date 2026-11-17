@@ -94,7 +94,7 @@ For design guidance, see [Scroll views](https://developer.apple.com/design/human
 - [var horizontalScrollIndicatorVisibility: ScrollIndicatorVisibility](./environmentvalues/horizontalscrollindicatorvisibility.md)
   The visibility to apply to scroll indicators of any horizontally scrollable content.
 - [var verticalScrollIndicatorVisibility: ScrollIndicatorVisibility](./environmentvalues/verticalscrollindicatorvisibility.md)
-  The visiblity to apply to scroll indicators of any vertically scrollable content.
+  The visibility to apply to scroll indicators of any vertically scrollable content.
 - [struct ScrollIndicatorVisibility](./scrollindicatorvisibility.md)
   The visibility of scroll indicators of a UI element.
 ### Managing content visibility

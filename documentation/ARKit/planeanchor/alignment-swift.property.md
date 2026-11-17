@@ -21,13 +21,9 @@ var alignment: PlaneAnchor.Alignment { get }
 - [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The location and orientation of a plane in world space.
 - [PlaneAnchor.Alignment](./alignment-swift.enum.md)
-  Values describing possible general orientations of a detected plane with respect to gravity.
-- [var classification: PlaneAnchor.Classification](./classification-swift.property.md)
-  Get the classification of this plane.
-- [PlaneAnchor.Classification](./classification-swift.enum.md)
-  The kinds of object classification a plane anchor can have.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
+  The possible general orientations of a detected plane with respect to gravity.
+- [var surfaceClassification: SurfaceClassification](./surfaceclassification.md)
+  Get the surface classification of this plane.
 
 
 ---

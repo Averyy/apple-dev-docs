@@ -21,15 +21,23 @@ var visibility: CPListItem.AssistantCellVisibility { get }
 @property (nonatomic, readonly) CPAssistantCellVisibility visibility;
 ```
 
+## Discussion
+
+Specify the value of this property when creating the assistant cell configuration object.
+
 ## See Also
 
-### Getting the Configuration Attributes
-- [var position: CPListItem.AssistantCellPosition](./position.md)
-  The position of the assistant cell in the list template.
+### Getting the configuration attributes
 - [var assistantAction: CPAssistantCellActionType](./assistantaction.md)
   The action that Siri performs when the user selects the assistant cell.
+- [var position: CPListItem.AssistantCellPosition](./position.md)
+  The position of the assistant cell in the list template.
 - [enum CPAssistantCellActionType](../cpassistantcellactiontype.md)
-  The supported Siri actions of the assistant cell.
+  The supported actions of the assistant cell.
+- [CPListItem.AssistantCellPosition](../cplistitem/assistantcellposition.md)
+  The supported placement options for the assistant cell.
+- [CPListItem.AssistantCellVisibility](../cplistitem/assistantcellvisibility.md)
+  The visibility options for the assistant cell.
 
 
 ---

@@ -22,9 +22,11 @@ var detectionObjects: Set<ARReferenceObject> { get set }
 
 ## Discussion
 
-Use this property to choose known 3D objects for ARKit to find in the user’s environment and present as [`ARObjectAnchor`](../arobjectanchor.md) for use in your AR experience.
+The system keeps the object’s pose stable in world space, consuming less power. Virtual content stays aligned with the object as long as it doesn’t move; if the object moves, the system may delay the pose update. When an object is detected, an `ARObjectAnchor` is added to the session.
 
-To create reference objects for detection, scan them in a world-tracking session and use [`ARWorldMap`](../arworldmap.md) to extract [`ARReferenceObject`](../arreferenceobject.md) instances. You can then save reference objects as files and package them in any ARKit app you create using an Xcode asset catalog.
+Use this property for objects that are mostly stationary. For moving or handheld objects that need precise, per-frame updates, use `trackingObjects` instead.
+
+> **Note**: Supports both the `.arobject` format (introduced in iOS 12) and the `.referenceobject` format (introduced in iOS 27). A single session can’t use both formats.
 
 ## See Also
 

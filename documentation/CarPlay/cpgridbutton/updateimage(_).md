@@ -19,6 +19,15 @@ func updateImage(_ image: UIImage)
 - (void) updateImage:(UIImage *) image;
 ```
 
+## See Also
+
+### Managing the button content
+- [var image: UIImage](./image.md)
+  The image displayed on the button.
+- [var titleVariants: [String]](./titlevariants.md)
+  An array of title variants for the button.
+- [func updateTitleVariants([String])](./updatetitlevariants%28_%29.md)
+
 
 ---
 

@@ -21,17 +21,13 @@ var shortcutButtons: [CPDashboardButton] { get set }
 @property (nonatomic, copy) NSArray<CPDashboardButton *> * shortcutButtons;
 ```
 
-## Mentions
-
-- [Displaying Content in CarPlay](../displaying-content-in-carplay.md)
-
 ## Discussion
 
 Provide an array of up to two shortcut buttons to display on the CarPlay Dashboard. The system manages hiding and showing these buttons when navigation is active or inactive.
 
 ## See Also
 
-### Providing Dashboard Buttons
+### Providing dashboard buttons
 - [class CPDashboardButton](../cpdashboardbutton.md)
   A shortcut button for placement on the CarPlay Dashboard.
 

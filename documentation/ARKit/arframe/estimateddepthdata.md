@@ -28,6 +28,10 @@ If you implement a custom renderer, you apply this property by using alpha and d
 
 Apps using one of the standard renderers don’t need this property to occlude virtual content with people. The standard renderers ([`ARView`](../../RealityKit/arview.md), [`ARSCNView`](../arscnview.md), and [`ARSKView`](../arskview.md)) enable people occlusion when you add [`personSegmentation`](../arconfiguration/framesemantics-swift.struct/personsegmentation.md) or [`personSegmentationWithDepth`](../arconfiguration/framesemantics-swift.struct/personsegmentationwithdepth.md) to your configuration’s [`frameSemantics`](../arconfiguration/framesemantics-swift.property.md).
 
+> **See Also**: [`frameSemantics`](../arconfiguration/framesemantics-swift.property.md)
+
+> **See Also**: [`segmentationBuffer`](./segmentationbuffer.md)
+
 ## See Also
 
 ### Checking for people

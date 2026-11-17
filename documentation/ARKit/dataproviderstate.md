@@ -20,14 +20,14 @@ enum DataProviderState
 
 ### Getting the state of a data provider
 - [DataProviderState.initialized](./dataproviderstate/initialized.md)
-  The data provider has been created.
+  The data provider is initialized.
 - [DataProviderState.running](./dataproviderstate/running.md)
   The data provider is running.
 - [DataProviderState.stopped](./dataproviderstate/stopped.md)
   The data provider is stopped.
 - [DataProviderState.paused](./dataproviderstate/paused.md)
   The data provider is paused.
-### Comparing data provider states
+### Instance Properties
 - [var description: String](./dataproviderstate/description.md)
   A textual representation of the state.
 

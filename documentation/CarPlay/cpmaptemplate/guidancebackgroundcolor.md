@@ -29,11 +29,13 @@ The system determines whether [`guidanceBackgroundColor`](./guidancebackgroundco
 
 ## See Also
 
-### Configuring Map Templates
+### Configuring the map template
 - [var automaticallyHidesNavigationBar: Bool](./automaticallyhidesnavigationbar.md)
   A Boolean value that indicates whether the template should automatically hide the navigation bar.
 - [var hidesButtonsWithNavigationBar: Bool](./hidesbuttonswithnavigationbar.md)
   A Boolean value that tells the system to hide the map buttons when hiding the navigation bar.
+- [var mapButtons: [CPMapButton]](./mapbuttons.md)
+  An array of map buttons on the trailing bottom corner of the map template.
 
 
 ---

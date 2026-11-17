@@ -30,6 +30,11 @@ A new CPMapTemplateWaypoint instance ready for use with CarPlay templates
 - `waypoint`: The navigation waypoint
 - `travelEstimates`: The calculated travel estimates for reaching this waypoint
 
+## See Also
+
+### Creating a trip
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

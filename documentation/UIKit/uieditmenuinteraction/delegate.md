@@ -24,17 +24,9 @@ weak var delegate: (any UIEditMenuInteractionDelegate)? { get }
 
 ## See Also
 
-### Managing edit menu interactions
-- [func presentEditMenu(with: UIEditMenuConfiguration)](./presenteditmenu%28with%29.md)
-  Presents an edit menu using the object you provide for configuration.
-- [func reloadVisibleMenu()](./reloadvisiblemenu%28%29.md)
-  Updates the actions an edit menu displays.
-- [func updateVisibleMenuPosition(animated: Bool)](./updatevisiblemenuposition%28animated%29.md)
-  Updates the position of the currently visible menu with an option to animate the action.
-- [func dismissMenu()](./dismissmenu%28%29.md)
-  Dismiss the edit menu if present.
-- [func location(in: UIView?) -> CGPoint](./location%28in%29.md)
-  Returns the location of the user interaction in the specified view’s coordinate system.
+### Responding to menu requests
+- [protocol UIEditMenuInteractionDelegate](../uieditmenuinteractiondelegate.md)
+  The methods for customizing the menu the interaction displays.
 
 
 ---

@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-The state in a world-tracking AR session during which a device maps the user’s position in physical space and proximity to anchor objects.
+The space-mapping state and set of anchors from a world-tracking AR session.
 
 **Availability**:
 - iOS 12.0+
@@ -27,6 +27,8 @@ class ARWorldMap
 ## Overview
 
 The session state in a world map includes ARKit’s awareness of the physical space in which the user moves the device. ARKit uses the details of the user’s physical space to determine the device’s position and orientation, as well as any [`ARAnchor`](./aranchor.md) objects added to the session that can represent detected real-world features or virtual content placed by your app.
+
+`ARWorldMap` supports archiving and unarchiving across devices and versions with `NSDecodingFailurePolicySetErrorAndReturn`, providing an error if the map format is not supported.
 
 ### Serialize and Deserialize a World Map
 
@@ -74,9 +76,9 @@ To begin a new session from an existing [`ARWorldMap`](./arworldmap.md), set a w
 - [var anchors: [ARAnchor]](./arworldmap/anchors.md)
   The set of anchors recorded in the world map.
 - [var center: simd_float3](./arworldmap/center.md)
-  The center point of the world map’s space-mapping data, relative to the world coordinate origin of the session the map was recorded in.
+  The center point of the world map’s space-mapping data, in meters, relative to the world coordinate origin of the session the map was recorded in.
 - [var extent: simd_float3](./arworldmap/extent.md)
-  The size of the world map’s space-mapping data, relative to the world coordinate origin of the session the map was recorded in.
+  The size of the world map’s space-mapping data, in meters, relative to the world coordinate origin of the session the map was recorded in.
 ### Debugging a World Map
 - [var rawFeaturePoints: ARPointCloud](./arworldmap/rawfeaturepoints.md)
   A coarse representation of the space-mapping data recorded in the world map.

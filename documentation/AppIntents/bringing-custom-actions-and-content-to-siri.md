@@ -27,6 +27,8 @@ If you already make an app intent available to Siri by conforming it to a schema
 
 If an app intent serves a specific purpose and doesn’t perform a custom action in its `perform()` implementation, don’t add the tool intent annotation either. For example, the purpose of a [`WidgetConfigurationIntent`](./widgetconfigurationintent.md) is to make a widget configurable. It usually doesn’t include a `perform()` implementation and can’t be a tool intent because there’s no action for Siri to perform. If you use your `WidgetConfigurationIntent` for a custom action and it contains a `perform()` implementation, you can turn it into a tool intent.
 
+Adding any tool intent to your app makes your App Shortcuts unavailable to Siri. When you create tool intents, make sure they bring the functionality to Siri that your App Shortcuts previously enabled. Simultaneously, App Shortcuts remain available to other system experiences like Spotlight or the Action button. Don’t remove the App Shortcuts from your app because people rely on them for these other system experiences.
+
 ## Provide additional information for app intents
 
 In addition to telling Siri that your app contains an action it can perform, Siri needs to know what the intent does, how to fill in its parameters, and how to disambiguate it from other intents. To understand what your intent does and disambiguate from other intents, Siri relies on its [`title`](./appintent/title.md) and [`description`](./appintent/description.md). If you don’t already provide a `title` and a `description` for your custom intent, add them. To tell Siri how it can perform your app intent, what information it needs, and how to present intent parameters, provide a `title` and `description` for each parameter.

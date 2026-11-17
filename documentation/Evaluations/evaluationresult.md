@@ -30,7 +30,7 @@ struct EvaluationResult
 
 A structure that contains the summary and detailed results from an evaluation run.
 
-Use the column descriptors from your [`Evaluation`](./evaluation.md) to access typed columns from the [`detailed`](./evaluationresult/detailed.md) DataFrame:
+Use the column descriptors from your [`Evaluation`](./evaluation.md) to access typed columns from the [`detailed`](./evaluationresult/detailed.md) [`DataFrame`](../TabularData/dataframe.md):
 
 ```swift
 let result = try await evaluation.run(on: samples)
@@ -57,7 +57,7 @@ let expected = result.detailed[evaluation.expectedColumn]
 - [func aggregateValue(AggregationOperation) -> Double](./evaluationresult/aggregatevalue%28_%29.md)
   Returns the first aggregate value matching the given operation, or `-1` if not found.
 - [EvaluationResult.DataFrameKind](./evaluationresult/dataframekind.md)
-  The kind of DataFrame to convert for JSON serialization.
+  The kind of data frame to convert for JSON serialization.
 ### Checking for failures
 - [let errors: EvaluationRunErrors](./evaluationresult/errors.md)
   A summary of the failures encountered during the run.
@@ -72,7 +72,7 @@ let expected = result.detailed[evaluation.expectedColumn]
 - [var groupedSummary: String](./evaluationresult/groupedsummary.md)
   A formatted description of summary metrics organized by groups.
 - [func jsonRepresentableDataFrame(of: EvaluationResult.DataFrameKind) throws -> DataFrame](./evaluationresult/jsonrepresentabledataframe%28of%29.md)
-  Transforms a DataFrame into one with column types compatible with JSON representation.
+  Transforms a data frame into one with column types compatible with JSON representation.
 ### Saving and loading results
 - [func saveJSON(to: URL, includeReportMetadata: Bool, includeTranscripts: Bool) throws -> URL](./evaluationresult/savejson%28to,includereportmetadata,includetranscripts%29.md)
   Saves evaluation results to a single JSON file.
@@ -97,13 +97,13 @@ let expected = result.detailed[evaluation.expectedColumn]
 - [struct EvaluationRunErrors](./evaluationrunerrors.md)
   A summary of the failures encountered during an evaluation run.
 - [struct ResultColumn](./resultcolumn.md)
-  A typed descriptor for a column in an evaluation result DataFrame.
+  A typed descriptor for a column in an evaluation result data frame.
 - [var inputColumn: ResultColumn<Self.Sample>](./evaluation/inputcolumn.md)
-  A typed column descriptor for the input samples in the detailed DataFrame.
+  A typed column descriptor for the input samples in the detailed [`DataFrame`](../TabularData/dataframe.md).
 - [var responseColumn: ResultColumn<Self.Subject>](./evaluation/responsecolumn.md)
-  A typed column descriptor for the model responses in the detailed DataFrame.
+  A typed column descriptor for the model responses in the detailed [`DataFrame`](../TabularData/dataframe.md).
 - [var expectedColumn: ResultColumn<Self.Sample.ExpectedValue>](./evaluation/expectedcolumn.md)
-  A typed column descriptor for the expected values in the detailed DataFrame.
+  A typed column descriptor for the expected values in the detailed [`DataFrame`](../TabularData/dataframe.md).
 
 
 ---

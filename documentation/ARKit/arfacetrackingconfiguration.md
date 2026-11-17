@@ -33,7 +33,7 @@ Face tracking supports devices with Apple Neural Engine in iOS 14 and iPadOS 14 
 
 When you enable the [`isLightEstimationEnabled`](./arconfiguration/islightestimationenabled.md) setting, a face-tracking configuration estimates directional and environmental lighting (an [`ARDirectionalLightEstimate`](./ardirectionallightestimate.md) object) by referring to the detected face as a light probe.
 
-> **Note**:  Because face tracking provides your app with personal facial information, your app must include a privacy policy describing to users how you intend to use face tracking and face data. For details, see the [Apple Developer Program License Agreement](https://developer.apple.com/terms/).
+> **Note**: Because face tracking provides your app with personal facial information, your app must include a privacy policy describing to users how you intend to use face tracking and face data. For details, see the [Apple Developer Program License Agreement](https://developer.apple.com/terms/).
 
 ## Topics
 
@@ -44,7 +44,7 @@ When you enable the [`isLightEstimationEnabled`](./arconfiguration/islightestima
   Allocates and initializes a new face-tracking configuration.
 ### Enabling World Tracking
 - [class var supportsWorldTracking: Bool](./arfacetrackingconfiguration/supportsworldtracking.md)
-  A Boolean value that indicates whether the iOS device supports tracking the user’s facial features in a world-tracking session.
+  A Boolean value that indicates whether the iOS device supports tracking the world in a face-tracking session.
 - [var isWorldTrackingEnabled: Bool](./arfacetrackingconfiguration/isworldtrackingenabled.md)
   A Boolean value that instructs a session to provide the app with the device’s six degrees of freedom pose during a face-tracking session.
 ### Tracking Multiple Faces

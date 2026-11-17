@@ -42,6 +42,8 @@ This method controls where to place a background that you specify with the [`con
 - [static var subscriptionStoreHeader: ContainerBackgroundPlacement](./containerbackgroundplacement/subscriptionstoreheader.md)
   A background placement behind the marketing content of a subscription store view.
 ### Type Properties
+- [static let cardSnippet: ContainerBackgroundPlacement](./containerbackgroundplacement/cardsnippet.md)
+  A container background placement for a card snippet, the card shown for an app entity snippet or a snippet-intent result.
 - [static let navigationSplitView: ContainerBackgroundPlacement](./containerbackgroundplacement/navigationsplitview.md)
   A background placement behind the content of a [`NavigationSplitView`](./navigationsplitview.md).
 - [static let window: ContainerBackgroundPlacement](./containerbackgroundplacement/window.md)

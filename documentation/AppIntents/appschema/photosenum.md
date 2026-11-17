@@ -23,13 +23,13 @@ protocol PhotosEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var albumType: some AppSchemaEnum](./photosenum/albumtype.md)
-  An enum schema for an album type parameter.
+  An enum schema for an album type.
 - [var assetType: some AppSchemaEnum](./photosenum/assettype.md)
-  An enum schema for an asset type parameter.
+  An enum schema for an asset type.
 - [var filterType: some AppSchemaEnum](./photosenum/filtertype.md)
-  An enum schema for a filter type parameter.
+  An enum schema for a filter type.
 - [var rotationDirection: some AppSchemaEnum](./photosenum/rotationdirection.md)
-  An enum schema for a rotation direction parameter.
+  An enum schema for a rotation direction.
 
 ## Relationships
 
@@ -42,13 +42,13 @@ protocol PhotosEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var albumType: some AppSchemaEnum](./photosenum/albumtype.md)
-  An enum schema for an album type parameter.
+  An enum schema for an album type.
 - [var assetType: some AppSchemaEnum](./photosenum/assettype.md)
-  An enum schema for an asset type parameter.
+  An enum schema for an asset type.
 - [var filterType: some AppSchemaEnum](./photosenum/filtertype.md)
-  An enum schema for a filter type parameter.
+  An enum schema for a filter type.
 - [var rotationDirection: some AppSchemaEnum](./photosenum/rotationdirection.md)
-  An enum schema for a rotation direction parameter.
+  An enum schema for a rotation direction.
 
 
 ---

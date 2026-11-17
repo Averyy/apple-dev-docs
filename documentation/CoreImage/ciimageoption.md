@@ -4,6 +4,8 @@
 **Kind**: struct  
 **Role**: Structure
 
+Image option dictionary keys.
+
 **Availability**:
 - iOS
 - iPadOS
@@ -22,13 +24,15 @@ struct CIImageOption
 typedef NSString * CIImageOption;
 ```
 
+## Overview
+
+These keys can be passed with appropriate values to [`CIImage`](./ciimage.md) initializers with an `options` parameter to modify the default behavior.
+
 ## Topics
 
 ### Initializers
 - [init(rawValue: String)](./ciimageoption/init%28rawvalue%29.md)
-### Type Properties
-- [static let applyOrientationProperty: CIImageOption](./ciimageoption/applyorientationproperty.md)
-  The key for transforming an image according to orientation metadata.
+### Auxiliary Images
 - [static let auxiliaryDepth: CIImageOption](./ciimageoption/auxiliarydepth.md)
   The key into the properties dictionary indicating whether to return an auxiliary depth image.
 - [static let auxiliaryDisparity: CIImageOption](./ciimageoption/auxiliarydisparity.md)
@@ -41,6 +45,9 @@ typedef NSString * CIImageOption;
 - [static let auxiliarySemanticSegmentationSkinMatte: CIImageOption](./ciimageoption/auxiliarysemanticsegmentationskinmatte.md)
 - [static let auxiliarySemanticSegmentationSkyMatte: CIImageOption](./ciimageoption/auxiliarysemanticsegmentationskymatte.md)
 - [static let auxiliarySemanticSegmentationTeethMatte: CIImageOption](./ciimageoption/auxiliarysemanticsegmentationteethmatte.md)
+### Type Properties
+- [static let applyOrientationProperty: CIImageOption](./ciimageoption/applyorientationproperty.md)
+  The key for transforming an image according to orientation metadata.
 - [static let cacheImmediately: CIImageOption](./ciimageoption/cacheimmediately.md)
 - [static let colorSpace: CIImageOption](./ciimageoption/colorspace.md)
   The key for a color space.

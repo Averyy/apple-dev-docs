@@ -5,7 +5,7 @@
 **Role**: Instance Property  
 **Required**: Yes
 
-The item’s primary text.
+The primary text to display for the item.
 
 **Availability**:
 - iOS 14.0+
@@ -24,9 +24,9 @@ var text: String? { get }
 
 ## See Also
 
-### Managing Content
+### Managing content
 - [var userInfo: Any?](./userinfo.md)
-  An opaque value for the list item.
+  App-specific data you associate with the item.
 
 
 ---

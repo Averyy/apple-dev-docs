@@ -24,6 +24,14 @@ This controls the state of the tool picker that is provided by the `activeToolPi
 
 If `nil` tool picker visibility is based on the next responder. If no responder provides a visibility, the default is `.visible`.
 
+## See Also
+
+### Configuring the tool picker
+- [var activeToolPicker: PKToolPicker?](./activetoolpicker.md)
+  The current tool picker.
+- [enum PKToolPickerVisibility](../pktoolpickervisibility.md)
+  Constants that describe the visibility state of a tool picker.
+
 
 ---
 

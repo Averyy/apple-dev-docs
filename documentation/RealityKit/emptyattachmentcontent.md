@@ -37,8 +37,11 @@ A attachment content that doesn’t contain any content.
 - [protocol AttachmentContent](./attachmentcontent.md)
   A type that provides content for an attachment content builder.
 - [struct TuplePackAttachmentContent](./tuplepackattachmentcontent.md)
+  Attachment content that combines any number of attachment content values from an attachment content builder.
 - [struct ConditionalAttachmentContent](./conditionalattachmentcontent.md)
+  Attachment content that holds the result of one branch of a conditional statement in an attachment content builder.
 - [struct TupleAttachmentContent](./tupleattachmentcontent.md)
+  Attachment content that wraps a tuple of attachment content values.
 - [struct AnyAttachmentContent](./anyattachmentcontent.md)
   A type-erased attachment content.
 

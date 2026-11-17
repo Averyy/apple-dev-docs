@@ -23,7 +23,7 @@ protocol MailEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var category: some AppSchemaEnum](./mailenum/category.md)
-  An enum schema for a category parameter.
+  An enum schema for a category.
 
 ## Relationships
 

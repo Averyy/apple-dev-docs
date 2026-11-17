@@ -46,6 +46,27 @@ You add scene-wide uniforms via a `ComputeGraphSharedUniforms` — such as gravi
 - [Component](./component.md)
 - [TransientComponent](./transientcomponent.md)
 
+## See Also
+
+### Particle simulation
+- [Simulating particles in your visionOS app](./simulating-particles-in-your-visionos-app.md)
+  Add a range of visual effects to a RealityKit view by attaching a particle emitter component to an entity.
+- [struct ParticleEmitterComponent](./particleemittercomponent.md)
+  A component that emits particles.
+- [ParticleEmitterComponent.ParticleEmitter](./particleemittercomponent/particleemitter.md)
+- [ParticleEmitterComponent.Presets](./particleemittercomponent/presets.md)
+  Initial configurations that can be set when starting a new simulation.
+- [struct ComputeGraphComponent](./computegraphcomponent.md)
+  A component that drives a compute graph–based particle simulation on an entity.
+- [class ComputeGraphResource](./computegraphresource.md)
+  A loaded compute graph resource containing the graph definition, compiled pipelines, and all associated rendering assets.
+- [struct ComputeGraphOutputComponent](./computegraphoutputcomponent.md)
+  A transient component that identifies the compute graph output associated with an entity.
+- [struct ComputeGraphRuntimeComponent](./computegraphruntimecomponent.md)
+  Manages the live GPU simulation for an entity’s `ComputeGraphComponent_v1`.
+- [struct ComputeGraphViewpointComponent](./computegraphviewpointcomponent.md)
+  A transient component that provides camera viewpoint information to the particle simulation.
+
 
 ---
 

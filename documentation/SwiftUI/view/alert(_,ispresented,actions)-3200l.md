@@ -74,7 +74,7 @@ This modifier creates a [`Text`](../text.md) view for the title on your behalf, 
 ## Parameters
 
 - `titleKey`: The key for the localized string that describes the title of the alert.
-- `isPresented`: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
+- `isPresented`: A binding to a Boolean value that determines whether to present the alert. The system presents the alert when the value is `true`. When a person presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses the alert.
 - `actions`: A [`ContentBuilder`](../contentbuilder.md) returning the alert’s actions.
 
 

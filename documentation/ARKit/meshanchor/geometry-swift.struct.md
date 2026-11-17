@@ -47,8 +47,6 @@ struct Geometry
   The location and orientation of a mesh in world space.
 - [var geometry: MeshAnchor.Geometry](./geometry-swift.property.md)
   The shape of a mesh anchor.
-- [MeshAnchor.MeshClassification](./meshclassification.md)
-  The kinds of classification a face of a mesh can have.
 
 
 ---

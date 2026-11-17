@@ -21,13 +21,14 @@ var create: some AppSchemaIntent { get }
 
 ## Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `spreadsheet` domain and one of your app’s actions matches the `create` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .spreadsheet.create)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `spreadsheet` domain and one of your app’s actions matches the `create` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent(schema: .spreadsheet.create)` Swift macro.
 
-The following example shows an intent that conforms to the `create` schema:
+The following example shows an intent that conforms to the `create` schema. You can create a type that conforms to the schema by adding the `@AppIntent` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `spreadsheet_create` and select it from the code-completion suggestions:
 
 ```swift
 @AppIntent(schema: .spreadsheet.create)
 struct CreateSpreadsheetIntent {
+    /// Template with which to create the spreadsheet.
     var template: <#SpreadsheetTemplateEntity#>?
 
     func perform() async throws -> some ReturnsValue<<#SpreadsheetEntity#>> {
@@ -41,6 +42,14 @@ The schema supports the following system experiences:
 - Shortcuts
 
 For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
+
+## Parameters for the create intent
+
+Each parameter in the code listing above plays a specific role when your app performs this action. The following table describes what each parameter represents and any behavior to account for when you set it.
+
+| Parameter | Type | Origin | Discussion |
+| --- | --- | --- | --- |
+| `template` | `@AppEntity(schema: .spreadsheet.template)?` | Your app | Template with which to create the spreadsheet. `SpreadsheetTemplateEntity` is a placeholder name for a type that conforms to the [`template`](../spreadsheetentity/template.md) entity schema, which your app defines and implements. |
 
 ## See Also
 

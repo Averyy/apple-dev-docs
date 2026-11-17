@@ -24,7 +24,7 @@ var exposureOffset: Float { get }
 
 If your app displays an AR experience using a custom Metal renderer, use this value to light your scene during its post-processed lighting stage.
 
-Lighting a scene using [`exposureOffset`](./exposureoffset.md) is normally more performant than scaling each light source in your scene based on the value of the frame’s [`lightEstimate`](../arframe/lightestimate.md).
+Lighting a scene using [`exposureOffset`](./exposureoffset.md) is normally more performant than scaling each light source in your scene based on the value of the frame’s `ARFrame.lightEstimate`.
 
 
 ---

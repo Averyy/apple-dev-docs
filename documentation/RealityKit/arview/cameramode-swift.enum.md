@@ -37,6 +37,12 @@ enum CameraMode
 - [struct RealityViewCamera](../realityviewcamera.md)
   A camera for reality view scenes, that can be world tracking or virtual.
 - [struct CameraControls](../cameracontrols.md)
+  Options that determine how people use gestures to pan, orbit, tilt, or dolly a virtual camera.
+- [func realityViewCameraControls(CameraControls) -> some View
+](../../SwiftUI/view/realityviewcameracontrols%28_%29.md)
+  Adds gestures that control the position and direction of a virtual camera.
+- [var realityViewCameraControls: CameraControls](../../SwiftUI/environmentvalues/realityviewcameracontrols.md)
+  The camera controls for the reality view.
 
 
 ---

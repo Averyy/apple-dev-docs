@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-An enumeration that describes hand joint names.
+Joint names in the hand skeleton.
 
 **Availability**:
 - visionOS
@@ -19,32 +19,59 @@ typedef enum { ... } ar_hand_skeleton_joint_name_t;
 
 ### Joint names
 - [ar_hand_skeleton_joint_name_forearm_wrist](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_forearm_wrist.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_index_finger_knuckle](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_knuckle.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_little_finger_intermediate_base](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_little_finger_intermediate_base.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_little_finger_metacarpal](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_little_finger_metacarpal.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_middle_finger_intermediate_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_middle_finger_intermediate_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_middle_finger_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_middle_finger_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_ring_finger_knuckle](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_ring_finger_knuckle.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_thumb_intermediate_base](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_thumb_intermediate_base.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_thumb_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_thumb_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_forearm_arm](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_forearm_arm.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_index_finger_intermediate_base](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_intermediate_base.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_index_finger_intermediate_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_intermediate_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_index_finger_metacarpal](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_metacarpal.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_index_finger_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_little_finger_intermediate_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_little_finger_intermediate_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_little_finger_knuckle](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_little_finger_knuckle.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_little_finger_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_little_finger_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_middle_finger_intermediate_base](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_middle_finger_intermediate_base.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_middle_finger_knuckle](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_middle_finger_knuckle.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_middle_finger_metacarpal](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_middle_finger_metacarpal.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_ring_finger_intermediate_base](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_ring_finger_intermediate_base.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_ring_finger_intermediate_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_ring_finger_intermediate_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_ring_finger_metacarpal](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_ring_finger_metacarpal.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_ring_finger_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_ring_finger_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_thumb_intermediate_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_thumb_intermediate_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_thumb_knuckle](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_thumb_knuckle.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_wrist](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_wrist.md)
+  Joint names in the hand skeleton.
 
 ## See Also
 
@@ -60,7 +87,7 @@ typedef enum { ... } ar_hand_skeleton_joint_name_t;
 - [ar_anchor_t](./ar_anchor_t.md)
   The identity, location, and orientation of an object in world space.
 - [ar_mesh_anchor_t](./ar_mesh_anchor_t.md)
-  A surface’s position in a person’s surroundings.
+  An anchor that represents a reconstructed mesh from the physical environment.
 - [ar_mesh_anchors_t](./ar_mesh_anchors_t.md)
   A collection of mesh anchors.
 - [ar_mesh_anchors_enumerator_t](./ar_mesh_anchors_enumerator_t.md)

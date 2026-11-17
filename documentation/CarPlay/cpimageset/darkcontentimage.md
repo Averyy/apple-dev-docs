@@ -23,7 +23,7 @@ var darkContentImage: UIImage { get }
 
 ## See Also
 
-### Getting Content Images
+### Getting the images
 - [var lightContentImage: UIImage](./lightcontentimage.md)
   The image the system displays when the user interface style is light.
 

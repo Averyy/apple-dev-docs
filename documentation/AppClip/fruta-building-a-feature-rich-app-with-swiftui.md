@@ -22,7 +22,7 @@ Create a shared codebase to build a multiplatform app that offers widgets and an
 The Fruta sample project builds an app for macOS, iOS, and iPadOS that implements [SwiftUI](../SwiftUI/SwiftUI.md) platform features like widgets, App Clips, and localization. Users can order smoothies, save favorite drinks, collect rewards, and browse recipes. It contains two flavors of app targets:
 
 - Simple iOS and macOS app targets that you build using [Personal Team](https://help.apple.com/xcode/mac/11.4/#/dev17411c009) signing. This iOS app runs in Simulator, and only requires a standard Apple ID to install on a device. The simple app implements a rich, localized [SwiftUI](../SwiftUI/SwiftUI.md) interface. Users can browse and order smoothies, and save favorite drinks.
-- Full featured iOS All and macOS All app targets. The full iOS app runs in Simulator, and on devices with an Apple Developer membership. This app includes widget extensions that enable users to add a widget to their iOS Home Screen or the macOS Notification Center, and to view their rewards or a favorite smoothie. This app also embeds an App Clip. With the App Clip, users can discover and instantly launch some of the app’s functionality on their iPhone or iPad without installing the app.
+- Full-featured iOS All and macOS All app targets. The full iOS app runs in Simulator, and on devices with an Apple Developer membership. This app includes widget extensions that enable users to add a widget to their iOS Home Screen or the macOS Notification Center, and to view their rewards or a favorite smoothie. This app also embeds an App Clip. With the App Clip, users can discover and instantly launch some of the app’s functionality on their iPhone or iPad without installing the app.
 
 The Fruta sample app leverages [Sign in with Apple](../SigninwithApple/SigninwithApple.md) and [PassKit (Apple Pay and Wallet)](../PassKit/PassKit.md) to provide a streamlined user experience.
 
@@ -33,7 +33,7 @@ To build this project for iOS 15.4, use Xcode 13.3. The runtime requirement is i
 To configure the iOS and macOS app targets without an Apple Developer account, follow these steps:
 
 1. In the targets’ Signing & Capabilities panes click Add Account, and log in with your Apple ID.
-2. Chose the Your Name (Personal Team) from the team drop down menu.
+2. Choose the Your Name (Personal Team) from the team drop down menu.
 3. Click build-and-run.
 4. On iOS and iPadOS devices you need to navigate to Settings > General > VPN & Device Management and trust your developer certificate.
 

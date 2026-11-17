@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-A button for cycling through the available shuffle modes.
+A button for toggling shuffle mode on and off.
 
 **Availability**:
 - iOS 14.0+
@@ -24,9 +24,11 @@ class CPNowPlayingShuffleButton
 
 ## Overview
 
-`CPNowPlayingShuffleButton` is a concrete subclass of [`CPNowPlayingButton`](./cpnowplayingbutton.md). Use the button’s handler to invoke your existing functionality for cycling through shuffle modes, using the same [`MPChangeShuffleModeCommand`](../MediaPlayer/mpchangeshufflemodecommand.md) that you provide to [`MPRemoteCommandCenter`](../MediaPlayer/mpremotecommandcenter.md).
+Include the `CPNowPlayingShuffleButton` in your Now Playing template if your app supports different shuffle modes. The system provides the appearance of the button and automatically updates the appearance in response to interactions. You use the button to update your app’s behavior when someone enables or disables shuffle mode.
 
-CarPlay uses `MPRemoteCommandCenter` to observe changes to the shuffle mode and updates the button’s appearance accordingly.
+Create the button and add it as one of the [`nowPlayingButtons`](./cpnowplayingtemplate/nowplayingbuttons.md) in your Now Playing template. At creation time, provide a handler you want the system to call when someone interacts with the button, and use your handler to enable and disable shuffle mode for your app’s playback queue.
+
+> **Note**: CarPlay uses the shared [`MPRemoteCommandCenter`](../MediaPlayer/mpremotecommandcenter.md) object to observe changes to shuffle mode and update the button’s appearance. If your app supports the command center object, provide the same behavior in your button’s handler as you provide for the [`MPChangeShuffleModeCommand`](../MediaPlayer/mpchangeshufflemodecommand.md) type.
 
 ## Relationships
 
@@ -46,23 +48,19 @@ CarPlay uses `MPRemoteCommandCenter` to observe changes to the shuffle mode and 
 
 ## See Also
 
-### Managing the Template’s Buttons
-- [var nowPlayingButtons: [CPNowPlayingButton]](./cpnowplayingtemplate/nowplayingbuttons.md)
-  The Now Playing template’s playback control buttons.
-- [func updateNowPlayingButtons([CPNowPlayingButton])](./cpnowplayingtemplate/updatenowplayingbuttons%28_%29.md)
-  Updates the playback control buttons the template displays.
-- [class CPNowPlayingButton](./cpnowplayingbutton.md)
-  The abstract base class that Now Playing template buttons use.
-- [class CPNowPlayingImageButton](./cpnowplayingimagebutton.md)
-  A button that displays an image.
-- [class CPNowPlayingAddToLibraryButton](./cpnowplayingaddtolibrarybutton.md)
-  A button for adding the current playing item to a collection.
-- [class CPNowPlayingMoreButton](./cpnowplayingmorebutton.md)
-  A button for presenting more options to the user.
-- [class CPNowPlayingPlaybackRateButton](./cpnowplayingplaybackratebutton.md)
-  A button for cycling through the available playback rates.
+### Now Playing buttons
 - [class CPNowPlayingRepeatButton](./cpnowplayingrepeatbutton.md)
   A button for cycling through the available repeat modes.
+- [class CPNowPlayingPlaybackRateButton](./cpnowplayingplaybackratebutton.md)
+  A button for changing the playback rate of the media.
+- [class CPNowPlayingAddToLibraryButton](./cpnowplayingaddtolibrarybutton.md)
+  A button for adding the current item to a collection, such as the person’s library.
+- [class CPNowPlayingMoreButton](./cpnowplayingmorebutton.md)
+  A button for displaying additional playback options.
+- [class CPNowPlayingImageButton](./cpnowplayingimagebutton.md)
+  A custom Now Playing button that displays an image.
+- [class CPNowPlayingButton](./cpnowplayingbutton.md)
+  The abstract base class for buttons in the Now Playing interface.
 
 
 ---

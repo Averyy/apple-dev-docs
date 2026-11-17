@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+Function called when a request to add a world anchor has completed (successfully or not).
+
 **Availability**:
 - visionOS 1.0+
 
@@ -12,6 +14,13 @@
 ```c
 typedef void (*)(void *, NSObject<OS_ar_world_anchor> *, _Bool, NSObject<OS_ar_error> *) ar_world_tracking_add_anchor_completion_handler_function_t;
 ```
+
+## Parameters
+
+- `context`: The application-defined context.
+- `world_anchor`: The world anchor to be added to the world tracking provider.
+- `successful`: `true` if the world anchor was successfully added to the world tracking provider, `false` otherwise.
+- `error`: The error that occurred, if any.
 
 ## See Also
 
@@ -41,7 +50,7 @@ typedef void (*)(void *, NSObject<OS_ar_world_anchor> *, _Bool, NSObject<OS_ar_e
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

@@ -21,6 +21,7 @@ var extrinsics: simd_float4x4 { get }
 - [var cameraPosition: CameraFrameProvider.CameraPosition](./cameraposition.md)
   The camera position.
 - [var cameraType: CameraFrameProvider.CameraType](./cameratype.md)
+  The camera type.
 - [var captureTimestamp: TimeInterval](./capturetimestamp.md)
   The capture timestamp.
 - [var colorTemperature: Int](./colortemperature.md)
@@ -28,6 +29,7 @@ var extrinsics: simd_float4x4 { get }
 - [var exposureDuration: TimeInterval](./exposureduration.md)
   The camera frame exposure duration in seconds.
 - [var intrinsics: simd_float3x3](./intrinsics.md)
+  The camera intrinsics.
 - [var midExposureTimestamp: TimeInterval](./midexposuretimestamp.md)
   The mid exposure timestamp.
 

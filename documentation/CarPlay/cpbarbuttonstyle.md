@@ -23,7 +23,7 @@ enum CPBarButtonStyle : NSInteger;
 
 ## Topics
 
-### Button Styles
+### Getting the button style
 - [CPBarButtonStyle.none](./cpbarbuttonstyle/none.md)
   A style that provides no additional styling.
 - [CPBarButtonStyle.rounded](./cpbarbuttonstyle/rounded.md)
@@ -43,11 +43,9 @@ enum CPBarButtonStyle : NSInteger;
 
 ## See Also
 
-### Getting the Button Style
-- [var buttonType: CPBarButton.Type](./cpbarbutton/buttontype.md)
-  The display type for the bar button.
+### Getting the display style
 - [var buttonStyle: CPBarButtonStyle](./cpbarbutton/buttonstyle.md)
-  The style to use when displaying the button.
+  The style to apply to the button.
 
 
 ---

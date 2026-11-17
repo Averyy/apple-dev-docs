@@ -109,6 +109,7 @@ class GameViewController: NSViewController {
 
 ### Collision-related notifications
 - [enum CollisionEvents](./collisionevents.md)
+  Events that occur when two collidable objects begin touching, stay in contact, or separate.
 
 
 ---

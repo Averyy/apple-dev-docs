@@ -5,7 +5,7 @@
 **Role**: Instance Property  
 **Required**: Yes
 
-An opaque value for the list item.
+App-specific data you associate with the item.
 
 **Availability**:
 - iOS 14.0+
@@ -22,11 +22,15 @@ var userInfo: Any? { get set }
 @property (nonatomic, strong, nullable) id userInfo;
 ```
 
+## Discussion
+
+Use this property to attach app-specific data to the item. For example, you might attach the model object from your app that corresponds to the item’s content. This information is just for your app, and CarPlay doesn’t use it. The default value of this property is `nil`.
+
 ## See Also
 
-### Managing Content
+### Managing content
 - [var text: String?](./text.md)
-  The item’s primary text.
+  The primary text to display for the item.
 
 
 ---

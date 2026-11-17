@@ -27,7 +27,7 @@ You use this layout when you want the template to display an item’s detail tex
 
 ## See Also
 
-### Template Layout Styles
+### Getting the template layout style
 - [CPInformationTemplateLayout.leading](./leading.md)
   A layout that displays a template’s items aligned to its leading edge.
 

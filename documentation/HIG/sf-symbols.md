@@ -191,7 +191,7 @@ From left to right: down-up, up-up, off-up
 **Consider your app’s tone when adding animations.** When animating a symbol, think about what the animation can convey and how that might align with your brand identity and your app’s overall style and tone. For guidance, see [Branding](branding.md).
 
 ## Custom symbols
-If you need a symbol that SF Symbols doesn’t provide, you can create your own. To create a custom symbol, first export the template for a symbol that’s similar to the design you want, then use a vector-editing tool to modify it. For developer guidance, see [Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md).
+If you need a symbol that SF Symbols doesn’t provide, you can create your own. To create a custom symbol, first export the template for a symbol that’s similar to the design you want, then use a vector-editing tool to modify it. For developer guidance, see [Creating custom SF Symbols](../TechnologyOverviews/creating-custom-sf-symbols.md).
 
 > **Important:** SF Symbols includes copyrighted symbols that depict Apple products and features. You can display these symbols in your app, but you can’t customize them. To help you identify a noncustomizable symbol, the SF Symbols app badges it with an Info icon; to help you use the symbol correctly, the inspector pane describes its usage restrictions.
 
@@ -235,7 +235,7 @@ For guidance, see [Icons](icons.md).
 
 [Configuring and displaying symbol images in your UI](../UIKit/configuring-and-displaying-symbol-images-in-your-ui.md) — UIKit
 
-[Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md)
+[Creating custom SF Symbols](../TechnologyOverviews/creating-custom-sf-symbols.md)
 
 #### Videos
 - [What’s new in SF Symbols 7](https://developer.apple.com/videos/play/wwdc2025/337) - Explore the latest updates to SF Symbols, Apple’s library of iconography. Meet Draw, a new animation system that allows symbols to imitate the organic flow of a handwritten stroke, and Variable Draw, which can be used to convey strength or progress. Discover Gradients, which add dimension and visual interest to symbols, and Magic Replace enhancements, which offer greater continuity between related symbols. And learn how to preview and integrate these features into your own apps.

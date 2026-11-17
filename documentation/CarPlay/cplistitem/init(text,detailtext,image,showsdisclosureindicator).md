@@ -4,14 +4,12 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a list item with primary text, secondary text, an image, and a disclosure indicator.
+Initialize a list item with text, detailtext, an image, and a disclosure indicator.
 
 **Availability**:
 - iOS 12.0+ - Deprecated in 14.0
 - iPadOS 12.0+ - Deprecated in 14.0
 - Mac Catalyst 13.1+ - Deprecated in 14.0
-
-> **Deprecated**: Use [`init(text:detailText:image:accessoryImage:accessoryType:)`](./init%28text,detailtext,image,accessoryimage,accessorytype%29.md) instead.
 
 ## Declaration
 
@@ -23,16 +21,19 @@ init(text: String?, detailText: String?, image: UIImage?, showsDisclosureIndicat
 - (instancetype) initWithText:(NSString *) text detailText:(NSString *) detailText image:(UIImage *) image showsDisclosureIndicator:(BOOL) showsDisclosureIndicator;
 ```
 
-## Return Value
+## Discussion
 
-A newly initialized list item.
+> **Note**: The maximum size of the image is given by +[CPListItem maximumImageSize].
 
-## Parameters
+To properly size your list images, your app should size them to the display scale of the car screen. See -[CPInterfaceController carTraitCollection].
 
-- `text`: The primary text to show in the list item cell.
-- `detailText`: Additional text to display below the primary text in the list item cell.
-- `image`: The image to display on the leading edge of the list item cell. If the image is larger than `CPMaximumListItemImageSize`, the list item scales down the image to maximum size. If you provide an animated image, the list item uses the first image in the animation sequence.
-- `showsDisclosureIndicator`: A Boolean value that indicates whether the list item cell displays a disclosure indicator. Set to [`true`](../../Swift/true.md) to display the indicator on the trailing edge of the list item cell.
+## See Also
+
+### Deprecated
+- [var showsDisclosureIndicator: Bool](./showsdisclosureindicator.md)
+  If YES, a cell displaying this list item will render with a disclosure indicator in the trailing side of the cell.
+- [var showsExplicitLabel: Bool](./showsexplicitlabel.md)
+  If YES, a cell displaying this list item will render with an explicit label to the trailing edge of the text
 
 
 ---

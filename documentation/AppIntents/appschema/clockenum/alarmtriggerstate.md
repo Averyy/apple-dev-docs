@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An enum schema for an alarm trigger state parameter.
+An enum schema for an alarm trigger state.
 
 **Availability**:
 - iOS 27.0+
@@ -21,9 +21,9 @@ var alarmTriggerState: some AppSchemaEnum { get }
 
 ## Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `clock` domain and a parameter type matches the `alarmTriggerState` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .clock.alarmTriggerState)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `clock` domain and a parameter type matches the `alarmTriggerState` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum(schema: .clock.alarmTriggerState)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an app enum that conforms to the `alarmTriggerState` schema:
+The following example shows an app enum that conforms to the `alarmTriggerState` schema. You can create a type that conforms to the schema by adding the `@AppEnum` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `clock_alarmTriggerState` and select it from the code-completion suggestions:
 
 ```swift
 @AppEnum(schema: .clock.alarmTriggerState)
@@ -51,7 +51,7 @@ For more information about the App Intents framework and the experiences it supp
 
 ### Types for static parameters
 - [var timerState: some AppSchemaEnum](./timerstate.md)
-  An enum schema for a timer state parameter.
+  An enum schema for a timer state.
 - [AppSchema.ClockEnum](../clockenum.md)
   Identifies enum schemas in the clock domain.
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A Boolean value that determines whether the message list item displays an unread indicator.
+A Boolean value that indicates the unread status of the conversation.
 
 **Availability**:
 - iOS 14.0+
@@ -23,13 +23,13 @@ var isUnread: Bool { get }
 
 ## Discussion
 
-Configurations are immutable. To toggle the message list item’s unread indicator, create a new configuration and update the list item’s [`leadingConfiguration`](../cpmessagelistitem/leadingconfiguration.md) property.
+Specify this value at initialization time. When the value of this property is `true`, CarPlay displays an unread indicator in the row’s leading region. When the value is `false`, CarPlay doesn’t display this indicator.
 
 ## See Also
 
-### Getting the Configuration’s State
+### Getting the configuration’s state
 - [var leadingImage: UIImage?](./leadingimage.md)
-  The configuration’s image.
+  The custom image to display in the row’s leading region.
 
 
 ---

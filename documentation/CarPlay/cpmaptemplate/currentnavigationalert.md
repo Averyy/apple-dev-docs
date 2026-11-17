@@ -27,13 +27,11 @@ If a navigation alert isn’t visible, the property returns [`nil`](../../Object
 
 ## See Also
 
-### Displaying a Navigation Alert
+### Displaying navigation alerts
 - [func present(navigationAlert: CPNavigationAlert, animated: Bool)](./present%28navigationalert,animated%29.md)
   Displays a navigation alert on the map template.
 - [func dismissNavigationAlert(animated: Bool, completion: (Bool) -> Void)](./dismissnavigationalert%28animated,completion%29.md)
   Tells the map template to dismiss the visable navigation alert.
-- [class CPNavigationAlert](../cpnavigationalert.md)
-  An alert that displays map- or navigation-related information to the user.
 
 
 ---

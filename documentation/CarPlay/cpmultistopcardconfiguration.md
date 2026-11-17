@@ -21,19 +21,19 @@ class CPMultiStopCardConfiguration
 
 ## Topics
 
-### Initializers
-- [init?(coder: NSCoder)](./cpmultistopcardconfiguration/init%28coder%29.md)
+### Creating a configuration object
 - [init(title: String?, buttons: [CPTextButton])](./cpmultistopcardconfiguration/init%28title,buttons%29.md)
   Initializes a MultiStopCardConfiguration with an optional title and an array of text buttons
 - [init(title: String?, buttons: [CPTextButton], image: UIImage?)](./cpmultistopcardconfiguration/init%28title,buttons,image%29.md)
   Initializes a MultiStopCardConfiguration with an optional title, an array of text buttons, and an optional image
-### Instance Properties
-- [var buttons: [CPTextButton]](./cpmultistopcardconfiguration/buttons.md)
-  An array of text buttons to be displayed at the bottom of the card presented to configure waypoints along a route.
-- [var image: UIImage?](./cpmultistopcardconfiguration/image.md)
-  An optional image displayed alongside the @c title in the options panel, serving as an entry point to the multi-stop panel.
+- [init?(coder: NSCoder)](./cpmultistopcardconfiguration/init%28coder%29.md)
+### Getting the configuration details
 - [var title: String?](./cpmultistopcardconfiguration/title.md)
   Title of panel presented to configure waypoints along a route. If no panel is provided, the panel title will default to “Add Stop”.
+- [var image: UIImage?](./cpmultistopcardconfiguration/image.md)
+  An optional image displayed alongside the @c title in the options panel, serving as an entry point to the multi-stop panel.
+- [var buttons: [CPTextButton]](./cpmultistopcardconfiguration/buttons.md)
+  An array of text buttons to be displayed at the bottom of the card presented to configure waypoints along a route.
 
 ## Relationships
 
@@ -48,6 +48,16 @@ class CPMultiStopCardConfiguration
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
+
+## See Also
+
+### Trip and waypoints
+- [class CPTrip](./cptrip.md)
+  An object that represents a journey between an origin and a destination.
+- [class CPMapTemplateWaypoint](./cpmaptemplatewaypoint.md)
+  CPMapTemplateWaypoint represents a waypoint with associated travel estimates
+- [class CPNavigationWaypoint](./cpnavigationwaypoint.md)
+  CPNavigationWaypoint represents a point of interest along a route that provides location-based information and guidance.
 
 
 ---

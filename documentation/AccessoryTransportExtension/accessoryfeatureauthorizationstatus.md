@@ -19,7 +19,7 @@ enum AccessoryFeatureAuthorizationStatus
 
 The system returns [`AccessoryFeatureAuthorizationStatus.unknown`](./accessoryfeatureauthorizationstatus/unknown.md) until your app enrolls the feature for the accessory. Subsequent calls return the recorded status.
 
-Read the status with `AccessoryWorker/authorizationStatus(for:)` or `AccessoryGPUWorker/authorizationStatus(for:)` and enroll the feature with a matching `requestAuthorization(for:)` method.
+Read the status with [`authorizationStatus(for:)`](./accessoryworker/authorizationstatus%28for%29.md) or [`authorizationStatus(for:)`](./accessorygpuworker/authorizationstatus%28for%29.md) and enroll the feature with a matching `requestAuthorization(for:)` method.
 
 ## Topics
 
@@ -38,6 +38,14 @@ Read the status with `AccessoryWorker/authorizationStatus(for:)` or `AccessoryGP
 - [Hashable](../Swift/hashable.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+
+## See Also
+
+### Checking authorization
+- [static func authorizationStatus(for: ASAccessory) async throws -> AccessoryFeatureAuthorizationStatus](./accessorygpuworker/authorizationstatus%28for%29.md)
+  Returns the feature’s current authorization status for an accessory.
+- [static func requestAuthorization(for: ASAccessory) async throws -> AccessoryFeatureAuthorizationStatus](./accessorygpuworker/requestauthorization%28for%29.md)
+  Enrolls the feature for an accessory.
 
 
 ---

@@ -38,7 +38,7 @@ ScrollView {
 .scrollBounceBehavior(.basedOnSize)
 ```
 
-The modifier passes the scroll bounce mode through the [`Environment`](../environment.md), which means that the mode affects any scrollable views in the modified view hierarchy. Provide an axis to the modifier to constrain the kinds of scrollable views that the mode affects. For example, all the scroll views in the following example can access the mode value, but only the two nested scroll views are affected, because only they use horizontal scrolling:
+The modifier passes the scroll bounce mode through the [`Environment`](../environment.md), which means that the mode affects scrollable views in the modified view hierarchy. A scroll view doesn’t pass the mode for the axes it scrolls along to the scroll views nested inside it; nested scroll views inherit the mode only for the other axes. Provide an axis to the modifier to constrain the kinds of scrollable views that the mode affects. For example, all the scroll views in the following example can access the mode value, but only the two nested scroll views are affected, because only they use horizontal scrolling:
 
 ```swift
 ScrollView { // Defaults to vertical scrolling.

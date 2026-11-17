@@ -177,7 +177,7 @@ Then it calcuates the optimal time to wait before submitting data for the next f
         LayerRenderer.Clock().wait(until: timing.optimalInputTime)
 ```
 
-After that, the app retrieves the drawables from the current frame object. When running in visionOS 26 or later, it uses ` LayerRenderer/Frame/queryDrawables()` to retrieve all available `LayerRenderer.Drawable` objects. In earlier visionOS versions, it retrieves a single `Drawable` and puts it in an array so the output of the calls are the same type, regardless of the OS version.
+After that, the app retrieves the drawables from the current frame object. When running in visionOS 26 or later, it uses [`queryDrawables()`](./layerrenderer/frame/querydrawables%28%29.md) to retrieve all available [`LayerRenderer.Drawable`](./layerrenderer/drawable.md) objects. In earlier visionOS versions, it retrieves a single `Drawable` and puts it in an array so the output of the calls are the same type, regardless of the OS version.
 
 ```swift
         frame.startSubmission()
@@ -192,7 +192,7 @@ After that, the app retrieves the drawables from the current frame object. When 
         }()
 ```
 
-Next, it iterates through the array of `LayerRenderer.Drawable` objects and passes each `Drawable`, along with its offset index, to `handleDrawable(_:_:)`, which handles processing a single drawable.
+Next, it iterates through the array of [`LayerRenderer.Drawable`](./layerrenderer/drawable.md) objects and passes each `Drawable`, along with its offset index, to `handleDrawable(_:_:)`, which handles processing a single drawable.
 
 ```swift
         if drawables.isEmpty { break }

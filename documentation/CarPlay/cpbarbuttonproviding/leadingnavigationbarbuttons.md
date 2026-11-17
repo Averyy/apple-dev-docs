@@ -5,7 +5,7 @@
 **Role**: Instance Property  
 **Required**: Yes
 
-An array of bar buttons to display on the leading side of the navigation bar.
+Additional buttons to display at the leading edge of the navigation bar.
 
 **Availability**:
 - iOS 12.0+
@@ -24,19 +24,19 @@ var leadingNavigationBarButtons: [CPBarButton] { get set }
 
 ## Discussion
 
-The navigation bar displays up to two buttons in the leading space. When including more than two buttons in the array, the system displays only the first two buttons.
+Add no more than two buttons to this property. If you specify more than two buttons, CarPlay displays the first two in the array and ignores the rest. In CarPlay template implementations, the default value of this property is an empty array.
 
 ## See Also
 
-### Providing Navigation Bar Buttons
+### Providing navigation bar buttons
 - [var backButton: CPBarButton?](./backbutton.md)
-  A button to display as the Back button on the navigation bar.
+  A button you use to implement custom transitions.
 - [var trailingNavigationBarButtons: [CPBarButton]](./trailingnavigationbarbuttons.md)
-  An array of bar buttons to display on the trailing side of the navigation bar.
+  Additional buttons to display at the trailing edge of the navigation bar.
 - [class CPBarButton](../cpbarbutton.md)
-  A button for placement in a navigation bar.
+  A button that appears in a navigation bar.
 - [class CPMessageComposeBarButton](../cpmessagecomposebarbutton.md)
-  A button that activates Siri and initiates the compose message flow.
+  A button that activates Siri and initiates the process for composing a message.
 
 
 ---

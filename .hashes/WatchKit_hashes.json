@@ -1646,7 +1646,7 @@
     },
     "https://developer.apple.com/documentation/watchkit/wkinterfacedevice/iswaterlockenabled": {
       "file_path": "documentation/WatchKit/wkinterfacedevice/iswaterlockenabled.md",
-      "hash": "a7d8ef3fed1b6c4004f60a49e2a04fb8dae0576c8aa87df300d39fbe22d1d8a5"
+      "hash": "aeca6b6a4a8b995a0d0b26bbbbd5d0d5b3241ceda70965404cee2db5d68b6924"
     },
     "https://developer.apple.com/documentation/watchkit/wkinterfacedevice/layoutdirection": {
       "file_path": "documentation/WatchKit/wkinterfacedevice/layoutdirection.md",
@@ -4598,7 +4598,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkinterfacedevice/iswaterlockenabled.json": {
       "file_path": "documentation/WatchKit/wkinterfacedevice/iswaterlockenabled.md",
-      "hash": "a7d8ef3fed1b6c4004f60a49e2a04fb8dae0576c8aa87df300d39fbe22d1d8a5"
+      "hash": "aeca6b6a4a8b995a0d0b26bbbbd5d0d5b3241ceda70965404cee2db5d68b6924"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkinterfacedevice/layoutdirection.json": {
       "file_path": "documentation/WatchKit/wkinterfacedevice/layoutdirection.md",

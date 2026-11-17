@@ -54,9 +54,9 @@ Call [`isSupported`](../../arconfiguration/issupported.md) on an [`ARConfigurati
 - [ARError.Code.sensorUnavailable](./sensorunavailable.md)
   An error that indicates the framework fails to access a required sensor.
 - [ARError.Code.worldTrackingFailed](./worldtrackingfailed.md)
-  An error that indicates when world tracking experiences an unrecoverable problem.
+  An error that indicates world tracking experienced an unrecoverable problem.
 - [ARError.Code.geoTrackingFailed](./geotrackingfailed.md)
-  An error that indicates when localization imagery fails to match the device’s camera captures.
+  An error that indicates localization imagery fails to match the device’s camera captures.
 
 
 ---

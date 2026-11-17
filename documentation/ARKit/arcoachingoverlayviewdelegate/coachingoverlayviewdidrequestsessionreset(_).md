@@ -26,6 +26,10 @@ Implement this function to do the actions your app requires to restart the AR ex
 
 If you don’t implement this function, the coaching overlay resets the session for you––equivalent to calling [`run(_:options:)`](../arsession/run%28_,options%29.md) with the [`resetTracking`](../arsession/runoptions/resettracking.md) option––when the user taps Start Over.
 
+## Parameters
+
+- `coachingOverlayView`: The view currently active.
+
 
 ---
 

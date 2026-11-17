@@ -12,7 +12,7 @@ The height, in pixels, of the content region within the input textures to proces
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
-- tvOS 27.1+
+- tvOS 27.2+
 
 ## Declaration
 

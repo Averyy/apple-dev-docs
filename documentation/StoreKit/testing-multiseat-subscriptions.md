@@ -77,7 +77,7 @@ To test a member leaving, sign in with the member’s Sandbox Apple Account and 
 
 To test your group experience, call [`Get Customer Groups`](../AppStoreServerAPI/get-customer-groups.md) with a member’s transaction identifier, and [`Get Group Members`](../AppStoreServerAPI/get-group-members.md) with the group’s `groupId`.
 
-To test the consent flow, check [`multiSeatDataSharingConsentEligibility`](./product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.property.md) with each account:
+To test the consent flow, check `Product/SubscriptionInfo/multiSeatDataSharingConsentEligibility-swift.property` with each account:
 
 1. As the group purchaser, before they respond, check that the value is `eligible` and that your app offers its request.
 2. Present the data sharing consent sheet and choose to share group visibility. Check that the value becomes `ineligible(.alreadyConsented)`, that your app stops offering the request, and that Get Customer Groups and Get Group Members now return the group.
@@ -108,7 +108,7 @@ With developer-hosted invitations, you verify the age of each person you invite.
 
 To test a parent or guardian declining access, associate the seat of a Sandbox Apple Account with Ask to Buy turned on, choose Don’t Allow as its parent or guardian, and check that your server receives an `UNCLAIM_SEATS` notification and revokes the member’s access.
 
-Check that [`multiSeatDataSharingConsentEligibility`](./product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.property.md) returns `ineligible(.notAppleManaged)` for the group purchaser, and that your app doesn’t offer the consent request.
+Check that `Product/SubscriptionInfo/multiSeatDataSharingConsentEligibility-swift.property` returns `ineligible(.notAppleManaged)` for the group purchaser, and that your app doesn’t offer the consent request.
 
 ### Test seat changes
 

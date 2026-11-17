@@ -28,8 +28,12 @@ enum PHPickerMetadataOptions : NSUInteger;
 ### Initializers
 - [init(rawValue: UInt)](./phpickermetadataoptions/init%28rawvalue%29.md)
 ### Type Properties
+- [static var removeAppleReferenceImage: PHPickerMetadataOptions](./phpickermetadataoptions/removeapplereferenceimage.md)
+  Remove the metadata that marks the asset as an Apple Reference Image.
 - [static var removeCaptions: PHPickerMetadataOptions](./phpickermetadataoptions/removecaptions.md)
   Remove captions metadata.
+- [static var removeKeywords: PHPickerMetadataOptions](./phpickermetadataoptions/removekeywords.md)
+  Remove keyword metadata.
 - [static var removeLocation: PHPickerMetadataOptions](./phpickermetadataoptions/removelocation.md)
   Remove location metadata.
 ### Enumeration Cases

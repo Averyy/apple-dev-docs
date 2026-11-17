@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A Boolean value that indicates whether the button is in an enabled state.
+A Boolean value that indicates whether the button is enabled.
 
 **Availability**:
 - iOS 14.0+
@@ -23,13 +23,13 @@ var isEnabled: Bool { get set }
 
 ## Discussion
 
-The default value is [`true`](../../Swift/true.md).
+When the value of this property is `true`, CarPlay draws the button with an enabled appearance and reports interactions to the handler you provided at initialization time. When the value of this property is `false`, CarPlay draws the button with a dimmed appearance and doesn’t report interactions. The default value of this property is `true`.
 
 ## See Also
 
-### Managing the Button State
+### Managing the button state
 - [var isSelected: Bool](./isselected.md)
-  A Boolean value that indicates whether the button is in a selected state.
+  A Boolean value that indicates the selected state of a custom button.
 
 
 ---

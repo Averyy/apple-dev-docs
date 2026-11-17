@@ -21,15 +21,20 @@ var insertPages: some AppSchemaIntent { get }
 
 ## Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `reader` domain and one of your app’s actions matches the `insertPages` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .reader.insertPages)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `reader` domain and one of your app’s actions matches the `insertPages` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent(schema: .reader.insertPages)` Swift macro.
 
-The following example shows an intent that conforms to the `insertPages` schema:
+The following example shows an intent that conforms to the `insertPages` schema. You can create a type that conforms to the schema by adding the `@AppIntent` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `reader_insertPages` and select it from the code-completion suggestions:
 
 ```swift
 @AppIntent(schema: .reader.insertPages)
 struct ReaderInsertPagesIntent {
+    /// Image or PDF files to insert as pages.
     var files: [IntentFile]
+
+    /// Whether the new pages are inserted before or after the specified page.
     var isAfter: Bool
+
+    /// Page relative to which the files will be inserted.
     var page: <#ReaderPageEntity#>
 
     func perform() async throws -> some IntentResult {
@@ -43,6 +48,16 @@ The schema supports the following system experiences:
 - Shortcuts
 
 For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
+
+## Parameters for the insert-pages intent
+
+Each parameter in the code listing above plays a specific role when your app performs this action. The following table describes what each parameter represents and any behavior to account for when you set it.
+
+| Parameter | Type | Origin | Discussion |
+| --- | --- | --- | --- |
+| `files` | `[IntentFile]` | App Intents | Image or PDF files to insert as pages. |
+| `isAfter` | `Bool` | Swift | Whether the new pages are inserted before or after the specified page. |
+| `page` | `@AppEntity(schema: .reader.page)` | Your app | Page relative to which the files will be inserted. `ReaderPageEntity` is a placeholder name for a type that conforms to the [`page`](../readerentity/page.md) entity schema, which your app defines and implements. |
 
 ## See Also
 

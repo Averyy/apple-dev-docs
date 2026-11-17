@@ -29,18 +29,6 @@ extern CIImageOption const kCIImageProviderUserInfo;
 ### Type Properties
 - [static let applyOrientationProperty: CIImageOption](./applyorientationproperty.md)
   The key for transforming an image according to orientation metadata.
-- [static let auxiliaryDepth: CIImageOption](./auxiliarydepth.md)
-  The key into the properties dictionary indicating whether to return an auxiliary depth image.
-- [static let auxiliaryDisparity: CIImageOption](./auxiliarydisparity.md)
-  The key into the properties dictionary indicating whether to return an auxiliary disparity image.
-- [static let auxiliaryHDRGainMap: CIImageOption](./auxiliaryhdrgainmap.md)
-- [static let auxiliaryPortraitEffectsMatte: CIImageOption](./auxiliaryportraiteffectsmatte.md)
-  The key into the properties dictionary indicating whether to return auxiliary portrait effects matte.
-- [static let auxiliarySemanticSegmentationGlassesMatte: CIImageOption](./auxiliarysemanticsegmentationglassesmatte.md)
-- [static let auxiliarySemanticSegmentationHairMatte: CIImageOption](./auxiliarysemanticsegmentationhairmatte.md)
-- [static let auxiliarySemanticSegmentationSkinMatte: CIImageOption](./auxiliarysemanticsegmentationskinmatte.md)
-- [static let auxiliarySemanticSegmentationSkyMatte: CIImageOption](./auxiliarysemanticsegmentationskymatte.md)
-- [static let auxiliarySemanticSegmentationTeethMatte: CIImageOption](./auxiliarysemanticsegmentationteethmatte.md)
 - [static let cacheImmediately: CIImageOption](./cacheimmediately.md)
 - [static let colorSpace: CIImageOption](./colorspace.md)
   The key for a color space.
@@ -50,6 +38,14 @@ extern CIImageOption const kCIImageProviderUserInfo;
   The key into the properties dictionary to indicate whether to use nearest-neighbor sampling.
 - [static let properties: CIImageOption](./properties.md)
   The key for image metadata properties.
+- [static let providerTileSize: CIImageOption](./providertilesize.md)
+  A key for the image tiles size. The associated value is an `NSArray` that contains`NSNumber` objects for the dimensions of the image tiles requested from the image provider.
+- [static let textureFormat: CIImageOption](./textureformat.md)
+  The key for an OpenGL texture format.
+- [static let textureTarget: CIImageOption](./texturetarget.md)
+  The key for an OpenGL texture target.
+- [static let toneMapHDRtoSDR: CIImageOption](./tonemaphdrtosdr.md)
+- [static let contentHeadroom: CIImageOption](./contentheadroom.md)
 
 
 ---

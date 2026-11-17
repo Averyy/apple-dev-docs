@@ -15,7 +15,7 @@ Creates a request scene for handling a full OpenID4VP mobile document raw reques
 
 ```swift
 @MainActor
-@preconcurrency init(@ViewBuilder content: @escaping (OpenID4VPRawRequestContext) -> Content)
+@preconcurrency init(@ContentBuilder content: @escaping (OpenID4VPRawRequestContext) -> Content)
 ```
 
 ## Parameters

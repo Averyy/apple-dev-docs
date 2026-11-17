@@ -25,6 +25,7 @@ init(name: String, description: String? = nil, representNilExplicitlyInGenerated
 
 - `name`: A name this dynamic schema can be referenced by.
 - `description`: A natural language description of this schema.
+- `explicitNil`: If `true`, the model represents `nil` explicitly.
 - `properties`: The properties associated with this schema.
 
 ## See Also

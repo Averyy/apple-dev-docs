@@ -4,7 +4,7 @@
 **Kind**: protocol  
 **Role**: Protocol
 
-The interface for handling CarPlay life-cycle events.
+A set of methods that are called by the @c UIApplication singleton in response to CarPlay lifecycle events.
 
 **Availability**:
 - iOS 12.0+ - Deprecated in 13.0
@@ -23,21 +23,19 @@ protocol CPApplicationDelegate : UIApplicationDelegate
 
 ## Overview
 
-You must implement [`CPApplicationDelegate`](./cpapplicationdelegate.md) on the same object that serves as the delegate to your app.
+This must be implemented by the same object that serves as your application’s delegate object.
 
 ## Topics
 
-### Connecting to the CarPlay Interface
+### Instance Methods
 - [func application(UIApplication, didConnectCarInterfaceController: CPInterfaceController, to: CPWindow)](./cpapplicationdelegate/application%28_,didconnectcarinterfacecontroller,to%29.md)
-  Tells the app delegate that the app connected to the CarPlay interface.
+  The CarPlay screen has connected and is ready to present content.
 - [func application(UIApplication, didDisconnectCarInterfaceController: CPInterfaceController, from: CPWindow)](./cpapplicationdelegate/application%28_,diddisconnectcarinterfacecontroller,from%29.md)
-  Tells the app delegate that the app disconnected from the CarPlay interface.
-### Receiving the Selected Maneuver
-- [func application(UIApplication, didSelect: CPManeuver)](./cpapplicationdelegate/application%28_,didselect%29-6ybyy.md)
-  Tells the app delegate that the user selected a maneuver.
-### Handling Navigation Alert Actions
+  The CarPlay screen has disconnected.
 - [func application(UIApplication, didSelect: CPNavigationAlert)](./cpapplicationdelegate/application%28_,didselect%29-478jb.md)
-  Tells the app delegate that the user selected an action from a navigation alert.
+  If your application posts a @c CPNavigationAlert while backgrounded, a notification banner may be presented to the user. If the user taps on that banner, your application will launch on the car screen and this method will be called with the alert the user tapped.
+- [func application(UIApplication, didSelect: CPManeuver)](./cpapplicationdelegate/application%28_,didselect%29-6ybyy.md)
+  If your application posts a @c CPManeuver while backgrounded, a notification banner may be presented to the user. If the user taps on that banner, your application will launch on the car screen and this method will be called with the maneuver the user tapped.
 
 ## Relationships
 

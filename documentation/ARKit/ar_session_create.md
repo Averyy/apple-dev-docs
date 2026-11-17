@@ -15,6 +15,14 @@ Creates a new session.
 extern ar_session_tar_session_create();
 ```
 
+## Return Value
+
+An instance of `ar_session_t`.
+
+## Discussion
+
+> **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
+
 ## See Also
 
 ### Sessions

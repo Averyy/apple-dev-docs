@@ -32,11 +32,13 @@ You can update the navigation alert with new title and subtitle variants before 
 
 ## See Also
 
-### Getting Titles
+### Getting title values
 - [var titleVariants: [String]](./titlevariants.md)
   An array of title strings.
 - [var subtitleVariants: [String]](./subtitlevariants.md)
   An array of subtitle strings.
+- [func updateTitleVariants([String], subtitleVariants: [String], avatarImage: UIImage?, alert: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](./updatetitlevariants%28_,subtitlevariants,avatarimage,alert,actions,duration%29.md)
+  Update the navigation alert with new title variants, subtitle variants, image, actions, and duration.
 
 
 ---

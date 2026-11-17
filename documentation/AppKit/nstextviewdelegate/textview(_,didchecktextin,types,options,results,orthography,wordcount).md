@@ -34,7 +34,7 @@ Invoked by [`handleTextCheckingResults(_:forRange:types:options:orthography:word
 - `range`: The range that was checked.
 - `checkingTypes`: The type of checking that was performed. The possible constants are listed in [`NSTextCheckingTypes`](../../Foundation/nstextcheckingtypes.md) and can be combined using the C bit-wise `OR` operator to perform multiple checks at the same time.
 - `options`: A dictionary of values used during the checking process to perform. See Spell Checking Option Dictionary Keys for the supported values.
-- `results`: An array of [`NSTextCheckingResult`](../../Foundation/nstextcheckingresult.md) instances.
+- `results`: An array of [`NSTextCheckingResult`](../../Foundation/nstextcheckingresult.md) instances. Each result’s range is measured from the start of `range`, not from the start of the text.
 - `orthography`: The orthography of the text.
 - `wordCount`: The number of words checked.
 

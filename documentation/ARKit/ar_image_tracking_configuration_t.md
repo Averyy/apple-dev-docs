@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+Configuration for image tracking.
+
 **Availability**:
 - visionOS 1.0+
 
@@ -23,7 +25,7 @@ typedef NSObject<OS_ar_image_tracking_configuration> * ar_image_tracking_configu
 - [ar_image_anchors_enumerate_anchors](./ar_image_anchors_enumerate_anchors.md)
   Enumerates a collection of image anchors.
 - [ar_image_anchors_enumerate_anchors_f](./ar_image_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of image anchors.
+  Enumerates a collection of image anchors using a function.
 - [ar_image_anchors_get_count](./ar_image_anchors_get_count.md)
   Gets the number of image anchors in the collection.
 - [ar_image_tracking_provider_create](./ar_image_tracking_provider_create.md)
@@ -35,12 +37,13 @@ typedef NSObject<OS_ar_image_tracking_configuration> * ar_image_tracking_configu
 - [ar_image_tracking_provider_set_update_handler](./ar_image_tracking_provider_set_update_handler.md)
   Sets the handler for receiving image tracking updates.
 - [ar_image_tracking_provider_set_update_handler_f](./ar_image_tracking_provider_set_update_handler_f.md)
-  Sets the handler for receiving image tracking updates.
+  Sets the function for receiving image tracking updates.
 - [ar_image_tracking_configuration_add_reference_images](./ar_image_tracking_configuration_add_reference_images.md)
   Adds reference images to the set to be tracked.
 - [ar_image_tracking_configuration_create](./ar_image_tracking_configuration_create.md)
   Creates an image tracking configuration.
 - [ar_image_tracking_provider_copy_all_image_anchors](./ar_image_tracking_provider_copy_all_image_anchors.md)
+  Copy all image anchors.
 - [ar_reference_images_t](./ar_reference_images_t.md)
   A collection of reference images.
 - [ar_reference_images_enumerator_t](./ar_reference_images_enumerator_t.md)

@@ -29,6 +29,8 @@ This project requires an iPhone or iPad running at least iOS 15 or iPadOS 15. It
   An element of a RealityKit scene to which you attach components that provide appearance and behavior characteristics for the entity.
 - [protocol Component](./component.md)
   A representation of a geometry or a behavior that you apply to an entity.
+- [protocol System](./system.md)
+  An object that affects multiple entities in every update of a RealityKit scene.
 
 
 ---

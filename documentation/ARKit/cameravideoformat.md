@@ -22,6 +22,8 @@ struct CameraVideoFormat
   The camera positions for this video format.
 - [var cameraType: CameraFrameProvider.CameraType](./cameravideoformat/cameratype.md)
   The camera type for this video format.
+- [var cameraRectification: CameraFrameProvider.CameraRectification](./cameravideoformat/camerarectification.md)
+  The camera rectification for this video format.
 - [var frameSize: CGSize](./cameravideoformat/framesize.md)
   The frame size for this video format.
 - [var pixelFormat: OSType](./cameravideoformat/pixelformat.md)
@@ -32,14 +34,12 @@ struct CameraVideoFormat
   The minimum frame duration for this video format, in seconds.
 - [static func supportedVideoFormats(for: CameraFrameProvider.CameraType, cameraPositions: [CameraFrameProvider.CameraPosition]) -> [CameraVideoFormat]](./cameravideoformat/supportedvideoformats%28for,camerapositions%29.md)
   Returns the video formats the provided camera type and camera position supports.
-- [var description: String](./cameravideoformat/description.md)
-  A textual representation of this camera video format.
 ### Operators
 - [static func == (CameraVideoFormat, CameraVideoFormat) -> Bool](./cameravideoformat/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two camera video formats are equal.
 ### Instance Properties
-- [var cameraRectification: CameraFrameProvider.CameraRectification](./cameravideoformat/camerarectification.md)
-  The camera rectification for this video format.
+- [var description: String](./cameravideoformat/description.md)
+  A textual representation of this camera video format.
 ### Instance Methods
 - [func hash(into: inout Hasher)](./cameravideoformat/hash%28into%29.md)
   Hashes the essential components of this camera video format.

@@ -32,7 +32,7 @@ The updated trip uses the default time-remaining color. To change the color, use
 
 ## See Also
 
-### Providing Trip Estimates
+### Providing trip estimates
 - [func update(CPTravelEstimates, for: CPTrip, with: CPTimeRemainingColor)](./update%28_,for,with%29.md)
   Updates travel estimates, such as arrival time and the remaining time and distance for a trip, with the specified time-remaining color.
 - [enum CPTimeRemainingColor](../cptimeremainingcolor.md)

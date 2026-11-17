@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Presents a template modally.
+Presents the template modally over your app’s navigation interface.
 
 **Availability**:
 - iOS 14.0+
@@ -27,31 +27,23 @@ func presentTemplate(_ templateToPresent: CPTemplate, animated: Bool) async thro
 
 ## Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
->
-> ```swift
-> func presentTemplate(_ templateToPresent: CPTemplate, animated: Bool) async throws -> Bool
-> ```
->
-> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
+You can present only one modal template at a time from your app. You can determine if there is an existing modal template using the [`presentedTemplate`](./presentedtemplate.md) property. To dismiss a previously presented template, call the [`dismissTemplate(animated:completion:)`](./dismisstemplate%28animated,completion%29.md) method.
 
-CarPlay can only present one modal template at a time. `templateToPresent` must be one of [`CPActionSheetTemplate`](../cpactionsheettemplate.md), [`CPAlertTemplate`](../cpalerttemplate.md), or [`CPVoiceControlTemplate`](../cpvoicecontroltemplate.md).
-
-CarPlay calls `completion` after it presents the template. The Boolean parameter is [`true`](../../Swift/true.md) when the presentation succeeds; otherwise, it’s [`false`](../../Swift/false.md) and CarPlay provides an error that describes the failure. CarPlay throws an exception if the presentation fails and you don’t provide a closure.
+> **Note**: You can call this method from synchronous code using a completion handler, or you can call it as an asynchronous method without the completion handler. For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
-- `templateToPresent`: The template to present modally.
-- `animated`: If [`true`](../../Swift/true.md), CarPlay animates the presentation of the template.
-- `completion`: The closure CarPlay calls after it presents the template.
+- `templateToPresent`: The template to present modally. Specify only templates of type [`CPActionSheetTemplate`](../cpactionsheettemplate.md), [`CPAlertTemplate`](../cpalerttemplate.md), or [`CPVoiceControlTemplate`](../cpvoicecontroltemplate.md). All other template types generate an error.
+- `animated`: If `true`, CarPlay animates the presentation of the template.
+- `completion`: The closure to run with the results of the operation. This closure receives a Boolean value and an optional error as parameters. The Boolean value is `true` if CarPlay successfully presented the template modally. If the value is `false`, CarPlay provides an error with information about what happened. If you don’t provide a closure, CarPlay throws an exception when an error occurs. CarPlay runs this closure on your app’s main thread.
 
 ## See Also
 
-### Displaying Templates Modally
+### Presenting a template modally
 - [func dismissTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./dismisstemplate%28animated,completion%29.md)
-  Dismisses a modal template.
+  Dismisses the template you previously presented modally.
 - [var presentedTemplate: CPTemplate?](./presentedtemplate.md)
-  The interface controller’s current modal template.
+  The current modally-presented template.
 
 
 ---

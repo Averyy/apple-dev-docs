@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Tells the delegate that the template will appear onscreen.
+Tells the delegate that the controller is about to show the specified template in your interface.
 
 **Availability**:
 - iOS 12.0+
@@ -21,19 +21,24 @@ optional func templateWillAppear(_ aTemplate: CPTemplate, animated: Bool)
 - (void) templateWillAppear:(CPTemplate *) aTemplate animated:(BOOL) animated;
 ```
 
+## Discussion
+
+The interface controller calls this method before making the template’s content visible in your app’s interface. Use this method to perform additional tasks before the template’s appearance.
+
 ## Parameters
 
-- `animated`: A Boolean value indicating whether the system animates the presentation of the template.
+- `aTemplate`: The template that’s about to appear.
+- `animated`: `true` if the system animates the appearance of the template.
 
 ## See Also
 
-### Handling Display Events
+### Handling display-related events
 - [func templateDidAppear(CPTemplate, animated: Bool)](./templatedidappear%28_,animated%29.md)
-  Tells the delegate that the template did appear onscreen.
+  Tells the delegate that the controller showed the specified template in your interface.
 - [func templateWillDisappear(CPTemplate, animated: Bool)](./templatewilldisappear%28_,animated%29.md)
-  Tells the delegate that the template will disappear from the screen.
+  Tells the delegate that the controller is about to remove the specified template in your interface.
 - [func templateDidDisappear(CPTemplate, animated: Bool)](./templatediddisappear%28_,animated%29.md)
-  Tells the delegate that the template did disappear from the screen.
+  Tells the delegate that the controller removed the specified template from your interface.
 
 
 ---

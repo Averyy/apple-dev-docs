@@ -19,6 +19,12 @@ func makeAsyncIterator() -> CameraFrameProvider.CameraFrameUpdates.Iterator
 
 An Iterator for `Events`
 
+## See Also
+
+### Iterating over camera updates
+- [CameraFrameProvider.CameraFrameUpdates.Iterator](./iterator.md)
+  An asynchronous iterator that produces camera frame elements on an asynchronous sequence.
+
 
 ---
 

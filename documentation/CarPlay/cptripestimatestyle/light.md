@@ -23,7 +23,7 @@ CPTripEstimateStyleLight
 
 ## See Also
 
-### Styles
+### Getting the style
 - [CPTripEstimateStyle.dark](./dark.md)
   The dark trip estimate display style.
 

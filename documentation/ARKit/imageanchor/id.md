@@ -26,8 +26,6 @@ var id: UUID { get }
   The estimated scale factor between the tracked image’s physical size and the reference image’s size.
 - [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking this image.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 
 
 ---

@@ -21,6 +21,7 @@ var id: UUID { get }
 
 ### Inspecting an anchor
 - [var timestamp: TimeInterval](./timestamp.md)
+  The timestamp of this anchor
 - [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The position and orientation of this anchor in world space.
 

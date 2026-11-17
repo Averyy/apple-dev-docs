@@ -29,17 +29,18 @@ A transcript records what Siri does while running one scenario. For each turn, i
 - the skills Siri loads
 - the reply Siri gives
 
-A [`SiriExpectationEvaluator`](./siriexpectationevaluator.md) reads the transcript to compute metrics. When you write an evaluator of your own, read the transcript through the [`siriTranscript`](./siriscenariosubject/siritranscript.md) property of the evaluation subject.
+A [`SiriExpectationEvaluator`](./siriexpectationevaluator.md) reads the transcript to compute metrics. When you write an evaluator of your own, read the transcript through the [`siriTranscript`](./siriscenariosubject/siritranscript.md) property of the evaluation subject. The transcript holds calls, entities, and skills only for the apps your scenario’s expectations name, and never for Apple’s apps. It also doesn’t mark a turn that the run cuts short, so don’t treat a call or skill that’s missing from it as proof that Siri didn’t use it. Siri’s reply, the arguments of a recorded call, and the values nested in a recorded entity aren’t filtered by app, so they can include another app’s data.
 
 Look up a turn with [`turn(for:)`](./siritranscript/turn%28for%29.md) using the identifier of the [`UserTurn`](./userturn.md) that produces it, not its position. Identifier lookup keeps a run that stops early from pairing a recorded turn with the wrong turn from the scenario.
 
-The following shows a function that counts the intents Siri runs during a turn:
+The following shows a function that counts the intents Siri runs during a turn, or returns `nil` for a turn the run never reaches:
 
 ```swift
-func ranIntentCount(for turn: UserTurn, in subject: SiriScenarioSubject) -> Int {
-    // Look up the recorded turn by the identifier.
+func ranIntentCount(for turn: UserTurn, in subject: SiriScenarioSubject) -> Int? {
+    // Look up the recorded turn by the identifier. A turn the run
+    // never reaches has no record.
     guard let recorded = subject.siriTranscript.turn(for: turn.id) else {
-        return 0
+        return nil
     }
 
     // Count the calls that run, not the ones that stop to ask a

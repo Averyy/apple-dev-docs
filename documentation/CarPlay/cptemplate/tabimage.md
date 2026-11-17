@@ -27,7 +27,7 @@ This image has precedence over any system item that [`tabSystemItem`](./tabsyste
 
 ## See Also
 
-### Accessing Tab Information
+### Accessing tab information
 - [var tabTitle: String?](./tabtitle.md)
   A short title that describes the content of the tab.
 - [var tabSystemItem: UITabBarItem.SystemItem](./tabsystemitem.md)

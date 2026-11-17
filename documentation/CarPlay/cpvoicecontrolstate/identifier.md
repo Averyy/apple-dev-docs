@@ -27,7 +27,7 @@ Use [`identifier`](./identifier.md) when calling the [`activateVoiceControlState
 
 ## See Also
 
-### Getting State Information
+### Getting the state information
 - [var titleVariants: [String]?](./titlevariants.md)
   The array of title variants for the voice control state.
 - [var image: UIImage?](./image.md)

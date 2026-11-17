@@ -20,6 +20,10 @@ optional func session(_ session: ARSession, didFailWithError error: any Error)
 - (void) session:(ARSession *) session didFailWithError:(NSError *) error;
 ```
 
+## Discussion
+
+On failure the session will be paused.
+
 ## Parameters
 
 - `session`: The session providing information.

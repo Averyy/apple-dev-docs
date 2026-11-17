@@ -4,6 +4,8 @@
 **Kind**: init  
 **Role**: Initializer
 
+Creates a Core Image context that commits commands to the specified Metal command queue.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -22,6 +24,15 @@ init(mtlCommandQueue commandQueue: any MTLCommandQueue, options: [CIContextOptio
 + (CIContext *) contextWithMTLCommandQueue:(id<MTLCommandQueue>) commandQueue options:(NSDictionary<NSString *,id> *) options;
 ```
 
+## Return Value
+
+A Core Image context.
+
+## Parameters
+
+- `commandQueue`: The Metal command queue to use for operations.
+- `options`: A dictionary that contains options for creating a [`CIContext`](../cicontext.md) object. You can pass any of the keys defined in [`CIContextOption`](../cicontextoption.md) along with the appropriate value.
+
 ## See Also
 
 ### Creating a Context for GPU-Based Rendering
@@ -30,6 +41,7 @@ init(mtlCommandQueue commandQueue: any MTLCommandQueue, options: [CIContextOptio
 - [init(mtlDevice: any MTLDevice, options: [CIContextOption : Any]?)](./init%28mtldevice,options%29-26usb.md)
   Creates a Core Image context using the specified Metal device and options.
 - [init(mtlCommandQueue: any MTLCommandQueue)](./init%28mtlcommandqueue%29-7dtqk.md)
+  Creates a Core Image context that commits commands to the specified Metal command queue.
 
 
 ---

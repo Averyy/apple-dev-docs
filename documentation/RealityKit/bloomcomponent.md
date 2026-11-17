@@ -81,6 +81,7 @@ To stay responsive to the device’s available thermal headroom, read `ProcessIn
 - [struct BloomOptionsComponent](./bloomoptionscomponent.md)
   A component that sets the properties for the bloom post-processing effects.
 - [struct ToneMappingComponent](./tonemappingcomponent.md)
+  A component that maps a scene’s brightness to display brightness using exposure and tone curve controls.
 
 
 ---

@@ -17,6 +17,14 @@ static func rowResize(directions: VerticalDirection.Set) -> PointerStyle
 
 ## Discussion
 
+The following table shows the pointer style for each set of directions:
+
+| Directions | Pointer |
+| --- | --- |
+| `.up` | ![A horizontal bar with an arrow pointing up.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-rowResize-up@2x.png) |
+| `.down` | ![A horizontal bar with an arrow pointing down.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-rowResize-down@2x.png) |
+| `.all` | ![A horizontal bar with arrows pointing up and down.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-rowResize@2x.png) |
+
 You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 
 ## Parameters

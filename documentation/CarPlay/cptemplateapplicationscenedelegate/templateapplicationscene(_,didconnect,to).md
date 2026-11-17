@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Tells the delegate about the addition of a CarPlay scene to your navigation app.
+Tells the delegate that CarPlay added a main scene to your navigation app.
 
 **Availability**:
 - iOS 13.0+
@@ -23,29 +23,29 @@ optional func templateApplicationScene(_ templateApplicationScene: CPTemplateApp
 
 ## Mentions
 
-- [Displaying Content in CarPlay](../displaying-content-in-carplay.md)
+- [Building your app’s initial CarPlay interface](../building-your-apps-initial-carplay-interface.md)
 
 ## Discussion
 
-CarPlay calls this method when it launches your navigation app and connects the scene. Create an instance of your map-drawing view controller and assign it to the window’s root view controller. Use the interface controller to present your user interface templates. You must set both the window’s root view controller and the scene’s root template before returning from this method.
+CarPlay calls this method when it launches your navigation app and connects a scene. This method is the entry point for your app, and you use it to prepare your app and configure its interface. In your implementation, set the root view controller of the provided `window` object to the view controller object you use to display your custom map content. In addition, set the root template of the provided `interfaceController` object to an instance of the [`CPMapTemplate`](../cpmaptemplate.md) type. CarPlay requires you to install the root template and set the window’s view controller before this method returns.
 
-> ❗ **Important**:  CarPlay calls this method exclusively for navigation apps. All other categories of apps must implement [`templateApplicationScene(_:didConnect:)`](./templateapplicationscene%28_,didconnect%29.md) instead.
+> ❗ **Important**: CarPlay calls this method exclusively for navigation apps. If you create a different type of app, implement the [`templateApplicationScene(_:didDisconnect:from:)`](./templateapplicationscene%28_,diddisconnect,from%29.md) method instead of this one.
 
 ## Parameters
 
-- `templateApplicationScene`: The scene connecting to the app.
-- `interfaceController`: The interface controller for managing the user interface of this scene.
-- `window`: The window where the app draws the map content.
+- `templateApplicationScene`: The new scene that CarPlay creates.
+- `interfaceController`: The object you use to manage the interface for the scene.
+- `window`: The window you use to draw your app’s map content.
 
 ## See Also
 
-### Responding to the Scene Life Cycle
+### Responding to scene life-cycle events
 - [func templateApplicationScene(CPTemplateApplicationScene, didConnect: CPInterfaceController)](./templateapplicationscene%28_,didconnect%29.md)
-  Tells the delegate about the addition of a CarPlay scene to the app.
+  Tells the delegate that CarPlay added a main scene to your app.
 - [func templateApplicationScene(CPTemplateApplicationScene, didDisconnectInterfaceController: CPInterfaceController)](./templateapplicationscene%28_,diddisconnectinterfacecontroller%29.md)
-  Tells the delegate when CarPlay removes a scene from the app.
+  Tells the delegate about the removal of a CarPlay scene from your app.
 - [func templateApplicationScene(CPTemplateApplicationScene, didDisconnect: CPInterfaceController, from: CPWindow)](./templateapplicationscene%28_,diddisconnect,from%29.md)
-  Tells the delegate when CarPlay removes a scene from your navigation app.
+  Tells the delegate about the removal of a CarPlay scene from your navigation app.
 
 
 ---

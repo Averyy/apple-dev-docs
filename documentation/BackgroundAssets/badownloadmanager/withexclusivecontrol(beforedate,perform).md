@@ -24,6 +24,12 @@ func withExclusiveControl(beforeDate date: Date, perform performHandler: @escapi
 - (void) performWithExclusiveControlBeforeDate:(NSDate *) date performHandler:(void (^)(BOOL acquiredLock, NSError *error)) performHandler;
 ```
 
+## See Also
+
+### Synchronizing manager access
+- [func withExclusiveControl((Bool, (any Error)?) -> Void)](./withexclusivecontrol%28_%29-2ang9.md)
+  Attempts to acquire immediate, exclusive access to the download manager.
+
 
 ---
 

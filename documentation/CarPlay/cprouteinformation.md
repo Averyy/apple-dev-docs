@@ -23,11 +23,10 @@ class CPRouteInformation
 
 ## Topics
 
-### Initializers
+### Creating route information
 - [init(maneuvers: [CPManeuver], laneGuidances: [CPLaneGuidance], currentManeuvers: [CPManeuver], currentLaneGuidance: CPLaneGuidance, trip: CPTravelEstimates, maneuverTravelEstimates: CPTravelEstimates)](./cprouteinformation/init%28maneuvers,laneguidances,currentmaneuvers,currentlaneguidance,trip,maneuvertravelestimates%29.md)
   Initializes a new route information object with maneuvers, lane guidances, the current maneuvers, the current lane guidance, and trip and current maneuver travel estimates.
-- [init(maneuvers: [CPManeuver], laneGuidances: [CPLaneGuidance], currentManeuvers: [CPManeuver], currentLaneGuidance: CPLaneGuidance, tripTravelEstimates: CPTravelEstimates, maneuverTravelEstimates: CPTravelEstimates)](./cprouteinformation/init%28maneuvers,laneguidances,currentmaneuvers,currentlaneguidance,triptravelestimates,maneuvertravelestimates%29.md)
-### Properties
+### Getting route details
 - [var currentLaneGuidance: CPLaneGuidance](./cprouteinformation/currentlaneguidance.md)
   A lane guidance object that describes the current lane guidance.
 - [var currentManeuvers: [CPManeuver]](./cprouteinformation/currentmaneuvers.md)
@@ -40,6 +39,8 @@ class CPRouteInformation
   An array of maneuver objects.
 - [var tripTravelEstimates: CPTravelEstimates](./cprouteinformation/triptravelestimates.md)
   A travel estimates object that describes the estimated time and distance for the current trip.
+### Initializers
+- [init(maneuvers: [CPManeuver], laneGuidances: [CPLaneGuidance], currentManeuvers: [CPManeuver], currentLaneGuidance: CPLaneGuidance, tripTravelEstimates: CPTravelEstimates, maneuverTravelEstimates: CPTravelEstimates)](./cprouteinformation/init%28maneuvers,laneguidances,currentmaneuvers,currentlaneguidance,triptravelestimates,maneuvertravelestimates%29.md)
 
 ## Relationships
 
@@ -57,15 +58,16 @@ class CPRouteInformation
 
 ## See Also
 
-### Routes, lanes and junctions
-- [class CPLane](./cplane.md)
-  A class that describes characteristics of a lane on a roadway.
-- [class CPLaneGuidance](./cplaneguidance.md)
-  A class that provides information that describes the number of lanes on a roadway and navigation instruction variants.
-- [enum CPLaneStatus](./cplanestatus.md)
-  Values that describe the status or preferability of a lane.
-- [enum CPJunctionType](./cpjunctiontype.md)
-  Values that represent types of roadway junctions.
+### Route details
+- [class CPRouteChoice](./cproutechoice.md)
+  A possible route for a trip.
+- [class CPRouteDetail](./cproutedetail.md)
+- [class CPRouteSegment](./cproutesegment.md)
+  CPRouteSegment describes information pertaining to a segment of a route.
+- [enum CPRerouteReason](./cpreroutereason.md)
+  Values that represent reasons for navigation rerouting.
+- [enum CPRouteSource](./cproutesource.md)
+- [func NSStringFromCPRerouteReason(CPRerouteReason) -> String!](./nsstringfromcpreroutereason%28_%29.md)
 
 
 ---

@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a message compose button that displays a custom image.
+Creates a button for composing messages that uses a custom image you provide.
 
 **Availability**:
 - iOS 14.0+
@@ -23,23 +23,18 @@ init(image: UIImage)
 
 ## Return Value
 
-A message compose button with the custom image.
-
-## Discussion
-
-> **Note**:  This button type does not use a handler. Instead, tapping this button activates Siri and initiates the compose message flow.
+An initialized bar button for composing messages
 
 ## Parameters
 
-- `image`: The image to display on the button.
+- `image`: The image to display in the button. Provide an image that scales to different sizes. For best results, initialize your image object with an SF Symbol.
 
 ## See Also
 
-### Creating a Message Compose Bar Button
+### Creating a message compose bar button
 - [init()](./init%28%29.md)
-  Creates a message compose button with a system-provided image.
+  Creates a button for composing messages that uses the system-provided image.
 - [+ new](./new.md)
-  Creates a message compose button with a system-provided image.
 
 
 ---

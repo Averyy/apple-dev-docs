@@ -23,14 +23,14 @@ class CPLane
 
 ## Topics
 
-### Properties
+### Getting the lane angles
 - [var primaryAngle: Measurement<UnitAngle>](./cplane/primaryangle.md)
   A value that represents the angle the framework highlights if this lane is preferred or good.
 - [var secondaryAngles: [Measurement<UnitAngle>]](./cplane/secondaryangles.md)
   A list of the remaining angles of this lane guidance.
+### Getting the lane status
 - [var status: CPLaneStatus](./cplane/status.md)
   A value that describes the lane’s status.
-### Lane status
 - [enum CPLaneStatus](./cplanestatus.md)
   Values that describe the status or preferability of a lane.
 ### Initializers
@@ -59,15 +59,18 @@ class CPLane
 
 ## See Also
 
-### Routes, lanes and junctions
-- [class CPRouteInformation](./cprouteinformation.md)
-  A class that describes the characteristic elements of a route.
+### Lanes and junctions
 - [class CPLaneGuidance](./cplaneguidance.md)
   A class that provides information that describes the number of lanes on a roadway and navigation instruction variants.
 - [enum CPLaneStatus](./cplanestatus.md)
   Values that describe the status or preferability of a lane.
 - [enum CPJunctionType](./cpjunctiontype.md)
   Values that represent types of roadway junctions.
+- [enum CPTrafficSide](./cptrafficside.md)
+  Values that represent which side of the road the traffic drives on.
+- [func NSStringFromCPJunctionType(CPJunctionType) -> String!](./nsstringfromcpjunctiontype%28_%29.md)
+- [func NSStringFromCPLaneStatus(CPLaneStatus) -> String!](./nsstringfromcplanestatus%28_%29.md)
+- [func NSStringFromCPTrafficSide(CPTrafficSide) -> String!](./nsstringfromcptrafficside%28_%29.md)
 
 
 ---

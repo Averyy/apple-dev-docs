@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A string that the header displays as a subtitle.
+The secondary text to display in the header area of the section.
 
 **Availability**:
 - iOS 15.0+
@@ -23,11 +23,13 @@ var headerSubtitle: String? { get }
 
 ## See Also
 
-### Configuring Section Headers
+### Getting the section’s header content
+- [var header: String?](./header.md)
+  The main text to display in the header area of the section.
 - [var headerButton: CPButton?](./headerbutton.md)
-  A button that the section header displays.
+  The button to display in the header area of the section.
 - [var headerImage: UIImage?](./headerimage.md)
-  An image that the section header displays.
+  The image to display in the header area of the section.
 
 
 ---

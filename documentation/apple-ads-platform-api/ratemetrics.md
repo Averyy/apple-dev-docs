@@ -61,8 +61,8 @@ The `RateMetrics` reports ratio or rate values segmented by attribution type. Th
   Action count metrics breakdown by attribution type.
 - [object CostMetrics](./costmetrics.md)
   Cost metrics breakdown by attribution type.
-- [type ReportingAdChannelType](./reportingadchanneltype.md)
-  The ad channel that served a report row’s metrics.
+- [type ReportingBillingEvent](./reportingbillingevent.md)
+  The billing event of the campaign a report row belongs to.
 
 
 ---

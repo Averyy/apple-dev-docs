@@ -24,11 +24,13 @@ struct MeshAnchor
   The shape of a mesh anchor.
 - [MeshAnchor.Geometry](./meshanchor/geometry-swift.struct.md)
   The shapes that make up a mesh anchor.
-- [MeshAnchor.MeshClassification](./meshanchor/meshclassification.md)
-  The kinds of classification a face of a mesh can have.
 ### Inspecting mesh anchors
 - [var id: UUID](./meshanchor/id.md)
   The unique identifier of this anchor.
+### Deprecated
+- [MeshAnchor.MeshClassification](./meshanchor/meshclassification.md)
+  The kinds of classification a face of a mesh can have.
+### Instance Properties
 - [var description: String](./meshanchor/description.md)
   A textual representation of this anchor.
 ### Default Implementations

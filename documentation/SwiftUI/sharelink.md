@@ -143,8 +143,6 @@ ShareLink(
   A control for navigating to a URL.
 - [struct SharePreview](./sharepreview.md)
   A representation of a type to display in a share preview.
-- [struct TextFieldLink](./textfieldlink.md)
-  A control that requests text input from the user when pressed.
 - [struct HelpLink](./helplink.md)
   A button with a standard appearance that opens app-specific help documentation.
 

@@ -22,7 +22,7 @@ var extent: simd_float3 { get }
 
 ## Discussion
 
-The [`extent`](../arworldmap/extent.md) and [`center`](../arworldmap/center.md) properties together define a bounding box for the data recorded in the reference object in its local coordinate system. You define that coordinate system with the transform parameter when calling `extractReferenceObject(transform:center:extent:)`, and can modify it by creating another reference object with [`applyingTransform(_:)`](./applyingtransform%28_%29.md).
+The [`extent`](./extent.md) and [`center`](./center.md) properties together define a bounding box for the data recorded in the reference object in its local coordinate system. You define that coordinate system with the transform parameter when calling [`createReferenceObject(transform:center:extent:completionHandler:)`](../arsession/createreferenceobject%28transform,center,extent,completionhandler%29.md), and can modify it by creating another reference object with [`applyingTransform(_:)`](./applyingtransform%28_%29.md).
 
 
 ---

@@ -24,9 +24,9 @@ enum Outcome
 - [SiriTranscript.IntentInvocation.Outcome.succeeded](./outcome-swift.enum/succeeded.md)
   The call ran and succeeded.
 - [SiriTranscript.IntentInvocation.Outcome.failed](./outcome-swift.enum/failed.md)
-  The call ran and failed, or could not find what it needed.
+  Siri called it and it failed: its tool threw, or it ended in another error. It doesn’t count as having run.
 - [SiriTranscript.IntentInvocation.Outcome.needsInput](./outcome-swift.enum/needsinput.md)
-  Siri stopped to ask the person for a missing value or to choose between candidates.
+  Siri stopped to ask the person for a missing value or to choose between candidates, or the person cancelled the call when asked.
 - [SiriTranscript.IntentInvocation.Outcome.awaitingConfirmation](./outcome-swift.enum/awaitingconfirmation.md)
   Siri chose the call and its arguments, and asked the person to confirm before running it.
 - [SiriTranscript.IntentInvocation.Outcome.unknown](./outcome-swift.enum/unknown.md)

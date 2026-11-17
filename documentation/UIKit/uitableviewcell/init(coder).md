@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a table view from data in an unarchiver.
+Creates a table view cell from data in an unarchiver.
 
 **Availability**:
 - iOS 2.0+

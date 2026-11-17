@@ -19,6 +19,15 @@ func updateTitleVariants(_ titleVariants: [String])
 - (void) updateTitleVariants:(NSArray<NSString *> *) titleVariants;
 ```
 
+## See Also
+
+### Managing the button content
+- [var image: UIImage](./image.md)
+  The image displayed on the button.
+- [func updateImage(UIImage)](./updateimage%28_%29.md)
+- [var titleVariants: [String]](./titlevariants.md)
+  An array of title variants for the button.
+
 
 ---
 

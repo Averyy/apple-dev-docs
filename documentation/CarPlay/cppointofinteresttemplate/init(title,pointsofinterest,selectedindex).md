@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a Point of Interest template with a title, the points of interest to display, and the initial selection’s index.
+Creates a point of interest template with a title, the points of interest to display, and the initial selection’s index.
 
 **Availability**:
 - iOS 14.0+
@@ -33,7 +33,7 @@ init(title: String, pointsOfInterest: [CPPointOfInterest], selectedIndex: Int)
 
 ## See Also
 
-### Creating a Point of Interest Template
+### Creating a point of interest template
 - [class CPPointOfInterest](../cppointofinterest.md)
   An object that describes a point of interest on the template’s map and in its scrollable picker.
 

@@ -46,7 +46,7 @@ Additionally, your widget’s buttons and toggles behave differently to match th
 
 ### Test widgets in CarPlay
 
-To test widgets in CarPlay, preview your widget in Xcode to verify that your widget works in StandBy and the CarPlay Simulator. For more information, refer to [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md) and [Using the CarPlay Simulator](../CarPlay/using-the-carplay-simulator.md).
+To test widgets in CarPlay, preview your widget in Xcode to verify that your widget works in StandBy and the CarPlay Simulator. For more information, refer to [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md) and [Testing your app in CarPlay Simulator](../CarPlay/testing-your-app-in-carplay-simulator.md).
 
 ## See Also
 

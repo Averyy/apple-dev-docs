@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-An attribute to adjust the pitch the spoken speech.
+An attribute to adjust the pitch of the spoken speech.
 
 **Availability**:
 - iOS 15.0+

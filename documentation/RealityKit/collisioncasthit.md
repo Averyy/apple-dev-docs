@@ -60,6 +60,7 @@ The frame of reference for the position and normal of the hit depends on the ref
 - [enum CollisionCastQueryType](./collisioncastquerytype.md)
   The kinds of ray and convex shape cast queries that you can make.
 - [struct PixelCastHit](./pixelcasthit.md)
+  A hit result of a pixel cast that identifies the entity and surface point a ray intersects.
 
 
 ---

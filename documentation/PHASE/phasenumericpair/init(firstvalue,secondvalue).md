@@ -24,6 +24,11 @@ init(firstValue first: Double, secondValue second: Double)
 - (instancetype) initWithFirstValue:(double) first secondValue:(double) second;
 ```
 
+## Parameters
+
+- `first`: The first value in the pair.
+- `second`: The second value in the pair.
+
 
 ---
 

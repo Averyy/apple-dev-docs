@@ -20,6 +20,10 @@ class BEWebContentFilter
 @interface BEWebContentFilter : NSObject
 ```
 
+## Overview
+
+This class determines whether to block a URL your browser app requests, and lets a guardian approve exceptions. Call its methods to evaluate a URL your browser app loads, and if the URL is blocked, to request or apply a guardian’s approval.
+
 ## Topics
 
 ### Managing URL blocking
@@ -28,13 +32,15 @@ class BEWebContentFilter
 ### Evaluating URLs
 - [func evaluateURL(URL, completionHandler: (Bool, Data?) -> Void)](./bewebcontentfilter/evaluateurl%28_,completionhandler%29.md)
   Determines whether to block a URL.
+- [func evaluateURL(URL, mainFrameURL: URL, isMainFrame: Bool, completionHandler: (Bool, Data?) -> Void)](./bewebcontentfilter/evaluateurl%28_,mainframeurl,ismainframe,completionhandler%29.md)
+  Determines whether to block a URL, using the main document’s URL as navigation context.
 - [class var shouldEvaluateURLs: Bool](./bewebcontentfilter/shouldevaluateurls.md)
   Determines whether the built-in web content filter is active.
-### Instance Methods
-- [func evaluateURL(URL, mainFrameURL: URL, isMainFrame: Bool, completionHandler: (Bool, Data?) -> Void)](./bewebcontentfilter/evaluateurl%28_,mainframeurl,ismainframe,completionhandler%29.md)
+### Requesting permission for a blocked URL
 - [func requestPermission(for: URL, referrerURL: URL?, presenting: UIView?, completionHandler: (BEWebContentFilter.PermissionDecision, (any Error)?) -> Void)](./bewebcontentfilter/requestpermission%28for,referrerurl,presenting,completionhandler%29.md)
-### Enumerations
+  Requests permission to add a blocked URL to the web content filter’s allow list.
 - [BEWebContentFilter.PermissionDecision](./bewebcontentfilter/permissiondecision.md)
+  The outcome of a request to add a blocked URL to the web content filter’s allow list.
 
 ## Relationships
 

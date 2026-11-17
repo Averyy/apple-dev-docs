@@ -22,9 +22,9 @@ class var isClassificationSupported: Bool { get }
 
 ## Discussion
 
-Plane classification is available on iOS devices with A12 or later GPU.
+Plane classification is available on iOS devices with an A12 Bionic chip or later.
 
-On devices without plane classification support, all plane anchors report a [`classification`](./classification-2hi2p.md) value of  [`ARPlaneClassificationNone`](../arplaneclassification/arplaneclassificationnone.md) and a [`classificationStatus`](./classificationstatus.md) value of [`ARPlaneClassificationStatusNotAvailable`](../arplaneclassificationstatus/arplaneclassificationstatusnotavailable.md).
+On devices without plane classification support, all plane anchors report a [`classification`](./classification-2hi2p.md) value of [`ARPlaneClassificationNone`](../arplaneclassification/arplaneclassificationnone.md) and a [`classificationStatus`](./classificationstatus.md) value of [`ARPlaneClassificationStatusNotAvailable`](../arplaneclassificationstatus/arplaneclassificationstatusnotavailable.md).
 
 ## See Also
 

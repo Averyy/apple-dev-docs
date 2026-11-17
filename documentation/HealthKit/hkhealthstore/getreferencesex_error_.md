@@ -24,12 +24,6 @@ Reads the sex whose reference ranges should be used when classifying a clinical 
 
 Before calling this method, the application should request authorization to access objects with the HKCharacteristicType identified by HKCharacteristicTypeIdentifierReferenceSex.
 
-```
-           Returns YES and sets referenceSex when the read succeeds; HKReferenceSexNotSet then means the
-           user has not provided a value. Returns NO and populates error when read authorization was not
-           granted or the read itself failed, and leaves referenceSex unchanged.
-```
-
 
 ---
 

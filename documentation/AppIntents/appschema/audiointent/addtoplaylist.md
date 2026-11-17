@@ -21,14 +21,17 @@ var addToPlaylist: some AppSchemaIntent { get }
 
 ## Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `audio` domain and one of your app’s actions matches the `addToPlaylist` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .audio.addToPlaylist)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `audio` domain and one of your app’s actions matches the `addToPlaylist` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent(schema: .audio.addToPlaylist)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an intent that conforms to the `addToPlaylist` schema:
+The following example shows an intent that conforms to the `addToPlaylist` schema. You can create a type that conforms to the schema by adding the `@AppIntent` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `audio_addToPlaylist` and select it from the code-completion suggestions:
 
 ```swift
 @AppIntent(schema: .audio.addToPlaylist)
 struct AddAudioToPlaylistIntent {
+    /// The item to add to the playlist, such as a song or album.
     var audioEntity: <#AudioItem#>
+
+    /// The target playlist.
     var playlist: <#PlaylistEntity#>
 
     func perform() async throws -> some IntentResult {
@@ -70,6 +73,15 @@ The schema supports the following system experiences:
 - Shortcuts
 
 For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
+
+## Parameters for the add-to-playlist intent
+
+Each parameter in the code listing above plays a specific role when your app performs this action. The following table describes what each parameter represents and any behavior to account for when you set it.
+
+| Parameter | Type | Origin | Discussion |
+| --- | --- | --- | --- |
+| `audioEntity` | `@UnionValue` | Your app | The item to add to the playlist, such as a song or album. `AudioItem` is a placeholder name for the `@UnionValue` type your app defines, as shown in the example above the table. |
+| `playlist` | `@AppEntity(schema: .audio.playlist)` | Your app | The target playlist. `PlaylistEntity` is a placeholder name for a type that conforms to the [`playlist`](../audioentity/playlist.md) entity schema, which your app defines and implements. |
 
 ## See Also
 

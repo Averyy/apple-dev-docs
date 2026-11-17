@@ -23,11 +23,11 @@ protocol CameraEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var captureDevice: some AppSchemaEnum](./cameraenum/capturedevice.md)
-  An enum schema for a capture device parameter.
+  An enum schema for a capture device.
 - [var captureDuration: some AppSchemaEnum](./cameraenum/captureduration.md)
-  An enum schema for a capture duration parameter.
+  An enum schema for a capture duration.
 - [var captureMode: some AppSchemaEnum](./cameraenum/capturemode.md)
-  An enum schema for a capture mode parameter.
+  An enum schema for a capture mode.
 
 ## Relationships
 
@@ -40,11 +40,11 @@ protocol CameraEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var captureDevice: some AppSchemaEnum](./cameraenum/capturedevice.md)
-  An enum schema for a capture device parameter.
+  An enum schema for a capture device.
 - [var captureDuration: some AppSchemaEnum](./cameraenum/captureduration.md)
-  An enum schema for a capture duration parameter.
+  An enum schema for a capture duration.
 - [var captureMode: some AppSchemaEnum](./cameraenum/capturemode.md)
-  An enum schema for a capture mode parameter.
+  An enum schema for a capture mode.
 
 
 ---

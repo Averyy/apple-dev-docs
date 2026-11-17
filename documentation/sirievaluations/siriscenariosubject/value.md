@@ -28,7 +28,7 @@ A turn that never ran still appears, saying so. Dropping it would shift later tu
 
 ### Inspecting the subject
 - [let siriTranscript: SiriTranscript](./siritranscript.md)
-  Every observation captured during the run.
+  Every observation captured during the run. A reference Siri found or a call returned carries only the properties the scenario checks that were read for it.
 
 
 ---

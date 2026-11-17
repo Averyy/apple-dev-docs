@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Adds, removes, reorders, or updates the list’s sections.
+Adds, removes, reorders, or updates the current sections in the list.
 
 **Availability**:
 - iOS 12.0+
@@ -23,23 +23,19 @@ func updateSections(_ sections: [CPListSection])
 
 ## Discussion
 
-This method is multipurpose. Use it to add new sections to the list, to remove or reorder existing sections, and to update a section’s appearance. At runtime, use [`maximumSectionCount`](./maximumsectioncount.md) to determine the maximum number of sections the list can display. CarPlay trims the array if its size exceeds this limit.
+If the list is visible when you call this method, CarPlay refreshes the list’s appearance to reflect the new items.
 
 ## Parameters
 
-- `sections`: An array of sections to display.
+- `sections`: The array of sections to display in your list. This initializer copies the array, trimming sections and items as needed to fit within the limits in the [`maximumSectionCount`](./maximumsectioncount.md) and [`maximumItemCount`](./maximumitemcount.md)properties. The initializer trims sections from the end of the array, and keeps adding items section by section until it reaches the maximum.
 
 ## See Also
 
-### Managing Sections
-- [class var maximumSectionCount: Int](./maximumsectioncount.md)
-  The maximum number of sections that the template can display.
+### Managing section content
 - [var sectionCount: Int](./sectioncount.md)
-  The number of sections in the list.
+  The current number of sections in the list.
 - [var sections: [CPListSection]](./sections.md)
   The sections that the list displays.
-- [class CPListSection](../cplistsection.md)
-  A container that groups your list items into sections.
 
 
 ---

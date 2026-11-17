@@ -15,6 +15,14 @@ Gets the vertex format for data in a geometry source’s buffer.
 extern MTLVertexFormat ar_geometry_source_get_format(ar_geometry_source_t geometry_source);
 ```
 
+## Return Value
+
+The format of the vertex data.
+
+## Parameters
+
+- `geometry_source`: The geometry source.
+
 ## See Also
 
 ### Geometry

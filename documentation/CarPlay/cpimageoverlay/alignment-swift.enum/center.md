@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+An option to align the overlay to the top center of the thumbnail.
+
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+

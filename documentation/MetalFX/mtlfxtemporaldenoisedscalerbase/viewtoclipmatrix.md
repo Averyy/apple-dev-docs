@@ -12,7 +12,7 @@ The view-to-clip coordinates transformation matrix this scaler uses as part of i
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
-- tvOS 27.1+
+- tvOS 27.2+
 
 ## Declaration
 

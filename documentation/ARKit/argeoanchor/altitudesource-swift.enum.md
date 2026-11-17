@@ -20,7 +20,7 @@ enum AltitudeSource
 enum ARAltitudeSource : NSInteger;
 ```
 
-## Discussion
+## Overview
 
 Each altitude source has unique performance and accuracy characteristics.
 
@@ -52,7 +52,7 @@ Each altitude source has unique performance and accuracy characteristics.
 
 ### Defining Altitude
 - [var altitude: CLLocationDistance?](./altitude-89k4x.md)
-  Vertical distance, in meters, between this anchor and sea level.
+  Vertical distance, in meters, between this anchor and sea level, or `nil` if the altitude is unknown.
 - [var altitudeSource: ARGeoAnchor.AltitudeSource](./altitudesource-swift.property.md)
   A record of the source from which an altitude came.
 - [altitude](./altitude-9kges.md)

@@ -26,7 +26,7 @@ ARKit defines a world coordinate space for you to use to place virtual content a
 
 ## Parameters
 
-- `relativeTransform`: A transform matrix encoding a translation and orientation relative to the session’s current world coordinate space.
+- `relativeTransform`: A transform matrix encoding a translation and orientation relative to the session’s current world coordinate space. Any scale component of the transform is ignored.
 
 
 ---

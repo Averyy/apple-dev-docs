@@ -23,7 +23,7 @@ CPBarButtonStyleRounded
 
 ## See Also
 
-### Button Styles
+### Getting the button style
 - [CPBarButtonStyle.none](./none.md)
   A style that provides no additional styling.
 

@@ -19,7 +19,9 @@ case vertical
 
 ### Alignment Values
 - [PlaneAnchor.Alignment.horizontal](./horizontal.md)
-  The plane is in a horizontal oriention.
+  The plane is in a horizontal orientation.
+- [PlaneAnchor.Alignment.slanted](./slanted.md)
+  The plane is in a slanted orientation.
 
 
 ---

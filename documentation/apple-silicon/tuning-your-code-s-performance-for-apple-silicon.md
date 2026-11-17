@@ -34,15 +34,15 @@ For more information about how the system applies and interprets QoS classes, se
 
 ### Process Tasks Using Grand Central Dispatch
 
-Grand Central Dispatch (GCD) manages the efficient execution of your app’s tasks. Use GCD to execute serially, concurrently, or in parallel on the system’s available cores. GCD handles the scheduling of tasks on system-provided threads, and schedules those threads for execution on the system’s available processor cores. On a Mac with Apple silicon, GCD takes into account the differences in core types, distributing tasks to the appropriate core type to get the needed performance or efficiency.
+Grand Central Dispatch (GCD) efficiently runs your app’s tasks. Use GCD to run serially, concurrently, or in parallel on the system’s available cores. GCD handles the scheduling of tasks on system-provided threads, and schedules those threads to run on the system’s available processor cores. On a Mac with Apple silicon, GCD takes into account the differences in core types, distributing tasks to the appropriate core type to get the needed performance or efficiency.
 
-For most apps, GCD offers the best solution for executing tasks. Instead of custom thread pools, you use dispatch queues to schedule your tasks for execution. Dispatch queues support the execution of tasks either serially or concurrently.
+For most apps, GCD offers the best solution for running tasks. Instead of custom thread pools, you use dispatch queues to schedule your tasks to run. Dispatch queues support running tasks either serially or concurrently.
 
 For more information about how to use GCD, see [Dispatch](../Dispatch/Dispatch.md).
 
 ### Manage Parallel-Computation Tasks Efficiently
 
-One way to improve performance is to divide a problem into multiple pieces and execute those pieces in parallel on the available cores. Use this approach for large tasks that require significant processing resources. For example, use it to divide an image into multiple pieces and process those pieces in parallel.
+One way to improve performance is to divide a problem into multiple pieces and run those pieces in parallel on the available cores. Use this approach for large tasks that require significant processing resources. For example, use it to divide an image into multiple pieces and process those pieces in parallel.
 
 In GCD, the [`concurrentPerform(iterations:execute:)`](../Dispatch/dispatchqueue/concurrentperform%28iterations,execute%29.md) function takes a provided block and calls it multiple times on the available system cores. This function uses a work-stealing algorithm to keep each core busy with work and is an efficient way to process large tasks in parallel. On Apple silicon, the algorithm distributes work efficiently the variety of available processing cores and other code paths, adjusting the distribution of tasks dynamically as needed. To ensure the maximum benefit of this algorithm, make the number of iterations at least three times the total number of cores on the system. The system needs enough iterations to ensure appropriate distribution of the tasks across different types of cores.
 
@@ -65,7 +65,7 @@ Daemons and launch agents are separate background processes that provide on-dema
 
 On Apple silicon, your app’s behavior doesn’t influence the performance characteristics of any associated daemons or launch agents by default. When you use XPC, the system recognizes that a relationship exists between the app and your daemon or launch agent. That relationship causes the system to associate the daemon or launch agent’s work with your app’s performance characteristics.
 
-When scheduling asynchronous tasks for execution from an XPC message handler, Apple technologies like Grand Central Dispatch (GCD) and Core Foundation automatically add relevant XPC context information to the corresponding thread state. The system relies on that state information to track the relationship between your app and daemon. If you distribute work using custom thread technologies, call [`dispatch_block_create`](../Dispatch/dispatch_block_create.md) to capture and propagate any XPC context information to your custom threads.
+When scheduling asynchronous tasks to run from an XPC message handler, Apple technologies like Grand Central Dispatch (GCD) and Core Foundation automatically add relevant XPC context information to the corresponding thread state. The system relies on that state information to track the relationship between your app and daemon. If you distribute work using custom thread technologies, call [`dispatch_block_create`](../Dispatch/dispatch_block_create.md) to capture and propagate any XPC context information to your custom threads.
 
 ## See Also
 

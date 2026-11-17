@@ -27,7 +27,7 @@ protocol BooksEntity : AppSchema.Kind
 - [var book: some AppSchemaEntity](./booksentity/book.md)
   An entity schema for a book.
 - [var settings: some AppSchemaEntity](./booksentity/settings.md)
-  An entity schema for  settings.
+  An entity schema for settings.
 
 ## Relationships
 
@@ -44,7 +44,7 @@ protocol BooksEntity : AppSchema.Kind
 - [var book: some AppSchemaEntity](./booksentity/book.md)
   An entity schema for a book.
 - [var settings: some AppSchemaEntity](./booksentity/settings.md)
-  An entity schema for  settings.
+  An entity schema for settings.
 
 
 ---

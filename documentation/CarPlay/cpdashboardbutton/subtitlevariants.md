@@ -27,7 +27,7 @@ An array of subtitle variants for this button in an arrangement from most- to le
 
 ## See Also
 
-### Accessing the Button Configuration
+### Accessing the button configuration
 - [var titleVariants: [String]](./titlevariants.md)
   The array of title variants for the button.
 - [var image: UIImage](./image.md)

@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initialize a sports overlay with left and right team objects.
+Creates a now playing mode object configured with the specified team and sporting event information.
 
 **Availability**:
 - iOS 26.4+
@@ -21,10 +21,24 @@ init(leftTeam: CPNowPlayingSportsTeam, rightTeam: CPNowPlayingSportsTeam, eventS
 - (instancetype) initWithLeftTeam:(CPNowPlayingSportsTeam *) leftTeam rightTeam:(CPNowPlayingSportsTeam *) rightTeam eventStatus:(CPNowPlayingSportsEventStatus *) eventStatus;
 ```
 
+## Return Value
+
+An initialized sports overlay object.
+
+## Discussion
+
+After creating the overlay object, initialize a [`CPThumbnailImage`](../cpthumbnailimage.md) object with it or assign it to the thumbnail image’s [`sportsOverlay`](../cpthumbnailimage/sportsoverlay.md) property.
+
 ## Parameters
 
-- `leftTeam`: The left team information.
-- `rightTeam`: The right team information.
+- `leftTeam`: The visiting team information. CarPlay displays this information on the left side of the thumbnail image.
+- `rightTeam`: The home team information. CarPlay displays this information on the right side of the thumbnail image.
+- `eventStatus`: The current state of the sports event. Specify the event clock information and event-specific details.
+
+## See Also
+
+### Creating a sports overlay
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

@@ -35,6 +35,9 @@ SD-JWT verifiable credentials are a credential format defined in IETF SD-JWT VC.
   A list of authority key identifiers that correspond to relying party authorizers that your app trusts.
 - [var invalidationDate: Date?](./verifiablecredentialregistration/invalidationdate.md)
   A date that indicates when the registration should be invalidated.
+### Instance Properties
+- [var documentIdentifier: String](./verifiablecredentialregistration/documentidentifier.md)
+  An identifier that uniquely refers to the credential that is registered.
 
 ## Relationships
 

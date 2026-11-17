@@ -4,8 +4,6 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initializes a limitable user interface element using the specified raw value.
-
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
@@ -16,10 +14,6 @@ Initializes a limitable user interface element using the specified raw value.
 ```swift
 init(rawValue: UInt)
 ```
-
-## Parameters
-
-- `rawValue`: The raw limitable user interface element value.
 
 
 ---

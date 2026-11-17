@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+Configuration for scene reconstruction.
+
 **Availability**:
 - visionOS 1.0+
 
@@ -41,7 +43,7 @@ typedef NSObject<OS_ar_scene_reconstruction_configuration> * ar_scene_reconstruc
 - [ar_mesh_anchors_enumerate_anchors](./ar_mesh_anchors_enumerate_anchors.md)
   Enumerates a collection of mesh anchors.
 - [ar_mesh_anchors_enumerate_anchors_f](./ar_mesh_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of mesh anchors.
+  Enumerates a collection of mesh anchors using a function.
 - [ar_mesh_anchors_get_count](./ar_mesh_anchors_get_count.md)
   Gets the number of mesh anchors in the collection.
 - [ar_mesh_anchor_get_origin_from_anchor_transform_with_correction](./ar_mesh_anchor_get_origin_from_anchor_transform_with_correction.md)

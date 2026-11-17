@@ -53,6 +53,9 @@ The center, or origin, of a RealityKit scene varies depending on the platform an
   A 3D coordinate space that exists within a RealityKit hierarchy.
 - [protocol RealityCoordinateSpaceProjecting](./realitycoordinatespaceprojecting.md)
   A protocol for coordinate spaces that can project 2D points to and from 3D.
+- [init(BoundingBox)](../Spatial/rect3d/init%28_%29-b16k.md)
+- [init(Transform)](../Spatial/affinetransform3d/init%28_%29-e2xx.md)
+  Creates an affine transform from the specified transform.
 
 
 ---

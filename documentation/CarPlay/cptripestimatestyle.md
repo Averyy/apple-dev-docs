@@ -23,7 +23,7 @@ enum CPTripEstimateStyle : NSUInteger;
 
 ## Topics
 
-### Styles
+### Getting the style
 - [CPTripEstimateStyle.light](./cptripestimatestyle/light.md)
   The light trip estimate display style.
 - [CPTripEstimateStyle.dark](./cptripestimatestyle/dark.md)
@@ -43,7 +43,7 @@ enum CPTripEstimateStyle : NSUInteger;
 
 ## See Also
 
-### Providing Trip Estimates
+### Providing trip estimates
 - [func updateEstimates(CPTravelEstimates, for: CPTrip)](./cpmaptemplate/updateestimates%28_,for%29.md)
   Updates travel estimates, such as arrival time and the remaining time and distance for a trip.
 - [func update(CPTravelEstimates, for: CPTrip, with: CPTimeRemainingColor)](./cpmaptemplate/update%28_,for,with%29.md)

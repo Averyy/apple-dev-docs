@@ -23,6 +23,8 @@ static var add: LowLevelRenderPipelineState.Descriptor.Blending { get }
 ### Creating a blending mode
 - [static var sourceOver: LowLevelRenderPipelineState.Descriptor.Blending](./sourceover.md)
   Standard source-over alpha blending with pre-multiplied alpha.
+- [static func custom(sourceRGBBlendFactor: MTLBlendFactor, destinationRGBBlendFactor: MTLBlendFactor, rgbBlendOperation: MTLBlendOperation, sourceAlphaBlendFactor: MTLBlendFactor, destinationAlphaBlendFactor: MTLBlendFactor, alphaBlendOperation: MTLBlendOperation) -> LowLevelRenderPipelineState.Descriptor.Blending](./custom%28sourcergbblendfactor,destinationrgbblendfactor,rgbblendoperation,sourcealphablendfactor,destinationalphablendfactor,alphablendoperation%29.md)
+  Creates a custom blending configuration with explicit Metal blend factors and operations.
 
 
 ---

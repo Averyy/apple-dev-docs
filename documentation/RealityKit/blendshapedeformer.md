@@ -44,6 +44,12 @@ struct BlendShapeDeformer
   An interface for all deformation types in a deformation definition, both built-in and custom. The users overrides all functions to implement a custom `MeshDeformer`, and can in general ignore all but the constructors for built-in deformers.
 - [struct SkinningDeformer](./skinningdeformer.md)
   A deformation that binds a 3D mesh to an underlying skeleton.
+- [struct SubdivisionSurfaceDeformer](./subdivisionsurfacedeformer.md)
+  OpenSubdiv surface deformation
+- [struct RenormalizingDeformer](./renormalizingdeformer.md)
+  Recalculates tangent frame based on current state of positions
+- [struct BoundingBoxCalculator](./boundingboxcalculator.md)
+  Calculates a bounding box based on the current state of the deformed positions.
 
 
 ---

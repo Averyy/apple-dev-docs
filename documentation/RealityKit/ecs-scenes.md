@@ -22,11 +22,14 @@ The [`Scene`](./scene.md) instance has helpful methods to perform ray casts to h
 - [struct QueryPredicate](./querypredicate.md)
   An object that defines the criteria for an entity query.
 - [struct PixelCastHit](./pixelcasthit.md)
+  A hit result of a pixel cast that identifies the entity and surface point a ray intersects.
 ### Event publishers and subscription
 - [enum SceneEvents](./sceneevents.md)
   Events the scene invokes.
 - [struct Publisher](./scene/publisher.md)
   A publisher for the given event type in the scene.
+- [func storeWhileEntityActive(Entity)](../Combine/cancellable/storewhileentityactive%28_%29.md)
+  Retains the `Cancellable` as long as the entity is active (see `Entity.isActive`). If the entity is deactivated, the `Cancellable` is released.
 ### Scene reconstructions and analysis
 - [Creating a game with scene understanding](./creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.

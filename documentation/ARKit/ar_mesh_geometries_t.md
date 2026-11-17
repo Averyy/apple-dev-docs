@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+A collection of mesh geometries.
+
 **Availability**:
 - visionOS 2.0+
 
@@ -17,7 +19,9 @@ typedef NSObject<OS_ar_mesh_geometries> * ar_mesh_geometries_t;
 
 ### Mesh geometry data types
 - [ar_mesh_geometries_enumerator_function_t](./ar_mesh_geometries_enumerator_function_t.md)
+  Function for enumerating a collection of mesh geometries.
 - [ar_mesh_geometries_enumerator_t](./ar_mesh_geometries_enumerator_t.md)
+  Handler for enumerating a collection of mesh geometries.
 
 
 ---

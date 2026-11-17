@@ -4,14 +4,12 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Presents a template modally.
+Present a template modally over the navigation hierarchy. Only one template may be presented at a time.
 
 **Availability**:
 - iOS 12.0+ - Deprecated in 14.0
 - iPadOS 12.0+ - Deprecated in 14.0
 - Mac Catalyst 13.1+ - Deprecated in 14.0
-
-> **Deprecated**: Use [`presentTemplate(_:animated:completion:)`](./presenttemplate%28_,animated,completion%29.md) instead.
 
 ## Declaration
 
@@ -25,32 +23,23 @@ func presentTemplate(_ templateToPresent: CPTemplate, animated: Bool)
 
 ## Discussion
 
-You can present only one template at a time.
-
-## Parameters
-
-- `templateToPresent`: A template to display over currently displayed content on the CarPlay screen. The template must be one of the following types:
-
-  - [`CPActionSheetTemplate`](../cpactionsheettemplate.md)
-  - [`CPAlertTemplate`](../cpalerttemplate.md)
-  - [`CPVoiceControlTemplate`](../cpvoicecontroltemplate.md)
-- `animated`: A Boolean value that indicates whether the system animates the display of transitioning templates. Set to [`true`](../../Swift/true.md) to animate the transition.
+> **Note**: Supported template types: @c CPActionSheetTemplate, @c CPAlertTemplate, @c CPVoiceControlTemplate
 
 ## See Also
 
-### Deprecated Methods
-- [func setRootTemplate(CPTemplate, animated: Bool)](./setroottemplate%28_,animated%29.md)
-  Sets the root template, starting a new stack for the template navigation hierarchy.
-- [func pushTemplate(CPTemplate, animated: Bool)](./pushtemplate%28_,animated%29.md)
-  Pushes a template onto the navigation stack and updates the CarPlay display.
-- [func popTemplate(animated: Bool)](./poptemplate%28animated%29.md)
-  Pops the top template from the navigation stack and updates the CarPlay display.
-- [func popToRootTemplate(animated: Bool)](./poptoroottemplate%28animated%29.md)
-  Pops all templates on the stack—except the root template—and updates the CarPlay display.
-- [func pop(to: CPTemplate, animated: Bool)](./pop%28to,animated%29.md)
-  Pops templates until the specified template is at the top of the navigation stack.
+### Deprecated
 - [func dismissTemplate(animated: Bool)](./dismisstemplate%28animated%29.md)
-  Dismisses the template that the interface controller is displaying modally.
+  Dismiss the current modally-presented template, optionally animating the dismissal.
+- [func pop(to: CPTemplate, animated: Bool)](./pop%28to,animated%29.md)
+  Pop back to a specified template.
+- [func popTemplate(animated: Bool)](./poptemplate%28animated%29.md)
+  Pop back a single level in the template navigation hierarchy.
+- [func popToRootTemplate(animated: Bool)](./poptoroottemplate%28animated%29.md)
+  Pop back to the first template in the template navigation hierarchy.
+- [func pushTemplate(CPTemplate, animated: Bool)](./pushtemplate%28_,animated%29.md)
+  Push a new template onto the template navigation hierarchy, showing it immediately.
+- [func setRootTemplate(CPTemplate, animated: Bool)](./setroottemplate%28_,animated%29.md)
+  Set the root template. If no existing templates exist in the template navigation hierarchy, the animated flag will be ignored. If there is an existing template navigation hierarchy, the existing stack will be replaced by the new root template.
 
 
 ---

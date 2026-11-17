@@ -71,10 +71,10 @@ To begin a custom distribution, which allows you to configure your own settings,
 Select from the following distribution methods:
 
 - **App Store Connect**: Distribute using TestFlight or through the App Store.
-- **Ad Hoc**: Distribute to a limited number of devices you register in App Store Connect. For more information on distributing to devices you register, see [Distributing your app to registered devices](./distributing-your-app-to-registered-devices.md).
+- **Ad Hoc**: Distribute to a limited number of devices you register in App Store Connect. For more information on distributing to devices you register, see [Distributing apps to your development devices](./distributing-apps-to-your-development-devices.md).
 - **Enterprise**: Distribute to members of your organization if you’re a part of the [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise) and are ready to release your app to users in your organization.
 - **Developer ID**: Distribute a macOS app outside the App Store that is notarized by Apple or signed with a Developer ID. This distribution method is only available for apps built for Mac.
-- **Development**: Distribute to a limited number of devices you register in App Store Connect. For more information on distributing to devices you register, see [Distributing your app to registered devices](./distributing-your-app-to-registered-devices.md).
+- **Development**: Distribute to a limited number of devices you register in App Store Connect. For more information on distributing to devices you register, see [Distributing apps to your development devices](./distributing-apps-to-your-development-devices.md).
 - **Copy App**: Distribute a macOS app without code signing. This distribution method is only available for apps built for Mac.
 
 If you choose App Store Connect or Developer ID as your distribution method, you select a destination option as well. You can choose to upload your build to the App Store, or Export your build locally to upload later.
@@ -105,7 +105,7 @@ When packaging for self distribution using the Ad Hoc or Development option, cho
 To distribute a beta version of your app to offer a preview of an upcoming release, choose a distribution method that aligns with your testing resources:
 
 - Distribute a beta version of your app to internal and external testers using TestFlight. The TestFlight app allows invited users to install, beta test, provide feedback, and get updates of your app. Apple distributes the beta version for you, you manage the builds and users in App Store Connect. To learn more, see [TestFlight overview](https://developer.apple.com/help/app-store-connect/test-a-beta-version/overview-of-testflight).
-- Distribute a beta version to registered devices in your developer account. Choose this option only if you can reserve a portion of your limited development devices for beta testing. To learn more, see [Distributing your app to registered devices](./distributing-your-app-to-registered-devices.md).
+- Distribute a beta version to registered devices in your developer account. Choose this option only if you can reserve a portion of your limited development devices for beta testing. To learn more, see [Distributing apps to your development devices](./distributing-apps-to-your-development-devices.md).
 - For macOS apps, distribute an Apple-notarized build to testers before you distribute the app through the App Store. To learn more, see [Notarizing macOS software before distribution](../Security/notarizing-macos-software-before-distribution.md).
 
 ![Screenshot of App Store Connect showing builds that were uploaded from Xcode.](https://developer.apple.com/tutorials/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-8@2x.png)
@@ -141,8 +141,8 @@ If you distribute your app using TestFlight or through the App Store, you can vi
 ## See Also
 
 ### Distribution and release
-- [Distributing your app to registered devices](./distributing-your-app-to-registered-devices.md)
-  Test your app on devices that you register in your developer account.
+- [Distributing apps to your development devices](./distributing-apps-to-your-development-devices.md)
+  Test apps on your own devices that you register in your developer account.
 - [Locating device identifiers](./locating-device-identifiers.md)
   Get the unique identifier for a device before registering it in your developer account.
 - [Packaging Mac software for distribution](./packaging-mac-software-for-distribution.md)

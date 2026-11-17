@@ -4,7 +4,7 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
-A surface’s position in a person’s surroundings.
+An anchor that represents a reconstructed mesh from the physical environment.
 
 **Availability**:
 - visionOS 1.0+

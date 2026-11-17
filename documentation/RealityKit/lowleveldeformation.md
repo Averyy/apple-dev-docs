@@ -43,6 +43,14 @@ final class LowLevelDeformation
   The skinning data accessors for this deformation.
 - [LowLevelDeformation.Skinning](./lowleveldeformation/skinning-swift.struct.md)
   An accessor for the skinning buffers of a [`LowLevelDeformation`](./lowleveldeformation.md).
+- [var blendShape: LowLevelDeformation.BlendShape](./lowleveldeformation/blendshape-swift.property.md)
+  The blend-shape data accessors for this deformation.
+- [LowLevelDeformation.BlendShape](./lowleveldeformation/blendshape-swift.struct.md)
+  An accessor for the blend-shape buffers of a [`LowLevelDeformation`](./lowleveldeformation.md).
+- [var renormalization: LowLevelDeformation.Renormalization](./lowleveldeformation/renormalization-swift.property.md)
+  The renormalization data accessors for this deformation.
+- [LowLevelDeformation.Renormalization](./lowleveldeformation/renormalization-swift.struct.md)
+  An accessor for the renormalization buffers of a [`LowLevelDeformation`](./lowleveldeformation.md).
 ### Encoding deformation work
 - [func encode(into: any MTLComputeCommandEncoder) throws](./lowleveldeformation/encode%28into%29.md)
   Encodes the configured deformation passes into the given command encoder.
@@ -50,16 +58,6 @@ final class LowLevelDeformation
   A compiled compute pipeline for a specific combination of mesh layouts and deformer stages.
 - [LowLevelDeformation.Error](./lowleveldeformation/error.md)
   The error type thrown by every throwing method and initializer.
-### Structures
-- [LowLevelDeformation.BlendShape](./lowleveldeformation/blendshape-swift.struct.md)
-  An accessor for the blend-shape buffers of a [`LowLevelDeformation`](./lowleveldeformation.md).
-- [LowLevelDeformation.Renormalization](./lowleveldeformation/renormalization-swift.struct.md)
-  An accessor for the renormalization buffers of a [`LowLevelDeformation`](./lowleveldeformation.md).
-### Instance Properties
-- [var blendShape: LowLevelDeformation.BlendShape](./lowleveldeformation/blendshape-swift.property.md)
-  The blend-shape data accessors for this deformation.
-- [var renormalization: LowLevelDeformation.Renormalization](./lowleveldeformation/renormalization-swift.property.md)
-  The renormalization data accessors for this deformation.
 
 ## See Also
 

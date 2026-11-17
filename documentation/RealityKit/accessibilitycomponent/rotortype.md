@@ -43,6 +43,7 @@ enum RotorType
 - [AccessibilityComponent.CustomContent](./customcontent-swift.struct.md)
   A CustomContent struct contains the accessibility strings for the labels you apply to your accessibility content.
 - [enum AccessibilityEvents](../accessibilityevents.md)
+  Events that occur when a person uses assistive technology to act on an accessibility element.
 
 
 ---

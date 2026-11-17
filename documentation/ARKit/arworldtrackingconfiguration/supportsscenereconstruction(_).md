@@ -20,9 +20,17 @@ class func supportsSceneReconstruction(_ sceneReconstruction: ARConfiguration.Sc
 + (BOOL) supportsSceneReconstruction:(ARSceneReconstruction) sceneReconstruction;
 ```
 
+## Return Value
+
+`YES` if the scene reconstruction type is supported on this device, `NO` otherwise.
+
 ## Discussion
 
 Scene reconstruction requires a device with a LiDAR Scanner, such as the fourth-generation iPad Pro.
+
+## Parameters
+
+- `sceneReconstruction`: The scene reconstruction type to check for support.
 
 ## See Also
 

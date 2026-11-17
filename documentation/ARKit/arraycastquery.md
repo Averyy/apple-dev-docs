@@ -41,7 +41,7 @@ Raycasts can intersect with planes (flat surfaces) or meshes (uneven surfaces). 
 - [var targetAlignment: ARRaycastQuery.TargetAlignment](./arraycastquery/targetalignment-swift.property.md)
   The target’s alignment with respect to gravity.
 - [ARRaycastQuery.TargetAlignment](./arraycastquery/targetalignment-swift.enum.md)
-  A specification that indicates a target’s alignment with respect to gravity
+  A specification that indicates a target’s alignment with respect to gravity.
 ### Interpreting the Ray
 - [var direction: simd_float3](./arraycastquery/direction.md)
   A vector that describes the ray’s trajectory in 3D space.

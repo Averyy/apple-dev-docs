@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Adds, removes, reorders, or updates the images in the list item’s image row.
+Update the images displayed in this image row item. If this image row item is already displayed in a list template, this image row item will be automatically reloaded.
 
 **Availability**:
 - iOS 14.0+ - Deprecated in 26.0
@@ -25,29 +25,27 @@ func update(_ gridImages: [UIImage])
 
 ## Discussion
 
-This method is multipurpose. Use it to add new images to the image row, and to remove or reorder existing images.
+When providing an image, your app should provide a @c UIImage that is display-ready. If necessary for the image, provide light and dark styles by using an asset from your asset catalog, prepared with light and dark styles or by using @c UIImageAsset to combine two @c UIImage instances into a single image with both styles.
 
-Provide images that are display-ready. If necessary, provide light and dark variants of each image using an asset catalog, or use instances of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style.
+UIImageAsset is used to combine multiple UIImages with different trait collections into a single UIImage.
 
-To properly size your images, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property. At runtime, use [`maximumImageSize`](./maximumimagesize.md) to determine the maximum size that CarPlay allows for an image, and [`CPMaximumNumberOfGridImages`](../cpmaximumnumberofgridimages.md) to establish the total number of images that an image row can display. The list item may display fewer images, depending on the width of the vehicle’s primary screen.
+the @c text property of the image row item.
 
-CarPlay doesn’t support animated images. If you provide animated images, CarPlay uses only the first image in each animation sequence.
-
-## Parameters
-
-- `gridImages`: An array of images to display in the list item’s image row.
+the @c imageTitles property of the image row item.
 
 ## See Also
 
-### Managing Content
-- [var text: String?](./text.md)
-  The list item’s primary text.
+### Deprecated
+- [init(text: String, images: [UIImage])](./init%28text,images%29.md)
+  Initialize a list image row item with a text string and an array of @c UIImage for the grid of images.
+- [init(text: String, images: [UIImage], imageTitles: [String])](./init%28text,images,imagetitles%29.md)
+  Initialize a list image row item with a text string, an array of @c UIImage for the grid of images, and an array of @c NSString titles, one displayed below each image.
 - [var gridImages: [UIImage]](./gridimages.md)
-  The images that appear in the list item’s image row.
+  Read-only access to the grid images shown in a row in the cell.
+- [var imageTitles: [String]](./imagetitles.md)
+  The titles displayed for each image in this image row item.
 - [class var maximumImageSize: CGSize](./maximumimagesize.md)
-  The maximum size of an image that an image row can display.
-- [let CPMaximumNumberOfGridImages: Int](../cpmaximumnumberofgridimages.md)
-  The maximum number of images that an image row can contain.
+  The expected image size for the grid images in your @c CPListImageRowItem. Images provided will be resized to this size.
 
 
 ---

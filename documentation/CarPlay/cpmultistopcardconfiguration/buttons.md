@@ -25,6 +25,14 @@ var buttons: [CPTextButton] { get }
 
 > **Note**: The multi-stop card may display a maximum of 2 buttons. Setting more than 2 buttons to this property will only display the first 2 buttons.
 
+## See Also
+
+### Getting the configuration details
+- [var title: String?](./title.md)
+  Title of panel presented to configure waypoints along a route. If no panel is provided, the panel title will default to “Add Stop”.
+- [var image: UIImage?](./image.md)
+  An optional image displayed alongside the @c title in the options panel, serving as an entry point to the multi-stop panel.
+
 
 ---
 

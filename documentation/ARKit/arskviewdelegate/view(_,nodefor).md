@@ -26,7 +26,7 @@ optional func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode?
 
 ## Return Value
 
-A new SpriteKit node, which ARKit will add to the scene and update to follow its corresponding AR anchor.
+A new SpriteKit node, which ARKit will add to the scene and update to follow its corresponding AR anchor, or `nil` to have ARKit ignore the anchor (no node is created for it).
 
 ## Discussion
 
@@ -34,7 +34,7 @@ Depending on the session configuration, ARKit may automatically add anchors to a
 
 You can implement this method to provide a new [`SKNode`](../../SpriteKit/sknode.md) object (or instance of any system or custom [`SKNode`](../../SpriteKit/sknode.md) subclass) you plan to use as a visual representation of the anchor.
 
-Note that ARKit controls the node’s position, rotation, and scale to simulate a billboarded 3D effect even for 2D sprites. If you provide a `SKTransformLayer` node, ARKit applies a 3D transformation.
+Note that ARKit controls the node’s position, rotation, and scale to simulate a billboarded 3D effect even for 2D sprites. If you provide a `SKTransformNode` node, ARKit applies a 3D transformation.
 
 Alternatively, if you do not implement this method, ARKit creates an empty node, and you can implement the [`view(_:didAdd:for:)`](./view%28_,didadd,for%29.md) method instead to provide visual content by adding children to that node.
 

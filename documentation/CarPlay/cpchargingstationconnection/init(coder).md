@@ -15,6 +15,12 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating a charging station connection
+- [init(connector: CPChargingStationConnection.Connector, voltage: Measurement<UnitElectricPotentialDifference>, power: Measurement<UnitPower>)](./init%28connector,voltage,power%29.md)
+  Creates a charging station connection object with information about a specific charging configuration.
+
 
 ---
 

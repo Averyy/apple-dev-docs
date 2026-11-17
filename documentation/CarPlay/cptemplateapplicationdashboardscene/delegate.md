@@ -27,7 +27,7 @@ Use this property to access the delegate object CarPlay creates from the class n
 
 ## See Also
 
-### Responding to the Dashboard Scene Life Cycle
+### Responding to the dashboard scene life cycle
 - [protocol CPTemplateApplicationDashboardSceneDelegate](../cptemplateapplicationdashboardscenedelegate.md)
   The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
 

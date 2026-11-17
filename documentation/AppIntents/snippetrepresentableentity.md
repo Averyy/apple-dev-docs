@@ -23,9 +23,9 @@ protocol SnippetRepresentableEntity : AppEntity
 
 ## Overview
 
-Adopt the `SnippetRepresentableEntity` protocol in your app entity when you want to provide a visual representation of its content. This protocol conforms to the base [`AppEntity`](./appentity.md) protocol and adds a [`snippet`](./snippetrepresentableentity/snippet.md) property for delivering a snippet type to display your entity’s content. When the system needs to show information about your entity, it displays the contents of your snippet. For example, Siri might show the snippet during a conversation to confirm a choice or display details about a requested item.
+Adopt the `SnippetRepresentableEntity` protocol in your app entity when you want to provide a visual representation of its content. This protocol conforms to the base [`AppEntity`](./appentity.md) protocol and adds a [`snippet`](./snippetrepresentableentity/snippet-swift.type.property.md) property for delivering a snippet type to display your entity’s content. When the system needs to show information about your entity, it displays the contents of your snippet. For example, Siri might show the snippet during a conversation to confirm a choice or display details about a requested item.
 
-Implement the [`snippet`](./snippetrepresentableentity/snippet.md) property in your entity type and return a snippet with the SwiftUI view you want the system to display. In the following example, the property returns a [`CardSnippet`](./cardsnippet.md) type, which delivers the custom `MessageSnipperCard` view from the app. This view uses the provided message object to configure the views it displays.
+Implement the [`snippet`](./snippetrepresentableentity/snippet-swift.type.property.md) property in your entity type and return a snippet with the SwiftUI view you want the system to display. In the following example, the property returns a [`CardSnippet`](./cardsnippet.md) type, which delivers the custom `MessageSnipperCard` view from the app. This view uses the provided message object to configure the views it displays.
 
 ```swift
 extension MessageEntity: SnippetRepresentableEntity {
@@ -45,9 +45,11 @@ To include interactive controls in your view, add a SwiftUI control that runs an
 ## Topics
 
 ### Configuring the snippet
-- [static var snippet: Self.Body](./snippetrepresentableentity/snippet.md)
+- [static var snippet: Self.Body](./snippetrepresentableentity/snippet-swift.type.property.md)
   The snippet that contains the view to display.
 - [associatedtype Body : EntitySnippetContent](./snippetrepresentableentity/body.md)
+### Type Aliases
+- [SnippetRepresentableEntity.Snippet](./snippetrepresentableentity/snippet-swift.typealias.md)
 
 ## Relationships
 
@@ -76,8 +78,6 @@ To include interactive controls in your view, add a SwiftUI control that runs an
   A visual representation that the system renders for an entity.
 - [enum EntitySnippetContentBuilder](./entitysnippetcontentbuilder.md)
   A result builder that assembles an entity’s snippet declarations.
-- [struct CardSnippetSize](./cardsnippetsize.md)
-  A size category for a snippet card.
 
 
 ---

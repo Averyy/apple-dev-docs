@@ -23,7 +23,7 @@ enum CPManeuverState : NSInteger;
 
 ## Topics
 
-### Enumeration Cases
+### Getting the maneuver state
 - [CPManeuverState.prepare](./cpmaneuverstate/prepare.md)
 - [CPManeuverState.initial](./cpmaneuverstate/initial.md)
 - [CPManeuverState.execute](./cpmaneuverstate/execute.md)
@@ -48,6 +48,13 @@ enum CPManeuverState : NSInteger;
   An object that describes a single navigation instruction.
 - [enum CPManeuverType](./cpmaneuvertype.md)
   Values that describe types of navigation maneuvers.
+- [class CPTravelEstimates](./cptravelestimates.md)
+  An object that describes the time and distance remaining for a maneuver in a navigation session.
+- [class CPTripPreviewTextConfiguration](./cptrippreviewtextconfiguration.md)
+  A configuration object for changing the button titles on a trip preview.
+- [func NSStringFromCPManeuverType(CPManeuverType) -> String!](./nsstringfromcpmaneuvertype%28_%29.md)
+- [struct CPLocationCoordinate3D](./cplocationcoordinate3d.md)
+  CPLocationCoordinate3D represents a three-dimensional coordinate with latitude, longitude, and altitude components.
 
 
 ---

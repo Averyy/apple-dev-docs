@@ -32,9 +32,9 @@ A newly initialized grid template.
 
 ## See Also
 
-### Creating a Grid Template
-- [class CPGridButton](../cpgridbutton.md)
-  A menu item button displayed on a grid template.
+### Creating a grid template
+- [class var maximumGridButtonImageSize: CGSize](./maximumgridbuttonimagesize.md)
+  The expected image size for your @c CPGridButton.
 
 
 ---

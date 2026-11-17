@@ -37,6 +37,16 @@ Downsampling a splat cloud is typically accomplished by defining a 3D grid of â€
 
 Splats can capture subtle lighting and atmospheric effects, among others, by including a lot of mostly transparent splats. For many assets a large number of the most transparent splats can be removed without unacceptably impairing the visual quality. Culling very small splats can also cut scene size with limited damage. This level of processing will require more complete parsing of the assetâ€™s PLY file.
 
+## See Also
+
+### Gaussian splats
+- [struct GaussianSplatComponent](./gaussiansplatcomponent.md)
+  A component that renders 3D Gaussian splat data.
+- [class GaussianSplatResource](./gaussiansplatresource.md)
+  A container for the splat data and rendering options that a Gaussian splat component displays.
+- [enum GaussianSplatEvents](./gaussiansplatevents.md)
+  A namespace for events about Gaussian splat rendering.
+
 
 ---
 

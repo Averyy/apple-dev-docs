@@ -27,7 +27,7 @@ You use this layout when you want to align an item’s title and detail text on 
 
 ## See Also
 
-### Template Layout Styles
+### Getting the template layout style
 - [CPInformationTemplateLayout.twoColumn](./twocolumn.md)
   A layout that displays a template’s items in two columns.
 

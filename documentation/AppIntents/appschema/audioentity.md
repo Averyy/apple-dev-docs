@@ -37,9 +37,9 @@ protocol AudioEntity : AppSchema.Kind
 - [var liveRadioStation: some AppSchemaEntity](./audioentity/liveradiostation.md)
   An entity schema for a live radio station.
 - [var newsBrief: some AppSchemaEntity](./audioentity/newsbrief.md)
-  An entity schema for  news brief.
+  An entity schema for news brief.
 - [var newsProvider: some AppSchemaEntity](./audioentity/newsprovider.md)
-  An entity schema for  news provider.
+  An entity schema for news provider.
 - [var playlist: some AppSchemaEntity](./audioentity/playlist.md)
   An entity schema for a playlist.
 - [var podcastCollection: some AppSchemaEntity](./audioentity/podcastcollection.md)
@@ -84,9 +84,9 @@ protocol AudioEntity : AppSchema.Kind
 - [var liveRadioStation: some AppSchemaEntity](./audioentity/liveradiostation.md)
   An entity schema for a live radio station.
 - [var newsBrief: some AppSchemaEntity](./audioentity/newsbrief.md)
-  An entity schema for  news brief.
+  An entity schema for news brief.
 - [var newsProvider: some AppSchemaEntity](./audioentity/newsprovider.md)
-  An entity schema for  news provider.
+  An entity schema for news provider.
 - [var playlist: some AppSchemaEntity](./audioentity/playlist.md)
   An entity schema for a playlist.
 - [var podcastCollection: some AppSchemaEntity](./audioentity/podcastcollection.md)

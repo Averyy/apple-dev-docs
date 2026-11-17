@@ -15,6 +15,14 @@ Gets the number of vectors in a geometry source.
 extern size_t ar_geometry_source_get_count(ar_geometry_source_t geometry_source);
 ```
 
+## Return Value
+
+The number of vectors in the geometry source.
+
+## Parameters
+
+- `geometry_source`: The geometry source.
+
 ## See Also
 
 ### Geometry

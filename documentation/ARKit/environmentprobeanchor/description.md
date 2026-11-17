@@ -15,12 +15,6 @@ A textual representation of this anchor.
 var description: String { get }
 ```
 
-## See Also
-
-### Comparing environment probe anchors
-- [var id: UUID](./id.md)
-  The unique identifier of this anchor.
-
 
 ---
 

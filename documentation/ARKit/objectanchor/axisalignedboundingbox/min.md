@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-Minimum coordinates for the bounding box.
+The minimum coordinates for the bounding box.
 
 **Availability**:
 - visionOS 2.0+

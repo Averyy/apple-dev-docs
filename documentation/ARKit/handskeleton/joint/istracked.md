@@ -17,7 +17,7 @@ var isTracked: Bool { get }
 
 ## Discussion
 
-When the environment provides insufficient lighting, or if an object occludes the hand joint, `isTracked` may return `false`. Even under these circumstances, ARKit returns a plausible transform for the joint.
+When ARKit tracks the joint, `isTracked` is `true`. When the environment provides insufficient lighting, or an object occludes the hand joint, `isTracked` is `false`; even so, ARKit returns a plausible transform for the joint.
 
 Check for `isTracked` when you require high accuracy for the joint transform. Don’t check for this property in situations where you expect to occlude hand joints, such as in a custom gesture implementation.
 

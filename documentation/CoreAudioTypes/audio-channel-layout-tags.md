@@ -365,6 +365,13 @@ Use these values to set the [`mChannelLayoutTag`](./audiochannellayout/mchannell
 - [var kAudioChannelLayoutTag_Logic_Mono: AudioChannelLayoutTag](./kaudiochannellayouttag_logic_mono.md)
 - [var kAudioChannelLayoutTag_Logic_Quadraphonic: AudioChannelLayoutTag](./kaudiochannellayouttag_logic_quadraphonic.md)
 - [var kAudioChannelLayoutTag_Logic_Stereo: AudioChannelLayoutTag](./kaudiochannellayouttag_logic_stereo.md)
+### Ogg Defined Layouts
+- [var kAudioChannelLayoutTag_Ogg_3_0: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_3_0.md)
+- [var kAudioChannelLayoutTag_Ogg_4_0: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_4_0.md)
+- [var kAudioChannelLayoutTag_Ogg_5_0: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_5_0.md)
+- [var kAudioChannelLayoutTag_Ogg_5_1: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_5_1.md)
+- [var kAudioChannelLayoutTag_Ogg_6_1: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_6_1.md)
+- [var kAudioChannelLayoutTag_Ogg_7_1: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_7_1.md)
 
 ## See Also
 

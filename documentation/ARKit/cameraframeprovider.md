@@ -19,14 +19,14 @@ final class CameraFrameProvider
 
 You use `CameraFrameProvider` to receive camera images for selected video formats.
 
+This provider requires an enterprise license or the [`Main camera access`](../BundleResources/entitlements/com.apple.developer.arkit.main-camera-access.allow.md) entitlement to receive camera frames; otherwise, it has no effect.
+
 ## Topics
 
 ### Creating a camera frame provider
 - [init()](./cameraframeprovider/init%28%29.md)
   Creates a camera frame provider.
 ### Getting information about the camera frame provider
-- [var description: String](./cameraframeprovider/description.md)
-  A textual representation of this camera frame provider.
 - [var state: DataProviderState](./cameraframeprovider/state.md)
   The state of a camera frame provider.
 ### Getting camera frame updates
@@ -34,18 +34,21 @@ You use `CameraFrameProvider` to receive camera images for selected video format
   Gets a sequence of camera frame updates for a given video format.
 - [CameraFrameProvider.CameraFrameUpdates](./cameraframeprovider/cameraframeupdates.md)
   A sequence of camera frames.
-### Enumerations
-- [CameraFrameProvider.CameraPosition](./cameraframeprovider/cameraposition.md)
-  Values that describe possible camera positions.
-- [CameraFrameProvider.CameraType](./cameraframeprovider/cameratype.md)
-  Values that describe possible camera types.
-- [CameraFrameProvider.CameraRectification](./cameraframeprovider/camerarectification.md)
-  Enumeration of possible camera rectification types.
+### Instance Properties
+- [var description: String](./cameraframeprovider/description.md)
+  A textual representation of this camera frame provider.
 ### Type Properties
 - [static var isSupported: Bool](./cameraframeprovider/issupported.md)
   A Boolean value that indicates whether this device supports the camera frame provider.
 - [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./cameraframeprovider/requiredauthorizations.md)
   The authorization types you need to use the camera frame provider.
+### Enumerations
+- [CameraFrameProvider.CameraPosition](./cameraframeprovider/cameraposition.md)
+  Values that describe possible camera positions.
+- [CameraFrameProvider.CameraRectification](./cameraframeprovider/camerarectification.md)
+  Enumeration of possible camera rectification types.
+- [CameraFrameProvider.CameraType](./cameraframeprovider/cameratype.md)
+  Values that describe possible camera types.
 
 ## Relationships
 

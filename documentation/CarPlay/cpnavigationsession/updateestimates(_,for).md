@@ -28,7 +28,7 @@ func updateEstimates(_ estimates: CPTravelEstimates, for maneuver: CPManeuver)
 
 ## See Also
 
-### Updating Travel Estimates
+### Updating travel estimates
 - [class CPTravelEstimates](../cptravelestimates.md)
   An object that describes the time and distance remaining for a maneuver in a navigation session.
 

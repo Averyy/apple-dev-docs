@@ -51,6 +51,10 @@ override func viewDidLoad() {
 
 In the example above, the current angle and status of the hinge are displayed as the user interacts with the hinge.
 
+> ❗ **Important**: Use hinge updates when your app treats the hinge as input, such as driving an animation that responds to granular hinge angle changes, controlling a game, or showing the current angle. Hinge updates arrive while the hinge is moving, at a pace the system sets.
+>
+> Don’t use hinge updates for layout. To adapt your layout to the fold, use [`UIArrangementViewController`](./uiarrangementviewcontroller.md) or [`UIView.ReservedRegion`](./uiview/reservedregion.md) instead. Reserved region updates arrive during a layout pass, which might be animated.
+
 ## Topics
 
 ### Creating a hinge interaction

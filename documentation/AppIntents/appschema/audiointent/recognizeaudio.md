@@ -21,9 +21,9 @@ var recognizeAudio: some AppSchemaIntent { get }
 
 ## Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `audio` domain and one of your app’s actions matches the `recognizeAudio` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .audio.recognizeAudio)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `audio` domain and one of your app’s actions matches the `recognizeAudio` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent(schema: .audio.recognizeAudio)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an intent that conforms to the `recognizeAudio` schema:
+The following example shows an intent that conforms to the `recognizeAudio` schema. You can create a type that conforms to the schema by adding the `@AppIntent` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `audio_recognizeAudio` and select it from the code-completion suggestions:
 
 ```swift
 @AppIntent(schema: .audio.recognizeAudio)

@@ -139,11 +139,15 @@ When you choose a design flow, write an app extension that conforms to either `F
 - [FSKIT_API_AVAILABILITY_V2](./fskit_api_availability_v2.md)
 - [FSKIT_API_AVAILABILITY_V2_4](./fskit_api_availability_v2_4.md)
 - [FSKIT_API_AVAILABILITY_V3](./fskit_api_availability_v3.md)
+- [FSKIT_API_AVAILABILITY_V3_3](./fskit_api_availability_v3_3.md)
 - [FSKIT_API_INTRODUCED_V1_DEPRECATED_V3_WITH_REPLACEMENT](./fskit_api_introduced_v1_deprecated_v3_with_replacement.md)
 - [FSKIT_CALLED_ONCE](./fskit_called_once.md)
 ### Protocols
 - [FSVolumeCommonOperations](./fsvolume/commonoperations.md)
   Methods common to `FSVolumeHandler` and `FSVolumeOperations`
+### Enumerations
+- [FSRenameFlags](./fsvolume/renameflags.md)
+  Behavior flags for a rename operation, corresponding to the flags accepted by `renamex_np(2)`.
 
 
 ---

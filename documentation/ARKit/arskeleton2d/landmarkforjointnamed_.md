@@ -16,9 +16,17 @@ Returns the location of a joint with a given name.
 - (simd_float2) landmarkForJointNamed:(ARSkeletonJointName) jointName;
 ```
 
+## Return Value
+
+Landmark in normalized image coordinates.
+
 ## Discussion
 
-Joint landmarks are normalized within the range [0..1] and are in the coordinate space of the current frame’s camera image, where 0 is the upper left, and 1 is the bottom right.
+Joint landmarks are normalized within the range [0..1] and are in the coordinate space of the current frame’s camera image, where 0 is the upper left, and 1 is the bottom right. If an invalid joint name is passed the returned point will be filled with `NaN` values.
+
+## Parameters
+
+- `jointName`: The name of the joint.
 
 ## See Also
 

@@ -23,9 +23,13 @@ extern const NSUInteger CPGridTemplateMaximumItems;
 
 ## See Also
 
-### Constants
-- [let CPMaximumListSectionImageSize: CGSize](./cpmaximumlistsectionimagesize.md)
-  The maximum size of an image in a list section.
+### Grids
+- [class CPGridTemplate](./cpgridtemplate.md)
+  A template that displays and manages a grid of items.
+- [class CPGridButton](./cpgridbutton.md)
+  A menu item button displayed on a grid template.
+- [class CPMessageGridItemConfiguration](./cpmessagegriditemconfiguration.md)
+  A type that associates message-related information with a grid button.
 
 
 ---

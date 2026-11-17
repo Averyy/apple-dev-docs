@@ -28,6 +28,14 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, didRotateWithCenter cent
 - `rotation`: A `CGFloat` that indicates the rotation of the gesture in radians.
 - `velocity`: The velocity of the rotation gesture in radians per second.
 
+## See Also
+
+### Rotating the map
+- [func mapTemplateDidBeginRotationGesture(CPMapTemplate)](./maptemplatedidbeginrotationgesture%28_%29.md)
+  Tells the delegate that the rotation gesture started.
+- [func mapTemplate(CPMapTemplate, rotationDidEndWithVelocity: CGFloat)](./maptemplate%28_,rotationdidendwithvelocity%29.md)
+  Tells the delegate that a person stopped rotating the map.
+
 
 ---
 

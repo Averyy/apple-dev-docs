@@ -28,7 +28,7 @@ var worldAlignment: ARConfiguration.WorldAlignment { get set }
 
 Creating an AR experience depends on being able to construct a coordinate system for placing objects in a virtual 3D world that maps to the real-world position and motion of the device. When you run a session configuration, ARKit creates a scene coordinate system based on the position and orientation of the device; any [`ARAnchor`](../aranchor.md) objects you create or that the AR session detects are positioned relative to that coordinate system.
 
-See [`ARConfiguration.WorldAlignment`](./worldalignment-swift.enum.md) for possible values.
+See [`ARConfiguration.WorldAlignment`](./worldalignment-swift.enum.md) for possible values. The default is `ARWorldAlignmentGravity`.
 
 ## See Also
 

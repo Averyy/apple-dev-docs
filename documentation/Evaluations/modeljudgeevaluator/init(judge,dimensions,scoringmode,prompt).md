@@ -39,7 +39,7 @@ let evaluator = ModelJudgeEvaluator<ModelSample<String>>(
 ## Parameters
 
 - `judge`: The language model to use as judge.
-- `dimensions`: The dimensions to score. Each produces a separate DataFrame column.
+- `dimensions`: The dimensions to score. Each produces a separate [`DataFrame`](../../TabularData/dataframe.md) column.
 - `scoringMode`: Whether scores are discrete (default) or allow any floating-point value.
 - `prompt`: Configuration for the model prompt, including instructions, response presentation, and reference.
 

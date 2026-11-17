@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Updates the list item’s accessory image.
+The custom accessory image to display on the trailing edge of the list item.
 
 **Availability**:
 - iOS 14.0+
@@ -23,25 +23,17 @@ func setAccessoryImage(_ accessoryImage: UIImage?)
 
 ## Discussion
 
-Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property. At runtime, use [`maximumImageSize`](./maximumimagesize.md) to determine the maximum size for a list item’s accessory image.
-
-CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
-
-CarPlay sets the `accessoryType` property’s value to [`CPListItemAccessoryType.none`](../cplistitemaccessorytype/none.md) when you call this method.
-
-## Parameters
-
-- `accessoryImage`: The image to display in the item’s trailing region.
+If the [`accessoryType`](./accessorytype.md) property is set to [`CPListItemAccessoryType.none`](../cplistitemaccessorytype/none.md), the list item displays the image in this property. If the value of this property is `nil`, the system omits the accessory image. To change the accessory image in this property, call the [`setAccessoryImage(_:)`](./setaccessoryimage%28_%29.md) method.
 
 ## See Also
 
-### Managing Accessories
+### Managing accessories
 - [var accessoryType: CPListItemAccessoryType](./accessorytype.md)
-  The accessory that the list item displays in its trailing region.
-- [enum CPListItemAccessoryType](../cplistitemaccessorytype.md)
-  The accessory types that a list item can display.
+  The standard accessory type to display on the trailing edge of the list item.
 - [var accessoryImage: UIImage?](./accessoryimage.md)
-  The image that the list item displays in its trailing region.
+  The custom accessory image to display on the trailing edge of the list item.
+- [enum CPListItemAccessoryType](../cplistitemaccessorytype.md)
+  The standard image types a list item can display in its accessory region.
 
 
 ---

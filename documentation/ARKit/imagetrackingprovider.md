@@ -29,11 +29,12 @@ final class ImageTrackingProvider
   A sequence of updates that provide information about images a provider tracks.
 ### Inspecting an image-tracking provider
 - [var state: DataProviderState](./imagetrackingprovider/state.md)
-  The current status of data coming from a provider.
-- [var description: String](./imagetrackingprovider/description.md)
-  A textual representation of this image tracking provider.
+  The current status of an image tracking provider.
 - [var allAnchors: [ImageAnchor]](./imagetrackingprovider/allanchors.md)
   An array of all the image anchors the provider is tracking.
+### Instance Properties
+- [var description: String](./imagetrackingprovider/description.md)
+  A textual representation of this image tracking provider.
 
 ## Relationships
 

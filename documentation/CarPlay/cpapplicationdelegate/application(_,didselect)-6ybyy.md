@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Tells the app delegate that the user selected a maneuver.
+If your application posts a @c CPManeuver while backgrounded, a notification banner may be presented to the user. If the user taps on that banner, your application will launch on the car screen and this method will be called with the maneuver the user tapped.
 
 **Availability**:
 - iOS 12.0+ - Deprecated in 13.0
@@ -20,15 +20,6 @@ optional func application(_ application: UIApplication, didSelect maneuver: CPMa
 ```objc
 - (void) application:(UIApplication *) application didSelectManeuver:(CPManeuver *) maneuver;
 ```
-
-## Discussion
-
-When your app posts a maneuver while running in the background, CarPlay may display a notification banner. If the user taps the banner, the system displays your app on the CarPlay screen, then calls this method.
-
-## Parameters
-
-- `application`: Your singleton app object.
-- `maneuver`: The maneuver selected by the user.
 
 
 ---

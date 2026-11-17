@@ -21,6 +21,12 @@ var name: String? { get }
 @property (nonatomic, readonly, nullable) NSString * name;
 ```
 
+## See Also
+
+### Deprecated
+- [var address: String?](./address.md)
+  address is an optional address string for the waypoint, formatted with newline characters separating each address component. Example: “Apple Inc.\n1 Apple Park Way\nCupertino, CA 95014\nUnited States”
+
 
 ---
 

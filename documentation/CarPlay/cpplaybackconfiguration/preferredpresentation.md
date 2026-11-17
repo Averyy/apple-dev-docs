@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The style of media presentation shown after selecting the item.
+The preferred presentation behavior when someone selects the media item.
 
 **Availability**:
 - iOS 26.4+
@@ -20,6 +20,10 @@ var preferredPresentation: CPPlaybackConfiguration.Presentation { get }
 ```objc
 @property (nonatomic, assign, readonly) CPPlaybackPresentation preferredPresentation;
 ```
+
+## Discussion
+
+When someone selects a media item, this property tells the system whether to update the app’s interface automatically to reflect the selection. For example, when someone selects an audio file, the system can display the app’s shared [`CPNowPlayingTemplate`](../cpnowplayingtemplate.md) interface automatically. If the value of this property is [`CPPlaybackConfiguration.Presentation.none`](./presentation/none.md), the system doesn’t provide any automatic behavior and your app is responsible for updating its interface.
 
 
 ---

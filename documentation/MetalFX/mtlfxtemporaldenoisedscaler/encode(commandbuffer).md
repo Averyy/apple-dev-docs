@@ -12,7 +12,7 @@ Encode this scaler denoiser’s work into a command buffer.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 26.0+
-- tvOS 27.1+
+- tvOS 27.2+
 
 ## Declaration
 

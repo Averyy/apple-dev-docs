@@ -27,11 +27,13 @@ If not set, falls back to `distanceRemaining`.
 
 ## See Also
 
-### Getting Travel Estimates
+### Getting travel estimates
 - [var distanceRemaining: Measurement<UnitLength>](./distanceremaining.md)
   The remaining distance for the travel estimate.
 - [var timeRemaining: TimeInterval](./timeremaining.md)
   The remaining time for the travel estimate.
+- [var routeDetails: [CPRouteDetail]](./routedetails.md)
+  Additional trip information such as battery, fuel, or toll information to display with travel estimates.
 
 
 ---

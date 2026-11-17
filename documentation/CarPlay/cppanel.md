@@ -27,12 +27,12 @@ The `CPPanel` type defines the default behaviors for panels you display in your 
 
 ## Topics
 
-### Initializers
+### Initializing the panel
 - [init?(coder: NSCoder)](./cppanel/init%28coder%29.md)
-### Instance Properties
+### Adding a close button to the panel
 - [var showsCloseButton: Bool](./cppanel/showsclosebutton.md)
   A Boolean value that indicates whether the panel displays a close button.
-### Type Properties
+### Getting the maximum number of items
 - [class var maximumPanelItemsCount: Int](./cppanel/maximumpanelitemscount.md)
   The maximum number of items the panel is able to display.
 
@@ -51,6 +51,22 @@ The `CPPanel` type defines the default behaviors for panels you display in your 
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
+
+## See Also
+
+### Common types
+- [class CPTemplate](./cptemplate.md)
+  An abstract base class for interface templates.
+- [class CPTextButton](./cptextbutton.md)
+  A button that displays a stylized title.
+- [class CPButton](./cpbutton.md)
+  A button that displays an image and invokes a handler when the user taps it.
+- [class CPImageSet](./cpimageset.md)
+  Light and dark representations of an image.
+- [class CPPanelItem](./cppanelitem.md)
+  A type that provides the common behaviors for items you display in a section of a panel.
+- [class CPPanelButtonConfiguration](./cppanelbuttonconfiguration.md)
+  A type that provides the common behaviors for a button layout in a panel.
 
 
 ---

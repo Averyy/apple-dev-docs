@@ -23,9 +23,9 @@ protocol ResolvableIntentValueExpectation : IntentValueExpectation
 
 ## Overview
 
-Intent parameters hold values as the caller passed them, so [`expect`](./appintentdefinition/expect.md) accepts only expectations that conform to this protocol. For an entity parameter, you can check its type with an [`AppEntityDefinition`](./appentitydefinition.md) or its identifier with an [`AppEntityIdentifierExpectation`](./appentityidentifierexpectation.md), but not its properties, because no query has run to populate them.
+Intent parameters hold values as the caller passed them, so [`expect`](./appintentdefinition/expect.md) accepts only expectations that conform to this protocol.
 
-You get resolvable expectations from the static members that the framework provides, such as [`contains(_:)`](./intentvalueexpectation/contains%28_%29.md) and [`isNil`](./intentvalueexpectation/isnil.md), and from entity definitions and identifier expectations. Don’t declare new conformances to this protocol.
+You get resolvable expectations from the framework, such as [`contains(_:)`](./intentvalueexpectation/contains%28_%29.md) and [`isNil`](./intentvalueexpectation/isnil.md). Don’t declare new conformances to this protocol.
 
 ## Relationships
 

@@ -31,7 +31,7 @@ Xcode also provides interactive editors for certain types of assets, like partic
 ### Images
 - [Adding images to your Xcode project](./adding-images-to-your-xcode-project.md)
   Import images into your project, manage their appearances and variations, and load them at runtime.
-- [Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md)
+- [Creating custom SF Symbols](../TechnologyOverviews/creating-custom-sf-symbols.md)
   Design a symbol image with the same behavior as system-provided symbols.
 ### Colors
 - [Specifying your app’s color scheme](./specifying-your-apps-color-scheme.md)

@@ -15,6 +15,10 @@ Removes a world anchor from a world-tracking provider.
 final func removeAnchor(_ worldAnchor: WorldAnchor) async throws
 ```
 
+## Discussion
+
+> **Throws**: `WorldTrackingProvider.Error`
+
 ## Parameters
 
 - `worldAnchor`: The world anchor to remove.

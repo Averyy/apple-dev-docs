@@ -15,6 +15,10 @@ A container for geometrical vector data.
 typedef NSObject<OS_ar_geometry_source> * ar_geometry_source_t;
 ```
 
+## Discussion
+
+Describes a source of geometry data such as vertices or normals.
+
 ## See Also
 
 ### Geometry

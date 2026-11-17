@@ -21,6 +21,7 @@ struct PKStrokePath
 
 ## Mentions
 
+- [Controlling stroke rendering for animation and editing](./controlling-stroke-rendering-for-animation-and-editing.md)
 - [Importing Bézier path data into PencilKit](./importing-external-drawing-data-into-pencilkit.md)
 
 ## Topics
@@ -53,6 +54,8 @@ struct PKStrokePath
 - [func interpolatedPoint(at: CGFloat) -> PKStrokePoint](./pkstrokepath-swift.struct/interpolatedpoint%28at%29.md)
   Returns the on-curve point for the provided floating point parameter.
 - [func parametricValue(CGFloat, offsetBy: PKStrokePath.InterpolatedSlice.Stride) -> CGFloat](./pkstrokepath-swift.struct/parametricvalue%28_,offsetby%29.md)
+- [subscript(ClosedRange<CGFloat>) -> PKStrokePath](./pkstrokepath-swift.struct/subscript%28_%29.md)
+  Access the stroke point at the provided index.
 ### Supporting types
 - [PKStrokePath.InterpolatedSlice](./pkstrokepath-swift.struct/interpolatedslice.md)
   A struct representing an interpolated slice of stroke points with a specific stride across a range of this stroke data.
@@ -62,9 +65,6 @@ struct PKStrokePath
 ### Using reference types
 - [class PKStrokePathReference](./pkstrokepathreference.md)
   A class that captures the components of a stroke and provides methods to find and interpolate points along the stroke’s path.
-### Subscripts
-- [subscript(ClosedRange<CGFloat>) -> PKStrokePath](./pkstrokepath-swift.struct/subscript%28_%29.md)
-  Access the stroke point at the provided index.
 ### Default Implementations
 - [Identifiable Implementations](./pkstrokepath-swift.struct/identifiable-implementations.md)
 

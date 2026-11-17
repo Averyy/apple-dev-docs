@@ -18,7 +18,7 @@ Initializes a location anchor with the given coordinate and altitude.
 
 ## Parameters
 
-- `coordinate`: Lattitude and longitude of the anchor’s geographic location.
+- `coordinate`: Latitude and longitude of the anchor’s geographic location.
 - `altitude`: Vertical distance, in meters, between this anchor and sea level.
 
 ## See Also
@@ -29,7 +29,7 @@ Initializes a location anchor with the given coordinate and altitude.
 - [- initWithName:coordinate:](./initwithname_coordinate_.md)
   Initializes a named location anchor with the given coordinates.
 - [init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance)](./init%28name,coordinate,altitude%29-8sbh4.md)
-  Initializes a named location anchor with the given coordinates and altitude.
+  Initializes a named location anchor with the given coordinate and altitude.
 
 
 ---

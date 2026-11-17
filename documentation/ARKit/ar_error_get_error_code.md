@@ -15,6 +15,14 @@ Gets the error code associated with an error.
 extern ar_error_code_t ar_error_get_error_code(ar_error_t error);
 ```
 
+## Return Value
+
+The error code.
+
+## Parameters
+
+- `error`: The `ar_error_t` instance.
+
 ## See Also
 
 ### Errors

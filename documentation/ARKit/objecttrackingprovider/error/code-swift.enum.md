@@ -19,7 +19,7 @@ enum Code
 
 ### Error codes
 - [ObjectTrackingProvider.Error.Code.referenceObjectLoadingFailed](./code-swift.enum/referenceobjectloadingfailed.md)
-  Values that indicate loading a reference object model failed.
+  Loading a reference object model failed.
 ### Instance Properties
 - [var description: String](./code-swift.enum/description.md)
   A textual representation of the code.

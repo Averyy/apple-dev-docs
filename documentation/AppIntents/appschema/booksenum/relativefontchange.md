@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An enum schema for a relative font change parameter.
+An enum schema for a relative font change.
 
 **Availability**:
 - iOS 18.0+
@@ -21,9 +21,9 @@ var relativeFontChange: some AppSchemaEnum { get }
 
 ## Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `books` domain and a parameter type matches the `relativeFontChange` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .books.relativeFontChange)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `books` domain and a parameter type matches the `relativeFontChange` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum(schema: .books.relativeFontChange)` Swift macro.
 
-The following example shows an app enum that conforms to the `relativeFontChange` schema:
+The following example shows an app enum that conforms to the `relativeFontChange` schema. You can create a type that conforms to the schema by adding the `@AppEnum` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `books_relativeFontChange` and select it from the code-completion suggestions:
 
 ```swift
 @AppEnum(schema: .books.relativeFontChange)
@@ -46,23 +46,23 @@ For more information about the App Intents framework and the experiences it supp
 
 ### Types for static parameters
 - [var contentType: some AppSchemaEnum](./contenttype.md)
-  An enum schema for a content type parameter.
+  An enum schema for a content type.
 - [var font: some AppSchemaEnum](./font.md)
-  An enum schema for a font parameter.
+  An enum schema for a font.
 - [var fontSize: some AppSchemaEnum](./fontsize.md)
-  An enum schema for a font size parameter.
+  An enum schema for a font size.
 - [var navigationDirection: some AppSchemaEnum](./navigationdirection.md)
-  An enum schema for a navigation direction parameter.
+  An enum schema for a navigation direction.
 - [var pageNavigationSetting: some AppSchemaEnum](./pagenavigationsetting.md)
-  An enum schema for a page navigation setting parameter.
+  An enum schema for a page navigation setting.
 - [var relativeCharacterSpacingChange: some AppSchemaEnum](./relativecharacterspacingchange.md)
-  An enum schema for a relative character spacing change parameter.
+  An enum schema for a relative character spacing change.
 - [var relativeLineSpacingChange: some AppSchemaEnum](./relativelinespacingchange.md)
-  An enum schema for a relative line spacing change parameter.
+  An enum schema for a relative line spacing change.
 - [var relativeWordSpacingChange: some AppSchemaEnum](./relativewordspacingchange.md)
-  An enum schema for a relative word spacing change parameter.
+  An enum schema for a relative word spacing change.
 - [var theme: some AppSchemaEnum](./theme.md)
-  An enum schema for a theme parameter.
+  An enum schema for a theme.
 - [AppSchema.BooksEnum](../booksenum.md)
   Identifies enum schemas in the books domain.
 

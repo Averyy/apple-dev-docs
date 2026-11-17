@@ -24,7 +24,7 @@ Presents an image viewer for a given image file containing Apple Reference Image
 - Parameters
 
   - fileURL: A binding to an optional URL that refers to the file containing the Apple Reference Image. When non-nil, the sheet will be presented. Your app must have read access to this file.
-  - onProcessingCompletion: An optional closure called when processing completes.
+  - onProcessingCompletion: An optional closure called when processing completes. The closure contains a file URL to a newly created file with processed reference image, or an error detailing why the processing failed. Your app should treat the returned file as the new representation of the provided reference image and future calls to the viewer should use this file.
 
 ## See Also
 

@@ -59,7 +59,9 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
 - [init(mtlDevice: any MTLDevice, options: [CIContextOption : Any]?)](./cicontext/init%28mtldevice,options%29-26usb.md)
   Creates a Core Image context using the specified Metal device and options.
 - [init(mtlCommandQueue: any MTLCommandQueue)](./cicontext/init%28mtlcommandqueue%29-7dtqk.md)
+  Creates a Core Image context that commits commands to the specified Metal command queue.
 - [init(mtlCommandQueue: any MTLCommandQueue, options: [CIContextOption : Any]?)](./cicontext/init%28mtlcommandqueue,options%29-6i3me.md)
+  Creates a Core Image context that commits commands to the specified Metal command queue.
 ### Rendering Images
 - [func createCGImage(CIImage, from: CGRect) -> CGImage?](./cicontext/createcgimage%28_,from%29.md)
   Creates a Core Graphics image from a region of a Core Image image instance.

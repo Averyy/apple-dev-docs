@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The total duration of the media content as a CMTime value. Provide 0 if the duration of the content is unknown or unavailable, for example in live-streaming content.
+The duration of the media file in seconds.
 
 **Availability**:
 - iOS 26.4+
@@ -20,6 +20,10 @@ var duration: CMTime { get }
 ```objc
 @property (nonatomic, assign, readonly) CMTime duration;
 ```
+
+## Discussion
+
+The system uses this value and the value in the [`elapsedTime`](./elapsedtime.md) property to determine the playback progress. If the duration of the media file is unknown or unavailable, the value of this property is `0`. For example, the value is typically `0` for live-streaming content.
 
 
 ---

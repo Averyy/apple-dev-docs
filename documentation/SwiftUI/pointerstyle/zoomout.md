@@ -17,7 +17,13 @@ static let zoomOut: PointerStyle
 
 ## Discussion
 
-This pointer style displays a magnifying glass with a minus symbol. You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
+This pointer style displays a magnifying glass with a minus symbol.
+
+The following image shows the zoom out pointer:
+
+![A magnifying glass pointer with a minus symbol.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-zoomOut@2x.png)
+
+You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 
 ## See Also
 

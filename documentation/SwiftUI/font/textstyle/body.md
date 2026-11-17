@@ -38,16 +38,16 @@ case body
   The font used for third level hierarchical headings.
 - [Font.TextStyle.headline](./headline.md)
   The font used for headings.
-- [Font.TextStyle.subheadline](./subheadline.md)
-  The font used for subheadings.
 - [Font.TextStyle.callout](./callout.md)
   The font used for callouts.
+- [Font.TextStyle.subheadline](./subheadline.md)
+  The font used for subheadings.
+- [Font.TextStyle.footnote](./footnote.md)
+  The font used in footnotes.
 - [Font.TextStyle.caption](./caption.md)
   The font used for standard captions.
 - [Font.TextStyle.caption2](./caption2.md)
   The font used for alternate captions.
-- [Font.TextStyle.footnote](./footnote.md)
-  The font used in footnotes.
 
 
 ---

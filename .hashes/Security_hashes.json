@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/Security": {
       "file_path": "documentation/Security/Security.md",
-      "hash": "c55f4f5cbd61a5eb552f217838235d54a8e774add591b5e1d916de41f153ca40"
+      "hash": "25662dc60038e2db17dc1cae0e5d73273336b082f7afb54f37b84be4a1871724"
     },
     "https://developer.apple.com/documentation/security/1434707-anonymous": {
       "file_path": "documentation/Security/api-1434707-anonymous.md",
@@ -21318,7 +21318,7 @@
     },
     "https://developer.apple.com/documentation/security/ksecpolicyappleqwactlsbinding": {
       "file_path": "documentation/Security/ksecpolicyappleqwactlsbinding.md",
-      "hash": "c5a7267d138d50b65a59d8149440be88b6e95b3570ffc2d6ccb5ae944b2a2dc4"
+      "hash": "1779b44918ff6155930e9cf8b6e257f31d4a498ec1d6d601a49c8a080b334003"
     },
     "https://developer.apple.com/documentation/security/ksecpolicyapplerevocation": {
       "file_path": "documentation/Security/ksecpolicyapplerevocation.md",
@@ -24544,17 +24544,9 @@
       "file_path": "documentation/Security/seccertificatecopypublickey(_).md",
       "hash": "8e5f8df536936165d0096d1d319f2c3ab9cac23fffeb98aa436457c5badd92ef"
     },
-    "https://developer.apple.com/documentation/security/seccertificatecopypublickey(_:_:)": {
-      "file_path": "documentation/Security/seccertificatecopypublickey(_,_).md",
-      "hash": ""
-    },
     "https://developer.apple.com/documentation/security/seccertificatecopyserialnumber(_:)": {
       "file_path": "documentation/Security/seccertificatecopyserialnumber(_).md",
       "hash": "38e157ee40f4519fdec7c049a49c1d9b8c47a3c3bc58db93d2d0302e813525b5"
-    },
-    "https://developer.apple.com/documentation/security/seccertificatecopyserialnumber(_:_:)": {
-      "file_path": "documentation/Security/seccertificatecopyserialnumber(_,_).md",
-      "hash": ""
     },
     "https://developer.apple.com/documentation/security/seccertificatecopyserialnumberdata(_:_:)": {
       "file_path": "documentation/Security/seccertificatecopyserialnumberdata(_,_).md",
@@ -26620,9 +26612,9 @@
       "file_path": "documentation/Security/secpolicycreatebasicx509().md",
       "hash": "55ef73e534742f92d532899aaf2ce9278f85c766049812e2d6c15212cd6e7c7b"
     },
-    "https://developer.apple.com/documentation/security/secpolicycreateqwactlsbinding(_:)": {
-      "file_path": "documentation/Security/secpolicycreateqwactlsbinding(_).md",
-      "hash": "66feea191f27e16e5c3bc1e4e53c386cbcfac14567d82a4df6fffe5e7654e389"
+    "https://developer.apple.com/documentation/security/secpolicycreateqwactlsbinding": {
+      "file_path": "documentation/Security/secpolicycreateqwactlsbinding.md",
+      "hash": "3610c6bd3dd3a31eb79cc411d7ce3c4779f45b023bd8ed3b1f7ada8c84db9824"
     },
     "https://developer.apple.com/documentation/security/secpolicycreaterevocation(_:)": {
       "file_path": "documentation/Security/secpolicycreaterevocation(_).md",
@@ -29314,7 +29306,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/Security.json": {
       "file_path": "documentation/Security/Security.md",
-      "hash": "c55f4f5cbd61a5eb552f217838235d54a8e774add591b5e1d916de41f153ca40"
+      "hash": "25662dc60038e2db17dc1cae0e5d73273336b082f7afb54f37b84be4a1871724"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/1434707-anonymous.json": {
       "file_path": "documentation/Security/api-1434707-anonymous.md",
@@ -50630,7 +50622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/security/ksecpolicyappleqwactlsbinding.json": {
       "file_path": "documentation/Security/ksecpolicyappleqwactlsbinding.md",
-      "hash": "c5a7267d138d50b65a59d8149440be88b6e95b3570ffc2d6ccb5ae944b2a2dc4"
+      "hash": "1779b44918ff6155930e9cf8b6e257f31d4a498ec1d6d601a49c8a080b334003"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/ksecpolicyapplerevocation.json": {
       "file_path": "documentation/Security/ksecpolicyapplerevocation.md",
@@ -53856,17 +53848,9 @@
       "file_path": "documentation/Security/seccertificatecopypublickey(_).md",
       "hash": "8e5f8df536936165d0096d1d319f2c3ab9cac23fffeb98aa436457c5badd92ef"
     },
-    "https://developer.apple.com/tutorials/data/documentation/security/seccertificatecopypublickey(_:_:).json": {
-      "file_path": "documentation/Security/seccertificatecopypublickey(_,_).md",
-      "hash": ""
-    },
     "https://developer.apple.com/tutorials/data/documentation/security/seccertificatecopyserialnumber(_:).json": {
       "file_path": "documentation/Security/seccertificatecopyserialnumber(_).md",
       "hash": "38e157ee40f4519fdec7c049a49c1d9b8c47a3c3bc58db93d2d0302e813525b5"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/seccertificatecopyserialnumber(_:_:).json": {
-      "file_path": "documentation/Security/seccertificatecopyserialnumber(_,_).md",
-      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/security/seccertificatecopyserialnumberdata(_:_:).json": {
       "file_path": "documentation/Security/seccertificatecopyserialnumberdata(_,_).md",
@@ -55932,9 +55916,9 @@
       "file_path": "documentation/Security/secpolicycreatebasicx509().md",
       "hash": "55ef73e534742f92d532899aaf2ce9278f85c766049812e2d6c15212cd6e7c7b"
     },
-    "https://developer.apple.com/tutorials/data/documentation/security/secpolicycreateqwactlsbinding(_:).json": {
-      "file_path": "documentation/Security/secpolicycreateqwactlsbinding(_).md",
-      "hash": "66feea191f27e16e5c3bc1e4e53c386cbcfac14567d82a4df6fffe5e7654e389"
+    "https://developer.apple.com/tutorials/data/documentation/security/secpolicycreateqwactlsbinding.json": {
+      "file_path": "documentation/Security/secpolicycreateqwactlsbinding.md",
+      "hash": "3610c6bd3dd3a31eb79cc411d7ce3c4779f45b023bd8ed3b1f7ada8c84db9824"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/secpolicycreaterevocation(_:).json": {
       "file_path": "documentation/Security/secpolicycreaterevocation(_).md",
@@ -58629,6 +58613,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 14656
+    "total_pages": 14652
   }
 }

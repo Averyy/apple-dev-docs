@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The image that the button displays.
+The image to display for the button.
 
 **Availability**:
 - iOS 14.0+
@@ -23,7 +23,7 @@ var image: UIImage? { get }
 
 ## Discussion
 
-The button displays images no larger than [`CPNowPlayingButtonMaximumImageSize`](../cpnowplayingbuttonmaximumimagesize.md). If you use an animated image, this property returns the first image in the animation sequence.
+If you specified an image with a width and height of zero, the system displays a placeholder image instead.
 
 
 ---

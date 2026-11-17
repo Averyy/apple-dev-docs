@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-A template that displays and manages a list of items.
+A template that displays a single-column list of items in one of several visual styles.
 
 **Availability**:
 - iOS 12.0+
@@ -22,94 +22,79 @@ class CPListTemplate
 @interface CPListTemplate : CPTemplate
 ```
 
+## Mentions
+
+- [Building your app’s initial CarPlay interface](./building-your-apps-initial-carplay-interface.md)
+
 ## Overview
 
-Use the list template to display a list of items, grouped into one or more sections. When the user selects an item, CarPlay invokes Siri or a custom handler that you provide, depending on the type of list item. If your list displays hierarchical data, use the handler to add templates to the navigation hierarchy.
+A `CPListTemplate` template presents a single column of items in a scrollable interface. Lists are a versatile way to display content, and frequently play a role in interfaces with hierarchical content. For example, an audio app might display playlists or albums using a list template on one page and allow someone to navigate to a second page with a list of individual songs. Similarly, a communication app might display a list of conversations on one page and a list of messages for a selected conversation on another.
 
-To create a list template, call the [`init(title:sections:)`](./cplisttemplate/init%28title,sections%29.md) method and provide an array of [`CPListSection`](./cplistsection.md) objects. At runtime, use [`maximumSectionCount`](./cplisttemplate/maximumsectioncount.md) to determine the maximum number of sections your list can display. Use [`maximumItemCount`](./cplisttemplate/maximumitemcount.md) to determine the maximum number of items across all sections that your list can display.
+To create a list interface, assemble the rows of content you want to display, organize them into sections, and create a `CPListTemplate` object with your data. Display a list template as the root template of your interface or in a tab of a tab bar template. You can also push a list template onto your app’s navigation stack using the [`pushTemplate(_:animated:completion:)`](./cpinterfacecontroller/pushtemplate%28_,animated,completion%29.md) method.
 
-Each section contains an array of list items — objects that conform to either the [`CPListTemplateItem`](./cplisttemplateitem.md) or the [`CPSelectableListItem`](./cpselectablelistitem.md) protocol. CarPlay provides three concrete implementations of these protocols:
+For a list template, choosing the right row type is the most important consideration because it determines the appearance of your content. Rows support a variety of formats and visual styles, including grid-like appearances. You can create rows with a single row type or mix and match types to create hybrid experiences. When creating the rows of your template, start with one of the following types:
 
-- **[`CPListItem`](./cplistitem.md)**: A generic, selectable list item.
-- **[`CPListImageRowItem`](./cplistimagerowitem.md)**: A list item that displays a series of images.
-- **[`CPMessageListItem`](./cpmessagelistitem.md)**: A list item that represents a conversation or contact.
+- **[`CPListItem`](./cplistitem.md)**: A type that displays a single item in the row. Present the row content using strings and an optional image.
+- **[`CPListImageRowItem`](./cplistimagerowitem.md)**: A versatile type that supports visually rich layouts and multiple items per row. Row elements present a grid-like appearance.
+- **[`CPMessageListItem`](./cpmessagelistitem.md)**: A type that displays message-specific conversation or contact details in a row. This row type is available only to communication apps.
+- **[`CPAssistantCellConfiguration`](./cpassistantcellconfiguration.md)**: A type that adds support for app-based interactions using Siri to your list interface. This row type is available only to audio and communication apps.
 
-> **Note**:  The depth of a hierarchical list in CarPlay depends on your app’s entitlements. Food-ordering apps must not exceed two levels. The framework restricts all other categories of apps to five levels. Also, some vehicles limit the number of items that the list displays. See [`CPSessionConfiguration`](./cpsessionconfiguration.md) for more information.
+When configuring the sections and rows of your list template, keep in mind that list interfaces support a finite number of rows and sections. The [`maximumSectionCount`](./cplisttemplate/maximumsectioncount.md) and [`maximumItemCount`](./cplisttemplate/maximumitemcount.md) properties indicate the limits. If you include more items than the maximum values, CarPlay discards items past the specified limits.
 
-To display the list, call your interface controller’s [`pushTemplate(_:animated:completion:)`](./cpinterfacecontroller/pushtemplate%28_,animated,completion%29.md) method, passing in the list template to add it to your navigation hierarchy. Alternatively, add the template as a tab in your [`CPTabBarTemplate`](./cptabbartemplate.md).
-
-### Integrating Siri Into Your Template App
-
-For audio and communication apps, CarPlay provides an *assistant cell* to let users interact with your app using Siri_._
-
-![Screenshot that shows the assistant cell at the top of a list template.](https://developer.apple.com/tutorials/images/com.apple.carplay/media-3786976@2x.png)
-
-To enable the assistant cell, your app must support specific Siri intents:
-
-- To play audio, audio apps must support [`INPlayMediaIntent`](../Intents/inplaymediaintent.md).
-- To make phone calls, communication apps must support [`INStartCallIntent`](../Intents/instartcallintent.md).
-
-To enable the assistant cell in your list template, use [`init(title:sections:assistantCellConfiguration:)`](./cplisttemplate/init%28title,sections,assistantcellconfiguration%29.md) and provide the required configuration. For more information, see [`CPAssistantCellConfiguration`](./cpassistantcellconfiguration.md). CarPlay automatically updates your app’s interface if you change the template’s [`assistantCellConfiguration`](./cplisttemplate/assistantcellconfiguration.md) property.
+In addition to rows, a list interface can display a prominent header with text, images, and interactive buttons above your row content. Specify the header when creating the template, or add it dynamically using the [`listHeader`](./cplisttemplate/listheader.md) property. You can also add header content to each section object to make the start of the section more prominent.
 
 ## Topics
 
-### Creating a List Template
+### Creating a list template
 - [init(title: String?, sections: [CPListSection])](./cplisttemplate/init%28title,sections%29.md)
-  Creates a list template with an array of list sections and optional title.
+  Creates a list template with a title and sections to display.
 - [init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?)](./cplisttemplate/init%28title,sections,assistantcellconfiguration%29.md)
-  Creates a sectioned list template that optionally displays the assistant cell.
-### Managing Sections
+  Creates a list template with a title, sections, and an assistant cell.
+- [init(title: String?, listHeader: CPListTemplateDetailsHeader?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?)](./cplisttemplate/init%28title,listheader,sections,assistantcellconfiguration%29.md)
+  Creates a list template with a title, sections, and a header and assistant cell with optional details.
+- [init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?, headerGridButtons: [CPGridButton]?)](./cplisttemplate/init%28title,sections,assistantcellconfiguration,headergridbuttons%29.md)
+  Creates a list template with a title, sections, an optional assistant cell, and one or more buttons to display in the header.
+### Getting the configuration limits
 - [class var maximumSectionCount: Int](./cplisttemplate/maximumsectioncount.md)
-  The maximum number of sections that the template can display.
+  The maximum number of sections the template can display.
+- [class var maximumItemCount: Int](./cplisttemplate/maximumitemcount.md)
+  The maximum number of items, across all sections, that the template can display.
+- [class var maximumGridButtonImageSize: CGSize](./cplisttemplate/maximumgridbuttonimagesize.md)
+  The expected image size for any grid buttons you add to the header.
+- [class var maximumHeaderGridButtonCount: Int](./cplisttemplate/maximumheadergridbuttoncount.md)
+  The maximum number of grid buttons you can display in the header.
+### Managing section content
 - [var sectionCount: Int](./cplisttemplate/sectioncount.md)
-  The number of sections in the list.
+  The current number of sections in the list.
 - [var sections: [CPListSection]](./cplisttemplate/sections.md)
   The sections that the list displays.
 - [func updateSections([CPListSection])](./cplisttemplate/updatesections%28_%29.md)
-  Adds, removes, reorders, or updates the list’s sections.
-- [class CPListSection](./cplistsection.md)
-  A container that groups your list items into sections.
-### Managing the Assistant Cell
-- [var assistantCellConfiguration: CPAssistantCellConfiguration?](./cplisttemplate/assistantcellconfiguration.md)
-  The object that provides the configuration attributes for the assistant cell.
-- [class CPAssistantCellConfiguration](./cpassistantcellconfiguration.md)
-  An object that provides the configuration attributes for the assistant cell.
-### Managing an Empty List
-- [var emptyViewTitleVariants: [String]](./cplisttemplate/emptyviewtitlevariants.md)
-  An array of title variants for the template’s empty view.
-- [var emptyViewSubtitleVariants: [String]](./cplisttemplate/emptyviewsubtitlevariants.md)
-  An array of subtitle variants for the template’s empty view.
-### Getting Supplementary Information
-- [class var maximumItemCount: Int](./cplisttemplate/maximumitemcount.md)
-  The maximum number of items, across all sections, that the template can display.
+  Adds, removes, reorders, or updates the current sections in the list.
+### Getting item details
 - [var itemCount: Int](./cplisttemplate/itemcount.md)
   The total number of items, across all sections, in the list.
 - [func indexPath(for: any CPListTemplateItem) -> IndexPath?](./cplisttemplate/indexpath%28for%29.md)
   Returns the index path for the specified item.
+### Managing the supplemental content
 - [var title: String?](./cplisttemplate/title.md)
-  The title that the navigation bar displays when the template is visible.
-### Responding to List Events
-- [var delegate: (any CPListTemplateDelegate)?](./cplisttemplate/delegate.md)
-  The object that serves as the delegate to the list template.
-- [protocol CPListTemplateDelegate](./cplisttemplatedelegate.md)
-  The interface an object implements to serve as the delegate for a list template.
-### Initializers
-- [init(title: String?, listHeader: CPListTemplateDetailsHeader?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?)](./cplisttemplate/init%28title,listheader,sections,assistantcellconfiguration%29.md)
-  Initialize a list template with a details list header.
-- [init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?, headerGridButtons: [CPGridButton]?)](./cplisttemplate/init%28title,sections,assistantcellconfiguration,headergridbuttons%29.md)
-  Initialize a list template with one or more grid buttons to displayed in a list header.
-### Instance Properties
-- [var headerGridButtons: [CPGridButton]?](./cplisttemplate/headergridbuttons.md)
-  Assigning to this property will dynamically update the List Template and show the new header.
+  The title to display in the navigation bar when the list is visible.
 - [var listHeader: CPListTemplateDetailsHeader?](./cplisttemplate/listheader.md)
-  An optional details header displayed at the top of the list template.
+  An optional header to display between the navigation bar and first section of content.
+- [var headerGridButtons: [CPGridButton]?](./cplisttemplate/headergridbuttons.md)
+  Buttons to display in the header area above the list content.
+- [var assistantCellConfiguration: CPAssistantCellConfiguration?](./cplisttemplate/assistantcellconfiguration.md)
+  The object that provides the configuration attributes for the assistant cell.
+### Managing an empty list
 - [var showsSpinnerWhileEmpty: Bool](./cplisttemplate/showsspinnerwhileempty.md)
-  If YES, a spinning activity indicator will be displayed while the list template contains no items. The activity indicator will be displayed in addition to any @c emptyViewTitleVariants or
-### Type Properties
-- [class var maximumGridButtonImageSize: CGSize](./cplisttemplate/maximumgridbuttonimagesize.md)
-  The expected image size for your @c CPGridButton.
-- [class var maximumHeaderGridButtonCount: Int](./cplisttemplate/maximumheadergridbuttoncount.md)
-  The maximum number of grid buttons that may appear in a @c CPListTemplate.
+  A Boolean value that indicates whether to display a spinning activity indicator when the list contains no items.
+- [var emptyViewTitleVariants: [String]](./cplisttemplate/emptyviewtitlevariants.md)
+  An array of localized title strings to display when the list contains no items.
+- [var emptyViewSubtitleVariants: [String]](./cplisttemplate/emptyviewsubtitlevariants.md)
+  An array of localized subtitle strings to display when the list contains no items.
+### Deprecated
+- [var delegate: (any CPListTemplateDelegate)?](./cplisttemplate/delegate.md)
+  The list template’s delegate is informed of list selection events.
+- [protocol CPListTemplateDelegate](./cplisttemplatedelegate.md)
 
 ## Relationships
 
@@ -130,15 +115,31 @@ To enable the assistant cell in your list template, use [`init(title:sections:as
 
 ## See Also
 
-### General Purpose Templates
-- [class CPGridTemplate](./cpgridtemplate.md)
-  A template that displays and manages a grid of items.
+### Interface templates
 - [class CPTabBarTemplate](./cptabbartemplate.md)
   A container template that displays and manages other templates, presenting them as tabs.
-- [class CPTemplate](./cptemplate.md)
-  An abstract base class for interface templates.
-- [protocol CPBarButtonProviding](./cpbarbuttonproviding.md)
-  The methods that templates use to provide buttons for the navigation bar.
+- [class CPGridTemplate](./cpgridtemplate.md)
+  A template that displays and manages a grid of items.
+- [class CPMapTemplate](./cpmaptemplate.md)
+  A template that displays a navigation overlay that your app draws on the map.
+- [class CPNowPlayingTemplate](./cpnowplayingtemplate.md)
+  A shared system template that shows the currently selected audio content and offers controls to manage playback.
+- [class CPPointOfInterestTemplate](./cppointofinteresttemplate.md)
+  A template that displays a map with selectable points of interest.
+- [class CPInformationTemplate](./cpinformationtemplate.md)
+  A template that provides information for a point of interest, food order, parking location, or charging location.
+- [class CPContactTemplate](./cpcontacttemplate.md)
+  A template that displays information about a person or a business.
+- [class CPSearchTemplate](./cpsearchtemplate.md)
+  A template that provides the ability to search for a destination and see a list of search results.
+- [class CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
+  A template that displays a voice control indicator during audio input.
+- [class CPActionSheetTemplate](./cpactionsheettemplate.md)
+  A template that displays a modal action sheet.
+- [class CPAlertTemplate](./cpalerttemplate.md)
+  A template that displays a modal alert.
+- [All templates and supporting types](./all-templates-and-supporting-types.md)
+  Explore the templates you use to build the interface of your CarPlay app.
 
 
 ---

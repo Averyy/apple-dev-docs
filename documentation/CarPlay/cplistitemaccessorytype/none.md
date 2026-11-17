@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Don’t show an accessory.
+A value that indicates the list item has no standard accessory type.
 
 **Availability**:
 - iOS 14.0+
@@ -21,13 +21,17 @@ case none
 CPListItemAccessoryTypeNone
 ```
 
+## Discussion
+
+Specify this value when you don’t want to display an accessory image or when you want to display a custom image you provided. For more information, see [`accessoryType`](../cplistitem/accessorytype.md).
+
 ## See Also
 
-### Accessory Types
+### Accessory types
 - [CPListItemAccessoryType.disclosureIndicator](./disclosureindicator.md)
-  Show a chevron icon.
+  A chevron image that signifies the item displays new content.
 - [CPListItemAccessoryType.cloud](./cloud.md)
-  Show a cloud icon.
+  A cloud image that signifies the item contains cloud-based content.
 
 
 ---

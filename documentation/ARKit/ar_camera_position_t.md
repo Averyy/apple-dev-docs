@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-An enumeration that describes possible camera positions.
+Option set describing physical position of a camera sensor on the device relative to the user.
 
 **Availability**:
 - visionOS
@@ -19,6 +19,7 @@ typedef enum { ... } ar_camera_position_t;
 
 ### Camera positions
 - [ar_camera_position_left](./ar_camera_position_t/ar_camera_position_left.md)
+  Camera position on the left side of the device.
 ### Enumeration Cases
 - [ar_camera_position_right](./ar_camera_position_t/ar_camera_position_right.md)
   Camera position on the right side of the device.
@@ -51,7 +52,7 @@ typedef enum { ... } ar_camera_position_t;
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

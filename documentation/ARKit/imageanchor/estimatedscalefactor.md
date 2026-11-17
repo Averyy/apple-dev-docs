@@ -28,8 +28,6 @@ The scale factor is between the tracked image’s size and the [`physicalSize`](
   The reference image that this image anchor tracks.
 - [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking this image.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 - [var id: UUID](./id.md)
   The unique identifier of this anchor.
 

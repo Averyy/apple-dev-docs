@@ -23,17 +23,17 @@ class var maximumItemCount: Int { get }
 
 ## Discussion
 
-This property’s value is dependent on any user interface limits that the vehicle imposes. See [`CPSessionConfiguration`](../cpsessionconfiguration.md) for more information. At runtime, use this value to determine the maximum number of items, across all sections, that your list can display.
+When building your content, use this value to determine the maximum number of items to create. A vehicle can provide a specific value for this property to accommodate any user interface limits. You can determine if vehicle-specific limits are in place using the [`limitedUserInterfaces`](../cpsessionconfiguration/limiteduserinterfaces.md) property of [`CPSessionConfiguration`](../cpsessionconfiguration.md). Even without vehicle-specific limits, different app types support different limits on the amount of information to display.
 
 ## See Also
 
-### Getting Supplementary Information
-- [var itemCount: Int](./itemcount.md)
-  The total number of items, across all sections, in the list.
-- [func indexPath(for: any CPListTemplateItem) -> IndexPath?](./indexpath%28for%29.md)
-  Returns the index path for the specified item.
-- [var title: String?](./title.md)
-  The title that the navigation bar displays when the template is visible.
+### Getting the configuration limits
+- [class var maximumSectionCount: Int](./maximumsectioncount.md)
+  The maximum number of sections the template can display.
+- [class var maximumGridButtonImageSize: CGSize](./maximumgridbuttonimagesize.md)
+  The expected image size for any grid buttons you add to the header.
+- [class var maximumHeaderGridButtonCount: Int](./maximumheadergridbuttoncount.md)
+  The maximum number of grid buttons you can display in the header.
 
 
 ---

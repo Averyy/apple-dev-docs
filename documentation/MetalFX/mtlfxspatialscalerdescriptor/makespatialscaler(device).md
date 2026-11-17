@@ -11,7 +11,7 @@ Creates a spatial scaler instance from this descriptor’s current property valu
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 27.1+
+- tvOS 27.2+
 - visionOS 1.0+
 
 ## Declaration

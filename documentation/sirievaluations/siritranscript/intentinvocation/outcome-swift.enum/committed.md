@@ -20,7 +20,7 @@ var committed: Bool { get }
 
 ## Discussion
 
-The value indicates that it ran, that it is waiting only on the person’s confirmation, or that no outcome was recorded, and is what `Calls(.disallowed)` checks.
+The value indicates that it ran, that it failed, that it is waiting only on the person’s confirmation, or that no outcome was recorded, and is what `Calls(.disallowed)` checks.
 
 ## See Also
 

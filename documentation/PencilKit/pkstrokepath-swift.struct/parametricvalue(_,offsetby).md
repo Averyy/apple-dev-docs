@@ -26,6 +26,8 @@ func parametricValue(_ parametricValue: CGFloat, offsetBy step: PKStrokePath.Int
   Returns the on-curve point for the floating point parametric value.
 - [func interpolatedPoint(at: CGFloat) -> PKStrokePoint](./interpolatedpoint%28at%29.md)
   Returns the on-curve point for the provided floating point parameter.
+- [subscript(ClosedRange<CGFloat>) -> PKStrokePath](./subscript%28_%29.md)
+  Access the stroke point at the provided index.
 
 
 ---

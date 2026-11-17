@@ -23,7 +23,7 @@ CPJunctionTypeRoundabout
 
 ## See Also
 
-### Junction types
+### Getting the junction types
 - [CPJunctionType.intersection](./intersection.md)
   A single intersection with roads coming to a common point.
 

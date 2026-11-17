@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Gets the shape of a plane anchor.
+Gets the geometry of a plane anchor.
 
 **Availability**:
 - visionOS 1.0+
@@ -15,11 +15,19 @@ Gets the shape of a plane anchor.
 extern ar_plane_geometry_tar_plane_anchor_get_geometry(ar_plane_anchor_t plane_anchor);
 ```
 
+## Return Value
+
+An instance of `ar_plane_geometry_t`.
+
+## Parameters
+
+- `plane_anchor`: The plane anchor.
+
 ## See Also
 
 ### Plane detection
 - [ar_plane_alignment_t](./ar_plane_alignment_t.md)
-  The kinds of alignment — horizontal or vertical — that a plane anchor can have.
+  Option set describing possible orientation alignments of a detected plane.
 - [ar_plane_classification_t](./ar_plane_classification_t.md)
   The kinds of object classification a plane anchor can have.
 - [ar_plane_classification_ceiling](./ar_plane_classification_t/ar_plane_classification_ceiling.md)
@@ -47,7 +55,7 @@ extern ar_plane_geometry_tar_plane_anchor_get_geometry(ar_plane_anchor_t plane_a
 - [ar_plane_anchor_get_plane_classification](./ar_plane_anchor_get_plane_classification.md)
   Gets the kind of real-world object that ARKit determines the plane anchor might be.
 - [ar_plane_anchors_enumerate_anchors](./ar_plane_anchors_enumerate_anchors.md)
-  Enumerates a collection of plane anchors using the collection of plane anchors and the enumeratin handler you provide.
+  Enumerates a collection of plane anchors.
 
 
 ---

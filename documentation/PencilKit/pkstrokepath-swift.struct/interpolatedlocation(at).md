@@ -35,6 +35,8 @@ A [`CGPoint`](../../CoreFoundation/cgpoint.md) interpolated from the supplied `p
 - [func interpolatedPoint(at: CGFloat) -> PKStrokePoint](./interpolatedpoint%28at%29.md)
   Returns the on-curve point for the provided floating point parameter.
 - [func parametricValue(CGFloat, offsetBy: PKStrokePath.InterpolatedSlice.Stride) -> CGFloat](./parametricvalue%28_,offsetby%29.md)
+- [subscript(ClosedRange<CGFloat>) -> PKStrokePath](./subscript%28_%29.md)
+  Access the stroke point at the provided index.
 
 
 ---

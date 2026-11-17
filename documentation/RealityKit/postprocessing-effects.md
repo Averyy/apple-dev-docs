@@ -33,6 +33,7 @@ In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects t
 - [struct BloomOptionsComponent](./bloomoptionscomponent.md)
   A component that sets the properties for the bloom post-processing effects.
 - [struct ToneMappingComponent](./tonemappingcomponent.md)
+  A component that maps a scene’s brightness to display brightness using exposure and tone curve controls.
 
 ## See Also
 

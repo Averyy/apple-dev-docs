@@ -15,6 +15,14 @@ Gets the kind of primitive, lines or triangles, that a geometry element contains
 extern ar_geometry_primitive_type_t ar_geometry_element_get_primitive_type(ar_geometry_element_t geometry_element);
 ```
 
+## Return Value
+
+The geometry element’s primitive type.
+
+## Parameters
+
+- `geometry_element`: The geometry element.
+
 ## See Also
 
 ### Geometry

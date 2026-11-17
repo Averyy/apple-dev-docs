@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The list of items for the section.
+The items in the section.
 
 **Availability**:
 - iOS 12.0+
@@ -21,13 +21,17 @@ var items: [any CPListTemplateItem] { get }
 @property (nonatomic, copy, readonly) NSArray<id<CPListTemplateItem>> * items;
 ```
 
+## Discussion
+
+CarPlay displays items in the same order as the array in this property. This property contains only [`CPListItem`](../cplistitem.md), [`CPListImageRowItem`](../cplistimagerowitem.md), and [`CPMessageListItem`](../cpmessagelistitem.md) item types.
+
 ## See Also
 
-### Getting Items
+### Locating items in the section
 - [func index(of: any CPListTemplateItem) -> Int](./index%28of%29.md)
-  Returns the index of the specified item.
+  Returns the zero-based index of an item in the section.
 - [func item(at: Int) -> any CPListTemplateItem](./item%28at%29.md)
-  Returns the item at the specified index.
+  Returns the item at the specified index in the section.
 
 
 ---

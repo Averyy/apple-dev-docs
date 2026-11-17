@@ -33,7 +33,7 @@ Obtain detailed information about skeletal and face geometry, and saved world da
 - [Saving and loading world data](./saving-and-loading-world-data.md)
   Serialize a world-tracking session to resume it later on.
 - [class ARWorldMap](./arworldmap.md)
-  The state in a world-tracking AR session during which a device maps the user’s position in physical space and proximity to anchor objects.
+  The space-mapping state and set of anchors from a world-tracking AR session.
 
 ## See Also
 

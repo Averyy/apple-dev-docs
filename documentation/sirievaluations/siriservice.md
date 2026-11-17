@@ -51,38 +51,50 @@ struct QuizExampleEvaluation: Evaluation {
 }
 ```
 
-The following example uses that type in a test that checks that every intent expectation passed:
+The following example uses that type in a test that checks that every scenario ran and every intent expectation passed:
 
 ```swift
 let quizExampleIntents = IntentDefinitions(bundleIdentifier: "com.example.QuizExample")
 let startQuizIntent = quizExampleIntents.intents["StartQuizIntent"]
 
-@Test(
-    .evaluates(QuizExampleEvaluation(
-        name: "Start a science quiz",
-        dataset: SiriScenarioLoader {
-            SiriScenario {
-                UserTurn("In QuizExample, start a science quiz with 5 questions") {
-                    Calls {
-                        startQuizIntent
-                            .expect(topic: .equals("Science"))
+@Suite(.serialized)
+struct QuizExampleTests {
+    @Test(
+        .evaluates(QuizExampleEvaluation(
+            name: "Start a science quiz",
+            dataset: SiriScenarioLoader {
+                SiriScenario {
+                    UserTurn("In QuizExample, start a Science quiz with 5 questions.") {
+                        Calls {
+                            startQuizIntent
+                                .expect(topic: .equals("Science"))
+                        }
                     }
                 }
             }
-        }
-    ))
-)
-func startsScienceQuiz() async throws {
-    let result = EvaluationContext.current.result
-    #expect(result.aggregateValue(.mean(of: .intentsAllPass)) == 1)
+        ))
+    )
+    func startsScienceQuiz() async throws {
+        let result = EvaluationContext.current.result
+
+        // A scenario that doesn't run, or that can't be graded, has no
+        // metrics and doesn't lower the mean, so check that none failed.
+        #expect(result.errors.inferenceFailureCount == 0)
+        #expect(result.errors.evaluatorFailureCount == 0)
+        #expect(result.aggregateValue(.mean(of: .intentsAllPass)) == 1)
+    }
 }
 ```
 
-An evaluation runs your app’s intents the same way Siri does when a person asks, including requests to Private Cloud Compute. Because `subject(from:)` runs once for each scenario, you can use it to put your app in a known state before Siri runs a scenario and clean up afterward. Pass the `sample` that `subject(from:)` receives to [`run(scenario:)`](./siriservice/run%28scenario%29.md). [`SiriExpectationEvaluator`](./siriexpectationevaluator.md) doesn’t grade a subject that Siri ran from any other scenario, including a copy you rebuild.
+A device runs one scenario at a time, and a scenario that starts while another is running gets no metrics. Swift Testing runs tests in parallel by default, and runs separate suites, and tests outside a suite, in parallel even when each suite is serialized. So put every evaluation test in one `.serialized` suite, nesting any other suites inside it, or turn off parallel testing in the test plan.
 
-> **Note**: You can only evaluate apps that are signed by the same development team as your test target.
+An evaluation runs your app’s intents the same way Siri does when a person asks, including requests to Private Cloud Compute. Because `subject(from:)` runs once for each scenario, you can use it to put your app in a known state before Siri runs a scenario and clean up afterward. If cleanup fails, record an issue with `Issue.record` instead of throwing. When `subject(from:)` throws, the evaluation discards the run, and the scenario counts toward no metric.
 
-When you create an evaluation, use a UI testing target. A UI testing target lets you use [XCUIAutomation](../XCUIAutomation/XCUIAutomation.md) to launch your app and navigate to a screen before invoking Siri. To turn on UI automation, turn on Developer Mode, then Enable UI Automation in Settings > Developer. For more information about enabling Developer Mode, see [Enabling Developer Mode on a device](../Xcode/enabling-developer-mode-on-a-device.md).
+Pass the `sample` that `subject(from:)` receives to [`run(scenario:)`](./siriservice/run%28scenario%29.md). For a subject that Siri ran from any other scenario, including a copy you rebuild, [`SiriExpectationEvaluator`](./siriexpectationevaluator.md) throws instead of grading it, so none of its metrics count that scenario.
+
+> **Note**: Every app a scenario names, other than Apple’s, must be installed and signed by the same development team as your test target, or the scenario doesn’t run. On a Mac, every installed copy of the app must be signed by that team. A check that names an Apple app fails, and the report says it can’t be evaluated. Your test target needs no entitlements of its own.
+
+Create your evaluation in a UI testing target, because [`run(scenario:)`](./siriservice/run%28scenario%29.md) works only there. A UI testing target also lets you use [XCUIAutomation](../XCUIAutomation/XCUIAutomation.md) to launch your app and navigate to a screen before invoking Siri. In iOS and visionOS, turn on Developer Mode, then Enable UI Automation in Settings > Developer. For more information about enabling Developer Mode, see [Enabling Developer Mode on a device](../Xcode/enabling-developer-mode-on-a-device.md).
 
 ## Topics
 
@@ -93,6 +105,8 @@ When you create an evaluation, use a UI testing target. A UI testing target lets
 ## See Also
 
 ### Evaluations
+- [Evaluating your app’s integration with Siri](./evaluating-your-apps-integration-with-siri.md)
+  Create conversations to confirm that Siri runs the correct intents from your app, with the parameter values you expect.
 - [struct SiriExpectationEvaluator](./siriexpectationevaluator.md)
   An evaluator that grades a scenario against its expectations.
 

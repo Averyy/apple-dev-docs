@@ -15,6 +15,10 @@ The maximum number of instances of each reference object type to allow tracking 
 var maximumInstancesPerReferenceObject: Int
 ```
 
+## Discussion
+
+The default is `1`.
+
 ## See Also
 
 ### Inspecting a tracking configuration

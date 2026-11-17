@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Enumeration Case
 
+The kinds of classification a mesh anchor can have.
+
 **Availability**:
 - visionOS
 

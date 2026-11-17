@@ -41,9 +41,9 @@ For more information about app schemas, see [App schema domains](./app-schema-do
   Identifies entity schemas in the whiteboard domain.
 ### Types for static parameters
 - [var color: some AppSchemaEnum](./appschema/whiteboardenum/color.md)
-  An enum schema for a color parameter.
+  An enum schema for a color.
 - [var itemType: some AppSchemaEnum](./appschema/whiteboardenum/itemtype.md)
-  An enum schema for an item type parameter.
+  An enum schema for an item type.
 - [AppSchema.WhiteboardEnum](./appschema/whiteboardenum.md)
   Identifies enum schemas in the whiteboard domain.
 

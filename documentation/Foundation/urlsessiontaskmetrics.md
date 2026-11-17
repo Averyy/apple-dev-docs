@@ -46,6 +46,9 @@ Each [`URLSessionTaskMetrics`](./urlsessiontaskmetrics.md) object contains the [
 ### Type Methods
 - [class func new() -> Self](./urlsessiontaskmetrics/new%28%29.md)
   Creates a task metrics instance.
+### Enumerations
+- [URLSessionTaskMetrics.EarlyDataStatus](./urlsessiontaskmetrics/earlydatastatus.md)
+  Whether a request was sent in TLS early data, and whether the server accepted it.
 
 ## Relationships
 

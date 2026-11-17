@@ -5,9 +5,9 @@
 **Role**: Type Property
 
 **Availability**:
-- iOS 17.0+ - Deprecated in 18.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayout)
-- iPadOS 17.0+ - Deprecated in 18.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayout)
-- Mac Catalyst 17.0+ - Deprecated in 18.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayout)
+- iOS 17.0+ - Deprecated in 18.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayoutDidChangeNotification)
+- iPadOS 17.0+ - Deprecated in 18.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayoutDidChangeNotification)
+- Mac Catalyst 17.0+ - Deprecated in 18.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayoutDidChangeNotification)
 - macOS 14.0+ - Deprecated in 15.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayoutDidChangeNotification)
 - tvOS 17.0+ - Deprecated in 18.0 (renamed: AccessibilitySettings.prefersHorizontalTextLayoutDidChangeNotification)
 - visionOS 1.0+

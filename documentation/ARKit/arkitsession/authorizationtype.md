@@ -25,7 +25,6 @@ enum AuthorizationType
   The authorization for access to plane detection, scene reconstruction, and image tracking.
 - [ARKitSession.AuthorizationType.cameraAccess](./authorizationtype/cameraaccess.md)
   The authorization for camera access.
-### Enumeration Cases
 - [ARKitSession.AuthorizationType.accessoryTracking](./authorizationtype/accessorytracking.md)
   The authorization for access to accessory tracking data.
 ### Instance Properties

@@ -23,13 +23,17 @@ protocol EntitySnippetContent<Entity>
 
 ## Overview
 
-You don’t conform to this protocol directly. Instead, you build an entity’s presentation from a type that already conforms to it, such as [`CardSnippet`](./cardsnippet.md), and return it from the [`snippet`](./snippetrepresentableentity/snippet.md) property of a [`SnippetRepresentableEntity`](./snippetrepresentableentity.md) type.
+You don’t conform to this protocol directly. Instead, you build an entity’s presentation from a type that already conforms to it, such as [`CardSnippet`](./cardsnippet.md), and return it from the [`snippet`](./snippetrepresentableentity/snippet-swift.type.property.md) property of a [`SnippetRepresentableEntity`](./snippetrepresentableentity.md) type.
 
 ## Topics
 
 ### Associated Types
 - [associatedtype Entity : AppEntity](./entitysnippetcontent/entity.md)
   An entity type that the snippet content represents.
+### Instance Methods
+- [func contentMarginsDisabled(Bool) -> some EntitySnippetContent<Self.Entity>
+](./entitysnippetcontent/contentmarginsdisabled%28_%29.md)
+  Disables the default content margins.
 ### Type Aliases
 - [EntitySnippetContent.Input](./entitysnippetcontent/input.md)
 - [EntitySnippetContent.Output](./entitysnippetcontent/output.md)
@@ -52,8 +56,6 @@ You don’t conform to this protocol directly. Instead, you build an entity’s 
   A type that defines the supported rendering environments for card snippets.
 - [enum EntitySnippetContentBuilder](./entitysnippetcontentbuilder.md)
   A result builder that assembles an entity’s snippet declarations.
-- [struct CardSnippetSize](./cardsnippetsize.md)
-  A size category for a snippet card.
 
 
 ---

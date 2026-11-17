@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Type Property
 
-A Boolean values that indicates whether a device supports the room-tracking provider.
+A Boolean value that indicates whether a device supports the room-tracking provider.
 
 **Availability**:
 - visionOS 2.0+
@@ -14,12 +14,6 @@ A Boolean values that indicates whether a device supports the room-tracking prov
 ```swift
 static var isSupported: Bool { get }
 ```
-
-## See Also
-
-### Type properties
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
-  An array of authorization types the room-tracking provider requires.
 
 
 ---

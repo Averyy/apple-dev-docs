@@ -16,6 +16,19 @@
 init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform = .identity, mask: UIBezierPath? = nil, randomSeed: UInt32 = UInt32.random(in: 0...UInt32.max), id: UUID = UUID(), renderGroupID: UUID? = nil, renderState: PKStroke.RenderState? = nil)
 ```
 
+## See Also
+
+### Creating a stroke object
+- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?)](./init%28ink,path,transform,mask%29-1imp6.md)
+  Creates a stroke with the line properties, path, transform, and mask that you specify.
+- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?)](./init%28ink,path,transform,mask%29-w7ti.md)
+  Creates a stroke with the line properties, path, transform, and mask that you specify.
+- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32)](./init%28ink,path,transform,mask,randomseed%29-10m5j.md)
+  Creates a stroke with the line properties, path, transform, mask, and random seed that you specify.
+- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?, randomSeed: UInt32)](./init%28ink,path,transform,mask,randomseed%29-epus.md)
+  Creates a macOS stroke with the line properties, path, transform, mask, and random seed that you specify.
+- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?, randomSeed: UInt32, id: UUID, renderGroupID: UUID?, renderState: PKStroke.RenderState?)](./init%28ink,path,transform,mask,randomseed,id,rendergroupid,renderstate%29-1qvj7.md)
+
 
 ---
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The name of the metric, used as the DataFrame column name.
+The name of the metric, which an [`Evaluation`](../evaluation.md) uses as the [`Column`](../../TabularData/column.md) name in its results.
 
 **Availability**:
 - iOS 27.0+

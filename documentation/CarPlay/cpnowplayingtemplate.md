@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-A shared system template that displays Now Playing information.
+A shared system template that shows the currently selected audio content and offers controls to manage playback.
 
 **Availability**:
 - iOS 14.0+
@@ -22,61 +22,48 @@ class CPNowPlayingTemplate
 @interface CPNowPlayingTemplate : CPTemplate
 ```
 
+## Mentions
+
+- [Building your app’s initial CarPlay interface](./building-your-apps-initial-carplay-interface.md)
+
 ## Overview
 
-The Now Playing template displays information from [`MPNowPlayingInfoCenter`](../MediaPlayer/mpnowplayinginfocenter.md) and [`MPNowPlayingSession`](../MediaPlayer/mpnowplayingsession.md). Instead of instantiating your own Now Playing template, CarPlay provides a shared instance that you configure. The template displays a series of playback control buttons, as well as information about the current album and artist, and what’s coming up next.
+Apps that play audio or video content update the `CPNowPlayingTemplate` to reflect their current and queued content. When visible, the default template layout shows information about the currently playing item and offers controls for someone to start and stop playback, play the next queued item, and manage other playback-related features. If your app manages sports content, you can change the layout to show team and score information for a live or prerecorded sporting event.
 
-When enabling your Now Playing template’s Album-Artist and Up Next buttons, you must create an object that implements the [`CPNowPlayingTemplateObserver`](./cpnowplayingtemplateobserver.md) protocol and register it as an observer by calling the template’s [`add(_:)`](./cpnowplayingtemplate/add%28_%29.md) method.
+Access the shared `CPNowPlayingTemplate` from the [`shared`](./cpnowplayingtemplate/shared.md) property and configure it when your CarPlay app launches. You can push the Now Playing template onto your app’s navigation stack, but the system also displays it in other situations. For example, the Now Playing app shows the interface from the app responsible for the most recently played content. Configuring the template at launch time ensures it’s available when the system needs it. The actual configuration of the template depends on the features you support. If you support the Album Artist or Up Next buttons, call the [`add(_:)`](./cpnowplayingtemplate/add%28_%29.md) method to register an observer to respond to interactions with those buttons.
 
-To display the Now Playing template, call your interface controller’s [`pushTemplate(_:animated:completion:)`](./cpinterfacecontroller/pushtemplate%28_,animated,completion%29.md) method to push it onto your navigation hierarchy. You can’t display the Now Playing template modally.
+To provide the Now Playing interface with information about the media you’re playing, play your media using the types of the [Media Player](../MediaPlayer/MediaPlayer.md) and [AVKit](../AVKit/AVKit.md) frameworks. Each framework has its own form of Now Playing support, which CarPlay uses to populate the template. For example, a type like [`MPMusicPlayerController`](../MediaPlayer/mpmusicplayercontroller.md) manages a queue of songs to play, and communicates the current and next song directly to the Now Playing interface. CarPlay also starts and stops playback and performs other media-related tasks using the framework types.
 
-When CarPlay presents Now Playing information for your app, it uses the shared instance of this template.
+When designing your interface hierarchy, you typically don’t push other templates on top of the Now Playing interface. However, if you support the Up Next button, you can push a list template with the queued items on top of the `CPNowPlayingTemplate` type. Don’t push other types of templates.
 
-> **Note**:  `CPNowPlayingTemplate` is only available in apps with the audio entitlement.
+> **Note**: Audio, video, communication, and public safety apps can display the Now Playing template. You can’t use this template from other types of apps.
 
 ## Topics
 
-### Managing the Shared Template
+### Managing the shared template
 - [class var shared: CPNowPlayingTemplate](./cpnowplayingtemplate/shared.md)
-  The Now Playing template the system provides.
-### Managing the Template’s Buttons
-- [var nowPlayingButtons: [CPNowPlayingButton]](./cpnowplayingtemplate/nowplayingbuttons.md)
-  The Now Playing template’s playback control buttons.
-- [func updateNowPlayingButtons([CPNowPlayingButton])](./cpnowplayingtemplate/updatenowplayingbuttons%28_%29.md)
-  Updates the playback control buttons the template displays.
-- [class CPNowPlayingButton](./cpnowplayingbutton.md)
-  The abstract base class that Now Playing template buttons use.
-- [class CPNowPlayingImageButton](./cpnowplayingimagebutton.md)
-  A button that displays an image.
-- [class CPNowPlayingAddToLibraryButton](./cpnowplayingaddtolibrarybutton.md)
-  A button for adding the current playing item to a collection.
-- [class CPNowPlayingMoreButton](./cpnowplayingmorebutton.md)
-  A button for presenting more options to the user.
-- [class CPNowPlayingPlaybackRateButton](./cpnowplayingplaybackratebutton.md)
-  A button for cycling through the available playback rates.
-- [class CPNowPlayingRepeatButton](./cpnowplayingrepeatbutton.md)
-  A button for cycling through the available repeat modes.
-- [class CPNowPlayingShuffleButton](./cpnowplayingshufflebutton.md)
-  A button for cycling through the available shuffle modes.
-### Managing Albums, Artists, and Up Next
-- [var isAlbumArtistButtonEnabled: Bool](./cpnowplayingtemplate/isalbumartistbuttonenabled.md)
-  A Boolean value that indicates whether the album and artist string is a button.
-- [var isUpNextButtonEnabled: Bool](./cpnowplayingtemplate/isupnextbuttonenabled.md)
-  A Boolean value that manages the display of the Up Next button.
-- [var upNextTitle: String](./cpnowplayingtemplate/upnexttitle.md)
-  The title for the Up Next button.
-### Observing Now Playing Events
-- [func add(any CPNowPlayingTemplateObserver)](./cpnowplayingtemplate/add%28_%29.md)
-  Registers an observer that receives Now Playing template events.
-- [func remove(any CPNowPlayingTemplateObserver)](./cpnowplayingtemplate/remove%28_%29.md)
-  Removes an observer from receiving Now Playing template events.
-- [protocol CPNowPlayingTemplateObserver](./cpnowplayingtemplateobserver.md)
-  The methods for responding to the user interacting with the Now Playing template.
-### Instance Properties
-- [var allowsMiniPlayer: Bool](./cpnowplayingtemplate/allowsminiplayer.md)
-  A Boolean value indicating whether the mini player is allowed to appear.
+  The shared Now Playing template for you to configure and display.
+### Configuring the interface
 - [var nowPlayingMode: CPNowPlayingMode?](./cpnowplayingtemplate/nowplayingmode.md)
-  The currently-active now playing mode. See @c CPNowPlayingMode.
+  The type that determines the layout of the Now Playing interface.
+- [var isUpNextButtonEnabled: Bool](./cpnowplayingtemplate/isupnextbuttonenabled.md)
+  A Boolean value that indicates whether the Now Playing interface displays the Up Next button.
+- [var upNextTitle: String](./cpnowplayingtemplate/upnexttitle.md)
+  The text to display in the Up Next button.
+- [var isAlbumArtistButtonEnabled: Bool](./cpnowplayingtemplate/isalbumartistbuttonenabled.md)
+  A Boolean value that indicates whether the album and artist information is a tappable button.
+- [var allowsMiniPlayer: Bool](./cpnowplayingtemplate/allowsminiplayer.md)
+  A Boolean value that indicates whether the app supports the mini-player interface.
+### Adding app-specific controls
+- [var nowPlayingButtons: [CPNowPlayingButton]](./cpnowplayingtemplate/nowplayingbuttons.md)
+  Additional app-specific playback controls to display in the lower region of the Now Playing interface.
+- [func updateNowPlayingButtons([CPNowPlayingButton])](./cpnowplayingtemplate/updatenowplayingbuttons%28_%29.md)
+  Updates the app-specific playback controls that appear in the lower region of the Now Playing interface.
+### Adding and removing observers
+- [func add(any CPNowPlayingTemplateObserver)](./cpnowplayingtemplate/add%28_%29.md)
+  Registers an observer to handle events related to the Now Playing interface.
+- [func remove(any CPNowPlayingTemplateObserver)](./cpnowplayingtemplate/remove%28_%29.md)
+  Unregisters an observer and stops it from receiving events related to the Now Playing interface.
 
 ## Relationships
 
@@ -91,12 +78,36 @@ When CarPlay presents Now Playing information for your app, it uses the shared i
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-### Audio
-- [Integrating CarPlay with Your Music App](./integrating-carplay-with-your-music-app.md)
-  Configure your music app to work with CarPlay by displaying a custom UI.
+### Interface templates
+- [class CPTabBarTemplate](./cptabbartemplate.md)
+  A container template that displays and manages other templates, presenting them as tabs.
+- [class CPListTemplate](./cplisttemplate.md)
+  A template that displays a single-column list of items in one of several visual styles.
+- [class CPGridTemplate](./cpgridtemplate.md)
+  A template that displays and manages a grid of items.
+- [class CPMapTemplate](./cpmaptemplate.md)
+  A template that displays a navigation overlay that your app draws on the map.
+- [class CPPointOfInterestTemplate](./cppointofinteresttemplate.md)
+  A template that displays a map with selectable points of interest.
+- [class CPInformationTemplate](./cpinformationtemplate.md)
+  A template that provides information for a point of interest, food order, parking location, or charging location.
+- [class CPContactTemplate](./cpcontacttemplate.md)
+  A template that displays information about a person or a business.
+- [class CPSearchTemplate](./cpsearchtemplate.md)
+  A template that provides the ability to search for a destination and see a list of search results.
+- [class CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
+  A template that displays a voice control indicator during audio input.
+- [class CPActionSheetTemplate](./cpactionsheettemplate.md)
+  A template that displays a modal action sheet.
+- [class CPAlertTemplate](./cpalerttemplate.md)
+  A template that displays a modal alert.
+- [All templates and supporting types](./all-templates-and-supporting-types.md)
+  Explore the templates you use to build the interface of your CarPlay app.
 
 
 ---

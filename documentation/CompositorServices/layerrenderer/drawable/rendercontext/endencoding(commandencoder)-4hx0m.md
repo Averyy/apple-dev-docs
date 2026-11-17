@@ -20,6 +20,10 @@ func endEncoding(commandEncoder command_encoder: any MTLRenderCommandEncoder)
 void cp_drawable_render_context_end_encoding(cp_drawable_render_context_t render_context, id<MTLRenderCommandEncoder>command_encoder);
 ```
 
+## Mentions
+
+- [Controlling Metal rendering immersion level](../../../controlling-metal-rendering-immersion-level.md)
+
 ## Discussion
 
 `endEncoding(commandEncoder:)` passes the ownership of the command encoder to the drawable render context and calls [`endEncoding()`](../../../../Metal/mtlcommandencoder/endencoding%28%29.md) on the command encoder. The command encoder used in the render context has the following constraints:

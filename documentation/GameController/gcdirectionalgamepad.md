@@ -24,6 +24,10 @@ class GCDirectionalGamepad
 @interface GCDirectionalGamepad : GCMicroGamepad
 ```
 
+## Mentions
+
+- [Discovering game controllers](./discovering-game-controllers.md)
+
 ## Overview
 
 The directional gamepad profile is similar to a micro gamepad profile except it doesn’t support motion or rotation. The controller’s [`motion`](./gccontroller/motion.md) property is `nil` and the inherited [`allowsRotation`](./gcmicrogamepad/allowsrotation.md) property is [`false`](../Swift/false.md).

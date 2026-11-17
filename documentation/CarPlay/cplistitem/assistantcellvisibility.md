@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-Constants to specify the visibility of the assistant cell.
+The visibility options for the assistant cell.
 
 **Availability**:
 - iOS 15.0+
@@ -21,15 +21,19 @@ enum AssistantCellVisibility
 enum CPAssistantCellVisibility : NSInteger;
 ```
 
+## Overview
+
+Specify when you want the assistant cell to be visible from your list interface. You can show or hide the cell at all times, or enable it only at relevant moments.
+
 ## Topics
 
-### Controlling the Assistant Cell Visibility
-- [CPListItem.AssistantCellVisibility.off](./assistantcellvisibility/off.md)
-  The assistant cell isn’t visible.
+### Enumeration Cases
 - [CPListItem.AssistantCellVisibility.always](./assistantcellvisibility/always.md)
-  The assistant cell is always visible.
+  An option to always show the assistant cell.
+- [CPListItem.AssistantCellVisibility.off](./assistantcellvisibility/off.md)
+  An option to hide the assistant cell.
 - [CPListItem.AssistantCellVisibility.whileLimitedUIActive](./assistantcellvisibility/whilelimiteduiactive.md)
-  The assistant cell is visible only while Limited UI mode is active.
+  An option to show the assistant cell only when Limited UI mode is active.
 ### Initializers
 - [init?(rawValue: Int)](./assistantcellvisibility/init%28rawvalue%29.md)
 
@@ -45,9 +49,17 @@ enum CPAssistantCellVisibility : NSInteger;
 
 ## See Also
 
-### Managing the Assistant Cell
+### Getting the configuration attributes
+- [var assistantAction: CPAssistantCellActionType](../cpassistantcellconfiguration/assistantaction.md)
+  The action that Siri performs when the user selects the assistant cell.
+- [var position: CPListItem.AssistantCellPosition](../cpassistantcellconfiguration/position.md)
+  The position of the assistant cell in the list template.
+- [var visibility: CPListItem.AssistantCellVisibility](../cpassistantcellconfiguration/visibility.md)
+  The visibility of the assistant cell in the list template.
+- [enum CPAssistantCellActionType](../cpassistantcellactiontype.md)
+  The supported actions of the assistant cell.
 - [CPListItem.AssistantCellPosition](./assistantcellposition.md)
-  Constants to specify the position of the assistant cell.
+  The supported placement options for the assistant cell.
 
 
 ---

@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/AppClip": {
       "file_path": "documentation/AppClip/AppClip.md",
-      "hash": "4a0f6faa6aaa18432f2df89b52a5c8083b80fbf82deb15860e05e902f50fc87e"
+      "hash": "7968b761568edfda8843c6997951dfcffd95eb3e2290baf0fc32a32577a365bf"
     },
     "https://developer.apple.com/documentation/appclip/ap_extern": {
       "file_path": "documentation/AppClip/ap_extern.md",
@@ -66,19 +66,19 @@
     },
     "https://developer.apple.com/documentation/appclip/choosing-the-right-functionality-for-your-app-clip": {
       "file_path": "documentation/AppClip/choosing-the-right-functionality-for-your-app-clip.md",
-      "hash": "65e7df0911a42d11787c247b7a3bdc589ded0141f5c61813ae6daa330cbac22d"
+      "hash": "5a257b82b34e18bc1f580ca972b55601de7386a4a2bfda833418846568f8325e"
     },
     "https://developer.apple.com/documentation/appclip/configuring-the-launch-experience-of-your-app-clip": {
       "file_path": "documentation/AppClip/configuring-the-launch-experience-of-your-app-clip.md",
-      "hash": "23b4da140c9dd3daeae78d64c7943b98c2f18a59bf1740e2a70bb81faab5d9f8"
+      "hash": "688f731c3b5b21b509c5eede226ed47612239484b1bf283b653c7837bfbc47bc"
     },
     "https://developer.apple.com/documentation/appclip/confirming-a-person-s-physical-location": {
       "file_path": "documentation/AppClip/confirming-a-person-s-physical-location.md",
-      "hash": "77439642e6bc4e021398f3a093c5423c686095184892b7eb4e83a3f37f8d581a"
+      "hash": "642a3ed19614a576a9d108117ee36f009d51062970c549d0be9df366a1d5bc9c"
     },
     "https://developer.apple.com/documentation/appclip/creating-an-app-clip-with-xcode": {
       "file_path": "documentation/AppClip/creating-an-app-clip-with-xcode.md",
-      "hash": "e116d288399930866ceb83775711f9ba0224d0a7511e2adc47daca4175a2564e"
+      "hash": "17c24697aa17853a109cdf76a3a3e50017a4e33479bde86d2b1283d749332464"
     },
     "https://developer.apple.com/documentation/appclip/creating-app-clip-codes": {
       "file_path": "documentation/AppClip/creating-app-clip-codes.md",
@@ -90,7 +90,7 @@
     },
     "https://developer.apple.com/documentation/appclip/creating-app-clip-codes-with-the-app-clip-code-generator": {
       "file_path": "documentation/AppClip/creating-app-clip-codes-with-the-app-clip-code-generator.md",
-      "hash": "35cd71f87bb74bfe1005a2cc0e1bb48744b10aca9a453410303bad804f306c52"
+      "hash": "eb438b95bfb7e9100d950332c599a4ec7140492d143a65f5fda76c53ac343186"
     },
     "https://developer.apple.com/documentation/appclip/distributing-your-app-clip": {
       "file_path": "documentation/AppClip/distributing-your-app-clip.md",
@@ -106,7 +106,7 @@
     },
     "https://developer.apple.com/documentation/appclip/fruta-building-a-feature-rich-app-with-swiftui": {
       "file_path": "documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui.md",
-      "hash": "33ac88610821befb31798d11285186f7a2415a90751a1caca9b95a78eca7a319"
+      "hash": "c9ffe3c0aea5f1e32963e66ae346ba86787f3c96de52f9b56c714fc83b4cc6ba"
     },
     "https://developer.apple.com/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui": {
       "file_path": "documentation/AppClip/fruta_building_a_feature-rich_app_with_swiftui.md",
@@ -114,11 +114,11 @@
     },
     "https://developer.apple.com/documentation/appclip/interacting-with-app-clip-codes-in-ar": {
       "file_path": "documentation/AppClip/interacting-with-app-clip-codes-in-ar.md",
-      "hash": "f0cfabe0530de7a203ca728d24efd21cdb8a6e5d3c45a8a5e0e9ad014ebf4dc6"
+      "hash": "27764ced1c04ccc9bd76fb8a8b154ef53c7266f993a0bcbba6d5249161145baa"
     },
     "https://developer.apple.com/documentation/appclip/launching-another-app-s-app-clip-from-your-app": {
       "file_path": "documentation/AppClip/launching-another-app-s-app-clip-from-your-app.md",
-      "hash": "447de4781d0587a2e611a08bb1e8d9c8380ea413f199af372a6990f1311bfe6a"
+      "hash": "61ef60b6b80d8ebfc738cb9575858e3323b2429793d77075fae1d9fd985f2e16"
     },
     "https://developer.apple.com/documentation/appclip/offering-live-activities-with-your-app-clip": {
       "file_path": "documentation/AppClip/offering-live-activities-with-your-app-clip.md",
@@ -130,7 +130,7 @@
     },
     "https://developer.apple.com/documentation/appclip/recommending-your-app-to-app-clip-users": {
       "file_path": "documentation/AppClip/recommending-your-app-to-app-clip-users.md",
-      "hash": "c104b61bf56f2c9c794840d84b48aad5716a11d8c01e657ef7d4f2de82ffe2f2"
+      "hash": "272799a452a27e74e886a530a7f6c792b178ebd2ab8dc8207ba3e25cc7fe2ee1"
     },
     "https://developer.apple.com/documentation/appclip/responding-to-invocations": {
       "file_path": "documentation/AppClip/responding-to-invocations.md",
@@ -146,11 +146,11 @@
     },
     "https://developer.apple.com/documentation/appclip/testing-the-launch-experience-of-your-app-clip": {
       "file_path": "documentation/AppClip/testing-the-launch-experience-of-your-app-clip.md",
-      "hash": "31125582a89774e6d4541dab141f7c2597da23a4170525a3fb2657d1ca996d4b"
+      "hash": "304832e535a75e0df0f51168ec0145718a9e72261957117541d9f90046fefc90"
     },
     "https://developer.apple.com/tutorials/data/documentation/AppClip.json": {
       "file_path": "documentation/AppClip/AppClip.md",
-      "hash": "4a0f6faa6aaa18432f2df89b52a5c8083b80fbf82deb15860e05e902f50fc87e"
+      "hash": "7968b761568edfda8843c6997951dfcffd95eb3e2290baf0fc32a32577a365bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/ap_extern.json": {
       "file_path": "documentation/AppClip/ap_extern.md",
@@ -214,19 +214,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/choosing-the-right-functionality-for-your-app-clip.json": {
       "file_path": "documentation/AppClip/choosing-the-right-functionality-for-your-app-clip.md",
-      "hash": "65e7df0911a42d11787c247b7a3bdc589ded0141f5c61813ae6daa330cbac22d"
+      "hash": "5a257b82b34e18bc1f580ca972b55601de7386a4a2bfda833418846568f8325e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/configuring-the-launch-experience-of-your-app-clip.json": {
       "file_path": "documentation/AppClip/configuring-the-launch-experience-of-your-app-clip.md",
-      "hash": "23b4da140c9dd3daeae78d64c7943b98c2f18a59bf1740e2a70bb81faab5d9f8"
+      "hash": "688f731c3b5b21b509c5eede226ed47612239484b1bf283b653c7837bfbc47bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/confirming-a-person-s-physical-location.json": {
       "file_path": "documentation/AppClip/confirming-a-person-s-physical-location.md",
-      "hash": "77439642e6bc4e021398f3a093c5423c686095184892b7eb4e83a3f37f8d581a"
+      "hash": "642a3ed19614a576a9d108117ee36f009d51062970c549d0be9df366a1d5bc9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/creating-an-app-clip-with-xcode.json": {
       "file_path": "documentation/AppClip/creating-an-app-clip-with-xcode.md",
-      "hash": "e116d288399930866ceb83775711f9ba0224d0a7511e2adc47daca4175a2564e"
+      "hash": "17c24697aa17853a109cdf76a3a3e50017a4e33479bde86d2b1283d749332464"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/creating-app-clip-codes-with-app-store-connect.json": {
       "file_path": "documentation/AppClip/creating-app-clip-codes-with-app-store-connect.md",
@@ -234,7 +234,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/creating-app-clip-codes-with-the-app-clip-code-generator.json": {
       "file_path": "documentation/AppClip/creating-app-clip-codes-with-the-app-clip-code-generator.md",
-      "hash": "35cd71f87bb74bfe1005a2cc0e1bb48744b10aca9a453410303bad804f306c52"
+      "hash": "eb438b95bfb7e9100d950332c599a4ec7140492d143a65f5fda76c53ac343186"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/creating-app-clip-codes.json": {
       "file_path": "documentation/AppClip/creating-app-clip-codes.md",
@@ -254,7 +254,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/fruta-building-a-feature-rich-app-with-swiftui.json": {
       "file_path": "documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui.md",
-      "hash": "33ac88610821befb31798d11285186f7a2415a90751a1caca9b95a78eca7a319"
+      "hash": "c9ffe3c0aea5f1e32963e66ae346ba86787f3c96de52f9b56c714fc83b4cc6ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui.json": {
       "file_path": "documentation/AppClip/fruta_building_a_feature-rich_app_with_swiftui.md",
@@ -262,11 +262,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/interacting-with-app-clip-codes-in-ar.json": {
       "file_path": "documentation/AppClip/interacting-with-app-clip-codes-in-ar.md",
-      "hash": "f0cfabe0530de7a203ca728d24efd21cdb8a6e5d3c45a8a5e0e9ad014ebf4dc6"
+      "hash": "27764ced1c04ccc9bd76fb8a8b154ef53c7266f993a0bcbba6d5249161145baa"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/launching-another-app-s-app-clip-from-your-app.json": {
       "file_path": "documentation/AppClip/launching-another-app-s-app-clip-from-your-app.md",
-      "hash": "447de4781d0587a2e611a08bb1e8d9c8380ea413f199af372a6990f1311bfe6a"
+      "hash": "61ef60b6b80d8ebfc738cb9575858e3323b2429793d77075fae1d9fd985f2e16"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/offering-live-activities-with-your-app-clip.json": {
       "file_path": "documentation/AppClip/offering-live-activities-with-your-app-clip.md",
@@ -278,7 +278,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/recommending-your-app-to-app-clip-users.json": {
       "file_path": "documentation/AppClip/recommending-your-app-to-app-clip-users.md",
-      "hash": "c104b61bf56f2c9c794840d84b48aad5716a11d8c01e657ef7d4f2de82ffe2f2"
+      "hash": "272799a452a27e74e886a530a7f6c792b178ebd2ab8dc8207ba3e25cc7fe2ee1"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/responding-to-invocations.json": {
       "file_path": "documentation/AppClip/responding-to-invocations.md",
@@ -294,7 +294,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/testing-the-launch-experience-of-your-app-clip.json": {
       "file_path": "documentation/AppClip/testing-the-launch-experience-of-your-app-clip.md",
-      "hash": "31125582a89774e6d4541dab141f7c2597da23a4170525a3fb2657d1ca996d4b"
+      "hash": "304832e535a75e0df0f51168ec0145718a9e72261957117541d9f90046fefc90"
     }
   },
   "metadata": {

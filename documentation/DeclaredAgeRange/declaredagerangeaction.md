@@ -28,6 +28,12 @@ Use `DeclaredAgeRangeAction` in SwiftUI views to request age ranges without manu
 - [func callAsFunction(ageGates: Int, Int?, Int?) async throws -> AgeRangeService.Response](./declaredagerangeaction/callasfunction%28agegates,_,_%29.md)
   Returns a response indicating whether the person shared their age range.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+
 ## See Also
 
 ### Age range requests

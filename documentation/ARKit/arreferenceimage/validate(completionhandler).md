@@ -30,6 +30,10 @@ ARKit considers certain images invalid for image tracking (for example, an image
 
 You only need this function when you create a reference image programmatically, because Xcode performs this validation for you when you create a reference image in an asset catalog.
 
+## Parameters
+
+- `completionHandler`: Completion handler invoked when validation is done. The completion handler takes the following parameters: error - An error that indicates why the image is not suitable for tracking, or `nil` if no error occurred.
+
 
 ---
 

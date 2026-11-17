@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Registers an observer that receives Now Playing template events.
+Registers an observer to handle events related to the Now Playing interface.
 
 **Availability**:
 - iOS 14.0+
@@ -21,17 +21,19 @@ func add(_ observer: any CPNowPlayingTemplateObserver)
 - (void) addObserver:(id<CPNowPlayingTemplateObserver>) observer;
 ```
 
+## Discussion
+
+Call this method if your app supports the Album Artist or Up Next buttons in the Now Playing interface. The template directs interactions with these buttons to all registered observers.
+
 ## Parameters
 
 - `observer`: An object that implements the [`CPNowPlayingTemplateObserver`](../cpnowplayingtemplateobserver.md) protocol.
 
 ## See Also
 
-### Observing Now Playing Events
+### Adding and removing observers
 - [func remove(any CPNowPlayingTemplateObserver)](./remove%28_%29.md)
-  Removes an observer from receiving Now Playing template events.
-- [protocol CPNowPlayingTemplateObserver](../cpnowplayingtemplateobserver.md)
-  The methods for responding to the user interacting with the Now Playing template.
+  Unregisters an observer and stops it from receiving events related to the Now Playing interface.
 
 
 ---

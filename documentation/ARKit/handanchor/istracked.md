@@ -26,8 +26,6 @@ var isTracked: Bool { get }
   The chirality of this hand.
 - [HandAnchor.Chirality](./chirality-swift.enum.md)
   A value that indicates a left or right hand.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 
 
 ---

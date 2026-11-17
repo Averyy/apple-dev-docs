@@ -12,7 +12,7 @@ The pixel format of the input reactive mask texture for this this scaler.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.11+
-- tvOS 27.1+
+- tvOS 27.2+
 - visionOS 1.0+
 
 ## Declaration

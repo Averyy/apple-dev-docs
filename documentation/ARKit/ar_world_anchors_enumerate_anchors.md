@@ -15,6 +15,11 @@ Enumerates a collection of world anchors.
 extern void ar_world_anchors_enumerate_anchors(ar_world_anchors_t world_anchors, ar_world_anchors_enumerator_t world_anchors_enumerator);
 ```
 
+## Parameters
+
+- `world_anchors`: The collection of world anchors.
+- `world_anchors_enumerator`: The enumerator handler.
+
 ## See Also
 
 ### World tracking
@@ -41,7 +46,7 @@ extern void ar_world_anchors_enumerate_anchors(ar_world_anchors_t world_anchors,
 - [ar_world_tracking_configuration_create](./ar_world_tracking_configuration_create.md)
   Creates a world tracking configuration.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

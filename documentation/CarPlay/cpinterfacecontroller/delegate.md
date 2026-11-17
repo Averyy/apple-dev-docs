@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An object that serves as the delegate to the interface controller.
+A custom object you use to respond when templates appear and disappear.
 
 **Availability**:
 - iOS 12.0+
@@ -21,15 +21,15 @@ weak var delegate: (any CPInterfaceControllerDelegate)? { get set }
 @property (nonatomic, weak) id<CPInterfaceControllerDelegate> delegate;
 ```
 
+## Discussion
+
+When you push and pop templates from your navigation hierarchy, you change your app’s currently visible content. The interface controller reports these changes to the custom object you assign to this property. You might use your delegate object to perform additional tasks related to the interface changes. For example, you might want to perform additional cleanup only after a template’s content isn’t visible. When defining your custom object, adopt the [`CPInterfaceControllerDelegate`](../cpinterfacecontrollerdelegate.md) protocol and use its methods to implement your changes.
+
 ## See Also
 
-### Configuring the Interface Controller
+### Responding to interface changes
 - [protocol CPInterfaceControllerDelegate](../cpinterfacecontrollerdelegate.md)
-  The interface that an object implements to serve as a delegate to an interface controller.
-- [var prefersDarkUserInterfaceStyle: Bool](./prefersdarkuserinterfacestyle.md)
-  A Boolean value that determines whether the system draws the user interface in Dark Mode.
-- [func setRootTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./setroottemplate%28_,animated,completion%29.md)
-  Sets the root template of the navigation hierarchy.
+  The methods you implement to observe the addition and removal of templates in your app’s interface.
 
 
 ---

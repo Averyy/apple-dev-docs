@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-A specification that indicates a target’s alignment with respect to gravity
+A specification that indicates a target’s alignment with respect to gravity.
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +20,7 @@ enum TargetAlignment
 enum ARRaycastTargetAlignment : NSInteger;
 ```
 
-## Discussion
+## Overview
 
 A raycast ignores potential targets with an alignment different than the one you specify in the raycast query.
 

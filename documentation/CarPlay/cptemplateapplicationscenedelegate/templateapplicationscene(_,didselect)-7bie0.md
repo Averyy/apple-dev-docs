@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Tells the delegate when the user selects a navigation alert while the app is in the background.
+Tells your navigation app that someone selected a navigation alert while your app was in the background.
 
 **Availability**:
 - iOS 13.0+
@@ -23,7 +23,7 @@ optional func templateApplicationScene(_ templateApplicationScene: CPTemplateApp
 
 ## Discussion
 
-If your navigation app posts a navigation alert while in the background, CarPlay displays a notification banner to the user. If the user taps the banner, CarPlay brings your navigation app to the foreground and calls this method.
+If your navigation app posts a navigation alert while in the background, CarPlay displays a notification banner on the vehicle display. If the person taps the banner, CarPlay brings your app to the foreground and calls this method.
 
 ## Parameters
 
@@ -32,9 +32,9 @@ If your navigation app posts a navigation alert while in the background, CarPlay
 
 ## See Also
 
-### Responding to User Actions
+### Responding to interactions
 - [func templateApplicationScene(CPTemplateApplicationScene, didSelect: CPManeuver)](./templateapplicationscene%28_,didselect%29-5rf2h.md)
-  Tells the delegate when the user selects a maneuver while the app is in the background.
+  Tells your navigation app when someone selects a maneuver while your app is in the background.
 
 
 ---

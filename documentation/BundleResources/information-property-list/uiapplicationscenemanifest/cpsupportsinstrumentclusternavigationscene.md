@@ -19,7 +19,7 @@ A Boolean value that indicates whether your app supports displaying navigation c
 
 To declare support for displaying navigation content in the CarPlay Instruments Cluster, add this key and set its value to YES. You specify the scene configurations using the [`CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication`](./uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md) key.
 
-For more information, see [Displaying Content in CarPlay](../../../CarPlay/displaying-content-in-carplay.md).
+For more information, see [Building your app’s initial CarPlay interface](../../../CarPlay/building-your-apps-initial-carplay-interface.md).
 
 ## See Also
 

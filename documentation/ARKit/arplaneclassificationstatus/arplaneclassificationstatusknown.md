@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Enumeration Case
 
-ARKit has completed its classfication process for the plane anchor.
+ARKit has completed its classification process for the plane anchor.
 
 **Availability**:
 - iOS

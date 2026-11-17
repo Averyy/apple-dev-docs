@@ -24,6 +24,8 @@ var skeleton: ARSkeleton3D { get }
 
 Use this property to interpret motion information in 3D space.
 
+> **Note**: The default height of this skeleton, measured from lowest to highest joint in standing position, is defined to be 1.71 meters.
+
 
 ---
 

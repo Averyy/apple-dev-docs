@@ -27,8 +27,6 @@ var id: UUID { get }
   Values that describe the tracking state of a device anchor.
 - [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is tracking the device.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 
 
 ---

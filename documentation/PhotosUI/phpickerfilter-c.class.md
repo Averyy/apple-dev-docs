@@ -55,6 +55,8 @@ A type that defines the filter to apply to the photo library.
 - [+ anyFilterMatchingSubfilters:](./phpickerfilter-c.class/anyfiltermatchingsubfilters_.md)
   Creates a new filter by combining the filters in the array.
 ### Type Properties
+- [landscapeAspectRatioFilter](./phpickerfilter-c.class/landscapeaspectratiofilter.md)
+  The filter for media with a landscape aspect ratio.
 - [spatialMediaFilter](./phpickerfilter-c.class/spatialmediafilter.md)
 
 ## Relationships

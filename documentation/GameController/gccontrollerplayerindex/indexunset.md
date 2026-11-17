@@ -24,6 +24,10 @@ case indexUnset
 GCControllerPlayerIndexUnset
 ```
 
+## Mentions
+
+- [Discovering game controllers](../discovering-game-controllers.md)
+
 ## See Also
 
 ### Player indices

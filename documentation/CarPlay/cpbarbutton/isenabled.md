@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A Boolean value that enables and disables the bar button.
+A Boolean value that indicates whether the button is enabled.
 
 **Availability**:
 - iOS 12.0+
@@ -23,15 +23,15 @@ var isEnabled: Bool { get set }
 
 ## Discussion
 
-The default value is [`true`](../../Swift/true.md).
+When the value of this property is `true`, the button displays an enabled appearance and calls the attached handler in response to interactions. When the value of this property is `false`, the button displays a disabled appearance and doesn’t call the attached handler. The default value of this property is `true`.
 
 ## See Also
 
-### Configuring the Button
+### Configuring the button
 - [var image: UIImage?](./image.md)
-  The image displayed on the bar button.
+  The image to display in the button.
 - [var title: String?](./title.md)
-  The title displayed on the bar button.
+  The text to display in the button.
 
 
 ---

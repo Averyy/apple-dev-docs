@@ -4,6 +4,8 @@
 **Kind**: property  
 **Role**: Instance Property
 
+The current interface style for your app’s content.
+
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
@@ -18,6 +20,10 @@ var contentStyle: UIUserInterfaceStyle { get }
 ```objc
 @property (nonatomic, readonly) UIUserInterfaceStyle contentStyle;
 ```
+
+## Discussion
+
+This property indicates whether your app displays content using a light, dark, or unspecified appearance. The vehicle settings define the style, which can change while CarPlay is active. When the style changes, CarPlay reports the change to the [`contentStyleDidChange(_:)`](../cptemplateapplicationscenedelegate/contentstyledidchange%28_%29.md) method of the scene’s delegate object.
 
 
 ---

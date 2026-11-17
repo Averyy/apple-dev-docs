@@ -24,6 +24,16 @@ BAAssetPackStatusOutOfDate
 
 The presence of this status value doesn’t necessarily imply that an update to the asset pack can be downloaded over the current network connection. Check for the presence of [`BAAssetPackStatusUpdateAvailable`](./baassetpackstatusupdateavailable.md) to determine whether an update can currently be downloaded.
 
+## See Also
+
+### Updating assets
+- [BAAssetPackStatusUpToDate](./baassetpackstatusuptodate.md)
+  A status value that indicates that the downloaded asset pack is up to date.
+- [BAAssetPackStatusObsolete](./baassetpackstatusobsolete.md)
+  A status value that indicates that the asset pack is no longer available to download.
+- [BAAssetPackStatusUpdateAvailable](./baassetpackstatusupdateavailable.md)
+  A status value that indicates that an update to the asset pack is available to download.
+
 
 ---
 

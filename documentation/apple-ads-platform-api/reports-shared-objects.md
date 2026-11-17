@@ -46,8 +46,6 @@ For objects specific to one report family, see [Apps Data Objects](./apps-report
   Cost metrics breakdown by attribution type.
 - [object RateMetrics](./ratemetrics.md)
   Rate metrics breakdown by attribution type.
-- [type ReportingAdChannelType](./reportingadchanneltype.md)
-  The ad channel that served a report row’s metrics.
 - [type ReportingBillingEvent](./reportingbillingevent.md)
   The billing event of the campaign a report row belongs to.
 - [type ReportingPricingModel](./reportingpricingmodel.md)

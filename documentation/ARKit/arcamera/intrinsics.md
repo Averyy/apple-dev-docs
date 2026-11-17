@@ -24,9 +24,11 @@ var intrinsics: simd_float3x3 { get }
 
 The intrinsic matrix (commonly represented in equations as `K`) is based on physical characteristics of the device camera and a pinhole camera model. You can use the matrix to transform 3D coordinates to 2D coordinates on an image plane.
 
-![](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2902622@2x.png)
+The matrix has the following contents: fx 0   px 0  fy  py 0  0   1 The values `fx` and `fy` are the pixel focal length, and are identical for square pixels. The values `px` and `py` are the coordinates of the principal point—the offsets of the principal point from the top-left corner of the image frame. All values are expressed in pixels. The origin is at the center of the upper-left pixel.
 
-The values `fx` and `fy` are the pixel focal length, and are identical for square pixels. The values `ox` and `oy` are the offsets of the principal point from the top-left corner of the image frame. All values are expressed in pixels.
+## Discussion
+
+![](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2902622@2x.png)
 
 ## See Also
 

@@ -4,6 +4,8 @@
 **Kind**: enum  
 **Role**: Enumeration
 
+Events that occur when two collidable objects begin touching, stay in contact, or separate.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+

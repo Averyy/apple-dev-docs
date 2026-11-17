@@ -32,12 +32,12 @@ ARKit persists world anchor UUIDs and transforms across multiple runs of your ap
   The position and orientation of a world anchor.
 - [var isTracked: Bool](./worldanchor/istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking a world anchor.
-- [var description: String](./worldanchor/description.md)
-  A textual representation of this anchor.
 ### Initializers
 - [init(originFromAnchorTransform: simd_float4x4, sharedWithNearbyParticipants: Bool)](./worldanchor/init%28originfromanchortransform,sharedwithnearbyparticipants%29.md)
   Initialize a world anchor with a transform and indicate if it should be shared with nearby participants.
 ### Instance Properties
+- [var description: String](./worldanchor/description.md)
+  A textual representation of this anchor.
 - [var isSharedWithNearbyParticipants: Bool](./worldanchor/issharedwithnearbyparticipants.md)
   Check if a world anchor is shared with nearby participants.
 ### Default Implementations

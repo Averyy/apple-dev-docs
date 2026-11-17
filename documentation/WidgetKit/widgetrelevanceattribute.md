@@ -22,7 +22,7 @@ struct WidgetRelevanceAttribute<Configuration>
 
 ## Overview
 
-Use the relevance attribute’s `RelevantContext` to describe when a specific widget might be relevant.
+Use the relevance attribute’s `AppIntents/RelevantContext` to describe when a specific widget might be relevant.
 
 ## Topics
 

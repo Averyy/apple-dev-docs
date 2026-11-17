@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The window that belongs to the scene.
+The window that displays the scene’s content.
 
 **Availability**:
 - iOS 13.0+
@@ -23,13 +23,7 @@ var carWindow: CPWindow { get }
 
 ## Discussion
 
-Use this property to access the window CarPlay creates for your scene. Only navigation apps have access to that window, and use it to draw their map content. All other categories of apps must use templates exclusively to draw their user interfaces.
-
-## See Also
-
-### Accessing the Window
-- [class CPWindow](../cpwindow.md)
-  A window that displays its content on the CarPlay screen.
+The system uses the scene’s window to manage its content. Navigation apps also use this window to display their custom map content. All other apps use a [`CPInterfaceController`](../cpinterfacecontroller.md) to present their interface content and don’t use this window.
 
 
 ---

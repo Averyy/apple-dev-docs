@@ -118,6 +118,16 @@ Rendering cost correlates with splat count and overdraw. The framework enforces 
 ### Conforms To
 - [Component](./component.md)
 
+## See Also
+
+### Gaussian splats
+- [class GaussianSplatResource](./gaussiansplatresource.md)
+  A container for the splat data and rendering options that a Gaussian splat component displays.
+- [enum GaussianSplatEvents](./gaussiansplatevents.md)
+  A namespace for events about Gaussian splat rendering.
+- [Gaussian Splat Rendering Guidelines](./gaussian-splat-rendering-guidelines.md)
+  Improving performance and watching thermal state when rendering Gaussian splats
+
 
 ---
 

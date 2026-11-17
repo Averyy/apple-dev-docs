@@ -219,9 +219,7 @@ struct CompactLeadingView: View {
 }
 ```
 
-To avoid truncated text, adapt your compact presentation to the limited width by fitting it inside a circle that’s 28 points in diameter, and use a short abbreviation or graphic representation instead of a full text string. If you can’t find a solution to display views for leading and trailing compact presentations with limited width, provide a compact leading presentation that best represents your Live Activity, such as the view you use for the minimal presentation, and an empty view for the trailing compact presentation. The system hides the empty trailing view automatically.
-
-For additional design guidance, see [Human Interface Guidelines > Live Activities](https://developer.apple.com/design/human-interface-guidelines/live-activities).
+For additional size and design guidance, see [Human Interface Guidelines > Live Activities > Creating Live Activity Layouts](https://developer.apple.com/design/human-interface-guidelines/live-activities#Creating-Live-Activity-layouts).
 
 ## Create the expanded presentation
 

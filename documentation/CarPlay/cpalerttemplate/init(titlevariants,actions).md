@@ -32,7 +32,7 @@ A newly initialized alert template.
 
 ## See Also
 
-### Creating an Alert Template
+### Creating an alert template
 - [class var maximumActionCount: Int](./maximumactioncount.md)
   The maximum number of actions allowed in an alert template.
 

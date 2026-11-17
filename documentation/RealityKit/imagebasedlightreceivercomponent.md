@@ -4,6 +4,8 @@
 **Kind**: struct  
 **Role**: Structure
 
+A component that lights an entity using the image-based light of another entity.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -35,6 +37,7 @@ struct ImageBasedLightReceiverComponent
 
 ### Image-based lights
 - [struct ImageBasedLightComponent](./imagebasedlightcomponent.md)
+  A component that supplies image-based lighting from an environment image to entities that receive it.
 - [ImageBasedLightComponent.Source](./imagebasedlightcomponent/source-swift.enum.md)
 
 

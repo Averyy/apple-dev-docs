@@ -32,7 +32,7 @@ var nearbyNetworkCredentials: Set<THNearbyNetworkCredentials> { get async throws
 
 You receive all credentials agnostic to team ID. Unlike [`retrieveAllActiveCredentials(_:)`](./retrieveallactivecredentials%28_%29.md), this method returns active credentials on the device regardless of which app actually stored them.
 
-Check the `isPreferredNetworkCredentials` property on each [`THNearbyNetworkCredentials`](../thnearbynetworkcredentials.md) instance to see whether it belongs to the preferred network. It is `NO` on every instance not matching the preferred network.
+Check the `isForPreferredNetwork` property on each [`THNearbyNetworkCredentials`](../thnearbynetworkcredentials.md) instance to see whether it belongs to the preferred network. It is `NO` on every instance not matching the preferred network.
 
 > **Note**: This method asks for user permission to share available credentials. If user denies the permission then the completion will contain error with code 15.
 

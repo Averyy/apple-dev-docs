@@ -23,7 +23,7 @@ CPLaneStatusGood
 
 ## See Also
 
-### Lane statuses
+### Getting the lane status
 - [CPLaneStatus.notGood](./notgood.md)
   The lane status is not good.
 - [CPLaneStatus.preferred](./preferred.md)

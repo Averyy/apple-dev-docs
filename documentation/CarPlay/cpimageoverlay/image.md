@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An optional image to display in the overlay.
+The image to display at top of the thumbnail.
 
 **Availability**:
 - iOS 26.4+
@@ -20,6 +20,20 @@ var image: UIImage? { get }
 ```objc
 @property (nonatomic, strong, readonly, nullable) UIImage * image;
 ```
+
+## Discussion
+
+Specify the image at initialization time. The image appears on the top edge of the thumbnail and with the placement in the [`alignment`](./alignment-swift.property.md) property. If you initialized the overlay with text information, the value in this property is `nil`.
+
+## See Also
+
+### Getting the overlay details
+- [var text: String?](./text.md)
+  The text to display in a badge at the top of the thumbnail.
+- [var textColor: UIColor?](./textcolor.md)
+  The color to apply to the badge’s text.
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
+  The color to display behind the badge’s text.
 
 
 ---

@@ -262,11 +262,11 @@
     },
     "https://developer.apple.com/documentation/technotes/tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox": {
       "file_path": "documentation/Technotes/tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.md",
-      "hash": "06f80f8a8715ec043620574a70e386afb941b6c766c8e3b941896e1384482735"
+      "hash": "8eac590fd09de4b1bf13733139ff714b0d9849e0d1f17c53bc69d693f6034b0f"
     },
     "https://developer.apple.com/documentation/technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle": {
       "file_path": "documentation/Technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle.md",
-      "hash": "a6829577e96721a4f87d9f139b9828ae63a5d6d954c947b897b83d1c72a4bb9d"
+      "hash": "4b18663ebca18a49b33f0119aec88cee0d42d50f0284a1c5a44336dce2b301fa"
     },
     "https://developer.apple.com/documentation/technotes/tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store": {
       "file_path": "documentation/Technotes/tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.md",
@@ -326,7 +326,7 @@
     },
     "https://developer.apple.com/documentation/technotes/tn3214-validating-the-fonts-you-ship-in-your-app": {
       "file_path": "documentation/Technotes/tn3214-validating-the-fonts-you-ship-in-your-app.md",
-      "hash": "3b0592c1e8b6118c5244a5344e3f68b5d5e6c57dd1680cba1e9b3a9d678ef5cf"
+      "hash": "ab9397a500f893820ecb6c9cd4751ba36db14f618c83f44a1a5db275f0360657"
     },
     "https://developer.apple.com/documentation/technotes/tn3215-reading-man-pages": {
       "file_path": "documentation/Technotes/tn3215-reading-man-pages.md",
@@ -598,11 +598,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.json": {
       "file_path": "documentation/Technotes/tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.md",
-      "hash": "06f80f8a8715ec043620574a70e386afb941b6c766c8e3b941896e1384482735"
+      "hash": "8eac590fd09de4b1bf13733139ff714b0d9849e0d1f17c53bc69d693f6034b0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle.json": {
       "file_path": "documentation/Technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle.md",
-      "hash": "a6829577e96721a4f87d9f139b9828ae63a5d6d954c947b897b83d1c72a4bb9d"
+      "hash": "4b18663ebca18a49b33f0119aec88cee0d42d50f0284a1c5a44336dce2b301fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.json": {
       "file_path": "documentation/Technotes/tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.md",
@@ -662,7 +662,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3214-validating-the-fonts-you-ship-in-your-app.json": {
       "file_path": "documentation/Technotes/tn3214-validating-the-fonts-you-ship-in-your-app.md",
-      "hash": "3b0592c1e8b6118c5244a5344e3f68b5d5e6c57dd1680cba1e9b3a9d678ef5cf"
+      "hash": "ab9397a500f893820ecb6c9cd4751ba36db14f618c83f44a1a5db275f0360657"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3215-reading-man-pages.json": {
       "file_path": "documentation/Technotes/tn3215-reading-man-pages.md",

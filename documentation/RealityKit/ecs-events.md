@@ -36,12 +36,14 @@ For example, you can receive a notification:
   Provides the events related to components.
 ### Input and interaction events
 - [enum AccessibilityEvents](./accessibilityevents.md)
+  Events that occur when a person uses assistive technology to act on an accessibility element.
 - [enum ManipulationEvents](./manipulationevents.md)
   Events that occur while a person manipulates an entity.
 ### Physics and motion events
 - [enum AnimationEvents](./animationevents.md)
   Notable milestones that the framework signals during animation playback.
 - [enum CollisionEvents](./collisionevents.md)
+  Events that occur when two collidable objects begin touching, stay in contact, or separate.
 - [enum PhysicsSimulationEvents](./physicssimulationevents.md)
   Types of events that fire during physics simulations
 ### Media events
@@ -51,6 +53,8 @@ For example, you can receive a notification:
   Events associated with video playback for VideoPlayerComponent.
 - [enum ImagePresentationEvents](./imagepresentationevents.md)
   Events associated with viewing mode transitions for image presentation components.
+- [enum GaussianSplatEvents](./gaussiansplatevents.md)
+  A namespace for events about Gaussian splat rendering.
 ### Network synchronization events
 - [enum SynchronizationEvents](./synchronizationevents.md)
   Events associated with network synchronization of scene information.

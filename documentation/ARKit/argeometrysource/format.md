@@ -20,8 +20,6 @@ var format: MTLVertexFormat { get }
 @property (nonatomic, assign, readonly) MTLVertexFormat format;
 ```
 
-## Discussion
-
 ## See Also
 
 ### Getting Geometry Information

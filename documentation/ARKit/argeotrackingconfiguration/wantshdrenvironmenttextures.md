@@ -22,19 +22,21 @@ var wantsHDREnvironmentTextures: Bool { get set }
 
 ## Discussion
 
-If you set [`environmentTexturing`](../arworldtrackingconfiguration/environmenttexturing-swift.property.md) to `.automatic` in iOS 12 or later, ARKit gives you environment textures you cast on your app’s virtual content to create realistic reflections. By default, the framework sets [`wantsHDREnvironmentTextures`](../arworldtrackingconfiguration/wantshdrenvironmenttextures.md) to [`true`](../../Swift/true.md). When your renderer supports HDR environment textures in iOS 13, it enables your lighting engine to output more colors, with a more realistic result.
-
-![Screenshot showing low and high dynamic range environment textures in a side by side comparison.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3598254@2x.png)
+If you set [`environmentTexturing`](./environmenttexturing.md) to `.automatic` in iOS 12 or later, ARKit gives you environment textures you cast on your app’s virtual content to create realistic reflections. By default, the framework sets [`wantsHDREnvironmentTextures`](./wantshdrenvironmenttextures.md) to [`true`](../../Swift/true.md). When your renderer supports HDR environment textures in iOS 13, it enables your lighting engine to output more colors, with a more realistic result.
 
 Both [`ARView`](../../RealityKit/arview.md) and [`ARSCNView`](../arscnview.md) support HDR environment textures. For more information, see [Adding realistic reflections to an AR experience](../adding-realistic-reflections-to-an-ar-experience.md).
 
 For a Metal app that doesn’t yet support HDR environment textures, you can use the following code to receive LDR environment textures until you’re ready to update your renderer for HDR.
 
 ```swift
-if #available(iOS 13, *) { 
+if #available(iOS 13, *) {
     configuration.wantsHDREnvironmentTextures = false
 }
 ```
+
+## Discussion
+
+![Screenshot showing low and high dynamic range environment textures in a side by side comparison.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3598254@2x.png)
 
 ## See Also
 

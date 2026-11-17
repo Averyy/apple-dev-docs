@@ -23,7 +23,7 @@ enum CPTextButtonStyle : NSInteger;
 
 ## Topics
 
-### Button Text Styles
+### Getting the text button style
 - [CPTextButtonStyle.normal](./cptextbuttonstyle/normal.md)
   A style that indicates the button performs an action other than to confirm or cancel.
 - [CPTextButtonStyle.confirm](./cptextbuttonstyle/confirm.md)
@@ -45,7 +45,7 @@ enum CPTextButtonStyle : NSInteger;
 
 ## See Also
 
-### Managing the Button Style
+### Managing the button style
 - [var textStyle: CPTextButtonStyle](./cptextbutton/textstyle.md)
   The text style the button applies to its title.
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A Boolean value that indicates if the item is enabled.
+A Boolean value that indicates whether the item is enabled.
 
 **Availability**:
 - iOS 15.0+
@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 
 ## Discussion
 
-The default value is [`true`](../../Swift/true.md).
+When the value of this property is `true`, CarPlay displays the item normally and forwards interactions to the [`handler`](./handler.md) and [`listImageRowHandler`](./listimagerowhandler.md) handlers. When the value of this property is `false`, CarPlay displays the item with a dimmed appearance and doesn’t forward interactions to your handlers. The default value of this property is `true`.
 
 
 ---

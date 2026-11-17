@@ -31,6 +31,12 @@ A newly initialized alert action.
 - `style`: The display style for the action button.
 - `handler`: The block invoked after the user taps the action button.
 
+## See Also
+
+### Creating an alert action
+- [init(title: String, color: UIColor, handler: CPAlertActionHandler)](./init%28title,color,handler%29.md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

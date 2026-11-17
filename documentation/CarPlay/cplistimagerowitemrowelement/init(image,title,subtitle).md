@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initialize an element that is constituted of an image, title and subtitle. Only image is required while the two others can be omitted.
+Creates a row element with the specified image and optional text.
 
 **Availability**:
 - iOS 26.0+
@@ -21,21 +21,15 @@ init(image: UIImage, title: String?, subtitle: String?)
 - (instancetype) initWithImage:(UIImage *) image title:(NSString *) title subtitle:(NSString *) subtitle;
 ```
 
-## Discussion
+## Return Value
 
-When providing an image, your app should provide a @c UIImage that is display-ready. If necessary for the image, provide light and dark styles by using an asset from your asset catalog, prepared with light and dark styles or by using @c UIImageAsset to combine two @c UIImage instances into a single image with both styles.
-
-UIImageAsset is used to combine multiple UIImages with different trait collections into a single UIImage.
-
-> **Note**: The expected image size is given by +[CPListImageRowItemRowElement maximumImageSize]. Images provided will be resized to this size if necessary.
-
-To properly size your images, your app should size them to the display scale of the car screen. See -[CPInterfaceController carTraitCollection].
+An initialized element you can add to a row.
 
 ## Parameters
 
-- `image`: The image associated to the element.
-- `title`: The title of the element.
-- `subtitle`: The subtitle of the element.
+- `image`: The image to display as the element’s primary content. If the image originates from an asset catalog, CarPlay manages light and dark variants of your image and switches them when needed. Specify images with the dimensions listed in the [`maximumImageSize`](../cplistimagerowitemcardelement/maximumimagesize.md) property. If your image is smaller or larger than the maximum dimensions, CarPlay scales the image as needed to fit the space. Don’t specify an image object with an animated sequence of images.
+- `title`: The primary text to display beneath the image. CarPlay displays this string with a visually prominent style.
+- `subtitle`: The secondary text to display beneath the title. CarPlay displays this string less prominently than the title.
 
 
 ---

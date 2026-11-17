@@ -27,6 +27,16 @@ If the alert was created with the older @c primaryAction / @c secondaryAction in
 
 > **Note**: CPAlertActionStyleCancel actions are rendered as standard labeled buttons in the primary action row.
 
+## See Also
+
+### Getting the actions
+- [var primaryAction: CPAlertAction](./primaryaction.md)
+  The primary action, and button, for the navigation alert.
+- [var secondaryAction: CPAlertAction?](./secondaryaction.md)
+  An optional secondary action, and button, for the navigation alert.
+- [class var maximumActionsCount: Int](./maximumactionscount.md)
+  The maximum number of actions that a @c CPNavigationAlert can display.
+
 
 ---
 

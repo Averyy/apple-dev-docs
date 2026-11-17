@@ -21,14 +21,17 @@ var moveFiles: some AppSchemaIntent { get }
 
 ## Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `files` domain and one of your app’s actions matches the `moveFiles` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .files.moveFiles)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `files` domain and one of your app’s actions matches the `moveFiles` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent(schema: .files.moveFiles)` Swift macro.
 
-The following example shows an intent that conforms to the `moveFiles` schema:
+The following example shows an intent that conforms to the `moveFiles` schema. You can create a type that conforms to the schema by adding the `@AppIntent` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `files_moveFiles` and select it from the code-completion suggestions:
 
 ```swift
 @AppIntent(schema: .files.moveFiles)
 struct MoveFilesIntent {
+    /// Files or folders to move.
     var entities: [<#FileEntity#>]
+
+    /// Folder where the files will be moved.
     var destinationFolder: <#FileEntity#>
 
     func perform() async throws -> some IntentResult {
@@ -42,6 +45,15 @@ The schema supports the following system experiences:
 - Shortcuts
 
 For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
+
+## Parameters for the move-files intent
+
+Each parameter in the code listing above plays a specific role when your app performs this action. The following table describes what each parameter represents and any behavior to account for when you set it.
+
+| Parameter | Type | Origin | Discussion |
+| --- | --- | --- | --- |
+| `entities` | `[@AppEntity(schema: .files.file)]` | Your app | Files or folders to move. `FileEntity` is a placeholder name for a type that conforms to the [`file`](../filesentity/file.md) entity schema, which your app defines and implements. |
+| `destinationFolder` | `@AppEntity(schema: .files.file)` | Your app | Folder where the files will be moved. `FileEntity` is a placeholder name for a type that conforms to the [`file`](../filesentity/file.md) entity schema, which your app defines and implements. |
 
 ## See Also
 

@@ -17,7 +17,7 @@ init(alignments: [PlaneAnchor.Alignment] = [.horizontal, .vertical])
 
 ## Parameters
 
-- `alignments`: The types of planes you want to detect — horizontal, vertical, or both.
+- `alignments`: The types of planes you want to detect — horizontal, vertical, or both. Defaults to detecting horizontal and vertical planes.
 
 ## See Also
 

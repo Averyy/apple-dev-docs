@@ -4,14 +4,12 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The object that serves as the delegate to the list template.
+The list template’s delegate is informed of list selection events.
 
 **Availability**:
 - iOS 12.0+ - Deprecated in 14.0
 - iPadOS 12.0+ - Deprecated in 14.0
 - Mac Catalyst 13.1+ - Deprecated in 14.0
-
-> **Deprecated**: For selection, use the handler on [`CPSelectableListItem`](../cpselectablelistitem.md) instead.
 
 ## Declaration
 
@@ -25,9 +23,8 @@ weak var delegate: (any CPListTemplateDelegate)? { get set }
 
 ## See Also
 
-### Responding to List Events
+### Deprecated
 - [protocol CPListTemplateDelegate](../cplisttemplatedelegate.md)
-  The interface an object implements to serve as the delegate for a list template.
 
 
 ---

@@ -23,7 +23,7 @@ struct CardSnippet<Entity, Content> where Entity : AppEntity, Content : View
 
 ## Overview
 
-A `CardSnippet` type generates a card-style presentation that includes the contents of a SwiftUI view you provide. The system delivers cards in various contexts, including Siri responses and conversation transcripts. When your entity adopts the [`SnippetRepresentableEntity`](./snippetrepresentableentity.md) protocol, you create this type and return it from your entity’s [`snippet`](./snippetrepresentableentity/snippet.md) property.
+A `CardSnippet` type generates a card-style presentation that includes the contents of a SwiftUI view you provide. The system delivers cards in various contexts, including Siri responses and conversation transcripts. When your entity adopts the [`SnippetRepresentableEntity`](./snippetrepresentableentity.md) protocol, you create this type and return it from your entity’s [`snippet`](./snippetrepresentableentity/snippet-swift.type.property.md) property.
 
 When you create a `CardSnippet`, you provide a view builder that returns a SwiftUI view with content from the specified entity. The system creates a SwiftUI view archive from it to display your view in different contexts. You specify which contexts you support at initialization time by specifying the families you support. If your snippet doesn’t support a requested family, the system shows the content from your entity’s display representation instead of the archived view.
 
@@ -52,6 +52,8 @@ When you build the content for your snippet, create views with primarily static 
 
 ### Conforms To
 - [EntitySnippetContent](./entitysnippetcontent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
@@ -66,8 +68,6 @@ When you build the content for your snippet, create views with primarily static 
   A visual representation that the system renders for an entity.
 - [enum EntitySnippetContentBuilder](./entitysnippetcontentbuilder.md)
   A result builder that assembles an entity’s snippet declarations.
-- [struct CardSnippetSize](./cardsnippetsize.md)
-  A size category for a snippet card.
 
 
 ---

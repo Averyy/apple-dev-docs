@@ -23,7 +23,7 @@ var title: String? { get }
 
 ## See Also
 
-### Accessing the Item’s Attributes
+### Accessing the item’s attributes
 - [var detail: String?](./detail.md)
   The text that the template displays below or beside the item’s title.
 

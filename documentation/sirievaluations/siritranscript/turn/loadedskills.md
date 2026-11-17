@@ -26,9 +26,9 @@ Identity-based, by app and name: a skill carries no properties to observe, only 
 
 ### Accessing the turn’s context
 - [let foundEntities: [SiriTranscript.Observation<AnyAppEntity>]](./foundentities.md)
-  The entities Siri surfaced by search or resolution, with the properties Siri read for them before its next intent ran.
+  The entities Siri surfaced by search or resolution.
 - [let onScreenEntities: [SiriTranscript.Observation<AnyAppEntity>]](./onscreenentities.md)
-  The entities Siri captured as onscreen context, with the properties Siri read for them before its next intent ran.
+  The entities Siri captured as onscreen context, as Siri recorded them.
 
 
 ---

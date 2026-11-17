@@ -56,7 +56,7 @@ In iOS 9 and later, this method is thread safe.
   Supply image resources appropriate for light and dark appearances and for high-contrast environments.
 - [Configuring and displaying symbol images in your UI](../configuring-and-displaying-symbol-images-in-your-ui.md)
   Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
-- [Creating custom symbols](../../TechnologyOverviews/custom-sf-symbols.md)
+- [Creating custom SF Symbols](../../TechnologyOverviews/creating-custom-sf-symbols.md)
   Design a symbol image with the same behavior as system-provided symbols.
 - [init?(named: String, in: Bundle?, with: UIImage.Configuration?)](./init%28named,in,with%29.md)
   Creates an image by using the named image asset that’s compatible with the configuration you specify.

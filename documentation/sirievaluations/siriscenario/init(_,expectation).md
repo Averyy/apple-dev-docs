@@ -18,10 +18,6 @@ Creates a scenario from its turns, plus expectations for the conversation as a w
 init(@SiriScenarioBuilder _ content: () -> [UserTurn], @SiriScenarioExpectationBuilder expectation: () -> SiriScenarioExpectationBuilder.Component)
 ```
 
-## Discussion
-
-The `expectation:` label and trailing-closure shape mirror EvalKit’s `Scenario`, so adopting it later is a rebuild.
-
 ## See Also
 
 ### Creating a scenario with expectations

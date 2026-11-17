@@ -34,6 +34,14 @@ An initialized @c CPNavigationAlert.
 - `actions`: An array of @c CPAlertAction objects. The number of actions will be clamped to @c maximumActionsCount.
 - `duration`: The duration for which this alert should be visible. Specify 0 for an alert that displays indefinitely.
 
+## See Also
+
+### Creating a navigation alert
+- [init(titleVariants: [String], subtitleVariants: [String]?, image: UIImage?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)](./init%28titlevariants,subtitlevariants,image,primaryaction,secondaryaction,duration%29.md)
+  Creates a navigation alert.
+- [init(titleVariants: [String], subtitleVariants: [String], avatarImage: UIImage?, alertImage: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](./init%28titlevariants,subtitlevariants,avatarimage,alertimage,actions,duration%29.md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

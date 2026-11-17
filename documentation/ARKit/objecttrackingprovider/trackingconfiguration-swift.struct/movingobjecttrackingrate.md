@@ -19,7 +19,7 @@ var movingObjectTrackingRate: Float
 
 ## Discussion
 
-The framework clamps this to between `0` and `30` Hz.
+The framework clamps this value to between `0` and `30` Hz. The default is `5`.
 
 ## See Also
 

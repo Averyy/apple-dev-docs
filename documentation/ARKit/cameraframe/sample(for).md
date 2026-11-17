@@ -27,11 +27,11 @@ The camera frame sample, or `nil` if no sample is available for the given camera
 
 ### Getting camera frame information
 - [var primarySample: CameraFrame.Sample](./primarysample.md)
-  Gets the primary frame sample for a camera frame.
+  The primary frame sample of a camera frame.
+- [var samples: [CameraFrame.Sample]](./samples.md)
+  All the camera frame samples on this frame.
 - [CameraFrame.Sample](./sample.md)
   Information that describes a sample from a camera frame.
-- [var description: String](./description.md)
-  A textual representation of this camera frame.
 
 
 ---

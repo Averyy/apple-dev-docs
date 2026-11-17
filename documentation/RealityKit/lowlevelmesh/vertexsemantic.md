@@ -86,7 +86,9 @@ RealityKit consults the vertex semantic when interpreting the data in your [`Low
 - [LowLevelMesh.PartsCollection](./partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
 - [class LowLevelBuffer](../lowlevelbuffer.md)
+  A container for buffer data that you can read and update from the CPU or the GPU.
 - [class LowLevelInstanceData](../lowlevelinstancedata.md)
+  A container for the transforms of mesh instances that you can update from the CPU or the GPU.
 
 
 ---

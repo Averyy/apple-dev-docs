@@ -67,6 +67,8 @@ When you create an `IMKCandidates` object, you attach it to the `IMKServer` obje
   Types of candidates windows provide by the Input Method Kit.
 - [typealias IMKCandidatesLocationHint](./imkcandidateslocationhint.md)
   Hints that suggest where to place the candidates window.
+- [let IMKCandidatesOpacityAttributeName: String](./imkcandidatesopacityattributename.md)
+  The opacity level for a candidates window.
 ### Initializers
 - [init!(server: IMKServer!, panelType: IMKCandidatePanelType, styleType: IMKStyleType)](./imkcandidates/init%28server,paneltype,styletype%29.md)
 ### Instance Methods

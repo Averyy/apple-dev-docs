@@ -51,13 +51,7 @@ enum CPPanDirection : NSInteger;
 
 ## See Also
 
-### Panning the Map
-- [func mapTemplateDidShowPanningInterface(CPMapTemplate)](../cpmaptemplatedelegate/maptemplatedidshowpanninginterface%28_%29.md)
-  Tells the delegate that the panning interface is visible on the map.
-- [func mapTemplateWillDismissPanningInterface(CPMapTemplate)](../cpmaptemplatedelegate/maptemplatewilldismisspanninginterface%28_%29.md)
-  Tells the delegate that the panning interface will disappear from the map.
-- [func mapTemplateDidDismissPanningInterface(CPMapTemplate)](../cpmaptemplatedelegate/maptemplatediddismisspanninginterface%28_%29.md)
-  Tells the delegate that the panning interface is no longer visible on the map.
+### Panning the map content
 - [func mapTemplateDidBeginPanGesture(CPMapTemplate)](../cpmaptemplatedelegate/maptemplatedidbeginpangesture%28_%29.md)
   Tells the delegate that the pan gesture has started.
 - [func mapTemplate(CPMapTemplate, panBeganWith: CPMapTemplate.PanDirection)](../cpmaptemplatedelegate/maptemplate%28_,panbeganwith%29.md)

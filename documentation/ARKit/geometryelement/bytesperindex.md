@@ -26,8 +26,6 @@ var bytesPerIndex: Int { get }
   The kind of primitive, lines or triangles, that a geometry element contains.
 - [var count: Int](./count.md)
   The number of primitives in the Metal buffer for a geometry element.
-- [var description: String](./description.md)
-  A textual representation of this geometry element.
 
 
 ---

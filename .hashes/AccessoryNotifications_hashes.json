@@ -238,7 +238,11 @@
     },
     "https://developer.apple.com/documentation/accessorynotifications/alertingcontext/kind-swift.enum": {
       "file_path": "documentation/AccessoryNotifications/alertingcontext/kind-swift.enum.md",
-      "hash": "08d980322101521101be15210db2852607b92271b63560172e652dd1cd2b77ef"
+      "hash": "1e99d9630208460abd57ee032fb6c9dfd32ea81c68766ef8a6c210eb9b797c5a"
+    },
+    "https://developer.apple.com/documentation/accessorynotifications/alertingcontext/kind-swift.enum/activecall": {
+      "file_path": "documentation/AccessoryNotifications/alertingcontext/kind-swift.enum/activecall.md",
+      "hash": "309019ddb4659d2e9a6c3e76061084dd5ee910665c3cc2d4ff6275394741f58b"
     },
     "https://developer.apple.com/documentation/accessorynotifications/alertingcontext/kind-swift.enum/alarm": {
       "file_path": "documentation/AccessoryNotifications/alertingcontext/kind-swift.enum/alarm.md",
@@ -634,7 +638,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessorynotifications/alertingcontext/kind-swift.enum.json": {
       "file_path": "documentation/AccessoryNotifications/alertingcontext/kind-swift.enum.md",
-      "hash": "08d980322101521101be15210db2852607b92271b63560172e652dd1cd2b77ef"
+      "hash": "1e99d9630208460abd57ee032fb6c9dfd32ea81c68766ef8a6c210eb9b797c5a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accessorynotifications/alertingcontext/kind-swift.enum/activecall.json": {
+      "file_path": "documentation/AccessoryNotifications/alertingcontext/kind-swift.enum/activecall.md",
+      "hash": "309019ddb4659d2e9a6c3e76061084dd5ee910665c3cc2d4ff6275394741f58b"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessorynotifications/alertingcontext/kind-swift.enum/alarm.json": {
       "file_path": "documentation/AccessoryNotifications/alertingcontext/kind-swift.enum/alarm.md",
@@ -797,6 +805,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 198
+    "total_pages": 200
   }
 }

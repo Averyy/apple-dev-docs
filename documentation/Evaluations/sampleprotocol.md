@@ -30,7 +30,7 @@ struct MySample: SampleProtocol {
 }
 ```
 
-Conform to this protocol to define input samples for your evaluation datasets. Each sample has an input that’s displayed in the DataFrame “Input” column, and an optional expected value for comparison.
+Conform to this protocol to define input samples for your evaluation datasets. Each sample has an input and an optional expected value for comparison. An [`Evaluation`](./evaluation.md) displays the input in the “Input” column of the results [`DataFrame`](../TabularData/dataframe.md).
 
 For language model evaluations, use [`ModelSampleProtocol`](./modelsampleprotocol.md) which extends this protocol with language-model-specific properties: prompt, instructions, and expectations.
 
@@ -51,7 +51,7 @@ let samples = [
 - [var expected: Self.ExpectedValue?](./sampleprotocol/expected.md)
   The expected output for comparison.
 - [var input: Self.Input](./sampleprotocol/input-swift.property.md)
-  The input data for this sample, shown in the “Input” DataFrame column.
+  The input data for this sample, which an [`Evaluation`](./evaluation.md) displays in the “Input” [`Column`](../TabularData/column.md).
 
 ## Relationships
 

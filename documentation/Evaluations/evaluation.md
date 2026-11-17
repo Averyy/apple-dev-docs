@@ -98,11 +98,11 @@ struct MyEvaluation: Evaluation {
   Runs the evaluation against the dataset and computes metric results.
 ### Inspecting detailed results
 - [var inputColumn: ResultColumn<Self.Sample>](./evaluation/inputcolumn.md)
-  A typed column descriptor for the input samples in the detailed DataFrame.
+  A typed column descriptor for the input samples in the detailed [`DataFrame`](../TabularData/dataframe.md).
 - [var responseColumn: ResultColumn<Self.Subject>](./evaluation/responsecolumn.md)
-  A typed column descriptor for the model responses in the detailed DataFrame.
+  A typed column descriptor for the model responses in the detailed [`DataFrame`](../TabularData/dataframe.md).
 - [var expectedColumn: ResultColumn<Self.Sample.ExpectedValue>](./evaluation/expectedcolumn.md)
-  A typed column descriptor for the expected values in the detailed DataFrame.
+  A typed column descriptor for the expected values in the detailed [`DataFrame`](../TabularData/dataframe.md).
 ### Errors
 - [enum EvaluationError](./evaluationerror.md)
   Errors thrown during an evaluation run.

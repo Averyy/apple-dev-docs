@@ -26,6 +26,12 @@ var secondaryButton: CPButton? { get }
 
 Specify this button at initialization time and access it using this property. The value of this property can be `nil`.
 
+## See Also
+
+### Accessing the configuration details
+- [var travelEstimates: CPTravelEstimates?](./travelestimates.md)
+  The travel estimates to display alongside the action buttons.
+
 
 ---
 

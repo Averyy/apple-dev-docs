@@ -34,6 +34,7 @@ By referencing the node that contains the object to remove, this method can quic
 
 ## Parameters
 
+- `element`: The object to be removed from the tree.
 - `node`: The node in the tree containing the object.
 
 ## See Also

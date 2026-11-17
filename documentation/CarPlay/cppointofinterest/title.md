@@ -23,7 +23,7 @@ var title: String { get set }
 
 ## See Also
 
-### Managing the Picker Item’s Data
+### Managing the picker item
 - [var subtitle: String?](./subtitle.md)
   The subtitle that the picker’s item displays.
 - [var summary: String?](./summary.md)

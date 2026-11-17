@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initialize an overlay with properties that control the overlay’s appearance and text contents.
+Creates an overlay that displays text in a colored badge.
 
 **Availability**:
 - iOS 26.4+
@@ -21,12 +21,27 @@ init(text: String, textColor: UIColor, backgroundColor: UIColor, alignment: CPIm
 - (instancetype) initWithText:(NSString *) text textColor:(UIColor *) textColor backgroundColor:(UIColor *) backgroundColor alignment:(CPImageOverlayAlignment) alignment;
 ```
 
+## Return Value
+
+An overlay object with the specified text information.
+
+## Discussion
+
+After creating the overlay object, initialize a [`CPThumbnailImage`](../cpthumbnailimage.md) object with it or assign it to the thumbnail image’s [`imageOverlay`](../cpthumbnailimage/imageoverlay.md) property.
+
 ## Parameters
 
-- `text`: The text to display in the overlay.
-- `textColor`: The color of the overlay text.
-- `backgroundColor`: The background color of the overlay.
-- `alignment`: The alignment for positioning the overlay.
+- `text`: The text to display in the badge. Restrict the amount of text you provide to only a few characters. If the amount of text is too large to fit in the boundaries of the thumbnail image, CarPlay truncates the text to make it fit.
+- `textColor`: The color to apply to the text. Choose a color that contrasts with `backgroundColor`.
+- `backgroundColor`: The color to apply to the badge platter. Choose a color that contrasts with `textColor`.
+- `alignment`: The placement of the badge on the thumbnail. Overlays appear inside the top edge of the thumbnail image and with the placement you specify in this parameter.
+
+## See Also
+
+### Creating an image overlay
+- [init(image: UIImage, alignment: CPImageOverlay.Alignment)](./init%28image,alignment%29.md)
+  Creates an overlay that displays an image.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

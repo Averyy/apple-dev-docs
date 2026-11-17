@@ -15,6 +15,18 @@ Creates a world tracking provider.
 extern ar_world_tracking_provider_tar_world_tracking_provider_create(ar_world_tracking_configuration_t world_tracking_configuration);
 ```
 
+## Return Value
+
+An instance of `ar_world_tracking_provider_t`.
+
+## Discussion
+
+> **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
+
+## Parameters
+
+- `world_tracking_configuration`: The configuration for world tracking.
+
 ## See Also
 
 ### World tracking
@@ -43,7 +55,7 @@ extern ar_world_tracking_provider_tar_world_tracking_provider_create(ar_world_tr
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_is_supported](./ar_world_tracking_provider_is_supported.md)

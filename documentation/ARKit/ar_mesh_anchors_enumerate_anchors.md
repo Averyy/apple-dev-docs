@@ -15,10 +15,16 @@ Enumerates a collection of mesh anchors.
 extern void ar_mesh_anchors_enumerate_anchors(ar_mesh_anchors_t mesh_anchors, ar_mesh_anchors_enumerator_t mesh_anchors_enumerator);
 ```
 
+## Parameters
+
+- `mesh_anchors`: The collection of mesh anchors.
+- `mesh_anchors_enumerator`: The enumerator handler.
+
 ## See Also
 
 ### Scene reconstruction
 - [ar_scene_reconstruction_configuration_t](./ar_scene_reconstruction_configuration_t.md)
+  Configuration for scene reconstruction.
 - [ar_scene_reconstruction_mode_t](./ar_scene_reconstruction_mode_t.md)
   The additional kinds of information you can request about a person’s surroundings.
 - [ar_scene_reconstruction_provider_create](./ar_scene_reconstruction_provider_create.md)
@@ -42,7 +48,7 @@ extern void ar_mesh_anchors_enumerate_anchors(ar_mesh_anchors_t mesh_anchors, ar
 - [ar_mesh_anchor_get_geometry](./ar_mesh_anchor_get_geometry.md)
   Gets the shape of a mesh anchor.
 - [ar_mesh_anchors_enumerate_anchors_f](./ar_mesh_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of mesh anchors.
+  Enumerates a collection of mesh anchors using a function.
 - [ar_mesh_anchors_get_count](./ar_mesh_anchors_get_count.md)
   Gets the number of mesh anchors in the collection.
 - [ar_mesh_anchor_get_origin_from_anchor_transform_with_correction](./ar_mesh_anchor_get_origin_from_anchor_transform_with_correction.md)

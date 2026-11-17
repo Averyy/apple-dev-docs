@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-The kinds of alignment — horizontal or vertical — that a plane anchor can have.
+Option set describing possible orientation alignments of a detected plane.
 
 **Availability**:
 - visionOS
@@ -15,17 +15,21 @@ The kinds of alignment — horizontal or vertical — that a plane anchor can ha
 typedef enum { ... } ar_plane_alignment_t;
 ```
 
+## Overview
+
+> **Note**: An `ar_plane_anchor_t` has exactly one alignment. Multiple bits may be set to receive various planes from an `ar_plane_detection_provider_t`.
+
 ## Topics
 
 ### Getting plane alignment
 - [ar_plane_alignment_horizontal](./ar_plane_alignment_t/ar_plane_alignment_horizontal.md)
-  The plane is in a horizontal position.
+  Planes orthogonal to the gravity vector.
 - [ar_plane_alignment_vertical](./ar_plane_alignment_t/ar_plane_alignment_vertical.md)
-  The plane is in a vertical position.
+  Planes parallel to the gravity vector.
 - [ar_plane_alignment_slanted](./ar_plane_alignment_t/ar_plane_alignment_slanted.md)
-  The plane is in a slanted orientation.
+  Planes that are neither horizontal nor vertical.
 - [ar_plane_alignment_none](./ar_plane_alignment_t/ar_plane_alignment_none.md)
-  The plane doesn’t have an alignment.
+  No plane alignment.
 
 ## See Also
 
@@ -55,11 +59,11 @@ typedef enum { ... } ar_plane_alignment_t;
 - [ar_plane_anchor_get_alignment](./ar_plane_anchor_get_alignment.md)
   Gets the alignment — horizontal or vertical — of a plane anchor relative to gravity.
 - [ar_plane_anchor_get_geometry](./ar_plane_anchor_get_geometry.md)
-  Gets the shape of a plane anchor.
+  Gets the geometry of a plane anchor.
 - [ar_plane_anchor_get_plane_classification](./ar_plane_anchor_get_plane_classification.md)
   Gets the kind of real-world object that ARKit determines the plane anchor might be.
 - [ar_plane_anchors_enumerate_anchors](./ar_plane_anchors_enumerate_anchors.md)
-  Enumerates a collection of plane anchors using the collection of plane anchors and the enumeratin handler you provide.
+  Enumerates a collection of plane anchors.
 
 
 ---

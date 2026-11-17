@@ -4,8 +4,6 @@
 **Kind**: protocol  
 **Role**: Protocol
 
-The interface an object implements to serve as the delegate for a list template.
-
 **Availability**:
 - iOS 12.0+ - Deprecated in 14.0
 - iPadOS 12.0+ - Deprecated in 14.0
@@ -23,9 +21,9 @@ protocol CPListTemplateDelegate : NSObjectProtocol
 
 ## Topics
 
-### Getting the Selected Item
+### Getting the selected item
 - [func listTemplate(CPListTemplate, didSelect: CPListItem, completionHandler: () -> Void)](./cplisttemplatedelegate/listtemplate%28_,didselect,completionhandler%29.md)
-  Tells the delegate when the user selects a list item.
+  The user has selected an item in the list template.
 
 ## Relationships
 
@@ -34,9 +32,9 @@ protocol CPListTemplateDelegate : NSObjectProtocol
 
 ## See Also
 
-### Responding to List Events
+### Deprecated
 - [var delegate: (any CPListTemplateDelegate)?](./cplisttemplate/delegate.md)
-  The object that serves as the delegate to the list template.
+  The list template’s delegate is informed of list selection events.
 
 
 ---

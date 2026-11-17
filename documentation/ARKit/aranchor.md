@@ -38,8 +38,8 @@ Some ARKit features automatically add special anchors to a session. World-tracki
 
 In addition to creating your own `ARAnchor` instances to track the real-world positions of your virtual content, you can also subclass `ARAnchor` to associate custom data with anchors you create. Ensure that your anchor classes behave correctly when ARKit updates frames or saves and loads anchors in an [`ARWorldMap`](./arworldmap.md):
 
-- Anchor subclasses must fullfill the requirements of the [`ARAnchorCopying`](./aranchorcopying.md) protocol. ARKit calls [`init(anchor:)`](./aranchorcopying/init%28anchor%29.md) (on a background thread) to copy instances of your anchor class from each [`ARFrame`](./arframe.md) to the next. Your implementation of this initializer should copy the values of any custom properties your subclass adds.
-- Anchor subclasses must also adopt the [`NSSecureCoding`](../Foundation/nssecurecoding.md) protocol. Override [`encode(with:)`](../Foundation/nscoding/encode%28with%29.md) and [`init(coder:)`](../Foundation/nscoding/init%28coder%29.md) to save and restore the values your subclass’ custom properties when ARKit saves and loads them in a world map.
+- Anchor subclasses must fulfill the requirements of the [`ARAnchorCopying`](./aranchorcopying.md) protocol. ARKit calls [`init(anchor:)`](./aranchorcopying/init%28anchor%29.md) (on a background thread) to copy instances of your anchor class from each [`ARFrame`](./arframe.md) to the next. Your implementation of this initializer should copy the values of any custom properties your subclass adds.
+- Anchor subclasses must also adopt the [`NSSecureCoding`](../Foundation/nssecurecoding.md) protocol. Override [`encode(with:)`](../Foundation/nscoding/encode%28with%29.md) and [`init(coder:)`](../Foundation/nscoding/init%28coder%29.md) to save and restore the values of your subclass’s custom properties when ARKit saves and loads them in a world map.
 - Anchors are considered equal based on their [`identifier`](./aranchor/identifier.md) property.
 - Only anchors that do not adopt [`ARTrackable`](./artrackable.md) are included when you save a world map.
 

@@ -24,16 +24,8 @@ The 3D point in world space where a ray projected from the specified 2D point in
 
 - `point`: The point in 2D view space to project onto a plane.
 
-  The coordinate space for this point has its origin is in the upper left corner and a size matching the `viewportSize` parameter.
+  The coordinate space for this point has its origin in the upper left corner and a size matching the view’s bounds.
 - `planeTransform`: A transform matrix specifying the position and orientation of a plane (with infinite extent) in 3D world space. The plane is the xz-plane of the local coordinate space this transform defines.
-
-## See Also
-
-### Mapping Content to Real-World Positions
-- [func anchor(for: SCNNode) -> ARAnchor?](./anchor%28for%29.md)
-  Returns the AR anchor associated with the specified SceneKit node, if any.
-- [func node(for: ARAnchor) -> SCNNode?](./node%28for%29.md)
-  Returns the SceneKit node associated with the specified AR anchor, if any.
 
 
 ---

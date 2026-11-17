@@ -34,6 +34,10 @@ If the render encoder has multiple color attachments, set [`supportColorAttachme
 
 For testing performance of this method, always test your app on-device rather than in Simulator. However, if you need to iterate on your code in development, you can disable API validation in Xcode, or separate the rendering into multiple render encoders for other color attachments.
 
+## Parameters
+
+- `command_encoder`: The command encoder to use to render the Compositor effects and present the layer renderer drawable.
+
 ## See Also
 
 ### Rendering with Metal 4

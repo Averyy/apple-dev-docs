@@ -4,6 +4,8 @@
 **Kind**: struct  
 **Role**: Structure
 
+A hit result of a pixel cast that identifies the entity and surface point a ray intersects.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

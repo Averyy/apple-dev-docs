@@ -35,6 +35,8 @@ struct PKStroke
   Creates a stroke with the line properties, path, transform, mask, and random seed that you specify.
 - [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?, randomSeed: UInt32)](./pkstroke-swift.struct/init%28ink,path,transform,mask,randomseed%29-epus.md)
   Creates a macOS stroke with the line properties, path, transform, mask, and random seed that you specify.
+- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?, randomSeed: UInt32, id: UUID, renderGroupID: UUID?, renderState: PKStroke.RenderState?)](./pkstroke-swift.struct/init%28ink,path,transform,mask,randomseed,id,rendergroupid,renderstate%29-1qvj7.md)
+- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32, id: UUID, renderGroupID: UUID?, renderState: PKStroke.RenderState?)](./pkstroke-swift.struct/init%28ink,path,transform,mask,randomseed,id,rendergroupid,renderstate%29-idqu.md)
 ### Getting the stroke properties
 - [var ink: PKInk](./pkstroke-swift.struct/ink.md)
   The Ink, which is a combination of a tool used to render this stroke.
@@ -70,9 +72,6 @@ struct PKStroke
 ### Using reference types
 - [class PKStrokeReference](./pkstrokereference.md)
   A class that represents the paths, boundaries and other properties of a stroke drawn on a canvas.
-### Initializers
-- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?, randomSeed: UInt32, id: UUID, renderGroupID: UUID?, renderState: PKStroke.RenderState?)](./pkstroke-swift.struct/init%28ink,path,transform,mask,randomseed,id,rendergroupid,renderstate%29-1qvj7.md)
-- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32, id: UUID, renderGroupID: UUID?, renderState: PKStroke.RenderState?)](./pkstroke-swift.struct/init%28ink,path,transform,mask,randomseed,id,rendergroupid,renderstate%29-idqu.md)
 ### Default Implementations
 - [Identifiable Implementations](./pkstroke-swift.struct/identifiable-implementations.md)
 

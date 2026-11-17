@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The background color of the overlay.
+The color to display behind the badge’s text.
 
 **Availability**:
 - iOS 26.4+
@@ -20,6 +20,20 @@ var backgroundColor: UIColor? { get }
 ```objc
 @property (nonatomic, strong, readonly, nullable) UIColor * backgroundColor;
 ```
+
+## Discussion
+
+Specify the background color at initialization time. If you initialized the overlay with an image, the value in this property is `nil`.
+
+## See Also
+
+### Getting the overlay details
+- [var image: UIImage?](./image.md)
+  The image to display at top of the thumbnail.
+- [var text: String?](./text.md)
+  The text to display in a badge at the top of the thumbnail.
+- [var textColor: UIColor?](./textcolor.md)
+  The color to apply to the badge’s text.
 
 
 ---

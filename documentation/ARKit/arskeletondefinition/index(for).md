@@ -17,9 +17,17 @@ Returns the index for a given joint identifier.
 func index(for jointName: ARSkeleton.JointName) -> Int
 ```
 
+## Return Value
+
+The index of the joint in the skeleton.
+
 ## Discussion
 
 This function returns `NSNotFound` if an invalid joint name is passed in.
+
+## Parameters
+
+- `jointName`: The name of the joint.
 
 ## See Also
 

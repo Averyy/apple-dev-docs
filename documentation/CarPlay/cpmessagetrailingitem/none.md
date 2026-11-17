@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Don’t show a trailing item.
+An option to display no symbol.
 
 **Availability**:
 - iOS 12.0+
@@ -25,7 +25,7 @@ CPMessageTrailingItemNone
 
 ### Trailing Items
 - [CPMessageTrailingItem.mute](./mute.md)
-  Show a muted speaker icon.
+  An option to display a mute symbol.
 
 
 ---

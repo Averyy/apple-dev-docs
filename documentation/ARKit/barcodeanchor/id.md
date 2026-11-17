@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The unique identifier of an anchor.
+The unique identifier of this anchor.
 
 **Availability**:
 - visionOS 2.0+

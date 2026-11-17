@@ -26,8 +26,6 @@ var primitive: GeometryElement.Primitive { get }
   The number of primitives in the Metal buffer for a geometry element.
 - [var bytesPerIndex: Int](./bytesperindex.md)
   The number of bytes that represent an index value.
-- [var description: String](./description.md)
-  A textual representation of this geometry element.
 
 
 ---

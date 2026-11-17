@@ -23,7 +23,7 @@ init(_ name: String, description: String? = nil, scale: ScoringScale)
 
 ## Parameters
 
-- `name`: The dimension name, used as the DataFrame column name and for aggregation lookup.
+- `name`: The dimension name. An [`Evaluation`](../evaluation.md) uses this name as the [`Column`](../../TabularData/column.md) name in its results, and [`MetricsAggregator`](../metricsaggregator.md) uses it to look up the dimension’s metric.
 - `description`: Optional description providing context about what this dimension measures.
 - `scale`: The scoring scale for this dimension.
 

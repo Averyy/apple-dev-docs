@@ -15,6 +15,10 @@ Creates a reference object from a bundle.
 init(named: String, from bundle: Bundle? = nil) async throws
 ```
 
+## Discussion
+
+> **Throws**: `ObjectTrackingProvider.Error`
+
 ## Parameters
 
 - `named`: Name of object to load in bundle.

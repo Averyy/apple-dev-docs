@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+A NACS connector with alternating current.
+
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
@@ -18,6 +20,10 @@ case nacsAC
 ```c
 CPChargingStationConnectionConnectorNACSAC
 ```
+
+## Discussion
+
+The North American charging standard (NACS) connector supports both AC and DC charging in a single unified plug. This type of connector is commonly available in North America.
 
 
 ---

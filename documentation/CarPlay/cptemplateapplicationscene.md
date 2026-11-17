@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-A CarPlay scene that controls your app’s user interface.
+A CarPlay scene that manages your app’s interface on the vehicle’s center display.
 
 **Availability**:
 - iOS 13.0+
@@ -21,49 +21,51 @@ class CPTemplateApplicationScene
 @interface CPTemplateApplicationScene : UIScene
 ```
 
+## Mentions
+
+- [Building your app’s initial CarPlay interface](./building-your-apps-initial-carplay-interface.md)
+
 ## Overview
 
-A scene manages your app’s user interface, including the window that CarPlay displays from that scene. Only navigation apps have access to that window, and use it for drawing map content. All other categories of apps use the scene’s interface controller exclusively for constructing their user interfaces.
+The `CPTemplateApplicationScene` class is an extension of the [`UIScene`](../UIKit/uiscene.md) type, and it manages an instance of your app’s CarPlay interface. Scenes serve as the main entry point to your CarPlay app. When someone launches your app from their vehicle, CarPlay starts a session and creates your app’s main scene. During the session, use the scene object to retrieve the interface controller you need to create your app’s interface.
 
-The scene manages the display of the window on the vehicle’s CarPlay screen, and the life cycle of that scene as CarPlay and the user interact with it. The scene notifies its delegate—an object that conforms to [`CPTemplateApplicationSceneDelegate`](./cptemplateapplicationscenedelegate.md)—about various state changes and user actions.
-
-You don’t create scenes directly. Instead, you specify the name of the appropriate scene class as part of the CarPlay scene configuration you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](../UIKit/uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md)  method.
+You don’t create a `CPTemplateApplicationScene` object directly. Instead, you specify the type name in your app’s scene manifest, along with other information about the scene such as the type of its associated delegate object. When someone launches your app, CarPlay instantiates the scene and delegate types using the information in the scene manifest. The following example shows the keys and values from an app’s main CarPlay scene. The [`UISceneClassName`](../BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uisceneclassname.md) key contains the name of this scene class.
 
 ```plist
 <key>CPTemplateApplicationSceneSessionRoleApplication</key>
-<array> 
+<array>
     <dict>
         <!-- Specify the name of the scene class. -->
         <key>UISceneClassName</key>
         <string>CPTemplateApplicationScene</string>
         <key>UISceneConfigurationName</key>
-        <string>MyCarPlaySceneConfiguration</string> 
+        <string>MyCarPlaySceneConfiguration</string>
         <key>UISceneDelegateClassName</key>
-        <string>MyCarPlaySceneDelegate</string> 
+        <string>MyCarPlaySceneDelegate</string>
     </dict>
 </array>
-
 ```
+
+At the start of a session, the system delivers a [`CPInterfaceController`](./cpinterfacecontroller.md) object to the delegate’s [`templateApplicationScene(_:didConnect:)`](./cptemplateapplicationscenedelegate/templateapplicationscene%28_,didconnect%29.md) or [`templateApplicationScene(_:didConnect:to:)`](./cptemplateapplicationscenedelegate/templateapplicationscene%28_,didconnect,to%29.md) method. You can also retrieve this object from the scene’s [`interfaceController`](./cptemplateapplicationscene/interfacecontroller.md) property at any time. Use this controller object to present the content for your app’s interface. If you’re creating a navigation app, you also need to present your map content using the scene’s window object.
+
+For information about how to specify your app’s scene manifest, see [Specifying the scenes your app supports](../UIKit/specifying-the-scenes-your-app-supports.md).
 
 ## Topics
 
-### Responding to the Scene Life Cycle
-- [var delegate: (any CPTemplateApplicationSceneDelegate)?](./cptemplateapplicationscene/delegate.md)
-  The object that receives the scene’s life-cycle events.
-- [protocol CPTemplateApplicationSceneDelegate](./cptemplateapplicationscenedelegate.md)
-  The methods for responding to the life cycle events of your app’s scene.
-### Accessing the Interface Controller
+### Getting the interface controller
 - [var interfaceController: CPInterfaceController](./cptemplateapplicationscene/interfacecontroller.md)
-  The controller that manages the scene’s user interface.
-- [class CPInterfaceController](./cpinterfacecontroller.md)
-  A controller that manages the templates for constructing a scene’s user interface.
-### Accessing the Window
+  The controller object you use to present your app’s interface.
+### Responding to scene life-cycle events
+- [var delegate: (any CPTemplateApplicationSceneDelegate)?](./cptemplateapplicationscene/delegate.md)
+  The custom object you provide to handle scene’s life-cycle events.
+- [protocol CPTemplateApplicationSceneDelegate](./cptemplateapplicationscenedelegate.md)
+  Methods for responding to  life-cycle events in your app’s scene.
+### Accessing the scene’s window
 - [var carWindow: CPWindow](./cptemplateapplicationscene/carwindow.md)
-  The window that belongs to the scene.
-- [class CPWindow](./cpwindow.md)
-  A window that displays its content on the CarPlay screen.
-### Instance Properties
+  The window that displays the scene’s content.
+### Getting the interface style
 - [var contentStyle: UIUserInterfaceStyle](./cptemplateapplicationscene/contentstyle.md)
+  The current interface style for your app’s content.
 
 ## Relationships
 
@@ -77,6 +79,8 @@ You don’t create scenes directly. Instead, you specify the name of the appropr
 - [Hashable](../Swift/hashable.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
 - [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
 - [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
@@ -84,19 +88,17 @@ You don’t create scenes directly. Instead, you specify the name of the appropr
 
 ## See Also
 
-### CarPlay Integration
-- [Requesting CarPlay Entitlements](./requesting-carplay-entitlements.md)
-  Configure your CarPlay-enabled app with the entitlements it requires.
-- [Displaying Content in CarPlay](./displaying-content-in-carplay.md)
-  Use scenes to present your app’s content on the vehicle’s built-in screen.
-- [Supporting Previous Versions of iOS](./supporting-previous-versions-of-ios.md)
-  Make your CarPlay-enabled apps compatible with older system versions, such as iOS 13 and earlier.
-- [Using the CarPlay Simulator](./using-the-carplay-simulator.md)
-  Configure Simulator to run and debug your CarPlay-enabled app.
+### App management
+- [Building your app’s initial CarPlay interface](./building-your-apps-initial-carplay-interface.md)
+  Build the interface for your CarPlay app using scenes and templates from the CarPlay framework.
 - [protocol CPTemplateApplicationSceneDelegate](./cptemplateapplicationscenedelegate.md)
-  The methods for responding to the life cycle events of your app’s scene.
+  Methods for responding to  life-cycle events in your app’s scene.
+- [class CPInterfaceController](./cpinterfacecontroller.md)
+  The type you use to present your app’s CarPlay interface and change what appears on the vehicle’s display.
 - [class CPSessionConfiguration](./cpsessionconfiguration.md)
-  An object that provides vehicle properties and configuration for the CarPlay environment.
+  An object that keeps you informed of changes to the CarPlay environment.
+- [class CPWindow](./cpwindow.md)
+  A type that navigation apps use to present their map content.
 
 
 ---

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A Boolean value that indicates whether the album and artist string is a button.
+A Boolean value that indicates whether the album and artist information is a tappable button.
 
 **Availability**:
 - iOS 14.0+
@@ -23,17 +23,21 @@ var isAlbumArtistButtonEnabled: Bool { get set }
 
 ## Discussion
 
-The Now Playing template displays a string above the playback control buttons that contains the album and artist names. Set this property to [`true`](../../Swift/true.md) to turn the string into a button that you can use to present more information about the current track. To respond to a user tapping the button, create an object that conforms to [`CPNowPlayingTemplateObserver`](../cpnowplayingtemplateobserver.md) and register it with the Now Playing template using the template’s [`add(_:)`](./add%28_%29.md) method.
+The Now Playing interface displays album and artist information above the playback controls. When the value of this property is `true`, the interface displays this information using a button that makes the content interactive. When the value of this property is `false`, the system displays the album and artist information as static text. The default value of this property is `false`.
 
-The default value is [`false`](../../Swift/false.md).
+If you set this property to `true`, add an observer object to the Now Playing template. When someone taps the Up Next button, the template calls your observer’s  `CPNowPlayingTemplateDelegate/nowPlayingTemplateAlbumArtistButtonTapped(_:)` method to notify you of the interaction.
 
 ## See Also
 
-### Managing Albums, Artists, and Up Next
+### Configuring the interface
+- [var nowPlayingMode: CPNowPlayingMode?](./nowplayingmode.md)
+  The type that determines the layout of the Now Playing interface.
 - [var isUpNextButtonEnabled: Bool](./isupnextbuttonenabled.md)
-  A Boolean value that manages the display of the Up Next button.
+  A Boolean value that indicates whether the Now Playing interface displays the Up Next button.
 - [var upNextTitle: String](./upnexttitle.md)
-  The title for the Up Next button.
+  The text to display in the Up Next button.
+- [var allowsMiniPlayer: Bool](./allowsminiplayer.md)
+  A Boolean value that indicates whether the app supports the mini-player interface.
 
 
 ---

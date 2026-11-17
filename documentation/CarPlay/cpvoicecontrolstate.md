@@ -23,10 +23,10 @@ class CPVoiceControlState
 
 ## Topics
 
-### Creating a Voice Control State
+### Creating a voice control state
 - [init(identifier: String, titleVariants: [String]?, image: UIImage?, repeats: Bool)](./cpvoicecontrolstate/init%28identifier,titlevariants,image,repeats%29.md)
   Creates a voice control state.
-### Getting State Information
+### Getting the state information
 - [var identifier: String](./cpvoicecontrolstate/identifier.md)
   The string that your app uses to identify the voice control state.
 - [var titleVariants: [String]?](./cpvoicecontrolstate/titlevariants.md)
@@ -64,7 +64,7 @@ class CPVoiceControlState
 
 ## See Also
 
-### Creating a Voice Control Template
+### Creating a voice control template
 - [init(voiceControlStates: [CPVoiceControlState])](./cpvoicecontroltemplate/init%28voicecontrolstates%29.md)
   Creates a voice control template with a list of voice control states.
 

@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-The value that represents the EAN8 barcode symbology.
+The value that represents the EAN-8 barcode symbology.
 
 **Availability**:
 - visionOS 2.0+
@@ -14,6 +14,10 @@ The value that represents the EAN8 barcode symbology.
 ```swift
 case ean8
 ```
+
+## Discussion
+
+Decodable at 40 cm distance when greater than 3.0 cm wide.
 
 ## See Also
 
@@ -33,13 +37,13 @@ case ean8
 - [BarcodeAnchor.Symbology.code39FullAsciiChecksum](./code39fullasciichecksum.md)
   The value that represents the Code 39 full ASCII checksum barcode symbology.
 - [BarcodeAnchor.Symbology.code93](./code93.md)
-  The value that represents the Code 93 symbology.
+  The value that represents the Code 93 barcode symbology.
 - [BarcodeAnchor.Symbology.code93i](./code93i.md)
   The value that represents the Code 93i barcode symbology.
 - [BarcodeAnchor.Symbology.dataMatrix](./datamatrix.md)
   The value that represents the Data Matrix barcode symbology.
 - [BarcodeAnchor.Symbology.ean13](./ean13.md)
-  The value that represents the EAN13 barcode symbology.
+  The value that represents the EAN-13 barcode symbology.
 - [BarcodeAnchor.Symbology.gs1DataBar](./gs1databar.md)
   The value that represents the GS1 DataBar barcode symbology.
 - [BarcodeAnchor.Symbology.gs1DataBarExpanded](./gs1databarexpanded.md)

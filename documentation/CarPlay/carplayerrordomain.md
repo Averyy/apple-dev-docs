@@ -21,14 +21,6 @@ let CarPlayErrorDomain: String
 extern NSString * const CarPlayErrorDomain;
 ```
 
-## See Also
-
-### Related Types
-- [class CPButton](./cpbutton.md)
-  A button that displays an image and invokes a handler when the user taps it.
-- [class CPImageSet](./cpimageset.md)
-  Light and dark representations of an image.
-
 
 ---
 

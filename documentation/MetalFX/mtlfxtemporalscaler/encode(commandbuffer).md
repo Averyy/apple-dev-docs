@@ -12,7 +12,7 @@ Adds the temporal scaling command to a render pass’s command buffer.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 27.1+
+- tvOS 27.2+
 
 ## Declaration
 
@@ -27,6 +27,12 @@ func encode(commandBuffer: any MTLCommandBuffer)
 ## Parameters
 
 - `commandBuffer`: The destination command buffer for a render pass.
+
+## See Also
+
+### Encoding a temporal scaling effect
+- [var reset: Bool](../mtlfxtemporalscalerbase/reset.md)
+  A Boolean that indicates whether the temporal scaler discards historical data from previous frames.
 
 
 ---

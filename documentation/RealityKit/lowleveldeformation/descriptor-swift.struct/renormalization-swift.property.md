@@ -18,6 +18,12 @@ The renormalization configuration, or `nil` if renormalization is not used.
 var renormalization: LowLevelDeformation.Descriptor.Renormalization?
 ```
 
+## See Also
+
+### Configuring renormalization
+- [LowLevelDeformation.Descriptor.Renormalization](./renormalization-swift.struct.md)
+  The renormalization data dimensions for a [`LowLevelDeformation`](../../lowleveldeformation.md).
+
 
 ---
 

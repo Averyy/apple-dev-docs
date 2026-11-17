@@ -23,7 +23,7 @@ CPTimeRemainingColorGreen
 
 ## See Also
 
-### Colors
+### Getting the color
 - [CPTimeRemainingColor.default](./default.md)
   The system default color.
 - [CPTimeRemainingColor.orange](./orange.md)

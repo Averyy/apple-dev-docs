@@ -35,7 +35,7 @@ There may be multiple App Clip Codes visible in the camera feed that share the s
 When the framework recognizes an App Clip Code, it initializes an [`ARAppClipCodeAnchor`](./arappclipcodeanchor.md) and passes it to the session delegate via [`session(_:didAdd:)`](./arsessiondelegate/session%28_,didadd%29.md). If a recognized App Clip Code becomes obscured or is no longer visible in the camera feed, the framework sets the anchor’s [`isTracked`](./artrackable/istracked.md) property to [`false`](../Swift/false.md) and passes it into the [`session(_:didUpdate:)`](./arsessiondelegate/session%28_,didupdate%29-3qtt8.md) callback. If the same App Clip Code becomes visible once again:
 
 - ARKit sets [`isTracked`](./artrackable/istracked.md) to [`true`](../Swift/true.md) if the App Clip Code maintained its relative position in the physical environment.
-- ARKit intializes a new [`ARAppClipCodeAnchor`](./arappclipcodeanchor.md) if the App Clip Code position in the physical environment changed significantly.
+- ARKit initializes a new [`ARAppClipCodeAnchor`](./arappclipcodeanchor.md) if the App Clip Code position in the physical environment changed significantly.
 
 ### Remove App Clip Codes
 
@@ -53,7 +53,7 @@ To prevent App Clip Codes from accumulating in the session, ARKit removes anchor
 - [var urlDecodingState: ARAppClipCodeAnchor.URLDecodingState](./arappclipcodeanchor/urldecodingstate-swift.property.md)
   A state that indicates the process of decoding an App Clip Code URL.
 - [ARAppClipCodeAnchor.URLDecodingState](./arappclipcodeanchor/urldecodingstate-swift.enum.md)
-  The states in the process of decoding an App Clip code URL.
+  The states in the process of decoding an App Clip Code URL.
 ### Measuring Physical Size
 - [var radius: Float](./arappclipcodeanchor/radius.md)
   The App Clip Code’s radius in meters.

@@ -23,11 +23,11 @@ protocol VideoEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var imageType: some AppSchemaEnum](./videoenum/imagetype.md)
-  An enum schema for an image type parameter.
+  An enum schema for an image type.
 - [var personRole: some AppSchemaEnum](./videoenum/personrole.md)
-  An enum schema for a person role parameter.
+  An enum schema for a person role.
 - [var videoContentType: some AppSchemaEnum](./videoenum/videocontenttype.md)
-  An enum schema for a video content type parameter.
+  An enum schema for a video content type.
 
 ## Relationships
 
@@ -40,11 +40,11 @@ protocol VideoEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var imageType: some AppSchemaEnum](./videoenum/imagetype.md)
-  An enum schema for an image type parameter.
+  An enum schema for an image type.
 - [var personRole: some AppSchemaEnum](./videoenum/personrole.md)
-  An enum schema for a person role parameter.
+  An enum schema for a person role.
 - [var videoContentType: some AppSchemaEnum](./videoenum/videocontenttype.md)
-  An enum schema for a video content type parameter.
+  An enum schema for a video content type.
 
 
 ---

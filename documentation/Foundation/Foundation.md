@@ -100,6 +100,9 @@ The Foundation framework provides a base layer of functionality for apps and fra
 ### Macros
 - [NS_SWIFT_MAIN_ACTOR](./ns_swift_main_actor.md)
 - [NS_SWIFT_SUPPRESS_SENDABLE](./ns_swift_suppress_sendable.md)
+### Enumerations
+- [NSURLSessionTaskMetricsEarlyDataStatus](./urlsessiontaskmetrics/earlydatastatus.md)
+  Whether a request was sent in TLS early data, and whether the server accepted it.
 
 
 ---

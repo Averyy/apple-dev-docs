@@ -21,6 +21,14 @@ var title: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * title;
 ```
 
+## See Also
+
+### Getting the panel’s content
+- [var sections: [CPMapPanelSection]](./sections.md)
+  The sections of content to display in the panel.
+- [var buttonConfiguration: CPMapPanelButtonConfiguration?](./buttonconfiguration.md)
+  The button information and travel estimates to display in the panel.
+
 
 ---
 

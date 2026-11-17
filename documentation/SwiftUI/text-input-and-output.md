@@ -35,6 +35,8 @@ For design guidance, see [Typography](https://developer.apple.com/design/human-i
   A control into which people securely enter private text.
 - [struct TextEditor](./texteditor.md)
   A view that can display and edit long-form text.
+- [struct TextFieldLink](./textfieldlink.md)
+  A control that requests text input from the user when pressed.
 ### Selecting text
 - [func textSelection<S>(S) -> some View](./view/textselection%28_%29.md)
   Controls whether people can select text within this view.

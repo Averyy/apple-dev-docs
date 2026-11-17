@@ -22,7 +22,7 @@ ARGeoTrackingStateLocalized
 
 ## Discussion
 
-In [`ARGeoTrackingStatus.State.localized`](./localized.md), ARKit has completed visual localization and the app is free to place location anchors ([`ARGeoAnchor`](../../argeoanchor.md)).
+In this state, ARKit has completed visual localization and the app is free to place location anchors ([`ARGeoAnchor`](../../argeoanchor.md)).
 
 ## See Also
 

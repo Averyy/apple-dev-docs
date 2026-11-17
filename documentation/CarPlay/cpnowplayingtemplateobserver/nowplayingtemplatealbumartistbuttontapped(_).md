@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Tells the observer that the user tapped the Album-Artist button.
+Tells the delegate that someone wants to view album artist information.
 
 **Availability**:
 - iOS 14.0+
@@ -23,17 +23,17 @@ optional func nowPlayingTemplateAlbumArtistButtonTapped(_ nowPlayingTemplate: CP
 
 ## Discussion
 
-When CarPlay calls this method on your observer, you should present or push a new template that displays the content of the current album, playlist or podcast.
+In your implementation of this method, present or push a new template to display content for the current album, playlist, or podcast.
 
 ## Parameters
 
-- `nowPlayingTemplate`: The template that contains the button that the user tapped.
+- `nowPlayingTemplate`: The Now Playing template that originated the request.
 
 ## See Also
 
-### Responding to User Interactions
+### Responding to interactions
 - [func nowPlayingTemplateUpNextButtonTapped(CPNowPlayingTemplate)](./nowplayingtemplateupnextbuttontapped%28_%29.md)
-  Tells the observer that the user tapped the Up Next button.
+  Tells the delegate that someone wants to view the Up Next content.
 
 
 ---

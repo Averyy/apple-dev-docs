@@ -17,12 +17,12 @@ static func supportedVideoFormats(for cameraType: CameraFrameProvider.CameraType
 
 ## Return Value
 
-An array of camera video formats.
+The video formats supported by the given camera type
 
 ## Parameters
 
 - `cameraType`: The camera type.
-- `cameraPositions`: The camera position.
+- `cameraPositions`: The inclusive set of camera positions that the video formats must match.
 
 ## See Also
 
@@ -31,6 +31,8 @@ An array of camera video formats.
   The camera positions for this video format.
 - [var cameraType: CameraFrameProvider.CameraType](./cameratype.md)
   The camera type for this video format.
+- [var cameraRectification: CameraFrameProvider.CameraRectification](./camerarectification.md)
+  The camera rectification for this video format.
 - [var frameSize: CGSize](./framesize.md)
   The frame size for this video format.
 - [var pixelFormat: OSType](./pixelformat.md)
@@ -39,8 +41,6 @@ An array of camera video formats.
   The maximum frame duration for this video format, in seconds.
 - [var minFrameDuration: Float](./minframeduration.md)
   The minimum frame duration for this video format, in seconds.
-- [var description: String](./description.md)
-  A textual representation of this camera video format.
 
 
 ---

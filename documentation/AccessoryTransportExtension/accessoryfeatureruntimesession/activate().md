@@ -26,7 +26,7 @@ Returning from this method doesn’t mean the session started. The system calls 
 
 This method throws [`AccessoryTransportSession.Error.unavailable`](../accessorytransportsession/error/unavailable.md) if the feature isn’t available on the device, and the system throws an error if a live session for the same feature already exists.
 
-This method doesn’t throw when the feature isn’t enrolled for the accessory. Check the status with `AccessoryWorker/authorizationStatus(for:)` before you call this method.
+This method doesn’t throw when the feature isn’t enrolled for the accessory. Check the status with [`authorizationStatus(for:)`](../accessoryworker/authorizationstatus%28for%29.md) before you call this method.
 
 ## Default Implementations
 

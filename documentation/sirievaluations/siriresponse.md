@@ -18,18 +18,30 @@ An expectation that the reply Siri gives contains specific text.
 struct SiriResponse
 ```
 
+## Mentions
+
+- [Evaluating your app’s integration with Siri](./evaluating-your-apps-integration-with-siri.md)
+
 ## Overview
 
 Use `SiriResponse` to check the text of the reply Siri gives for a turn. Every check must hold, and each check passes when the reply contains the text you give. The text is plain text, not a pattern. A check is case-sensitive unless you pass `false` for `caseSensitive`. In the Xcode evaluation report, a check that fails shows the reply Siri gives next to the text it requires.
 
-The wording Siri uses varies between runs even when Siri responds correctly, so name something the reply has to say, such as a topic or a name the person provides, not how Siri says it. To check a value that an intent receives or returns, use [`Calls`](./calls.md) instead. Use `SiriResponse` for details that appear only in the reply.
+The wording Siri uses varies between runs even when Siri responds correctly, so name something the reply has to say, such as a topic or a name the person provides, not how Siri says it. To check a value that an intent receives or returns, use [`Calls`](./calls.md) instead. Use `SiriResponse` for details that appear only in the reply. A reply that repeats the request, such as an apology or a question, also contains the person’s words, so pair a check on those words with [`Calls`](./calls.md).
 
 Check a reply on the turn that gives it. A turn accepts a `SiriResponse`, but the expectation closure of [`init(_:expectation:)`](./siriscenario/init%28_,expectation%29.md) doesn’t, because the reply belongs to a single turn.
 
-The following example shows a turn that expects the reply to name the topic in any capitalization:
+The following example shows a turn that expects Siri to start the quiz and the reply to name its topic in any capitalization:
 
 ```swift
-UserTurn("In QuizExample, start a science quiz with 5 questions") {
+let quizExampleIntents = IntentDefinitions(bundleIdentifier: "com.example.QuizExample")
+let startQuizIntent = quizExampleIntents.intents["StartQuizIntent"]
+
+UserTurn("In QuizExample, start a Science quiz with 5 questions.") {
+    Calls {
+        startQuizIntent
+            .expect(topic: .equals("Science"))
+    }
+
     SiriResponse(.contains("science", caseSensitive: false))
 }
 ```

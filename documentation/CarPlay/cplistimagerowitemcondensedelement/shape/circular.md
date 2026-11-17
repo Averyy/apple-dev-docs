@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-The list item will render an element with a circular image.
+A circular shape for the element’s image.
 
 **Availability**:
 - iOS 26.0+

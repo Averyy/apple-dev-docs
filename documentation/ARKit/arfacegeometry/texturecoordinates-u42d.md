@@ -19,7 +19,9 @@ var textureCoordinates: [vector_float2] { get }
 
 ## Discussion
 
-Each `float2` value in this array represents the UV texture coordinates for the vertex at the corresponding index in the [`vertices`](./vertices-fhdb.md) buffer.Face mesh topology is constant across [`ARFaceGeometry`](../arfacegeometry.md) instances, so the values in this array always maps the same vertex indices to the same texture coordinates.
+Each `float2` value in this array represents the UV texture coordinates for the vertex at the corresponding index in the [`vertices`](./vertices-fhdb.md) buffer.
+
+Face mesh topology is constant across [`ARFaceGeometry`](../arfacegeometry.md) instances, so the values in this array always map the same vertex indices to the same texture coordinates.
 
 ## See Also
 

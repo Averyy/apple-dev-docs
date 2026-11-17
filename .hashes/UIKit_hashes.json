@@ -270,7 +270,7 @@
     },
     "https://developer.apple.com/documentation/uikit/building-high-performance-lists-and-collection-views": {
       "file_path": "documentation/UIKit/building-high-performance-lists-and-collection-views.md",
-      "hash": "12a661b2bd60281c9d33accca10e297abb822031878617eb079a220be2cc43a9"
+      "hash": "3f3f558c50cab1fa2d7fdb20d4aacc9dc0e0631d118b355942d91ea373ab2781"
     },
     "https://developer.apple.com/documentation/uikit/cgaffinetransformfromstring": {
       "file_path": "documentation/UIKit/cgaffinetransformfromstring.md",
@@ -334,7 +334,7 @@
     },
     "https://developer.apple.com/documentation/uikit/configuring-and-displaying-symbol-images-in-your-ui": {
       "file_path": "documentation/UIKit/configuring-and-displaying-symbol-images-in-your-ui.md",
-      "hash": "7c49d9a2f84c33052804ef80c8ae3bcc7b5d0af269d0e4b84f7b3f5e918269c9"
+      "hash": "8144e47de48d3df304339ec3edba9790d890a6140d508365e7cca5ba01d0bf75"
     },
     "https://developer.apple.com/documentation/uikit/configuring-open-access-for-a-custom-keyboard": {
       "file_path": "documentation/UIKit/configuring-open-access-for-a-custom-keyboard.md",
@@ -662,7 +662,7 @@
     },
     "https://developer.apple.com/documentation/uikit/mac-catalyst": {
       "file_path": "documentation/UIKit/mac-catalyst.md",
-      "hash": "9811d91812846360107e766a8be75e5d7675c40da1c7d1a14b245d95d7dabc8f"
+      "hash": "dd7279a98aefe3c2fb758ed4281b26ac60a81d9af4097fbe8bd478b71257e827"
     },
     "https://developer.apple.com/documentation/uikit/making-a-view-into-a-drag-source": {
       "file_path": "documentation/UIKit/making-a-view-into-a-drag-source.md",
@@ -5798,7 +5798,7 @@
     },
     "https://developer.apple.com/documentation/uikit/transitioning-to-the-uikit-scene-based-life-cycle": {
       "file_path": "documentation/UIKit/transitioning-to-the-uikit-scene-based-life-cycle.md",
-      "hash": "37c2b8de90c2e46d53523953f41fb9c911cc32ca593c6d1c73ff8c41a68e3a60"
+      "hash": "daebd26e4d7702b5ad8e6d89ef52740fcbe3cefb935a19e97c46139e3e90712a"
     },
     "https://developer.apple.com/documentation/uikit/ui-element-colors": {
       "file_path": "documentation/UIKit/ui-element-colors.md",
@@ -8514,7 +8514,7 @@
     },
     "https://developer.apple.com/documentation/uikit/uiapplication/isprotecteddataavailable": {
       "file_path": "documentation/UIKit/uiapplication/isprotecteddataavailable.md",
-      "hash": "554f86c6e29c7ebc8d2caf9396fd5696b0064862f48b46045ab9d64c0f8d9aaf"
+      "hash": "0e013172a56095ef1c9e1847ef197fc6b9bd151fa61418ecad739eb6735f886f"
     },
     "https://developer.apple.com/documentation/uikit/uiapplication/isregisteredforremotenotifications": {
       "file_path": "documentation/UIKit/uiapplication/isregisteredforremotenotifications.md",
@@ -20290,15 +20290,15 @@
     },
     "https://developer.apple.com/documentation/uikit/uieditmenuinteraction": {
       "file_path": "documentation/UIKit/uieditmenuinteraction.md",
-      "hash": "18ff05f4aaeb20cd1d4391f8eb9d329a116e47bff773462a73bda1fc39dd5e14"
+      "hash": "d61725142e96d55293b9b118fc0c631607977c2b6870fd455f9299e489f9a6d4"
     },
     "https://developer.apple.com/documentation/uikit/uieditmenuinteraction/delegate": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/delegate.md",
-      "hash": "9c5db79ec342f7ca84b59ed99482ec28b54a215fc3aac5f7fde334b00e46ad78"
+      "hash": "7567084be0c7ec876281482593808cf5901315a3cc6ea1053cbcff9c99901e11"
     },
     "https://developer.apple.com/documentation/uikit/uieditmenuinteraction/dismissmenu()": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/dismissmenu().md",
-      "hash": "de0f24efd819f184afd69fd660728f0a97f8ce9fc4b9d84788bba0c85d983505"
+      "hash": "1c19ac87da5db187be8e65c937e6b36e4002b191c1dc307fc855f9aeded2a1cc"
     },
     "https://developer.apple.com/documentation/uikit/uieditmenuinteraction/init(delegate:)": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/init(delegate).md",
@@ -20306,19 +20306,19 @@
     },
     "https://developer.apple.com/documentation/uikit/uieditmenuinteraction/location(in:)": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/location(in).md",
-      "hash": "ae981a4b2ddebb6469b8c0491ac64639cee3c41ac86e29cd4fade111604ee1ff"
+      "hash": "a3c8ae49d3852b80cee839c4a91321c5dccaeabc777b0d3a70d3ab16231c32ab"
     },
     "https://developer.apple.com/documentation/uikit/uieditmenuinteraction/presenteditmenu(with:)": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/presenteditmenu(with).md",
-      "hash": "54ec4efdac2abafb9ac28a53f624c80f2f8300f6b8eb8476027dfaa36d25cbe4"
+      "hash": "1512bbbb3a542b943a505c9ee9898ed5cfc2b0ce162daec7a6898d8cfb4669d1"
     },
     "https://developer.apple.com/documentation/uikit/uieditmenuinteraction/reloadvisiblemenu()": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/reloadvisiblemenu().md",
-      "hash": "005ed88d49e5f7030cda661076c0368b7d311d3a3ffaea93bee8ae22822af781"
+      "hash": "4400508bc3591e4e5447e6013387a11a29c3ddac64ab5c2b7802336993a4bc99"
     },
     "https://developer.apple.com/documentation/uikit/uieditmenuinteraction/updatevisiblemenuposition(animated:)": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/updatevisiblemenuposition(animated).md",
-      "hash": "b55891c404a1277421ede8d35df344c372fce5845950fb710cc47434a25d12ea"
+      "hash": "251f7aefe069dd2970095cb3a7745c12c89b0977f3a690ea2cc15c1240d79148"
     },
     "https://developer.apple.com/documentation/uikit/uieditmenuinteractionanimating": {
       "file_path": "documentation/UIKit/uieditmenuinteractionanimating.md",
@@ -22726,7 +22726,7 @@
     },
     "https://developer.apple.com/documentation/uikit/uihinge": {
       "file_path": "documentation/UIKit/uihinge.md",
-      "hash": "a2c0355f4a6f199d42c9ff2dc376cf076a244c43d4d427bfee68060192e107cd"
+      "hash": "cdf8ff384b546431f24914a8b9a7b6646529f746f42b410f0c779410bff42ed3"
     },
     "https://developer.apple.com/documentation/uikit/uihinge/angle": {
       "file_path": "documentation/UIKit/uihinge/angle.md",
@@ -22762,7 +22762,7 @@
     },
     "https://developer.apple.com/documentation/uikit/uihingeinteraction": {
       "file_path": "documentation/UIKit/uihingeinteraction.md",
-      "hash": "91a091ec10c4094198783de3e8a4bfa73eec4d9b1a8df9f04d37035dc42b0dfb"
+      "hash": "866aaa4c93946e40e8666c4d458d6b6f3b66e6b30aa16c42049096cc1f943336"
     },
     "https://developer.apple.com/documentation/uikit/uihingeinteraction/init(updatehandler:)": {
       "file_path": "documentation/UIKit/uihingeinteraction/init(updatehandler).md",
@@ -22770,7 +22770,7 @@
     },
     "https://developer.apple.com/documentation/uikit/uihingeinteraction/isenabled": {
       "file_path": "documentation/UIKit/uihingeinteraction/isenabled.md",
-      "hash": "d603d62a11925d31b82aec2e4c465ad6fae8a22038ca2cd91a2e63b0df21b6d1"
+      "hash": "b2a5b3b5208b1d4b3d63b52ee06d61bed031f27c2de3ee59ac55753755a9aa86"
     },
     "https://developer.apple.com/documentation/uikit/uihingeinteraction/update": {
       "file_path": "documentation/UIKit/uihingeinteraction/update.md",
@@ -22934,7 +22934,7 @@
     },
     "https://developer.apple.com/documentation/uikit/uiimage": {
       "file_path": "documentation/UIKit/uiimage.md",
-      "hash": "0ff3e8a3bd7cf55e179462fd0336f3808edf761767404cfb7a9478c88c41f393"
+      "hash": "568dcb0403548cbdf3c374077fa130e6c5b50198c1bd3b7848c56e89904ef119"
     },
     "https://developer.apple.com/documentation/uikit/uiimage/actions": {
       "file_path": "documentation/UIKit/uiimage/actions.md",
@@ -23218,23 +23218,23 @@
     },
     "https://developer.apple.com/documentation/uikit/uiimage/init(imageliteralresourcename:)": {
       "file_path": "documentation/UIKit/uiimage/init(imageliteralresourcename).md",
-      "hash": "dcb9d7af89f31b6d9a993092f8b0a0a27c8d18e45ca88dd937568b9fa6f456d9"
+      "hash": "60ca51455bdfb261c393f558147a4cda86f7e21fa8b0d11b03f975315f0d0e7e"
     },
     "https://developer.apple.com/documentation/uikit/uiimage/init(named:)": {
       "file_path": "documentation/UIKit/uiimage/init(named).md",
-      "hash": "c36b36a122362596fcbb7db6c607d02eb6b9fcf476c6e8aa8a9cdfab355648ce"
+      "hash": "ce65b95a44445c8d19aae6b2689591442bf9615cb22a1a1c3ac75143f14fb6c0"
     },
     "https://developer.apple.com/documentation/uikit/uiimage/init(named:in:compatiblewith:)": {
       "file_path": "documentation/UIKit/uiimage/init(named,in,compatiblewith).md",
-      "hash": "6fcd38c5edb2b87a3d0ce2dbeb162b0bdf527353722939b9a55997dd3ccb97d9"
+      "hash": "00b7e2ea849078f486ef842522d4906e3ca5f2cbc7c33e3e7192840d5f9c412a"
     },
     "https://developer.apple.com/documentation/uikit/uiimage/init(named:in:variablevalue:configuration:)": {
       "file_path": "documentation/UIKit/uiimage/init(named,in,variablevalue,configuration).md",
-      "hash": "fd2d21ee42d22b1794970720266413c918cfaec5993e95193bf7a105472d63b3"
+      "hash": "7905e403ac6cca0a34019a8747e0d0bf7475d3d174c747069fd91e4ff82222cb"
     },
     "https://developer.apple.com/documentation/uikit/uiimage/init(named:in:with:)": {
       "file_path": "documentation/UIKit/uiimage/init(named,in,with).md",
-      "hash": "e90ddedbc77c8e439046f231ecca95cb969ea0eb9fc05044dc6fcf4a33dcd933"
+      "hash": "f6fa333cdc2bf32cf22096ce0e99f1a32373882bf6c3313b7ff45f7c4ed72ac0"
     },
     "https://developer.apple.com/documentation/uikit/uiimage/init(named:inbundle:compatiblewithtraitcollection:)": {
       "file_path": "documentation/UIKit/uiimage/init(named,inbundle,compatiblewithtraitcollection).md",
@@ -23246,23 +23246,23 @@
     },
     "https://developer.apple.com/documentation/uikit/uiimage/init(resource:)": {
       "file_path": "documentation/UIKit/uiimage/init(resource).md",
-      "hash": "0989156869742d551364f765a3573523a9d87b905ef529474cf36249f9d4a39d"
+      "hash": "47502506f16a9ea70de55856cc201d0cdfea0a26ed707edc51eaedcc637ec4eb"
     },
     "https://developer.apple.com/documentation/uikit/uiimage/init(systemname:)": {
       "file_path": "documentation/UIKit/uiimage/init(systemname).md",
-      "hash": "b1a405d6dae426386074e398d4ade25dfa0ccfa318cdbf41409164ad58da3202"
+      "hash": "c792b1033297d6d7c7934722232f428ae100fd04e8552b670c99ed76f8b95823"
     },
     "https://developer.apple.com/documentation/uikit/uiimage/init(systemname:compatiblewith:)": {
       "file_path": "documentation/UIKit/uiimage/init(systemname,compatiblewith).md",
-      "hash": "0818fbe0f16e7cb43429b4042c9486eb42127ed130b7c13c9e5e7e7311f42723"
+      "hash": "9ef7397c69e78ed2482b4fe0d8a379f22edf8c7c9816c54197ff5e6135ceaec0"
     },
     "https://developer.apple.com/documentation/uikit/uiimage/init(systemname:variablevalue:configuration:)": {
       "file_path": "documentation/UIKit/uiimage/init(systemname,variablevalue,configuration).md",
-      "hash": "5fca0b8f93cb5be46f5af256df693490338676335ed3f447fafdda69914dad29"
+      "hash": "60b850236422d6df1ffaad7869e822a72f94c626485bbbd1295980719741d445"
     },
     "https://developer.apple.com/documentation/uikit/uiimage/init(systemname:withconfiguration:)": {
       "file_path": "documentation/UIKit/uiimage/init(systemname,withconfiguration).md",
-      "hash": "5fd8eae79ff76ec8f8bc2ef3633f4e6f0a39e238d328f1617c9c0aac2daf818e"
+      "hash": "0e866c60d941d71daf69f14eb7717a4854b6e30d64c1578cae6c1a5779ea6e7f"
     },
     "https://developer.apple.com/documentation/uikit/uiimage/ishighdynamicrange": {
       "file_path": "documentation/UIKit/uiimage/ishighdynamicrange.md",
@@ -32750,7 +32750,7 @@
     },
     "https://developer.apple.com/documentation/uikit/uiprintpaper/bestpaper(forpagesize:withpapersfrom:)": {
       "file_path": "documentation/UIKit/uiprintpaper/bestpaper(forpagesize,withpapersfrom).md",
-      "hash": "605188fd2aea309a9ad1c082ce559e876d102440bc2308886dc812c316421791"
+      "hash": "1f0cdb960113a8951ec0ce8710f680c43ec74b3aaab85c5bfb34f510a5d7b86c"
     },
     "https://developer.apple.com/documentation/uikit/uiprintpaper/papersize": {
       "file_path": "documentation/UIKit/uiprintpaper/papersize.md",
@@ -39634,7 +39634,7 @@
     },
     "https://developer.apple.com/documentation/uikit/uitableview/register(_:forheaderfooterviewreuseidentifier:)-1rgvc": {
       "file_path": "documentation/UIKit/uitableview/register(_,forheaderfooterviewreuseidentifier)-1rgvc.md",
-      "hash": "2a91514495c370b089d8f0e4de07b4b15fe64b520bcdcb75b180f1ab8c192828"
+      "hash": "bd32ada04b6f23194c683eab095687a79417ac86b8cd36578a58f2d1da2d6837"
     },
     "https://developer.apple.com/documentation/uikit/uitableview/register(_:forheaderfooterviewreuseidentifier:)-20ybb": {
       "file_path": "documentation/UIKit/uitableview/register(_,forheaderfooterviewreuseidentifier)-20ybb.md",
@@ -39890,7 +39890,7 @@
     },
     "https://developer.apple.com/documentation/uikit/uitableviewcell": {
       "file_path": "documentation/UIKit/uitableviewcell.md",
-      "hash": "fed34f247b2ea5b5faa4fb906178e9f971cbfe1ed46095a7624e88dd3a778c0d"
+      "hash": "f002377592309d83e0a7285875383de37f1a000e9b4e8ddb61d49c1d2bd8b624"
     },
     "https://developer.apple.com/documentation/uikit/uitableviewcell-deprecated-symbols": {
       "file_path": "documentation/UIKit/uitableviewcell-deprecated-symbols.md",
@@ -39958,7 +39958,7 @@
     },
     "https://developer.apple.com/documentation/uikit/uitableviewcell/cellstyle": {
       "file_path": "documentation/UIKit/uitableviewcell/cellstyle.md",
-      "hash": "a9f68e3841f0fbbab970198d099f242f5dee421af2674cea6332969b9d8d0f1c"
+      "hash": "1985b9c1787d0263f76438fefb675c39899698c87d449d3855c783bc02d9b1a0"
     },
     "https://developer.apple.com/documentation/uikit/uitableviewcell/cellstyle/default": {
       "file_path": "documentation/UIKit/uitableviewcell/cellstyle/default.md",
@@ -40142,11 +40142,11 @@
     },
     "https://developer.apple.com/documentation/uikit/uitableviewcell/init(coder:)": {
       "file_path": "documentation/UIKit/uitableviewcell/init(coder).md",
-      "hash": "7b6f6bd83a67536ccecd276f6b8b3edb47ebb5fa8b113a1e96e41973bea96044"
+      "hash": "a340cad759848c31d4e080c3746907fdff05492614a195a95feb2206cf3ee4d5"
     },
     "https://developer.apple.com/documentation/uikit/uitableviewcell/init(style:reuseidentifier:)": {
       "file_path": "documentation/UIKit/uitableviewcell/init(style,reuseidentifier).md",
-      "hash": "39bf10a85c3686802f8ce68a78daecfdaa56311412971e9aadf2084582b7d6e5"
+      "hash": "c48fd39be74ea74069b8b7a6bd89a9b2443ee3361dc3e23554f304bb89741124"
     },
     "https://developer.apple.com/documentation/uikit/uitableviewcell/initwithframe:reuseidentifier:": {
       "file_path": "documentation/UIKit/uitableviewcell/initwithframe_reuseidentifier_.md",
@@ -46974,7 +46974,7 @@
     },
     "https://developer.apple.com/documentation/uikit/uiview": {
       "file_path": "documentation/UIKit/uiview.md",
-      "hash": "d3369c9b310aec47179d69e65912ebbcdb2a1ab5a3da54d4c6f4c41710c016c1"
+      "hash": "85baba7b3137d3bb09189f8068dce900e7f24ff9163b9969f31f71147eaaf5c5"
     },
     "https://developer.apple.com/documentation/uikit/uiview-deprecated-symbols": {
       "file_path": "documentation/UIKit/uiview-deprecated-symbols.md",
@@ -48054,11 +48054,11 @@
     },
     "https://developer.apple.com/documentation/uikit/uiview/reservedregionsofkind:": {
       "file_path": "documentation/UIKit/uiview/reservedregionsofkind_.md",
-      "hash": "2950bb05b816bec8bf43934e99757613192398c5603e51c619695c7a5316cefd"
+      "hash": "8d02a5acfae1adf6ea6a93e0deefd4a041e1dd63feea391abf82e9b3f3f18ca7"
     },
     "https://developer.apple.com/documentation/uikit/uiview/reservedregionsofkind:options:": {
       "file_path": "documentation/UIKit/uiview/reservedregionsofkind_options_.md",
-      "hash": "76b89ba17a03060311ff6da1121b6e46c6b5720942966ae20c26b63f18d115f0"
+      "hash": "3cb4437fad82233e1d00185c3b364ed378d811fce23e72dd6f795d90a22fb95c"
     },
     "https://developer.apple.com/documentation/uikit/uiview/resizablesnapshotview(from:afterscreenupdates:withcapinsets:)": {
       "file_path": "documentation/UIKit/uiview/resizablesnapshotview(from,afterscreenupdates,withcapinsets).md",
@@ -49842,7 +49842,7 @@
     },
     "https://developer.apple.com/documentation/uikit/uiviewreservedregion": {
       "file_path": "documentation/UIKit/uiviewreservedregion.md",
-      "hash": "335d819dcac2ca8c027d909a0602a30c9c20fdf8f282233a4df1922c7a62e748"
+      "hash": "ea757d70002cca62c336203c37a28c3718c3e1d3ee870e04ebf19a61b9f110b6"
     },
     "https://developer.apple.com/documentation/uikit/uiviewreservedregion/active": {
       "file_path": "documentation/UIKit/uiviewreservedregion/active.md",
@@ -51554,7 +51554,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/building-high-performance-lists-and-collection-views.json": {
       "file_path": "documentation/UIKit/building-high-performance-lists-and-collection-views.md",
-      "hash": "12a661b2bd60281c9d33accca10e297abb822031878617eb079a220be2cc43a9"
+      "hash": "3f3f558c50cab1fa2d7fdb20d4aacc9dc0e0631d118b355942d91ea373ab2781"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/cgaffinetransformfromstring.json": {
       "file_path": "documentation/UIKit/cgaffinetransformfromstring.md",
@@ -51618,7 +51618,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/configuring-and-displaying-symbol-images-in-your-ui.json": {
       "file_path": "documentation/UIKit/configuring-and-displaying-symbol-images-in-your-ui.md",
-      "hash": "7c49d9a2f84c33052804ef80c8ae3bcc7b5d0af269d0e4b84f7b3f5e918269c9"
+      "hash": "8144e47de48d3df304339ec3edba9790d890a6140d508365e7cca5ba01d0bf75"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/configuring-open-access-for-a-custom-keyboard.json": {
       "file_path": "documentation/UIKit/configuring-open-access-for-a-custom-keyboard.md",
@@ -51946,7 +51946,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/mac-catalyst.json": {
       "file_path": "documentation/UIKit/mac-catalyst.md",
-      "hash": "9811d91812846360107e766a8be75e5d7675c40da1c7d1a14b245d95d7dabc8f"
+      "hash": "dd7279a98aefe3c2fb758ed4281b26ac60a81d9af4097fbe8bd478b71257e827"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/making-a-view-into-a-drag-source.json": {
       "file_path": "documentation/UIKit/making-a-view-into-a-drag-source.md",
@@ -57082,7 +57082,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/transitioning-to-the-uikit-scene-based-life-cycle.json": {
       "file_path": "documentation/UIKit/transitioning-to-the-uikit-scene-based-life-cycle.md",
-      "hash": "37c2b8de90c2e46d53523953f41fb9c911cc32ca593c6d1c73ff8c41a68e3a60"
+      "hash": "daebd26e4d7702b5ad8e6d89ef52740fcbe3cefb935a19e97c46139e3e90712a"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/ui-element-colors.json": {
       "file_path": "documentation/UIKit/ui-element-colors.md",
@@ -59798,7 +59798,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiapplication/isprotecteddataavailable.json": {
       "file_path": "documentation/UIKit/uiapplication/isprotecteddataavailable.md",
-      "hash": "554f86c6e29c7ebc8d2caf9396fd5696b0064862f48b46045ab9d64c0f8d9aaf"
+      "hash": "0e013172a56095ef1c9e1847ef197fc6b9bd151fa61418ecad739eb6735f886f"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiapplication/isregisteredforremotenotifications.json": {
       "file_path": "documentation/UIKit/uiapplication/isregisteredforremotenotifications.md",
@@ -71574,15 +71574,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uieditmenuinteraction.json": {
       "file_path": "documentation/UIKit/uieditmenuinteraction.md",
-      "hash": "18ff05f4aaeb20cd1d4391f8eb9d329a116e47bff773462a73bda1fc39dd5e14"
+      "hash": "d61725142e96d55293b9b118fc0c631607977c2b6870fd455f9299e489f9a6d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uieditmenuinteraction/delegate.json": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/delegate.md",
-      "hash": "9c5db79ec342f7ca84b59ed99482ec28b54a215fc3aac5f7fde334b00e46ad78"
+      "hash": "7567084be0c7ec876281482593808cf5901315a3cc6ea1053cbcff9c99901e11"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uieditmenuinteraction/dismissmenu().json": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/dismissmenu().md",
-      "hash": "de0f24efd819f184afd69fd660728f0a97f8ce9fc4b9d84788bba0c85d983505"
+      "hash": "1c19ac87da5db187be8e65c937e6b36e4002b191c1dc307fc855f9aeded2a1cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uieditmenuinteraction/init(delegate:).json": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/init(delegate).md",
@@ -71590,19 +71590,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uieditmenuinteraction/location(in:).json": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/location(in).md",
-      "hash": "ae981a4b2ddebb6469b8c0491ac64639cee3c41ac86e29cd4fade111604ee1ff"
+      "hash": "a3c8ae49d3852b80cee839c4a91321c5dccaeabc777b0d3a70d3ab16231c32ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uieditmenuinteraction/presenteditmenu(with:).json": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/presenteditmenu(with).md",
-      "hash": "54ec4efdac2abafb9ac28a53f624c80f2f8300f6b8eb8476027dfaa36d25cbe4"
+      "hash": "1512bbbb3a542b943a505c9ee9898ed5cfc2b0ce162daec7a6898d8cfb4669d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uieditmenuinteraction/reloadvisiblemenu().json": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/reloadvisiblemenu().md",
-      "hash": "005ed88d49e5f7030cda661076c0368b7d311d3a3ffaea93bee8ae22822af781"
+      "hash": "4400508bc3591e4e5447e6013387a11a29c3ddac64ab5c2b7802336993a4bc99"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uieditmenuinteraction/updatevisiblemenuposition(animated:).json": {
       "file_path": "documentation/UIKit/uieditmenuinteraction/updatevisiblemenuposition(animated).md",
-      "hash": "b55891c404a1277421ede8d35df344c372fce5845950fb710cc47434a25d12ea"
+      "hash": "251f7aefe069dd2970095cb3a7745c12c89b0977f3a690ea2cc15c1240d79148"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uieditmenuinteractionanimating.json": {
       "file_path": "documentation/UIKit/uieditmenuinteractionanimating.md",
@@ -74010,7 +74010,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uihinge.json": {
       "file_path": "documentation/UIKit/uihinge.md",
-      "hash": "a2c0355f4a6f199d42c9ff2dc376cf076a244c43d4d427bfee68060192e107cd"
+      "hash": "cdf8ff384b546431f24914a8b9a7b6646529f746f42b410f0c779410bff42ed3"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uihinge/angle.json": {
       "file_path": "documentation/UIKit/uihinge/angle.md",
@@ -74046,7 +74046,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uihingeinteraction.json": {
       "file_path": "documentation/UIKit/uihingeinteraction.md",
-      "hash": "91a091ec10c4094198783de3e8a4bfa73eec4d9b1a8df9f04d37035dc42b0dfb"
+      "hash": "866aaa4c93946e40e8666c4d458d6b6f3b66e6b30aa16c42049096cc1f943336"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uihingeinteraction/init(updatehandler:).json": {
       "file_path": "documentation/UIKit/uihingeinteraction/init(updatehandler).md",
@@ -74054,7 +74054,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uihingeinteraction/isenabled.json": {
       "file_path": "documentation/UIKit/uihingeinteraction/isenabled.md",
-      "hash": "d603d62a11925d31b82aec2e4c465ad6fae8a22038ca2cd91a2e63b0df21b6d1"
+      "hash": "b2a5b3b5208b1d4b3d63b52ee06d61bed031f27c2de3ee59ac55753755a9aa86"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uihingeinteraction/update.json": {
       "file_path": "documentation/UIKit/uihingeinteraction/update.md",
@@ -74218,7 +74218,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage.json": {
       "file_path": "documentation/UIKit/uiimage.md",
-      "hash": "0ff3e8a3bd7cf55e179462fd0336f3808edf761767404cfb7a9478c88c41f393"
+      "hash": "568dcb0403548cbdf3c374077fa130e6c5b50198c1bd3b7848c56e89904ef119"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/actions.json": {
       "file_path": "documentation/UIKit/uiimage/actions.md",
@@ -74502,23 +74502,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/init(imageliteralresourcename:).json": {
       "file_path": "documentation/UIKit/uiimage/init(imageliteralresourcename).md",
-      "hash": "dcb9d7af89f31b6d9a993092f8b0a0a27c8d18e45ca88dd937568b9fa6f456d9"
+      "hash": "60ca51455bdfb261c393f558147a4cda86f7e21fa8b0d11b03f975315f0d0e7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/init(named:).json": {
       "file_path": "documentation/UIKit/uiimage/init(named).md",
-      "hash": "c36b36a122362596fcbb7db6c607d02eb6b9fcf476c6e8aa8a9cdfab355648ce"
+      "hash": "ce65b95a44445c8d19aae6b2689591442bf9615cb22a1a1c3ac75143f14fb6c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/init(named:in:compatiblewith:).json": {
       "file_path": "documentation/UIKit/uiimage/init(named,in,compatiblewith).md",
-      "hash": "6fcd38c5edb2b87a3d0ce2dbeb162b0bdf527353722939b9a55997dd3ccb97d9"
+      "hash": "00b7e2ea849078f486ef842522d4906e3ca5f2cbc7c33e3e7192840d5f9c412a"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/init(named:in:variablevalue:configuration:).json": {
       "file_path": "documentation/UIKit/uiimage/init(named,in,variablevalue,configuration).md",
-      "hash": "fd2d21ee42d22b1794970720266413c918cfaec5993e95193bf7a105472d63b3"
+      "hash": "7905e403ac6cca0a34019a8747e0d0bf7475d3d174c747069fd91e4ff82222cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/init(named:in:with:).json": {
       "file_path": "documentation/UIKit/uiimage/init(named,in,with).md",
-      "hash": "e90ddedbc77c8e439046f231ecca95cb969ea0eb9fc05044dc6fcf4a33dcd933"
+      "hash": "f6fa333cdc2bf32cf22096ce0e99f1a32373882bf6c3313b7ff45f7c4ed72ac0"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/init(named:inbundle:compatiblewithtraitcollection:).json": {
       "file_path": "documentation/UIKit/uiimage/init(named,inbundle,compatiblewithtraitcollection).md",
@@ -74530,23 +74530,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/init(resource:).json": {
       "file_path": "documentation/UIKit/uiimage/init(resource).md",
-      "hash": "0989156869742d551364f765a3573523a9d87b905ef529474cf36249f9d4a39d"
+      "hash": "47502506f16a9ea70de55856cc201d0cdfea0a26ed707edc51eaedcc637ec4eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/init(systemname:).json": {
       "file_path": "documentation/UIKit/uiimage/init(systemname).md",
-      "hash": "b1a405d6dae426386074e398d4ade25dfa0ccfa318cdbf41409164ad58da3202"
+      "hash": "c792b1033297d6d7c7934722232f428ae100fd04e8552b670c99ed76f8b95823"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/init(systemname:compatiblewith:).json": {
       "file_path": "documentation/UIKit/uiimage/init(systemname,compatiblewith).md",
-      "hash": "0818fbe0f16e7cb43429b4042c9486eb42127ed130b7c13c9e5e7e7311f42723"
+      "hash": "9ef7397c69e78ed2482b4fe0d8a379f22edf8c7c9816c54197ff5e6135ceaec0"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/init(systemname:variablevalue:configuration:).json": {
       "file_path": "documentation/UIKit/uiimage/init(systemname,variablevalue,configuration).md",
-      "hash": "5fca0b8f93cb5be46f5af256df693490338676335ed3f447fafdda69914dad29"
+      "hash": "60b850236422d6df1ffaad7869e822a72f94c626485bbbd1295980719741d445"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/init(systemname:withconfiguration:).json": {
       "file_path": "documentation/UIKit/uiimage/init(systemname,withconfiguration).md",
-      "hash": "5fd8eae79ff76ec8f8bc2ef3633f4e6f0a39e238d328f1617c9c0aac2daf818e"
+      "hash": "0e866c60d941d71daf69f14eb7717a4854b6e30d64c1578cae6c1a5779ea6e7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiimage/ishighdynamicrange.json": {
       "file_path": "documentation/UIKit/uiimage/ishighdynamicrange.md",
@@ -84034,7 +84034,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiprintpaper/bestpaper(forpagesize:withpapersfrom:).json": {
       "file_path": "documentation/UIKit/uiprintpaper/bestpaper(forpagesize,withpapersfrom).md",
-      "hash": "605188fd2aea309a9ad1c082ce559e876d102440bc2308886dc812c316421791"
+      "hash": "1f0cdb960113a8951ec0ce8710f680c43ec74b3aaab85c5bfb34f510a5d7b86c"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiprintpaper/papersize.json": {
       "file_path": "documentation/UIKit/uiprintpaper/papersize.md",
@@ -90918,7 +90918,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uitableview/register(_:forheaderfooterviewreuseidentifier:)-1rgvc.json": {
       "file_path": "documentation/UIKit/uitableview/register(_,forheaderfooterviewreuseidentifier)-1rgvc.md",
-      "hash": "2a91514495c370b089d8f0e4de07b4b15fe64b520bcdcb75b180f1ab8c192828"
+      "hash": "bd32ada04b6f23194c683eab095687a79417ac86b8cd36578a58f2d1da2d6837"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uitableview/register(_:forheaderfooterviewreuseidentifier:)-20ybb.json": {
       "file_path": "documentation/UIKit/uitableview/register(_,forheaderfooterviewreuseidentifier)-20ybb.md",
@@ -91178,7 +91178,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uitableviewcell.json": {
       "file_path": "documentation/UIKit/uitableviewcell.md",
-      "hash": "fed34f247b2ea5b5faa4fb906178e9f971cbfe1ed46095a7624e88dd3a778c0d"
+      "hash": "f002377592309d83e0a7285875383de37f1a000e9b4e8ddb61d49c1d2bd8b624"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uitableviewcell/accessoryaction.json": {
       "file_path": "documentation/UIKit/uitableviewcell/accessoryaction.md",
@@ -91242,7 +91242,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uitableviewcell/cellstyle.json": {
       "file_path": "documentation/UIKit/uitableviewcell/cellstyle.md",
-      "hash": "a9f68e3841f0fbbab970198d099f242f5dee421af2674cea6332969b9d8d0f1c"
+      "hash": "1985b9c1787d0263f76438fefb675c39899698c87d449d3855c783bc02d9b1a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uitableviewcell/cellstyle/default.json": {
       "file_path": "documentation/UIKit/uitableviewcell/cellstyle/default.md",
@@ -91426,11 +91426,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uitableviewcell/init(coder:).json": {
       "file_path": "documentation/UIKit/uitableviewcell/init(coder).md",
-      "hash": "7b6f6bd83a67536ccecd276f6b8b3edb47ebb5fa8b113a1e96e41973bea96044"
+      "hash": "a340cad759848c31d4e080c3746907fdff05492614a195a95feb2206cf3ee4d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uitableviewcell/init(style:reuseidentifier:).json": {
       "file_path": "documentation/UIKit/uitableviewcell/init(style,reuseidentifier).md",
-      "hash": "39bf10a85c3686802f8ce68a78daecfdaa56311412971e9aadf2084582b7d6e5"
+      "hash": "c48fd39be74ea74069b8b7a6bd89a9b2443ee3361dc3e23554f304bb89741124"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uitableviewcell/initwithframe:reuseidentifier:.json": {
       "file_path": "documentation/UIKit/uitableviewcell/initwithframe_reuseidentifier_.md",
@@ -98262,7 +98262,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiview.json": {
       "file_path": "documentation/UIKit/uiview.md",
-      "hash": "d3369c9b310aec47179d69e65912ebbcdb2a1ab5a3da54d4c6f4c41710c016c1"
+      "hash": "85baba7b3137d3bb09189f8068dce900e7f24ff9163b9969f31f71147eaaf5c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiview/accessibilityignoresinvertcolors.json": {
       "file_path": "documentation/UIKit/uiview/accessibilityignoresinvertcolors.md",
@@ -99338,11 +99338,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiview/reservedregionsofkind:.json": {
       "file_path": "documentation/UIKit/uiview/reservedregionsofkind_.md",
-      "hash": "2950bb05b816bec8bf43934e99757613192398c5603e51c619695c7a5316cefd"
+      "hash": "8d02a5acfae1adf6ea6a93e0deefd4a041e1dd63feea391abf82e9b3f3f18ca7"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiview/reservedregionsofkind:options:.json": {
       "file_path": "documentation/UIKit/uiview/reservedregionsofkind_options_.md",
-      "hash": "76b89ba17a03060311ff6da1121b6e46c6b5720942966ae20c26b63f18d115f0"
+      "hash": "3cb4437fad82233e1d00185c3b364ed378d811fce23e72dd6f795d90a22fb95c"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiview/resizablesnapshotview(from:afterscreenupdates:withcapinsets:).json": {
       "file_path": "documentation/UIKit/uiview/resizablesnapshotview(from,afterscreenupdates,withcapinsets).md",
@@ -101126,7 +101126,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiviewreservedregion.json": {
       "file_path": "documentation/UIKit/uiviewreservedregion.md",
-      "hash": "335d819dcac2ca8c027d909a0602a30c9c20fdf8f282233a4df1922c7a62e748"
+      "hash": "ea757d70002cca62c336203c37a28c3718c3e1d3ee870e04ebf19a61b9f110b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiviewreservedregion/active.json": {
       "file_path": "documentation/UIKit/uiviewreservedregion/active.md",

@@ -21,13 +21,13 @@ struct Metadata
 ## Topics
 
 ### Initializers
-- [init(docTypeValue: String?, vctValues: [String])](./metadata/init%28doctypevalue,vctvalues%29.md)
-  Initializes format-specific constraints.
+- [init(documentType: String?, verifiableCredentialTypes: [String])](./metadata/init%28documenttype,verifiablecredentialtypes%29.md)
+  Initialize format-specific constraints.
 ### Instance Properties
-- [var docTypeValue: String?](./metadata/doctypevalue.md)
-  The accepted mobile document type.
-- [var vctValues: [String]](./metadata/vctvalues.md)
-  The accepted verifiable credential types for SD-JWT VCs.
+- [var documentType: String?](./metadata/documenttype.md)
+  The accepted document type, for mobile documents.
+- [var verifiableCredentialTypes: [String]](./metadata/verifiablecredentialtypes.md)
+  The accepted verifiable credential types, for SD-JWT VCs.
 
 ## Relationships
 

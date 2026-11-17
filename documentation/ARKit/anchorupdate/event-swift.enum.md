@@ -49,8 +49,6 @@ enum Event
   The time when this anchor update occurred.
 - [let event: AnchorUpdate<AnchorType>.Event](./event-swift.property.md)
   The event which caused the anchor to update.
-- [var description: String](./description.md)
-  A textual representation of this anchor update.
 
 
 ---

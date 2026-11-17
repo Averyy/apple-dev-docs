@@ -27,7 +27,7 @@ When the title is `nil`, the button displays a system-provided title.
 
 ## See Also
 
-### Setting Button Titles
+### Accessing button titles
 - [var startButtonTitle: String?](./startbuttontitle.md)
   The title displayed on the start button.
 - [var overviewButtonTitle: String?](./overviewbuttontitle.md)

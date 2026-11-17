@@ -23,7 +23,7 @@ var layout: CPInformationTemplateLayout { get }
 
 ## See Also
 
-### Accessing the Layout
+### Accessing the layout
 - [enum CPInformationTemplateLayout](../cpinformationtemplatelayout.md)
   The layout that an information template uses to arrange its items.
 

@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+A GB/T connector with alternating current.
+
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
@@ -18,6 +20,10 @@ case gbtAC
 ```c
 CPChargingStationConnectionConnectorGBTAC
 ```
+
+## Discussion
+
+This connector type offers AC charging for electric vehicles in China.
 
 
 ---

@@ -25,6 +25,8 @@ struct PHASEAssetError
 ### Creating an Error
 - [PHASEAssetError.Code](./phaseasseterror-swift.struct/code.md)
   Codes that identify framework asset errors.
+### Inspecting Error Information
+- [static var errorDomain: String](./phaseasseterror-swift.struct/errordomain.md)
 ### Identifying an Error Cause
 - [static var alreadyExists: PHASEAssetError.Code](./phaseasseterror-swift.struct/alreadyexists.md)
   An error the asset registry throws when the app registers an asset twice by the same name.
@@ -38,8 +40,6 @@ struct PHASEAssetError
   An error that indicates an asset registry call references an invalid engine.
 - [static var memoryAllocation: PHASEAssetError.Code](./phaseasseterror-swift.struct/memoryallocation.md)
   An error the framework throws when an asset depletes system memory.
-### Type Properties
-- [static var errorDomain: String](./phaseasseterror-swift.struct/errordomain.md)
 
 ## Relationships
 

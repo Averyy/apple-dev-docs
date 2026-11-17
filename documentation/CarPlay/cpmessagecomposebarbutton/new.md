@@ -4,8 +4,6 @@
 **Kind**: method  
 **Role**: Type Method
 
-Creates a message compose button with a system-provided image.
-
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
@@ -17,17 +15,13 @@ Creates a message compose button with a system-provided image.
 + (instancetype) new;
 ```
 
-## Discussion
-
-> **Note**:  This button type does not use a handler. Instead, tapping this button activates Siri and initiates the compose message flow.
-
 ## See Also
 
-### Creating a Message Compose Bar Button
+### Creating a message compose bar button
 - [init()](./init%28%29.md)
-  Creates a message compose button with a system-provided image.
+  Creates a button for composing messages that uses the system-provided image.
 - [init(image: UIImage)](./init%28image%29.md)
-  Creates a message compose button that displays a custom image.
+  Creates a button for composing messages that uses a custom image you provide.
 
 
 ---

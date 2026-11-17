@@ -27,7 +27,7 @@ When the system displays the alert, it selects the title that best fits the avai
 
 ## See Also
 
-### Getting the Alert Information
+### Getting the alert details
 - [var actions: [CPAlertAction]](./actions.md)
   The array of actions available on the alert.
 

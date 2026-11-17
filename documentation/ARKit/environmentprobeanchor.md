@@ -33,11 +33,12 @@ Use environment probes to light virtual geometry by producing environment textur
 ### Comparing environment probe anchors
 - [var id: UUID](./environmentprobeanchor/id.md)
   The unique identifier of this anchor.
-- [var description: String](./environmentprobeanchor/description.md)
-  A textual representation of this anchor.
 ### Operators
 - [static func == (EnvironmentProbeAnchor, EnvironmentProbeAnchor) -> Bool](./environmentprobeanchor/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two environment probe anchors are equal.
+### Instance Properties
+- [var description: String](./environmentprobeanchor/description.md)
+  A textual representation of this anchor.
 ### Default Implementations
 - [ARKitCoordinateSpaceProviding Implementations](./environmentprobeanchor/arkitcoordinatespaceproviding-implementations.md)
 

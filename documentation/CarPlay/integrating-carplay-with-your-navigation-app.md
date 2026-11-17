@@ -91,17 +91,9 @@ See [`CPMapTemplateDelegate`](./cpmaptemplatedelegate.md) for more information.
 
 ## See Also
 
-### Navigation
-- [class CPTemplateApplicationDashboardScene](./cptemplateapplicationdashboardscene.md)
-  A CarPlay scene that controls your app’s dashboard navigation window.
-- [protocol CPTemplateApplicationDashboardSceneDelegate](./cptemplateapplicationdashboardscenedelegate.md)
-  The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
-- [class CPMapTemplate](./cpmaptemplate.md)
-  A template that displays a navigation overlay that your app draws on the map.
-- [class CPSearchTemplate](./cpsearchtemplate.md)
-  A template that provides the ability to search for a destination and see a list of search results.
-- [class CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
-  A template that displays a voice control indicator during audio input.
+### Essentials
+- [CarPlay Navigation app](../BundleResources/entitlements/com.apple.developer.carplay-maps.md)
+  A Boolean value that indicates whether the CarPlay app provides turn-by-turn directions.
 
 
 ---

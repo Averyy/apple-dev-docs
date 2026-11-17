@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-The data provider has been created.
+The data provider is initialized.
 
 **Availability**:
 - macOS 26.0+

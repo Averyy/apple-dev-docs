@@ -29,7 +29,7 @@ If your app doesn’t provide VoIP functionality, use the `tel` URL scheme to st
 
 ## Topics
 
-### Creating a Contact Call Button
+### Creating a contact call button
 - [init(handler: ((CPButton) -> Void)?)](./cpcontactcallbutton/init%28handler%29.md)
   Creates a button that invokes a handler when the user taps it.
 
@@ -47,9 +47,11 @@ If your app doesn’t provide VoIP functionality, use the `tel` URL scheme to st
 
 ## See Also
 
-### Managing Interactions with the Contact
-- [var actions: [CPButton]?](./cpcontact/actions.md)
-  The actions that the template displays for this contact.
+### Contacts
+- [class CPContactTemplate](./cpcontacttemplate.md)
+  A template that displays information about a person or a business.
+- [class CPContact](./cpcontact.md)
+  A data object that contains information about a contact.
 - [class CPContactDirectionsButton](./cpcontactdirectionsbutton.md)
   A button for getting directions to the contact’s location.
 - [class CPContactMessageButton](./cpcontactmessagebutton.md)

@@ -183,7 +183,7 @@ public enum Vehicle {
 ```java
 try (var arena = SwiftArena.ofConfined()) {
     Vehicle vehicle = Vehicle.car("BMW", Optional.empty(), arena);
-    Vehicle.Case.Car car = vehicle.getAsCar().orElseThrow();
+    Vehicle.CarCase car = vehicle.getAsCar().orElseThrow();
     assertEquals("BMW", car.arg0());
 
     vehicle = Vehicle.car("BMW", Optional.of("Long trailer"), arena);
@@ -215,26 +215,26 @@ For Java 21+, `getCase(arena)` returns a `Vehicle.Case` value that works with [p
 try (var arena = SwiftArena.ofConfined()) {
     Vehicle vehicle = Vehicle.car("BMW", Optional.empty(), arena);
     switch (vehicle.getCase(arena)) {
-        case Vehicle.Case.Bicycle b:
+        case Vehicle.BicycleCase b:
             fail("Was bicycle");
             break;
-        case Vehicle.Case.Car car:
+        case Vehicle.CarCase car:
             assertEquals("BMW", car.arg0());
             break;
-        case Vehicle.Case.Motorbike motorbike:
+        case Vehicle.MotorbikeCase motorbike:
             fail("Was motorbike");
             break;
-        case Vehicle.Case.Transformer transformer:
+        case Vehicle.TransformerCase transformer:
             fail("Was transformer");
             break;
-        case Vehicle.Case.Boat b:
+        case Vehicle.BoatCase b:
             fail("Was boat");
             break;
     }
 }
 ```
 
-Each nested `Vehicle.Case.*` type is a `record`, so on Java 21+ you can also destructure it positionally (`case Vehicle.Case.Car(var name, var trailer)`), and on Java 16+ reach the same values with [pattern matching for instanceof](https://openjdk.org/jeps/394).
+Each case type, such as `Vehicle.CarCase`, is a `record`, so on Java 21+ you can also destructure it positionally (`case Vehicle.CarCase(var name, var trailer)`), and on Java 16+ reach the same values with [pattern matching for instanceof](https://openjdk.org/jeps/394).
 
 ### RawRepresentable enums
 
@@ -368,8 +368,8 @@ try {
     MySwiftLibrary.throwTyped("");
 } catch (MySwiftError e) {
     switch (e.getCase()) {
-        case MySwiftError.Case.SwiftError _ -> System.out.println("swift error");
-        case MySwiftError.Case.InvalidInput(var reason) -> System.out.println(reason);
+        case MySwiftError.SwiftErrorCase _ -> System.out.println("swift error");
+        case MySwiftError.InvalidInputCase(var reason) -> System.out.println(reason);
     }
 }
 ```

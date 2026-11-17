@@ -22,21 +22,6 @@ If your app creates [`NSUserActivity`](../Foundation/nsuseractivity.md) objects 
 
 ---
 
-## Extend the reach of your content
-
-Apps are one way to access content, but making your content available in other parts of the system helps people stay engaged with that content.
-
-- **Widgets** elevate a small amount of timely, personally relevant information, and display it where people can see it at a glance. On iPhone and iPad, people put widgets in Today View, on the Home Screen, and on the Lock Screen. On the Mac, people put widgets on the desktop and in Notification Center. On Apple Watch, widgets appear in the [Smart Stack](../WidgetKit/WidgetKit.md).
-- **Watch complications** are small elements on the Apple Watch face that display timely, relevant information. Complications might display the current weather conditions, or provide quick access to apps.
-- **Live Activities** display up-to-date content from your app. For example, they display event and task information on the Lock Screen or in the Dynamic Island. Live Activities use [ActivityKit](../ActivityKit/ActivityKit.md) and the [Apple Push Notification service](../UserNotifications/setting-up-a-remote-notification-server.md) (APNs) to deliver timely information.
-- **Controls** allow people to [perform app-specific actions](../WidgetKit/creating-controls-to-perform-actions-across-the-system.md) in Control Center, the Lock Screen, and from a device’s Action button.
-
-To support any of these features, create an [app extension](./app-extensions.md) using the [WidgetKit](../WidgetKit/WidgetKit.md) framework. Your app extension runs separately from your app and works with the system to display your content. Whenever possible, build your app extensions to run independently from your app. For example, design your app extension to fetch data over the network instead of sharing data with your app. However, you can share data between an app and app extension using a [shared group container](./shared-data.md#Share-content-on-the-same-device) if needed.
-
-On Apple Watch, [increase the visibility of widgets](../WidgetKit/widget-suggestions-in-smart-stacks.md) in Smart Stacks by supplying contextual clues about their relevance. You can construct contextual clues based on a location, time, or other conditions. For example, you might ask the system to elevate the widget for your music player app when someone connects their headphones to the device.
-
----
-
 ## Provide helpful information from your app
 
 Incorporate contextual information to make your app’s content more useful and relevant. For example, a map with a restaurant’s location makes it easier to understand how close that restaurant is to the person’s current location than the address alone. Incorporate other types of contextual information that make sense for your app, including:

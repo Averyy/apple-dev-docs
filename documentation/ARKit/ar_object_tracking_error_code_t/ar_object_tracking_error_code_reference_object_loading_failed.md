@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Enumeration Case
 
+Error code indicating that a reference object failed to load.
+
 **Availability**:
 - visionOS
 

@@ -24,15 +24,15 @@ enum HeadingLevelAttribute
 
 ## Overview
 
-Assistive technologies can use this property to improve navigation and describe the level number of levels [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h1`](./headinglevelattribute/headinglevel/h1.md) through [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h6`](./headinglevelattribute/headinglevel/h6.md) alongside the text.
+Assistive technologies can use this property to improve navigation and describe the level, from [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h1`](./headinglevelattribute/headinglevel/h1.md) through [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h6`](./headinglevelattribute/headinglevel/h6.md), alongside the text.
 
-For example, you can rank sections within UI using a heading level. The most important section is marked with[`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h1`](./headinglevelattribute/headinglevel/h1.md). Nested sections can use subsequent heading levels. For unranked headings, use [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.unspecified`](./headinglevelattribute/headinglevel/unspecified.md).
+For example, you can rank sections within UI using a heading level. The most important section is marked with [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h1`](./headinglevelattribute/headinglevel/h1.md). Nested sections can use subsequent heading levels. For unranked headings, use [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.unspecified`](./headinglevelattribute/headinglevel/unspecified.md).
 
 ## Topics
 
 ### Enumerations
 - [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel](./headinglevelattribute/headinglevel.md)
-  The hierarchy of a heading in relation other headings.
+  The hierarchy of a heading in relation to other headings.
 
 ## Relationships
 

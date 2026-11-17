@@ -53,8 +53,6 @@ The `CardSnippetContext` type contains only information that’s specific to car
   A visual representation that the system renders for an entity.
 - [enum EntitySnippetContentBuilder](./entitysnippetcontentbuilder.md)
   A result builder that assembles an entity’s snippet declarations.
-- [struct CardSnippetSize](./cardsnippetsize.md)
-  A size category for a snippet card.
 
 
 ---

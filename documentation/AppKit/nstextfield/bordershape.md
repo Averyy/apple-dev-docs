@@ -7,7 +7,7 @@
 Set border shape `NSControlBorderShapeAutomatic` sets text field or subclass to default system shape. `NSControlBorderShapeCircle` sets text field or subclass to `NSControlBorderShapeAutomatic`.
 
 **Availability**:
-- macOS 26.0+
+- macOS 26.1+
 
 ## Declaration
 

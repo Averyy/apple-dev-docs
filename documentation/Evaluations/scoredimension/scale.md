@@ -25,7 +25,7 @@ let scale: ScoringScale
 
 ### Inspecting a dimension
 - [let name: String](./name.md)
-  The name of the dimension, used as the DataFrame column name.
+  The name of the dimension, which an [`Evaluation`](../evaluation.md) uses as the [`Column`](../../TabularData/column.md) name in its results.
 - [var metric: Metric](./metric.md)
   A metric identifier that uses this dimension’s name.
 - [let description: String?](./description.md)

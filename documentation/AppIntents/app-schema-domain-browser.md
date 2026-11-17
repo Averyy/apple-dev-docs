@@ -57,7 +57,7 @@ For more information about app schemas, see [App schema domains](./app-schema-do
   Identifies entity schemas in the browser domain.
 ### Types for static parameters
 - [var clearHistoryTimeFrame: some AppSchemaEnum](./appschema/browserenum/clearhistorytimeframe.md)
-  An enum schema for a clear history time frame parameter.
+  An enum schema for a clear history time frame.
 - [AppSchema.BrowserEnum](./appschema/browserenum.md)
   Identifies enum schemas in the browser domain.
 ### Deprecated schemas

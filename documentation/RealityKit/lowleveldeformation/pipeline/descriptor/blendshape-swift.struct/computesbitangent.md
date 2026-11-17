@@ -18,6 +18,14 @@ Indicates if bitangents should be recomputed from blended normals and tangents. 
 var computesBitangent: Bool
 ```
 
+## See Also
+
+### Configuring blended attributes
+- [var blendsOutputs: LowLevelDeformation.Pipeline.Descriptor.BlendShape.VertexSemanticOutputs](./blendsoutputs.md)
+  Indicates which vertices of the tangent frame are blended in addition to positions. Currently supported: [normal|tangent]
+- [LowLevelDeformation.Pipeline.Descriptor.BlendShape.VertexSemanticOutputs](./vertexsemanticoutputs.md)
+  Identifies which tangent-frame attributes are blended in addition to positions.
+
 
 ---
 

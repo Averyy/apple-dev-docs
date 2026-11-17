@@ -25,6 +25,12 @@ var isEnabled: Bool { get set }
 
 When the value of this property is `true`, the item is enabled and supports interactions. Set the value to `false` to disable interactions. The default value of this property is `true`.
 
+## See Also
+
+### Configuring the panel’s behavior
+- [var showsBottomSeparator: Bool](./showsbottomseparator.md)
+  A Boolean value that indicates whether a separator line appears at the bottom edge of the item.
+
 
 ---
 

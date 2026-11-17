@@ -146,7 +146,7 @@
     },
     "https://developer.apple.com/documentation/visionos/determining-whether-to-bring-your-app-to-visionos": {
       "file_path": "documentation/visionOS/determining-whether-to-bring-your-app-to-visionos.md",
-      "hash": "74690caf26c9b45b0889bd3ebfd89b09e242a9bfdbcd974026d87ba2b0b3b5cb"
+      "hash": "8776fc0b7074f2636b0526b7953451ef6c6364b7a945621ddd0480eb2fcdaea5"
     },
     "https://developer.apple.com/documentation/visionos/diorama": {
       "file_path": "documentation/visionOS/diorama.md",
@@ -154,7 +154,7 @@
     },
     "https://developer.apple.com/documentation/visionos/displaying-a-3d-environment-through-a-portal": {
       "file_path": "documentation/visionOS/displaying-a-3d-environment-through-a-portal.md",
-      "hash": "5278df460b75bf4f62aa7c942769feb2cdb6e4210b033a176d5c9b14e7f887ec"
+      "hash": "612bcfa7aae0345691f5203bf6081b4be7e217908c2b05fc8a782b82d52cc309"
     },
     "https://developer.apple.com/documentation/visionos/displaying-a-3d-object-that-moves-to-stay-in-a-person's-view": {
       "file_path": "documentation/visionOS/displaying-a-3d-object-that-moves-to-stay-in-a-persons-view.md",
@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/documentation/visionos/happybeam": {
       "file_path": "documentation/visionOS/happybeam.md",
-      "hash": "5c4b4f932430e2a7d5f98d22e6eaf7801309e7abb88ebb8d542b3b6ef319e287"
+      "hash": "95d91db952860823eed559bface6d55017677a1804b65e74b5967d05a43fd7eb"
     },
     "https://developer.apple.com/documentation/visionos/implementing-adjustable-material-in-visionos": {
       "file_path": "documentation/visionOS/implementing-adjustable-material-in-visionos.md",
@@ -254,7 +254,7 @@
     },
     "https://developer.apple.com/documentation/visionos/petite-asteroids-building-a-volumetric-visionos-game": {
       "file_path": "documentation/visionOS/petite-asteroids-building-a-volumetric-visionos-game.md",
-      "hash": "34f653a6cd0d5bb4d7b093eb550d380ca85f71a451afc179ba8c2cdd76ce6f49"
+      "hash": "1acfd59d371d5d70896d14d0280c52573f2cccb5003c15c6190ea4996f7c917f"
     },
     "https://developer.apple.com/documentation/visionos/placing-content-on-detected-planes": {
       "file_path": "documentation/visionOS/placing-content-on-detected-planes.md",
@@ -282,7 +282,7 @@
     },
     "https://developer.apple.com/documentation/visionos/reducing-the-rendering-cost-of-realitykit-content-on-visionos": {
       "file_path": "documentation/visionOS/reducing-the-rendering-cost-of-realitykit-content-on-visionos.md",
-      "hash": "6949b9cdde1736bc9288e015d7f66dc233f93067499b9c2b230dc03c9f5fc8ae"
+      "hash": "ea2260e586b73141f1a33219d05de6bf22c7804908bfd51ebdc3b72f666e549e"
     },
     "https://developer.apple.com/documentation/visionos/reducing-the-rendering-cost-of-your-ui-on-visionos": {
       "file_path": "documentation/visionOS/reducing-the-rendering-cost-of-your-ui-on-visionos.md",
@@ -290,7 +290,7 @@
     },
     "https://developer.apple.com/documentation/visionos/rendering-gaussian-splats-with-realitykit": {
       "file_path": "documentation/visionOS/rendering-gaussian-splats-with-realitykit.md",
-      "hash": "6f52d66254dcd70e4f5e3b920c340b609e9e4a86de484f4b61393e1c5deb7ced"
+      "hash": "fad5a31e6df68c2658b6a5f8ba3fbc952699ddcf9f164d491f6bad954c0789d4"
     },
     "https://developer.apple.com/documentation/visionos/setting-up-access-to-a-reference-accessory-file": {
       "file_path": "documentation/visionOS/setting-up-access-to-a-reference-accessory-file.md",
@@ -302,7 +302,7 @@
     },
     "https://developer.apple.com/documentation/visionos/swift-splash": {
       "file_path": "documentation/visionOS/swift-splash.md",
-      "hash": "04ce96c1e7bc31137788722ce0effcbcf48c0aa79d956884e5abe8ffb89e2720"
+      "hash": "664dd8b1ac356124743620ca697a7f78abd59b4d47436ae94056d97350b48aeb"
     },
     "https://developer.apple.com/documentation/visionos/synchronizing-custom-video-playback-with-shareplay": {
       "file_path": "documentation/visionOS/synchronizing-custom-video-playback-with-shareplay.md",
@@ -330,11 +330,11 @@
     },
     "https://developer.apple.com/documentation/visionos/understanding-transforms": {
       "file_path": "documentation/visionOS/understanding-transforms.md",
-      "hash": "7e86453fd286154d3be68b69b3b6418297c031221dcfbdb97d7aa24ad81ba810"
+      "hash": "ce330b6e13059f39db786f55ff2273b6c23ed1aa2e3ab7fed97059ad27515669"
     },
     "https://developer.apple.com/documentation/visionos/using-a-reference-object-with-arkit-in-ios": {
       "file_path": "documentation/visionOS/using-a-reference-object-with-arkit-in-ios.md",
-      "hash": "92b9a34c6f593a1209bd9235493766985208cfb0203faaa2ae735ea833176ef3"
+      "hash": "5ae65625b812b2810b117c3e5768a117e6372f03c38178194c6cd6f015ebfa0d"
     },
     "https://developer.apple.com/documentation/visionos/using-a-reference-object-with-arkit-in-visionos": {
       "file_path": "documentation/visionOS/using-a-reference-object-with-arkit-in-visionos.md",
@@ -502,7 +502,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/determining-whether-to-bring-your-app-to-visionos.json": {
       "file_path": "documentation/visionOS/determining-whether-to-bring-your-app-to-visionos.md",
-      "hash": "74690caf26c9b45b0889bd3ebfd89b09e242a9bfdbcd974026d87ba2b0b3b5cb"
+      "hash": "8776fc0b7074f2636b0526b7953451ef6c6364b7a945621ddd0480eb2fcdaea5"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/diorama.json": {
       "file_path": "documentation/visionOS/diorama.md",
@@ -510,7 +510,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/displaying-a-3d-environment-through-a-portal.json": {
       "file_path": "documentation/visionOS/displaying-a-3d-environment-through-a-portal.md",
-      "hash": "5278df460b75bf4f62aa7c942769feb2cdb6e4210b033a176d5c9b14e7f887ec"
+      "hash": "612bcfa7aae0345691f5203bf6081b4be7e217908c2b05fc8a782b82d52cc309"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/displaying-a-3d-object-that-moves-to-stay-in-a-person's-view.json": {
       "file_path": "documentation/visionOS/displaying-a-3d-object-that-moves-to-stay-in-a-persons-view.md",
@@ -558,7 +558,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/happybeam.json": {
       "file_path": "documentation/visionOS/happybeam.md",
-      "hash": "5c4b4f932430e2a7d5f98d22e6eaf7801309e7abb88ebb8d542b3b6ef319e287"
+      "hash": "95d91db952860823eed559bface6d55017677a1804b65e74b5967d05a43fd7eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/implementing-adjustable-material-in-visionos.json": {
       "file_path": "documentation/visionOS/implementing-adjustable-material-in-visionos.md",
@@ -610,7 +610,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/petite-asteroids-building-a-volumetric-visionos-game.json": {
       "file_path": "documentation/visionOS/petite-asteroids-building-a-volumetric-visionos-game.md",
-      "hash": "34f653a6cd0d5bb4d7b093eb550d380ca85f71a451afc179ba8c2cdd76ce6f49"
+      "hash": "1acfd59d371d5d70896d14d0280c52573f2cccb5003c15c6190ea4996f7c917f"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/placing-content-on-detected-planes.json": {
       "file_path": "documentation/visionOS/placing-content-on-detected-planes.md",
@@ -638,7 +638,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/reducing-the-rendering-cost-of-realitykit-content-on-visionos.json": {
       "file_path": "documentation/visionOS/reducing-the-rendering-cost-of-realitykit-content-on-visionos.md",
-      "hash": "6949b9cdde1736bc9288e015d7f66dc233f93067499b9c2b230dc03c9f5fc8ae"
+      "hash": "ea2260e586b73141f1a33219d05de6bf22c7804908bfd51ebdc3b72f666e549e"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/reducing-the-rendering-cost-of-your-ui-on-visionos.json": {
       "file_path": "documentation/visionOS/reducing-the-rendering-cost-of-your-ui-on-visionos.md",
@@ -646,7 +646,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/rendering-gaussian-splats-with-realitykit.json": {
       "file_path": "documentation/visionOS/rendering-gaussian-splats-with-realitykit.md",
-      "hash": "6f52d66254dcd70e4f5e3b920c340b609e9e4a86de484f4b61393e1c5deb7ced"
+      "hash": "fad5a31e6df68c2658b6a5f8ba3fbc952699ddcf9f164d491f6bad954c0789d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/setting-up-access-to-a-reference-accessory-file.json": {
       "file_path": "documentation/visionOS/setting-up-access-to-a-reference-accessory-file.md",
@@ -658,7 +658,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/swift-splash.json": {
       "file_path": "documentation/visionOS/swift-splash.md",
-      "hash": "04ce96c1e7bc31137788722ce0effcbcf48c0aa79d956884e5abe8ffb89e2720"
+      "hash": "664dd8b1ac356124743620ca697a7f78abd59b4d47436ae94056d97350b48aeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/synchronizing-custom-video-playback-with-shareplay.json": {
       "file_path": "documentation/visionOS/synchronizing-custom-video-playback-with-shareplay.md",
@@ -686,11 +686,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/understanding-transforms.json": {
       "file_path": "documentation/visionOS/understanding-transforms.md",
-      "hash": "7e86453fd286154d3be68b69b3b6418297c031221dcfbdb97d7aa24ad81ba810"
+      "hash": "ce330b6e13059f39db786f55ff2273b6c23ed1aa2e3ab7fed97059ad27515669"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/using-a-reference-object-with-arkit-in-ios.json": {
       "file_path": "documentation/visionOS/using-a-reference-object-with-arkit-in-ios.md",
-      "hash": "92b9a34c6f593a1209bd9235493766985208cfb0203faaa2ae735ea833176ef3"
+      "hash": "5ae65625b812b2810b117c3e5768a117e6372f03c38178194c6cd6f015ebfa0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/using-a-reference-object-with-arkit-in-visionos.json": {
       "file_path": "documentation/visionOS/using-a-reference-object-with-arkit-in-visionos.md",

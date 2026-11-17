@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The list item’s primary text.
+The primary text to display in the message list item’s row.
 
 **Availability**:
 - iOS 14.0+
@@ -23,15 +23,17 @@ var text: String? { get set }
 
 ## Discussion
 
-Siri speaks this text when the user selects the list item.
+CarPlay displays this string prominently in the message list item’s row. If you initialize the message list item with a conversation identifier, this property contains the string from the `text` parameter of the initializer. If you initialize it with a contact, this property contains the contact name.
 
 ## See Also
 
-### Managing Content
+### Getting the row content
 - [var detailText: String?](./detailtext.md)
-  The list item’s secondary text.
+  Additional text to display less prominently below the row’s main text.
 - [var trailingText: String?](./trailingtext.md)
-  The list item’s supplementary text.
+  Additional text to display after the trailing configuration items.
+- [var leadingDetailTextImage: UIImage?](./leadingdetailtextimage.md)
+  An image to display before the row’s detail text.
 
 
 ---

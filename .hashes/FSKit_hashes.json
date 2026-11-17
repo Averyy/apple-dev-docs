@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/FSKit": {
       "file_path": "documentation/FSKit/FSKit.md",
-      "hash": "c5f78f0104b317c651f8c0ef110073aeb2d8a8964bfe8f2917d499f2ec53dbff"
+      "hash": "bf399ad6455da87da9ee27a1972cfa111c23a2220cd77d3d1c3f9e01718163cc"
     },
     "https://developer.apple.com/documentation/fskit/building-a-passthrough-file-system": {
       "file_path": "documentation/FSKit/building-a-passthrough-file-system.md",
@@ -1040,6 +1040,10 @@
       "file_path": "documentation/FSKit/fskit_api_availability_v3.md",
       "hash": "787c08dd6626b1c25753128ab1de8d32d46ef468ea60454e6bba0d7cf03197a2"
     },
+    "https://developer.apple.com/documentation/fskit/fskit_api_availability_v3_3": {
+      "file_path": "documentation/FSKit/fskit_api_availability_v3_3.md",
+      "hash": "17dec5fb93c985caf6c5b7e06f14feb2a349ed0976a57c9c42721afd291e5a47"
+    },
     "https://developer.apple.com/documentation/fskit/fskit_api_introduced_v1_deprecated_v3_with_replacement": {
       "file_path": "documentation/FSKit/fskit_api_introduced_v1_deprecated_v3_with_replacement.md",
       "hash": "41c80fd82ecb183fd4063f0477715ebe4033ff7965a5973dce034c543698ec9e"
@@ -1300,9 +1304,13 @@
       "file_path": "documentation/FSKit/fsremoveitemresult/init(itemattributes,directoryattributes,freespace).md",
       "hash": "9058bca80afe42b2b87ffec4bf2d8d07f143baa536828263f7db53dbc6237aa5"
     },
+    "https://developer.apple.com/documentation/fskit/fsrenameflags/fsrenameflagsnone": {
+      "file_path": "documentation/FSKit/fsrenameflags/fsrenameflagsnone.md",
+      "hash": "f082124decea34e87ac621f9f9f8fa937a71ae198b1102cc67034bb2e5f1cad2"
+    },
     "https://developer.apple.com/documentation/fskit/fsrenameitemresult": {
       "file_path": "documentation/FSKit/fsrenameitemresult.md",
-      "hash": "68a427025cdc77940f8ac26e81bfa291ab6da76f39b65424ffd74df03dbd82bf"
+      "hash": "712ab2a3f55d84fad62224589aa1e423383f5004e018c8503764b15b1e59e860"
     },
     "https://developer.apple.com/documentation/fskit/fsrenameitemresult/init(newname:renameditemattributes:sourcedirectoryattributes:destinationdirectoryattributes:overitemattributes:freespace:)": {
       "file_path": "documentation/FSKit/fsrenameitemresult/init(newname,renameditemattributes,sourcedirectoryattributes,destinationdirectoryattributes,overitemattributes,freespace).md",
@@ -1502,7 +1510,7 @@
     },
     "https://developer.apple.com/documentation/fskit/fsvolume": {
       "file_path": "documentation/FSKit/fsvolume.md",
-      "hash": "7b3c946ea0dce34a94d84b7c327bdbc1f59446f5d3b767ee19b0892e68014195"
+      "hash": "42cfe17260d474df87060bd86c71537560a437c252037963816b6b2c2ae4f6c7"
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/accesscheckhandler": {
       "file_path": "documentation/FSKit/fsvolume/accesscheckhandler.md",
@@ -1702,7 +1710,7 @@
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/handler": {
       "file_path": "documentation/FSKit/fsvolume/handler.md",
-      "hash": "55cce9f49f0084bf688704f6d145e49753e66f07eebfe66ce0790a5f59d712d5"
+      "hash": "1764eaffcda304ddc32865e01c02e8dd7de1fcbc1b1fff8598727028dc7f90b9"
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/handler/activatevolume(options:replyhandler:)": {
       "file_path": "documentation/FSKit/fsvolume/handler/activatevolume(options,replyhandler).md",
@@ -1754,11 +1762,19 @@
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/handler/renameitem(_:indirectory:named:to:indirectory:overitem:context:replyhandler:)": {
       "file_path": "documentation/FSKit/fsvolume/handler/renameitem(_,indirectory,named,to,indirectory,overitem,context,replyhandler).md",
-      "hash": "2062b8d8c75d9ec04b3c09e99fd2f49a568b06042ce1843d92a6c7b313150921"
+      "hash": "8e3845fe5a9c4ad6ee6bb33fb8498606440745e1981c1d1b3e6d9805af90fcd5"
+    },
+    "https://developer.apple.com/documentation/fskit/fsvolume/handler/renameitem(_:indirectory:named:to:indirectory:overitem:flags:context:replyhandler:)": {
+      "file_path": "documentation/FSKit/fsvolume/handler/renameitem(_,indirectory,named,to,indirectory,overitem,flags,context,replyhandler).md",
+      "hash": "aba2fa7343110208660e9dc0492467c7aec310c2eacea077bbd5612ab6ae58a7"
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/handler/setattributes(_:on:context:replyhandler:)": {
       "file_path": "documentation/FSKit/fsvolume/handler/setattributes(_,on,context,replyhandler).md",
       "hash": "5bf35de0ab3bf7a46dd1c022d1ce1d76b1b63b1e61ff2a06683a18402913b637"
+    },
+    "https://developer.apple.com/documentation/fskit/fsvolume/handler/supportedrenameflags": {
+      "file_path": "documentation/FSKit/fsvolume/handler/supportedrenameflags.md",
+      "hash": "eebd77fae5edab68bc0c5a7d7cefa70f42cf6b875594c53612ba8c05b91482c0"
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/handler/supportedvolumecapabilities": {
       "file_path": "documentation/FSKit/fsvolume/handler/supportedvolumecapabilities.md",
@@ -2014,7 +2030,7 @@
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/operations/renameitem(_:indirectory:named:to:indirectory:overitem:replyhandler:)": {
       "file_path": "documentation/FSKit/fsvolume/operations/renameitem(_,indirectory,named,to,indirectory,overitem,replyhandler).md",
-      "hash": "6341341da72dc52fff732aaf16b845fba5a70a1fd9fac4c9ceaf21a84aeae1bf"
+      "hash": "c3aa9ac89d0a3379bce6e8b2e89fdfa80f46bc50c9a94b37f20b38eb2c6a8944"
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/operations/setattributes(_:on:replyhandler:)": {
       "file_path": "documentation/FSKit/fsvolume/operations/setattributes(_,on,replyhandler).md",
@@ -2127,6 +2143,22 @@
     "https://developer.apple.com/documentation/fskit/fsvolume/readwriteoperations/write(contents:to:at:replyhandler:)": {
       "file_path": "documentation/FSKit/fsvolume/readwriteoperations/write(contents,to,at,replyhandler).md",
       "hash": "7da1b6eca81147ef4cb50dd970b74002752810e4abb96678433dcf362b22f0a3"
+    },
+    "https://developer.apple.com/documentation/fskit/fsvolume/renameflags": {
+      "file_path": "documentation/FSKit/fsvolume/renameflags.md",
+      "hash": "557a705d8eed17710d3e7924dc2a24e4d46d48fe8153a473f0918b9145bc72fc"
+    },
+    "https://developer.apple.com/documentation/fskit/fsvolume/renameflags/exclusive": {
+      "file_path": "documentation/FSKit/fsvolume/renameflags/exclusive.md",
+      "hash": "38652148ebc2979c949d1ff0b7f35539c1ec22349f75df9fa382ce0ec0187c37"
+    },
+    "https://developer.apple.com/documentation/fskit/fsvolume/renameflags/init(rawvalue:)": {
+      "file_path": "documentation/FSKit/fsvolume/renameflags/init(rawvalue).md",
+      "hash": "6d81f89c561e12d93c389594c060e4e1b3e6b4b6a5ce187f8c52309dd09c93f4"
+    },
+    "https://developer.apple.com/documentation/fskit/fsvolume/renameflags/swap": {
+      "file_path": "documentation/FSKit/fsvolume/renameflags/swap.md",
+      "hash": "1af5bd490b0b120e3c3ff62c6952e6e533b7d18fbff5aad4fd4899dac65a11ba"
     },
     "https://developer.apple.com/documentation/fskit/fsvolume/renamehandler": {
       "file_path": "documentation/FSKit/fsvolume/renamehandler.md",
@@ -2410,7 +2442,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/FSKit.json": {
       "file_path": "documentation/FSKit/FSKit.md",
-      "hash": "c5f78f0104b317c651f8c0ef110073aeb2d8a8964bfe8f2917d499f2ec53dbff"
+      "hash": "bf399ad6455da87da9ee27a1972cfa111c23a2220cd77d3d1c3f9e01718163cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/building-a-passthrough-file-system.json": {
       "file_path": "documentation/FSKit/building-a-passthrough-file-system.md",
@@ -3448,6 +3480,10 @@
       "file_path": "documentation/FSKit/fskit_api_availability_v3.md",
       "hash": "787c08dd6626b1c25753128ab1de8d32d46ef468ea60454e6bba0d7cf03197a2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fskit_api_availability_v3_3.json": {
+      "file_path": "documentation/FSKit/fskit_api_availability_v3_3.md",
+      "hash": "17dec5fb93c985caf6c5b7e06f14feb2a349ed0976a57c9c42721afd291e5a47"
+    },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fskit_api_introduced_v1_deprecated_v3_with_replacement.json": {
       "file_path": "documentation/FSKit/fskit_api_introduced_v1_deprecated_v3_with_replacement.md",
       "hash": "41c80fd82ecb183fd4063f0477715ebe4033ff7965a5973dce034c543698ec9e"
@@ -3708,9 +3744,13 @@
       "file_path": "documentation/FSKit/fsremoveitemresult/init(itemattributes,directoryattributes,freespace).md",
       "hash": "9058bca80afe42b2b87ffec4bf2d8d07f143baa536828263f7db53dbc6237aa5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsrenameflags/fsrenameflagsnone.json": {
+      "file_path": "documentation/FSKit/fsrenameflags/fsrenameflagsnone.md",
+      "hash": "f082124decea34e87ac621f9f9f8fa937a71ae198b1102cc67034bb2e5f1cad2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsrenameitemresult.json": {
       "file_path": "documentation/FSKit/fsrenameitemresult.md",
-      "hash": "68a427025cdc77940f8ac26e81bfa291ab6da76f39b65424ffd74df03dbd82bf"
+      "hash": "712ab2a3f55d84fad62224589aa1e423383f5004e018c8503764b15b1e59e860"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsrenameitemresult/init(newname:renameditemattributes:sourcedirectoryattributes:destinationdirectoryattributes:overitemattributes:freespace:).json": {
       "file_path": "documentation/FSKit/fsrenameitemresult/init(newname,renameditemattributes,sourcedirectoryattributes,destinationdirectoryattributes,overitemattributes,freespace).md",
@@ -3910,7 +3950,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume.json": {
       "file_path": "documentation/FSKit/fsvolume.md",
-      "hash": "7b3c946ea0dce34a94d84b7c327bdbc1f59446f5d3b767ee19b0892e68014195"
+      "hash": "42cfe17260d474df87060bd86c71537560a437c252037963816b6b2c2ae4f6c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/accesscheckhandler.json": {
       "file_path": "documentation/FSKit/fsvolume/accesscheckhandler.md",
@@ -4110,7 +4150,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/handler.json": {
       "file_path": "documentation/FSKit/fsvolume/handler.md",
-      "hash": "55cce9f49f0084bf688704f6d145e49753e66f07eebfe66ce0790a5f59d712d5"
+      "hash": "1764eaffcda304ddc32865e01c02e8dd7de1fcbc1b1fff8598727028dc7f90b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/handler/activatevolume(options:replyhandler:).json": {
       "file_path": "documentation/FSKit/fsvolume/handler/activatevolume(options,replyhandler).md",
@@ -4162,11 +4202,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/handler/renameitem(_:indirectory:named:to:indirectory:overitem:context:replyhandler:).json": {
       "file_path": "documentation/FSKit/fsvolume/handler/renameitem(_,indirectory,named,to,indirectory,overitem,context,replyhandler).md",
-      "hash": "2062b8d8c75d9ec04b3c09e99fd2f49a568b06042ce1843d92a6c7b313150921"
+      "hash": "8e3845fe5a9c4ad6ee6bb33fb8498606440745e1981c1d1b3e6d9805af90fcd5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/handler/renameitem(_:indirectory:named:to:indirectory:overitem:flags:context:replyhandler:).json": {
+      "file_path": "documentation/FSKit/fsvolume/handler/renameitem(_,indirectory,named,to,indirectory,overitem,flags,context,replyhandler).md",
+      "hash": "aba2fa7343110208660e9dc0492467c7aec310c2eacea077bbd5612ab6ae58a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/handler/setattributes(_:on:context:replyhandler:).json": {
       "file_path": "documentation/FSKit/fsvolume/handler/setattributes(_,on,context,replyhandler).md",
       "hash": "5bf35de0ab3bf7a46dd1c022d1ce1d76b1b63b1e61ff2a06683a18402913b637"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/handler/supportedrenameflags.json": {
+      "file_path": "documentation/FSKit/fsvolume/handler/supportedrenameflags.md",
+      "hash": "eebd77fae5edab68bc0c5a7d7cefa70f42cf6b875594c53612ba8c05b91482c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/handler/supportedvolumecapabilities.json": {
       "file_path": "documentation/FSKit/fsvolume/handler/supportedvolumecapabilities.md",
@@ -4422,7 +4470,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/operations/renameitem(_:indirectory:named:to:indirectory:overitem:replyhandler:).json": {
       "file_path": "documentation/FSKit/fsvolume/operations/renameitem(_,indirectory,named,to,indirectory,overitem,replyhandler).md",
-      "hash": "6341341da72dc52fff732aaf16b845fba5a70a1fd9fac4c9ceaf21a84aeae1bf"
+      "hash": "c3aa9ac89d0a3379bce6e8b2e89fdfa80f46bc50c9a94b37f20b38eb2c6a8944"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/operations/setattributes(_:on:replyhandler:).json": {
       "file_path": "documentation/FSKit/fsvolume/operations/setattributes(_,on,replyhandler).md",
@@ -4535,6 +4583,22 @@
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/readwriteoperations/write(contents:to:at:replyhandler:).json": {
       "file_path": "documentation/FSKit/fsvolume/readwriteoperations/write(contents,to,at,replyhandler).md",
       "hash": "7da1b6eca81147ef4cb50dd970b74002752810e4abb96678433dcf362b22f0a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/renameflags.json": {
+      "file_path": "documentation/FSKit/fsvolume/renameflags.md",
+      "hash": "557a705d8eed17710d3e7924dc2a24e4d46d48fe8153a473f0918b9145bc72fc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/renameflags/exclusive.json": {
+      "file_path": "documentation/FSKit/fsvolume/renameflags/exclusive.md",
+      "hash": "38652148ebc2979c949d1ff0b7f35539c1ec22349f75df9fa382ce0ec0187c37"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/renameflags/init(rawvalue:).json": {
+      "file_path": "documentation/FSKit/fsvolume/renameflags/init(rawvalue).md",
+      "hash": "6d81f89c561e12d93c389594c060e4e1b3e6b4b6a5ce187f8c52309dd09c93f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/renameflags/swap.json": {
+      "file_path": "documentation/FSKit/fsvolume/renameflags/swap.md",
+      "hash": "1af5bd490b0b120e3c3ff62c6952e6e533b7d18fbff5aad4fd4899dac65a11ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsvolume/renamehandler.json": {
       "file_path": "documentation/FSKit/fsvolume/renamehandler.md",
@@ -4821,6 +4885,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 1204
+    "total_pages": 1220
   }
 }

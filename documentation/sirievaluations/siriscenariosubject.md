@@ -24,7 +24,7 @@ struct SiriScenarioSubject
 - [var value: SiriScenarioSubject.ScenarioReport](./siriscenariosubject/value.md)
   The run as the report shows it.
 - [let siriTranscript: SiriTranscript](./siriscenariosubject/siritranscript.md)
-  Every observation captured during the run.
+  Every observation captured during the run. A reference Siri found or a call returned carries only the properties the scenario checks that were read for it.
 ### Reporting results
 - [SiriScenarioSubject.ScenarioReport](./siriscenariosubject/scenarioreport.md)
   What the Xcode report shows for one scenario: Diagnostics, Scenario (if it has any expectations of its own), then each turn.

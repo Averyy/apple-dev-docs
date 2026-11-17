@@ -38,7 +38,7 @@
     },
     "https://developer.apple.com/documentation/shadergraph/2d-procedural/worley-noise-2d": {
       "file_path": "documentation/ShaderGraph/api-2d-procedural/worley-noise-2d.md",
-      "hash": "60e0371345f2731bcbc57741b452a68be03ad6ab6619361f2cb0d130b9c8d2a0"
+      "hash": "d97dd9ceb830ca0a24761787db940002385fcefe4d518fd339fa7a7899292e08"
     },
     "https://developer.apple.com/documentation/shadergraph/2d-texture": {
       "file_path": "documentation/ShaderGraph/api-2d-texture.md",
@@ -758,7 +758,7 @@
     },
     "https://developer.apple.com/documentation/shadergraph/realitykit/geometry-modifier-(realitykit)": {
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-(realitykit).md",
-      "hash": "26de115941cd18f4e1ad4642ba211d72888333c0ffc1be4d88244ae64708288d"
+      "hash": "5bb689adf3d7278fcf81ffed34c986642c875498b3db8a81da30bedb49099a39"
     },
     "https://developer.apple.com/documentation/shadergraph/realitykit/geometry-modifier-model-to-view-(realitykit)": {
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-model-to-view-(realitykit).md",
@@ -1034,7 +1034,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/worley-noise-2d.json": {
       "file_path": "documentation/ShaderGraph/api-2d-procedural/worley-noise-2d.md",
-      "hash": "60e0371345f2731bcbc57741b452a68be03ad6ab6619361f2cb0d130b9c8d2a0"
+      "hash": "d97dd9ceb830ca0a24761787db940002385fcefe4d518fd339fa7a7899292e08"
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-texture.json": {
       "file_path": "documentation/ShaderGraph/api-2d-texture.md",
@@ -1754,7 +1754,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-(realitykit).json": {
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-(realitykit).md",
-      "hash": "26de115941cd18f4e1ad4642ba211d72888333c0ffc1be4d88244ae64708288d"
+      "hash": "5bb689adf3d7278fcf81ffed34c986642c875498b3db8a81da30bedb49099a39"
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-model-to-view-(realitykit).json": {
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-model-to-view-(realitykit).md",

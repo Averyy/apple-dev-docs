@@ -14,7 +14,7 @@
     },
     "https://developer.apple.com/documentation/pencilkit/controlling-stroke-rendering-for-animation-and-editing": {
       "file_path": "documentation/PencilKit/controlling-stroke-rendering-for-animation-and-editing.md",
-      "hash": "6af31f3ede8f67cc3a0ee3c4e9ec098e53e9cc884f229c4e74ed5a2e78fcb682"
+      "hash": "6197959994b1ea78806f562dcf62287f66c74cf6f6e5790e654d46c82eb33dde"
     },
     "https://developer.apple.com/documentation/pencilkit/customizing-scribble-with-interactions": {
       "file_path": "documentation/PencilKit/customizing-scribble-with-interactions.md",
@@ -34,7 +34,7 @@
     },
     "https://developer.apple.com/documentation/pencilkit/interpolatedslice-protocol-implementations": {
       "file_path": "documentation/PencilKit/interpolatedslice-protocol-implementations.md",
-      "hash": "85e0fff85a988fdb09730fc17279667b57eeac7335c251f2d72d4ef121e7e467"
+      "hash": "da2695d053e7c50b5d44ccd46b744447bac4014315d201c2ef358f037ceb9492"
     },
     "https://developer.apple.com/documentation/pencilkit/pkappledrawingtypeidentifier": {
       "file_path": "documentation/PencilKit/pkappledrawingtypeidentifier.md",
@@ -166,7 +166,7 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkconvertedbezierpointreference": {
       "file_path": "documentation/PencilKit/pkconvertedbezierpointreference.md",
-      "hash": "d3d924d1563f7acd4851a3cee88baf3a6438fb921a049678037018f8dc2d76ec"
+      "hash": "e97accbe48f5c83db9d05904d48140bd3de8bc6f2d0ca673915c6052bf095440"
     },
     "https://developer.apple.com/documentation/pencilkit/pkconvertedbezierpointreference/beziersegmentindex": {
       "file_path": "documentation/PencilKit/pkconvertedbezierpointreference/beziersegmentindex.md",
@@ -186,7 +186,7 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkdrawing-swift.struct": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct.md",
-      "hash": "29043a8fdd50f80637c92f896416dd4509801b6491d979dc9d950a0f3ed90b62"
+      "hash": "2df25fa74c82607961909e8f4bc5e4a6c34f0415ea86972110704870fd63115c"
     },
     "https://developer.apple.com/documentation/pencilkit/pkdrawing-swift.struct/append(_:)": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/append(_).md",
@@ -210,19 +210,19 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkdrawing-swift.struct/erasepath(_:mask:transform:)-2b2u3": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/erasepath(_,mask,transform)-2b2u3.md",
-      "hash": "36cfcd357be2ec8fa12b5dcb434aecc3242980f3717a60275359035df54e2522"
+      "hash": "a214bec9e34226ff9de7d1e874ceb2d366134e78e7d226dab06ab76ef0193daf"
     },
     "https://developer.apple.com/documentation/pencilkit/pkdrawing-swift.struct/erasepath(_:mask:transform:)-shn": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/erasepath(_,mask,transform)-shn.md",
-      "hash": "6212bc7dda1ee2a75078cdcecc1a6d935d75039270bc52e4f9c18b874e72ea70"
+      "hash": "e4f90f94e479c6fb36d5693abfb66fed81247167271113265725db3a7a13720f"
     },
     "https://developer.apple.com/documentation/pencilkit/pkdrawing-swift.struct/erasingpath(_:mask:transform:)-2txi7": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/erasingpath(_,mask,transform)-2txi7.md",
-      "hash": "23353d4a143830384ffe2d874d41c2018e97bb4836887a0eaa910b3c18d8759e"
+      "hash": "e18dc257a0bca05e110271df4e92e38a1afcd016c37687f910b6f2284249af5b"
     },
     "https://developer.apple.com/documentation/pencilkit/pkdrawing-swift.struct/erasingpath(_:mask:transform:)-9dpi9": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/erasingpath(_,mask,transform)-9dpi9.md",
-      "hash": "dafbd1a3e797d1296dba943eedbe5e8da949e3f83365c73000228b9e1e422347"
+      "hash": "395e9883730de45d36ecd52d834fdb907142fb61ffcbd58a203be5382bbbce93"
     },
     "https://developer.apple.com/documentation/pencilkit/pkdrawing-swift.struct/image(from:scale:)-220d0": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/image(from,scale)-220d0.md",
@@ -698,15 +698,15 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkresponderstate": {
       "file_path": "documentation/PencilKit/pkresponderstate.md",
-      "hash": "31bb0127785ca04570fd8592272487cffd46ce87bf1d19940cd7f4221b3819a3"
+      "hash": "40ef3c4a4b6074359ea79aa7a2e186641e74860ac68bd34b63769d660c5ec39f"
     },
     "https://developer.apple.com/documentation/pencilkit/pkresponderstate/activetoolpicker": {
       "file_path": "documentation/PencilKit/pkresponderstate/activetoolpicker.md",
-      "hash": "9138c9a40084055270b4d32563a29935a6fb1495122c6ad6675564c0769d6943"
+      "hash": "d205c02ff0fc896b45ff9d000fa77d669a0754c9be65df6bdee2a4cf51f24c08"
     },
     "https://developer.apple.com/documentation/pencilkit/pkresponderstate/toolpickervisibility-7cj3c": {
       "file_path": "documentation/PencilKit/pkresponderstate/toolpickervisibility-7cj3c.md",
-      "hash": "afe4a9405a8ef58f060832a83cd2523941dfbc6a688d7dfeb8d3f5c137e57422"
+      "hash": "69f522815c74303dabce7e11538b6942ce65ece4b0d9118e2f9e507aefd197f1"
     },
     "https://developer.apple.com/documentation/pencilkit/pkresponderstate/toolpickervisibility-7hikj": {
       "file_path": "documentation/PencilKit/pkresponderstate/toolpickervisibility-7hikj.md",
@@ -714,7 +714,7 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkstroke-swift.struct": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct.md",
-      "hash": "9c58abdabe74fc2bec45d773c766a86e3492ce48f062cda2fedcf42679ac26b0"
+      "hash": "c50d60e6c9e6a5eac5b7f29d6efcef7c31d7a1618f13459cc74a48d01fddd5e4"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstroke-swift.struct/id": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/id.md",
@@ -726,27 +726,27 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:)-1imp6": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask)-1imp6.md",
-      "hash": "c1ce8cba11332056f3a00abf757271cbb0ecc51490721371d14c65103ec8dae7"
+      "hash": "0a2ca391a30bbfa80514c4024d26f948600d898152bb10ff175ce98ff4fe3caa"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:)-w7ti": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask)-w7ti.md",
-      "hash": "0a5643496feab232acd702c88cc05e244d5f6686e863dd055d0c129018d2c966"
+      "hash": "e06322ff571de7151fed778a7a26cec872b86f6dc3c3f2476d62db3fd26238f7"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:)-10m5j": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask,randomseed)-10m5j.md",
-      "hash": "3e6b5f207f39a749da66f262e87169d0f29afbe37eab86e5171b5efe9b7c5fd3"
+      "hash": "6c609a41f027cdf7cd297d04e11a21d4221654abe78edca8fef38a6d5f119b1c"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:)-epus": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask,randomseed)-epus.md",
-      "hash": "9d2a0c590f1297e12e746deea9c760478d457404e7984d7d308cbc83bbb94c90"
+      "hash": "0e128f988b3902a58a20f2913c7c06c78a0d10ec7475a5408f1838c63c759f26"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:id:rendergroupid:renderstate:)-1qvj7": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask,randomseed,id,rendergroupid,renderstate)-1qvj7.md",
-      "hash": "49964dffd4a2a3e15dff6f6161f50575b3c345143d72e66874664b5fa7bb13b7"
+      "hash": "84bb674cacfa76c06508a9b7b91ffba1f63213a7c141f87007da68ae28e9934e"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:id:rendergroupid:renderstate:)-idqu": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask,randomseed,id,rendergroupid,renderstate)-idqu.md",
-      "hash": "d62fcc329bf333700787430f4af592a9ac0888d650793ccfb9f88f59ff765384"
+      "hash": "992618dfa1613d64662ea3df5d1f249ce87275605d6b9a7124a7ec12cce8c701"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstroke-swift.struct/ink": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/ink.md",
@@ -814,11 +814,11 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-protocol-implementations": {
       "file_path": "documentation/PencilKit/pkstrokepath-protocol-implementations.md",
-      "hash": "4a488388e0286371d665178d456f00a1b5c7665fafda4b3c133057e1a918dfb7"
+      "hash": "0701687b2b218e7a28d4b270a043c11b5e400bf38cdd9204e43dde025a73f3c0"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct.md",
-      "hash": "393346d3cf3dc5a7de9596f31e2be0f1b109dc82195db492fcb51c2935279160"
+      "hash": "9bf5e31f035e22ee60845ab602d1b444d9c88ab0aa6454d82845130e119c8aff"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct/bezierrepresentation": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/bezierrepresentation.md",
@@ -826,7 +826,7 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct/convertedbezierpoint": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/convertedbezierpoint.md",
-      "hash": "656b2becf3c46609701777c3efb9e1283d05ec9a709ab350abb1f4b8173e1d14"
+      "hash": "7d06493bc6ee8e446221e80bf4ab191bd201a11745c418fb35c7df67688f1e32"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct/convertedbezierpoint/beziersegmentindex": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/convertedbezierpoint/beziersegmentindex.md",
@@ -874,19 +874,19 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedlocation(at:)": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedlocation(at).md",
-      "hash": "d8beff6f7f9fb32a0afb7dd6769fdbdcf7eed093d9d8405acda1e7403a4417d8"
+      "hash": "d7bfee46390277ef5ed7748cebef6fbf075fcd5a0b5eedc970c9f600fbb69318"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedpoint(at:)": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedpoint(at).md",
-      "hash": "48e1d1accebf982d71a1561d46e95124db2f97ad447589a2ca678f42e3cdbc08"
+      "hash": "039206b4ba067629386f12ab8b878fa9f886f7d2237e98972b75217dce8fce98"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedpoints(in:by:)": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedpoints(in,by).md",
-      "hash": "97c5b5bbb0a752fb75f6c15d83003ede70dc101d2ec0c8198cbe54c41dd04766"
+      "hash": "d6d377d0977155269538cd4fa96edc076b4ed1f40de902433be63eb5bdd6673b"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedslice": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedslice.md",
-      "hash": "fedfac469ec30e95c0595a27d3f31a2c35d6426eb60223d26823ae52251b1924"
+      "hash": "af4d637941a4de14bf47547743cb951df127d97001615e0515e393c74e6ad4f6"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedslice/stride": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedslice/stride.md",
@@ -906,11 +906,11 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct/parametricvalue(_:offsetby:)": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/parametricvalue(_,offsetby).md",
-      "hash": "e9029c7fe799ecf38078ea27c333f23b87173b06970b7bb99da213b563c24845"
+      "hash": "a5afaf001c2153ec291d3eea20972d875c212d7ada2fbfca3c8b7aaa660dbb4f"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct/subscript(_:)": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/subscript(_).md",
-      "hash": "629f77daf55df197c3be74e94dcc121862c26c520e73e115f4ea0d34371c21a5"
+      "hash": "8e6e6511d13b770e281c73b29aaf37db9198fc7c2dc00b58a99bc5f56416a6ee"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokepathreference": {
       "file_path": "documentation/PencilKit/pkstrokepathreference.md",
@@ -1222,7 +1222,7 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokerenderstatereference": {
       "file_path": "documentation/PencilKit/pkstrokerenderstatereference.md",
-      "hash": "4964ce43fd10e44d6d44c9163ba19f9bb1ad168bdf0bd7411130a84b0f3421aa"
+      "hash": "2d296d54038cc359bddd513169641bbad872ad8a1022d8375bab43dee3f85944"
     },
     "https://developer.apple.com/documentation/pencilkit/pkstrokerenderstatereference/grainoffset": {
       "file_path": "documentation/PencilKit/pkstrokerenderstatereference/grainoffset.md",
@@ -1526,7 +1526,7 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pktoolpickerinkingitem": {
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem.md",
-      "hash": "3c9352397a881831d0f8966069463ba23c7f2cbaf7b729c23aecae6e55eb1b3f"
+      "hash": "021cbbce381ee17ffb574e9311e8b47201aee6cc448c7124aa43921ebb53f40d"
     },
     "https://developer.apple.com/documentation/pencilkit/pktoolpickerinkingitem/allowscolorselection": {
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/allowscolorselection.md",
@@ -1546,7 +1546,7 @@
     },
     "https://developer.apple.com/documentation/pencilkit/pktoolpickerinkingitem/init(type:color:width:identifier:)-7kzdq": {
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/init(type,color,width,identifier)-7kzdq.md",
-      "hash": "c56f5b89f771a28e2bf4d230d2eb9d276e875098494883dba86b130cea3321c0"
+      "hash": "d3b9fe0456bb745141340ff4c6267a5dd970b0ffd7ecc5bb9691302ea64fbe6b"
     },
     "https://developer.apple.com/documentation/pencilkit/pktoolpickerinkingitem/initwithinktype:": {
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/initwithinktype_.md",
@@ -1702,7 +1702,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/controlling-stroke-rendering-for-animation-and-editing.json": {
       "file_path": "documentation/PencilKit/controlling-stroke-rendering-for-animation-and-editing.md",
-      "hash": "6af31f3ede8f67cc3a0ee3c4e9ec098e53e9cc884f229c4e74ed5a2e78fcb682"
+      "hash": "6197959994b1ea78806f562dcf62287f66c74cf6f6e5790e654d46c82eb33dde"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/customizing-scribble-with-interactions.json": {
       "file_path": "documentation/PencilKit/customizing-scribble-with-interactions.md",
@@ -1722,7 +1722,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/interpolatedslice-protocol-implementations.json": {
       "file_path": "documentation/PencilKit/interpolatedslice-protocol-implementations.md",
-      "hash": "85e0fff85a988fdb09730fc17279667b57eeac7335c251f2d72d4ef121e7e467"
+      "hash": "da2695d053e7c50b5d44ccd46b744447bac4014315d201c2ef358f037ceb9492"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkappledrawingtypeidentifier.json": {
       "file_path": "documentation/PencilKit/pkappledrawingtypeidentifier.md",
@@ -1854,7 +1854,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkconvertedbezierpointreference.json": {
       "file_path": "documentation/PencilKit/pkconvertedbezierpointreference.md",
-      "hash": "d3d924d1563f7acd4851a3cee88baf3a6438fb921a049678037018f8dc2d76ec"
+      "hash": "e97accbe48f5c83db9d05904d48140bd3de8bc6f2d0ca673915c6052bf095440"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkconvertedbezierpointreference/beziersegmentindex.json": {
       "file_path": "documentation/PencilKit/pkconvertedbezierpointreference/beziersegmentindex.md",
@@ -1874,7 +1874,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct.json": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct.md",
-      "hash": "29043a8fdd50f80637c92f896416dd4509801b6491d979dc9d950a0f3ed90b62"
+      "hash": "2df25fa74c82607961909e8f4bc5e4a6c34f0415ea86972110704870fd63115c"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/append(_:).json": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/append(_).md",
@@ -1898,19 +1898,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/erasepath(_:mask:transform:)-2b2u3.json": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/erasepath(_,mask,transform)-2b2u3.md",
-      "hash": "36cfcd357be2ec8fa12b5dcb434aecc3242980f3717a60275359035df54e2522"
+      "hash": "a214bec9e34226ff9de7d1e874ceb2d366134e78e7d226dab06ab76ef0193daf"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/erasepath(_:mask:transform:)-shn.json": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/erasepath(_,mask,transform)-shn.md",
-      "hash": "6212bc7dda1ee2a75078cdcecc1a6d935d75039270bc52e4f9c18b874e72ea70"
+      "hash": "e4f90f94e479c6fb36d5693abfb66fed81247167271113265725db3a7a13720f"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/erasingpath(_:mask:transform:)-2txi7.json": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/erasingpath(_,mask,transform)-2txi7.md",
-      "hash": "23353d4a143830384ffe2d874d41c2018e97bb4836887a0eaa910b3c18d8759e"
+      "hash": "e18dc257a0bca05e110271df4e92e38a1afcd016c37687f910b6f2284249af5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/erasingpath(_:mask:transform:)-9dpi9.json": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/erasingpath(_,mask,transform)-9dpi9.md",
-      "hash": "dafbd1a3e797d1296dba943eedbe5e8da949e3f83365c73000228b9e1e422347"
+      "hash": "395e9883730de45d36ecd52d834fdb907142fb61ffcbd58a203be5382bbbce93"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/image(from:scale:)-220d0.json": {
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/image(from,scale)-220d0.md",
@@ -2386,15 +2386,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkresponderstate.json": {
       "file_path": "documentation/PencilKit/pkresponderstate.md",
-      "hash": "31bb0127785ca04570fd8592272487cffd46ce87bf1d19940cd7f4221b3819a3"
+      "hash": "40ef3c4a4b6074359ea79aa7a2e186641e74860ac68bd34b63769d660c5ec39f"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkresponderstate/activetoolpicker.json": {
       "file_path": "documentation/PencilKit/pkresponderstate/activetoolpicker.md",
-      "hash": "9138c9a40084055270b4d32563a29935a6fb1495122c6ad6675564c0769d6943"
+      "hash": "d205c02ff0fc896b45ff9d000fa77d669a0754c9be65df6bdee2a4cf51f24c08"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkresponderstate/toolpickervisibility-7cj3c.json": {
       "file_path": "documentation/PencilKit/pkresponderstate/toolpickervisibility-7cj3c.md",
-      "hash": "afe4a9405a8ef58f060832a83cd2523941dfbc6a688d7dfeb8d3f5c137e57422"
+      "hash": "69f522815c74303dabce7e11538b6942ce65ece4b0d9118e2f9e507aefd197f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkresponderstate/toolpickervisibility-7hikj.json": {
       "file_path": "documentation/PencilKit/pkresponderstate/toolpickervisibility-7hikj.md",
@@ -2402,7 +2402,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct.json": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct.md",
-      "hash": "9c58abdabe74fc2bec45d773c766a86e3492ce48f062cda2fedcf42679ac26b0"
+      "hash": "c50d60e6c9e6a5eac5b7f29d6efcef7c31d7a1618f13459cc74a48d01fddd5e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/id.json": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/id.md",
@@ -2414,27 +2414,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:)-1imp6.json": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask)-1imp6.md",
-      "hash": "c1ce8cba11332056f3a00abf757271cbb0ecc51490721371d14c65103ec8dae7"
+      "hash": "0a2ca391a30bbfa80514c4024d26f948600d898152bb10ff175ce98ff4fe3caa"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:)-w7ti.json": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask)-w7ti.md",
-      "hash": "0a5643496feab232acd702c88cc05e244d5f6686e863dd055d0c129018d2c966"
+      "hash": "e06322ff571de7151fed778a7a26cec872b86f6dc3c3f2476d62db3fd26238f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:)-10m5j.json": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask,randomseed)-10m5j.md",
-      "hash": "3e6b5f207f39a749da66f262e87169d0f29afbe37eab86e5171b5efe9b7c5fd3"
+      "hash": "6c609a41f027cdf7cd297d04e11a21d4221654abe78edca8fef38a6d5f119b1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:)-epus.json": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask,randomseed)-epus.md",
-      "hash": "9d2a0c590f1297e12e746deea9c760478d457404e7984d7d308cbc83bbb94c90"
+      "hash": "0e128f988b3902a58a20f2913c7c06c78a0d10ec7475a5408f1838c63c759f26"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:id:rendergroupid:renderstate:)-1qvj7.json": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask,randomseed,id,rendergroupid,renderstate)-1qvj7.md",
-      "hash": "49964dffd4a2a3e15dff6f6161f50575b3c345143d72e66874664b5fa7bb13b7"
+      "hash": "84bb674cacfa76c06508a9b7b91ffba1f63213a7c141f87007da68ae28e9934e"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:id:rendergroupid:renderstate:)-idqu.json": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init(ink,path,transform,mask,randomseed,id,rendergroupid,renderstate)-idqu.md",
-      "hash": "d62fcc329bf333700787430f4af592a9ac0888d650793ccfb9f88f59ff765384"
+      "hash": "992618dfa1613d64662ea3df5d1f249ce87275605d6b9a7124a7ec12cce8c701"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/ink.json": {
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/ink.md",
@@ -2502,11 +2502,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-protocol-implementations.json": {
       "file_path": "documentation/PencilKit/pkstrokepath-protocol-implementations.md",
-      "hash": "4a488388e0286371d665178d456f00a1b5c7665fafda4b3c133057e1a918dfb7"
+      "hash": "0701687b2b218e7a28d4b270a043c11b5e400bf38cdd9204e43dde025a73f3c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct.json": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct.md",
-      "hash": "393346d3cf3dc5a7de9596f31e2be0f1b109dc82195db492fcb51c2935279160"
+      "hash": "9bf5e31f035e22ee60845ab602d1b444d9c88ab0aa6454d82845130e119c8aff"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/bezierrepresentation.json": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/bezierrepresentation.md",
@@ -2514,7 +2514,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/convertedbezierpoint.json": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/convertedbezierpoint.md",
-      "hash": "656b2becf3c46609701777c3efb9e1283d05ec9a709ab350abb1f4b8173e1d14"
+      "hash": "7d06493bc6ee8e446221e80bf4ab191bd201a11745c418fb35c7df67688f1e32"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/convertedbezierpoint/beziersegmentindex.json": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/convertedbezierpoint/beziersegmentindex.md",
@@ -2562,19 +2562,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedlocation(at:).json": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedlocation(at).md",
-      "hash": "d8beff6f7f9fb32a0afb7dd6769fdbdcf7eed093d9d8405acda1e7403a4417d8"
+      "hash": "d7bfee46390277ef5ed7748cebef6fbf075fcd5a0b5eedc970c9f600fbb69318"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedpoint(at:).json": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedpoint(at).md",
-      "hash": "48e1d1accebf982d71a1561d46e95124db2f97ad447589a2ca678f42e3cdbc08"
+      "hash": "039206b4ba067629386f12ab8b878fa9f886f7d2237e98972b75217dce8fce98"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedpoints(in:by:).json": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedpoints(in,by).md",
-      "hash": "97c5b5bbb0a752fb75f6c15d83003ede70dc101d2ec0c8198cbe54c41dd04766"
+      "hash": "d6d377d0977155269538cd4fa96edc076b4ed1f40de902433be63eb5bdd6673b"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedslice.json": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedslice.md",
-      "hash": "fedfac469ec30e95c0595a27d3f31a2c35d6426eb60223d26823ae52251b1924"
+      "hash": "af4d637941a4de14bf47547743cb951df127d97001615e0515e393c74e6ad4f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedslice/stride.json": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedslice/stride.md",
@@ -2594,11 +2594,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/parametricvalue(_:offsetby:).json": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/parametricvalue(_,offsetby).md",
-      "hash": "e9029c7fe799ecf38078ea27c333f23b87173b06970b7bb99da213b563c24845"
+      "hash": "a5afaf001c2153ec291d3eea20972d875c212d7ada2fbfca3c8b7aaa660dbb4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/subscript(_:).json": {
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/subscript(_).md",
-      "hash": "629f77daf55df197c3be74e94dcc121862c26c520e73e115f4ea0d34371c21a5"
+      "hash": "8e6e6511d13b770e281c73b29aaf37db9198fc7c2dc00b58a99bc5f56416a6ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference.json": {
       "file_path": "documentation/PencilKit/pkstrokepathreference.md",
@@ -2910,7 +2910,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokerenderstatereference.json": {
       "file_path": "documentation/PencilKit/pkstrokerenderstatereference.md",
-      "hash": "4964ce43fd10e44d6d44c9163ba19f9bb1ad168bdf0bd7411130a84b0f3421aa"
+      "hash": "2d296d54038cc359bddd513169641bbad872ad8a1022d8375bab43dee3f85944"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokerenderstatereference/grainoffset.json": {
       "file_path": "documentation/PencilKit/pkstrokerenderstatereference/grainoffset.md",
@@ -3214,7 +3214,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerinkingitem.json": {
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem.md",
-      "hash": "3c9352397a881831d0f8966069463ba23c7f2cbaf7b729c23aecae6e55eb1b3f"
+      "hash": "021cbbce381ee17ffb574e9311e8b47201aee6cc448c7124aa43921ebb53f40d"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerinkingitem/allowscolorselection.json": {
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/allowscolorselection.md",
@@ -3234,7 +3234,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerinkingitem/init(type:color:width:identifier:)-7kzdq.json": {
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/init(type,color,width,identifier)-7kzdq.md",
-      "hash": "c56f5b89f771a28e2bf4d230d2eb9d276e875098494883dba86b130cea3321c0"
+      "hash": "d3b9fe0456bb745141340ff4c6267a5dd970b0ffd7ecc5bb9691302ea64fbe6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerinkingitem/initwithinktype:.json": {
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/initwithinktype_.md",

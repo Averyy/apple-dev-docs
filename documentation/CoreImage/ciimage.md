@@ -254,6 +254,7 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 - [var semanticSegmentationMatte: AVSemanticSegmentationMatte?](./ciimage/semanticsegmentationmatte.md)
 ### Image Dictionary Keys
 - [struct CIImageOption](./ciimageoption.md)
+  Image option dictionary keys.
 ### AutoAdjustment Keys
 - [struct CIImageAutoAdjustmentOption](./ciimageautoadjustmentoption.md)
 ### Deprecated

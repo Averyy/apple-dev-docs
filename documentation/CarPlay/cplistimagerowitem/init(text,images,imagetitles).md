@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a list item that displays a row of images with a title below each image.
+Initialize a list image row item with a text string, an array of @c UIImage for the grid of images, and an array of @c NSString titles, one displayed below each image.
 
 **Availability**:
 - iOS 17.4+ - Deprecated in 26.0
@@ -25,25 +25,29 @@ init(text: String, images: [UIImage], imageTitles: [String])
 
 ## Discussion
 
-Provide images that are display-ready. If necessary, provide light and dark variants of each image using an asset catalog, or use instances of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style.
+The number of titles in the @c imageTitles list should be equal to the number of images in the
 
-To properly size your images, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property. At runtime, use [`maximumImageSize`](./maximumimagesize.md) to determine the maximum size that CarPlay allows for an image, and [`CPMaximumNumberOfGridImages`](../cpmaximumnumberofgridimages.md) to establish the total number of images that an image row can display. The list item may display fewer images, depending on the width of the vehicle’s primary screen.
+When providing an image, your app should provide a @c UIImage that is display-ready. If necessary for the image, provide light and dark styles by using an asset from your asset catalog, prepared with light and dark styles or by using @c UIImageAsset to combine two @c UIImage instances into a single image with both styles.
 
-Carplay uses `UIImageAsset` to combine multiple [`UIImage`](../../UIKit/uiimage.md) objects with different trait collections into a single `UIImage` and the framework resizes images, if necessary. CarPlay doesn’t support animated images, if you provide animated images, the framework uses only the first image in each animation sequence.
+UIImageAsset is used to combine multiple UIImages with different trait collections into a single UIImage.
 
-The number of titles in the `imageTitles` list needs to be equal to the number of images in the `images`.
+> **Note**: The expected image size is given by +[CPListImageRowItem maximumImageSize]. Images provided will be resized to this size if necessary.
 
-## Parameters
-
-- `text`: The list item’s primary text.
-- `images`: An array of images to display in the list item’s image row.
-- `imageTitles`: An array of strings that represent the image titles.
+To properly size your images, your app should size them to the display scale of the car screen. See -[CPInterfaceController carTraitCollection].
 
 ## See Also
 
-### Creating a List Image Row Item
+### Deprecated
 - [init(text: String, images: [UIImage])](./init%28text,images%29.md)
-  Creates a list item that displays a row of images.
+  Initialize a list image row item with a text string and an array of @c UIImage for the grid of images.
+- [var gridImages: [UIImage]](./gridimages.md)
+  Read-only access to the grid images shown in a row in the cell.
+- [var imageTitles: [String]](./imagetitles.md)
+  The titles displayed for each image in this image row item.
+- [class var maximumImageSize: CGSize](./maximumimagesize.md)
+  The expected image size for the grid images in your @c CPListImageRowItem. Images provided will be resized to this size.
+- [func update([UIImage])](./update%28_%29.md)
+  Update the images displayed in this image row item. If this image row item is already displayed in a list template, this image row item will be automatically reloaded.
 
 
 ---

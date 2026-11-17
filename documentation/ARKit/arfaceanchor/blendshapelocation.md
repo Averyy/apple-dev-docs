@@ -20,13 +20,17 @@ struct BlendShapeLocation
 typedef NSString * ARBlendShapeLocation;
 ```
 
-## Discussion
+## Overview
 
 The [`blendShapes`](./blendshapes.md) dictionary provided by an [`ARFaceAnchor`](../arfaceanchor.md) object describes the facial expression of a detected face in terms of the movements of specific facial features. For each key in the dictionary, the corresponding value is a floating point number indicating the current position of that feature relative to its neutral configuration, ranging from `0.0` (neutral) to `1.0` (maximum movement).
 
 ARKit provides many blend shape coefficients, resulting in a detailed model of a facial expression; however, you can use as many or as few of the coefficients as you desire to create a visual effect. For example, you might animate a simple cartoon character using only the [`jawOpen`](./blendshapelocation/jawopen.md), [`eyeBlinkLeft`](./blendshapelocation/eyeblinkleft.md), and [`eyeBlinkRight`](./blendshapelocation/eyeblinkright.md) coefficients. A professional 3D artist could create a detailed character model rigged for realistic animation using a larger set, or the entire set, of coefficients.
 
 > **Note**:  In the naming of blend shape coefficients, the left and right directions are relative to the face. That is, the [`eyeBlinkRight`](./blendshapelocation/eyeblinkright.md) coefficient refers to the face’s right eye. ARKit views running a face-tracking session mirror the camera image, so the face’s right eye appears on the right side in the view.
+
+> **Note**: Blend shapes are computed based on the captured image. For example, if the detected person has a closed right eye, the eye on the left side of the captured image will appear closed and reported as blend shape activation by ARKit.
+
+> **See Also**: [`capturedImage`](../arframe/capturedimage.md)
 
 ## Topics
 
@@ -94,7 +98,7 @@ ARKit provides many blend shape coefficients, resulting in a detailed model of a
 - [static let mouthStretchLeft: ARFaceAnchor.BlendShapeLocation](./blendshapelocation/mouthstretchleft.md)
   The coefficient describing leftward movement of the left corner of the mouth.
 - [static let mouthStretchRight: ARFaceAnchor.BlendShapeLocation](./blendshapelocation/mouthstretchright.md)
-  The coefficient describing rightward movement of the left corner of the mouth.
+  The coefficient describing rightward movement of the right corner of the mouth.
 - [static let mouthRollLower: ARFaceAnchor.BlendShapeLocation](./blendshapelocation/mouthrolllower.md)
   The coefficient describing movement of the lower lip toward the inside of the mouth.
 - [static let mouthRollUpper: ARFaceAnchor.BlendShapeLocation](./blendshapelocation/mouthrollupper.md)

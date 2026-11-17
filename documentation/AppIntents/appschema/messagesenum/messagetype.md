@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An enum schema for a message type parameter.
+An enum schema for a message type.
 
 **Availability**:
 - iOS 27.0+
@@ -21,9 +21,9 @@ var messageType: some AppSchemaEnum { get }
 
 ## Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `messages` domain and a parameter type matches the `messageType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .messages.messageType)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `messages` domain and a parameter type matches the `messageType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum(schema: .messages.messageType)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an app enum that conforms to the `messageType` schema:
+The following example shows an app enum that conforms to the `messageType` schema. You can create a type that conforms to the schema by adding the `@AppEnum` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `messages_messageType` and select it from the code-completion suggestions:
 
 ```swift
 @AppEnum(schema: .messages.messageType)
@@ -47,13 +47,13 @@ For more information about the App Intents framework and the experiences it supp
 
 ### Types for static parameters
 - [var conversationAttribute: some AppSchemaEnum](./conversationattribute.md)
-  An enum schema for a conversation attribute parameter.
+  An enum schema for a conversation attribute.
 - [var customReaction: some AppSchemaEnum](./customreaction.md)
-  An enum schema for a custom reaction parameter.
+  An enum schema for a custom reaction.
 - [var messageAttribute: some AppSchemaEnum](./messageattribute.md)
-  An enum schema for a message attribute parameter.
+  An enum schema for a message attribute.
 - [var messageEffect: some AppSchemaEnum](./messageeffect.md)
-  An enum schema for a message effect parameter.
+  An enum schema for a message effect.
 - [AppSchema.MessagesEnum](../messagesenum.md)
   Identifies enum schemas in the messages domain.
 

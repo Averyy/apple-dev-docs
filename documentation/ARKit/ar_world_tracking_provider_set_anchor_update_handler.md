@@ -15,6 +15,16 @@ Sets the handler for receiving world tracking updates.
 extern void ar_world_tracking_provider_set_anchor_update_handler(ar_world_tracking_provider_t world_tracking_provider, dispatch_queue_t world_tracking_updates_queue, ar_world_tracking_anchor_update_handler_t world_tracking_anchor_update_handler);
 ```
 
+## Discussion
+
+> **Note**: Setting this handler will override the function set using `ar_world_tracking_provider_set_anchor_update_handler_f`.
+
+## Parameters
+
+- `world_tracking_provider`: The world tracking provider.
+- `world_tracking_updates_queue`: The queue on which the handler will be called. Passing `NULL` will default to the main queue.
+- `world_tracking_anchor_update_handler`: The handler to be called when new world anchor data arrives.
+
 ## See Also
 
 ### World tracking
@@ -43,7 +53,7 @@ extern void ar_world_tracking_provider_set_anchor_update_handler(ar_world_tracki
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

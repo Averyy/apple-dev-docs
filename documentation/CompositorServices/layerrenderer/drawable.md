@@ -74,6 +74,8 @@ Use the drawable’s [`LayerRenderer.Drawable.View`](./drawable/view.md) instanc
 - [init()](./drawable/init%28%29.md)
   Creates an uninitialized drawable.
 ### Adding a render context
+- [Controlling Metal rendering immersion level](../controlling-metal-rendering-immersion-level.md)
+  Enable flexible immersive rendering by supporting progressive immersion when rendering your Metal content.
 - [LayerRenderer.Drawable.RenderContext](./drawable/rendercontext.md)
   An object the compositer uses for rendering all effects associated with a layer renderer drawable.
 - [func addRenderContext(commandBuffer: any MTLCommandBuffer) -> LayerRenderer.Drawable.RenderContext](./drawable/addrendercontext%28commandbuffer%29.md)

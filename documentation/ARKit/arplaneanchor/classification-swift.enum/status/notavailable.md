@@ -18,9 +18,9 @@ case notAvailable
 
 ## Discussion
 
-Plane classification is available only on iPhone XS and iPhone XS Max devices. On other devices, all plane anchors always indicate a classification status of [`ARPlaneAnchor.Classification.Status.notAvailable`](./notavailable.md).
+Plane classification is available on iOS devices with an A12 Bionic chip or later. On other devices, all plane anchors always indicate a classification status of [`ARPlaneAnchor.Classification.Status.notAvailable`](./notavailable.md).
 
-A classification status of [`ARPlaneAnchor.Classification.Status.notAvailable`](./notavailable.md) can also occur if the plane classification process is temporarily unavilable.
+A classification status of [`ARPlaneAnchor.Classification.Status.notAvailable`](./notavailable.md) can also occur if the plane classification process is temporarily unavailable.
 
 ## See Also
 

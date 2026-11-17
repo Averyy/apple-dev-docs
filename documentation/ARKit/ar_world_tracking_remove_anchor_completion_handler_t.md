@@ -15,6 +15,12 @@ A handler to call upon completion of a request to remove a world anchor.
 typedef void (^)(NSObject<OS_ar_world_anchor> *, _Bool, NSObject<OS_ar_error> *) ar_world_tracking_remove_anchor_completion_handler_t;
 ```
 
+## Parameters
+
+- `world_anchor`: The world anchor to be removed from the world tracking provider.
+- `successful`: `true` if the world anchor was successfully removed from the world tracking provider, `false` otherwise.
+- `error`: The error that occurred, if any.
+
 ## See Also
 
 ### World tracking
@@ -41,7 +47,7 @@ typedef void (^)(NSObject<OS_ar_world_anchor> *, _Bool, NSObject<OS_ar_error> *)
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

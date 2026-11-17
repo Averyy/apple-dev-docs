@@ -24,7 +24,7 @@ var buffer: any MTLBuffer { get }
 
 ### Accessing Index Data
 - [subscript(Int) -> [Int32]](./subscript%28_%29.md)
-  Provides an array of vertex indices that respresents the geometric primitive at the subscripted index.
+  Provides an array of vertex indices that represents the geometric primitive at the subscripted index.
 
 
 ---

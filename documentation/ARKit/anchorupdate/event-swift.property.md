@@ -24,8 +24,6 @@ let event: AnchorUpdate<AnchorType>.Event
   The time when this anchor update occurred.
 - [AnchorUpdate.Event](./event-swift.enum.md)
   An event that indicates whether an anchor was added, updated, or removed.
-- [var description: String](./description.md)
-  A textual representation of this anchor update.
 
 
 ---

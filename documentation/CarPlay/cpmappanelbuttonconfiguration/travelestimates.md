@@ -26,6 +26,12 @@ var travelEstimates: CPTravelEstimates? { get set }
 
 Specify this information at initialization time and access it using this property.
 
+## See Also
+
+### Accessing the configuration details
+- [var secondaryButton: CPButton?](./secondarybutton.md)
+  The optional button you use to perform a secondary action.
+
 
 ---
 

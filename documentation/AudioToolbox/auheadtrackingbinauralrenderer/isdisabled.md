@@ -21,6 +21,10 @@ var isDisabled: Bool { get }
 @property (nonatomic, readonly, getter=isDisabled) BOOL disabled;
 ```
 
+## Mentions
+
+- [Rendering Spatial Audio from Bluetooth headphones](../rendering-spatial-audio-from-bluetooth-headphones.md)
+
 ## Discussion
 
 The host may set this property when the Audio Unit exhibits problematic behavior such as excessive CPU usage that impacts real-time performance or non-compliance with API requirements.

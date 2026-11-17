@@ -34,6 +34,11 @@ Rules created using this method can run arbitrary code in their predicate and ac
 
 ## Parameters
 
+- `predicate`: A block that GameplayKit calls to evaluate the rule. The block takes a single parameter:
+
+  - **system**: The rule system in whose context the rule is being evaluated.
+
+  The block returns a Boolean value—[`true`](../../Swift/true.md) if the predicate is satisfied (and the rule’s action should execute); [`false`](../../Swift/false.md) otherwise.
 - `action`: A block to be invoked after the rule’s predicate is satisfied. The block takes a single parameter:
 
   - **system**: The rule system in whose context the rule is executing its action.

@@ -11,7 +11,7 @@ An upscaling effect that generates a higher resolution texture in a render pass 
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 27.1+
+- tvOS 27.2+
 - visionOS 1.0+
 
 ## Declaration
@@ -60,37 +60,37 @@ MetalFX doesn’t track that you assign the same texture instances to each prope
 - [var colorContentOffsetY: Int](./mtlfxtemporalscalerbase/colorcontentoffsety.md)
   The vertical offset, in pixels, of the region within the color texture to use as input.
 - [var colorTexture: (any MTLTexture)?](./mtlfxtemporalscalerbase/colortexture.md)
-  An input color texture you set for the scaler that supports the correct color texture usage options.
+  An input color texture you set for the temporal scaler that supports the correct color texture usage options.
 - [var colorTextureFormat: MTLPixelFormat](./mtlfxtemporalscalerbase/colortextureformat.md)
-  The pixel format of the input color texture for this this scaler.
+  The pixel format of the input color texture for the temporal scaler.
 - [var colorTextureUsage: MTLTextureUsage](./mtlfxtemporalscalerbase/colortextureusage.md)
-  The minimal texture usage options that your app’s input color texture needs in order to support this scaler.
+  The minimal texture usage options that your app’s input color texture must set to apply the temporal scaler.
 - [var depthContentOffsetX: Int](./mtlfxtemporalscalerbase/depthcontentoffsetx.md)
   The horizontal offset, in pixels, of the region within the depth texture to use as input.
 - [var depthContentOffsetY: Int](./mtlfxtemporalscalerbase/depthcontentoffsety.md)
   The vertical offset, in pixels, of the region within the depth texture to use as input.
 - [var depthTexture: (any MTLTexture)?](./mtlfxtemporalscalerbase/depthtexture.md)
-  An input depth texture you set for the scaler that supports the correct color texture usage options.
+  An input depth texture you set for the temporal scaler that supports the correct depth texture usage options.
 - [var depthTextureFormat: MTLPixelFormat](./mtlfxtemporalscalerbase/depthtextureformat.md)
-  The pixel format of the input depth texture for this this scaler.
+  The pixel format of the input depth texture for the temporal scaler.
 - [var depthTextureUsage: MTLTextureUsage](./mtlfxtemporalscalerbase/depthtextureusage.md)
-  The minimal texture usage options that your app’s input depth texture needs in order to support this scaler.
+  The minimal texture usage options that your app’s input depth texture must set to apply the temporal scaler.
 - [var exposureTexture: (any MTLTexture)?](./mtlfxtemporalscalerbase/exposuretexture.md)
-  The exposure texture this scaler uses.
+  A texture that sets the exposure level for the color texture input.
 - [var fence: (any MTLFence)?](./mtlfxtemporalscalerbase/fence.md)
-  An optional fence that you provide to synchronize your app’s untracked resources.
+  An optional fence instance that you provide to synchronize your app’s untracked resources.
 - [var inputContentHeight: Int](./mtlfxtemporalscalerbase/inputcontentheight.md)
-  The height, in pixels, of the region within the color texture the scaler uses as its input.
+  The height, in pixels, of the region within the color texture the temporal scaler uses as its input.
 - [var inputContentMaxScale: Float](./mtlfxtemporalscalerbase/inputcontentmaxscale.md)
-  The largest scale factor the temporal scaler can use to generate output textures.
+  The largest scale factor the temporal scaler uses to generate output textures.
 - [var inputContentMinScale: Float](./mtlfxtemporalscalerbase/inputcontentminscale.md)
-  The smallest scale factor the temporal scaler can use to generate output textures.
+  The smallest scale factor the temporal scaler uses to generate output textures.
 - [var inputContentWidth: Int](./mtlfxtemporalscalerbase/inputcontentwidth.md)
-  The width, in pixels, of the region within the color texture the scaler uses as its input.
+  The width, in pixels, of the region within the color texture the temporal scaler uses as its input.
 - [var inputHeight: Int](./mtlfxtemporalscalerbase/inputheight.md)
-  The height, in pixels, of the input color texture for this scaler.
+  The height, in pixels, of the input color texture for the temporal scaler.
 - [var inputWidth: Int](./mtlfxtemporalscalerbase/inputwidth.md)
-  The width, in pixels, of the input color texture for this scaler.
+  The width, in pixels, of the input color texture for the temporal scaler.
 - [var isDepthReversed: Bool](./mtlfxtemporalscalerbase/isdepthreversed.md)
   A Boolean value that indicates whether the depth texture uses zero to represent the farthest distance.
 - [var jitterOffsetX: Float](./mtlfxtemporalscalerbase/jitteroffsetx.md)
@@ -102,43 +102,43 @@ MetalFX doesn’t track that you assign the same texture instances to each prope
 - [var motionContentOffsetY: Int](./mtlfxtemporalscalerbase/motioncontentoffsety.md)
   The vertical offset, in pixels, of the region within the motion texture to use as input.
 - [var motionTexture: (any MTLTexture)?](./mtlfxtemporalscalerbase/motiontexture.md)
-  An input motion texture you set for the scaler that supports the correct color texture usage options.
+  An input motion texture you set for the temporal scaler that supports the correct motion texture usage options.
 - [var motionTextureFormat: MTLPixelFormat](./mtlfxtemporalscalerbase/motiontextureformat.md)
-  The pixel format of the input motion texture for this this scaler.
+  The pixel format of the input motion texture for the temporal scaler.
 - [var motionTextureUsage: MTLTextureUsage](./mtlfxtemporalscalerbase/motiontextureusage.md)
-  The minimal texture usage options that your app’s motion texture needs in order to support this scaler.
+  The minimal texture usage options that your app’s input motion texture must set to apply the temporal scaler.
 - [var motionVectorScaleX: Float](./mtlfxtemporalscalerbase/motionvectorscalex.md)
-  The horizontal scale factor the scaler applies to the input motion texture.
+  The horizontal scale factor the temporal scaler applies to the input motion texture.
 - [var motionVectorScaleY: Float](./mtlfxtemporalscalerbase/motionvectorscaley.md)
-  The vertical scale factor the scaler applies to the input motion texture.
+  The vertical scale factor the temporal scaler applies to the input motion texture.
 - [var outputHeight: Int](./mtlfxtemporalscalerbase/outputheight.md)
-  The height, in pixels, of the output color texture for this scaler.
+  The height, in pixels, of the output color texture for the temporal scaler.
 - [var outputOffsetX: Int](./mtlfxtemporalscalerbase/outputoffsetx.md)
   The horizontal offset, in pixels, of the region within the output texture to write results.
 - [var outputOffsetY: Int](./mtlfxtemporalscalerbase/outputoffsety.md)
   The vertical offset, in pixels, of the region within the output texture to write results.
 - [var outputTexture: (any MTLTexture)?](./mtlfxtemporalscalerbase/outputtexture.md)
-  The output texture into which this scaler writes its output.
+  An output texture that supports the correct depth texture usage options.
 - [var outputTextureFormat: MTLPixelFormat](./mtlfxtemporalscalerbase/outputtextureformat.md)
-  The pixel format of the output color texture for this this scaler.
+  The pixel format of the output color texture for the temporal scaler.
 - [var outputTextureUsage: MTLTextureUsage](./mtlfxtemporalscalerbase/outputtextureusage.md)
-  The minimal texture usage options that your output texture needs in order to support this scaler.
+  The minimal texture usage options that your app’s output texture must set to apply the temporal scaler.
 - [var outputWidth: Int](./mtlfxtemporalscalerbase/outputwidth.md)
-  The width, in pixels, of the output color texture for this scaler.
+  The width, in pixels, of the output color texture for the temporal scaler.
 - [var preExposure: Float](./mtlfxtemporalscalerbase/preexposure.md)
-  A pre-exposure value this scaler evaluates.
+  The exposure value that you’ve already applied to your color texture input.
 - [var reactiveMaskContentOffsetX: Int](./mtlfxtemporalscalerbase/reactivemaskcontentoffsetx.md)
   The horizontal offset, in pixels, of the region within the reactive mask texture to use as input.
 - [var reactiveMaskContentOffsetY: Int](./mtlfxtemporalscalerbase/reactivemaskcontentoffsety.md)
   The vertical offset, in pixels, of the region within the reactive mask texture to use as input.
 - [var reactiveMaskTexture: (any MTLTexture)?](./mtlfxtemporalscalerbase/reactivemasktexture.md)
-  The reactive-mask texture input this scaler uses.
+  A reactive-mask texture input you set for a temporal scaler that supports the correct usage options.
 - [var reactiveMaskTextureFormat: MTLPixelFormat](./mtlfxtemporalscalerbase/reactivemasktextureformat.md)
   The pixel format of the input reactive mask texture for this this scaler.
 - [var reactiveMaskTextureUsage: MTLTextureUsage](./mtlfxtemporalscalerbase/reactivemasktextureusage.md)
   The minimal texture usage options that your app’s reactive mask texture needs in order to support this scaler.
 - [var reactiveTextureUsage: MTLTextureUsage](./mtlfxtemporalscalerbase/reactivetextureusage.md)
-  The minimal texture usage options that your app’s reactive texture needs in order to support this scaler.
+  The minimal texture-usage options that your app’s reactive-mask texture input needs to have for the temporal scaler.
 - [var reset: Bool](./mtlfxtemporalscalerbase/reset.md)
   A Boolean that indicates whether the temporal scaler discards historical data from previous frames.
 

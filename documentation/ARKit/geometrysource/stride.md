@@ -28,8 +28,6 @@ var stride: Int { get }
   The number of scalar components in each vector in a geometry source.
 - [var offset: Int](./offset.md)
   The offset, in bytes, from the beginning of a geometry source’s buffer.
-- [var description: String](./description.md)
-  A textual representation of this geometry source.
 
 
 ---

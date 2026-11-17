@@ -29,11 +29,9 @@ If `primaryAngle` is present it can’t be included in [`secondaryAngles`](./sec
 
 ## See Also
 
-### Properties
+### Getting the lane angles
 - [var secondaryAngles: [Measurement<UnitAngle>]](./secondaryangles.md)
   A list of the remaining angles of this lane guidance.
-- [var status: CPLaneStatus](./status.md)
-  A value that describes the lane’s status.
 
 
 ---

@@ -1,6 +1,7 @@
 # Protocol implementations
 
-**Framework**: PencilKit
+**Framework**: PencilKit  
+**Role**: Article
 
 Access the interpolated slice’s implementations of protocol methods.
 

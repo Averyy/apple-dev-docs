@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Updates the playback control buttons the template displays.
+Updates the app-specific playback controls that appear in the lower region of the Now Playing interface.
 
 **Availability**:
 - iOS 14.0+
@@ -23,31 +23,17 @@ func updateNowPlayingButtons(_ nowPlayingButtons: [CPNowPlayingButton])
 
 ## Discussion
 
-You can provide a maximum of five playback control buttons. The template arranges the buttons using the array’s order, from the leading edge of the CarPlay screen to the trailing edge.
+The template arranges the buttons in the same order as they appear in the array, starting from the leading edge of the interface.
 
 ## Parameters
 
-- `nowPlayingButtons`: The array of buttons to display.
+- `nowPlayingButtons`: The array of buttons to display. Specify a maximum of five buttons in this array, and specify the buttons in the order you want them to appear.
 
 ## See Also
 
-### Managing the Template’s Buttons
+### Adding app-specific controls
 - [var nowPlayingButtons: [CPNowPlayingButton]](./nowplayingbuttons.md)
-  The Now Playing template’s playback control buttons.
-- [class CPNowPlayingButton](../cpnowplayingbutton.md)
-  The abstract base class that Now Playing template buttons use.
-- [class CPNowPlayingImageButton](../cpnowplayingimagebutton.md)
-  A button that displays an image.
-- [class CPNowPlayingAddToLibraryButton](../cpnowplayingaddtolibrarybutton.md)
-  A button for adding the current playing item to a collection.
-- [class CPNowPlayingMoreButton](../cpnowplayingmorebutton.md)
-  A button for presenting more options to the user.
-- [class CPNowPlayingPlaybackRateButton](../cpnowplayingplaybackratebutton.md)
-  A button for cycling through the available playback rates.
-- [class CPNowPlayingRepeatButton](../cpnowplayingrepeatbutton.md)
-  A button for cycling through the available repeat modes.
-- [class CPNowPlayingShuffleButton](../cpnowplayingshufflebutton.md)
-  A button for cycling through the available shuffle modes.
+  Additional app-specific playback controls to display in the lower region of the Now Playing interface.
 
 
 ---

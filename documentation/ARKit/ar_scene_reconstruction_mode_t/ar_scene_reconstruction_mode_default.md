@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Enumeration Case
 
+Scene reconstruction default mode. Generates a mesh of the world.
+
 **Availability**:
 - visionOS
 
@@ -17,6 +19,7 @@ ar_scene_reconstruction_mode_default
 
 ### Scene reconstruction modes
 - [ar_scene_reconstruction_mode_classification](./ar_scene_reconstruction_mode_classification.md)
+  Scene reconstruction classification mode. Generates a mesh of the world, along with a classification for each face.
 
 
 ---

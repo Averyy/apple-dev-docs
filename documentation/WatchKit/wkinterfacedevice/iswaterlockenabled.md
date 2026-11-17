@@ -19,6 +19,10 @@ var isWaterLockEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isWaterLockEnabled) BOOL waterLockEnabled;
 ```
 
+## Discussion
+
+> ⚠️ **Warning**:  Access this property only from the main thread. Accessing it from a background thread crashes your app.
+
 ## See Also
 
 ### Accessing Water Resistance and Lock

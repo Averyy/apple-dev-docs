@@ -4,8 +4,6 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The display type for the bar button.
-
 **Availability**:
 - iOS 12.0+ - Deprecated in 14.0
 - iPadOS 12.0+ - Deprecated in 14.0
@@ -23,11 +21,10 @@ var buttonType: CPBarButton.Type { get }
 
 ## See Also
 
-### Getting the Button Style
-- [var buttonStyle: CPBarButtonStyle](./buttonstyle.md)
-  The style to use when displaying the button.
-- [enum CPBarButtonStyle](../cpbarbuttonstyle.md)
-  The display style of a bar button.
+### Deprecated
+- [init(type: CPBarButton.Type, handler: CPBarButtonHandler?)](./init%28type,handler%29.md)
+- [CPBarButton.Type](./type.md)
+  Specifies the type of a @c CPBarButton.
 
 
 ---

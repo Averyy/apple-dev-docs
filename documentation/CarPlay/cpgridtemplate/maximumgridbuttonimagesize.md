@@ -25,6 +25,12 @@ class var maximumGridButtonImageSize: CGSize { get }
 
 To properly size your list images, your app should size them to the display scale of the car screen. See -[CPInterfaceController carTraitCollection].
 
+## See Also
+
+### Creating a grid template
+- [init(title: String?, gridButtons: [CPGridButton])](./init%28title,gridbuttons%29.md)
+  Creates a grid template with a title and a set of buttons.
+
 
 ---
 

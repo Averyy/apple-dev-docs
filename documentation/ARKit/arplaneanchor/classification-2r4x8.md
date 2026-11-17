@@ -22,7 +22,7 @@ On supported devices, ARKit automatically attempts to characterize each detected
 
 Plane classification can take longer than plane detection, and ARKit reports classifications only for planes where it has a high confidence in the result. If ARKit currently has no classification result for a plane, this property’s value is [`ARPlaneAnchor.Classification.none(_:)`](./classification-swift.enum/none%28_%29.md), with an associated [`ARPlaneAnchor.Classification.Status`](./classification-swift.enum/status.md) value indicating why.
 
-Plane classification is available only on iPhone XS, iPhone XS Max, and iPhone XR. Before using classification results, check the [`isClassificationSupported`](./isclassificationsupported.md) class property to make sure you’re on a supported device.
+Plane classification is available on iOS devices with an A12 Bionic chip or later. Before using classification results, check the [`isClassificationSupported`](./isclassificationsupported.md) class property to make sure you’re on a supported device.
 
 ## See Also
 

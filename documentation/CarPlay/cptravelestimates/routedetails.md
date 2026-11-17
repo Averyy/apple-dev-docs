@@ -21,6 +21,16 @@ var routeDetails: [CPRouteDetail] { get }
 @property (nonatomic, copy, readonly) NSArray<CPRouteDetail *> * routeDetails;
 ```
 
+## See Also
+
+### Getting travel estimates
+- [var distanceRemaining: Measurement<UnitLength>](./distanceremaining.md)
+  The remaining distance for the travel estimate.
+- [var distanceRemainingToDisplay: Measurement<UnitLength>](./distanceremainingtodisplay.md)
+  The distance remaining that the framework displays to a person, in the default units of measurement.
+- [var timeRemaining: TimeInterval](./timeremaining.md)
+  The remaining time for the travel estimate.
+
 
 ---
 

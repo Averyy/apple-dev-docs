@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Returns the index of the specified item.
+Returns the zero-based index of an item in the section.
 
 **Availability**:
 - iOS 12.0+
@@ -23,7 +23,11 @@ func index(of item: any CPListTemplateItem) -> Int
 
 ## Return Value
 
-The item’s index in the section, or [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) if the section doesn’t contain the item.
+The zero-based index of the item, or [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) if the item isn’t in the section.
+
+## Discussion
+
+Call this method to retrieve the index of an item in the [`items`](./items.md) array.
 
 ## Parameters
 
@@ -31,11 +35,11 @@ The item’s index in the section, or [`NSNotFound`](../../Foundation/nsnotfound
 
 ## See Also
 
-### Getting Items
+### Locating items in the section
 - [var items: [any CPListTemplateItem]](./items.md)
-  The list of items for the section.
+  The items in the section.
 - [func item(at: Int) -> any CPListTemplateItem](./item%28at%29.md)
-  Returns the item at the specified index.
+  Returns the item at the specified index in the section.
 
 
 ---

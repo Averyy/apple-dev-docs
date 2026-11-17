@@ -33,6 +33,14 @@ final func makePipeline(_ descriptor: LowLevelDeformation.Pipeline.Descriptor) t
 
 - `descriptor`: An object that describes the vertex layouts and deformer stages.
 
+## See Also
+
+### Creating deformation pipelines
+- [func makeDeformation(pipeline: LowLevelDeformation.Pipeline, descriptor: LowLevelDeformation.Descriptor) throws -> LowLevelDeformation](./makedeformation%28pipeline,descriptor%29.md)
+  Creates a deformation bound to a compiled pipeline.
+- [func makePipeline(LowLevelDeformation.Pipeline.Descriptor) throws -> LowLevelDeformation.Pipeline](./makepipeline%28_%29-5mxko.md)
+  Creates a compute pipeline synchronously.
+
 
 ---
 

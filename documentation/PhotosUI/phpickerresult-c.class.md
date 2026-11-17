@@ -26,6 +26,9 @@ Types that represent a selected asset from a person’s photo library.
   The selected asset’s local identifier.
 - [itemProvider](./phpickerresult-c.class/itemprovider.md)
   The supported representations of the selected asset.
+### Instance Methods
+- [- requestThumbnailImageURLForPreferredSize:resultHandler:](./phpickerresult-c.class/requestthumbnailimageurlforpreferredsize_resulthandler_.md)
+  Returns a thumbnail using the provided \c PHPickerResultThumbnailSize.
 
 ## Relationships
 

@@ -25,7 +25,7 @@ let value: Metric.Value
 
 ### Inspecting a result
 - [let name: String](./name.md)
-  The name of the metric, used as the DataFrame column name.
+  The name of the metric, which an [`Evaluation`](../evaluation.md) uses as the [`Column`](../../TabularData/column.md) name in its results.
 - [var doubleValue: Double?](./doublevalue.md)
   The numeric value of this metric.
 - [let rationale: String?](./rationale.md)

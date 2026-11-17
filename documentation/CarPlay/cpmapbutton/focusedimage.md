@@ -27,7 +27,7 @@ If `focusedImage` is nil, the button uses [`image`](./image.md) as the default, 
 
 ## See Also
 
-### Providing Button Images
+### Managing the images
 - [var image: UIImage?](./image.md)
   The image to display on the button.
 

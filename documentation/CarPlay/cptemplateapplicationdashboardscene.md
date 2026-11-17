@@ -44,17 +44,17 @@ You don’t create an instance of the dashboard scene directly. Instead, you spe
 
 ## Topics
 
-### Responding to the Dashboard Scene Life Cycle
+### Responding to the dashboard scene life cycle
 - [var delegate: (any CPTemplateApplicationDashboardSceneDelegate)?](./cptemplateapplicationdashboardscene/delegate.md)
   The object that receives the dashboard scene’s life-cycle events.
 - [protocol CPTemplateApplicationDashboardSceneDelegate](./cptemplateapplicationdashboardscenedelegate.md)
   The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
-### Accessing the Dashboard Controller
+### Accessing the dashboard controller
 - [var dashboardController: CPDashboardController](./cptemplateapplicationdashboardscene/dashboardcontroller.md)
   The controller that manages the dashboard scene’s shortcut buttons.
 - [class CPDashboardController](./cpdashboardcontroller.md)
   A controller that provides shortcut buttons for the CarPlay Dashboard.
-### Accessing the Dashboard Window
+### Accessing the dashboard window
 - [var dashboardWindow: UIWindow](./cptemplateapplicationdashboardscene/dashboardwindow.md)
   The window that belongs to the dashboard scene.
 
@@ -79,17 +79,15 @@ You don’t create an instance of the dashboard scene directly. Instead, you spe
 
 ## See Also
 
-### Navigation
-- [Integrating CarPlay with Your Navigation App](./integrating-carplay-with-your-navigation-app.md)
-  Configure your navigation app to work with CarPlay by displaying your custom map and directions.
+### Dashboard display
+- [class CPDashboardController](./cpdashboardcontroller.md)
+  A controller that provides shortcut buttons for the CarPlay Dashboard.
+- [class CPDashboardButton](./cpdashboardbutton.md)
+  A shortcut button for placement on the CarPlay Dashboard.
 - [protocol CPTemplateApplicationDashboardSceneDelegate](./cptemplateapplicationdashboardscenedelegate.md)
   The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
-- [class CPMapTemplate](./cpmaptemplate.md)
-  A template that displays a navigation overlay that your app draws on the map.
-- [class CPSearchTemplate](./cpsearchtemplate.md)
-  A template that provides the ability to search for a destination and see a list of search results.
-- [class CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
-  A template that displays a voice control indicator during audio input.
+- [CPSupportsDashboardNavigationScene](../BundleResources/information-property-list/uiapplicationscenemanifest/cpsupportsdashboardnavigationscene.md)
+  A Boolean value that indicates whether your app supports displaying navigation content in the CarPlay Dashboard.
 
 
 ---

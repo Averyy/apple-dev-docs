@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initialize a list image row item with a text string, an array of @c CPListImageRowItemCondensedElement and a boolean to allow multiple lines in this row.
+Initializes the row with the specified text and condensed-height elements.
 
 **Availability**:
 - iOS 26.0+
@@ -21,15 +21,27 @@ init(text: String?, condensedElements elements: [CPListImageRowItemCondensedElem
 - (instancetype) initWithText:(NSString *) text condensedElements:(NSArray<CPListImageRowItemCondensedElement *> *) elements allowsMultipleLines:(BOOL) allowsMultipleLines;
 ```
 
-## Discussion
+## Return Value
 
-If a nil @c text property is provided the cell will resize accordingly to hide the title.
+An initialized row with the specified condensed elements.
 
 ## Parameters
 
-- `text`: The text visible at the top of the cell.
-- `elements`: The list of @c CPListImageRowItemCondensedElement  elements visible below the text.
-- `allowsMultipleLines`: Determines if the elements could be visible on more than a single line.
+- `text`: The text to display above the row. Specify `nil` to omit the text.
+- `elements`: The condensed elements to display. Each element displays its image and text in a condensed-height format. Limit the number of items in this parameter to the value in [`CPMaximumNumberOfGridImages`](../cpmaximumnumberofgridimages.md). If your array contains more elements than the maximum, CarPlay doesn’t store references to elements past the maximum number.
+- `allowsMultipleLines`: `true` if you allow the row to display multiple lines of elements. Specify `false` to display only one line of elements. If this parameter is `false` and the number of displayable elements don’t fit on one line, CarPlay displays only as many elements as it can and ignores the rest.
+
+## See Also
+
+### Creating a list image row item
+- [init(text: String?, elements: [CPListImageRowItemRowElement], allowsMultipleLines: Bool)](./init%28text,elements,allowsmultiplelines%29.md)
+  Initializes the row with the specified text and row elements.
+- [init(text: String?, cardElements: [CPListImageRowItemCardElement], allowsMultipleLines: Bool)](./init%28text,cardelements,allowsmultiplelines%29.md)
+  Initializes the row with the specified text and card-style elements.
+- [init(text: String?, gridElements: [CPListImageRowItemGridElement], allowsMultipleLines: Bool)](./init%28text,gridelements,allowsmultiplelines%29.md)
+  Initializes the row with the specified text and grid elements.
+- [init(text: String?, imageGridElements: [CPListImageRowItemImageGridElement], allowsMultipleLines: Bool)](./init%28text,imagegridelements,allowsmultiplelines%29.md)
+  Initializes the row with the specified text and image grid elements.
 
 
 ---

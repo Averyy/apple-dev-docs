@@ -20,8 +20,6 @@ var originFromAnchorTransform: simd_float4x4 { get }
 ### Inspecting a world anchor
 - [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking a world anchor.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 
 
 ---

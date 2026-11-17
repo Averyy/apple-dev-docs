@@ -17,7 +17,7 @@ var parentFromJointTransform: simd_float4x4 { get }
 
 ## Discussion
 
-The root joint’s [`parentFromJointTransform`](./parentfromjointtransform.md) is an identity matrix.
+The root joint’s parent-from-joint transform is an identity matrix.
 
 ## See Also
 

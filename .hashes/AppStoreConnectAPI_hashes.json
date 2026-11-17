@@ -10178,7 +10178,7 @@
     },
     "https://developer.apple.com/documentation/appstoreconnectapi/game-center-groups": {
       "file_path": "documentation/AppStoreConnectAPI/game-center-groups.md",
-      "hash": "11e139ea5b23b9b9a4e4862b3c4a10551b6b78ffa72eca5d9e0a3adc80c6023f"
+      "hash": "02e0e58c70743dbb19233c2bcebf0989e07d9a6a1f76235c158e23101e41f00c"
     },
     "https://developer.apple.com/documentation/appstoreconnectapi/game-center-leaderboard-images": {
       "file_path": "documentation/AppStoreConnectAPI/game-center-leaderboard-images.md",
@@ -22039,6 +22039,10 @@
     "https://developer.apple.com/documentation/appstoreconnectapi/relationshiplinks": {
       "file_path": "documentation/AppStoreConnectAPI/relationshiplinks.md",
       "hash": "4ef3e3988ca4acdbaf3f602720b95b07445cc9ce76ea259a8dbaec95c9550637"
+    },
+    "https://developer.apple.com/documentation/appstoreconnectapi/replacing-an-app": {
+      "file_path": "documentation/AppStoreConnectAPI/replacing-an-app.md",
+      "hash": "a971ef7e4d1f62cdad43ca3b2b30b4cd4b0391133fc607b099a1cbc4df6cd04e"
     },
     "https://developer.apple.com/documentation/appstoreconnectapi/repositories": {
       "file_path": "documentation/AppStoreConnectAPI/repositories.md",
@@ -36290,7 +36294,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreconnectapi/game-center-groups.json": {
       "file_path": "documentation/AppStoreConnectAPI/game-center-groups.md",
-      "hash": "11e139ea5b23b9b9a4e4862b3c4a10551b6b78ffa72eca5d9e0a3adc80c6023f"
+      "hash": "02e0e58c70743dbb19233c2bcebf0989e07d9a6a1f76235c158e23101e41f00c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreconnectapi/game-center-leaderboard-images.json": {
       "file_path": "documentation/AppStoreConnectAPI/game-center-leaderboard-images.md",
@@ -48156,6 +48160,10 @@
       "file_path": "documentation/AppStoreConnectAPI/relationshiplinks.md",
       "hash": "4ef3e3988ca4acdbaf3f602720b95b07445cc9ce76ea259a8dbaec95c9550637"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreconnectapi/replacing-an-app.json": {
+      "file_path": "documentation/AppStoreConnectAPI/replacing-an-app.md",
+      "hash": "a971ef7e4d1f62cdad43ca3b2b30b4cd4b0391133fc607b099a1cbc4df6cd04e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstoreconnectapi/repositories.json": {
       "file_path": "documentation/AppStoreConnectAPI/repositories.md",
       "hash": "67deaddea2a5f2d18c4c282620b96adadbe8e22ce0f2b97c9d0ccb3e087fea23"
@@ -52242,6 +52250,6 @@
         "https://developer.apple.com/documentation/backgroundassets/downloading-asset-packs-hosted-by-apple"
       ]
     },
-    "total_pages": 13058
+    "total_pages": 13060
   }
 }

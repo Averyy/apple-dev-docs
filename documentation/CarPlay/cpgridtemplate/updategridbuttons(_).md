@@ -21,8 +21,9 @@ func updateGridButtons(_ gridButtons: [CPGridButton])
 
 ## See Also
 
-### Instance Methods
-- [func updateTitle(String)](./updatetitle%28_%29.md)
+### Getting the grid buttons
+- [var gridButtons: [CPGridButton]](./gridbuttons.md)
+  The array of grid buttons displayed on the template.
 
 
 ---

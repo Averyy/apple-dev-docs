@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Returns the item at the specified index.
+Returns the item at the specified index in the section.
 
 **Availability**:
 - iOS 12.0+
@@ -21,21 +21,21 @@ func item(at index: Int) -> any CPListTemplateItem
 - (id<CPListTemplateItem>) itemAtIndex:(NSUInteger) index;
 ```
 
-## Discussion
+## Return Value
 
-The index must be within the bounds of the [`items`](./items.md) array, otherwise, your app throws an exception.
+The item at the specified index.
 
 ## Parameters
 
-- `index`: The item’s index in the section.
+- `index`: The item’s zero-based index in the section. If you specify an index outside of the bounds of the [`items`](./items.md) array, this method raises an exception.
 
 ## See Also
 
-### Getting Items
+### Locating items in the section
 - [var items: [any CPListTemplateItem]](./items.md)
-  The list of items for the section.
+  The items in the section.
 - [func index(of: any CPListTemplateItem) -> Int](./index%28of%29.md)
-  Returns the index of the specified item.
+  Returns the zero-based index of an item in the section.
 
 
 ---

@@ -11,7 +11,6 @@ The assets required for the session are unavailable.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
-- tvOS 27.3+ (Beta)
 - visionOS 27.0+
 
 ## Declaration

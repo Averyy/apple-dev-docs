@@ -24,7 +24,7 @@ struct MultiSeatInfo
 ## Topics
 
 ### Getting the invitation model
-- [let invitationManagement: Transaction.MultiSeatInfo.InvitationManagement](./multiseatinfo-swift.struct/invitationmanagement-swift.property.md)
+- [let invitationManagement: Transaction.MultiSeatInfo.InvitationManagement?](./multiseatinfo-swift.struct/invitationmanagement-swift.property.md)
   The invitation model of the multiseat subscription, either Apple-hosted or developer-hosted invitations.
 - [Transaction.MultiSeatInfo.InvitationManagement](./multiseatinfo-swift.struct/invitationmanagement-swift.struct.md)
   Values that indicate whether Apple or you host the invitations for a multiseat subscription.

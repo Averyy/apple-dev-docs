@@ -32,9 +32,12 @@ A newly initialized travel estimates object.
 
 ## See Also
 
-### Creating a Travel Estimates Object
+### Creating travel estimates
 - [init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining: TimeInterval)](./init%28distanceremaining,distanceremainingtodisplay,timeremaining%29.md)
   Creates a travel estimates instance with the distance remaining that the framework displays to a person.
+- [init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining: TimeInterval, routeDetails: [CPRouteDetail])](./init%28distanceremaining,distanceremainingtodisplay,timeremaining,routedetails%29.md)
+  Initialize a @c CPTravelEstimates with distance, distance to display, time remaining, and additional trip information.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

@@ -23,7 +23,7 @@ protocol BrowserEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var clearHistoryTimeFrame: some AppSchemaEnum](./browserenum/clearhistorytimeframe.md)
-  An enum schema for a clear history time frame parameter.
+  An enum schema for a clear history time frame.
 
 ## Relationships
 
@@ -36,7 +36,7 @@ protocol BrowserEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var clearHistoryTimeFrame: some AppSchemaEnum](./browserenum/clearhistorytimeframe.md)
-  An enum schema for a clear history time frame parameter.
+  An enum schema for a clear history time frame.
 
 
 ---

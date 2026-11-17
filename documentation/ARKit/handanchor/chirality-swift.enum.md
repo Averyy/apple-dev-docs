@@ -49,8 +49,6 @@ enum Chirality
   The chirality of this hand.
 - [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking this hand.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 
 
 ---

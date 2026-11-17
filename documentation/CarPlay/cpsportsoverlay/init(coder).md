@@ -15,6 +15,12 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating a sports overlay
+- [init(leftTeam: CPNowPlayingSportsTeam, rightTeam: CPNowPlayingSportsTeam, eventStatus: CPNowPlayingSportsEventStatus?)](./init%28leftteam,rightteam,eventstatus%29.md)
+  Creates a now playing mode object configured with the specified team and sporting event information.
+
 
 ---
 

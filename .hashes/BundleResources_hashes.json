@@ -98,7 +98,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/data-and-storage": {
       "file_path": "documentation/BundleResources/data-and-storage.md",
-      "hash": "86e1252af4db23768b013c45b7d2dadd9c21130fbec28f1c3be07b5de6a8ebd8"
+      "hash": "addb4d6ba79278d58cdb4619a9911a246b4a621d3675ac1536a0dfd0d0dab174"
     },
     "https://developer.apple.com/documentation/bundleresources/describing-data-use-in-privacy-manifests": {
       "file_path": "documentation/BundleResources/describing-data-use-in-privacy-manifests.md",
@@ -1206,7 +1206,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/apfiles": {
       "file_path": "documentation/BundleResources/information-property-list/apfiles.md",
-      "hash": "cfe8203011aab607d49ae40b76612417581d673e6e78810d9eae861809911712"
+      "hash": "49234ece5af6551327d294c382b43854debdb99de7d60e73b462a8bb52ae0bee"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/apfiles/apdisplayedascontainer": {
       "file_path": "documentation/BundleResources/information-property-list/apfiles/apdisplayedascontainer.md",
@@ -1234,7 +1234,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/apinstallerurl": {
       "file_path": "documentation/BundleResources/information-property-list/apinstallerurl.md",
-      "hash": "9ed12c31212af1737fa83cc32fda50c51d483637ba53303816a9adcd8c9a97e5"
+      "hash": "cc459cd306aa89c75ca173104657c4ae968ab6603f02d14d5b084d0d134999e4"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/approvedstreamingendpoints": {
       "file_path": "documentation/BundleResources/information-property-list/approvedstreamingendpoints.md",
@@ -1438,7 +1438,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname": {
       "file_path": "documentation/BundleResources/information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname.md",
-      "hash": "85155156a74813dd0c37a7b8e4662cf20270114bb2b2f00a50f309e572f8620e"
+      "hash": "ea81f04599508b1202828ec6d521fdbb2836b5e2f2ae25ac9a741ec42a54ceeb"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconactiontintcolorname": {
       "file_path": "documentation/BundleResources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconactiontintcolorname.md",
@@ -1554,7 +1554,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/csresourcesfilemapped": {
       "file_path": "documentation/BundleResources/information-property-list/csresourcesfilemapped.md",
-      "hash": "5b9cfdcb9891abd63af0dbf2c953df7fd6c1af152b60dde2aa059ca47ca3ae4e"
+      "hash": "1c8fbf734a169bb18e0840d826b8c386c7ec95c4213d81f540c3c613a4534a84"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/eligibleforadattributionkitreengagementpostbackcopies": {
       "file_path": "documentation/BundleResources/information-property-list/eligibleforadattributionkitreengagementpostbackcopies.md",
@@ -1726,7 +1726,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/lsfilequarantineenabled": {
       "file_path": "documentation/BundleResources/information-property-list/lsfilequarantineenabled.md",
-      "hash": "46f485e5920ea10f2cc50c7314eb0b4fe16878879aced63637d9669d3ad9b8f1"
+      "hash": "6ca4280968d767abb60f6bacbfd3e2e42482446290a776630149277ec5bc0e51"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/lsgetappdiedevents": {
       "file_path": "documentation/BundleResources/information-property-list/lsgetappdiedevents.md",
@@ -1938,7 +1938,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/nsbonjourservices": {
       "file_path": "documentation/BundleResources/information-property-list/nsbonjourservices.md",
-      "hash": "862db6154e73b3fbfa82c5924d3a7333aee1b392380d4ca508093d81e7af86d7"
+      "hash": "35927759592d600c5557d1dc7e521cd4dba8393d20c18a2ffe8e9ba53d7de9d1"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/nscalendarsfullaccessusagedescription": {
       "file_path": "documentation/BundleResources/information-property-list/nscalendarsfullaccessusagedescription.md",
@@ -2474,7 +2474,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/nslocalnetworkusagedescription": {
       "file_path": "documentation/BundleResources/information-property-list/nslocalnetworkusagedescription.md",
-      "hash": "ed272f7e2601da6eb7d1c139c872666723bc5f6cd5e410a0857f02751def7050"
+      "hash": "47dcf86fb1bb35b7211a42ace2cd137e8a04ae9b3c5212edec787dc0ad702d85"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription": {
       "file_path": "documentation/BundleResources/information-property-list/nslocationalwaysandwheninuseusagedescription.md",
@@ -2890,7 +2890,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/nssupportspurgeablelocalstorage": {
       "file_path": "documentation/BundleResources/information-property-list/nssupportspurgeablelocalstorage.md",
-      "hash": "ea1d5e9ce718e342c3d95ccf004e56ff15f9e8f9e0ea938d9148e2edbd9e81bc"
+      "hash": "bd67e1a6ce6c7260725b1e93a2086e42e43cc14b56e0329c6494542bedc4fc59"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/nssupportssuddentermination": {
       "file_path": "documentation/BundleResources/information-property-list/nssupportssuddentermination.md",
@@ -3098,11 +3098,11 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/cpsupportsdashboardnavigationscene": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/cpsupportsdashboardnavigationscene.md",
-      "hash": "93300584bbcbd6db9feee4f8b3952a2282c7e61007039445072986ea1bb5f6f7"
+      "hash": "f9e59dbdfbe77ce19ec4d327b9db72bafea7b1909fa74a9bff6e4687e41bcc5d"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/cpsupportsinstrumentclusternavigationscene": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/cpsupportsinstrumentclusternavigationscene.md",
-      "hash": "8d1f67049fa9d2ed20907bb5adb3dd706f34fb63cbb1ecabf70b829bae906cf8"
+      "hash": "d9d418df65dd78973b41376ea223d75b11aafa43d77d00aff17e2a5bf21d42cc"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes.md",
@@ -3114,7 +3114,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations.md",
-      "hash": "f498ba1cbf679b1294b35faf33a31bfdb2eb47717cc526879ddc3708e7b0cc2e"
+      "hash": "e3c2238881184326c8b4591e493f836db5b510a2667a0a68f0b90c74d8740db1"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cpscenesessionroleimmersivespaceapplication": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cpscenesessionroleimmersivespaceapplication.md",
@@ -3122,7 +3122,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationdashboardscenesessionroleapplication": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationdashboardscenesessionroleapplication.md",
-      "hash": "276209f7a88ded17dc9cd5ae35d5db6272010b7c1d5bf2abd340e0467749c000"
+      "hash": "fdf017ecfb162afdc8fba309e77000d27ac328758e0763d7a606065c771d948f"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationdashboardscenesessionroleapplication/uisceneclassname": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationdashboardscenesessionroleapplication/uisceneclassname.md",
@@ -3138,11 +3138,11 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md",
-      "hash": "367e8b970efdc1163c17d0c25190902522efff7c9a3e7c270147cd1b934e715a"
+      "hash": "e139e675a995c5c3e541ffcc87136fe982ec5ecbaf43ede108f2f294ed57b9dd"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uisceneclassname": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uisceneclassname.md",
-      "hash": "fc7becbd74620f66a99fe78a03495fd1cd1fc6521477486c76b9dfa72a18e0f4"
+      "hash": "e2b16d49ed5087ee98729d8773f4a976720f216de36fdbd3f2f5fbbf1e3b8fea"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uisceneconfigurationname": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uisceneconfigurationname.md",
@@ -3150,15 +3150,15 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uiscenedelegateclassname": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uiscenedelegateclassname.md",
-      "hash": "c5f822a7f65fd8fbe8b90831521c22aff58f23b4d39faa358cd080494639c7d7"
+      "hash": "de99b78d12f9654cc54fd191e7a0399a5a4e757886871e567c2d11c69e92dabd"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication.md",
-      "hash": "92e7de6d24d2b95cc6b32608631628308223c410e80170d76aa0f457f9c6b72d"
+      "hash": "22197e91c92a28b706db9b700794aa0a8fc7e5946f533742931ff458b5d4a83d"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uisceneclassname": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uisceneclassname.md",
-      "hash": "a317f8600b3fe7ad8c53543ba46ee4fd72b039f68d182b56ad051a2e8b88aeee"
+      "hash": "50768417f7acf673ae8f38bef32398487c9d98e8cce72a82251d58e6dce786ce"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uisceneconfigurationname": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uisceneconfigurationname.md",
@@ -3166,7 +3166,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uiscenedelegateclassname": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uiscenedelegateclassname.md",
-      "hash": "2950e5fc31a1ce01c68caadfc72bdd482e08e0812fc1b5169c4770d6beafcebb"
+      "hash": "3c4e885ec587e49b092eaebc5fe22596d8900a646923bd8b8143d7b2f9d01e52"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication.md",
@@ -3262,7 +3262,7 @@
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uifilesharingenabled": {
       "file_path": "documentation/BundleResources/information-property-list/uifilesharingenabled.md",
-      "hash": "6d2f9a5e9f4b2b745cb2eae154f369aa9ad9312150967e520470bffbeaa3fcc5"
+      "hash": "9602c0a5f44d3522d3c7b083df732369641bbce057354d41e4cd551e2fcf815e"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/uiinterfaceorientation": {
       "file_path": "documentation/BundleResources/information-property-list/uiinterfaceorientation.md",
@@ -3818,7 +3818,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/data-and-storage.json": {
       "file_path": "documentation/BundleResources/data-and-storage.md",
-      "hash": "86e1252af4db23768b013c45b7d2dadd9c21130fbec28f1c3be07b5de6a8ebd8"
+      "hash": "addb4d6ba79278d58cdb4619a9911a246b4a621d3675ac1536a0dfd0d0dab174"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/describing-data-use-in-privacy-manifests.json": {
       "file_path": "documentation/BundleResources/describing-data-use-in-privacy-manifests.md",
@@ -4926,7 +4926,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/apfiles.json": {
       "file_path": "documentation/BundleResources/information-property-list/apfiles.md",
-      "hash": "cfe8203011aab607d49ae40b76612417581d673e6e78810d9eae861809911712"
+      "hash": "49234ece5af6551327d294c382b43854debdb99de7d60e73b462a8bb52ae0bee"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/apfiles/apdisplayedascontainer.json": {
       "file_path": "documentation/BundleResources/information-property-list/apfiles/apdisplayedascontainer.md",
@@ -4954,7 +4954,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/apinstallerurl.json": {
       "file_path": "documentation/BundleResources/information-property-list/apinstallerurl.md",
-      "hash": "9ed12c31212af1737fa83cc32fda50c51d483637ba53303816a9adcd8c9a97e5"
+      "hash": "cc459cd306aa89c75ca173104657c4ae968ab6603f02d14d5b084d0d134999e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/approvedstreamingendpoints.json": {
       "file_path": "documentation/BundleResources/information-property-list/approvedstreamingendpoints.md",
@@ -5158,7 +5158,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname.json": {
       "file_path": "documentation/BundleResources/information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname.md",
-      "hash": "85155156a74813dd0c37a7b8e4662cf20270114bb2b2f00a50f309e572f8620e"
+      "hash": "ea81f04599508b1202828ec6d521fdbb2836b5e2f2ae25ac9a741ec42a54ceeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconactiontintcolorname.json": {
       "file_path": "documentation/BundleResources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconactiontintcolorname.md",
@@ -5274,7 +5274,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/csresourcesfilemapped.json": {
       "file_path": "documentation/BundleResources/information-property-list/csresourcesfilemapped.md",
-      "hash": "5b9cfdcb9891abd63af0dbf2c953df7fd6c1af152b60dde2aa059ca47ca3ae4e"
+      "hash": "1c8fbf734a169bb18e0840d826b8c386c7ec95c4213d81f540c3c613a4534a84"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/eligibleforadattributionkitreengagementpostbackcopies.json": {
       "file_path": "documentation/BundleResources/information-property-list/eligibleforadattributionkitreengagementpostbackcopies.md",
@@ -5446,7 +5446,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/lsfilequarantineenabled.json": {
       "file_path": "documentation/BundleResources/information-property-list/lsfilequarantineenabled.md",
-      "hash": "46f485e5920ea10f2cc50c7314eb0b4fe16878879aced63637d9669d3ad9b8f1"
+      "hash": "6ca4280968d767abb60f6bacbfd3e2e42482446290a776630149277ec5bc0e51"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/lsgetappdiedevents.json": {
       "file_path": "documentation/BundleResources/information-property-list/lsgetappdiedevents.md",
@@ -5658,7 +5658,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nsbonjourservices.json": {
       "file_path": "documentation/BundleResources/information-property-list/nsbonjourservices.md",
-      "hash": "862db6154e73b3fbfa82c5924d3a7333aee1b392380d4ca508093d81e7af86d7"
+      "hash": "35927759592d600c5557d1dc7e521cd4dba8393d20c18a2ffe8e9ba53d7de9d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nscalendarsfullaccessusagedescription.json": {
       "file_path": "documentation/BundleResources/information-property-list/nscalendarsfullaccessusagedescription.md",
@@ -6194,7 +6194,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nslocalnetworkusagedescription.json": {
       "file_path": "documentation/BundleResources/information-property-list/nslocalnetworkusagedescription.md",
-      "hash": "ed272f7e2601da6eb7d1c139c872666723bc5f6cd5e410a0857f02751def7050"
+      "hash": "47dcf86fb1bb35b7211a42ace2cd137e8a04ae9b3c5212edec787dc0ad702d85"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription.json": {
       "file_path": "documentation/BundleResources/information-property-list/nslocationalwaysandwheninuseusagedescription.md",
@@ -6610,7 +6610,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nssupportspurgeablelocalstorage.json": {
       "file_path": "documentation/BundleResources/information-property-list/nssupportspurgeablelocalstorage.md",
-      "hash": "ea1d5e9ce718e342c3d95ccf004e56ff15f9e8f9e0ea938d9148e2edbd9e81bc"
+      "hash": "bd67e1a6ce6c7260725b1e93a2086e42e43cc14b56e0329c6494542bedc4fc59"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nssupportssuddentermination.json": {
       "file_path": "documentation/BundleResources/information-property-list/nssupportssuddentermination.md",
@@ -6818,11 +6818,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/cpsupportsdashboardnavigationscene.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/cpsupportsdashboardnavigationscene.md",
-      "hash": "93300584bbcbd6db9feee4f8b3952a2282c7e61007039445072986ea1bb5f6f7"
+      "hash": "f9e59dbdfbe77ce19ec4d327b9db72bafea7b1909fa74a9bff6e4687e41bcc5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/cpsupportsinstrumentclusternavigationscene.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/cpsupportsinstrumentclusternavigationscene.md",
-      "hash": "8d1f67049fa9d2ed20907bb5adb3dd706f34fb63cbb1ecabf70b829bae906cf8"
+      "hash": "d9d418df65dd78973b41376ea223d75b11aafa43d77d00aff17e2a5bf21d42cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes.md",
@@ -6834,7 +6834,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations.md",
-      "hash": "f498ba1cbf679b1294b35faf33a31bfdb2eb47717cc526879ddc3708e7b0cc2e"
+      "hash": "e3c2238881184326c8b4591e493f836db5b510a2667a0a68f0b90c74d8740db1"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cpscenesessionroleimmersivespaceapplication.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cpscenesessionroleimmersivespaceapplication.md",
@@ -6842,7 +6842,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationdashboardscenesessionroleapplication.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationdashboardscenesessionroleapplication.md",
-      "hash": "276209f7a88ded17dc9cd5ae35d5db6272010b7c1d5bf2abd340e0467749c000"
+      "hash": "fdf017ecfb162afdc8fba309e77000d27ac328758e0763d7a606065c771d948f"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationdashboardscenesessionroleapplication/uisceneclassname.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationdashboardscenesessionroleapplication/uisceneclassname.md",
@@ -6858,11 +6858,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md",
-      "hash": "367e8b970efdc1163c17d0c25190902522efff7c9a3e7c270147cd1b934e715a"
+      "hash": "e139e675a995c5c3e541ffcc87136fe982ec5ecbaf43ede108f2f294ed57b9dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uisceneclassname.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uisceneclassname.md",
-      "hash": "fc7becbd74620f66a99fe78a03495fd1cd1fc6521477486c76b9dfa72a18e0f4"
+      "hash": "e2b16d49ed5087ee98729d8773f4a976720f216de36fdbd3f2f5fbbf1e3b8fea"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uisceneconfigurationname.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uisceneconfigurationname.md",
@@ -6870,15 +6870,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uiscenedelegateclassname.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uiscenedelegateclassname.md",
-      "hash": "c5f822a7f65fd8fbe8b90831521c22aff58f23b4d39faa358cd080494639c7d7"
+      "hash": "de99b78d12f9654cc54fd191e7a0399a5a4e757886871e567c2d11c69e92dabd"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication.md",
-      "hash": "92e7de6d24d2b95cc6b32608631628308223c410e80170d76aa0f457f9c6b72d"
+      "hash": "22197e91c92a28b706db9b700794aa0a8fc7e5946f533742931ff458b5d4a83d"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uisceneclassname.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uisceneclassname.md",
-      "hash": "a317f8600b3fe7ad8c53543ba46ee4fd72b039f68d182b56ad051a2e8b88aeee"
+      "hash": "50768417f7acf673ae8f38bef32398487c9d98e8cce72a82251d58e6dce786ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uisceneconfigurationname.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uisceneconfigurationname.md",
@@ -6886,7 +6886,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uiscenedelegateclassname.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uiscenedelegateclassname.md",
-      "hash": "2950e5fc31a1ce01c68caadfc72bdd482e08e0812fc1b5169c4770d6beafcebb"
+      "hash": "3c4e885ec587e49b092eaebc5fe22596d8900a646923bd8b8143d7b2f9d01e52"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication.md",
@@ -6982,7 +6982,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uifilesharingenabled.json": {
       "file_path": "documentation/BundleResources/information-property-list/uifilesharingenabled.md",
-      "hash": "6d2f9a5e9f4b2b745cb2eae154f369aa9ad9312150967e520470bffbeaa3fcc5"
+      "hash": "9602c0a5f44d3522d3c7b083df732369641bbce057354d41e4cd551e2fcf815e"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/uiinterfaceorientation.json": {
       "file_path": "documentation/BundleResources/information-property-list/uiinterfaceorientation.md",

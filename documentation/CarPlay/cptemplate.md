@@ -30,10 +30,7 @@ You don’t use this class directly, or create your own subclasses. Instead, you
 
 ## Topics
 
-### Accessing Template Information
-- [var userInfo: Any?](./cptemplate/userinfo.md)
-  Any custom data or object that you want to associate with the template.
-### Accessing Tab Information
+### Accessing tab information
 - [var tabTitle: String?](./cptemplate/tabtitle.md)
   A short title that describes the content of the tab.
 - [var tabImage: UIImage?](./cptemplate/tabimage.md)
@@ -42,6 +39,9 @@ You don’t use this class directly, or create your own subclasses. Instead, you
   A system object that provides a title and image for common tab content, such as contacts or favorites.
 - [var showsTabBadge: Bool](./cptemplate/showstabbadge.md)
   An indicator you use to call attention to the tab.
+### Accessing app-specific details
+- [var userInfo: Any?](./cptemplate/userinfo.md)
+  Any custom data or object that you want to associate with the template.
 ### Initializers
 - [init?(coder: NSCoder)](./cptemplate/init%28coder%29.md)
 
@@ -75,15 +75,19 @@ You don’t use this class directly, or create your own subclasses. Instead, you
 
 ## See Also
 
-### General Purpose Templates
-- [class CPListTemplate](./cplisttemplate.md)
-  A template that displays and manages a list of items.
-- [class CPGridTemplate](./cpgridtemplate.md)
-  A template that displays and manages a grid of items.
-- [class CPTabBarTemplate](./cptabbartemplate.md)
-  A container template that displays and manages other templates, presenting them as tabs.
-- [protocol CPBarButtonProviding](./cpbarbuttonproviding.md)
-  The methods that templates use to provide buttons for the navigation bar.
+### Common types
+- [class CPTextButton](./cptextbutton.md)
+  A button that displays a stylized title.
+- [class CPButton](./cpbutton.md)
+  A button that displays an image and invokes a handler when the user taps it.
+- [class CPImageSet](./cpimageset.md)
+  Light and dark representations of an image.
+- [class CPPanel](./cppanel.md)
+  A type that provides the common behaviors for panels you display on top of your app’s content.
+- [class CPPanelItem](./cppanelitem.md)
+  A type that provides the common behaviors for items you display in a section of a panel.
+- [class CPPanelButtonConfiguration](./cppanelbuttonconfiguration.md)
+  A type that provides the common behaviors for a button layout in a panel.
 
 
 ---

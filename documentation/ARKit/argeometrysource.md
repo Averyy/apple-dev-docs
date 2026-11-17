@@ -22,7 +22,7 @@ class ARGeometrySource
 
 ## Overview
 
-Mesh-anchor geometry ([`ARMeshGeometry`](./armeshgeometry.md)) uses geometry sources to hold 3D data like vertices, and normals, in an efficent, array-like format. A Metal buffer wraps the data, and other properties specify  how to interpret that data.
+Mesh-anchor geometry ([`ARMeshGeometry`](./armeshgeometry.md)) uses geometry sources to hold 3D data like vertices, and normals, in an efficient, array-like format. A Metal buffer wraps the data, and other properties specify how to interpret that data.
 
 In the case that [`componentsPerVector`](./argeometrysource/componentspervector.md) is greater than 1, the element type of the geometry-source array is itself a sequence (pairs, triplets, and so on).
 

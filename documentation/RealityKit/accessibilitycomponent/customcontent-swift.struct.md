@@ -50,6 +50,7 @@ struct CustomContent
 - [AccessibilityComponent.RotorType](./rotortype.md)
   A context-sensitive event that helps VoiceOver users find the next instance of a related element.
 - [enum AccessibilityEvents](../accessibilityevents.md)
+  Events that occur when a person uses assistive technology to act on an accessibility element.
 
 
 ---

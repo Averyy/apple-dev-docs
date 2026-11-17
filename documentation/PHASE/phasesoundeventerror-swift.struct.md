@@ -25,6 +25,8 @@ struct PHASESoundEventError
 ### Creating an Error
 - [PHASESoundEventError.Code](./phasesoundeventerror-swift.struct/code.md)
   Codes that identify sound event errors.
+### Inspecting Error Information
+- [static var errorDomain: String](./phasesoundeventerror-swift.struct/errordomain.md)
 ### Identifying an Error Cause
 - [static var apiMisuse: PHASESoundEventError.Code](./phasesoundeventerror-swift.struct/apimisuse.md)
   An error that indicates the app misconfigures data or calls the framework in unsupported succession.
@@ -38,8 +40,6 @@ struct PHASESoundEventError
   An error the framework throws when a sound event depletes system memory.
 - [static var systemNotInitialized: PHASESoundEventError.Code](./phasesoundeventerror-swift.struct/systemnotinitialized.md)
   An error the framework throws when engine initialization interrupts sound event playback.
-### Type Properties
-- [static var errorDomain: String](./phasesoundeventerror-swift.struct/errordomain.md)
 
 ## Relationships
 

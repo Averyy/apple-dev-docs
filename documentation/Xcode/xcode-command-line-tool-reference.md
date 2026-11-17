@@ -54,9 +54,9 @@ Xcode includes a set of command-line tools that only ship with the app, such as 
 - **`ibtool`**: Compile, print, update, and verify Interface Builder documents. To learn more about this command, enter `man ibtool` in Terminal.
 - **`xcstringstool`**: Generate string tables from source code. To learn more about this command, enter `xcrun xcstringstool help` in Terminal.
 
-### Manage the Simulator
+### Manage a simulator
 
-- **`simctl`**: Control the Simulator. To learn more about this command, enter `xcrun simctl help` in Terminal.
+- **`simctl`**: Control a simulated device in Device Hub. To learn more about this command, enter `xcrun simctl help` in Terminal or see [Interacting with devices using the command line](./interacting-with-devices-using-the-command-line.md).
 
 ## See Also
 

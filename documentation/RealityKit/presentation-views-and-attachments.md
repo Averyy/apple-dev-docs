@@ -28,6 +28,11 @@ Views are the building blocks for apps that include RealityKit content. Each vie
   A collection of entities in a RealityView.
 - [struct RealityViewLayoutOption](./realityviewlayoutoption.md)
   Options that specify the frame sizing and content alignment option for `RealityView`.
+- [func realityViewLayoutBehavior(RealityViewLayoutOption) -> some View
+](../SwiftUI/view/realityviewlayoutbehavior%28_%29.md)
+  A view modifier that controls the frame sizing and content alignment behavior for `RealityView`
+- [var realityKitScene: Scene?](../SwiftUI/environmentvalues/realitykitscene.md)
+- [subscript(_:)](../SwiftUI/binding/subscript%28_%29.md)
 - [protocol EntityCollection](./entitycollection.md)
   An ordered, mutable collection of entities.
 ### SwiftUI 3D model presentation
@@ -108,10 +113,19 @@ Views are the building blocks for apps that include RealityKit content. Each vie
   A 3D coordinate space that exists within a RealityKit hierarchy.
 - [protocol RealityCoordinateSpaceProjecting](./realitycoordinatespaceprojecting.md)
   A protocol for coordinate spaces that can project 2D points to and from 3D.
+- [init(BoundingBox)](../Spatial/rect3d/init%28_%29-b16k.md)
+- [init(Transform)](../Spatial/affinetransform3d/init%28_%29-e2xx.md)
+  Creates an affine transform from the specified transform.
 ### Camera mode settings
 - [struct RealityViewCamera](./realityviewcamera.md)
   A camera for reality view scenes, that can be world tracking or virtual.
 - [struct CameraControls](./cameracontrols.md)
+  Options that determine how people use gestures to pan, orbit, tilt, or dolly a virtual camera.
+- [func realityViewCameraControls(CameraControls) -> some View
+](../SwiftUI/view/realityviewcameracontrols%28_%29.md)
+  Adds gestures that control the position and direction of a virtual camera.
+- [var realityViewCameraControls: CameraControls](../SwiftUI/environmentvalues/realityviewcameracontrols.md)
+  The camera controls for the reality view.
 - [ARView.CameraMode](./arview/cameramode-swift.enum.md)
   The available camera modes.
 ### Attachment types
@@ -120,10 +134,13 @@ Views are the building blocks for apps that include RealityKit content. Each vie
 - [protocol AttachmentContent](./attachmentcontent.md)
   A type that provides content for an attachment content builder.
 - [struct TuplePackAttachmentContent](./tuplepackattachmentcontent.md)
+  Attachment content that combines any number of attachment content values from an attachment content builder.
 - [struct ConditionalAttachmentContent](./conditionalattachmentcontent.md)
+  Attachment content that holds the result of one branch of a conditional statement in an attachment content builder.
 - [struct EmptyAttachmentContent](./emptyattachmentcontent.md)
   A attachment content that doesn’t contain any content.
 - [struct TupleAttachmentContent](./tupleattachmentcontent.md)
+  Attachment content that wraps a tuple of attachment content values.
 - [struct AnyAttachmentContent](./anyattachmentcontent.md)
   A type-erased attachment content.
 ### UIKit and AppKit presentation

@@ -49,7 +49,7 @@ The behavior of a hit test depends on which `types` you specify and the order yo
 - [var anchors: [ARAnchor]](./anchors.md)
   The list of anchors representing positions tracked or objects detected in the scene.
 - [func raycastQuery(from: CGPoint, allowing: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment) -> ARRaycastQuery](./raycastquery%28from,allowing,alignment%29.md)
-  Get a ray-cast query for a screen point.
+  Creates a raycast query for a screen point.
 
 
 ---

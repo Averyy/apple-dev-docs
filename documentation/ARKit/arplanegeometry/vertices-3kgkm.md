@@ -22,7 +22,7 @@ Each `float3` value in this buffer represents the position of a vertex in the me
 
 The [`vertexCount`](./vertexcount.md) property provides the number of elements in the buffer.
 
-This buffer, together with the [`triangleIndices`](./triangleindices-1azi3.md) buffer, describes a  mesh covering the entire surface of the plane. Use this mesh for purposes that involve the filled shape, such as rendering a solid 3D representation of the surface. If, instead, you only need to know the outline of the shape, see the [`boundaryVertices`](./boundaryvertices-6nbee.md) property.
+This buffer, together with the [`triangleIndices`](./triangleindices-1azi3.md) buffer, describes a mesh covering the entire surface of the plane. Use this mesh for purposes that involve the filled shape, such as rendering a solid 3D representation of the surface. If, instead, you only need to know the outline of the shape, see the [`boundaryVertices`](./boundaryvertices-6nbee.md) property.
 
 ## See Also
 

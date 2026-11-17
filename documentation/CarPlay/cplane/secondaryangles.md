@@ -29,11 +29,9 @@ This doesn’t include the `primaryAngle`.
 
 ## See Also
 
-### Properties
+### Getting the lane angles
 - [var primaryAngle: Measurement<UnitAngle>](./primaryangle.md)
   A value that represents the angle the framework highlights if this lane is preferred or good.
-- [var status: CPLaneStatus](./status.md)
-  A value that describes the lane’s status.
 
 
 ---

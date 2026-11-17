@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-The plane is in a horizontal oriention.
+The plane is in a horizontal orientation.
 
 **Availability**:
 - visionOS 1.0+
@@ -20,6 +20,8 @@ case horizontal
 ### Alignment Values
 - [PlaneAnchor.Alignment.vertical](./vertical.md)
   The plane is in a vertical orientation.
+- [PlaneAnchor.Alignment.slanted](./slanted.md)
+  The plane is in a slanted orientation.
 
 
 ---

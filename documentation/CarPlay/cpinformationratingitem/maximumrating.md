@@ -27,7 +27,7 @@ This property is an [`NSNumber`](../../Foundation/nsnumber.md) that contains a v
 
 ## See Also
 
-### Accessing the Item’s Attributes
+### Accessing the item’s attributes
 - [var rating: NSNumber?](./rating.md)
   The current rating that the template displays.
 

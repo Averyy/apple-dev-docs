@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Type Property
 
-Indicates that the car is limiting the keyboard display.
+A type that indicates the vehicle limits the display of virtual keyboards.
 
 **Availability**:
 - iOS 12.0+
@@ -23,9 +23,9 @@ CPLimitableUserInterfaceKeyboard
 
 ## See Also
 
-### User Interface Limits
+### Getting the user interface limits
 - [static var lists: CPLimitableUserInterface](./lists.md)
-  Indicates that the car is limiting the display of lists.
+  A type that indicates the vehicle limits the number of items you can display in lists.
 
 
 ---

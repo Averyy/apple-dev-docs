@@ -25,7 +25,7 @@ struct ConvertedBezierPoint
 
 ## Overview
 
-`ConvertedBezierPoint` values are passed one at a time to the `pointProvider` closure of [`init(bezierPath:creationDate:pointProvider:)`](./init%28bezierpath,creationdate,pointprovider%29.md). Use the provided location, index, and segment information to initialize each `PKStrokePoint` with appropriate size, opacity, force, and other drawing properties.
+`ConvertedBezierPoint` values are passed one at a time to the `pointProvider` closure of [`init(bezierPath:creationDate:pointProvider:)`](./init%28bezierpath,creationdate,pointprovider%29.md). Use the provided location, index, and segment information to initialize each [`PKStrokePoint`](../pkstrokepoint-swift.struct.md) with appropriate size, opacity, force, and other drawing properties.
 
 ## Topics
 

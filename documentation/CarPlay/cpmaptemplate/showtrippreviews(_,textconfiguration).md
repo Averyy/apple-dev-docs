@@ -32,7 +32,7 @@ Use this method to display upcoming trips or multiple trip options, such as for 
 
 ## See Also
 
-### Displaying Trip Previews
+### Displaying trip previews
 - [func showTripPreviews([CPTrip], selectedTrip: CPTrip?, textConfiguration: CPTripPreviewTextConfiguration?)](./showtrippreviews%28_,selectedtrip,textconfiguration%29.md)
   Displays the previews for a collection of trips, with a single selected trip.
 - [func hideTripPreviews()](./hidetrippreviews%28%29.md)

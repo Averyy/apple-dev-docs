@@ -21,8 +21,8 @@ The method clamps the numeric parameter values for configuring tracking if theyâ
 
 ## Parameters
 
-- `referenceObjects`: The reference objects to look for
-- `trackingConfiguration`: Optional parameters for configuring object tracking if not provided, the framework applies a set of default values.
+- `referenceObjects`: The reference objects to look for.
+- `trackingConfiguration`: Optional parameters for configuring object tracking. If not provided, the framework applies a set of default values.
 
 
 ---

@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+An option to do nothing when someone selects the item.
+
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+

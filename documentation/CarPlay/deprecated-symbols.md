@@ -9,7 +9,7 @@ Symbols that the CarPlay framework no longer supports.
 
 ### Application Life Cycle
 - [protocol CPApplicationDelegate](./cpapplicationdelegate.md)
-  The interface for handling CarPlay life-cycle events.
+  A set of methods that are called by the @c UIApplication singleton in response to CarPlay lifecycle events.
 
 
 ---

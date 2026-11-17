@@ -125,7 +125,6 @@ Support for alternative browser engines varies by geographic region:
   An object that reports the status of web downloads to the system.
 ### Enumerations
 - [enum BEAccessibilityOrientation](./beaccessibilityorientation.md)
-- [BEWebContentFilterPermissionDecision](./bewebcontentfilter/permissiondecision.md)
 ### Macros
 - [BROWSERENGINEKIT_HAS_LIBXPC](./browserenginekit_has_libxpc.md)
 - [BROWSERENGINEKIT_HAS_UIINTERACTION](./browserenginekit_has_uiinteraction.md)

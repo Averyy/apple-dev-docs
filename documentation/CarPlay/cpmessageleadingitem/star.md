@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Show a star icon.
+An option to display a star image in the row.
 
 **Availability**:
 - iOS 12.0+
@@ -21,13 +21,17 @@ case star
 CPMessageLeadingItemStar
 ```
 
+## Discussion
+
+Use this option to mark a conversation or contact as a favorite item.
+
 ## See Also
 
 ### Leading Items
 - [CPMessageLeadingItem.none](./none.md)
-  Don’t show a leading item.
+  An option to display no symbol.
 - [CPMessageLeadingItem.pin](./pin.md)
-  Show a pin icon.
+  An option to display a pin image in the row.
 
 
 ---

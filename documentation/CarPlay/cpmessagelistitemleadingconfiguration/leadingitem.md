@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The configuration’s item.
+The standard system symbol to display in the row’s leading region.
 
 **Availability**:
 - iOS 14.0+
@@ -23,13 +23,13 @@ var leadingItem: CPMessageLeadingItem { get }
 
 ## Discussion
 
-Configurations are immutable. To change or remove the item that the message list item’s leading region shows, create a new configuration and update the list item’s [`leadingConfiguration`](../cpmessagelistitem/leadingconfiguration.md) property.
+Specify this information at initialization time.
 
 ## See Also
 
-### Getting the Leading Item
+### Getting the leading item
 - [enum CPMessageLeadingItem](../cpmessageleadingitem.md)
-  The accessories that a message list item can display in its leading region.
+  Constants that indicate the type of symbol to display at the leading edge of a message list row.
 
 
 ---

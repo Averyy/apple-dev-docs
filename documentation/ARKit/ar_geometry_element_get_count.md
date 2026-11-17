@@ -15,6 +15,14 @@ Gets the number of primitives in the Metal buffer for a geometry element.
 extern size_t ar_geometry_element_get_count(ar_geometry_element_t geometry_element);
 ```
 
+## Return Value
+
+The number of primitives in the geometry element.
+
+## Parameters
+
+- `geometry_element`: The geometry element.
+
 ## See Also
 
 ### Geometry

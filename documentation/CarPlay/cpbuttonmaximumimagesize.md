@@ -23,7 +23,7 @@ extern const CGSize CPButtonMaximumImageSize;
 
 ## See Also
 
-### Creating a Button
+### Creating a button
 - [init(image: UIImage, handler: ((CPButton) -> Void)?)](./cpbutton/init%28image,handler%29.md)
   Creates a button that displays an image and invokes a handler when the user taps it.
 

@@ -28,8 +28,6 @@ var buffer: any MTLBuffer { get }
   The offset, in bytes, from the beginning of a geometry source’s buffer.
 - [var stride: Int](./stride.md)
   The number of bytes between one vector and another in a geometry source’s buffer.
-- [var description: String](./description.md)
-  A textual representation of this geometry source.
 
 
 ---

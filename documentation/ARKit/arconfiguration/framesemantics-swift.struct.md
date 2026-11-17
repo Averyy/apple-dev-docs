@@ -20,7 +20,7 @@ struct FrameSemantics
 enum ARFrameSemantics : NSUInteger;
 ```
 
-## Discussion
+## Overview
 
 A frame semantic represents 2D information that ARKit extracts from a frame.
 

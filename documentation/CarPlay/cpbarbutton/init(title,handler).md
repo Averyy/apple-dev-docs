@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a bar button that displays a text label.
+Creates a bar button that displays a text string.
 
 **Availability**:
 - iOS 14.0+
@@ -23,26 +23,21 @@ init(title: String, handler: CPBarButtonHandler? = nil)
 
 ## Return Value
 
-A bar button that displays the provided text.
+An initialized button.
 
 ## Parameters
 
-- `title`: The text to display on the button.
-- `handler`: The block that CarPlay invokes when the user taps the button.
+- `title`: The text to display in the button. CarPlay sizes the button to fit the entire string, so keep the text short. Buttons with too much text don’t leave enough room for other content in the navigation bar.
+- `handler`: The code to run when someone selects the button. You might use this handler to display another template, change the sort order of list items, or perform other app-specific actions.
 
 ## See Also
 
-### Creating a CarPlay Bar Button
-- [init?(coder: NSCoder)](./init%28coder%29.md)
-  Creates a button initialized  from data in the specified coder object.
-- [init(type: CPBarButton.Type, handler: CPBarButtonHandler?)](./init%28type,handler%29.md)
-  Creates a bar button with a type and handler.
+### Creating a bar button
 - [init(image: UIImage, handler: CPBarButtonHandler?)](./init%28image,handler%29.md)
   Creates a bar button that displays an image.
-- [CPBarButton.Type](./type.md)
-  Types of bar buttons.
 - [typealias CPBarButtonHandler](../cpbarbuttonhandler.md)
   A block that CarPlay calls when the user taps a bar button.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

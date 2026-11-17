@@ -19,6 +19,13 @@ var destinationWaypoint: CPNavigationWaypoint { get }
 @property (nonatomic, readonly) CPNavigationWaypoint * destinationWaypoint;
 ```
 
+## See Also
+
+### Getting the route information
+- [var originWaypoint: CPNavigationWaypoint](./originwaypoint.md)
+- [var routeChoices: [CPRouteChoice]](./routechoices.md)
+  The list of route choices for the trip.
+
 
 ---
 

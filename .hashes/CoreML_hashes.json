@@ -3442,7 +3442,7 @@
     },
     "https://developer.apple.com/documentation/coreml/understanding-a-dice-roll-with-vision-and-object-detection": {
       "file_path": "documentation/CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md",
-      "hash": "67b6476fb9a9d2a6e56a3cfd20a7a5df2a3687d0685f83d7e27e8706f08a672d"
+      "hash": "50cb0a62cb7cc7bd2566fc14aab5fad6a9748f2c2014e1cbaadf5535e596e41f"
     },
     "https://developer.apple.com/documentation/coreml/updating-a-model-file-to-a-model-package": {
       "file_path": "documentation/CoreML/updating-a-model-file-to-a-model-package.md",
@@ -6906,7 +6906,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/understanding-a-dice-roll-with-vision-and-object-detection.json": {
       "file_path": "documentation/CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md",
-      "hash": "67b6476fb9a9d2a6e56a3cfd20a7a5df2a3687d0685f83d7e27e8706f08a672d"
+      "hash": "50cb0a62cb7cc7bd2566fc14aab5fad6a9748f2c2014e1cbaadf5535e596e41f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/updating-a-model-file-to-a-model-package.json": {
       "file_path": "documentation/CoreML/updating-a-model-file-to-a-model-package.md",

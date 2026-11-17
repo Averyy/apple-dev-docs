@@ -17,7 +17,7 @@ case unknown
 
 ## Discussion
 
-Enroll a feature by using `AccessoryWorker/requestAuthorization(for:)` or `AccessoryGPUWorker/requestAuthorization(for:)`.
+Enroll a feature by using [`requestAuthorization(for:)`](../accessoryworker/requestauthorization%28for%29.md) or [`requestAuthorization(for:)`](../accessorygpuworker/requestauthorization%28for%29.md).
 
 ## See Also
 

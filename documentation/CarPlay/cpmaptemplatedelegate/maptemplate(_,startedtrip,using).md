@@ -29,7 +29,7 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, startedTrip trip: CPTrip
 
 ## See Also
 
-### Handling Navigation Events
+### Responding to navigation events
 - [func mapTemplate(CPMapTemplate, selectedPreviewFor: CPTrip, using: CPRouteChoice)](./maptemplate%28_,selectedpreviewfor,using%29.md)
   Tells the delegate that the user selected a trip and route choice to preview.
 - [func mapTemplateDidCancelNavigation(CPMapTemplate)](./maptemplatedidcancelnavigation%28_%29.md)

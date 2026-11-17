@@ -22,7 +22,7 @@ var classification: ARGeometrySource? { get }
 
 ## Discussion
 
-Each element of the array ([`ARGeometrySource`](../argeometrysource.md)) is a classification that corresponds to one face in the geometry. The `count` of this property represents the number of faces in the geometry. The default value at each index is `0`, –– the raw value for [`ARMeshClassification.none`](../armeshclassification/none.md).
+Each element of the array is a face classification value ([`ARMeshClassification`](../armeshclassification.md)) that corresponds to one face in the geometry. The [`count`](../argeometrysource/count.md) of this property represents the number of faces in the geometry. The default value at each index is `0` — the raw value for [`ARMeshClassification.none`](../armeshclassification/none.md).
 
 The following code demonstrates retrieving a classification for a particular face:
 
@@ -49,7 +49,7 @@ For a sample app that demonstrates classification, see [Visualizing and interact
 - [class ARGeometryElement](../argeometryelement.md)
   A container for index data, such as vertex indices of a face.
 - [var normals: ARGeometrySource](./normals.md)
-  Rays that define which direction is outside for each face.
+  Rays that define which direction is outside for each vertex.
 
 
 ---

@@ -178,11 +178,11 @@
     },
     "https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/capabilities/builder/buildlimitedavailability(_:)": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder/buildlimitedavailability(_).md",
-      "hash": "faa6bf4977ddc5115cfc430c54d1d6cb31d449fb0b865db49f00622a9306143a"
+      "hash": "7af770d76613cd21781b821f458aa207629a1c693f8410d784f974a6b3ae0b0a"
     },
     "https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/capabilities/builder/buildoptional(_:)": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder/buildoptional(_).md",
-      "hash": "4a293c0f3f0149c485c37deee324183e8562462d2db3569bcd029c32e87eb8f0"
+      "hash": "f8d5bb011057500fc096f2c526207ac5cd3fa6a7556c4f8f6bfc31384c3e6eb9"
     },
     "https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/capabilities/init(_:)": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/init(_).md",
@@ -574,11 +574,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities/builder/buildlimitedavailability(_:).json": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder/buildlimitedavailability(_).md",
-      "hash": "faa6bf4977ddc5115cfc430c54d1d6cb31d449fb0b865db49f00622a9306143a"
+      "hash": "7af770d76613cd21781b821f458aa207629a1c693f8410d784f974a6b3ae0b0a"
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities/builder/buildoptional(_:).json": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder/buildoptional(_).md",
-      "hash": "4a293c0f3f0149c485c37deee324183e8562462d2db3569bcd029c32e87eb8f0"
+      "hash": "f8d5bb011057500fc096f2c526207ac5cd3fa6a7556c4f8f6bfc31384c3e6eb9"
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities/init(_:).json": {
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/init(_).md",

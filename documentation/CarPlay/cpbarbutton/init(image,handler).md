@@ -23,26 +23,21 @@ init(image: UIImage, handler: CPBarButtonHandler? = nil)
 
 ## Return Value
 
-A bar button that displays the provided image.
+An initialized button.
 
 ## Parameters
 
-- `image`: The image to display on the button.
-- `handler`: The block that CarPlay invokes when the user taps the button.
+- `image`: The image to display in the button. Provide an image that scales readily to different interface sizes. For best results, initialize your image object with an SF Symbol.
+- `handler`: The code to run when someone selects the button. You might use this handler to display another template, change the sort order of list items, or perform other app-specific actions.
 
 ## See Also
 
-### Creating a CarPlay Bar Button
-- [init?(coder: NSCoder)](./init%28coder%29.md)
-  Creates a button initialized  from data in the specified coder object.
-- [init(type: CPBarButton.Type, handler: CPBarButtonHandler?)](./init%28type,handler%29.md)
-  Creates a bar button with a type and handler.
+### Creating a bar button
 - [init(title: String, handler: CPBarButtonHandler?)](./init%28title,handler%29.md)
-  Creates a bar button that displays a text label.
-- [CPBarButton.Type](./type.md)
-  Types of bar buttons.
+  Creates a bar button that displays a text string.
 - [typealias CPBarButtonHandler](../cpbarbuttonhandler.md)
   A block that CarPlay calls when the user taps a bar button.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

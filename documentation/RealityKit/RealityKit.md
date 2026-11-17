@@ -44,6 +44,8 @@ Use the rich functionality of RealityKit to create compelling augmented reality 
   An element of a RealityKit scene to which you attach components that provide appearance and behavior characteristics for the entity.
 - [protocol Component](./component.md)
   A representation of a geometry or a behavior that you apply to an entity.
+- [protocol System](./system.md)
+  An object that affects multiple entities in every update of a RealityKit scene.
 ### Presentation
 - [Views and attachments](./presentation-views-and-attachments.md)
   Bring RealityKit content into your app with views and renderers.
@@ -117,14 +119,8 @@ Use the rich functionality of RealityKit to create compelling augmented reality 
   Dynamically move, rotate, and scale entities at runtime.
 - [Character control, skeletons, and inverse kinematics](./game-development-character-skeletons.md)
   Direct the movements and animation of models.
-- [struct NavigationComponent](./navigationcomponent.md)
-  A component that defines which areas of a navigation mesh an entity can move through.
-- [struct NavigationMeshComponent](./navigationmeshcomponent.md)
-  A component that provides the navigation meshes an entity uses to find paths through a scene.
-- [struct NavigationController](./navigationcontroller.md)
-  An interface for finding paths for an entity moving across a scene’s navigation mesh.
-- [class NavigationMeshResource](./navigationmeshresource.md)
-  A representation of a scene’s navigable surfaces that the system uses to compute paths.
+- [Navigation](./game-development-navigation.md)
+  Find paths for entities to move across a scene’s navigable surfaces.
 ### Physics simulation
 - [Collision detection](./physics-collision-detection.md)
   Determine when entities collide with each other or the environment.
@@ -149,37 +145,6 @@ Use the rich functionality of RealityKit to create compelling augmented reality 
   Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
 - [Low-level rendering](./low-level-rendering.md)
   Drive the renderer directly to build custom drawing pipelines, meshes, buffers, and textures when higher-level rendering does not give you the control you need.
-### Articles
-- [Gaussian Splat Rendering Guidelines](./gaussian-splat-rendering-guidelines.md)
-  Improving performance and watching thermal state when rendering Gaussian splats
-### Classes
-- [class ComputeGraphResource](./computegraphresource.md)
-  A loaded compute graph resource containing the graph definition, compiled pipelines, and all associated rendering assets.
-- [class ComputeGraphSharedUniforms](./computegraphshareduniforms.md)
-  A transient component that stores typed uniform values shared across all ComputeGraph simulations.
-- [class GaussianSplatResource](./gaussiansplatresource.md)
-  A container for the splat data and rendering options that a Gaussian splat component displays.
-- [class ShaderGraph](./shadergraph.md)
-### Structures
-- [struct BoundingBoxCalculator](./boundingboxcalculator.md)
-  Calculates a bounding box based on the current state of the deformed positions.
-- [struct ComputeGraphComponent](./computegraphcomponent.md)
-  A component that drives a compute graph–based particle simulation on an entity.
-- [struct ComputeGraphOutputComponent](./computegraphoutputcomponent.md)
-  A transient component that identifies the compute graph output associated with an entity.
-- [struct ComputeGraphRuntimeComponent](./computegraphruntimecomponent.md)
-  Manages the live GPU simulation for an entity’s `ComputeGraphComponent_v1`.
-- [struct ComputeGraphViewpointComponent](./computegraphviewpointcomponent.md)
-  A transient component that provides camera viewpoint information to the particle simulation.
-- [struct GaussianSplatComponent](./gaussiansplatcomponent.md)
-  A component that renders 3D Gaussian splat data.
-- [struct RenormalizingDeformer](./renormalizingdeformer.md)
-  Recalculates tangent frame based on current state of positions
-- [struct SubdivisionSurfaceDeformer](./subdivisionsurfacedeformer.md)
-  OpenSubdiv surface deformation
-### Enumerations
-- [enum GaussianSplatEvents](./gaussiansplatevents.md)
-  A namespace for events about Gaussian splat rendering.
 
 
 ---

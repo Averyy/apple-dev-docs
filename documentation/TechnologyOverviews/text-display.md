@@ -24,7 +24,7 @@ The [system font](https://developer.apple.com/design/human-interface-guidelines/
 
 ![A screenshot showing text on an iPhone in several different styles, including a large title, a title, body text, and a subtitle.](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/typography-text-hierarchy-levels@2x.png)
 
-For text that requires a more personalized appearance, choose from the system’s other [built-in fonts](https://developer.apple.com/fonts/system-fonts/) or use your own [custom fonts](./fonts.md#Bundle-a-custom-font-with-your-app). Apple platforms ship with a large collection of fonts you can apply to document-based text or other personal content. Create these fonts directly in your code or display the [UIKit](../UIKit/uifontpickerviewcontroller.md) or [AppKit](../AppKit/nsfontpanel.md) font picker interface. For example, a word processor or text-creation app might apply these fonts to the selected text or any new text someone creates. [Ship custom fonts with your app](./fonts.md#Bundle-a-custom-font-with-your-app) and access them from your code, or [share them](./fonts.md#Install-fonts-for-systemwide-use) with the rest of the system.
+For text that requires a more personalized appearance, choose from the system’s other [built-in fonts](https://developer.apple.com/fonts/system-fonts/) or use your own [custom fonts](./managing-the-fonts-for-your-app.md#Bundle-a-custom-font-with-your-app). Apple platforms ship with a large collection of fonts you can apply to document-based text or other personal content. Create these fonts directly in your code or display the [UIKit](../UIKit/uifontpickerviewcontroller.md) or [AppKit](../AppKit/nsfontpanel.md) font picker interface. For example, a word processor or text-creation app might apply these fonts to the selected text or any new text someone creates. [Ship custom fonts with your app](./managing-the-fonts-for-your-app.md#Bundle-a-custom-font-with-your-app) and access them from your code, or [share them](./managing-the-fonts-for-your-app.md#Install-fonts-for-systemwide-use) with the rest of the system.
 
 ## Display text in your interface
 
@@ -38,7 +38,7 @@ Each app-builder framework defines the approach for applying fonts to your text:
 - In UIKit, apply fonts to the standard text views using the methods and properties of those views. Retrieve predefined instances of the [system font](../UIKit/uifont.md) or [standard text styles](../UIKit/uifont/textstyle.md) from the [`UIFont`](../UIKit/uifont.md) type, or create custom fonts using the initializers of that type. You can also collect the font attributes you want in a [`UIFontDescriptor`](../UIKit/uifontdescriptor.md), and use that type to create a font object.
 - In AppKit, apply fonts to the standard text views using the methods and properties of those views. Retrieve predefined instances of the [system font or standard text styles](../AppKit/nsfont.md) from the [`NSFont`](../AppKit/nsfont.md) type. You can also retrieve fonts meant for specific types of [UI elements](../AppKit/nsfont.md), or create custom font objects from [attributes you supply](../AppKit/nsfont.md).
 
-When you need more control over the placement of text in your view, [create a custom view](./text-display.md#Build-a-custom-text-view) using TextKit for [UIKit](../UIKit/textkit.md) or [AppKit](../AppKit/textkit.md). TextKit provides the types you need to lay out and render text efficiently, and in a way that’s compatible with the [app-builder technologies](./app-design-and-ui.md).
+When you need more control over the placement of text in your view, [create a custom view](./text-display.md#Build-a-custom-text-view) using TextKit for [UIKit](../UIKit/textkit.md) or [AppKit](../AppKit/textkit.md). TextKit provides the types you need to lay out and render text efficiently, and in a way that’s compatible with the [app-builder technologies](./apps-and-content.md).
 
 ## Prepare your text for translation
 
@@ -61,17 +61,24 @@ All string types store text as Unicode characters and support both left-to-right
 
 If you need more control over the placement and display of text than the standard text views offer, create a custom view with [TextKit](https://developer.apple.com/videos/play/wwdc2021/10061) for [UIKit](../UIKit/textkit.md) or [AppKit](../AppKit/textkit.md). Use this approach if you’re building a word processor or similarly advanced app that requires sophisticated text handling. TextKit gives you the types you need to manage and lay out text precisely in your custom view. It also integrates with other system features, like [Writing Tools](https://developer.apple.com/videos/play/wwdc2025/265), so you can incorporate those features into your own text-based code.
 
+## Related articles
+
+- [Managing the fonts for your app](./managing-the-fonts-for-your-app.md)
+  Choose the right fonts for your app’s interface and content, and make custom fonts available across your app, its extensions, and other apps.
+- [Creating custom SF Symbols](./creating-custom-sf-symbols.md)
+  Design a symbol image with the same behavior as system-provided symbols.
+- [Annotating custom SF Symbols](./annotating-custom-sf-symbols.md)
+  Use the SF Symbols app to annotate your custom symbols and adjust the way they render and animate.
+
 ## Topics
 
-### Fonts
-- [Fonts](./fonts.md)
+### Related articles
+- [Managing the fonts for your app](./managing-the-fonts-for-your-app.md)
   Choose the right fonts for your app’s interface and content, and make custom fonts available across your app, its extensions, and other apps.
-
-## See Also
-
-### Related Documentation
-- [Fonts](./fonts.md)
-  Choose the right fonts for your app’s interface and content, and make custom fonts available across your app, its extensions, and other apps.
+- [Creating custom SF Symbols](./creating-custom-sf-symbols.md)
+  Design a symbol image with the same behavior as system-provided symbols.
+- [Annotating custom SF Symbols](./annotating-custom-sf-symbols.md)
+  Use the SF Symbols app to annotate your custom symbols and adjust the way they render and animate.
 
 
 ---

@@ -62,11 +62,11 @@ A *use-case group* is a set of related schemas that share a single purpose. The 
   Identifies entity schemas in the video domain.
 ### Types for static parameters
 - [var imageType: some AppSchemaEnum](./appschema/videoenum/imagetype.md)
-  An enum schema for an image type parameter.
+  An enum schema for an image type.
 - [var personRole: some AppSchemaEnum](./appschema/videoenum/personrole.md)
-  An enum schema for a person role parameter.
+  An enum schema for a person role.
 - [var videoContentType: some AppSchemaEnum](./appschema/videoenum/videocontenttype.md)
-  An enum schema for a video content type parameter.
+  An enum schema for a video content type.
 - [AppSchema.VideoEnum](./appschema/videoenum.md)
   Identifies enum schemas in the video domain.
 

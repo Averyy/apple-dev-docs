@@ -5,6 +5,8 @@
 **Role**: Instance Property  
 **Required**: Yes
 
+The timestamp of this anchor
+
 **Availability**:
 - macOS 26.0+
 - visionOS 2.0+
@@ -19,6 +21,7 @@ var timestamp: TimeInterval { get }
 
 ### Anchor Implementations
 - [var timestamp: TimeInterval](./timestamp-726v3.md)
+  The timestamp of this anchor.
 
 ## See Also
 

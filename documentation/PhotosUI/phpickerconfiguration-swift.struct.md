@@ -62,10 +62,24 @@ struct PHPickerConfiguration
 - [PHPickerConfiguration.Update](./phpickerconfiguration-swift.struct/update.md)
   An object that defines the aspects of a photo picker’s appearance that can change while it’s presented.
 ### Instance Properties
+- [var aspectRatio: PHPickerAspectRatio?](./phpickerconfiguration-swift.struct/aspectratio.md)
+  The aspect ratio of items in the picker. Default is `nil`.
+- [var containerIdentifier: String?](./phpickerconfiguration-swift.struct/containeridentifier.md)
+  The collection of items that can be shown. Default is `nil`.
 - [var metadataOptions: PHPickerMetadataOptions](./phpickerconfiguration-swift.struct/metadataoptions.md)
   Metadata options for the picker. Default is `[]`.
+- [var minimumSelectionLimit: Int?](./phpickerconfiguration-swift.struct/minimumselectionlimit.md)
+  The minimum number of assets that should be selected for some action. Default is `nil`.
+- [var primaryButtonType: PHPickerPrimaryButtonType](./phpickerconfiguration-swift.struct/primarybuttontype.md)
+  The primary button type. Default is `.automatic`.
+- [var prompt: String?](./phpickerconfiguration-swift.struct/prompt.md)
+  The localized string to be shown when the picker is presented. Default is `nil`.
 - [var searchText: PHPickerSearchText?](./phpickerconfiguration-swift.struct/searchtext.md)
   The search text for the picker. Default is `nil`.
+- [var secondaryButtonType: PHPickerSecondaryButtonType](./phpickerconfiguration-swift.struct/secondarybuttontype.md)
+  The secondary button type. Default is `.automatic`.
+- [var title: String?](./phpickerconfiguration-swift.struct/title.md)
+  The localized title to override the default title when the picker is presented. Default is `nil`.
 
 ## Relationships
 

@@ -21,7 +21,7 @@ CPManeuverTypeSharpRightTurn
 
 ## See Also
 
-### Maneuver types
+### Getting the maneuver type
 - [CPManeuverType.arriveAtDestination](./arriveatdestination.md)
 - [CPManeuverType.arriveAtDestinationLeft](./arriveatdestinationleft.md)
 - [CPManeuverType.arriveAtDestinationRight](./arriveatdestinationright.md)

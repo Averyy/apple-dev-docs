@@ -19,7 +19,7 @@ struct Iterator
 
 ### Type methods
 - [func next() async -> CameraFrameProvider.CameraFrameUpdates.Element?](./iterator/next%28%29.md)
-  Asynchronously advances to the next element and returns it, or ends the sequence if there’s no next element.
+  Asynchronously retrieve the next camera frame.
 ### Type aliases
 - [CameraFrameProvider.CameraFrameUpdates.Element](./element.md)
   The type of element produced by this asynchronous sequence of camera frame structures.
@@ -28,6 +28,12 @@ struct Iterator
 
 ### Conforms To
 - [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
+
+## See Also
+
+### Iterating over camera updates
+- [func makeAsyncIterator() -> CameraFrameProvider.CameraFrameUpdates.Iterator](./makeasynciterator%28%29.md)
+  Creates an asynchronous iterator that produces `CameraFrame` elements on this asynchronous sequence.
 
 
 ---

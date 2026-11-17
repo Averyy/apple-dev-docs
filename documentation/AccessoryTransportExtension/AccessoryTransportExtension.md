@@ -92,9 +92,6 @@ Your app defines the purpose of the exchanged data and its format; the system ca
   A feature that carries data between your data provider and transport extensions.
 - [struct AccessoryGPUWorker](./accessorygpuworker.md)
   A feature for GPU work that carries data between your data provider and transport extensions.
-### Protocols
-- [protocol AccessoryFeatureAuthorizing](./accessoryfeatureauthorizing.md)
-  A feature that is authorized separately on each accessory.
 
 
 ---

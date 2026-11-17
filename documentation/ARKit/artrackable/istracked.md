@@ -25,7 +25,7 @@ var isTracked: Bool { get }
 
 If this value is [`true`](../../Swift/true.md), the object’s transform currently matches the position and orientation of the real-world object it represents.
 
-If this value is [`false`](../../Swift/false.md), the object is not guaranteed to match the movement of its corresponding real-world feature, even if it remains in the visible scene.
+If this value is [`false`](../../Swift/false.md), the object is not guaranteed to match the movement of its corresponding real-world feature, even if it remains in the visible scene. When the tracked object is no longer detected in the camera image, its anchor reports `NO` for `isTracked`.
 
 
 ---

@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+Represents a hand skeleton with joints and their transforms.
+
 **Availability**:
 - visionOS 1.0+
 

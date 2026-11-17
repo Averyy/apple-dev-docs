@@ -1,4 +1,4 @@
-# DigitalCredentialsQuery.CredentialFormat.msoMdoc
+# DigitalCredentialsQuery.CredentialFormat.msoMDoc
 
 **Framework**: IdentityDocumentServices  
 **Kind**: case  
@@ -15,7 +15,7 @@ An ISO 18013-5 mobile document.
 ## Declaration
 
 ```swift
-case msoMdoc
+case msoMDoc
 ```
 
 

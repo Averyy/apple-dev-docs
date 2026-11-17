@@ -114,7 +114,7 @@ In this example, the app uses the [`activityType`](../Foundation/nsuseractivity/
 
 ### Configure your window scene
 
-UIKit creates a [`UIWindowScene`](./uiwindowscene.md) object for each scene instance. When configuring scene support, specify `UIWindowScene` objects rather than [`UIScene`](./uiscene.md) objects. If your app adopts scenes for CarPlay, use [`CPTemplateApplicationScene`](../CarPlay/cptemplateapplicationscene.md) instead. To learn how to add a CarPlay scene, see [Displaying Content in CarPlay](../CarPlay/displaying-content-in-carplay.md).
+UIKit creates a [`UIWindowScene`](./uiwindowscene.md) object for each scene instance. When configuring scene support, specify `UIWindowScene` objects rather than [`UIScene`](./uiscene.md) objects. If your app adopts scenes for CarPlay, use [`CPTemplateApplicationScene`](../CarPlay/cptemplateapplicationscene.md) instead. To learn how to add a CarPlay scene, see [Building your app’s initial CarPlay interface](../CarPlay/building-your-apps-initial-carplay-interface.md).
 
 If you load your root view controller from the storyboard, include the storyboard name in the [`UISceneConfigurations`](../BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations.md) key in your information property list scene manifest. The system automatically configures your window scene and root view controller.
 

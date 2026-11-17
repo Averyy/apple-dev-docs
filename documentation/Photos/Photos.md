@@ -104,6 +104,7 @@ Use PhotoKit to access image and video assets that the Photos app manages in iOS
 ### Enumerations
 - [PHAssetAdjustmentsState](./phasset/adjustmentsstate-swift.enum.md)
 - [PHAssetPlaybackVariation](./phasset/playbackvariation-swift.enum.md)
+  Playback variation describes the Live Photo presentation effect applied to an asset (for example, Long Exposure).
 
 ## See Also
 

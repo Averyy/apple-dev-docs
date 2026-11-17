@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The entities Siri captured as onscreen context, with the properties Siri read for them before its next intent ran.
+The entities Siri captured as onscreen context, as Siri recorded them.
 
 **Availability**:
 - iOS 27.3+ (Beta)
@@ -22,7 +22,7 @@ let onScreenEntities: [SiriTranscript.Observation<AnyAppEntity>]
 
 ### Accessing the turn’s context
 - [let foundEntities: [SiriTranscript.Observation<AnyAppEntity>]](./foundentities.md)
-  The entities Siri surfaced by search or resolution, with the properties Siri read for them before its next intent ran.
+  The entities Siri surfaced by search or resolution.
 - [let loadedSkills: [SiriTranscript.Observation<SkillDefinition>]](./loadedskills.md)
   The App Skills Siri loaded into its planning this turn.
 

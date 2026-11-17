@@ -21,13 +21,17 @@ var rootTemplate: CPTemplate { get }
 @property (nonatomic, readonly) CPTemplate * rootTemplate;
 ```
 
+## Discussion
+
+The root template represents your app’s initial interface, and is the starting point from which someone explores your app’s content. Use this property to get the root template. To install or change the root template, call the [`setRootTemplate(_:animated:completion:)`](./setroottemplate%28_,animated,completion%29.md) method.
+
 ## See Also
 
-### Accessing Templates
+### Getting the current templates
 - [var topTemplate: CPTemplate?](./toptemplate.md)
-  The top-most template in the navigation hierarchy.
+  The top-most template in your app’s navigation hierarchy.
 - [var templates: [CPTemplate]](./templates.md)
-  The contents of the navigation hierarchy.
+  The templates currently in your app’s navigation hierarchy.
 
 
 ---

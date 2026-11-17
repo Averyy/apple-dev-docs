@@ -19,6 +19,10 @@ static let grabActive: PointerStyle
 
 This pointer style displays a closed hand to indicate that the content is currently being repositioned. Typically it’s used along with the `PointerStyle.grabIdle` pointer style to indicate that repositioning the content is possible.
 
+The following image shows the grab active pointer:
+
+![A closed hand pointer.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-grabActive@2x.png)
+
 You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 
 ## See Also

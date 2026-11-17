@@ -32,6 +32,8 @@ In addition to the route guidance panel, you can show maneuvers on the CarPlay d
 ## Topics
 
 ### Providing instructions
+- [var instructionVariants: [String]](./cpmaneuver/instructionvariants.md)
+  An array of instruction variants for the maneuver.
 - [var dashboardInstructionVariants: [String]](./cpmaneuver/dashboardinstructionvariants.md)
   An array of instruction variants for the CarPlay dashboard.
 - [var notificationInstructionVariants: [String]](./cpmaneuver/notificationinstructionvariants.md)
@@ -85,9 +87,6 @@ In addition to the route guidance panel, you can show maneuvers on the CarPlay d
 - [var cardBackgroundColor: UIColor?](./cpmaneuver/cardbackgroundcolor.md)
 ### Initializers
 - [init?(coder: NSCoder)](./cpmaneuver/init%28coder%29.md)
-### Instance Properties
-- [var instructionVariants: [String]](./cpmaneuver/instructionvariants.md)
-  An array of instruction variants for the maneuver.
 
 ## Relationships
 
@@ -111,6 +110,13 @@ In addition to the route guidance panel, you can show maneuvers on the CarPlay d
   Values that describe the state of a maneuver.
 - [enum CPManeuverType](./cpmaneuvertype.md)
   Values that describe types of navigation maneuvers.
+- [class CPTravelEstimates](./cptravelestimates.md)
+  An object that describes the time and distance remaining for a maneuver in a navigation session.
+- [class CPTripPreviewTextConfiguration](./cptrippreviewtextconfiguration.md)
+  A configuration object for changing the button titles on a trip preview.
+- [func NSStringFromCPManeuverType(CPManeuverType) -> String!](./nsstringfromcpmaneuvertype%28_%29.md)
+- [struct CPLocationCoordinate3D](./cplocationcoordinate3d.md)
+  CPLocationCoordinate3D represents a three-dimensional coordinate with latitude, longitude, and altitude components.
 
 
 ---

@@ -65,7 +65,9 @@ struct PartsCollection
 - [LowLevelMesh.VertexSemantic](./vertexsemantic.md)
   Designates the intended usage of a vertex attribute.
 - [class LowLevelBuffer](../lowlevelbuffer.md)
+  A container for buffer data that you can read and update from the CPU or the GPU.
 - [class LowLevelInstanceData](../lowlevelinstancedata.md)
+  A container for the transforms of mesh instances that you can update from the CPU or the GPU.
 
 
 ---

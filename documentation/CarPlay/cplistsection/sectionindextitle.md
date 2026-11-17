@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The section’s index title.
+The string that identifies the current session in an index.
 
 **Availability**:
 - iOS 12.0+
@@ -23,13 +23,7 @@ var sectionIndexTitle: String? { get }
 
 ## Discussion
 
-The system displays only the first character of the section index title.
-
-## See Also
-
-### Getting Supplementary Information
-- [var header: String?](./header.md)
-  The section’s header text.
+For long lists, an index helps people navigate quickly to specific sections of content. This property contains the string you specified at initialization time. If your string contains more than one character, CarPlay displays only the first character in the index.
 
 
 ---

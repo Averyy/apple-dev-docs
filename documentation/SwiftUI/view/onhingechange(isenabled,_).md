@@ -26,6 +26,8 @@ func onHingeChange(isEnabled: Bool = true, _ action: @escaping (DeviceHingeConte
 
 Use this modifier to be informed of changes to the hinge context of the device.
 
+SwiftUI calls `action` with the initial hinge context, and again whenever the context changes. When `isEnabled` becomes `false`, if the last context `action` received had a hinge, SwiftUI calls `action` once more with no hinge. After that, SwiftUI doesn’t call `action` until `isEnabled` becomes `true`, and then calls it with the current hinge context if one is available.
+
 ```swift
 @State private var hinge: DeviceHinge? = nil
 
@@ -47,6 +49,10 @@ var body: some View {
 ```
 
 In the example above, the current angle and status of the hinge will be displayed in the app as you interact with the hinge.
+
+> ❗ **Important**: Use hinge updates when your app treats the hinge as input, such as driving an animation that responds to granular hinge angle changes, controlling a game, or showing the current angle. Hinge updates arrive while the hinge is moving, at a pace the system sets.
+>
+> Don’t use hinge updates for layout. To adapt your layout to the fold, use [`ArrangementView`](../arrangementview.md) or [`ReservedRegion`](../reservedregion.md) instead. Reserved region updates arrive during a layout pass, which might be animated.
 
 ## See Also
 

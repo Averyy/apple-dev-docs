@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/Xcode": {
       "file_path": "documentation/Xcode/Xcode.md",
-      "hash": "bb2f038b29d4056c5293b167df7640556e751757e9fe3fe7d236cc6334ccdd1c"
+      "hash": "8dae0bbc4811f46756e3e40fef518eb1c52ec56bc4653b0da0619805caeec762"
     },
     "https://developer.apple.com/documentation/xcode/about-continuous-integration-and-delivery-with-xcode-cloud": {
       "file_path": "documentation/Xcode/about-continuous-integration-and-delivery-with-xcode-cloud.md",
@@ -38,7 +38,7 @@
     },
     "https://developer.apple.com/documentation/xcode/adding-images-to-your-xcode-project": {
       "file_path": "documentation/Xcode/adding-images-to-your-xcode-project.md",
-      "hash": "feb17b74377caeb508738413a142a183c96ef3394962a5c96a8de595c199cc55"
+      "hash": "e135831023fe08ed0d89a7e4fbee4dd880ed396f6814a5947b5599977f58d40c"
     },
     "https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app": {
       "file_path": "documentation/Xcode/adding-package-dependencies-to-your-app.md",
@@ -174,15 +174,11 @@
     },
     "https://developer.apple.com/documentation/xcode/asset-management": {
       "file_path": "documentation/Xcode/asset-management.md",
-      "hash": "3b65b11f7e186b8d5040c93ebbba58e5b1446cc8d55638313fc26bc05d07c600"
+      "hash": "907eb37550255b073b3b20d996e3853f8df417bb3db9e5efc5b5c37f8bbb4d05"
     },
     "https://developer.apple.com/documentation/xcode/autosizing-views-for-localization-in-ios": {
       "file_path": "documentation/Xcode/autosizing-views-for-localization-in-ios.md",
       "hash": "0995ecf24840a1e2ecbce0904e6ec186c7fad726b5cf1c093bc276af58e041d5"
-    },
-    "https://developer.apple.com/documentation/xcode/autosizing_views_for_localization_in_ios": {
-      "file_path": "documentation/Xcode/autosizing_views_for_localization_in_ios.md",
-      "hash": ""
     },
     "https://developer.apple.com/documentation/xcode/build-settings-reference": {
       "file_path": "documentation/Xcode/build-settings-reference.md",
@@ -238,7 +234,7 @@
     },
     "https://developer.apple.com/documentation/xcode/changing-the-bundle-identifier": {
       "file_path": "documentation/Xcode/changing-the-bundle-identifier.md",
-      "hash": "dc096353f538cbc67d5ba88b85cfc74952b4143b38ad0bf876cfabd35c0d8963"
+      "hash": "ff776fe37d7e5e981d90a556beb78cc5f3289ee72b2dafcdfe864053267efb97"
     },
     "https://developer.apple.com/documentation/xcode/choosing-localization-regions-and-scripts": {
       "file_path": "documentation/Xcode/choosing-localization-regions-and-scripts.md",
@@ -290,7 +286,7 @@
     },
     "https://developer.apple.com/documentation/xcode/configuring-family-controls": {
       "file_path": "documentation/Xcode/configuring-family-controls.md",
-      "hash": "950ba389e74ca971f06a4fc5ae6c1501a90d3dc2ae8c5a976fe80f26b160c5fb"
+      "hash": "1db2203359495aa9be2e41a565bf3796d614dbb3da39b4b69c90c599218052e0"
     },
     "https://developer.apple.com/documentation/xcode/configuring-game-controllers": {
       "file_path": "documentation/Xcode/configuring-game-controllers.md",
@@ -404,10 +400,6 @@
       "file_path": "documentation/Xcode/configuring-your-xcode-project-to-use-source-control.md",
       "hash": "f1d980beb84e0e2b2245d78fe9114132907ee263499437bd4378f5be91c56016"
     },
-    "https://developer.apple.com/documentation/xcode/configuring_your_app_to_use_alternate_app_icons": {
-      "file_path": "documentation/Xcode/configuring_your_app_to_use_alternate_app_icons.md",
-      "hash": ""
-    },
     "https://developer.apple.com/documentation/xcode/conforming-to-mach-ipc-security-restrictions": {
       "file_path": "documentation/Xcode/conforming-to-mach-ipc-security-restrictions.md",
       "hash": "7f6b54ad501362fa65f5db50c87ccb0788c89ffd4a1b8b95ffbe16c070d584ec"
@@ -510,7 +502,7 @@
     },
     "https://developer.apple.com/documentation/xcode/customizing-your-workspace-using-themes": {
       "file_path": "documentation/Xcode/customizing-your-workspace-using-themes.md",
-      "hash": "442ca66006271a98aba9ff46cb0c61016dbd57bf8b6143fdcd37825d85bcaaaa"
+      "hash": "cb4a21b57cff91aac55f8306e610ec046d4e969a641670ce4156e939a6a05927"
     },
     "https://developer.apple.com/documentation/xcode/data-races": {
       "file_path": "documentation/Xcode/data-races.md",
@@ -574,11 +566,15 @@
     },
     "https://developer.apple.com/documentation/xcode/diagnosing-memory-thread-and-crash-issues-early": {
       "file_path": "documentation/Xcode/diagnosing-memory-thread-and-crash-issues-early.md",
-      "hash": "2b2bce24ceff1a10bbf2dfda08ee069b6be9af0f92c434087028741aa8e32762"
+      "hash": "0b3f3d32a224051184baef33149e634578160cac2217efb4ab987ba5e255d8d9"
     },
     "https://developer.apple.com/documentation/xcode/diagnosing-performance-issues-early": {
       "file_path": "documentation/Xcode/diagnosing-performance-issues-early.md",
       "hash": "7ca8911cc7a9263932995cfcc75ec1939813569bbc9e29fdfd645b530eeeeb4d"
+    },
+    "https://developer.apple.com/documentation/xcode/distributing-apps-to-your-development-devices": {
+      "file_path": "documentation/Xcode/distributing-apps-to-your-development-devices.md",
+      "hash": "61695ad95dbe8936437787ea71144da23a69ddaf9e0ae5e6e19e3edfbe99a938"
     },
     "https://developer.apple.com/documentation/xcode/distributing-binary-frameworks-as-swift-packages": {
       "file_path": "documentation/Xcode/distributing-binary-frameworks-as-swift-packages.md",
@@ -590,11 +586,7 @@
     },
     "https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases": {
       "file_path": "documentation/Xcode/distributing-your-app-for-beta-testing-and-releases.md",
-      "hash": "e8d012776237f3171798fd9c6b8e54a3143c2d59732b0994c018154bcb8a901c"
-    },
-    "https://developer.apple.com/documentation/xcode/distributing-your-app-to-registered-devices": {
-      "file_path": "documentation/Xcode/distributing-your-app-to-registered-devices.md",
-      "hash": "77b5df7f81483f7620bbd6406da4f42ffd5fc794867d2e951fba208920571056"
+      "hash": "aa36538cf2cde75fa4d3520d82609018d2573fbc4c5319c48e39200d2c4572f1"
     },
     "https://developer.apple.com/documentation/xcode/distributing-your-xcode-cloud-builds-through-testflight": {
       "file_path": "documentation/Xcode/distributing-your-xcode-cloud-builds-through-testflight.md",
@@ -602,7 +594,7 @@
     },
     "https://developer.apple.com/documentation/xcode/distribution": {
       "file_path": "documentation/Xcode/distribution.md",
-      "hash": "472e0b4462fb0d85bd4556cccdf538e0ecc7dfc985d20a36f8bbbe68eec53d19"
+      "hash": "fb63691d8ffb9ce1ba6694c065a812b5bb5d7e54ea2abcc452c3981094650a70"
     },
     "https://developer.apple.com/documentation/xcode/division-by-zero": {
       "file_path": "documentation/Xcode/division-by-zero.md",
@@ -710,7 +702,7 @@
     },
     "https://developer.apple.com/documentation/xcode/fixing-issues-in-your-code-as-you-type": {
       "file_path": "documentation/Xcode/fixing-issues-in-your-code-as-you-type.md",
-      "hash": "84b695fcf3aed29ccc14b05f6e2d36e5e2dc5db6a0f6e95c2426158eb3c30c69"
+      "hash": "16123ae38f6956a18cc06241fdf23a19e6cd8b38ae15e2ef75a7ee9b522eeafd"
     },
     "https://developer.apple.com/documentation/xcode/gaining-performance-insights-with-metal-performance-hud": {
       "file_path": "documentation/Xcode/gaining-performance-insights-with-metal-performance-hud.md",
@@ -892,10 +884,6 @@
       "file_path": "documentation/Xcode/localization-friendly-layouts-in-macos.md",
       "hash": "3dc52c788745a8e206c07f73c32eb410641cafb1bee4e76c3fd5f7770a998d3a"
     },
-    "https://developer.apple.com/documentation/xcode/localization-friendly_layouts_in_macos": {
-      "file_path": "documentation/Xcode/localization-friendly_layouts_in_macos.md",
-      "hash": ""
-    },
     "https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog": {
       "file_path": "documentation/Xcode/localizing-and-varying-text-with-a-string-catalog.md",
       "hash": "f73cfa8a2f7807136b7ff83fa77f792c79fde9c7e0a18a9ba39f2d1dd8529266"
@@ -918,7 +906,7 @@
     },
     "https://developer.apple.com/documentation/xcode/localizing-your-app-using-agents": {
       "file_path": "documentation/Xcode/localizing-your-app-using-agents.md",
-      "hash": "a404b8438451cb8cc0bbafb31fb2cd4031f8b35636ec1283ce975a88ca6de96c"
+      "hash": "a1ae5f4c28e9ec0ef691d0910abd63c769609a30dc2b800928664a794a95905e"
     },
     "https://developer.apple.com/documentation/xcode/locating-a-missing-debug-symbol-file": {
       "file_path": "documentation/Xcode/locating-a-missing-debug-symbol-file.md",
@@ -926,7 +914,7 @@
     },
     "https://developer.apple.com/documentation/xcode/locating-device-identifiers": {
       "file_path": "documentation/Xcode/locating-device-identifiers.md",
-      "hash": "85e4cdcbb1a567fe279fd8449e2a69cfa593f5197957b811bce8f9771ec40413"
+      "hash": "9d23104637b0218b928d6d21add0d8e37df2ac607ad68c614a181afe6653b87f"
     },
     "https://developer.apple.com/documentation/xcode/locking-views-in-storyboard-and-xib-files": {
       "file_path": "documentation/Xcode/locking-views-in-storyboard-and-xib-files.md",
@@ -942,7 +930,7 @@
     },
     "https://developer.apple.com/documentation/xcode/managing-apps-on-devices": {
       "file_path": "documentation/Xcode/managing-apps-on-devices.md",
-      "hash": "3b50fd0d55568c0b9f46e50060506de4139b03226866a2673a9a79c8e5fd6bf7"
+      "hash": "e9147968929be08e2b8941c377604bcde7bdaecb8d98da403dfe3196388a7eb7"
     },
     "https://developer.apple.com/documentation/xcode/managing-assets-with-asset-catalogs": {
       "file_path": "documentation/Xcode/managing-assets-with-asset-catalogs.md",
@@ -950,11 +938,11 @@
     },
     "https://developer.apple.com/documentation/xcode/managing-files-and-folders-in-your-xcode-project": {
       "file_path": "documentation/Xcode/managing-files-and-folders-in-your-xcode-project.md",
-      "hash": "27fece16a9f520887368ec40befda062d62d90728c45602372de9cc92930cd09"
+      "hash": "bf8c064492b7ec08b2613d570c8d766a8c19e9b6e4a946e6835a989a36577319"
     },
     "https://developer.apple.com/documentation/xcode/managing-multiple-projects-and-their-dependencies": {
       "file_path": "documentation/Xcode/managing-multiple-projects-and-their-dependencies.md",
-      "hash": "6a3bc76950710edfbf80b5dd5d31a51fa1aca4b20bdfd7c76780e846829f1360"
+      "hash": "0bf20e4dc8d59194b577e5a92e018df3770b5e139db87d25e6bdaca94aed0152"
     },
     "https://developer.apple.com/documentation/xcode/managing-xcode-projects-using-the-command-line": {
       "file_path": "documentation/Xcode/managing-xcode-projects-using-the-command-line.md",
@@ -1042,7 +1030,7 @@
     },
     "https://developer.apple.com/documentation/xcode/packaging-mac-software-for-distribution": {
       "file_path": "documentation/Xcode/packaging-mac-software-for-distribution.md",
-      "hash": "12a3453a955e11c7f37f4ce3f50b321d6bb30ed71df94b3501d08e5d528c9a85"
+      "hash": "5f93cf9b9357d34bee0836264953e57985d7dca8f1c81c79d29729fe7f15bd08"
     },
     "https://developer.apple.com/documentation/xcode/performance-and-metrics": {
       "file_path": "documentation/Xcode/performance-and-metrics.md",
@@ -1078,7 +1066,7 @@
     },
     "https://developer.apple.com/documentation/xcode/projects-and-workspaces": {
       "file_path": "documentation/Xcode/projects-and-workspaces.md",
-      "hash": "a0771f987810343cbb876f33d5c9822c40cffc3fb80f21ea228413a2b6fdaa57"
+      "hash": "eb4f1601a68249898d17dab5ed08ac7c35f0c5c17660fa6330da16e376513dc2"
     },
     "https://developer.apple.com/documentation/xcode/protecting-local-app-data-using-containers": {
       "file_path": "documentation/Xcode/protecting-local-app-data-using-containers.md",
@@ -1276,10 +1264,6 @@
       "file_path": "documentation/Xcode/slothcreator-building-docc-documentation-in-xcode.md",
       "hash": "792fb9bef92c610ad3310bf6d82c7081e564a7d5a859a67712b1ff813ee16a2a"
     },
-    "https://developer.apple.com/documentation/xcode/slothcreator_building_docc_documentation_in_xcode": {
-      "file_path": "documentation/Xcode/slothcreator_building_docc_documentation_in_xcode.md",
-      "hash": ""
-    },
     "https://developer.apple.com/documentation/xcode/source-code-management-setup": {
       "file_path": "documentation/Xcode/source-code-management-setup.md",
       "hash": "6ac0f375cc7b4b53ea6c237ba427bab45e566394a618b9c633436e7e66b3388e"
@@ -1334,7 +1318,7 @@
     },
     "https://developer.apple.com/documentation/xcode/testing-a-release-build": {
       "file_path": "documentation/Xcode/testing-a-release-build.md",
-      "hash": "c6e92f33aca6ac61d5507420cb47d31879c2423da8c792d253339d4016d356f1"
+      "hash": "59749d0e6a9517164effbf2da3bcb936735a148a5cc7d3b63e4abf1affac1a73"
     },
     "https://developer.apple.com/documentation/xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code": {
       "file_path": "documentation/Xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code.md",
@@ -1486,11 +1470,11 @@
     },
     "https://developer.apple.com/documentation/xcode/xcode-command-line-tool-reference": {
       "file_path": "documentation/Xcode/xcode-command-line-tool-reference.md",
-      "hash": "085f08993d62df3560bca7a4f281597a296397d01e54a7c8561e4c2ec106e941"
+      "hash": "3ecb1f5099037bdb24391dfeecc1fe1f2354403e8c2c4ec61b188db4da99e649"
     },
     "https://developer.apple.com/tutorials/data/documentation/Xcode.json": {
       "file_path": "documentation/Xcode/Xcode.md",
-      "hash": "bb2f038b29d4056c5293b167df7640556e751757e9fe3fe7d236cc6334ccdd1c"
+      "hash": "8dae0bbc4811f46756e3e40fef518eb1c52ec56bc4653b0da0619805caeec762"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/about-continuous-integration-and-delivery-with-xcode-cloud.json": {
       "file_path": "documentation/Xcode/about-continuous-integration-and-delivery-with-xcode-cloud.md",
@@ -1526,7 +1510,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/adding-images-to-your-xcode-project.json": {
       "file_path": "documentation/Xcode/adding-images-to-your-xcode-project.md",
-      "hash": "feb17b74377caeb508738413a142a183c96ef3394962a5c96a8de595c199cc55"
+      "hash": "e135831023fe08ed0d89a7e4fbee4dd880ed396f6814a5947b5599977f58d40c"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/adding-package-dependencies-to-your-app.json": {
       "file_path": "documentation/Xcode/adding-package-dependencies-to-your-app.md",
@@ -1662,15 +1646,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/asset-management.json": {
       "file_path": "documentation/Xcode/asset-management.md",
-      "hash": "3b65b11f7e186b8d5040c93ebbba58e5b1446cc8d55638313fc26bc05d07c600"
+      "hash": "907eb37550255b073b3b20d996e3853f8df417bb3db9e5efc5b5c37f8bbb4d05"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/autosizing-views-for-localization-in-ios.json": {
       "file_path": "documentation/Xcode/autosizing-views-for-localization-in-ios.md",
       "hash": "0995ecf24840a1e2ecbce0904e6ec186c7fad726b5cf1c093bc276af58e041d5"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/xcode/autosizing_views_for_localization_in_ios.json": {
-      "file_path": "documentation/Xcode/autosizing_views_for_localization_in_ios.md",
-      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/build-settings-reference.json": {
       "file_path": "documentation/Xcode/build-settings-reference.md",
@@ -1726,7 +1706,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/changing-the-bundle-identifier.json": {
       "file_path": "documentation/Xcode/changing-the-bundle-identifier.md",
-      "hash": "dc096353f538cbc67d5ba88b85cfc74952b4143b38ad0bf876cfabd35c0d8963"
+      "hash": "ff776fe37d7e5e981d90a556beb78cc5f3289ee72b2dafcdfe864053267efb97"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/choosing-localization-regions-and-scripts.json": {
       "file_path": "documentation/Xcode/choosing-localization-regions-and-scripts.md",
@@ -1778,7 +1758,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/configuring-family-controls.json": {
       "file_path": "documentation/Xcode/configuring-family-controls.md",
-      "hash": "950ba389e74ca971f06a4fc5ae6c1501a90d3dc2ae8c5a976fe80f26b160c5fb"
+      "hash": "1db2203359495aa9be2e41a565bf3796d614dbb3da39b4b69c90c599218052e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/configuring-game-controllers.json": {
       "file_path": "documentation/Xcode/configuring-game-controllers.md",
@@ -1892,10 +1872,6 @@
       "file_path": "documentation/Xcode/configuring-your-xcode-project-to-use-source-control.md",
       "hash": "f1d980beb84e0e2b2245d78fe9114132907ee263499437bd4378f5be91c56016"
     },
-    "https://developer.apple.com/tutorials/data/documentation/xcode/configuring_your_app_to_use_alternate_app_icons.json": {
-      "file_path": "documentation/Xcode/configuring_your_app_to_use_alternate_app_icons.md",
-      "hash": ""
-    },
     "https://developer.apple.com/tutorials/data/documentation/xcode/conforming-to-mach-ipc-security-restrictions.json": {
       "file_path": "documentation/Xcode/conforming-to-mach-ipc-security-restrictions.md",
       "hash": "7f6b54ad501362fa65f5db50c87ccb0788c89ffd4a1b8b95ffbe16c070d584ec"
@@ -1998,7 +1974,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/customizing-your-workspace-using-themes.json": {
       "file_path": "documentation/Xcode/customizing-your-workspace-using-themes.md",
-      "hash": "442ca66006271a98aba9ff46cb0c61016dbd57bf8b6143fdcd37825d85bcaaaa"
+      "hash": "cb4a21b57cff91aac55f8306e610ec046d4e969a641670ce4156e939a6a05927"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/data-races.json": {
       "file_path": "documentation/Xcode/data-races.md",
@@ -2062,11 +2038,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/diagnosing-memory-thread-and-crash-issues-early.json": {
       "file_path": "documentation/Xcode/diagnosing-memory-thread-and-crash-issues-early.md",
-      "hash": "2b2bce24ceff1a10bbf2dfda08ee069b6be9af0f92c434087028741aa8e32762"
+      "hash": "0b3f3d32a224051184baef33149e634578160cac2217efb4ab987ba5e255d8d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/diagnosing-performance-issues-early.json": {
       "file_path": "documentation/Xcode/diagnosing-performance-issues-early.md",
       "hash": "7ca8911cc7a9263932995cfcc75ec1939813569bbc9e29fdfd645b530eeeeb4d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode/distributing-apps-to-your-development-devices.json": {
+      "file_path": "documentation/Xcode/distributing-apps-to-your-development-devices.md",
+      "hash": "61695ad95dbe8936437787ea71144da23a69ddaf9e0ae5e6e19e3edfbe99a938"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/distributing-binary-frameworks-as-swift-packages.json": {
       "file_path": "documentation/Xcode/distributing-binary-frameworks-as-swift-packages.md",
@@ -2078,11 +2058,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/distributing-your-app-for-beta-testing-and-releases.json": {
       "file_path": "documentation/Xcode/distributing-your-app-for-beta-testing-and-releases.md",
-      "hash": "e8d012776237f3171798fd9c6b8e54a3143c2d59732b0994c018154bcb8a901c"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/xcode/distributing-your-app-to-registered-devices.json": {
-      "file_path": "documentation/Xcode/distributing-your-app-to-registered-devices.md",
-      "hash": "77b5df7f81483f7620bbd6406da4f42ffd5fc794867d2e951fba208920571056"
+      "hash": "aa36538cf2cde75fa4d3520d82609018d2573fbc4c5319c48e39200d2c4572f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/distributing-your-xcode-cloud-builds-through-testflight.json": {
       "file_path": "documentation/Xcode/distributing-your-xcode-cloud-builds-through-testflight.md",
@@ -2090,7 +2066,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/distribution.json": {
       "file_path": "documentation/Xcode/distribution.md",
-      "hash": "472e0b4462fb0d85bd4556cccdf538e0ecc7dfc985d20a36f8bbbe68eec53d19"
+      "hash": "fb63691d8ffb9ce1ba6694c065a812b5bb5d7e54ea2abcc452c3981094650a70"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/division-by-zero.json": {
       "file_path": "documentation/Xcode/division-by-zero.md",
@@ -2198,7 +2174,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/fixing-issues-in-your-code-as-you-type.json": {
       "file_path": "documentation/Xcode/fixing-issues-in-your-code-as-you-type.md",
-      "hash": "84b695fcf3aed29ccc14b05f6e2d36e5e2dc5db6a0f6e95c2426158eb3c30c69"
+      "hash": "16123ae38f6956a18cc06241fdf23a19e6cd8b38ae15e2ef75a7ee9b522eeafd"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/gaining-performance-insights-with-metal-performance-hud.json": {
       "file_path": "documentation/Xcode/gaining-performance-insights-with-metal-performance-hud.md",
@@ -2376,10 +2352,6 @@
       "file_path": "documentation/Xcode/localization-friendly-layouts-in-macos.md",
       "hash": "3dc52c788745a8e206c07f73c32eb410641cafb1bee4e76c3fd5f7770a998d3a"
     },
-    "https://developer.apple.com/tutorials/data/documentation/xcode/localization-friendly_layouts_in_macos.json": {
-      "file_path": "documentation/Xcode/localization-friendly_layouts_in_macos.md",
-      "hash": ""
-    },
     "https://developer.apple.com/tutorials/data/documentation/xcode/localization.json": {
       "file_path": "documentation/Xcode/localization.md",
       "hash": "04f11128aec91963f214a350c1e0dc0bdea531376b95ef52517b42ff28bbd933"
@@ -2406,7 +2378,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/localizing-your-app-using-agents.json": {
       "file_path": "documentation/Xcode/localizing-your-app-using-agents.md",
-      "hash": "a404b8438451cb8cc0bbafb31fb2cd4031f8b35636ec1283ce975a88ca6de96c"
+      "hash": "a1ae5f4c28e9ec0ef691d0910abd63c769609a30dc2b800928664a794a95905e"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/locating-a-missing-debug-symbol-file.json": {
       "file_path": "documentation/Xcode/locating-a-missing-debug-symbol-file.md",
@@ -2414,7 +2386,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/locating-device-identifiers.json": {
       "file_path": "documentation/Xcode/locating-device-identifiers.md",
-      "hash": "85e4cdcbb1a567fe279fd8449e2a69cfa593f5197957b811bce8f9771ec40413"
+      "hash": "9d23104637b0218b928d6d21add0d8e37df2ac607ad68c614a181afe6653b87f"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/locking-views-in-storyboard-and-xib-files.json": {
       "file_path": "documentation/Xcode/locking-views-in-storyboard-and-xib-files.md",
@@ -2430,7 +2402,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/managing-apps-on-devices.json": {
       "file_path": "documentation/Xcode/managing-apps-on-devices.md",
-      "hash": "3b50fd0d55568c0b9f46e50060506de4139b03226866a2673a9a79c8e5fd6bf7"
+      "hash": "e9147968929be08e2b8941c377604bcde7bdaecb8d98da403dfe3196388a7eb7"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/managing-assets-with-asset-catalogs.json": {
       "file_path": "documentation/Xcode/managing-assets-with-asset-catalogs.md",
@@ -2438,11 +2410,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/managing-files-and-folders-in-your-xcode-project.json": {
       "file_path": "documentation/Xcode/managing-files-and-folders-in-your-xcode-project.md",
-      "hash": "27fece16a9f520887368ec40befda062d62d90728c45602372de9cc92930cd09"
+      "hash": "bf8c064492b7ec08b2613d570c8d766a8c19e9b6e4a946e6835a989a36577319"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/managing-multiple-projects-and-their-dependencies.json": {
       "file_path": "documentation/Xcode/managing-multiple-projects-and-their-dependencies.md",
-      "hash": "6a3bc76950710edfbf80b5dd5d31a51fa1aca4b20bdfd7c76780e846829f1360"
+      "hash": "0bf20e4dc8d59194b577e5a92e018df3770b5e139db87d25e6bdaca94aed0152"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/managing-xcode-projects-using-the-command-line.json": {
       "file_path": "documentation/Xcode/managing-xcode-projects-using-the-command-line.md",
@@ -2530,7 +2502,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/packaging-mac-software-for-distribution.json": {
       "file_path": "documentation/Xcode/packaging-mac-software-for-distribution.md",
-      "hash": "12a3453a955e11c7f37f4ce3f50b321d6bb30ed71df94b3501d08e5d528c9a85"
+      "hash": "5f93cf9b9357d34bee0836264953e57985d7dca8f1c81c79d29729fe7f15bd08"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/performance-and-metrics.json": {
       "file_path": "documentation/Xcode/performance-and-metrics.md",
@@ -2566,7 +2538,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/projects-and-workspaces.json": {
       "file_path": "documentation/Xcode/projects-and-workspaces.md",
-      "hash": "a0771f987810343cbb876f33d5c9822c40cffc3fb80f21ea228413a2b6fdaa57"
+      "hash": "eb4f1601a68249898d17dab5ed08ac7c35f0c5c17660fa6330da16e376513dc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/protecting-local-app-data-using-containers.json": {
       "file_path": "documentation/Xcode/protecting-local-app-data-using-containers.md",
@@ -2764,10 +2736,6 @@
       "file_path": "documentation/Xcode/slothcreator-building-docc-documentation-in-xcode.md",
       "hash": "792fb9bef92c610ad3310bf6d82c7081e564a7d5a859a67712b1ff813ee16a2a"
     },
-    "https://developer.apple.com/tutorials/data/documentation/xcode/slothcreator_building_docc_documentation_in_xcode.json": {
-      "file_path": "documentation/Xcode/slothcreator_building_docc_documentation_in_xcode.md",
-      "hash": ""
-    },
     "https://developer.apple.com/tutorials/data/documentation/xcode/source-code-management-setup.json": {
       "file_path": "documentation/Xcode/source-code-management-setup.md",
       "hash": "6ac0f375cc7b4b53ea6c237ba427bab45e566394a618b9c633436e7e66b3388e"
@@ -2818,7 +2786,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/testing-a-release-build.json": {
       "file_path": "documentation/Xcode/testing-a-release-build.md",
-      "hash": "c6e92f33aca6ac61d5507420cb47d31879c2423da8c792d253339d4016d356f1"
+      "hash": "59749d0e6a9517164effbf2da3bcb936735a148a5cc7d3b63e4abf1affac1a73"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code.json": {
       "file_path": "documentation/Xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code.md",
@@ -2974,7 +2942,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/xcode-command-line-tool-reference.json": {
       "file_path": "documentation/Xcode/xcode-command-line-tool-reference.md",
-      "hash": "085f08993d62df3560bca7a4f281597a296397d01e54a7c8561e4c2ec106e941"
+      "hash": "3ecb1f5099037bdb24391dfeecc1fe1f2354403e8c2c4ec61b188db4da99e649"
     }
   },
   "metadata": {
@@ -2992,6 +2960,6 @@
         "https://developer.apple.com/documentation/xcode/Print-pipeline-UIDs"
       ]
     },
-    "total_pages": 744
+    "total_pages": 736
   }
 }

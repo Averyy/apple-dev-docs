@@ -24,8 +24,6 @@ For example, you might use this property as part of visualizing all of the avail
 ### Inspecting hand skeletons
 - [var allJoints: [HandSkeleton.Joint]](./alljoints.md)
   All of the joints in a hand skeleton.
-- [var description: String](./description.md)
-  A textual representation of this Skeleton.
 
 
 ---

@@ -29,7 +29,7 @@ func update(_ estimates: CPTravelEstimates, for trip: CPTrip, with timeRemaining
 
 ## See Also
 
-### Providing Trip Estimates
+### Providing trip estimates
 - [func updateEstimates(CPTravelEstimates, for: CPTrip)](./updateestimates%28_,for%29.md)
   Updates travel estimates, such as arrival time and the remaining time and distance for a trip.
 - [enum CPTimeRemainingColor](../cptimeremainingcolor.md)

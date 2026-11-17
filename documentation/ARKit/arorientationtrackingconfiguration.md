@@ -28,7 +28,9 @@ Creating and maintaining this correspondence between spaces requires tracking th
 
 This basic level of motion tracking can create limited AR experiences: A virtual object can appear to be part of the real world, even as the user rotates the device to look above, below, or beside that object. However, this configuration cannot track movement of the device: non-trivially changing the device’s position breaks the AR illusion, causing virtual content to appear to drift relative to the real world. For example, the user cannot walk around to see the sides and back of a virtual object. Additionally, 3DOF tracking does not support plane detection or hit testing.
 
-> ❗ **Important**:  Because 3DOF tracking creates limited AR experiences, you should generally not use the [`AROrientationTrackingConfiguration`](./arorientationtrackingconfiguration.md) class directly. Instead, use [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md) for six degrees of freedom (6DOF) plane detection and hit testing. Use 3DOF tracking only as a fallback in situations where 6DOF tracking is temporarily unavailable.
+> ❗ **Important**: Because 3DOF tracking creates limited AR experiences, you should generally not use the [`AROrientationTrackingConfiguration`](./arorientationtrackingconfiguration.md) class directly. Instead, use [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md) for six degrees of freedom (6DOF) plane detection and hit testing. Use 3DOF tracking only as a fallback in situations where 6DOF tracking is temporarily unavailable.
+
+## Discussion
 
 ![](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2923907@2x.png)
 

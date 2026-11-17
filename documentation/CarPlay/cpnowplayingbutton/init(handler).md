@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a Now Playing button that invokes a handler.
+Creates a button and sets its action to the provided handler.
 
 **Availability**:
 - iOS 14.0+
@@ -21,9 +21,17 @@ init(handler: ((CPNowPlayingButton) -> Void)? = nil)
 - (instancetype) initWithHandler:(void (^)(CPNowPlayingButton *)) handler;
 ```
 
+## Return Value
+
+An initialized button.
+
+## Discussion
+
+When you instantiate a concrete subclass of [`CPNowPlayingButton`](../cpnowplayingbutton.md), use this initializer to specify the code to run when someone interacts with the button.
+
 ## Parameters
 
-- `handler`: A closure that the button invokes when the user taps it.
+- `handler`: The handler to run when someone interacts with the button. This closure takes the button as a parameter and returns no value.
 
 
 ---

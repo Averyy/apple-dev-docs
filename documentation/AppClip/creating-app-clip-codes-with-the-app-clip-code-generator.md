@@ -7,7 +7,7 @@ Use the App Clip Code Generator command-line tool to verify your code’s colors
 
 ## Overview
 
-By placing an App Clip Code at a physical location or using it in printed or digital marketing materials, you make your App Clip more discoverable. An App Clip Code always uses a design Apple provides, and users instantly recognize and scan it to launch your App Clip. Use the App Clip Code generator command-line tool to create App Clip Codes during development of your App Clip or to automate the creation of App Clip Codes.
+By placing an App Clip Code at a physical location or using it in printed or digital marketing materials, you make your App Clip more discoverable. An App Clip Code always uses a design Apple provides, and users instantly recognize and scan it to launch your App Clip. Use the App Clip Code Generator command-line tool to create App Clip Codes during development of your App Clip or to automate the creation of App Clip Codes.
 
 > **Note**:  You must be enrolled in the Apple Developer Program before you can download the App Clip Code Generator. For information about the Apple Developer Program, see [How the Program Works](https://developer.apple.com/programs/how-it-works/).
 
@@ -24,7 +24,7 @@ If you already created an advanced App Clip experience in [App Store Connect](ht
 
 ### Install the App Clip Code Generator
 
-To download and install the App Clip Code Generator, visit [App Clips Resources](https://developer.apple.com/app-clips/resources/) and log into your Apple Developer account. After you download the App Clip Code Generator, open the downloaded disk image and run the package installer. You can find the installed tool at `/Library/Developer/AppClipCodeGenerator`.
+To download and install the App Clip Code Generator, visit [App Clips Resources](https://developer.apple.com/app-clips/resources/) and log in to your Apple Developer account. After you download the App Clip Code Generator, open the downloaded disk image and run the package installer. You can find the installed tool at `/Library/Developer/AppClipCodeGenerator`.
 
 ### Choose a default color pair
 

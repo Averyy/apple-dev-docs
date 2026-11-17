@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An image that the section header displays.
+The image to display in the header area of the section.
 
 **Availability**:
 - iOS 15.0+
@@ -24,19 +24,19 @@ var headerImage: UIImage? { get set }
 
 ## Discussion
 
-The maximum size of the section header image is [`CPMaximumListSectionImageSize`](../cpmaximumlistsectionimagesize.md).
+This property contains the image you specified at initialization time. If you assign a new image to this property, create your [`UIImage`](../../UIKit/uiimage.md) type with an asset catalog resource whenever possible. From the asset catalog resources, CarPlay chooses the appropriate image resource automatically. For example, CarPlay chooses the light and dark variant of your image to match the vehicle settings.
 
-Provide a [`UIImage`](../../UIKit/uiimage.md) that is display-ready. To provide an image that includes light and dark styles, use an asset from your asset catalog that includes both styles, or use a [`UIImageAsset`](../../UIKit/uiimageasset.md) to combine two [`UIImage`](../../UIKit/uiimage.md) instances into a single image with both styles.
-
-To size your header image properly, consider the display scale of the car screen. Use [`UIImageAsset`](../../UIKit/uiimageasset.md) to combine multiple images with different trait collections into a single image. For more information about trait collections for CarPlay, see [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md).
+The [`CPMaximumListSectionImageSize`](../cpmaximumlistsectionimagesize.md) constant contains the maximum supported size for images. To get the maximum image dimensions in pixels, multiple the maximum size values by the scale factor in the [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property of your interface controller.
 
 ## See Also
 
-### Configuring Section Headers
-- [var headerButton: CPButton?](./headerbutton.md)
-  A button that the section header displays.
+### Getting the section’s header content
+- [var header: String?](./header.md)
+  The main text to display in the header area of the section.
 - [var headerSubtitle: String?](./headersubtitle.md)
-  A string that the header displays as a subtitle.
+  The secondary text to display in the header area of the section.
+- [var headerButton: CPButton?](./headerbutton.md)
+  The button to display in the header area of the section.
 
 
 ---

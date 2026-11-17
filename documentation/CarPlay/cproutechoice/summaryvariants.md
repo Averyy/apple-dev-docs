@@ -29,7 +29,7 @@ An example variant summary is *Via I-280 South.*
 
 ## See Also
 
-### Getting Variants
+### Getting the variant details
 - [var additionalInformationVariants: [String]?](./additionalinformationvariants.md)
   An array of variants providing additional information about the route choice.
 - [var selectionSummaryVariants: [String]?](./selectionsummaryvariants.md)

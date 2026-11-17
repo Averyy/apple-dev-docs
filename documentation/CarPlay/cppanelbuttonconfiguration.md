@@ -27,11 +27,11 @@ The `CPPanelButtonConfiguration` type defines the default behaviors for button c
 
 ## Topics
 
-### Initializers
-- [init?(coder: NSCoder)](./cppanelbuttonconfiguration/init%28coder%29.md)
+### Initializing the panel
 - [init(primaryAction: CPTextButton, secondaryAction: CPTextButton?)](./cppanelbuttonconfiguration/init%28primaryaction,secondaryaction%29.md)
   Initializes the button configuration object with the specified buttons.
-### Instance Properties
+- [init?(coder: NSCoder)](./cppanelbuttonconfiguration/init%28coder%29.md)
+### Getting the action buttons
 - [var primaryAction: CPTextButton](./cppanelbuttonconfiguration/primaryaction.md)
   The primary action button for the panel.
 - [var secondaryAction: CPTextButton?](./cppanelbuttonconfiguration/secondaryaction.md)
@@ -52,6 +52,22 @@ The `CPPanelButtonConfiguration` type defines the default behaviors for button c
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
+
+## See Also
+
+### Common types
+- [class CPTemplate](./cptemplate.md)
+  An abstract base class for interface templates.
+- [class CPTextButton](./cptextbutton.md)
+  A button that displays a stylized title.
+- [class CPButton](./cpbutton.md)
+  A button that displays an image and invokes a handler when the user taps it.
+- [class CPImageSet](./cpimageset.md)
+  Light and dark representations of an image.
+- [class CPPanel](./cppanel.md)
+  A type that provides the common behaviors for panels you display on top of your app’s content.
+- [class CPPanelItem](./cppanelitem.md)
+  A type that provides the common behaviors for items you display in a section of a panel.
 
 
 ---

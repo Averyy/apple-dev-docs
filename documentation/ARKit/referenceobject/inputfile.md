@@ -22,8 +22,6 @@ var inputFile: URL? { get }
   The bounding box of an anchor.
 - [ObjectAnchor.AxisAlignedBoundingBox](../objectanchor/axisalignedboundingbox.md)
   Values that describe an axis-aligned bounding box.
-- [var description: String](../objectanchor/description.md)
-  A textual representation of this anchor.
 - [var isTracked: Bool](../objectanchor/istracked.md)
   A Boolean value that indicates whether the framework is currently tracking an object anchor.
 - [var originFromAnchorTransform: simd_float4x4](../objectanchor/originfromanchortransform.md)

@@ -50,6 +50,8 @@ To smoothen the motion of particles dragged using a volume, `falloff` can be set
 ## See Also
 
 ### Simulation and bodies
+- [Simulating cloth bodies, materials, and forces](./simulating-cloth-bodies-materials-and-forces.md)
+  Create realistic fabric motion with Reality Composer Pro.
 - [struct ClothSimulationComponent](./clothsimulationcomponent.md)
   A component that marks an entity as the simulation root of a localized cloth simulation.
 - [struct ClothBodyComponent](./clothbodycomponent.md)

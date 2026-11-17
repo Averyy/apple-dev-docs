@@ -25,6 +25,7 @@ init(type: any Generable.Type, description: String? = nil, representNilExplicitl
 
 - `type`: The type this schema represents.
 - `description`: A natural language description of this schema.
+- `explicitNil`: If `true`, the model represents `nil` explicitly.
 - `properties`: An array of properties.
 
 ## See Also

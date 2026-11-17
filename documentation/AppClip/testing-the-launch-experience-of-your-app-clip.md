@@ -81,7 +81,7 @@ A reliable user experience is crucial to App Clips and requires spending time to
 
 > ❗ **Important**:  Unlike local experiences, creating an App Clip experience for testers in TestFlight requires you to associate your App Clip with your website. For more information on configuring associated domains, refer to [Associating your App Clip with your website](./associating-your-app-clip-with-your-website.md).
 
-Users don’t install App Clips, and App Clips don’t appear on the Home Screen. Similarly, testers don’t install the beta version of your App Clip, and it also doesn’t appear on the Home Screen either. Instead, testers launch the App Clip experiences you configure for testing through the [TestFlight app](https://apps.apple.com/us/app/testflight/id899247664) on their device.
+Users don’t install App Clips, and App Clips don’t appear on the Home Screen. Similarly, testers don’t install the beta version of your App Clip, and it doesn’t appear on the Home Screen either. Instead, testers launch the App Clip experiences you configure for testing through the [TestFlight app](https://apps.apple.com/us/app/testflight/id899247664) on their device.
 
 For more information on configuring experiences for testing in App Store Connect, refer to [Testing an App Clip Experience](https://help.apple.com/app-store-connect/#/devbc57e2ec6).
 

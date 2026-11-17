@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An enum schema for a capture duration parameter.
+An enum schema for a capture duration.
 
 **Availability**:
 - iOS 18.0+
@@ -21,9 +21,9 @@ var captureDuration: some AppSchemaEnum { get }
 
 ## Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `camera` domain and a parameter type matches the `captureDuration` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .camera.captureDuration)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `camera` domain and a parameter type matches the `captureDuration` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum(schema: .camera.captureDuration)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an app enum that conforms to the `captureDuration` schema:
+The following example shows an app enum that conforms to the `captureDuration` schema. You can create a type that conforms to the schema by adding the `@AppEnum` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `camera_captureDuration` and select it from the code-completion suggestions:
 
 ```swift
 @AppEnum(schema: .camera.captureDuration)
@@ -47,9 +47,9 @@ For more information about the App Intents framework and the experiences it supp
 
 ### Types for static parameters
 - [var captureDevice: some AppSchemaEnum](./capturedevice.md)
-  An enum schema for a capture device parameter.
+  An enum schema for a capture device.
 - [var captureMode: some AppSchemaEnum](./capturemode.md)
-  An enum schema for a capture mode parameter.
+  An enum schema for a capture mode.
 - [AppSchema.CameraEnum](../cameraenum.md)
   Identifies enum schemas in the camera domain.
 

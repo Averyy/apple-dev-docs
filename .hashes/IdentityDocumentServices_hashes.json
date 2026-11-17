@@ -30,7 +30,7 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/claimsquery/claimpath": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/claimsquery/claimpath.md",
-      "hash": "adce18a8e2019a14460d31fde3a31f60ecfdfe3b5b8292e3931d44bbeb2db77a"
+      "hash": "7b3b7e60e8b646b63c8d065bad0c61596534ed5eb3526b677e49019c46ad135f"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/claimsquery/claimpath/components": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/claimsquery/claimpath/components.md",
@@ -39,6 +39,10 @@
     "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/claimsquery/claimpath/init(_:)": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/claimsquery/claimpath/init(_).md",
       "hash": "b2688974df3f47e45d47ddfd60dc086a7cfe4107ad521da5a8a1f2f5b41aa2e2"
+    },
+    "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/claimsquery/claimpath/init(arrayliteral:)": {
+      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/claimsquery/claimpath/init(arrayliteral).md",
+      "hash": "6136b73dd772400d59f3e6ee201834fd23d38db91145d9cf1d57d2720c9a7de9"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/claimsquery/id": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/claimsquery/id.md",
@@ -78,7 +82,7 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/credentialformat": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/credentialformat.md",
-      "hash": "ca8ad4681b10bc6c5faef936a40bc5cf9f324456e5625f4bd6505095095113a2"
+      "hash": "61da8ff3c8f77fda8ca1add7c92c02567cb755ff82f4ad3d597a59263af4db95"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/credentialformat/dcsdjwt": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/credentialformat/dcsdjwt.md",
@@ -86,7 +90,7 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/credentialformat/msomdoc": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/credentialformat/msomdoc.md",
-      "hash": "85041107e959fcf5dec0d7bc8f9914b1ae0e01df51d8b0f3890cc6e4e0c5b92d"
+      "hash": "b876397911f4d869f4bea77bb7f6a33b344a842e960ccf5bffdc04a3b7f69968"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/credentialformat/unknown": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/credentialformat/unknown.md",
@@ -162,19 +166,19 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/metadata": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata.md",
-      "hash": "6e59d97b2957653718f05ab2e8ee008019bf74febb8d50410452ddb2c2578bd5"
+      "hash": "33c23153840e906884b85e03b1d710afbf8ccaa31e005236ca31aa027bc4deed"
     },
-    "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/metadata/doctypevalue": {
-      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/doctypevalue.md",
-      "hash": "a91d14b1226a05cf1da261d5b871a7f4d8567b70a45221d1afe31277f271fd3e"
+    "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/metadata/documenttype": {
+      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/documenttype.md",
+      "hash": "f53cfb3b38b9a89c9c5cc4d11297a798158c87c99cbe349cabfe06ca17f53d04"
     },
-    "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/metadata/init(doctypevalue:vctvalues:)": {
-      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/init(doctypevalue,vctvalues).md",
-      "hash": "ea6ffc370b053641694d54c8054d75d181f394a95b2f849908d72aa04eb2b96d"
+    "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/metadata/init(documenttype:verifiablecredentialtypes:)": {
+      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/init(documenttype,verifiablecredentialtypes).md",
+      "hash": "da39cb452e867181515a029c5f375ae1902071161d2d128957c702980ca60c50"
     },
-    "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/metadata/vctvalues": {
-      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/vctvalues.md",
-      "hash": "d8caa04bf6501266ec4c83a656c888a51ac45442f0e21f8e1e1b061cdb379326"
+    "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/metadata/verifiablecredentialtypes": {
+      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/verifiablecredentialtypes.md",
+      "hash": "57aa5eaf5671f80c7ba517499fd54a0b070f915837fa9b83d53606972b1cbd9a"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery/trustedauthoritiesquery": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/trustedauthoritiesquery.md",
@@ -283,14 +287,6 @@
     "https://developer.apple.com/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror.md",
       "hash": "2f1fbe2319d32866bd25fc64977fbcc1ec90f9fdd411487969bbbd1311d1d7d6"
-    },
-    "https://developer.apple.com/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror/!=(_:_:)": {
-      "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror/noteq(_,_).md",
-      "hash": ""
-    },
-    "https://developer.apple.com/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror/==(_:_:)": {
-      "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror/eqeq(_,_).md",
-      "hash": ""
     },
     "https://developer.apple.com/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror/invalidrequest": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror/invalidrequest.md",
@@ -650,7 +646,11 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/verifiablecredentialregistration": {
       "file_path": "documentation/IdentityDocumentServices/verifiablecredentialregistration.md",
-      "hash": "349ea7d8b5a1fd96204e63980821de1fffd4c3153be229b017e6347c59b0c9ef"
+      "hash": "bf9a174ed1bcc0396971a30feb6f1550d2ac1b8ef280a7029bba5a4419b49716"
+    },
+    "https://developer.apple.com/documentation/identitydocumentservices/verifiablecredentialregistration/documentidentifier": {
+      "file_path": "documentation/IdentityDocumentServices/verifiablecredentialregistration/documentidentifier.md",
+      "hash": "d3267d1fdd5f2f8e8761fda531e5d07d2c76972c057932ca2abaac2b8d172a6c"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/verifiablecredentialregistration/init(verifiablecredentialtypes:supportedissuerkeyidentifiers:supportedauthoritykeyidentifiers:documentidentifier:invalidationdate:)": {
       "file_path": "documentation/IdentityDocumentServices/verifiablecredentialregistration/init(verifiablecredentialtypes,supportedissuerkeyidentifiers,supportedauthoritykeyidentifiers,documentidentifier,invalidationdate).md",
@@ -706,7 +706,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/claimsquery/claimpath.json": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/claimsquery/claimpath.md",
-      "hash": "adce18a8e2019a14460d31fde3a31f60ecfdfe3b5b8292e3931d44bbeb2db77a"
+      "hash": "7b3b7e60e8b646b63c8d065bad0c61596534ed5eb3526b677e49019c46ad135f"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/claimsquery/claimpath/components.json": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/claimsquery/claimpath/components.md",
@@ -715,6 +715,10 @@
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/claimsquery/claimpath/init(_:).json": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/claimsquery/claimpath/init(_).md",
       "hash": "b2688974df3f47e45d47ddfd60dc086a7cfe4107ad521da5a8a1f2f5b41aa2e2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/claimsquery/claimpath/init(arrayliteral:).json": {
+      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/claimsquery/claimpath/init(arrayliteral).md",
+      "hash": "6136b73dd772400d59f3e6ee201834fd23d38db91145d9cf1d57d2720c9a7de9"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/claimsquery/id.json": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/claimsquery/id.md",
@@ -754,7 +758,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/credentialformat.json": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/credentialformat.md",
-      "hash": "ca8ad4681b10bc6c5faef936a40bc5cf9f324456e5625f4bd6505095095113a2"
+      "hash": "61da8ff3c8f77fda8ca1add7c92c02567cb755ff82f4ad3d597a59263af4db95"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/credentialformat/dcsdjwt.json": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/credentialformat/dcsdjwt.md",
@@ -762,7 +766,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/credentialformat/msomdoc.json": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/credentialformat/msomdoc.md",
-      "hash": "85041107e959fcf5dec0d7bc8f9914b1ae0e01df51d8b0f3890cc6e4e0c5b92d"
+      "hash": "b876397911f4d869f4bea77bb7f6a33b344a842e960ccf5bffdc04a3b7f69968"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/credentialformat/unknown.json": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/credentialformat/unknown.md",
@@ -838,19 +842,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/metadata.json": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata.md",
-      "hash": "6e59d97b2957653718f05ab2e8ee008019bf74febb8d50410452ddb2c2578bd5"
+      "hash": "33c23153840e906884b85e03b1d710afbf8ccaa31e005236ca31aa027bc4deed"
     },
-    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/metadata/doctypevalue.json": {
-      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/doctypevalue.md",
-      "hash": "a91d14b1226a05cf1da261d5b871a7f4d8567b70a45221d1afe31277f271fd3e"
+    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/metadata/documenttype.json": {
+      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/documenttype.md",
+      "hash": "f53cfb3b38b9a89c9c5cc4d11297a798158c87c99cbe349cabfe06ca17f53d04"
     },
-    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/metadata/init(doctypevalue:vctvalues:).json": {
-      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/init(doctypevalue,vctvalues).md",
-      "hash": "ea6ffc370b053641694d54c8054d75d181f394a95b2f849908d72aa04eb2b96d"
+    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/metadata/init(documenttype:verifiablecredentialtypes:).json": {
+      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/init(documenttype,verifiablecredentialtypes).md",
+      "hash": "da39cb452e867181515a029c5f375ae1902071161d2d128957c702980ca60c50"
     },
-    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/metadata/vctvalues.json": {
-      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/vctvalues.md",
-      "hash": "d8caa04bf6501266ec4c83a656c888a51ac45442f0e21f8e1e1b061cdb379326"
+    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/metadata/verifiablecredentialtypes.json": {
+      "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/metadata/verifiablecredentialtypes.md",
+      "hash": "57aa5eaf5671f80c7ba517499fd54a0b070f915837fa9b83d53606972b1cbd9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery/trustedauthoritiesquery.json": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery/trustedauthoritiesquery.md",
@@ -959,14 +963,6 @@
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror.json": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror.md",
       "hash": "2f1fbe2319d32866bd25fc64977fbcc1ec90f9fdd411487969bbbd1311d1d7d6"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror/!=(_:_:).json": {
-      "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror/noteq(_,_).md",
-      "hash": ""
-    },
-    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror/==(_:_:).json": {
-      "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror/eqeq(_,_).md",
-      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror/invalidrequest.json": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror/invalidrequest.md",
@@ -1326,7 +1322,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/verifiablecredentialregistration.json": {
       "file_path": "documentation/IdentityDocumentServices/verifiablecredentialregistration.md",
-      "hash": "349ea7d8b5a1fd96204e63980821de1fffd4c3153be229b017e6347c59b0c9ef"
+      "hash": "bf9a174ed1bcc0396971a30feb6f1550d2ac1b8ef280a7029bba5a4419b49716"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/verifiablecredentialregistration/documentidentifier.json": {
+      "file_path": "documentation/IdentityDocumentServices/verifiablecredentialregistration/documentidentifier.md",
+      "hash": "d3267d1fdd5f2f8e8761fda531e5d07d2c76972c057932ca2abaac2b8d172a6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/verifiablecredentialregistration/init(verifiablecredentialtypes:supportedissuerkeyidentifiers:supportedauthoritykeyidentifiers:documentidentifier:invalidationdate:).json": {
       "file_path": "documentation/IdentityDocumentServices/verifiablecredentialregistration/init(verifiablecredentialtypes,supportedissuerkeyidentifiers,supportedauthoritykeyidentifiers,documentidentifier,invalidationdate).md",

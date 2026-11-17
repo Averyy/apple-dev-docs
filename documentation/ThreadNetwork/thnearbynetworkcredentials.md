@@ -27,7 +27,7 @@ class THNearbyNetworkCredentials
 ## Topics
 
 ### Instance Properties
-- [var isPreferredNetworkCredentials: Bool](./thnearbynetworkcredentials/ispreferrednetworkcredentials.md)
+- [var isForPreferredNetwork: Bool](./thnearbynetworkcredentials/isforpreferrednetwork.md)
   A Boolean value that indicates whether these credentials belong to the preferred network.
 
 ## Relationships

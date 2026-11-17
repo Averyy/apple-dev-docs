@@ -30,7 +30,9 @@ enum Source
 
 ### Image-based lights
 - [struct ImageBasedLightComponent](../imagebasedlightcomponent.md)
+  A component that supplies image-based lighting from an environment image to entities that receive it.
 - [struct ImageBasedLightReceiverComponent](../imagebasedlightreceivercomponent.md)
+  A component that lights an entity using the image-based light of another entity.
 
 
 ---

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The title associated with this element.
+The primary text for the element.
 
 **Availability**:
 - iOS 26.0+
@@ -20,6 +20,16 @@ var title: String { get set }
 ```objc
 @property (nonatomic, copy) NSString * title;
 ```
+
+## Discussion
+
+CarPlay displays this text prominently below the element’s image.
+
+## See Also
+
+### Getting the element’s content
+- [var accessorySymbolName: String?](./accessorysymbolname.md)
+  The name of an image to display next to the element’s title.
 
 
 ---

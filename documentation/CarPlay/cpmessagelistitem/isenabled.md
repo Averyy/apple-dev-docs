@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A Boolean value that indicates if the item is enabled.
+A Boolean value that indicates whether the row is enabled.
 
 **Availability**:
 - iOS 15.0+
@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 
 ## Discussion
 
-The default value is [`true`](../../Swift/true.md).
+When the value of this property is `true`, interactions with the row cause CarPlay to launch Siri to perform message-related tasks. When the value of this property is `false`, interactions with the row don’t trigger Siri.
 
 
 ---

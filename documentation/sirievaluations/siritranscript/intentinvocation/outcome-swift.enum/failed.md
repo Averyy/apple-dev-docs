@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-The call ran and failed, or could not find what it needed.
+Siri called it and it failed: its tool threw, or it ended in another error. It doesn’t count as having run.
 
 **Availability**:
 - iOS 27.3+ (Beta)
@@ -20,7 +20,7 @@ case failed
 
 ## Discussion
 
-An outcome this version of the framework doesn’t recognize, which only a newer daemon can report, is also reported as failed.
+It satisfies no [`Calls`](../../../calls.md), and [`Calls.Ordering.disallowed`](../../../calls/ordering-swift.enum/disallowed.md) treats it as committed. An outcome this version of the framework doesn’t recognize, which only a newer Siri evaluation service can report, is also reported as failed.
 
 ## See Also
 
@@ -28,7 +28,7 @@ An outcome this version of the framework doesn’t recognize, which only a newer
 - [SiriTranscript.IntentInvocation.Outcome.succeeded](./succeeded.md)
   The call ran and succeeded.
 - [SiriTranscript.IntentInvocation.Outcome.needsInput](./needsinput.md)
-  Siri stopped to ask the person for a missing value or to choose between candidates.
+  Siri stopped to ask the person for a missing value or to choose between candidates, or the person cancelled the call when asked.
 - [SiriTranscript.IntentInvocation.Outcome.awaitingConfirmation](./awaitingconfirmation.md)
   Siri chose the call and its arguments, and asked the person to confirm before running it.
 - [SiriTranscript.IntentInvocation.Outcome.unknown](./unknown.md)

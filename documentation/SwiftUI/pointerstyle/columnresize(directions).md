@@ -21,6 +21,14 @@ A pointer style for resizing a column.
 
 ## Discussion
 
+The following table shows the pointer style for each set of directions in a left-to-right layout:
+
+| Directions | Pointer |
+| --- | --- |
+| `.leading` | ![A vertical bar with an arrow pointing left.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-columnResize-leading@2x.png) |
+| `.trailing` | ![A vertical bar with an arrow pointing right.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-columnResize-trailing@2x.png) |
+| `.all` | ![A vertical bar with arrows pointing left and right.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-columnResize@2x.png) |
+
 You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 
 ## Parameters

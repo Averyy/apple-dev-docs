@@ -111,7 +111,7 @@ Safari 27.2 is available for iOS 27.2, iPadOS 27.2, visionOS 27.2, macOS 27.2, m
 
 ### Version 27
 - [Safari 27.3 Beta Release Notes](./safari-27_3-release-notes.md)
-  Released November 3, 2026 — 27.3 beta (20626.1.12)
+  Released November 16, 2026 — 27.3 beta (20626.1.17)
 - [Safari 27.1 Release Notes](./safari-27_1-release-notes.md)
   Released October 23, 2026 — 27.1 (20625.1.29)
 - [Safari 27 Release Notes](./safari-27-release-notes.md)

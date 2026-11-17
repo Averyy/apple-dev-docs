@@ -55,8 +55,7 @@ Each row nests campaign `metadata` alongside `totalMetrics` for the full date ra
               "amount": "1.50",
               "currency": "USD"
             }
-          },
-          "adChannelType": "SEARCH"
+          }
         },
         "totalMetrics": {
           "localSpend": {

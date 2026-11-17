@@ -27,15 +27,15 @@ At runtime, use this value to determine the total number of images that CarPlay 
 
 ## See Also
 
-### Managing Content
+### Managing the row’s content
 - [var text: String?](./cplistimagerowitem/text.md)
-  The list item’s primary text.
-- [var gridImages: [UIImage]](./cplistimagerowitem/gridimages.md)
-  The images that appear in the list item’s image row.
-- [func update([UIImage])](./cplistimagerowitem/update%28_%29.md)
-  Adds, removes, reorders, or updates the images in the list item’s image row.
-- [class var maximumImageSize: CGSize](./cplistimagerowitem/maximumimagesize.md)
-  The maximum size of an image that an image row can display.
+  The row’s primary text.
+- [var elements: [CPListImageRowItemElement]](./cplistimagerowitem/elements.md)
+  The elements to display in the row.
+- [var allowsMultipleLines: Bool](./cplistimagerowitem/allowsmultiplelines.md)
+  A Boolean value that indicates whether the row displays elements on more than one line.
+- [var userInfo: Any?](./cplistimagerowitem/userinfo.md)
+  App-specific data you associate with the item.
 
 
 ---

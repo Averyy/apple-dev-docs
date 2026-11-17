@@ -27,7 +27,7 @@ Assign a new array to this property to update the items that the template displa
 
 ## See Also
 
-### Managing the Items
+### Managing the items
 - [class CPInformationItem](../cpinformationitem.md)
   A data object that provides content for an information template.
 - [class CPInformationRatingItem](../cpinformationratingitem.md)

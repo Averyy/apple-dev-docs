@@ -27,7 +27,7 @@ CarPlay only uses the title when the template is a root-template of a tab bar, o
 
 ## See Also
 
-### Accessing Tab Information
+### Accessing tab information
 - [var tabImage: UIImage?](./tabimage.md)
   An image that represents the content of the tab.
 - [var tabSystemItem: UITabBarItem.SystemItem](./tabsystemitem.md)

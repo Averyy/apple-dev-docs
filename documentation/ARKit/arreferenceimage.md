@@ -22,7 +22,7 @@ class ARReferenceImage
 
 ## Overview
 
-To accurately detect the position and orientation of a 2D image in the real world, ARKit requires preprocessed image data and knowledge of the image’s real-world dimensions. The [`ARReferenceImage`](./arreferenceimage.md) class encapsulates this information. To enable image detection in an AR session, pass a collection of reference images to your session configuration’s [`detectionImages`](./arworldtrackingconfiguration/detectionimages.md) property.
+To accurately detect the position and orientation of a 2D image in the real world, ARKit requires preprocessed image data and knowledge of the image’s real-world dimensions. The `ARReferenceImage` class encapsulates this information. To enable image detection in an AR session, pass a collection of reference images to your session configuration’s [`detectionImages`](./arworldtrackingconfiguration/detectionimages.md) property.
 
 Typically, you create reference images in your Xcode project’s asset catalog:
 

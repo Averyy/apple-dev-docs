@@ -68,6 +68,16 @@ The framework references the resource’s buffers rather than copying them, so y
 - [GaussianSplatResource.SphericalHarmonicDegree](./gaussiansplatresource/sphericalharmonicdegree.md)
   The amount of view-dependent color detail stored per splat.
 
+## See Also
+
+### Gaussian splats
+- [struct GaussianSplatComponent](./gaussiansplatcomponent.md)
+  A component that renders 3D Gaussian splat data.
+- [enum GaussianSplatEvents](./gaussiansplatevents.md)
+  A namespace for events about Gaussian splat rendering.
+- [Gaussian Splat Rendering Guidelines](./gaussian-splat-rendering-guidelines.md)
+  Improving performance and watching thermal state when rendering Gaussian splats
+
 
 ---
 

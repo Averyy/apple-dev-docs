@@ -38,6 +38,16 @@ UIImageAsset is used to combine multiple UIImages with different trait collectio
 - `actions`: An updated array of @c CPAlertAction objects. The number of actions will be clamped to @c maximumActionsCount.
 - `duration`: The updated duration for which this alert should be visible. Specify -1 to keep duration unaltered. Specify 0 for an alert that displays indefinitely.
 
+## See Also
+
+### Getting title values
+- [var titleVariants: [String]](./titlevariants.md)
+  An array of title strings.
+- [var subtitleVariants: [String]](./subtitlevariants.md)
+  An array of subtitle strings.
+- [func updateTitleVariants([String], subtitleVariants: [String])](./updatetitlevariants%28_,subtitlevariants%29.md)
+  Updates title and subtitle variants.
+
 
 ---
 

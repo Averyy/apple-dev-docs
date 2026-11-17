@@ -71,7 +71,7 @@ When you use [`init(destination:label:)`](./navigationlink/init%28destination,la
 - SwiftUI tracks the navigation state and the content of the navigation path; however, there are no stateful hooks for your app that indicate when the system pushes a view.
 - Its state can’t be restored programmatically.
 
-Use the stateful navigation techniques described in [Manage navigation state and compose links](./understanding-the-navigation-stack.md#Manage-navigation-state-and-compose-links) to track when a navigation link triggers, instead of [`onAppear(perform:)`](./view/onappear%28perform%29.md) or `View/task(priority:_:)`.
+Use the stateful navigation techniques described in [Manage navigation state and compose links](./understanding-the-navigation-stack.md#Manage-navigation-state-and-compose-links) to track when a navigation link triggers, instead of [`onAppear(perform:)`](./view/onappear%28perform%29.md) or [`task(name:priority:file:line:_:)`](./view/task%28name,priority,file,line,_%29.md).
 
 Use a [`navigationDestination(isPresented:destination:)`](./view/navigationdestination%28ispresented,destination%29.md) modifier to navigate programmatically by providing a binding to a `Boolean` value. For example, you can programmatically push `ColorDetail` view onto the stack:
 

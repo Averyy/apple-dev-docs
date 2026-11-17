@@ -11,7 +11,7 @@ To integrate a Bluetooth headphone into the Spatial Audio routing system, implem
 
 You deliver this renderer by subclassing [`AUHeadTrackingBinauralRenderer`](./auheadtrackingbinauralrenderer.md), which is itself a subclass of [`AUAudioUnit`](./auaudiounit.md). Package your subclass as a Spatial Audio App Extension; see [Creating an Audio Unit extension](../AVFAudio/creating-an-audio-unit-extension.md) for an example of creating an audio app extension. Your extension runs in a process encapsulated by the system for security and performance. In addition to the audio unit, publish your headphone’s head-tracking capabilities using [AudioAccessoryKit](../AudioAccessoryKit/AudioAccessoryKit.md) so the system can match your device to the correct renderer.
 
-The system exclusively controls spatialization state through three KVO properties your audio unit subclass observes: [`deviceUID`](./auheadtrackingbinauralrenderer/deviceuid.md) identifies the paired device and, together with `AUHeadTrackingBinauralRenderer/headTrackingIsEnabled`, signals when your renderer begins data retrieval; `AUHeadTrackingBinauralRenderer/isBypassed` is the system’s safety valve, signaling when it removes your audio unit from the signal chain.
+The system exclusively controls spatialization state through three KVO properties your audio unit subclass observes: [`deviceUID`](./auheadtrackingbinauralrenderer/deviceuid.md) identifies the paired device and, together with [`isHeadTracking`](./auheadtrackingbinauralrenderer/isheadtracking.md), signals when your renderer begins data retrieval; [`isDisabled`](./auheadtrackingbinauralrenderer/isdisabled.md) is the system’s safety valve, signaling when it removes your audio unit from the signal chain.
 
 > ❗ **Important**: You can develop and test an app that uses `AUHeadTrackingBinauralRenderer` on devices in any region. The class currently builds only for development or Ad Hoc testing. The class will support App Store submission and alternative distribution at a later time.
 >
@@ -55,7 +55,7 @@ final class MyAudioUnitFactory: NSObject, AUAudioUnitFactory {
 
 ## Observe head-tracking state
 
-Respond when a listener turns head tracking on or off by observing the `AUHeadTrackingBinauralRenderer/headTrackingIsEnabled` property. The system sets this KVO-compliant property; you don’t have to set it yourself.
+Respond when a listener turns head tracking on or off by observing the [`isHeadTracking`](./auheadtrackingbinauralrenderer/isheadtracking.md) property. The system sets this KVO-compliant property; you don’t have to set it yourself.
 
 Set up your observation in your subclass initializer or in [`allocateRenderResources()`](./auaudiounit/allocaterenderresources%28%29.md), and store the returned token so the observation stays active:
 
@@ -63,7 +63,7 @@ Set up your observation in your subclass initializer or in [`allocateRenderResou
 var headTrackingObservation: NSKeyValueObservation?
 
 headTrackingObservation = observe(
-    \.headTrackingIsEnabled,
+    \.isHeadTracking,
     options: [.new]
 ) { [weak self] _, change in
     guard let self, let enabled = change.newValue else { return }
@@ -81,7 +81,7 @@ To identify the Bluetooth headphone currently matched to your audio unit observe
 
 The value is a `String?` containing a 32-bit unsigned integer in decimal notation, not a UUID, the same value used by [AudioAccessoryKit](../AudioAccessoryKit/AudioAccessoryKit.md). Don’t store this value; it isn’t a UUID, despite being a string. When the property becomes non-`nil`, use the value to request head orientation data from `AudioAccessoryKit`. When the property becomes `nil`, stop any active data retrieval and release associated resources.
 
-Wait until both [`deviceUID`](./auheadtrackingbinauralrenderer/deviceuid.md) is non-`nil` and `AUHeadTrackingBinauralRenderer/headTrackingIsEnabled` is `true` before starting data retrieval:
+Wait until both [`deviceUID`](./auheadtrackingbinauralrenderer/deviceuid.md) is non-`nil` and [`isHeadTracking`](./auheadtrackingbinauralrenderer/isheadtracking.md) is `true` before starting data retrieval:
 
 ```swift
 var deviceUIDObservation: NSKeyValueObservation?
@@ -90,7 +90,7 @@ deviceUIDObservation = observe(
     \.deviceUID,
     options: [.new]
 ) { [weak self] _, change in
-    // Begin retrieval only when `headTrackingIsEnabled` is also `true`.
+    // Begin retrieval only when `isHeadTracking` is also `true`.
     guard let self else { return }
     if let uid = change.newValue.flatMap({ $0 }) {
         self.beginRetrievingHeadData(deviceUID: uid)
@@ -102,18 +102,18 @@ deviceUIDObservation = observe(
 
 ## Handle bypass
 
-If your Audio Unit exceeds its power budget or causes audio dropouts, the system sets `AUHeadTrackingBinauralRenderer/isBypassed` to `true` to remove your Audio Unit from the signal chain.
+If your Audio Unit exceeds its power budget or causes audio dropouts, the system sets [`isDisabled`](./auheadtrackingbinauralrenderer/isdisabled.md) to `true` to remove your Audio Unit from the signal chain.
 
-Observe the property and respond gracefully when the system bypasses your audio unit. Release compute-intensive resources, stop head-tracking data retrieval, and reset your renderer state. When ``AUHeadTrackingBinauralRenderer/isBypassed`returns to`false`, restore your rendering resources and resume normal operation, as shown below.
+Observe the property and respond gracefully when the system bypasses your audio unit. Release compute-intensive resources, stop head-tracking data retrieval, and reset your renderer state. When [`isDisabled`](./auheadtrackingbinauralrenderer/isdisabled.md) returns `false`, restore your rendering resources and resume normal operation, as shown below.
 
 ```swift
 var bypassObservation: NSKeyValueObservation?
 
 bypassObservation = observe(
-    \.isBypassed,
+    \.bypassed,
     options: [.new]
 ) { [weak self] _, change in
-    // `isBypassed` can be set from any thread; synchronize access
+    // `bypassed` can be set from any thread; synchronize access
     // to shared rendering state appropriately.
     guard let self, let bypassed = change.newValue else { return }
     if bypassed {
@@ -125,7 +125,7 @@ bypassObservation = observe(
 }
 ```
 
-> ❗ **Important**: The system can set `AUHeadTrackingBinauralRenderer/isBypassed` from any thread. Keep your observer implementation thread-safe.
+> ❗ **Important**: The system can set [`isDisabled`](./auheadtrackingbinauralrenderer/isdisabled.md) from any thread. Keep your observer implementation thread-safe.
 
 ## See Also
 

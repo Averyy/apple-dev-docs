@@ -25,6 +25,14 @@ optional func mapTemplateDidBeginPitchGesture(_ mapTemplate: CPMapTemplate)
 
 - `mapTemplate`: The [`CPMapTemplate`](../cpmaptemplate.md) the gesture applies to.
 
+## See Also
+
+### Changing the camera pitch
+- [func mapTemplate(CPMapTemplate, pitchWithCenter: CGPoint)](./maptemplate%28_,pitchwithcenter%29.md)
+  Called when a pitch gesture changes. May not be called when connected to some CarPlay systems
+- [func mapTemplate(CPMapTemplate, pitchEndedWithCenter: CGPoint)](./maptemplate%28_,pitchendedwithcenter%29.md)
+  Tells the delegate that a person stopped pitching the map.
+
 
 ---
 

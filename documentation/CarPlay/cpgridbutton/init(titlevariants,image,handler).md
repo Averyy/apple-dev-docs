@@ -31,6 +31,13 @@ A newly initialized grid button.
 - `image`: The image to display on the button. If you provide an animated image, the button uses the first image in the animation sequence.
 - `handler`: The block invoked after the user taps the button. In Swift, the default is `nil`.
 
+## See Also
+
+### Creating a grid button
+- [init(titleVariants: [String], image: UIImage, messageConfiguration: CPMessageGridItemConfiguration?, handler: ((CPGridButton) -> Void)?)](./init%28titlevariants,image,messageconfiguration,handler%29.md)
+  Initialize a button with a title, image, and message configuration.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

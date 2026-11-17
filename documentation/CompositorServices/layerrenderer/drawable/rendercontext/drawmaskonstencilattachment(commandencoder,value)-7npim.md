@@ -22,7 +22,7 @@ void cp_drawable_render_context_mtl4_draw_mask_on_stencil_attachment(cp_drawable
 
 ## Discussion
 
-In full and mixed immersion styles, [`drawMaskOnStencilAttachment(commandEncoder:value:)`](./drawmaskonstencilattachment%28commandencoder,value%29-65i67.md) stores the full texture. The command encoder used in the render context has the following constraints:
+In full and mixed immersion styles, [`drawMaskOnStencilAttachment(commandEncoder:value:)`](./drawmaskonstencilattachment%28commandencoder,value%29-7npim.md) stores the full texture. The command encoder used in the render context has the following constraints:
 
 - The stencil texture has the same pixel format as [`cp_layer_renderer_configuration_get_drawable_render_context_stencil_format`](../../../cp_layer_renderer_configuration_get_drawable_render_context_stencil_format.md).
 - The [`renderTargetArrayLength`](../../../../Metal/mtlrenderpassdescriptor/rendertargetarraylength.md) is the same as the number of views in the layer renderer drawable.
@@ -37,6 +37,7 @@ This function modifies the depth stencil state, viewports, vertex amplification 
 
 ## Parameters
 
+- `command_encoder`: The command encoder to use when rendering the Compositor effects and present the layer renderer drawable.
 - `value`: The value to use when updating the stencil texture in the [`MTLRenderCommandEncoder`](../../../../Metal/mtlrendercommandencoder.md).
 
 ## See Also

@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/safari-release-notes": {
       "file_path": "documentation/safari-release-notes/safari-release-notes.md",
-      "hash": "4698b4174fd2f60449dd0b8f6a9ed5e7c436ca178de285daad0e9e4677879922"
+      "hash": "73e68304b302bbf3bb014731e221559a3c858932856e8ac5b6fc3533a89ec5e0"
     },
     "https://developer.apple.com/documentation/safari-release-notes/safari-12-release-notes": {
       "file_path": "documentation/safari-release-notes/safari-12-release-notes.md",
@@ -166,23 +166,23 @@
     },
     "https://developer.apple.com/documentation/safari-release-notes/safari-27-release-notes": {
       "file_path": "documentation/safari-release-notes/safari-27-release-notes.md",
-      "hash": "80e79076d4a6d5d707b65e927de90134809ae0b59329c0bfb255968019ab648a"
+      "hash": "eff9109c50abb7077962420c2288e9cc6940a64ebdee6f2945a04256e45ff047"
     },
     "https://developer.apple.com/documentation/safari-release-notes/safari-27_1-release-notes": {
       "file_path": "documentation/safari-release-notes/safari-27_1-release-notes.md",
-      "hash": "549b4364be6bdae28b7ea6e9c45ab518128e9b0318f905e83e7de554779dfa83"
+      "hash": "361e90908643c77afbb999b0016a81216ca9fdaf6db9ec01bb52c672402be071"
     },
     "https://developer.apple.com/documentation/safari-release-notes/safari-27_2-release-notes": {
       "file_path": "documentation/safari-release-notes/safari-27_2-release-notes.md",
-      "hash": "6f5f696bb50d9c988f9ca6dd7be93a000858d2fe022186623328128a5116fdba"
+      "hash": "ce49f529bab16fa0772a9bd440f450917e7de3728759ebd8a6c6eabd75906ebd"
     },
     "https://developer.apple.com/documentation/safari-release-notes/safari-27_3-release-notes": {
       "file_path": "documentation/safari-release-notes/safari-27_3-release-notes.md",
-      "hash": "c2bf7ee918767c36cdd2c491b5a39e393a55c225d86e662f01749355507f13ce"
+      "hash": "213afcab6e5a12c622d0aefd41022ad75ba374b12f5d5baefc63bb6675dca646"
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes.json": {
       "file_path": "documentation/safari-release-notes/safari-release-notes.md",
-      "hash": "4698b4174fd2f60449dd0b8f6a9ed5e7c436ca178de285daad0e9e4677879922"
+      "hash": "73e68304b302bbf3bb014731e221559a3c858932856e8ac5b6fc3533a89ec5e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-12-release-notes.json": {
       "file_path": "documentation/safari-release-notes/safari-12-release-notes.md",
@@ -346,19 +346,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-27-release-notes.json": {
       "file_path": "documentation/safari-release-notes/safari-27-release-notes.md",
-      "hash": "80e79076d4a6d5d707b65e927de90134809ae0b59329c0bfb255968019ab648a"
+      "hash": "eff9109c50abb7077962420c2288e9cc6940a64ebdee6f2945a04256e45ff047"
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-27_1-release-notes.json": {
       "file_path": "documentation/safari-release-notes/safari-27_1-release-notes.md",
-      "hash": "549b4364be6bdae28b7ea6e9c45ab518128e9b0318f905e83e7de554779dfa83"
+      "hash": "361e90908643c77afbb999b0016a81216ca9fdaf6db9ec01bb52c672402be071"
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-27_2-release-notes.json": {
       "file_path": "documentation/safari-release-notes/safari-27_2-release-notes.md",
-      "hash": "6f5f696bb50d9c988f9ca6dd7be93a000858d2fe022186623328128a5116fdba"
+      "hash": "ce49f529bab16fa0772a9bd440f450917e7de3728759ebd8a6c6eabd75906ebd"
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-27_3-release-notes.json": {
       "file_path": "documentation/safari-release-notes/safari-27_3-release-notes.md",
-      "hash": "c2bf7ee918767c36cdd2c491b5a39e393a55c225d86e662f01749355507f13ce"
+      "hash": "213afcab6e5a12c622d0aefd41022ad75ba374b12f5d5baefc63bb6675dca646"
     }
   },
   "metadata": {

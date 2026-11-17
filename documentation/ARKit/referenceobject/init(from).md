@@ -15,6 +15,10 @@ Creates a reference object from a URL you provide.
 init(from url: URL) async throws
 ```
 
+## Discussion
+
+> **Throws**: `ObjectTrackingProvider.Error`
+
 ## Parameters
 
 - `url`: Local path to the reference object model.

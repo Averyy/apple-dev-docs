@@ -33,7 +33,7 @@ Because this initializer does not take an altitude argument, ARKit will determin
 - [- initWithCoordinate:altitude:](./initwithcoordinate_altitude_.md)
   Initializes a location anchor with the given coordinate and altitude.
 - [init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance)](./init%28name,coordinate,altitude%29-8sbh4.md)
-  Initializes a named location anchor with the given coordinates and altitude.
+  Initializes a named location anchor with the given coordinate and altitude.
 
 
 ---

@@ -37,14 +37,15 @@ struct ReferenceObject
   The trained USDZ file, if the reference object includes one.
 - [var name: String](./referenceobject/name.md)
   The name of a reference object.
-- [var description: String](./referenceobject/description.md)
-  A textual representation of this reference object.
 ### Structures
 - [ReferenceObject.Configuration](./referenceobject/configuration.md)
   Defines a configuration for an individual reference object.
 ### Operators
 - [static func == (ReferenceObject, ReferenceObject) -> Bool](./referenceobject/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two reference objects are equal.
+### Instance Properties
+- [var description: String](./referenceobject/description.md)
+  A textual representation of this reference object.
 
 ## Relationships
 
@@ -62,8 +63,6 @@ struct ReferenceObject
   The bounding box of an anchor.
 - [ObjectAnchor.AxisAlignedBoundingBox](./objectanchor/axisalignedboundingbox.md)
   Values that describe an axis-aligned bounding box.
-- [var description: String](./objectanchor/description.md)
-  A textual representation of this anchor.
 - [var isTracked: Bool](./objectanchor/istracked.md)
   A Boolean value that indicates whether the framework is currently tracking an object anchor.
 - [var originFromAnchorTransform: simd_float4x4](./objectanchor/originfromanchortransform.md)

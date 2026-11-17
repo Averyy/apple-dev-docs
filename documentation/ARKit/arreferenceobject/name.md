@@ -22,9 +22,9 @@ var name: String? { get set }
 
 ## Discussion
 
-For a reference object loaded from an Xcode asset catalog, this property is the name assigned in the asset catalog. You can also use this property to assign a name to an object you’ve recorded in an AR session using extractReferenceObject.
+For a reference object loaded from an Xcode asset catalog, this property is the name assigned in the asset catalog. You can also use this property to assign a name to an object you’ve recorded in an AR session using [`createReferenceObject(transform:center:extent:completionHandler:)`](../arsession/createreferenceobject%28transform,center,extent,completionhandler%29.md).
 
-> **Note**:  This string is not localized text intended for user display. However, in debugging you can use this property to indicate which reference object was detected.
+> **Note**: This string is not localized text intended for user display. However, in debugging you can use this property to indicate which reference object was detected.
 
 
 ---

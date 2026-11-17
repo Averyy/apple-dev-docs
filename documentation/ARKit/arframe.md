@@ -63,11 +63,13 @@ Each frame can contain additional data, for example, EXIF ([`exifData`](./arfram
   Data on the distance between a device’s rear camera and real-world objects in an AR experience.
 - [var smoothedSceneDepth: ARDepthData?](./arframe/smoothedscenedepth.md)
   An average of distance measurements between a device’s rear camera and real-world objects that creates smoother visuals in an AR experience.
+- [- displayTransformForOrientation:viewportSize:](./arframe/displaytransformfororientation_viewportsize_.md)
+  Returns an affine transform for converting between normalized image coordinates and a coordinate space appropriate for rendering the camera image onscreen.
 ### Tracking and interacting with the real world
 - [var anchors: [ARAnchor]](./arframe/anchors.md)
   The list of anchors representing positions tracked or objects detected in the scene.
 - [func raycastQuery(from: CGPoint, allowing: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment) -> ARRaycastQuery](./arframe/raycastquery%28from,allowing,alignment%29.md)
-  Get a ray-cast query for a screen point.
+  Creates a raycast query for a screen point.
 - [func hitTest(CGPoint, types: ARHitTestResult.ResultType) -> [ARHitTestResult]](./arframe/hittest%28_,types%29.md)
   Searches for real-world objects or AR anchors in the captured camera image.
 ### Checking world-mapping status
@@ -90,15 +92,13 @@ Each frame can contain additional data, for example, EXIF ([`exifData`](./arfram
 - [var geoTrackingStatus: ARGeoTrackingStatus?](./arframe/geotrackingstatus.md)
   The session’s condition with respect to geographic tracking at the time the session captured the frame.
 - [class ARGeoTrackingStatus](./argeotrackingstatus.md)
-  The state, accuracy, and reason that are possible for geo-tracking’s current condition.
+  The state, accuracy, and reason that are possible for geo tracking’s current condition.
 ### Instance Properties
 - [var metadataObjects: [AVMetadataObject]](./arframe/metadataobjects.md)
   Metadata objects associated with the current frame.
 ### Instance Methods
 - [func displayTransform(viewRotationAngle: CGFloat, viewportSize: CGSize) -> CGAffineTransform](./arframe/displaytransform%28viewrotationangle,viewportsize%29.md)
   Returns a display transform for the provided viewport size and view angle.
-- [- displayTransformForOrientation:viewportSize:](./arframe/displaytransformfororientation_viewportsize_.md)
-  Returns an affine transform for converting between normalized image coordinates and a coordinate space appropriate for rendering the camera image onscreen.
 
 ## Relationships
 

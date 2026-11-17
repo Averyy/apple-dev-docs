@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-The aggregated summary DataFrame.
+The aggregated summary data frame.
 
 **Availability**:
 - iOS 27.0+

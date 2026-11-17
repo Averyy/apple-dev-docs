@@ -27,13 +27,13 @@ A newly initialized list item.
 
 ## Parameters
 
-- `text`: The primary text to show in the list item cell.
-- `detailText`: Additional text to display below the primary text in the list item cell.
-- `image`: The image to display on the leading edge of the list item cell. If the image is larger than `CPMaximumListItemImageSize`, the list item scales down the image to maximum size. If you provide an animated image, the list item uses the first image in the animation sequence.
+- `text`: The primary text to show in the list item’s row.
+- `detailText`: Secondary text to display below the primary text.
+- `image`: An image to display on the leading edge of the list item’s row. If the image originates from an asset catalog, CarPlay manages light and dark variants of your image and switches them when needed. Specify images with the dimensions listed in the [`maximumImageSize`](./maximumimagesize.md) property. If your image is smaller or larger than the maximum dimensions, CarPlay scales the image as needed to fit the space. Don’t specify an image object with an animated sequence of images.
 
 ## See Also
 
-### Creating a List Item
+### Creating a list item
 - [init(text: String?, detailText: String?)](./init%28text,detailtext%29.md)
   Creates a list item with primary and secondary text.
 - [init(text: String?, detailText: String?, image: UIImage?, accessoryImage: UIImage?, accessoryType: CPListItemAccessoryType)](./init%28text,detailtext,image,accessoryimage,accessorytype%29.md)

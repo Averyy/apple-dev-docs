@@ -5,6 +5,8 @@
 **Role**: Instance Method  
 **Required**: Yes
 
+Tells the delegate that the system removed the window you use to draw your content.
+
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
@@ -20,14 +22,19 @@ func instrumentClusterControllerDidDisconnectWindow(_ instrumentClusterWindow: U
 - (void) instrumentClusterControllerDidDisconnectWindow:(UIWindow *) instrumentClusterWindow;
 ```
 
+## Discussion
+
+When CarPlay stops displaying your content in the instrument cluster, it removes the window and calls this method. In your implementation, perform any needed cleanup of your app-specific content.
+
+## Parameters
+
+- `instrumentClusterWindow`: The window that the system removed. This parameter can be `nil`.
+
 ## See Also
 
-### Instance Methods
-- [func instrumentClusterController(CPInstrumentClusterController, didChangeCompassSetting: CPInstrumentClusterSetting)](./instrumentclustercontroller%28_,didchangecompasssetting%29.md)
-- [func instrumentClusterController(CPInstrumentClusterController, didChangeSpeedLimitSetting: CPInstrumentClusterSetting)](./instrumentclustercontroller%28_,didchangespeedlimitsetting%29.md)
+### Responding to life-cycle events
 - [func instrumentClusterControllerDidConnect(UIWindow)](./instrumentclustercontrollerdidconnect%28_%29.md)
-- [func instrumentClusterControllerDidZoom(in: CPInstrumentClusterController)](./instrumentclustercontrollerdidzoom%28in%29.md)
-- [func instrumentClusterControllerDidZoomOut(CPInstrumentClusterController)](./instrumentclustercontrollerdidzoomout%28_%29.md)
+  Tells the delegate that there’s a new window for displaying your content.
 
 
 ---

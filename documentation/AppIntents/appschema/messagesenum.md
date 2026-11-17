@@ -23,15 +23,15 @@ protocol MessagesEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var conversationAttribute: some AppSchemaEnum](./messagesenum/conversationattribute.md)
-  An enum schema for a conversation attribute parameter.
+  An enum schema for a conversation attribute.
 - [var customReaction: some AppSchemaEnum](./messagesenum/customreaction.md)
-  An enum schema for a custom reaction parameter.
+  An enum schema for a custom reaction.
 - [var messageAttribute: some AppSchemaEnum](./messagesenum/messageattribute.md)
-  An enum schema for a message attribute parameter.
+  An enum schema for a message attribute.
 - [var messageEffect: some AppSchemaEnum](./messagesenum/messageeffect.md)
-  An enum schema for a message effect parameter.
+  An enum schema for a message effect.
 - [var messageType: some AppSchemaEnum](./messagesenum/messagetype.md)
-  An enum schema for a message type parameter.
+  An enum schema for a message type.
 
 ## Relationships
 
@@ -44,15 +44,15 @@ protocol MessagesEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var conversationAttribute: some AppSchemaEnum](./messagesenum/conversationattribute.md)
-  An enum schema for a conversation attribute parameter.
+  An enum schema for a conversation attribute.
 - [var customReaction: some AppSchemaEnum](./messagesenum/customreaction.md)
-  An enum schema for a custom reaction parameter.
+  An enum schema for a custom reaction.
 - [var messageAttribute: some AppSchemaEnum](./messagesenum/messageattribute.md)
-  An enum schema for a message attribute parameter.
+  An enum schema for a message attribute.
 - [var messageEffect: some AppSchemaEnum](./messagesenum/messageeffect.md)
-  An enum schema for a message effect parameter.
+  An enum schema for a message effect.
 - [var messageType: some AppSchemaEnum](./messagesenum/messagetype.md)
-  An enum schema for a message type parameter.
+  An enum schema for a message type.
 
 
 ---

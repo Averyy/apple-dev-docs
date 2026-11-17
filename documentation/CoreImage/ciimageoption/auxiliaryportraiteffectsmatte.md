@@ -30,9 +30,7 @@ The value of this key is an [`NSNumber`](../../Foundation/nsnumber.md) containin
 
 ## See Also
 
-### Type Properties
-- [static let applyOrientationProperty: CIImageOption](./applyorientationproperty.md)
-  The key for transforming an image according to orientation metadata.
+### Auxiliary Images
 - [static let auxiliaryDepth: CIImageOption](./auxiliarydepth.md)
   The key into the properties dictionary indicating whether to return an auxiliary depth image.
 - [static let auxiliaryDisparity: CIImageOption](./auxiliarydisparity.md)
@@ -43,17 +41,6 @@ The value of this key is an [`NSNumber`](../../Foundation/nsnumber.md) containin
 - [static let auxiliarySemanticSegmentationSkinMatte: CIImageOption](./auxiliarysemanticsegmentationskinmatte.md)
 - [static let auxiliarySemanticSegmentationSkyMatte: CIImageOption](./auxiliarysemanticsegmentationskymatte.md)
 - [static let auxiliarySemanticSegmentationTeethMatte: CIImageOption](./auxiliarysemanticsegmentationteethmatte.md)
-- [static let cacheImmediately: CIImageOption](./cacheimmediately.md)
-- [static let colorSpace: CIImageOption](./colorspace.md)
-  The key for a color space.
-- [static let expandToHDR: CIImageOption](./expandtohdr.md)
-  A Boolean value that indicates whether to read Gain Map HDR images as HDR.
-- [static let nearestSampling: CIImageOption](./nearestsampling.md)
-  The key into the properties dictionary to indicate whether to use nearest-neighbor sampling.
-- [static let properties: CIImageOption](./properties.md)
-  The key for image metadata properties.
-- [static let providerTileSize: CIImageOption](./providertilesize.md)
-  A key for the image tiles size. The associated value is an `NSArray` that contains`NSNumber` objects for the dimensions of the image tiles requested from the image provider.
 
 
 ---

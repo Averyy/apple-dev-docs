@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The contact’s phone number or email address.
+The phone or email address of the contact.
 
 **Availability**:
 - iOS 14.0+
@@ -23,13 +23,13 @@ var phoneOrEmailAddress: String? { get set }
 
 ## Discussion
 
-When the user selects the list item, Siri launches the message compose flow and uses this property’s value as the recipient’s contact information.
+This property represents the primary way to communicate with the contact. CarPlay passes this string to your SiriKit intents during message flows, but doesn’t use it otherwise. If you initialized the message list item with a conversation identifier, the value of this property is `nil`.
 
 ## See Also
 
-### Managing the Message Context
+### Getting the message context
 - [var conversationIdentifier: String?](./conversationidentifier.md)
-  The conversation’s unique identifier.
+  The app-specific identifier for the message conversation.
 
 
 ---

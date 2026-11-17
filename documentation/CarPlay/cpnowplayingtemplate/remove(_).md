@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Removes an observer from receiving Now Playing template events.
+Unregisters an observer and stops it from receiving events related to the Now Playing interface.
 
 **Availability**:
 - iOS 14.0+
@@ -23,19 +23,17 @@ func remove(_ observer: any CPNowPlayingTemplateObserver)
 
 ## Discussion
 
-You must register an observer using the [`add(_:)`](./add%28_%29.md) method before calling this method.
+Call this method to remove an observer object you previously registered with a call to the [`add(_:)`](./add%28_%29.md) method.
 
 ## Parameters
 
-- `observer`: An object that implements the [`CPNowPlayingTemplateObserver`](../cpnowplayingtemplateobserver.md) protocol.
+- `observer`: An object you previously registered as an observer.
 
 ## See Also
 
-### Observing Now Playing Events
+### Adding and removing observers
 - [func add(any CPNowPlayingTemplateObserver)](./add%28_%29.md)
-  Registers an observer that receives Now Playing template events.
-- [protocol CPNowPlayingTemplateObserver](../cpnowplayingtemplateobserver.md)
-  The methods for responding to the user interacting with the Now Playing template.
+  Registers an observer to handle events related to the Now Playing interface.
 
 
 ---

@@ -24,7 +24,7 @@ class PKResponderState
 
 ## Overview
 
-Access a responder’s `PKResponderState` through the `pencilKitResponderState` property on any `UIResponder`. Use it to attach a tool picker to a specific view and control when that picker is visible. Tool picker visibility follows the responder chain: if a responder’s visibility is set to `PKToolPickerVisibilityInherited`, it defers to the next responder in the chain. If no responder in the chain specifies a visibility, the tool picker defaults to visible.
+Access a responder’s `PKResponderState` through the `pencilKitResponderState` property on any `UIResponder`. Use it to attach a tool picker to a specific view and control when that picker is visible. Tool picker visibility follows the responder chain: if a responder’s visibility is set to [`PKToolPickerVisibilityInherited`](./pktoolpickervisibility/pktoolpickervisibilityinherited.md) (`nil` in Swift), it defers to the next responder in the chain. If no responder in the chain specifies a visibility, the tool picker defaults to visible.
 
 ```swift
 view.pencilKitResponderState.activeToolPicker = PKToolPicker()
@@ -36,11 +36,11 @@ view.pencilKitResponderState.toolPickerVisibility = .visible
 ### Configuring the tool picker
 - [var activeToolPicker: PKToolPicker?](./pkresponderstate/activetoolpicker.md)
   The current tool picker.
+- [var toolPickerVisibility: PKToolPickerVisibility?](./pkresponderstate/toolpickervisibility-7cj3c.md)
+  The visibility state of the tool picker.
 - [enum PKToolPickerVisibility](./pktoolpickervisibility.md)
   Constants that describe the visibility state of a tool picker.
 ### Instance Properties
-- [var toolPickerVisibility: PKToolPickerVisibility?](./pkresponderstate/toolpickervisibility-7cj3c.md)
-  The visibility state of the tool picker.
 - [toolPickerVisibility](./pkresponderstate/toolpickervisibility-7hikj.md)
   The visibility state of the tool picker.
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An asynchronous sequence of events that provide updates to the current authorization status of the session.
+An asynchronous sequence of events that describe changes to the session, such as authorization changes and data-provider state changes.
 
 **Availability**:
 - macOS 26.0+
@@ -40,8 +40,6 @@ Task {
   A sequence of events.
 - [ARKitSession.Event](./event.md)
   Enumeration of possible session events.
-- [var description: String](./description.md)
-  A textual representation of this session.
 
 
 ---

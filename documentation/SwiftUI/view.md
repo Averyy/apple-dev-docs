@@ -113,14 +113,42 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Defines the view to display when your extension pushes a value of the given type.
 - [func locationHeadingAnchor(manager: CLLocationManager, isEnabled: Bool) -> some View](./view/locationheadinganchor%28manager,isenabled%29.md)
   Specifies this view as the reference body for the location manager’s heading calculations.
-- [func multiSeatDataSharingConsentSheet(isPresented: Binding<Bool>, subscriptionGroupID: String, onCompletion: (Result<Void, any Error>) -> Void) -> some View](./view/multiseatdatasharingconsentsheet%28ispresented,subscriptiongroupid,oncompletion%29.md)
+- [func multiSeatDataSharingConsentSheet(isPresented: Binding<Bool>, originalTransactionID: UInt64, onCompletion: (Result<Void, any Error>) -> Void) -> some View](./view/multiseatdatasharingconsentsheet%28ispresented,originaltransactionid,oncompletion%29.md)
   Presents the data sharing consent sheet, where a subscriber decides whether to share account-level data with you.
 - [func multiSeatInvitationBehavior(MultiSeatInvitationBehavior) -> some View](./view/multiseatinvitationbehavior%28_%29.md)
   Sets the behavior of the Apple-owned invitation sheet that appears after a customer purchases a multi-seat subscription from a StoreKit view.
-- [func multiSeatInvitationSheet(isPresented: Binding<Bool>, subscriptionGroupID: String, onCompletion: (Result<Void, any Error>) -> Void) -> some View](./view/multiseatinvitationsheet%28ispresented,subscriptiongroupid,oncompletion%29.md)
+- [func multiSeatInvitationSheet(isPresented: Binding<Bool>, originalTransactionID: UInt64, onCompletion: (Result<Void, any Error>) -> Void) -> some View](./view/multiseatinvitationsheet%28ispresented,originaltransactionid,oncompletion%29.md)
   Presents the Apple-owned multi-seat invitation sheet, allowing the subscriber to invite others to join their multi-seat subscription.
 - [func nearbyInteractionOriginAnchor(session: NISession, isEnabled: Bool) -> some View](./view/nearbyinteractionoriginanchor%28session,isenabled%29.md)
   Specifies this view as the reference body for the nearby interaction session’s angle calculations.
+- [func photosPicker<R>(isPresented: Binding<Bool>, selection: Binding<[PhotosPickerItem]>, selectionRange: R, selectionBehavior: PhotosPickerSelectionBehavior, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy) -> some View](./view/photospicker%28ispresented,selection,selectionrange,selectionbehavior,matching,preferreditemencoding%29.md)
+  Presents a Photos picker that selects a collection of `PhotosPickerItem`, constrained to a range of selection counts.
+- [func photosPicker<R>(isPresented: Binding<Bool>, selection: Binding<[PhotosPickerItem]>, selectionRange: R, selectionBehavior: PhotosPickerSelectionBehavior, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy, photoLibrary: PHPhotoLibrary) -> some View](./view/photospicker%28ispresented,selection,selectionrange,selectionbehavior,matching,preferreditemencoding,photolibrary%29.md)
+  Presents a Photos picker that selects a collection of `PhotosPickerItem` from a given photo library, constrained to a range of selection counts.
+- [func photosPickerAutomaticDismissDisabled(Bool) -> some View](./view/photospickerautomaticdismissdisabled%28_%29.md)
+  Conditionally prevents automatic dismissal of the Photos picker.
+- [func photosPickerButtonType(primary: PHPickerPrimaryButtonType, secondary: PHPickerSecondaryButtonType) -> some View](./view/photospickerbuttontype%28primary,secondary%29.md)
+  Sets the primary and secondary button types of the Photos picker.
+- [func photosPickerContainerIdentifier(String?) -> some View](./view/photospickercontaineridentifier%28_%29.md)
+  Limits the Photos picker to only show items in the specified container.
+- [func photosPickerOnPrimaryAction(() -> Void) -> some View](./view/photospickeronprimaryaction%28_%29.md)
+  Sets the primary action handler for the Photos picker.
+- [func photosPickerOnSecondaryAction(() -> Void) -> some View](./view/photospickeronsecondaryaction%28_%29.md)
+  Sets the secondary action handler for the Photos picker.
+- [func photosPickerPrompt(String?) -> some View](./view/photospickerprompt%28_%29.md)
+  Sets the prompt of the Photos picker.
+- [func photosPickerTitle(String?) -> some View](./view/photospickertitle%28_%29.md)
+  Overrides the title of the Photos picker.
+- [func photosReferenceImageViewer(asset: Binding<PHAsset?>, adjustedImage: CGImage?, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](./view/photosreferenceimageviewer%28asset,adjustedimage,onprocessingcompletion%29.md)
+  Presents an image viewer for an asset in a photo library that contains Apple Reference Image data when `asset` is set.
+- [func photosReferenceImageViewer(fileURL: Binding<URL?>, adjustedImage: CGImage?, onProcessingCompletion: ((Result<URL, any Error>) -> Void)?) -> some View](./view/photosreferenceimageviewer%28fileurl,adjustedimage,onprocessingcompletion%29.md)
+  Presents an image viewer for a given image file containing Apple Reference Image data when `fileURL` is set.
+- [func photosReferenceImageViewer(pickerItem: Binding<PhotosPickerItem?>, adjustedImage: CGImage?, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](./view/photosreferenceimageviewer%28pickeritem,adjustedimage,onprocessingcompletion%29.md)
+  Presents an image viewer for an image containing Apple Reference Image data selected from the Photos picker when `pickerItem` is set.
+- [func photosReferenceImageViewer(pickerResult: Binding<PHPickerResult?>, adjustedImage: CGImage?, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](./view/photosreferenceimageviewer%28pickerresult,adjustedimage,onprocessingcompletion%29.md)
+  Presents an image viewer for the resulting image containing Apple Reference Image data from `PHPickerViewController` when `pickerResult` is set.
+- [func scrollGestureAxisLock(ScrollGestureAxisLock) -> some View](./view/scrollgestureaxislock%28_%29.md)
+  Sets whether scrollable views within this view lock each scroll gesture to its predominant axis.
 - [func toolbarContainerBehavior(ToolbarContainerBehavior) -> some View](./view/toolbarcontainerbehavior%28_%29.md)
   Whether the container this modifier is applied to acts as a toolbar container, reading the toolbar content of its child views and placing that content into its own bar.
 

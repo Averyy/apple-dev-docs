@@ -4,7 +4,7 @@
 **Kind**: protocol  
 **Role**: Protocol
 
-The interface that an object implements to serve as a delegate to an interface controller.
+The methods you implement to observe the addition and removal of templates in your app’s interface.
 
 **Availability**:
 - iOS 12.0+
@@ -22,17 +22,21 @@ protocol CPInterfaceControllerDelegate : NSObjectProtocol
 @protocol CPInterfaceControllerDelegate <NSObject>
 ```
 
+## Overview
+
+Adopt the `CPInterfaceControllerDelegate` protocol in an custom type when you want to respond to changes in your app’s visible content. When a transition causes a new template to appear, the [`CPInterfaceController`](./cpinterfacecontroller.md) object calls the methods of this protocol on its delegate before and after the transition. Use the methods to perform additional tasks related to the appearance of the content.
+
 ## Topics
 
-### Handling Display Events
+### Handling display-related events
 - [func templateWillAppear(CPTemplate, animated: Bool)](./cpinterfacecontrollerdelegate/templatewillappear%28_,animated%29.md)
-  Tells the delegate that the template will appear onscreen.
+  Tells the delegate that the controller is about to show the specified template in your interface.
 - [func templateDidAppear(CPTemplate, animated: Bool)](./cpinterfacecontrollerdelegate/templatedidappear%28_,animated%29.md)
-  Tells the delegate that the template did appear onscreen.
+  Tells the delegate that the controller showed the specified template in your interface.
 - [func templateWillDisappear(CPTemplate, animated: Bool)](./cpinterfacecontrollerdelegate/templatewilldisappear%28_,animated%29.md)
-  Tells the delegate that the template will disappear from the screen.
+  Tells the delegate that the controller is about to remove the specified template in your interface.
 - [func templateDidDisappear(CPTemplate, animated: Bool)](./cpinterfacecontrollerdelegate/templatediddisappear%28_,animated%29.md)
-  Tells the delegate that the template did disappear from the screen.
+  Tells the delegate that the controller removed the specified template from your interface.
 
 ## Relationships
 
@@ -41,13 +45,9 @@ protocol CPInterfaceControllerDelegate : NSObjectProtocol
 
 ## See Also
 
-### Configuring the Interface Controller
+### Responding to interface changes
 - [var delegate: (any CPInterfaceControllerDelegate)?](./cpinterfacecontroller/delegate.md)
-  An object that serves as the delegate to the interface controller.
-- [var prefersDarkUserInterfaceStyle: Bool](./cpinterfacecontroller/prefersdarkuserinterfacestyle.md)
-  A Boolean value that determines whether the system draws the user interface in Dark Mode.
-- [func setRootTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./cpinterfacecontroller/setroottemplate%28_,animated,completion%29.md)
-  Sets the root template of the navigation hierarchy.
+  A custom object you use to respond when templates appear and disappear.
 
 
 ---

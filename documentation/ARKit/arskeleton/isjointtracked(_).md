@@ -20,9 +20,17 @@ func isJointTracked(_ jointIndex: Int) -> Bool
 - (BOOL) isJointTracked:(NSInteger) jointIndex;
 ```
 
+## Return Value
+
+`YES` if the joint is tracked. `NO` otherwise.
+
 ## Discussion
 
 Use this function to determine which joints ARKit tracks using a particular index.
+
+## Parameters
+
+- `jointIndex`: The index of the joint.
 
 ## See Also
 

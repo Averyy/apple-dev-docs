@@ -237,7 +237,7 @@ As the text falls, it reacts when colliding with a meshed, real-world object, su
 - [Effecting People Occlusion in Custom Renderers](./effecting-people-occlusion-in-custom-renderers.md)
   Occlude your app’s virtual content where ARKit recognizes people in the camera feed by using matte generator.
 - [class ARMatteGenerator](./armattegenerator.md)
-  An object that creates matte textures you use to occlude your app’s virtual content with people, that ARKit recognizes in the camera feed.
+  An object that creates matte textures you use to occlude your app’s virtual content with people that ARKit recognizes in the camera feed.
 
 
 ---

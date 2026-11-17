@@ -7,7 +7,7 @@ Display an overlay in your App Clip to recommend your app to users.
 
 ## Overview
 
-App Clips only remain on a device for a limited amount of time. If someone uses an App Clip regularly, they might want to get the corresponding app to use additional features and have the app on their home screen. With [`SKOverlay`](../StoreKit/skoverlay.md), you can recommend your full app to users and enable them to install it from within your App Clip.
+App Clips only remain on a device for a limited amount of time. If someone uses an App Clip regularly, they might want to get the corresponding app to use additional features and have the app on their Home Screen. With [`SKOverlay`](../StoreKit/skoverlay.md), you can recommend your full app to users and enable them to install it from within your App Clip.
 
 > **Note**:  Don’t require users to install your app to complete a task. For user experience and design guidance, see [Human Interface Guidelines > App Clips](https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/).
 

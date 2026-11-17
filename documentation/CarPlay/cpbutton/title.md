@@ -23,9 +23,9 @@ var title: String? { get set }
 
 ## See Also
 
-### Configuring the Button’s Attributes
-- [var isEnabled: Bool](./isenabled.md)
-  A Boolean value that determines whether the button is in an enabled state.
+### Getting the button’s content
+- [var image: UIImage?](./image.md)
+  The button’s image.
 
 
 ---

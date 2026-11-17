@@ -22,7 +22,7 @@ var ambientIntensity: CGFloat { get }
 
 ## Discussion
 
-This value is based on the internal exposure compensation of the camera device, and scaled to be appropriate for use in rendering architectures that use realistic lighting metrics. A value of 1000 represents “neutral” lighting.
+This value is based on the internal exposure compensation of the camera device, and scaled to be appropriate for use in rendering architectures that use realistic lighting metrics. A value of 1000 represents “neutral” lighting, and the value typically ranges from 0 (very dark) to around 2000 (very bright).
 
 For example, you can pass this value directly to the [`intensity`](../../SceneKit/scnlight/intensity.md) property of a SceneKit ambient light for lighting results that roughly match those of the real-world scene captured by the device camera. (However, passing this value to SceneKit is generally not necessary; the [`ARSCNView`](../arscnview.md) class automatically sets SceneKit lighting based on this value.)
 

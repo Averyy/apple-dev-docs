@@ -11,7 +11,7 @@ Indicates your input and output textures use a high dynamic range color space.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 27.1+
+- tvOS 27.2+
 - visionOS 1.0+
 
 ## Declaration

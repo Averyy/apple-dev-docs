@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initialize a @c CPMessageGridItemConfiguration for use in a @c CPListTemplate.
+Creates the configuration object with a conversation identifier and Boolean value.
 
 **Availability**:
 - iOS 26.0+
@@ -21,10 +21,14 @@ init(conversationIdentifier: String, unread: Bool)
 - (instancetype) initWithConversationIdentifier:(NSString *) conversationIdentifier unread:(BOOL) unread;
 ```
 
+## Return Value
+
+An initialized configuration object.
+
 ## Parameters
 
-- `conversationIdentifier`: A value meaningful to your app to identify this conversation. This identifier is not directly displayed to the user; rather, when the user selects this grid item, SiriKit will pass this identifier back to your app for your own use.
-- `unread`: A Boolean value indicating whether the item shows an unread indicator. The default value of this property is @c NO.
+- `conversationIdentifier`: A string you use to uniquely identify the conversation in your app. Choose a value that is unique for the conversation. For example, if you assign a [`UUID`](../../Foundation/uuid.md) type to each conversation, specify that value as a string.
+- `unread`: A Boolean value to set the conversation status to unread. Specify `true` if the conversation contains unread messages, or `false` if it doesn’t.
 
 
 ---

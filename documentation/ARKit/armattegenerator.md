@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-An object that creates matte textures you use to occlude your app’s virtual content with people, that ARKit recognizes in the camera feed.
+An object that creates matte textures you use to occlude your app’s virtual content with people that ARKit recognizes in the camera feed.
 
 **Availability**:
 - iOS 13.0+
@@ -24,7 +24,7 @@ class ARMatteGenerator
 
 Use this class when you want full control over occluding your app’s virtual content, based on people ARKit recognizes in the camera feed.
 
-> **Note**:  Apps using one of the standard renderers  (`ARView` or [`ARSCNView`](./arscnview.md)) don’t need this class to effect people occlusion. See [`frameSemantics`](./arconfiguration/framesemantics-swift.property.md) for more information.
+> **Note**:  Apps using one of the standard renderers (`ARView` or [`ARSCNView`](./arscnview.md)) don’t need this class to effect people occlusion. See [`frameSemantics`](./arconfiguration/framesemantics-swift.property.md) for more information.
 
 To assist your custom renderer with people occlusion, matte generator processes alpha and depth information in a frame’s [`segmentationBuffer`](./arframe/segmentationbuffer.md) and [`estimatedDepthData`](./arframe/estimateddepthdata.md) to provide you with matte and depth textures. You use these textures to layer people on top of your app’s virtual content.
 

@@ -11,7 +11,7 @@ With Mac Catalyst, you can make a Mac version of your iPad app. Click the Mac ch
 
 ![A photograph of an iPad and a Mac laptop, with an arrow pointing from the iPad to the Mac. The screen of the iPad shows a sample recipes app and the laptop displays a Mac version of the sample app.](https://developer.apple.com/tutorials/images/com.apple.uikit/mac-catalyst@2x.png)
 
-For information about designing a Mac version of your iPad app, see [Mac Catalyst](https://developer.apple.com/design/human-interface-guidelines/ios/overview/mac-catalyst/) in the Human Interface Guidelines.
+For information about designing a Mac version of your iPad app, see [Mac Catalyst](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst) in the Human Interface Guidelines.
 
 > ❗ **Important**:  Mac apps built with Mac Catalyst can only use [AppKit](../AppKit/AppKit.md) APIs marked as available in Mac Catalyst, such as [`NSToolbar`](../AppKit/nstoolbar.md) and [`NSTouchBar`](../AppKit/nstouchbar.md). Mac Catalyst doesn’t support accessing unavailable AppKit APIs.
 

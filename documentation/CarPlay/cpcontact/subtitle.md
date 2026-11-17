@@ -29,7 +29,7 @@ The default value is [`nil`](../../ObjectiveC/nil-227m0.md).
 
 ## See Also
 
-### Configuring the Contact’s Attributes
+### Configuring the contact’s attributes
 - [var image: UIImage](./image.md)
   The contact’s image.
 - [var name: String](./name.md)

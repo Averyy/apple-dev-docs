@@ -22,7 +22,7 @@ ARCollaborationDataPriorityCritical
 
 ## Discussion
 
-ARKit sets the data [`priority`](../priority-swift.property.md) to  [`ARSession.CollaborationData.Priority.critical`](./critical.md)  when it’s needed to establish or continue a collaborative session.
+ARKit sets the data priority to critical when the data is important for establishing or continuing a collaborative session. For best results, use network transmission mechanisms that ensure delivery, such as MCSessionSendDataModeReliable.
 
 
 ---

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An optional closure that CarPlay invokes when the user selects an image.
+The closure to run when someone interacts with one of the elements in the row.
 
 **Availability**:
 - iOS 14.0+
@@ -23,25 +23,36 @@ var listImageRowHandler: ((CPListImageRowItem, Int, @escaping () -> Void) -> Voi
 
 ## Discussion
 
-In Swift, this property is a closure that has three parameters:
+After creating a `CPListImageRowItem`, set the value of this property to the closure you want CarPlay to run when someone interacts with one of the row’s elements. Define your closure to return no value and receive the following parameters:
 
-- The list item that contains the image.
-- The selected image’s index in the list item’s image row.
-- The completion closure you call to notify CarPlay when you finish processing the selection.
+The row the person selected. The zero-based index of the element the person selected. Use this value to fetch the element from the row’s [`elements`](./elements.md) array. A completion closure to call when you finish processing the selection
 
-In Objective-C, the block’s parameters are:
+In your closure, perform any necessary work and call the provided completion closure. CarPlay runs the closure on your app’s main queue, so finish your tasks as quickly as possible. If you need to perform work that might take longer to finish, perform that work asynchronously or on a background queue to avoid tying up the main queue.
 
-- **`item`**: The list item that contains the image.
-- **`index`**: The selected image’s index in the list item’s image row.
-- **`completionBlock`**: The block you call to notify CarPlay when you finish processing the selection.
+As soon as you complete all your work, including any asynchronous work, call the provided completion closure to let CarPlay know you’re done. Until you run the completion closure, CarPlay displays an asynchronous progress indicator in your list item. Running the closure removes this indicator so that people know the task finished.
 
-CarPlay executes your handler on the main queue. You must call the completion closure, or `completionBlock` in Objective-C, after you finish processing the selection. If you need to perform asynchronous tasks, dispatch them to a background queue and call the completion closure or `completionBlock` when they complete. CarPlay displays an asynchronous progress indicator until you call the completion closure.
+The following example shows a handler for a row that contains [`CPListImageRowItemRowElement`](../cplistimagerowitemrowelement.md) types. When someone selects an element, the handler validates the selected item and processes the selection before running the completion closure.
+
+```swift
+row1.listImageRowHandler = { item, index, completion in
+    guard let selectedItem = item.elements[index] as? CPListImageRowItemRowElement else {
+        Swift.print("Expected a row element but got an unknown type.")
+        completion()
+        return
+    }
+
+    // Process the selected item...
+
+    // Call the completion closure.
+    completion()
+}
+```
 
 ## See Also
 
-### Managing Selection
+### Responding to interactions
 - [var handler: ((any CPSelectableListItem, () -> Void) -> Void)?](./handler.md)
-  An optional closure that CarPlay invokes when the user selects the list item.
+  The closure to run when someone interacts with any part of the row.
 
 
 ---

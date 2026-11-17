@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Enumeration Case
 
+An enumeration that describes the status of a hand anchor query.
+
 **Availability**:
 - visionOS
 
@@ -17,6 +19,7 @@ ar_hand_anchor_query_status_success
 
 ### Query states
 - [ar_hand_anchor_query_status_failure](./ar_hand_anchor_query_status_failure.md)
+  An enumeration that describes the status of a hand anchor query.
 
 
 ---

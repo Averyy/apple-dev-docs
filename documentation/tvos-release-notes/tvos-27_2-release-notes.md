@@ -24,7 +24,7 @@ The tvOS 27.2 SDK provides support to develop tvOS apps for Apple TV devices run
 ## See Also
 
 ### tvOS 27
-- [tvOS 27.3 Beta Release Notes](./tvos-27_3-release-notes.md)
+- [tvOS 27.3 Beta 2 Release Notes](./tvos-27_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [tvOS 27 Release Notes](./tvos-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

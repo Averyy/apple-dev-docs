@@ -22,7 +22,7 @@ var priority: ARSession.CollaborationData.Priority { get }
 
 ## Discussion
 
-If you have reliability options in the network protocol you choose to transport [`ARSession.CollaborationData`](../collaborationdata.md) among peers, the [`priority`](./priority-swift.property.md) property gives you a hint about which reliability option to choose for a given collaboration data instance. For example, if you use MultipeerConnectivity to send collaboration data over the network, choose [`MCSessionSendDataMode.reliable`](../../../MultipeerConnectivity/mcsessionsenddatamode/reliable.md) when calling [`send(_:toPeers:with:)`](../../../MultipeerConnectivity/mcsession/send%28_,topeers,with%29.md) after ARKit gives you a collaboration data instance with priority [`ARSession.CollaborationData.Priority.critical`](./priority-swift.enum/critical.md).
+If you have reliability options in the network protocol you choose to transport `ARCollaborationData` among peers, the priority property gives you a hint about which reliability option to choose for a given collaboration data instance. For example, if you use MultipeerConnectivity to send collaboration data over the network, choose [`MCSessionSendDataMode.reliable`](../../../MultipeerConnectivity/mcsessionsenddatamode/reliable.md) when calling [`send(_:toPeers:with:)`](../../../MultipeerConnectivity/mcsession/send%28_,topeers,with%29.md) after ARKit gives you a collaboration data instance with priority ARCollaborationDataPriorityCritical.
 
 ## See Also
 

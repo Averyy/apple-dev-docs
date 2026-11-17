@@ -43,18 +43,18 @@ The system resolves a font’s value at the time it uses the font in a given env
   Create a font for third level hierarchical headings.
 - [static let headline: Font](./font/headline.md)
   A font with the headline text style.
-- [static let subheadline: Font](./font/subheadline.md)
-  A font with the subheadline text style.
 - [static let body: Font](./font/body.md)
   A font with the body text style.
 - [static let callout: Font](./font/callout.md)
   A font with the callout text style.
+- [static let subheadline: Font](./font/subheadline.md)
+  A font with the subheadline text style.
+- [static let footnote: Font](./font/footnote.md)
+  A font with the footnote text style.
 - [static let caption: Font](./font/caption.md)
   A font with the caption text style.
 - [static let caption2: Font](./font/caption2.md)
   Create a font with the alternate caption text style.
-- [static let footnote: Font](./font/footnote.md)
-  A font with the footnote text style.
 ### Getting system fonts
 - [static func system(Font.TextStyle, design: Font.Design?, weight: Font.Weight?) -> Font](./font/system%28_,design,weight%29.md)
   Gets a system font that uses the specified style, design, and weight.

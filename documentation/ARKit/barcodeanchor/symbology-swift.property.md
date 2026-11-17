@@ -29,7 +29,7 @@ var symbology: BarcodeAnchor.Symbology { get }
 - [BarcodeAnchor.Symbology](./symbology-swift.enum.md)
   Values that describe specific kinds of barcodes.
 - [var id: UUID](./id.md)
-  The unique identifier of an anchor.
+  The unique identifier of this anchor.
 
 
 ---

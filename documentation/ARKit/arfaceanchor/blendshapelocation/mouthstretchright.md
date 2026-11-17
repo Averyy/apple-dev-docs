@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Type Property
 
-The coefficient describing rightward movement of the left corner of the mouth.
+The coefficient describing rightward movement of the right corner of the mouth.
 
 **Availability**:
 - iOS 11.0+

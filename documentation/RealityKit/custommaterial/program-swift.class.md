@@ -73,6 +73,8 @@ let material = CustomMaterial(program: program)
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](../shadergraphmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
+- [class ShaderGraph](../shadergraph.md)
+  A graph of connected nodes that defines a shader, which you can build and edit in code.
 - [Modifying RealityKit rendering using custom materials](../modifying-realitykit-rendering-using-custom-materials.md)
   Write Metal shader functions to implement custom rendering effects.
 - [struct CustomMaterial](../custommaterial.md)
@@ -86,6 +88,7 @@ let material = CustomMaterial(program: program)
 - [CustomMaterial.Program.Descriptor](./program-swift.class/descriptor-swift.struct.md)
   An object that specifies all parameters necessary to initialize `CustomMaterial` programs
 - [enum CustomShaderStage](../customshaderstage.md)
+  The shader stages of a custom material, which run your own geometry modifier or surface shader code.
 
 
 ---

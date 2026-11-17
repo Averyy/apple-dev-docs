@@ -29,6 +29,16 @@ func hidePanel() async throws -> Bool
 
 - `completion`: An optional block called when the overlay has been hidden.
 
+## See Also
+
+### Displaying overlay panels
+- [func showPanel(CPMapPanel, completion: ((Bool, (any Error)?) -> Void)?)](./showpanel%28_,completion%29.md)
+  Shows an overlay with the specified panel.
+- [func pushPanel(CPMapPanel, completion: ((Bool, (any Error)?) -> Void)?)](./pushpanel%28_,completion%29.md)
+  Pushes a new panel.
+- [func popPanel(completion: ((Bool, (any Error)?) -> Void)?)](./poppanel%28completion%29.md)
+  Pops the top panel from the overlay’s panel stack.
+
 
 ---
 

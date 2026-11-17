@@ -22,12 +22,12 @@ class ARRaycastResult
 
 ## Overview
 
-If you use [`ARView`](../RealityKit/arview.md) or [`ARSCNView`](./arscnview.md) as your renderer, you can search for real-world surfaces at a screen point using the [`raycast(from:allowing:alignment:)`](../RealityKit/arview/raycast%28from,allowing,alignment%29.md), and [`raycastQuery(from:allowing:alignment:)`](./arscnview/raycastquery%28from,allowing,alignment%29.md) functions, respectively.
+A raycast projects a ray from a screen point into the physical environment and returns an [`ARRaycastResult`](./arraycastresult.md) describing each real-world surface the ray intersects.
 
-If you use a custom renderer, you can find real-world positions using screen points with:
+If you use [`ARView`](../RealityKit/arview.md) as your renderer, you can raycast from a screen point directly with [`raycast(from:allowing:alignment:)`](../RealityKit/arview/raycast%28from,allowing,alignment%29.md). With [`ARSCNView`](./arscnview.md) or a custom renderer, you first build a query and then run it:
 
-- The [`raycastQuery(from:allowing:alignment:)`](./arframe/raycastquery%28from,allowing,alignment%29.md) function of [`ARFrame`](./arframe.md).
-- The [`raycast(_:)`](./arsession/raycast%28_%29.md) function of [`ARSession`](./arsession.md).
+- Create a query with [`raycastQuery(from:allowing:alignment:)`](./arscnview/raycastquery%28from,allowing,alignment%29.md) or [`raycastQuery(from:allowing:alignment:)`](./arframe/raycastquery%28from,allowing,alignment%29.md).
+- Search for surfaces by passing that query to [`raycast(_:)`](./arsession/raycast%28_%29.md).
 
 For tracked raycasting, you call [`trackedRaycast(_:updateHandler:)`](./arsession/trackedraycast%28_,updatehandler%29.md) on your app’s current [`ARSession`](./arsession.md).
 
@@ -45,7 +45,7 @@ For tracked raycasting, you call [`trackedRaycast(_:updateHandler:)`](./arsessio
 - [var targetAlignment: ARRaycastQuery.TargetAlignment](./arraycastresult/targetalignment.md)
   The alignment of the plane that the ray intersected.
 - [ARRaycastQuery.TargetAlignment](./arraycastquery/targetalignment-swift.enum.md)
-  A specification that indicates a target’s alignment with respect to gravity
+  A specification that indicates a target’s alignment with respect to gravity.
 
 ## Relationships
 

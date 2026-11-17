@@ -55,6 +55,7 @@ enum MaterialColorParameter
 - [struct MaterialParameterTypes](./materialparametertypes.md)
   A set of types that material parameters can use.
 - [struct MaterialParameters](./materialparameters.md)
+  A collection of types that represent material parameter values, handles, and textures.
 - [enum MaterialScalarParameter](./materialscalarparameter.md)
   The scalar parameter applied to a material.
 

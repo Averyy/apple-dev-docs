@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An enum schema for an attendee type parameter.
+An enum schema for an attendee type.
 
 **Availability**:
 - iOS 27.0+
@@ -21,9 +21,9 @@ var attendeeType: some AppSchemaEnum { get }
 
 ## Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `calendar` domain and a parameter type matches the `attendeeType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .calendar.attendeeType)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `calendar` domain and a parameter type matches the `attendeeType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum(schema: .calendar.attendeeType)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an app enum that conforms to the `attendeeType` schema:
+The following example shows an app enum that conforms to the `attendeeType` schema. You can create a type that conforms to the schema by adding the `@AppEnum` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `calendar_attendeeType` and select it from the code-completion suggestions:
 
 ```swift
 @AppEnum(schema: .calendar.attendeeType)
@@ -47,11 +47,11 @@ For more information about the App Intents framework and the experiences it supp
 
 ### Types for static parameters
 - [var attendeeStatus: some AppSchemaEnum](./attendeestatus.md)
-  An enum schema for an attendee status parameter.
+  An enum schema for an attendee status.
 - [var eventSpan: some AppSchemaEnum](./eventspan.md)
-  An enum schema for an event span parameter.
+  An enum schema for an event span.
 - [var eventStatus: some AppSchemaEnum](./eventstatus.md)
-  An enum schema for an event status parameter.
+  An enum schema for an event status.
 - [AppSchema.CalendarEnum](../calendarenum.md)
   Identifies enum schemas in the calendar domain.
 

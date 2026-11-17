@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The content style that the vehicle selects.
+The preferred interface style for your app’s content.
 
 **Availability**:
 - iOS 13.0+
@@ -23,13 +23,19 @@ var contentStyle: CPContentStyle { get }
 
 ## Discussion
 
-The vehicle selects the content style according to the ambient light level. Your navigation app can use this value to determine the most appropriate style of map content to draw in its base view. The content style is independent of the user interface style, which controls light and dark mode.
+The value in this property tells you whether to render your app using a light or dark style. A vehicle might set the value in this property based on ambient light levels and update the value as the levels change.
 
 ## See Also
 
-### Getting the Content Style
+### Getting the configuration details
+- [var limitedUserInterfaces: CPLimitableUserInterface](./limiteduserinterfaces.md)
+  A bitmask of the interface restrictions that currently apply to your app.
+- [var supportsVideoPlayback: Bool](./supportsvideoplayback.md)
+  A Boolean value that indicates whether CarPlay supports playing video content.
 - [struct CPContentStyle](../cpcontentstyle.md)
   The types of content style that the vehicle allows.
+- [struct CPLimitableUserInterface](../cplimitableuserinterface.md)
+  The types of interfaces to which a vehicle can limit access.
 
 
 ---

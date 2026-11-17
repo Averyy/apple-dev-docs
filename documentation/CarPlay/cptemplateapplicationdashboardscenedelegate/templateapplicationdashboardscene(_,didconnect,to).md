@@ -21,10 +21,6 @@ optional func templateApplicationDashboardScene(_ templateApplicationDashboardSc
 - (void) templateApplicationDashboardScene:(CPTemplateApplicationDashboardScene *) templateApplicationDashboardScene didConnectDashboardController:(CPDashboardController *) dashboardController toWindow:(UIWindow *) window;
 ```
 
-## Mentions
-
-- [Displaying Content in CarPlay](../displaying-content-in-carplay.md)
-
 ## Discussion
 
 CarPlay calls this method when it connects a dashboard scene to your navigation app. Create an instance of your map-drawing view controller and assign it as the window’s root view controller. Use the dashboard controller to provide up to two shortcut buttons to display instead of your map content when there’s no active navigation session.
@@ -37,7 +33,7 @@ CarPlay calls this method when it connects a dashboard scene to your navigation 
 
 ## See Also
 
-### Responding to the Scene Life Cycle
+### Responding to the dashboard scene life cycle
 - [func templateApplicationDashboardScene(CPTemplateApplicationDashboardScene, didDisconnect: CPDashboardController, from: UIWindow)](./templateapplicationdashboardscene%28_,diddisconnect,from%29.md)
   Tells the delegate when CarPlay removes the dashboard scene from your navigation app.
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The image that the list item displays in its leading region.
+The image to display on the leading edge of the cell.
 
 **Availability**:
 - iOS 12.0+
@@ -21,21 +21,31 @@ var image: UIImage? { get }
 @property (nonatomic, strong, readonly, nullable) UIImage * image;
 ```
 
+## Discussion
+
+Use this property to access the image for your row. To change the value of this property after creating the list item, call the [`setImage(_:)`](./setimage%28_%29.md) method.
+
+If your image originates from an asset catalog, CarPlay manages light and dark variants of your image and switches them when needed. If the image is smaller or larger than the dimensions in the [`maximumImageSize`](./maximumimagesize.md) property, CarPlay scales the image as needed to fit the space. Don’t specify an image object with an animated sequence of images.
+
+To change the value of this property after creating the list item, call the [`setImage(_:)`](./setimage%28_%29.md) method.
+
 ## See Also
 
-### Managing Content
+### Managing the row’s content
 - [var text: String?](./text.md)
-  The list item’s primary text.
-- [func setText(String)](./settext%28_%29.md)
-  Updates the list item’s primary text.
+  The primary text for the list item.
 - [var detailText: String?](./detailtext.md)
-  The list item’s secondary text.
+  The secondary text for the list item.
+- [func setText(String)](./settext%28_%29.md)
+  Updates the primary text of the list item.
 - [func setDetailText(String?)](./setdetailtext%28_%29.md)
-  Updates the list item’s secondary text.
+  Updates the secondary text of the list item.
 - [func setImage(UIImage?)](./setimage%28_%29.md)
-  Updates the list item’s image.
+  Updates the leading image of the list item.
+- [var userInfo: Any?](./userinfo.md)
+  App-specific data you associate with the item.
 - [class var maximumImageSize: CGSize](./maximumimagesize.md)
-  The maximum size of a list item’s image and accessory image.
+  The maximum dimensions for the list item images.
 
 
 ---

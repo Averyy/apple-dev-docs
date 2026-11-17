@@ -25,6 +25,16 @@ enum GaussianSplatEvents
 - [GaussianSplatEvents.RenderingChanged](./gaussiansplatevents/renderingchanged.md)
   An event that signals the framework changed how it renders an entity’s splats to manage performance.
 
+## See Also
+
+### Media events
+- [enum AudioEvents](./audioevents.md)
+  Events associated with audio playback.
+- [enum VideoPlayerEvents](./videoplayerevents.md)
+  Events associated with video playback for VideoPlayerComponent.
+- [enum ImagePresentationEvents](./imagepresentationevents.md)
+  Events associated with viewing mode transitions for image presentation components.
+
 
 ---
 

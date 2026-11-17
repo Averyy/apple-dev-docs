@@ -81,7 +81,7 @@ arView.session.run(config)
 - [Visualizing and interacting with a reconstructed scene](./visualizing-and-interacting-with-a-reconstructed-scene.md)
   Estimate the shape of the physical environment using a polygonal mesh.
 - [class ARMatteGenerator](./armattegenerator.md)
-  An object that creates matte textures you use to occlude your app’s virtual content with people, that ARKit recognizes in the camera feed.
+  An object that creates matte textures you use to occlude your app’s virtual content with people that ARKit recognizes in the camera feed.
 
 
 ---

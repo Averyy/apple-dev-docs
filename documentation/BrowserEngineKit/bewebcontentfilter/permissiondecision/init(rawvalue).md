@@ -4,6 +4,8 @@
 **Kind**: init  
 **Role**: Initializer
 
+Creates a decision with the specified permission value.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

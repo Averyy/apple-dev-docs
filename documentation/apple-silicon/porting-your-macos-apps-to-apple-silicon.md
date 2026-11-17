@@ -40,7 +40,7 @@ To start your investigation, make a note of any code that does the following:
 
 The list above is not exhaustive, but it offers a starting point for your investigation. Hardware and architectural differences may introduce bugs or performance issues to your code on Apple silicon. Identifying potential problem areas early will save you time later.
 
-Always have a well-defined test plan, ideally with a set of automated test suites you can run at build time. In addition to testing your code’s correctness, gather metrics on your app’s performance. Examine your app’s memory usage, and measure how long it takes to execute specific tasks on both Apple silicon and Intel-based Mac computers. Use that information to identify additional areas to investigate.
+Always have a well-defined test plan, ideally with a set of automated test suites you can run at build time. In addition to testing your code’s correctness, gather metrics on your app’s performance. Examine your app’s memory usage, and measure how long it takes to run specific tasks on both Apple silicon and Intel-based Mac computers. Use that information to identify additional areas to investigate.
 
 ### Obtain Universal Versions of Linked Libraries
 

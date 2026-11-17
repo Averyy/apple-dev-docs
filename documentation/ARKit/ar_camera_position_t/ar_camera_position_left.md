@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Enumeration Case
 
+Camera position on the left side of the device.
+
 **Availability**:
 - visionOS
 

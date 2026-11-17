@@ -32,7 +32,7 @@ var targetAlignment: ARRaycastQuery.TargetAlignment { get }
 - [ARRaycastQuery.Target](../arraycastquery/target-swift.enum.md)
   The types of surface you allow a raycast to intersect with.
 - [ARRaycastQuery.TargetAlignment](../arraycastquery/targetalignment-swift.enum.md)
-  A specification that indicates a target’s alignment with respect to gravity
+  A specification that indicates a target’s alignment with respect to gravity.
 
 
 ---

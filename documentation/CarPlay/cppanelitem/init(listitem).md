@@ -29,6 +29,13 @@ A panel item configured with the specified list item.
 
 - `listItem`: The list item with the information to display. The [`CPListItem`](../cplistitem.md) type supports primary and secondary text and images.
 
+## See Also
+
+### Initializing the panel
+- [init(gridButtons: [CPGridButton])](./init%28gridbuttons%29.md)
+  Initialize the item using one or more grid buttons.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

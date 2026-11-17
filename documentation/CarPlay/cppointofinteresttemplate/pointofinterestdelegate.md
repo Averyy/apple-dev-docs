@@ -23,9 +23,9 @@ weak var pointOfInterestDelegate: (any CPPointOfInterestTemplateDelegate)? { get
 
 ## See Also
 
-### Handling Template Events
+### Handling events
 - [protocol CPPointOfInterestTemplateDelegate](../cppointofinteresttemplatedelegate.md)
-  The methods to handle a Point of Interest template’s events.
+  The methods to handle a point of interest template’s events.
 
 
 ---

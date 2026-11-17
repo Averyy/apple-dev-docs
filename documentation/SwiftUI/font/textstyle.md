@@ -38,18 +38,18 @@ enum TextStyle
   The font used for third level hierarchical headings.
 - [Font.TextStyle.headline](./textstyle/headline.md)
   The font used for headings.
-- [Font.TextStyle.subheadline](./textstyle/subheadline.md)
-  The font used for subheadings.
 - [Font.TextStyle.body](./textstyle/body.md)
   The font used for body text.
 - [Font.TextStyle.callout](./textstyle/callout.md)
   The font used for callouts.
+- [Font.TextStyle.subheadline](./textstyle/subheadline.md)
+  The font used for subheadings.
+- [Font.TextStyle.footnote](./textstyle/footnote.md)
+  The font used in footnotes.
 - [Font.TextStyle.caption](./textstyle/caption.md)
   The font used for standard captions.
 - [Font.TextStyle.caption2](./textstyle/caption2.md)
   The font used for alternate captions.
-- [Font.TextStyle.footnote](./textstyle/footnote.md)
-  The font used in footnotes.
 
 ## Relationships
 

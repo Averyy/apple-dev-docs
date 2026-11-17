@@ -21,7 +21,7 @@ struct AccessoryGPUWorker
 
 ## Overview
 
-An *accessory GPU worker* exchanges information in the background like [`AccessoryWorker`](./accessoryworker.md) does, but runs under a more permissive sandbox profile that permits GPU access. Create an instance of this structure in the `extensionPoint` of your [`AccessoryDataProvider`](./accessorydataprovider.md) extension, and open sessions from your transport extension with [`makeFeatureSession(_:)`](./accessorytransportsession/makefeaturesession%28_%29.md) in response to events from your accessory. Your app defines the data format, and the Accessory Transport Extension framework treats the data as opaque, with no additional encryption. Enroll the feature for each accessory with `requestAuthorization(for:)`. For more information, see [Sending data to an accessory in the background](./sending-data-to-an-accessory-in-the-background.md).
+An *accessory GPU worker* exchanges information in the background like [`AccessoryWorker`](./accessoryworker.md) does, but runs under a more permissive sandbox profile that permits GPU access. Create an instance of this structure in the `extensionPoint` of your [`AccessoryDataProvider`](./accessorydataprovider.md) extension, and open sessions from your transport extension with [`makeFeatureSession(_:)`](./accessorytransportsession/makefeaturesession%28_%29.md) in response to events from your accessory. Your app defines the data format, and the Accessory Transport Extension framework treats the data as opaque, with no additional encryption. Enroll the feature for each accessory with [`requestAuthorization(for:)`](./accessorygpuworker/requestauthorization%28for%29.md). For more information, see [Sending data to an accessory in the background](./sending-data-to-an-accessory-in-the-background.md).
 
 ## Perform GPU work in the background
 
@@ -44,6 +44,10 @@ Build your extension to tolerate system pauses or session stops under thermal pr
 - [AccessoryGPUWorker.FeatureSession](./accessorygpuworker/featuresession.md)
   A class that represents the session’s transport extension.
 ### Checking authorization
+- [static func authorizationStatus(for: ASAccessory) async throws -> AccessoryFeatureAuthorizationStatus](./accessorygpuworker/authorizationstatus%28for%29.md)
+  Returns the feature’s current authorization status for an accessory.
+- [static func requestAuthorization(for: ASAccessory) async throws -> AccessoryFeatureAuthorizationStatus](./accessorygpuworker/requestauthorization%28for%29.md)
+  Enrolls the feature for an accessory.
 - [enum AccessoryFeatureAuthorizationStatus](./accessoryfeatureauthorizationstatus.md)
   A status that describes whether the system authorizes a feature for an accessory.
 ### Creating the feature
@@ -54,10 +58,7 @@ Build your extension to tolerate system pauses or session stops under thermal pr
 
 ### Conforms To
 - [AccessoryFeature](./accessoryfeature.md)
-- [AccessoryFeatureAuthorizing](./accessoryfeatureauthorizing.md)
 - [AppExtensionPoint.Capability](../ExtensionFoundation/appextensionpoint/capability.md)
-- [Copyable](../Swift/copyable.md)
-- [Escapable](../Swift/escapable.md)
 - [Identifiable](../Swift/identifiable.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)

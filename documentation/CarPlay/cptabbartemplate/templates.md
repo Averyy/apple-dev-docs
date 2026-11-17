@@ -27,7 +27,7 @@ The array contains the root template from each of the tab bar’s tabs. To add n
 
 ## See Also
 
-### Managing the Templates
+### Managing the tabs
 - [func updateTemplates([CPTemplate])](./updatetemplates%28_%29.md)
   Adds, removes, reorders, or updates the tab bar’s templates.
 - [class var maximumTabCount: Int](./maximumtabcount.md)

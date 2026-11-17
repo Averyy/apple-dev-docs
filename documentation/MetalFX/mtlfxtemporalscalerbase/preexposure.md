@@ -5,14 +5,14 @@
 **Role**: Instance Property  
 **Required**: Yes
 
-A pre-exposure value this scaler evaluates.
+The exposure value that you’ve already applied to your color texture input.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 27.1+
+- tvOS 27.2+
 - visionOS 1.0+
 
 ## Declaration
@@ -27,7 +27,29 @@ var preExposure: Float { get set }
 
 ## Discussion
 
-If the input color texture you assign to [`colorTexture`](./colortexture.md) is pre-multiplied by fixed value, set this property to that same fixed value so MetalFX divides input color by it. This is not a common situation and you typically don’t need to assign a value to this property.
+If your app applies an exposure adjustment to your color texture input, set this property to that adjustment value.
+
+> **Note**: Most apps don’t need to set this property, which defaults `1.0`.
+
+The temporal scaler divides each value in the color texture input by this pre-exposure value before it applies any regular exposure adjustments. The regular exposure adjustments either come from the [`exposureTexture`](./exposuretexture.md) property or the temporal scaler’s autoexposure feature (see [`isAutoExposureEnabled`](../mtlfxtemporalscalerdescriptor/isautoexposureenabled.md)).
+
+## See Also
+
+### Configuring the image input
+- [var colorTextureUsage: MTLTextureUsage](./colortextureusage.md)
+  The minimal texture usage options that your app’s input color texture must set to apply the temporal scaler.
+- [var colorTexture: (any MTLTexture)?](./colortexture.md)
+  An input color texture you set for the temporal scaler that supports the correct color texture usage options.
+- [var inputContentWidth: Int](./inputcontentwidth.md)
+  The width, in pixels, of the region within the color texture the temporal scaler uses as its input.
+- [var inputContentHeight: Int](./inputcontentheight.md)
+  The height, in pixels, of the region within the color texture the temporal scaler uses as its input.
+- [var jitterOffsetX: Float](./jitteroffsetx.md)
+  The horizontal component of the subpixel sampling coordinate you use to generate the color texture input.
+- [var jitterOffsetY: Float](./jitteroffsety.md)
+  The vertical component of the subpixel sampling coordinate you use to generate the color texture input.
+- [var exposureTexture: (any MTLTexture)?](./exposuretexture.md)
+  A texture that sets the exposure level for the color texture input.
 
 
 ---

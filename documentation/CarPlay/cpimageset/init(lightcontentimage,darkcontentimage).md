@@ -25,6 +25,11 @@ init(lightContentImage lightImage: UIImage, darkContentImage darkImage: UIImage)
 
 A newly initialized image set.
 
+## Parameters
+
+- `lightImage`: The image the system displays for an image set when [`userInterfaceStyle`](../../UIKit/uitraitcollection/userinterfacestyle.md) is [`UIUserInterfaceStyle.light`](../../UIKit/uiuserinterfacestyle/light.md).
+- `darkImage`: The image the system displays for an image set when [`userInterfaceStyle`](../../UIKit/uitraitcollection/userinterfacestyle.md) is [`UIUserInterfaceStyle.dark`](../../UIKit/uiuserinterfacestyle/dark.md).
+
 
 ---
 

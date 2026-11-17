@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Provides an action that uses Siri to prompt the user for a person, group, or business to call.
+An option to call a person, group, or business.
 
 **Availability**:
 - iOS 15.0+
@@ -23,15 +23,11 @@ CPAssistantCellActionTypeStartCall
 
 ## Discussion
 
-> **Note**:  This action is only available in communication apps that include an Intents Extension capable of handling [`INStartCallIntent`](../../Intents/instartcallintent.md). For more information, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
+To respond to this action, make sure your app implements an Intents extension capable of handling the [`INStartCallIntent`](../../Intents/instartcallintent.md) type. When someone chooses this action, Siri prompts the person to specify the person, group, or business to call. Use the information to locate the appropriate contact details and start a voice call.
 
-The system provides the user’s response to your app’s Intents Extension. Your app must respond by identifying the requested person, group, or business and start a voice call with them.
+> **Note**: This action is available only to communication apps.
 
-## See Also
-
-### Siri Actions
-- [CPAssistantCellActionType.playMedia](./playmedia.md)
-  Provides an action that uses Siri to prompt the user for media playback.
+For more information about how to implement an Intents extension, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
 
 
 ---

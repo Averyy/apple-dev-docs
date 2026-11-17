@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An optional closure that CarPlay invokes when the user selects the list item.
+The closure to run when someone interacts with any part of the list item.
 
 **Availability**:
 - iOS 14.0+
@@ -23,25 +23,36 @@ var handler: ((any CPSelectableListItem, @escaping () -> Void) -> Void)? { get s
 
 ## Discussion
 
-In Swift, the handler is a closure that has two parameters:
+After you create a `CPListItem`, set the value of this property to the closure you want CarPlay to run when someone interacts with it. Define your closure to return no value and receive the following parameters:
 
-- An object that conforms to [`CPSelectableListItem`](../cpselectablelistitem.md), which is the list item that the user selects.
-- The completion closure you call to notify CarPlay when you finish processing the selection.
+The item the person selected, which is typically a `CPListItem` object. A completion closure to call when you finish processing the selection
 
-In Objective-C, the block’s parameters are:
+In your closure, perform any necessary work and call the provided completion closure. CarPlay runs the closure on your app’s main queue, so finish your tasks as quickly as possible. If you need to perform work that might take longer to finish, perform that work asynchronously or on a background queue to avoid blocking the main queue.
 
-- **`item`**: The list item that the user selects.
-- **`completionBlock`**: The block you call to notify CarPlay when you finish processing the selection.
+As soon as you complete all your work, including any asynchronous work, call the provided completion closure to let CarPlay know you’re done. Until you run the completion closure, CarPlay displays an asynchronous progress indicator in your list item. Running the closure removes this indicator so that people know the task finished.
 
-CarPlay executes your handler on the main queue. You must call the completion closure, or `completionBlock` in Objective-C, after you finish processing the selection. If you need to perform asynchronous tasks, dispatch them to a background queue and call the completion closure or `completionBlock` when they complete. CarPlay displays an asynchronous progress indicator until you call the completion closure.
+The following example shows the handler for a list item that pushes a new page onto the app’s navigation stack. The parent type stores the current [`CPInterfaceController`](../cpinterfacecontroller.md)  object in the `interfaceController` property and stores the template for the new page in the `newListPage` variable.
+
+```swift
+myListItem.handler = { item, completion in
+    guard self.interfaceController != nil else {
+        completion()
+        return
+    }
+            
+    self.interfaceController!.pushTemplate(newListPage, animated: true) { displayed, error in
+        let result = displayed ? "appeared" : "returned an error"
+        Swift.print(“Page \(result)")
+    }
+    completion()
+}
+```
 
 ## See Also
 
-### Managing Configuration
+### Responding to interactions
 - [var isEnabled: Bool](./isenabled.md)
-  A Boolean value that indicates if the item is enabled.
-- [var userInfo: Any?](./userinfo.md)
-  An opaque value for the list item.
+  A Boolean value that indicates whether the item is enabled.
 
 
 ---

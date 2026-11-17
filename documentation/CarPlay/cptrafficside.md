@@ -23,14 +23,14 @@ enum CPTrafficSide : NSUInteger;
 
 ## Topics
 
-### Initializers
-- [init?(rawValue: UInt)](./cptrafficside/init%28rawvalue%29.md)
-  Creates a traffic side-of-the-road enumeration item with the provided value.
-### Lane statuses
+### Getting the traffic side
 - [CPTrafficSide.right](./cptrafficside/right.md)
   Indicates the traffic drives on the right side of the roadway.
 - [CPTrafficSide.left](./cptrafficside/left.md)
   Indicates the traffic drives on the left side of the roadway.
+### Creating a traffic side
+- [init?(rawValue: UInt)](./cptrafficside/init%28rawvalue%29.md)
+  Creates a traffic side-of-the-road enumeration item with the provided value.
 
 ## Relationships
 
@@ -44,16 +44,18 @@ enum CPTrafficSide : NSUInteger;
 
 ## See Also
 
-### Enumerations
-- [enum CPInstrumentClusterSetting](./cpinstrumentclustersetting.md)
-- [enum CPJunctionType](./cpjunctiontype.md)
-  Values that represent types of roadway junctions.
-- [enum CPManeuverState](./cpmaneuverstate.md)
-  Values that describe the state of a maneuver.
-- [enum CPManeuverType](./cpmaneuvertype.md)
-  Values that describe types of navigation maneuvers.
+### Lanes and junctions
+- [class CPLane](./cplane.md)
+  A class that describes characteristics of a lane on a roadway.
+- [class CPLaneGuidance](./cplaneguidance.md)
+  A class that provides information that describes the number of lanes on a roadway and navigation instruction variants.
 - [enum CPLaneStatus](./cplanestatus.md)
   Values that describe the status or preferability of a lane.
+- [enum CPJunctionType](./cpjunctiontype.md)
+  Values that represent types of roadway junctions.
+- [func NSStringFromCPJunctionType(CPJunctionType) -> String!](./nsstringfromcpjunctiontype%28_%29.md)
+- [func NSStringFromCPLaneStatus(CPLaneStatus) -> String!](./nsstringfromcplanestatus%28_%29.md)
+- [func NSStringFromCPTrafficSide(CPTrafficSide) -> String!](./nsstringfromcptrafficside%28_%29.md)
 
 
 ---

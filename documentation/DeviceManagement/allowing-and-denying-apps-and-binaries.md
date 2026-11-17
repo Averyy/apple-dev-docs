@@ -104,6 +104,12 @@ The first `Authority` value that `codesign` returns indicates the code signing s
 | `Developer ID Application` | Check the OID using the following method. |
 | `Apple Distribution` | Check the OID using the following method. |
 
+An ad-hoc signed binary doesn’t return an `Authority` value. It includes the following attribute in the `codesign` output instead:
+
+```
+Signature=adhoc
+```
+
 Inspect the signing authority chain to further distinguish the code signing state of a binary, like this:
 
 ```sh
@@ -123,7 +129,7 @@ The command returns one or more OIDs. If the returned list contains `1.2.840.113
 
 For platform binaries, use the `Authority` value to determine the `SigningState`. Platform binaries don’t have an OID, so their `SigningState` is `Apple`.
 
-If `codesign` returns an ad hoc `Signature` value, or if the certificate contains OID `1.2.840.113635.100.6.1.12` to indicate a development signature, the device denies the binary.
+If the certificate contains OID `1.2.840.113635.100.6.1.12` to indicate a development signature, the device denies the binary.
 
 ## Deny specific binaries
 
@@ -141,6 +147,8 @@ You can optionally specify:
 - `SigningState`
 
 You can combine multiple required and optional values — up to all five identifiers — to form more specific rules.
+
+> **Note**: To deny an ad-hoc signed binary, use `CDHash`.
 
 The value of `CDHash` relates to the content of a specific binary and usually differs between versions. For example, use `CDHash` to deny a specific version of a binary that otherwise shares the same `TeamID` and `SigningID` as other versions.
 
@@ -170,6 +178,8 @@ You can optionally specify:
 Because `SigningID` isn’t globally unique across teams, `AllowedBinaries` requires a verifiable attribute such as `CDHash` or `TeamID`.
 
 You can combine multiple required and optional values — up to all five identifiers — to form more specific rules.
+
+> **Note**: To allow an ad-hoc signed binary, use `CDHash`.
 
 The [`AppSettings`](./appsettings.md) configuration has an `AlwaysAllowManagedApps` key to simplify managing allow lists. You deploy managed apps with the [`AppManaged`](./appmanaged.md) configuration or set the `InstallAsManaged` flag to `true` in the [`InstallApplicationCommand`](./installapplicationcommand.md). Set the `AlwaysAllowManagedApps` key to `true` to automatically allow managed apps to run in allow mode.
 

@@ -38,7 +38,7 @@ After setting up an App Clip experience, distribute your app to testers; for mor
 - [var urlDecodingState: ARAppClipCodeAnchor.URLDecodingState](./urldecodingstate-swift.property.md)
   A state that indicates the process of decoding an App Clip Code URL.
 - [ARAppClipCodeAnchor.URLDecodingState](./urldecodingstate-swift.enum.md)
-  The states in the process of decoding an App Clip code URL.
+  The states in the process of decoding an App Clip Code URL.
 
 
 ---

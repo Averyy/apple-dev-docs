@@ -27,7 +27,7 @@ typedef NSObject<OS_ar_anchor> * ar_anchor_t;
 - [ar_trackable_anchor_is_tracked](./ar_trackable_anchor_is_tracked.md)
   Returns a Boolean value that indicates whether ARKit is tracking an anchor.
 - [ar_mesh_anchor_t](./ar_mesh_anchor_t.md)
-  A surface’s position in a person’s surroundings.
+  An anchor that represents a reconstructed mesh from the physical environment.
 - [ar_mesh_anchors_t](./ar_mesh_anchors_t.md)
   A collection of mesh anchors.
 - [ar_mesh_anchors_enumerator_t](./ar_mesh_anchors_enumerator_t.md)

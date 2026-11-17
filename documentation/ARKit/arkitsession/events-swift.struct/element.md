@@ -4,7 +4,7 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
-A type representing a sequence’s elements.
+The type of element produced by this asynchronous sequence: ARKitSession.Event.
 
 **Availability**:
 - macOS 26.0+

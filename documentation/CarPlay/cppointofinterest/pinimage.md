@@ -29,7 +29,7 @@ CarPlay doesn’t support animated images. If you provide an animated image, Car
 
 ## See Also
 
-### Managing the Map Annotation
+### Managing the map annotation
 - [var location: MKMapItem](./location.md)
   The map item that contains the point of interest’s geographical information.
 

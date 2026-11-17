@@ -27,9 +27,10 @@ The combination of [`style`](./style-swift.property.md) and the template type, [
 
 ## See Also
 
-### Getting the Action Style
+### Getting the action style
 - [CPAlertAction.Style](./style-swift.enum.md)
   Display styles for an alert’s action button.
+- [var color: UIColor?](./color.md)
 
 
 ---

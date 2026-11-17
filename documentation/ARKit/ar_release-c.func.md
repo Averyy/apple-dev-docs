@@ -15,6 +15,10 @@ Releases a reference count on an ARKit object.
 extern void ar_release(void *object);
 ```
 
+## Parameters
+
+- `object`: An ARKit.framework object.
+
 ## See Also
 
 ### Memory Management

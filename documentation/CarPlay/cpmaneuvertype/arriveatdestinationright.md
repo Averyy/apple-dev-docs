@@ -21,7 +21,7 @@ CPManeuverTypeArriveAtDestinationRight
 
 ## See Also
 
-### Maneuver types
+### Getting the maneuver type
 - [CPManeuverType.arriveAtDestination](./arriveatdestination.md)
 - [CPManeuverType.arriveAtDestinationLeft](./arriveatdestinationleft.md)
 - [CPManeuverType.arriveEndOfDirections](./arriveendofdirections.md)

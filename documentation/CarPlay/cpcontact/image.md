@@ -29,7 +29,7 @@ CarPlay doesn’t support animated images. If you provide an animated image, Car
 
 ## See Also
 
-### Configuring the Contact’s Attributes
+### Configuring the contact’s attributes
 - [var name: String](./name.md)
   The contact’s name.
 - [var subtitle: String?](./subtitle.md)

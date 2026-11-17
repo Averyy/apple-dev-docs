@@ -113,13 +113,13 @@ For more information about making your app’s actions available to Apple Intell
   Identifies entity schemas in the photos domain.
 ### Types for static parameters
 - [var albumType: some AppSchemaEnum](./appschema/photosenum/albumtype.md)
-  An enum schema for an album type parameter.
+  An enum schema for an album type.
 - [var assetType: some AppSchemaEnum](./appschema/photosenum/assettype.md)
-  An enum schema for an asset type parameter.
+  An enum schema for an asset type.
 - [var filterType: some AppSchemaEnum](./appschema/photosenum/filtertype.md)
-  An enum schema for a filter type parameter.
+  An enum schema for a filter type.
 - [var rotationDirection: some AppSchemaEnum](./appschema/photosenum/rotationdirection.md)
-  An enum schema for a rotation direction parameter.
+  An enum schema for a rotation direction.
 - [AppSchema.PhotosEnum](./appschema/photosenum.md)
   Identifies enum schemas in the photos domain.
 ### Deprecated schemas

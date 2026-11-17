@@ -31,13 +31,18 @@ If not set, falls back to `distanceRemaining`.
 
 ## Parameters
 
-- `distanceRemaining`: The distance remaining in `Measurement` units. distanceRemainingToDisplay: the disance remaining to dfisk to a person, in `Measurement` units. time: `TimeInterval
+- `distanceRemaining`: The distance remaining in [`Measurement`](../../Foundation/measurement.md) units.
+- `distanceRemainingToDisplay`: The disance remaining to dfisk to a person, in `Measurement` units.
+- `time`: `TimeInterval`
 
 ## See Also
 
-### Creating a Travel Estimates Object
+### Creating travel estimates
 - [init(distanceRemaining: Measurement<UnitLength>, timeRemaining: TimeInterval)](./init%28distanceremaining,timeremaining%29.md)
   Creates travel estimates with the remaining distance and time.
+- [init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining: TimeInterval, routeDetails: [CPRouteDetail])](./init%28distanceremaining,distanceremainingtodisplay,timeremaining,routedetails%29.md)
+  Initialize a @c CPTravelEstimates with distance, distance to display, time remaining, and additional trip information.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

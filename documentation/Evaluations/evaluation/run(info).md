@@ -32,7 +32,7 @@ This method executes the evaluation by iterating through your dataset, producing
 
 A `PhasedEvaluation` runs its `evaluatorPhases` in order per sample, passing earlier phases’ metrics to later `PhaseAwareEvaluator`s; a plain evaluation runs as one phase.
 
-The resulting [`EvaluationResult`](../evaluationresult.md) contains typed data in its DataFrames:
+The resulting [`EvaluationResult`](../evaluationresult.md) contains typed data in its [`DataFrame`](../../TabularData/dataframe.md):
 
 - The Input column contains the full `Sample` from the dataset.
 - The Response column contains the full subject that the system under test produces.

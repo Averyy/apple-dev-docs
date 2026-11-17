@@ -22,7 +22,7 @@ optional func session(_ session: ARSession, didOutputAudioSampleBuffer audioSamp
 
 ## Discussion
 
-ARKit calls this method on your delegate object only if you’re running an AR session with a configuration whose  [`providesAudioData`](../arconfiguration/providesaudiodata.md) setting is [`true`](../../Swift/true.md).
+ARKit calls this method on your delegate object only if you’re running an AR session with a configuration whose [`providesAudioData`](../arconfiguration/providesaudiodata.md) setting is [`true`](../../Swift/true.md).
 
 ## Parameters
 

@@ -55,7 +55,6 @@ For more information about how to set up and start your Metal rendering engine, 
 
 ### Initializers
 - [init(configuration: any CompositorLayerConfiguration, renderer: (LayerRenderer) -> Void)](./compositorlayer/init%28configuration,renderer%29-2uxn7.md)
-  Creates a [`CompositorLayer`](./compositorlayer.md) instance.
 - [init(configuration: any CompositorLayerConfiguration, renderer: (LayerRenderer, NWEndpoint?) -> Void)](./compositorlayer/init%28configuration,renderer%29-81vbz.md)
 - [init(configuration: any CompositorLayerConfiguration, renderer: (LayerRenderer) -> Void, Void)](./compositorlayer/init%28configuration,renderer,_%29.md)
 

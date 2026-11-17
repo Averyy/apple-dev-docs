@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-An object that describes the appearance of a message list item’s trailing region.
+A type that defines the content at the trailing edge of a message list item’s row.
 
 **Availability**:
 - iOS 14.0+
@@ -23,25 +23,23 @@ class CPMessageListItemTrailingConfiguration
 
 ## Overview
 
-Use a trailing configuration to describe the visual elements that a message list item’s trailing region contains. The region can show a [`CPMessageTrailingItem`](./cpmessagetrailingitem.md) and an image.
+A `CPMessageListItemLeadingConfiguration` object contains the content to display at the trailing edge of the row for a [`CPMessageListItem`](./cpmessagelistitem.md). Use this type to specify standard visual elements such as a mute button. You can also specify a custom image to display after the rest of the message information. CarPlay places this content after the portion of the row that shows the conversation name, contact name, and other primary text.
 
-Configurations are immutable. To modify the list item’s trailing configuration, update its [`trailingConfiguration`](./cpmessagelistitem/trailingconfiguration.md) property with a new configuration. CarPlay detects the change and redraws the message list item.
+Create an instance of this type and configure it with the information you want to display for the current message list item. Initialize your [`CPMessageListItem`](./cpmessagelistitem.md) object with the instance you create. You can also change the trailing information later by assigning a new instance of this class to the [`trailingConfiguration`](./cpmessagelistitem/trailingconfiguration.md) property of the item.
 
 ## Topics
 
-### Creating a Configuration
+### Creating a configuration
 - [init(trailingItem: CPMessageTrailingItem, trailingImage: UIImage?)](./cpmessagelistitemtrailingconfiguration/init%28trailingitem,trailingimage%29.md)
-  Creates a trailing configuration that contains an item and an image.
-- [let CPMaximumMessageItemImageSize: CGSize](./cpmaximummessageitemimagesize.md)
-  The maximum size of a message list item’s image.
-### Getting the Trailing Item
+  Creates the configuration object with the items to display at the leading edge of the row.
+### Getting the trailing item
 - [var trailingItem: CPMessageTrailingItem](./cpmessagelistitemtrailingconfiguration/trailingitem.md)
-  The configuration’s item.
+  The standard system symbol to display in the row’s trailing region.
 - [enum CPMessageTrailingItem](./cpmessagetrailingitem.md)
-  The accessories that a message list item can display in its trailing region.
-### Getting the Trailing Image
+  Constants that indicate the type of symbol to display at the trailing edge of a message list row.
+### Getting the trailing image
 - [var trailingImage: UIImage?](./cpmessagelistitemtrailingconfiguration/trailingimage.md)
-  The configuration’s image.
+  The custom image to display in the row’s trailing region.
 
 ## Relationships
 
@@ -57,13 +55,15 @@ Configurations are immutable. To modify the list item’s trailing configuration
 
 ## See Also
 
-### Managing Leading and Trailing Configurations
-- [var leadingConfiguration: CPMessageListItemLeadingConfiguration](./cpmessagelistitem/leadingconfiguration.md)
-  The configuration of the list item’s leading region.
+### List items
+- [class CPMessageListItem](./cpmessagelistitem.md)
+  A list template row that manages a text message thread or contact.
 - [class CPMessageListItemLeadingConfiguration](./cpmessagelistitemleadingconfiguration.md)
-  An object that describes the appearance of a message list item’s leading region.
-- [var trailingConfiguration: CPMessageListItemTrailingConfiguration?](./cpmessagelistitem/trailingconfiguration.md)
-  The configuration of the list item’s trailing region.
+  A type that defines the content at the leading edge of a message list item’s row.
+- [let CPMaximumMessageItemImageSize: CGSize](./cpmaximummessageitemimagesize.md)
+  The maximum size for images in the leading and trailing regions of a message list item.
+- [let CPMaximumMessageItemLeadingDetailTextImageSize: CGSize](./cpmaximummessageitemleadingdetailtextimagesize.md)
+  The maximum size for images in the detail text image of a message list item.
 
 
 ---

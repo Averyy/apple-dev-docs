@@ -27,7 +27,7 @@ Plane classification can take longer than plane detection, and ARKit reports cla
 - If ARKit is still working to classify a plane, the classification is [`ARPlaneClassificationNone`](../arplaneclassification/arplaneclassificationnone.md) and the status is [`ARPlaneClassificationStatusUndetermined`](../arplaneclassificationstatus/arplaneclassificationstatusundetermined.md).
 - If ARKit cannot characterize a plane with high confidence, the classification is [`ARPlaneClassificationNone`](../arplaneclassification/arplaneclassificationnone.md) and the status is [`ARPlaneClassificationStatusUnknown`](../arplaneclassificationstatus/arplaneclassificationstatusunknown.md).
 
-Plane classification is available only on iPhone XS, iPhone XS Max, and iPhone XR. Before using classification results, check the [`isClassificationSupported`](./isclassificationsupported.md) class property to make sure you’re on a supported device.
+Plane classification is available on iOS devices with an A12 Bionic chip or later. Before using classification results, check the [`isClassificationSupported`](./isclassificationsupported.md) class property to make sure you’re on a supported device.
 
 ## See Also
 

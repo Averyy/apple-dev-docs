@@ -33,7 +33,7 @@ Your app must present the voice control template using its [`CPInterfaceControll
 
 ## See Also
 
-### Activating a State
+### Activating a state
 - [var activeStateIdentifier: String?](./activestateidentifier.md)
   The identifier of the template’s current voice control state.
 

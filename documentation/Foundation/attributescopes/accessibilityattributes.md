@@ -35,7 +35,7 @@ struct AccessibilityAttributes
 - [let accessibilityTextualContext: AttributeScopes.AccessibilityAttributes.TextualContextAttribute](./accessibilityattributes/accessibilitytextualcontext.md)
 ### Enumerations
 - [AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](./accessibilityattributes/adjustedpitchattribute.md)
-  An attribute to adjust the pitch the spoken speech.
+  An attribute to adjust the pitch of the spoken speech.
 - [AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](./accessibilityattributes/announcementpriorityattribute.md)
   An attribute to define the urgency of the announcement.
 - [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute](./accessibilityattributes/headinglevelattribute.md)

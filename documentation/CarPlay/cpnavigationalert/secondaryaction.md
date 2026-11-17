@@ -27,9 +27,13 @@ The alert displays the button for a secondary action on the trailing edge of the
 
 ## See Also
 
-### Getting the Actions
+### Getting the actions
+- [var actions: [CPAlertAction]](./actions.md)
+  The array of actions associated with this navigation alert.
 - [var primaryAction: CPAlertAction](./primaryaction.md)
   The primary action, and button, for the navigation alert.
+- [class var maximumActionsCount: Int](./maximumactionscount.md)
+  The maximum number of actions that a @c CPNavigationAlert can display.
 
 
 ---

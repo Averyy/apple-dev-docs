@@ -46,13 +46,13 @@ For more information about making your app’s actions available to Apple Intell
   Identifies entity schemas in the calendar domain.
 ### Types for static parameters
 - [var attendeeStatus: some AppSchemaEnum](./appschema/calendarenum/attendeestatus.md)
-  An enum schema for an attendee status parameter.
+  An enum schema for an attendee status.
 - [var attendeeType: some AppSchemaEnum](./appschema/calendarenum/attendeetype.md)
-  An enum schema for an attendee type parameter.
+  An enum schema for an attendee type.
 - [var eventSpan: some AppSchemaEnum](./appschema/calendarenum/eventspan.md)
-  An enum schema for an event span parameter.
+  An enum schema for an event span.
 - [var eventStatus: some AppSchemaEnum](./appschema/calendarenum/eventstatus.md)
-  An enum schema for an event status parameter.
+  An enum schema for an event status.
 - [AppSchema.CalendarEnum](./appschema/calendarenum.md)
   Identifies enum schemas in the calendar domain.
 

@@ -24,7 +24,7 @@ enum EntitySnippetContentBuilder<Entity> where Entity : AppEntity
 
 ## Overview
 
-The builder backs the [`snippet`](./snippetrepresentableentity/snippet.md) property of a [`SnippetRepresentableEntity`](./snippetrepresentableentity.md) type. For example, providing a [`CardSnippet`](./cardsnippet.md) instance to the `snippet` property implicitly applies this builder for that type.
+The builder backs the [`snippet`](./snippetrepresentableentity/snippet-swift.type.property.md) property of a [`SnippetRepresentableEntity`](./snippetrepresentableentity.md) type. For example, providing a [`CardSnippet`](./cardsnippet.md) instance to the `snippet` property implicitly applies this builder for that type.
 
 ## Topics
 
@@ -51,8 +51,6 @@ The builder backs the [`snippet`](./snippetrepresentableentity/snippet.md) prope
   A type that defines the supported rendering environments for card snippets.
 - [protocol EntitySnippetContent](./entitysnippetcontent.md)
   A visual representation that the system renders for an entity.
-- [struct CardSnippetSize](./cardsnippetsize.md)
-  A size category for a snippet card.
 
 
 ---

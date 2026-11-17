@@ -27,7 +27,7 @@ When creating a [`CPRouteChoice`](../cproutechoice.md) object, localize each var
 
 ## See Also
 
-### Getting Variants
+### Getting the variant details
 - [var summaryVariants: [String]](./summaryvariants.md)
   An array of summary variants.
 - [var additionalInformationVariants: [String]?](./additionalinformationvariants.md)

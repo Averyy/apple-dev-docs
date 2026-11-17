@@ -18,8 +18,6 @@ final var allAnchors: [MeshAnchor] { get }
 ## See Also
 
 ### Inspecting a scene reconstruction provider
-- [var description: String](./description.md)
-  A textual representation of this scene reconstruction provider.
 - [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The types of authorizations necessary for running scene reconstruction.
 

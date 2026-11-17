@@ -23,7 +23,7 @@ var textStyle: CPTextButtonStyle { get set }
 
 ## See Also
 
-### Managing the Button Style
+### Managing the button style
 - [enum CPTextButtonStyle](../cptextbuttonstyle.md)
   The styles a button can apply to its title to communicate its action.
 

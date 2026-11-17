@@ -63,7 +63,7 @@ To configure the content and appearance of your cell, you can set its [`contentC
 - [UITableViewCell.CellStyle](./uitableviewcell/cellstyle.md)
   An enumeration for the various styles of cells.
 - [init?(coder: NSCoder)](./uitableviewcell/init%28coder%29.md)
-  Creates a table view from data in an unarchiver.
+  Creates a table view cell from data in an unarchiver.
 ### Reusing cells
 - [var reuseIdentifier: String?](./uitableviewcell/reuseidentifier.md)
   A string for identifying a reusable cell.

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An enum schema for an item type parameter.
+An enum schema for an item type.
 
 **Availability**:
 - iOS 18.0+
@@ -21,9 +21,9 @@ var itemType: some AppSchemaEnum { get }
 
 ## Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `whiteboard` domain and a parameter type matches the `itemType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .whiteboard.itemType)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `whiteboard` domain and a parameter type matches the `itemType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum(schema: .whiteboard.itemType)` Swift macro.
 
-The following example shows an app enum that conforms to the `itemType` schema:
+The following example shows an app enum that conforms to the `itemType` schema. You can create a type that conforms to the schema by adding the `@AppEnum` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `whiteboard_itemType` and select it from the code-completion suggestions:
 
 ```swift
 @AppEnum(schema: .whiteboard.itemType)
@@ -46,7 +46,7 @@ For more information about the App Intents framework and the experiences it supp
 
 ### Types for static parameters
 - [var color: some AppSchemaEnum](./color.md)
-  An enum schema for a color parameter.
+  An enum schema for a color.
 - [AppSchema.WhiteboardEnum](../whiteboardenum.md)
   Identifies enum schemas in the whiteboard domain.
 

@@ -38,11 +38,9 @@ enum Event
 
 ### Observing a session
 - [var events: ARKitSession.Events](./events-swift.property.md)
-  An asynchronous sequence of events that provide updates to the current authorization status of the session.
+  An asynchronous sequence of events that describe changes to the session, such as authorization changes and data-provider state changes.
 - [ARKitSession.Events](./events-swift.struct.md)
   A sequence of events.
-- [var description: String](./description.md)
-  A textual representation of this session.
 
 
 ---

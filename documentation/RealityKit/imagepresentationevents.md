@@ -30,6 +30,8 @@ enum ImagePresentationEvents
   Events associated with audio playback.
 - [enum VideoPlayerEvents](./videoplayerevents.md)
   Events associated with video playback for VideoPlayerComponent.
+- [enum GaussianSplatEvents](./gaussiansplatevents.md)
+  A namespace for events about Gaussian splat rendering.
 
 
 ---

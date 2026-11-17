@@ -23,17 +23,17 @@ class CPRouteChoice
 
 ## Topics
 
-### Creating a Route Choice
+### Creating a route choice
 - [init(summaryVariants: [String], additionalInformationVariants: [String], selectionSummaryVariants: [String])](./cproutechoice/init%28summaryvariants,additionalinformationvariants,selectionsummaryvariants%29.md)
   Creates a route choice.
-### Getting Variants
+### Getting the variant details
 - [var summaryVariants: [String]](./cproutechoice/summaryvariants.md)
   An array of summary variants.
 - [var additionalInformationVariants: [String]?](./cproutechoice/additionalinformationvariants.md)
   An array of variants providing additional information about the route choice.
 - [var selectionSummaryVariants: [String]?](./cproutechoice/selectionsummaryvariants.md)
   An array of selection summary variants.
-### Providing Additional Information
+### Providing app-specific data
 - [var userInfo: Any?](./cproutechoice/userinfo.md)
   An object containing custom information associated with the route choice.
 ### Initializers
@@ -61,9 +61,16 @@ class CPRouteChoice
 
 ## See Also
 
-### Creating a Trip
-- [convenience init(origin: MKMapItem, destination: MKMapItem, routeChoices: [CPRouteChoice])](./cptrip/init%28origin,destination,routechoices%29.md)
-  Creates a trip with an origin, destination, and route choices.
+### Route details
+- [class CPRouteInformation](./cprouteinformation.md)
+  A class that describes the characteristic elements of a route.
+- [class CPRouteDetail](./cproutedetail.md)
+- [class CPRouteSegment](./cproutesegment.md)
+  CPRouteSegment describes information pertaining to a segment of a route.
+- [enum CPRerouteReason](./cpreroutereason.md)
+  Values that represent reasons for navigation rerouting.
+- [enum CPRouteSource](./cproutesource.md)
+- [func NSStringFromCPRerouteReason(CPRerouteReason) -> String!](./nsstringfromcpreroutereason%28_%29.md)
 
 
 ---

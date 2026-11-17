@@ -15,6 +15,14 @@ Gets the number of scalar components in each vector in a geometry source.
 extern size_t ar_geometry_source_get_components_per_vector(ar_geometry_source_t geometry_source);
 ```
 
+## Return Value
+
+The number of scalar components in each vector of the geometry source.
+
+## Parameters
+
+- `geometry_source`: The geometry source.
+
 ## See Also
 
 ### Geometry

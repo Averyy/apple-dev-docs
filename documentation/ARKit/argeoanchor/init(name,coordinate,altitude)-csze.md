@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initializes a named location anchor with the given coordinates and altitude.
+Initializes a named location anchor with the given coordinate and altitude.
 
 **Availability**:
 - iOS 14.0+
@@ -20,8 +20,8 @@ convenience init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLL
 ## Parameters
 
 - `name`: Name of the anchor.
-- `coordinate`: Lattitude and longitude of the anchor’s geographic location.
-- `altitude`: Vertical distance, in meters, between this anchor and sea level.
+- `coordinate`: Latitude and longitude of the anchor’s geographic location.
+- `altitude`: Vertical distance, in meters, between this anchor and sea level. If `nil`, the altitude will be determined automatically.
 
 ## See Also
 
@@ -29,7 +29,7 @@ convenience init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLL
 - [convenience init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance?)](./init%28coordinate,altitude%29.md)
   Initializes a location anchor with the given coordinate and altitude.
 - [init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance)](./init%28name,coordinate,altitude%29-8sbh4.md)
-  Initializes a named location anchor with the given coordinates and altitude.
+  Initializes a named location anchor with the given coordinate and altitude.
 
 
 ---

@@ -23,19 +23,11 @@ An array of [`MeshAnchor.Geometry`](../meshanchor/geometry-swift.struct.md) stru
 
 ## Discussion
 
-`RoomAnchor.geometries(of:)` supports the [`ARMeshClassification.floor`](../armeshclassification/floor.md) and [`ARMeshClassification.wall`](../armeshclassification/wall.md) mesh classifications.
+This method supports the [`MeshAnchor.MeshClassification.floor`](../meshanchor/meshclassification/floor.md) and [`MeshAnchor.MeshClassification.wall`](../meshanchor/meshclassification/wall.md) mesh classifications.
 
 ## Parameters
 
 - `classification`: The mesh classification to look for.
-
-## See Also
-
-### Inspecting a room anchor
-- [func contains(SIMD3<Float>) -> Bool](./contains%28_%29.md)
-  Returns a Boolean value that indicates whether a room contains the provided point.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 
 
 ---

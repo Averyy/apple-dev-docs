@@ -204,7 +204,9 @@ The [`MeshResource`](./meshresource.md) retains a reference to the `LowLevelMesh
 - [LowLevelMesh.PartsCollection](./lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
 - [class LowLevelBuffer](./lowlevelbuffer.md)
+  A container for buffer data that you can read and update from the CPU or the GPU.
 - [class LowLevelInstanceData](./lowlevelinstancedata.md)
+  A container for the transforms of mesh instances that you can update from the CPU or the GPU.
 
 
 ---

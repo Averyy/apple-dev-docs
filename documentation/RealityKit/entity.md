@@ -289,6 +289,8 @@ All entities inherit a few common components from the [`Entity`](./entity.md) ba
   Use systems and postprocessing effects to create a realistic underwater scene.
 - [protocol Component](./component.md)
   A representation of a geometry or a behavior that you apply to an entity.
+- [protocol System](./system.md)
+  An object that affects multiple entities in every update of a RealityKit scene.
 
 
 ---

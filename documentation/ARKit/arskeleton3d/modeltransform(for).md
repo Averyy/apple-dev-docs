@@ -17,9 +17,17 @@ Returns the model transform for a joint with a given name.
 func modelTransform(for jointName: ARSkeleton.JointName) -> simd_float4x4?
 ```
 
+## Return Value
+
+The model space transformation matrix for the joint, or `nil` if the joint name is not found.
+
 ## Discussion
 
-Model space refers to the joint’s position relative to its hip joint. If an invalid joint name is passed in, the returned matrix will be filled with `NaN` values.
+Model space refers to the joint’s position relative to its hip joint.
+
+## Parameters
+
+- `jointName`: The name of the joint.
 
 ## See Also
 

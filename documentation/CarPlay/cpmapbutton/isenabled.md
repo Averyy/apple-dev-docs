@@ -27,7 +27,7 @@ The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-### Controlling the Button
+### Configuring the button
 - [var isHidden: Bool](./ishidden.md)
   A Boolean value that hides and shows the map button.
 

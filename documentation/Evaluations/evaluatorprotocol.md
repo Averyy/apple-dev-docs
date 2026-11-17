@@ -23,7 +23,7 @@ protocol EvaluatorProtocol<Input, Subject> : Sendable
 
 ## Overview
 
-Conform to `EvaluatorProtocol` to create custom evaluators that measure the system’s output against expected criteria. Each evaluator returns an array of [`Metric`](./metric.md) values: one for each DataFrame column.
+Conform to `EvaluatorProtocol` to create custom evaluators that measure the system’s output against expected criteria. Each evaluator returns an array of [`Metric`](./metric.md) values: one for each [`DataFrame`](../TabularData/dataframe.md) column.
 
 The protocol takes `Input` (the sample type) as a type parameter. `Subject` is an associated type constrained to [`EvaluationSubject`](./evaluationsubject.md), ensuring the subject’s value type matches the sample’s expected value type.
 

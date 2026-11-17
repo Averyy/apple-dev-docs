@@ -33,19 +33,6 @@ Incorporate text into your interface to describe your content in a person’s na
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/text-display.png)
 
-## Custom symbols
-
-[Read about custom symbols](./custom-sf-symbols.md)
-
-SF Symbols provides a library of ready-made symbol images, and lets you create your own custom symbols with the same behaviors. Display your custom symbols as user interface elements and inline with text. Define and use rendering modes, variable color, and animations with annotations in the SF Symbols app. To learn more, read [Annotating custom symbols](./annotating-sf-symbols.md).
-
-- Export a symbol template file and customize it in a vector-drawing app.
-- Configure multicolor, hierarchical, and variable color rendering modes.
-- Animate symbols with effects such as rotate, pulse, and draw on and draw off.
-- Add your custom symbol to an asset catalog and use it in your app.
-
-![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/sf-symbols.png)
-
 ## Drawing and printing
 
 [Read about drawing and printing](./drawing-and-printing.md)
@@ -92,11 +79,6 @@ Animate items in your interface to make them feel more lively or to provide feed
   Display existing images and photos, create or capture new images, and read and write image data.
 - [Text display](./text-display.md)
   Display localized text from your app’s interface, and discover how to lay out and render text yourself.
-### SF Symbols
-- [Creating custom symbols](./custom-sf-symbols.md)
-  Design a symbol image with the same behavior as system-provided symbols.
-- [Annotating custom symbols](./annotating-sf-symbols.md)
-  Use the SF Symbols app to annotate your custom symbols and adjust the way they render and animate.
 ### Drawing techniques
 - [Drawing and printing](./drawing-and-printing.md)
   Draw custom content in your app’s views, and print content to a file or available printer.

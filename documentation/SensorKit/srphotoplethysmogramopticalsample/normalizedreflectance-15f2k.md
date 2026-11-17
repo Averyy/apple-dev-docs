@@ -4,6 +4,8 @@
 **Kind**: property  
 **Role**: Instance Property
 
+The photoplethysmogram waveform in normalized units.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -14,6 +16,10 @@
 ```swift
 var normalizedReflectance: Double? { get }
 ```
+
+## Discussion
+
+The scale of the normalized signal may vary. For more information on how Apple Watch uses photoplethysmography, see the “How Apple Watch measures your heart rate” section in [Monitor your heart rate with Apple Watch](https://support.apple.com/en-us/120277).
 
 ## See Also
 

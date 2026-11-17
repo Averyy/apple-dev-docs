@@ -32,12 +32,13 @@ final class SceneReconstructionProvider
 - [var state: DataProviderState](./scenereconstructionprovider/state.md)
   A value that indicates whether the scene reconstruction provider is currently supplying anchor updates.
 ### Inspecting a scene reconstruction provider
-- [var description: String](./scenereconstructionprovider/description.md)
-  A textual representation of this scene reconstruction provider.
 - [var allAnchors: [MeshAnchor]](./scenereconstructionprovider/allanchors.md)
   An array that contains the mesh anchors the scene reconstruction provider is tracking.
 - [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./scenereconstructionprovider/requiredauthorizations.md)
   The types of authorizations necessary for running scene reconstruction.
+### Instance Properties
+- [var description: String](./scenereconstructionprovider/description.md)
+  A textual representation of this scene reconstruction provider.
 
 ## Relationships
 

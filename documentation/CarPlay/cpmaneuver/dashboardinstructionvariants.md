@@ -30,6 +30,8 @@ Localize each variant for display to the user, and make sure the array contains 
 ## See Also
 
 ### Providing instructions
+- [var instructionVariants: [String]](./instructionvariants.md)
+  An array of instruction variants for the maneuver.
 - [var notificationInstructionVariants: [String]](./notificationinstructionvariants.md)
   An array of instruction variants for notification banners.
 

@@ -30,7 +30,7 @@ The initial value of this property is [`ARAppClipCodeAnchor.URLDecodingState.dec
 - [var url: URL?](./url.md)
   The URL encoded in an App Clip Code.
 - [ARAppClipCodeAnchor.URLDecodingState](./urldecodingstate-swift.enum.md)
-  The states in the process of decoding an App Clip code URL.
+  The states in the process of decoding an App Clip Code URL.
 
 
 ---

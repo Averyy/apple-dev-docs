@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+Object tracking configuration.
+
 **Availability**:
 - visionOS 2.0+
 
@@ -17,8 +19,11 @@ typedef NSObject<OS_ar_object_tracking_configuration> * ar_object_tracking_confi
 
 ### Object tracking data types
 - [ar_object_tracking_provider_t](./ar_object_tracking_provider_t.md)
+  Object tracking provider.
 - [ar_object_tracking_update_handler_function_t](./ar_object_tracking_update_handler_function_t.md)
+  Function called when there are updates to object anchors.
 - [ar_object_tracking_update_handler_t](./ar_object_tracking_update_handler_t.md)
+  Handler called when there are updates to object anchors.
 
 
 ---

@@ -286,7 +286,9 @@ The following image shows the result of rendering a `PlaneMesh`’s low-level me
 - [LowLevelMesh.PartsCollection](./lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
 - [class LowLevelBuffer](./lowlevelbuffer.md)
+  A container for buffer data that you can read and update from the CPU or the GPU.
 - [class LowLevelInstanceData](./lowlevelinstancedata.md)
+  A container for the transforms of mesh instances that you can update from the CPU or the GPU.
 
 
 ---

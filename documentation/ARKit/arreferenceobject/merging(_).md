@@ -32,6 +32,8 @@ The accuracy of 3D object detection depends on similarity of lighting and enviro
 
 To make a reference object that is more robust in a wide variety of detection conditions, scan the same real-world object multiple times: For each scan, vary the lighting conditions or the background environment to capture the variety of situations in which your app might attempt to detect the same real object. Then, use this method to combine those scan results into a single [`ARReferenceObject`](../arreferenceobject.md) incorporating recognition information for all the conditions you scanned in.
 
+You can’t merge reference objects loaded from a `.referenceobject` file.
+
 ## Parameters
 
 - `object`: The other reference object with which to combine this reference object.

@@ -38,6 +38,8 @@ This method performs a lazy initialization of some objects, so the first call ca
 ## See Also
 
 ### Evaluating URLs
+- [func evaluateURL(URL, mainFrameURL: URL, isMainFrame: Bool, completionHandler: (Bool, Data?) -> Void)](./evaluateurl%28_,mainframeurl,ismainframe,completionhandler%29.md)
+  Determines whether to block a URL, using the main document’s URL as navigation context.
 - [class var shouldEvaluateURLs: Bool](./shouldevaluateurls.md)
   Determines whether the built-in web content filter is active.
 

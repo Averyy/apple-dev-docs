@@ -29,6 +29,8 @@ class var shouldEvaluateURLs: Bool { get }
 ### Evaluating URLs
 - [func evaluateURL(URL, completionHandler: (Bool, Data?) -> Void)](./evaluateurl%28_,completionhandler%29.md)
   Determines whether to block a URL.
+- [func evaluateURL(URL, mainFrameURL: URL, isMainFrame: Bool, completionHandler: (Bool, Data?) -> Void)](./evaluateurl%28_,mainframeurl,ismainframe,completionhandler%29.md)
+  Determines whether to block a URL, using the main document’s URL as navigation context.
 
 
 ---

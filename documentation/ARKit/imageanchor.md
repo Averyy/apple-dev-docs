@@ -26,10 +26,11 @@ struct ImageAnchor
   The estimated scale factor between the tracked image’s physical size and the reference image’s size.
 - [var isTracked: Bool](./imageanchor/istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking this image.
-- [var description: String](./imageanchor/description.md)
-  A textual representation of this anchor.
 - [var id: UUID](./imageanchor/id.md)
   The unique identifier of this anchor.
+### Instance Properties
+- [var description: String](./imageanchor/description.md)
+  A textual representation of this anchor.
 ### Default Implementations
 - [ARKitCoordinateSpaceProviding Implementations](./imageanchor/arkitcoordinatespaceproviding-implementations.md)
 - [Equatable Implementations](./imageanchor/equatable-implementations.md)

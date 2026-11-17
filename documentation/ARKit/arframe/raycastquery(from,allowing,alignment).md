@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Get a ray-cast query for a screen point.
+Creates a raycast query for a screen point.
 
 **Availability**:
 - iOS 13.0+
@@ -20,6 +20,10 @@ func raycastQuery(from point: CGPoint, allowing target: ARRaycastQuery.Target, a
 - (ARRaycastQuery *) raycastQueryFromPoint:(CGPoint) point allowingTarget:(ARRaycastTarget) target alignment:(ARRaycastTargetAlignment) alignment;
 ```
 
+## Return Value
+
+A raycast query configured with the specified parameters.
+
 ## Discussion
 
 To cast the ray, you pass the resulting query to your current session via [`raycast(_:)`](../arsession/raycast%28_%29.md) or [`trackedRaycast(_:updateHandler:)`](../arsession/trackedraycast%28_,updatehandler%29.md).
@@ -27,8 +31,8 @@ To cast the ray, you pass the resulting query to your current session via [`rayc
 ## Parameters
 
 - `point`: A normalized coordinate in the UI system, where 0 is top-left, and 1 is bottom-right.
-- `target`: The types of plane you allow this ray cast to intersect with.
-- `alignment`: An alignment with respect to gravity a plane must have to interset this ray.
+- `target`: The type of surface the raycast query can terminate on.
+- `alignment`: An alignment with respect to gravity a plane must have to intersect this ray.
 
 ## See Also
 

@@ -27,7 +27,7 @@ When creating a voice control state, arrange the titles from most to least prefe
 
 ## See Also
 
-### Getting State Information
+### Getting the state information
 - [var identifier: String](./identifier.md)
   The string that your app uses to identify the voice control state.
 - [var image: UIImage?](./image.md)

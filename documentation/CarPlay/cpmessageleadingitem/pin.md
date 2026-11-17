@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Show a pin icon.
+An option to display a pin image in the row.
 
 **Availability**:
 - iOS 12.0+
@@ -25,9 +25,9 @@ CPMessageLeadingItemPin
 
 ### Leading Items
 - [CPMessageLeadingItem.none](./none.md)
-  Don’t show a leading item.
+  An option to display no symbol.
 - [CPMessageLeadingItem.star](./star.md)
-  Show a star icon.
+  An option to display a star image in the row.
 
 
 ---

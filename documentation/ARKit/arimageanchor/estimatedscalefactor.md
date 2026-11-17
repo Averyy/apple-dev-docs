@@ -22,9 +22,9 @@ var estimatedScaleFactor: CGFloat { get }
 
 ## Discussion
 
-The default value is 1.0, which means that a version of this image that ARKit recognizes in the physical environment exactly matches its reference image [`physicalSize`](../arreferenceimage/physicalsize.md).
+The default value is 1.0, which means that a version of this image that ARKit recognizes in the physical environment exactly matches its reference image [`physicalSize`](../arreferenceimage/physicalsize.md). ARKit only estimates this value when you set [`automaticImageScaleEstimationEnabled`](../arworldtrackingconfiguration/automaticimagescaleestimationenabled.md) to `true`; otherwise it remains 1.0.
 
-Otherwise, ARKit automatically corrects the image anchor’s transform when `estimatedScaleFactor` is a value other than 1.0. This adjustment in turn, corrects ARKit’s understanding of where the image anchor is located in the physical environment.
+ARKit automatically corrects the image anchor’s transform when `estimatedScaleFactor` is a value other than 1.0. This adjustment, in turn, corrects ARKit’s understanding of where the image anchor is located in the physical environment.
 
 See [`automaticImageScaleEstimationEnabled`](../arworldtrackingconfiguration/automaticimagescaleestimationenabled.md).
 

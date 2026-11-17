@@ -37,7 +37,7 @@ let evaluator = ModelJudgeEvaluator<ModelSample<String>>(
 
 ## Parameters
 
-- `name`: The metric name, used as the DataFrame column name.
+- `name`: The metric name, which an [`Evaluation`](../evaluation.md) uses as the [`Column`](../../TabularData/column.md) name in its results.
 - `scale`: The scoring scale for this metric.
 - `judge`: The language model to use as judge.
 - `scoringMode`: Whether scores are discrete (default) or allow any floating-point value.

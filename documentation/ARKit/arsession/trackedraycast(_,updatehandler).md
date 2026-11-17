@@ -20,6 +20,10 @@ func trackedRaycast(_ query: ARRaycastQuery, updateHandler: @escaping ([ARRaycas
 - (ARTrackedRaycast *) trackedRaycast:(ARRaycastQuery *) query updateHandler:(void (^)(NSArray<ARRaycastResult *> *)) updateHandler;
 ```
 
+## Return Value
+
+The tracked ray cast, or `nil` if the ray cast fails or the session’s configuration isn’t [`ARWorldTrackingConfiguration`](../arworldtrackingconfiguration.md) or one of its subclasses.
+
 ## Discussion
 
 A tracked ray cast wraps a ray-cast query that the session calls repeatedly, each time invoking your update handler to provide you with new results.

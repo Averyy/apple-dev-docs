@@ -18,6 +18,12 @@ Renormalization parameters, or `nil` to omit renormalization.
 var renormalization: LowLevelDeformation.Pipeline.Descriptor.Renormalization?
 ```
 
+## See Also
+
+### Configuring renormalization
+- [LowLevelDeformation.Pipeline.Descriptor.Renormalization](./renormalization-swift.struct.md)
+  An object that describes which vertex attributes to renormalize to unit length after deformation.
+
 
 ---
 

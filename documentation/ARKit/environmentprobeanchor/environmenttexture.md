@@ -17,7 +17,9 @@ var environmentTexture: (any MTLTexture)? { get }
 
 ## Discussion
 
-Textures may be `nil` if the person isn’t in a well-lit environment.
+The texture stores floating point linear high-dynamic range rgb values in P3 color space.
+
+The texture is `nil` when the person isn’t in a well-lit environment.
 
 ## See Also
 

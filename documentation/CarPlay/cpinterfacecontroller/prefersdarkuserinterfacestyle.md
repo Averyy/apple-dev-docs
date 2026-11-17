@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A Boolean value that determines whether the system draws the user interface in Dark Mode.
+A Boolean value that indicates whether you prefer Dark Mode for your interface.
 
 **Availability**:
 - iOS 13.0+
@@ -23,17 +23,13 @@ var prefersDarkUserInterfaceStyle: Bool { get set }
 
 ## Discussion
 
-To adopt the dark user interface style, set this value to [`true`](../../Swift/true.md) before you provide the root template or push any templates. The default value is [`false`](../../Swift/false.md), which allows templates to change between light and dark styles.
+Before you push any templates or install a root template, set this property to `true` to display your app’s content with a dark user interface style. The default value of this property is `false`, which allows content to change between light and dark styles.
 
 ## See Also
 
-### Configuring the Interface Controller
-- [var delegate: (any CPInterfaceControllerDelegate)?](./delegate.md)
-  An object that serves as the delegate to the interface controller.
-- [protocol CPInterfaceControllerDelegate](../cpinterfacecontrollerdelegate.md)
-  The interface that an object implements to serve as a delegate to an interface controller.
-- [func setRootTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./setroottemplate%28_,animated,completion%29.md)
-  Sets the root template of the navigation hierarchy.
+### Configuring interface-related details
+- [var carTraitCollection: UITraitCollection](./cartraitcollection.md)
+  The trait collection of the vehicle’s primary screen.
 
 
 ---

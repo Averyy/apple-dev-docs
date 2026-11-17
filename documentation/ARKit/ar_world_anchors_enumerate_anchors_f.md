@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Enumerates a collection of world anchors.
+Enumerates a collection of world anchors using a function.
 
 **Availability**:
 - visionOS 1.0+
@@ -14,6 +14,12 @@ Enumerates a collection of world anchors.
 ```c
 extern void ar_world_anchors_enumerate_anchors_f(ar_world_anchors_t world_anchors, void *context, ar_world_anchors_enumerator_function_t world_anchors_enumerator_function);
 ```
+
+## Parameters
+
+- `world_anchors`: The collection of world anchors.
+- `context`: The application-defined context parameter to pass to the function.
+- `world_anchors_enumerator_function`: The enumerator function.
 
 ## See Also
 

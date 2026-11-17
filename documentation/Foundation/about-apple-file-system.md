@@ -31,13 +31,13 @@ do {
 
 Modifications to the data are written elsewhere, and both files continue to share the unmodified blocks. You can use this behavior, for example, to reduce storage space required for document revisions and copies. The figure below shows a file named “My file” and its copy “My file copy” that have two blocks in common and one block that varies between them. On file systems like HFS Plus, they’d each need three on-disk blocks, but on an Apple File System volume, the two common blocks are shared.
 
-![](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2991758@2x.png)
+![A diagram comparing how HFS Plus and Apple File System store a file and its copy. In the top row, HFS Plus uses three blocks for My file and three separate blocks for My file copy. In the bottom row, Apple File System stores My file in three blocks, and My file copy uses the two shared blocks plus one separate block elsewhere.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2991758@2x.png)
 
 ### Free Space Is Shared Between Volumes
 
 Many files systems, including HFS Plus, support only a single volume per partition. Because free space can’t be shared across partitions, each volume’s size is set when partitioning the storage device, and each volume can only grow into its available free space. In contrast, Apple File System supports multiple volumes within a single partition, which allows all of those volumes to share their free space. All of the volumes in an Apple File System partition can grow and shrink independently; space that’s freed when one volume shrinks can be used when another volume grows.
 
-![](https://developer.apple.com/tutorials/images/com.apple.foundation/media-3001372@2x.png)
+![A diagram comparing how HFS+ and Apple File System allocate free space between two volumes. In the top row, HFS+ gives Volume 1 and Volume 2 separate partitions, each with its own data and its own free space. In the bottom row, Apple File System places Volume 1 data and Volume 2 data side by side, followed by a single block of free space that both volumes share.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-3001372@2x.png)
 
 Each volume in the container can use the shared free space, so they all include that amount when reporting the available free space. For example, when you call [`attributesOfFileSystem(forPath:)`](./filemanager/attributesoffilesystem%28forpath%29.md) method of [`FileManager`](./filemanager.md), the amount that’s reported includes all of the shared free space.
 
@@ -55,13 +55,13 @@ In file systems that support sparse files, including Apple File System, on-disk 
 
 When you use the [`FileHandle`](./filehandle.md) class to create a new write handle, a sparse file is created automatically. For example, if you write a block of data, then seek one block by calling [`seek(toFileOffset:)`](./filehandle/seek%28tofileoffset%29.md), and then write another block, the data stored on disk is organized as follows:
 
-![](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2991755@2x.png)
+![A diagram comparing block allocation in two file systems, separated by a dotted line. On the left, HFS+ shows three blocks in a row: block 1, a hatched empty block, and block 3. On the right, Apple File System shows only two adjacent blocks, 1 and 3.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2991755@2x.png)
 
 HFS Plus and other formats that don’t support sparse files allocate three blocks for the file, one for each block that was written, and one empty block in the middle. With support for sparse files, only two blocks are allocated, and the empty block is omitted.
 
 Because the sparse file in the Apple File system example above doesn’t contain a blank second block on disk, writing to the second block later results in blocks that are out of order, as shown in the figure below. High-level APIs like [`FileHandle`](./filehandle.md) handle this fragmentation for you, and the performance loss due to fragmentation isn’t usually significant.
 
-![](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2991757@2x.png)
+![A diagram comparing how the same file is stored on disk in HFS Plus and in Apple File System. On the left, HFS Plus stores three adjacent blocks labeled 1, 2, and 3. On the right, Apple File System stores blocks 1 and 3 adjacent, then a gap marked with a break symbol, then block 2 after the gap.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2991757@2x.png)
 
 You can’t use [`FileHandle`](./filehandle.md) to create a sparse file from an existing file that has blank data already stored on disk.
 

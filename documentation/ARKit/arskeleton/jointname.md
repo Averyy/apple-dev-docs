@@ -20,9 +20,9 @@ struct JointName
 typedef NSString * ARSkeletonJointName;
 ```
 
-## Discussion
+## Overview
 
-Use this class to access information about a named joint, such as its index in a skeleton’s array of joints, or its position on the screen or in the physical environment.
+Use this type to access information about a named joint, such as its index in a skeleton’s array of joints, or its position on the screen or in the physical environment.
 
 When you’re tracking a body in 2D space, you get the screen-space position of a named joint by using the [`landmark(for:)`](../arskeleton2d/landmark%28for%29.md) function.
 

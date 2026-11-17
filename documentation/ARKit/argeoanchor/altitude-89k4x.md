@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-Vertical distance, in meters, between this anchor and sea level.
+Vertical distance, in meters, between this anchor and sea level, or `nil` if the altitude is unknown.
 
 **Availability**:
 - iOS 14.0+

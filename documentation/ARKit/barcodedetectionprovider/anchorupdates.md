@@ -18,8 +18,6 @@ final var anchorUpdates: AnchorUpdateSequence<BarcodeAnchor> { get }
 ## See Also
 
 ### Inspecting a barcode detection provider
-- [var description: String](./description.md)
-  A textual representation of this barcode detection provider.
 - [var state: DataProviderState](./state.md)
   The state of a barcode detection provider.
 

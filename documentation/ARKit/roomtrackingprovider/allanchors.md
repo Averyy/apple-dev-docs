@@ -22,10 +22,8 @@ final var allAnchors: [RoomAnchor] { get }
   An asynchronous sequence of room anchor updates.
 - [var currentRoomAnchor: RoomAnchor?](./currentroomanchor.md)
   The room a person is in currently, if any.
-- [var description: String](./description.md)
-  A textual representation of this room tracking provider.
 - [var state: DataProviderState](./state.md)
-  The state of a room-tracking provider.
+  The status of a room-tracking provider.
 
 
 ---

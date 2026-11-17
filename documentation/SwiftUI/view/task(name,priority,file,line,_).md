@@ -22,6 +22,10 @@ Adds an asynchronous task to perform before this view appears.
 nonisolated func task(name: String? = nil, priority: TaskPriority = .userInitiated, file: String = #fileID, line: Int = #line, _ action: sending @escaping @isolated(any) () async -> Void) -> some View
 ```
 
+## Mentions
+
+- [Understanding the navigation stack](../understanding-the-navigation-stack.md)
+
 ## Return Value
 
 A view that runs the specified action asynchronously before the view appears.

@@ -45,7 +45,7 @@ func aggregateValue(_ operation: AggregationOperation) -> Double
 - [var reportMetadata: [String : any Sendable]](./reportmetadata.md)
   Framework-generated metadata used for report presentation.
 - [EvaluationResult.DataFrameKind](./dataframekind.md)
-  The kind of DataFrame to convert for JSON serialization.
+  The kind of data frame to convert for JSON serialization.
 
 
 ---

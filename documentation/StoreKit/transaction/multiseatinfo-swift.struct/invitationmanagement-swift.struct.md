@@ -49,7 +49,7 @@ To choose an invitation model, see [Supporting multiseat purchases in your app](
 ## See Also
 
 ### Getting the invitation model
-- [let invitationManagement: Transaction.MultiSeatInfo.InvitationManagement](./invitationmanagement-swift.property.md)
+- [let invitationManagement: Transaction.MultiSeatInfo.InvitationManagement?](./invitationmanagement-swift.property.md)
   The invitation model of the multiseat subscription, either Apple-hosted or developer-hosted invitations.
 
 

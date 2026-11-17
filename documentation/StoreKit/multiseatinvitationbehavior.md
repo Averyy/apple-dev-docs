@@ -50,9 +50,6 @@ For more information, see [Supporting multiseat purchases in your app](./support
 - [func multiSeatInvitationBehavior(MultiSeatInvitationBehavior) -> some View
 ](../SwiftUI/view/multiseatinvitationbehavior%28_%29.md)
   Sets the behavior of the Apple-owned invitation sheet that appears after a customer purchases a multi-seat subscription from a StoreKit view.
-- [func multiSeatInvitationSheet(isPresented: Binding<Bool>, subscriptionGroupID: String, onCompletion: (Result<Void, any Error>) -> Void) -> some View
-](../SwiftUI/view/multiseatinvitationsheet%28ispresented,subscriptiongroupid,oncompletion%29.md)
-  Presents the Apple-owned multi-seat invitation sheet, allowing the subscriber to invite others to join their multi-seat subscription.
 
 
 ---

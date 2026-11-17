@@ -2,7 +2,7 @@
 
 **Framework**: Foundation Models  
 **Role**: Sample Code  
-**Download**: [OrigamiCraftingADynamicTutorialForAppleIntelligence.zip](https://docs-assets.developer.apple.com/published/417a6afa58b7/OrigamiCraftingADynamicTutorialForAppleIntelligence.zip)
+**Download**: [OrigamiCraftingADynamicTutorialForAppleIntelligence.zip](https://docs-assets.developer.apple.com/published/70a53c28b091/OrigamiCraftingADynamicTutorialForAppleIntelligence.zip)
 
 Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
 

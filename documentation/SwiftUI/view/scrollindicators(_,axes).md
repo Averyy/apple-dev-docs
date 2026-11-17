@@ -28,7 +28,7 @@ A view with the specified scroll indicator visibility.
 
 ## Discussion
 
-Use this modifier to hide or show scroll indicators on scrollable content in views like a [`ScrollView`](../scrollview.md), [`List`](../list.md), or [`TextEditor`](../texteditor.md). This modifier applies the preferred visibility to any scrollable content within a view hierarchy.
+Use this modifier to hide or show scroll indicators on scrollable content in views like a [`ScrollView`](../scrollview.md), [`List`](../list.md), or [`TextEditor`](../texteditor.md). This modifier applies the preferred visibility to scrollable content within a view hierarchy. A scroll view doesn’t pass the visibility for the axes it scrolls along to the scroll views nested inside it; nested scroll views inherit the visibility only for the other axes.
 
 ```swift
 ScrollView {
@@ -58,7 +58,7 @@ Use the [`hidden`](../scrollindicatorvisibility/hidden.md) value to indicate tha
 - [var horizontalScrollIndicatorVisibility: ScrollIndicatorVisibility](../environmentvalues/horizontalscrollindicatorvisibility.md)
   The visibility to apply to scroll indicators of any horizontally scrollable content.
 - [var verticalScrollIndicatorVisibility: ScrollIndicatorVisibility](../environmentvalues/verticalscrollindicatorvisibility.md)
-  The visiblity to apply to scroll indicators of any vertically scrollable content.
+  The visibility to apply to scroll indicators of any vertically scrollable content.
 - [struct ScrollIndicatorVisibility](../scrollindicatorvisibility.md)
   The visibility of scroll indicators of a UI element.
 

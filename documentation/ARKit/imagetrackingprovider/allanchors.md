@@ -19,9 +19,7 @@ final var allAnchors: [ImageAnchor] { get }
 
 ### Inspecting an image-tracking provider
 - [var state: DataProviderState](./state.md)
-  The current status of data coming from a provider.
-- [var description: String](./description.md)
-  A textual representation of this image tracking provider.
+  The current status of an image tracking provider.
 
 
 ---

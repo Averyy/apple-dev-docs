@@ -24,9 +24,9 @@ ARWorldAlignmentCamera
 
 Camera alignment defines a coordinate system based on the native sensor orientation of the device camera. Relative to a [`AVCaptureVideoOrientation.landscapeRight`](../../../AVFoundation/avcapturevideoorientation/landscaperight.md)-oriented camera image, the x-axis points to the right, the y-axis points up, and the z-axis points out the front of the device (toward the user).
 
-> **Note**:  This coordinate system is always the same regardless of device or user interface orientation. That is, the x-axis always points along the long axis of the device, even if that direction is “down” relative to the user.
-
 When this alignment is active, ARKit performs no device motion tracking. That is, world-space positions are effectively always relative to the current position and orientation of the device. (For example, a SceneKit object placed in an [`ARSCNView`](../../arscnview.md) will thus maintain the same position on screen, even as the camera image changes while the device moves.)
+
+> **Note**: This coordinate system is always the same regardless of device or user interface orientation. That is, the x-axis always points along the long axis of the device, even if that direction is “down” relative to the user.
 
 ## See Also
 

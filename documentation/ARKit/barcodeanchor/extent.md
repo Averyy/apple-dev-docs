@@ -35,7 +35,7 @@ The height of the detected barcode is the length along the Z-axis, prior to rota
 - [BarcodeAnchor.Symbology](./symbology-swift.enum.md)
   Values that describe specific kinds of barcodes.
 - [var id: UUID](./id.md)
-  The unique identifier of an anchor.
+  The unique identifier of this anchor.
 
 
 ---

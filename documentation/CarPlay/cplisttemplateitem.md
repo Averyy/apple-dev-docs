@@ -4,7 +4,7 @@
 **Kind**: protocol  
 **Role**: Protocol
 
-A description of the common properties of all list item types.
+An interface that describes the common properties of all list item types.
 
 **Availability**:
 - iOS 14.0+
@@ -23,18 +23,18 @@ protocol CPListTemplateItem : NSObjectProtocol
 
 ## Overview
 
-> ❗ **Important**:  You don’t create custom classes that conform to `CPListItemTemplate`. Instead, you use one of the prebuilt list item types that adopt this protocol, such as [`CPMessageListItem`](./cpmessagelistitem.md).
+This protocol adds key behaviors to all system-provided list item types. Don’t add this protocol directly to your custom types. Instead, use it through a system type such as [`CPListItem`](./cplistitem.md), [`CPListImageRowItem`](./cplistimagerowitem.md), or [`CPMessageListItem`](./cpmessagelistitem.md).
 
 ## Topics
 
-### Managing Content
+### Managing content
 - [var text: String?](./cplisttemplateitem/text.md)
-  The item’s primary text.
+  The primary text to display for the item.
 - [var userInfo: Any?](./cplisttemplateitem/userinfo.md)
-  An opaque value for the list item.
-### Enabling Items
+  App-specific data you associate with the item.
+### Enabling items
 - [var isEnabled: Bool](./cplisttemplateitem/isenabled.md)
-  A Boolean value that indicates if the item is enabled.
+  A Boolean value that indicates whether the item is enabled.
 
 ## Relationships
 
@@ -49,21 +49,13 @@ protocol CPListTemplateItem : NSObjectProtocol
 
 ## See Also
 
-### Creating a Section
-- [init(items: [any CPListTemplateItem], header: String, headerSubtitle: String?, headerImage: UIImage?, headerButton: CPButton?, sectionIndexTitle: String?)](./cplistsection/init%28items,header,headersubtitle,headerimage,headerbutton,sectionindextitle%29.md)
-  Creates a section with list items, a header, a section index title, and section header details.
+### Common types
+- [class CPThumbnailImage](./cpthumbnailimage.md)
+  An image that can display overlays and metadata on top of the image.
+- [class CPListImageRowItemElement](./cplistimagerowitemelement.md)
+  An abstract class for an element in a row of a list.
 - [protocol CPSelectableListItem](./cpselectablelistitem.md)
-  A description of a selectable list item.
-- [class CPListItem](./cplistitem.md)
-  A selectable row in a list template.
-- [class CPListImageRowItem](./cplistimagerowitem.md)
-  A list template row that displays a series of images.
-- [class CPMessageListItem](./cpmessagelistitem.md)
-  A list template row that represents a conversation or contact.
-- [- initWithItems:](./cplistsection/initwithitems_.md)
-  Creates a section with list items.
-- [- initWithItems:header:sectionIndexTitle:](./cplistsection/initwithitems_header_sectionindextitle_.md)
-  Creates a section with list items, a header, and a section index title.
+  An interface for responding to selections in list items.
 
 
 ---

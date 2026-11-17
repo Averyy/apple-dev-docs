@@ -4,6 +4,8 @@
 **Kind**: enum  
 **Role**: Enumeration
 
+Events that occur when a person uses assistive technology to act on an accessibility element.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

@@ -33,6 +33,7 @@ Turn an entity into a *rigid body* by adding a [`PhysicsBodyComponent`](./physic
 - [class ShapeResource](./shaperesource.md)
   A representation of a shape.
 - [enum ShapeResourceError](./shaperesourceerror.md)
+  Errors that can occur when generating a static mesh or convex polyhedron shape resource.
 - [struct CollisionGroup](./collisiongroup.md)
   A bitmask used to define the collision group to which an entity belongs.
 - [struct CollisionFilter](./collisionfilter.md)
@@ -41,6 +42,7 @@ Turn an entity into a *rigid body* by adding a [`PhysicsBodyComponent`](./physic
   An invisible 3D shape that detects when objects enter or exit a given region of space.
 ### Collision-related notifications
 - [enum CollisionEvents](./collisionevents.md)
+  Events that occur when two collidable objects begin touching, stay in contact, or separate.
 - [struct Contact](./contact.md)
   Events associated with collisions.
 ### Ray casting
@@ -51,6 +53,7 @@ Turn an entity into a *rigid body* by adding a [`PhysicsBodyComponent`](./physic
 - [enum CollisionCastQueryType](./collisioncastquerytype.md)
   The kinds of ray and convex shape cast queries that you can make.
 - [struct PixelCastHit](./pixelcasthit.md)
+  A hit result of a pixel cast that identifies the entity and surface point a ray intersects.
 ### Entity compliance
 - [protocol HasCollision](./hascollision.md)
   An interface used for ray casting and collision detection.

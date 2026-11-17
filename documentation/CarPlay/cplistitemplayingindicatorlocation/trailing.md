@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Align the Now Playing indicator with the trailing edge of the list item.
+An option to display the Now Playing indicator on the trailing edge of the list item’s row.
 
 **Availability**:
 - iOS 14.0+
@@ -23,9 +23,9 @@ CPListItemPlayingIndicatorLocationTrailing
 
 ## See Also
 
-### Now Playing Indicator Locations
+### Now Playing indicator locations
 - [CPListItemPlayingIndicatorLocation.leading](./leading.md)
-  Align the Now Playing indicator with the leading edge of the list item.
+  An option to display the Now Playing indicator on the leading edge of the list item’s row.
 
 
 ---

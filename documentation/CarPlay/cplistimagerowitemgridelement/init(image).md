@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initialize an element that is constituted of an image.
+Creates a grid row element with the specified image.
 
 **Availability**:
 - iOS 26.0+
@@ -21,19 +21,17 @@ init(image: UIImage)
 - (instancetype) initWithImage:(UIImage *) image;
 ```
 
+## Return Value
+
+An initialized element you can add to a row.
+
 ## Discussion
 
-When providing an image, your app should provide a @c UIImage that is display-ready. If necessary for the image, provide light and dark styles by using an asset from your asset catalog, prepared with light and dark styles or by using @c UIImageAsset to combine two @c UIImage instances into a single image with both styles.
-
-UIImageAsset is used to combine multiple UIImages with different trait collections into a single UIImage.
-
-> **Note**: The expected image size is given by +[CPListImageRowItemGridElement maximumImageSize]. Images provided will be resized to this size if necessary.
-
-To properly size your images, your app should size them to the display scale of the car screen. See -[CPInterfaceController carTraitCollection].
+This method stores a copy of `image` in the inherited [`image`](../cplistimagerowitemelement/image.md) property.
 
 ## Parameters
 
-- `image`: The image associated to the element.
+- `image`: The image to display as the element’s primary content. If the image originates from an asset catalog, CarPlay manages the light and dark variants of your image and switches them when needed. Specify images with the dimensions listed in the [`maximumImageSize`](../cplistimagerowitemcardelement/maximumimagesize.md) property. If your image is smaller or larger than the maximum dimensions, CarPlay scales the image to fit the space. Don’t specify an image object with an animated sequence of images.
 
 
 ---

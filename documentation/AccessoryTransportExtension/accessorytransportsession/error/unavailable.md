@@ -17,7 +17,7 @@ case unavailable
 
 ## Discussion
 
-[`activate()`](../../accessoryfeatureruntimesession/activate%28%29.md) and `AccessoryWorker/requestAuthorization(for:)` (and the matching `AccessoryGPUWorker/requestAuthorization(for:)`) throw this error when the system determines that the feature isn’t currently eligible to run on the device. [`makeFeatureSession(_:)`](../makefeaturesession%28_%29.md) doesn’t throw it. If a device loses eligibility while a feature session is already running, the system reports the error through [`sessionInvalidated(error:)`](../../accessoryfeatureruntimesessionhandler/sessioninvalidated%28error%29.md) instead.
+[`activate()`](../../accessoryfeatureruntimesession/activate%28%29.md) and [`requestAuthorization(for:)`](../../accessoryworker/requestauthorization%28for%29.md) (and the matching [`requestAuthorization(for:)`](../../accessorygpuworker/requestauthorization%28for%29.md)) throw this error when the system determines that the feature isn’t currently eligible to run on the device. [`makeFeatureSession(_:)`](../makefeaturesession%28_%29.md) doesn’t throw it. If a device loses eligibility while a feature session is already running, the system reports the error through [`sessionInvalidated(error:)`](../../accessoryfeatureruntimesessionhandler/sessioninvalidated%28error%29.md) instead.
 
 Region is the only eligibility check behind this error. The framework restricts [`AccessoryWorker`](../../accessoryworker.md) and [`AccessoryGPUWorker`](../../accessorygpuworker.md) to the EU-region devices described in [Accessory Transport Extension](../../AccessoryTransportExtension.md). The system doesn’t restrict eligibility by device class.
 

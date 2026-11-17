@@ -32,7 +32,7 @@ With [`ARImageTrackingConfiguration`](./arimagetrackingconfiguration.md), ARKit 
 
 When an image-tracking configuration detects known images, it tracks their movement with six degrees of freedom (6DOF): specifically, the three rotation axes (roll, pitch, and yaw), and three translation axes (movement in x, y, and z).
 
-To use [`ARImageTrackingConfiguration`](./arimagetrackingconfiguration.md), define ARReferenceImage objects (either at runtime or by bundling them in your Xcode asset catalog) and assign them to the configuration’s [`trackingImages`](./arimagetrackingconfiguration/trackingimages.md) property. Then, as with any AR configuration, pass the configuration to your session’s [`run(_:options:)`](./arsession/run%28_,options%29.md) method.
+To use [`ARImageTrackingConfiguration`](./arimagetrackingconfiguration.md), define [`ARReferenceImage`](./arreferenceimage.md) objects (either at runtime or by bundling them in your Xcode asset catalog) and assign them to the configuration’s [`trackingImages`](./arimagetrackingconfiguration/trackingimages.md) property. Then, as with any AR configuration, pass the configuration to your session’s [`run(_:options:)`](./arsession/run%28_,options%29.md) method.
 
 ## Topics
 

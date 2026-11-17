@@ -39,7 +39,7 @@ func aggregateMetrics(using aggregator: inout MetricsAggregator) {
 }
 ```
 
-Use this structure to calculate summary statistics like mean, median, and standard deviation from your evaluation results. The aggregator processes metric data from a DataFrame and produces aggregated results.
+Use this structure to calculate summary statistics like mean, median, and standard deviation from your evaluation results. The aggregator processes metric data from a [`DataFrame`](../TabularData/dataframe.md) and produces aggregated results.
 
 ## Topics
 

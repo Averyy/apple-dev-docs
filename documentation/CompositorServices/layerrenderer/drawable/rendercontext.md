@@ -44,6 +44,8 @@ A `RenderContext` is required for apps to render using the progressive immersion
 ## See Also
 
 ### Adding a render context
+- [Controlling Metal rendering immersion level](../../controlling-metal-rendering-immersion-level.md)
+  Enable flexible immersive rendering by supporting progressive immersion when rendering your Metal content.
 - [func addRenderContext(commandBuffer: any MTLCommandBuffer) -> LayerRenderer.Drawable.RenderContext](./addrendercontext%28commandbuffer%29.md)
   Adds and returns a render context to a `LayerRenderer.Drawable` providing a metal command buffer.
 - [func addRenderContext() -> LayerRenderer.Drawable.RenderContext](./addrendercontext%28%29.md)

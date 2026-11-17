@@ -35,7 +35,7 @@ To demonstrate, an [`ARMeshGeometry`](./armeshgeometry.md) instance with two tri
 
 ### Accessing Index Data
 - [subscript(Int) -> [Int32]](./argeometryelement/subscript%28_%29.md)
-  Provides an array of vertex indices that respresents the geometric primitive at the subscripted index.
+  Provides an array of vertex indices that represents the geometric primitive at the subscripted index.
 - [var buffer: any MTLBuffer](./argeometryelement/buffer.md)
   A Metal buffer containing primitive data.
 ### Getting Index Information
@@ -78,7 +78,7 @@ To demonstrate, an [`ARMeshGeometry`](./armeshgeometry.md) instance with two tri
 - [var faces: ARGeometryElement](./armeshgeometry/faces.md)
   An object that contains a buffer of vertex indices of the geometry’s faces.
 - [var normals: ARGeometrySource](./armeshgeometry/normals.md)
-  Rays that define which direction is outside for each face.
+  Rays that define which direction is outside for each vertex.
 
 
 ---

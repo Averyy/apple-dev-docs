@@ -156,6 +156,8 @@ You can integrate SwiftUI views with objects from the [UIKit](../UIKit/UIKit.md)
 - [Performance analysis](./performance-analysis.md)
   Measure and improve your app’s responsiveness.
 ### Structures
+- [struct ScrollGestureAxisLock](./scrollgestureaxislock.md)
+  Controls whether a scrollable view locks scroll gestures to one axis during scrolling.
 - [struct ToolbarContainerBehavior](./toolbarcontainerbehavior.md)
   Whether a container acts as a toolbar container, reading the toolbar content of its child views and placing that content into its own bar.
 

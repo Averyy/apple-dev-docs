@@ -62,6 +62,11 @@ A [`PKDrawing`](./pkdrawing-swift.struct.md) object stores the user-drawn conten
   Appends the contents of the specified drawing object to an existing drawing object that you provide.
 - [func appending(PKDrawing) -> PKDrawing](./pkdrawing-swift.struct/appending%28_%29.md)
   Returns a new drawing created by appending the current drawing with another drawing you provide.
+### Erasing strokes
+- [func erasePath(PKStrokePath, mask: UIBezierPath?, transform: CGAffineTransform)](./pkdrawing-swift.struct/erasepath%28_,mask,transform%29-shn.md)
+- [func erasePath(PKStrokePath, mask: NSBezierPath?, transform: CGAffineTransform)](./pkdrawing-swift.struct/erasepath%28_,mask,transform%29-2b2u3.md)
+- [func erasingPath(PKStrokePath, mask: UIBezierPath?, transform: CGAffineTransform) -> PKDrawing](./pkdrawing-swift.struct/erasingpath%28_,mask,transform%29-9dpi9.md)
+- [func erasingPath(PKStrokePath, mask: NSBezierPath?, transform: CGAffineTransform) -> PKDrawing](./pkdrawing-swift.struct/erasingpath%28_,mask,transform%29-2txi7.md)
 ### Supporting backward compatibility
 - [var requiredContentVersion: PKContentVersion](./pkdrawing-swift.struct/requiredcontentversion.md)
   The version of PencilKit necessary to use the drawing.
@@ -71,10 +76,6 @@ A [`PKDrawing`](./pkdrawing-swift.struct.md) object stores the user-drawn conten
 ### Instance Methods
 - [func draw(in: CGContext, frame: CGRect, from: CGRect, darkUserInterfaceStyle: Bool) async](./pkdrawing-swift.struct/draw%28in,frame,from,darkuserinterfacestyle%29.md)
   Draws the drawing in the specified rectangle.
-- [func erasePath(PKStrokePath, mask: NSBezierPath?, transform: CGAffineTransform)](./pkdrawing-swift.struct/erasepath%28_,mask,transform%29-2b2u3.md)
-- [func erasePath(PKStrokePath, mask: UIBezierPath?, transform: CGAffineTransform)](./pkdrawing-swift.struct/erasepath%28_,mask,transform%29-shn.md)
-- [func erasingPath(PKStrokePath, mask: NSBezierPath?, transform: CGAffineTransform) -> PKDrawing](./pkdrawing-swift.struct/erasingpath%28_,mask,transform%29-2txi7.md)
-- [func erasingPath(PKStrokePath, mask: UIBezierPath?, transform: CGAffineTransform) -> PKDrawing](./pkdrawing-swift.struct/erasingpath%28_,mask,transform%29-9dpi9.md)
 
 ## Relationships
 

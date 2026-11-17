@@ -18,15 +18,19 @@ An expectation that Siri calls, or doesn’t call, a set of intents during a tur
 struct Calls
 ```
 
+## Mentions
+
+- [Evaluating your app’s integration with Siri](./evaluating-your-apps-integration-with-siri.md)
+
 ## Overview
 
 Use `Calls` to name the intents Siri calls during a turn or anywhere in a scenario. By default, the expectation requires Siri to call them in the order you list them. Pass [`Calls.Ordering.unordered`](./calls/ordering-swift.enum/unordered.md) to accept any order, or [`Calls.Ordering.disallowed`](./calls/ordering-swift.enum/disallowed.md) to require that Siri doesn’t call them.
 
 The values [`Calls.Ordering.ordered`](./calls/ordering-swift.enum/ordered.md) and [`Calls.Ordering.unordered`](./calls/ordering-swift.enum/unordered.md) check only that Siri makes the calls you list. They don’t catch extra calls, such as Siri performing the wrong action. To catch an action Siri shouldn’t take, use [`Calls.Ordering.disallowed`](./calls/ordering-swift.enum/disallowed.md).
 
-The framework checks two `Calls` groups in the same turn independently, so Siri can call another intent before, between, or after them. To require one sequence, write one group.
+The framework checks two `Calls` groups in the same turn independently, so Siri can call another intent before, between, or after them, and one call can satisfy both groups. To require one sequence, or two calls of the same intent, write one group.
 
-A call counts only if it runs. A call that Siri plans but doesn’t complete satisfies no `Calls` expectation. This includes a call that stops to ask the person for a missing value or for confirmation, and a call that fails. A [`Calls.Ordering.disallowed`](./calls/ordering-swift.enum/disallowed.md) expectation fails if the call runs. It also fails if Siri asks the person to confirm the call, because Siri already chooses the action and its arguments. A clarifying question from Siri, such as which topic the person means, doesn’t count.
+A call counts only if it runs. A call that Siri plans but doesn’t complete satisfies no `Calls` expectation. This includes a call that stops to ask the person for a missing value or for confirmation, and a call that fails. A [`Calls.Ordering.disallowed`](./calls/ordering-swift.enum/disallowed.md) expectation is stricter. It fails if the call runs or fails, or if no outcome is recorded for it. It also fails if Siri asks the person to confirm the call or one of its values, because Siri already chooses the action and its arguments. A question that asks the person for a missing value or to choose between options, such as which topic they mean, doesn’t count. Neither does a step the person must take before the call can run, such as letting Siri use an app the request didn’t name, even though Siri has already chosen the call.
 
 Constrain an intent’s arguments with [`expect`](../AppIntentsTesting/appintentdefinition/expect.md), using the parameter names as labels. The string matchers, such as `.equals(_:)` and `.contains(_:)`, compare string values. To check a parameter of another type, such as an integer, use `.matches(_:requirement:)` with a predicate, as the following example shows:
 
@@ -50,13 +54,13 @@ let quizExampleIntents = IntentDefinitions(bundleIdentifier: "com.example.QuizEx
 let startQuizIntent = quizExampleIntents.intents["StartQuizIntent"]
 let createQuizReminderIntent = quizExampleIntents.intents["CreateQuizReminderIntent"]
 
-UserTurn("Use QuizExample to create a history quiz reminder for tomorrow at 7 p.m.") {
+UserTurn("Use QuizExample to create a History quiz reminder for tomorrow at 7 p.m.") {
     Calls {
         createQuizReminderIntent
             .expect(topic: .equals("History"))
     }
 
-    // Fails if Siri runs or asks the person to confirm the intent.
+    // Fails if the intent runs or fails, or if Siri asks the person to confirm it.
     Calls(.disallowed) {
         startQuizIntent
     }

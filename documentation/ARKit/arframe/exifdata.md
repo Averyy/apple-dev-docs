@@ -22,7 +22,7 @@ var exifData: [String : Any] { get }
 
 ## Discussion
 
-The system’s image capture pipeline produces pixel data and auxiliary information for each exposure. The AR frame exposes this pixel data through [`capturedImage`](./capturedimage.md) and the auxilliary info through this property ([`exifData`](./exifdata.md)). Example EXIF data includes camera manufacturer, orientation, compression, resolution, exposure, and the date and time that the exposure occurred.
+The system’s image capture pipeline produces pixel data and auxiliary information for each exposure. The AR frame exposes this pixel data through [`capturedImage`](./capturedimage.md) and the auxiliary info through this property ([`exifData`](./exifdata.md)). Example EXIF data includes camera manufacturer, orientation, compression, resolution, exposure, and the date and time that the exposure occurred.
 
 ## See Also
 

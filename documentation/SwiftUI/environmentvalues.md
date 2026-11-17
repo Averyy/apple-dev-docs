@@ -224,7 +224,7 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var horizontalScrollIndicatorVisibility: ScrollIndicatorVisibility](./environmentvalues/horizontalscrollindicatorvisibility.md)
   The visibility to apply to scroll indicators of any horizontally scrollable content.
 - [var verticalScrollIndicatorVisibility: ScrollIndicatorVisibility](./environmentvalues/verticalscrollindicatorvisibility.md)
-  The visiblity to apply to scroll indicators of any vertically scrollable content.
+  The visibility to apply to scroll indicators of any vertically scrollable content.
 - [var scrollDismissesKeyboardMode: ScrollDismissesKeyboardMode](./environmentvalues/scrolldismisseskeyboardmode.md)
   The way that scrollable content interacts with the software keyboard.
 - [var horizontalScrollBounceBehavior: ScrollBounceBehavior](./environmentvalues/horizontalscrollbouncebehavior.md)
@@ -390,6 +390,8 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var requestAppDeletion: RequestAppDeletionAction](./environmentvalues/requestappdeletion.md)
 - [var showSignificantUpdateAcknowledgment: SignificantUpdateAction](./environmentvalues/showsignificantupdateacknowledgment.md)
   Presents a system interface to inform people about significant app changes and request their acknowledgment.
+- [var snippetContentMargins: EdgeInsets](./environmentvalues/snippetcontentmargins.md)
+  The default content margins of the snippet being rendered.
 - [var supportedActivityFamilies: Set<ActivityFamily>](./environmentvalues/supportedactivityfamilies.md)
   An environment value that that indicates potential rendered family for a Live Activity.
 - [var supportsImagePlayground: Bool](./environmentvalues/supportsimageplayground.md)

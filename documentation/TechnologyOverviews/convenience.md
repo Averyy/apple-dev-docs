@@ -13,7 +13,7 @@ Incorporate features that make it easier for people to do the things they want t
 URLs are a consistent way for people to access content on the web, and universal links extend that consistency to your apps. When you [adopt universal links](../Xcode/allowing-apps-and-websites-to-link-to-your-content.md) in your app, the same URLs people use to access your website work in your app, too. Many features rely on universal links, including:
 
 - Handoff uses universal links to [continue tasks on other devices](./convenience.md#Transfer-activities-to-other-devices).
-- [App Clips](./convenience.md#Allow-people-to-try-your-app-quickly) handle URLs intended for your app.
+- [App Clips](./system-experiences.md#App-Clips) handle URLs intended for your app.
 - Sharing web credentials via iCloud relies on universal links.
 - [Shared with You](./convenience.md#Incorporate-content-shared-in-Messages) uses universal links to transfer links from Messages to your app.
 
@@ -78,23 +78,6 @@ Shared with You relies on your app adopting [universal links](./convenience.md#P
 In addition to managing shared items in Messages, you can also use Shared with You to [create a collaboration workflow](../SharedWithYou/adding-shared-content-collaboration-to-your-app.md) for content your app creates. You might use this approach for content you put in CloudKit, iCloud Drive, or another shared storage server. After you place the content in a shared location, use Shared with You types to present UI for sharing that content with other people.
 
 ---
-
-## Allow people to try your app quickly
-
-People use apps for many kinds of tasks, but they might not always have the app they need when they need it. An App Clip helps people discover your app at a moment when they might not have time to download the full version. For example, the system can display your App Clip to help someone set up a new appliance, rent a scooter, or order take-out from a restaurant. This convenience can help convince people to download the full version of your app later.
-
-An App Clip focuses on one task and performs it quickly, ideally in only a few seconds. People discover your App Clip using special App Clip codes, NFC tags, QR codes, links you send out, and place cards in Maps. For example, you might place an App Clip code on the scooters you rent to people. When someone scans the code, the system downloads and launches the App Clip to start the task immediately.
-
-[Create an App Clip](../AppClip/creating-an-app-clip-with-xcode.md) in Xcode by adding an App Clip target to your project. Use the [App Clips](../AppClip/AppClip.md) framework to implement your clip, and add any app-specific code you need to complete the intended task. Keep the size of your App Clip as small as possible, and include only the code and assets you absolutely need. App Clips have size limitations so the system can download them quickly.
-
-In addition to [uploading your App Clip](../AppClip/distributing-your-app-clip.md) to the App Store, begin work on [creating the App Clip codes](../AppClip/creating-app-clip-codes.md) people use to access launch your App Clip. Include these codes in promotional materials or in the place where people encounter your services and need to use your App Clip.
-
-Additional things to know when creating your App Clip include:
-
-- You need to adopt [universal links](./convenience.md#Provide-consistent-URLs-for-app-content) for the tasks you want people to perform. The processes that launch your App Clip contain the URL for the associated task.
-- You can use your App Clip to [recommend your full app](../AppClip/recommending-your-app-to-app-clip-users.md) to people. A well-executed App Clip is good encouragement for someone to download your app.
-- Your App Clip can [schedule and receive notifications](../AppClip/enabling-notifications-in-app-clips.md) for a short period of time. For example, a scooter rental App Clip might send notifications when the rental is about to expire, and give someone the option to extend the rental time.
-- Your App Clip can [include Live Activities](../AppClip/offering-live-activities-with-your-app-clip.md), which you might use to inform someone about the progress of a task. For example, you might display the time left on your scooter rental.
 
 
 ---

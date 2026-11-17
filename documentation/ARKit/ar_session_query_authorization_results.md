@@ -15,6 +15,12 @@ Checks whether the current session is authorized for particular authorization ty
 extern void ar_session_query_authorization_results(ar_session_t session, ar_authorization_type_t authorization_types, ar_authorization_results_handler_t results_handler);
 ```
 
+## Parameters
+
+- `session`: The session.
+- `authorization_types`: The authorization types to query.
+- `results_handler`: The handler to be called upon completion of the request. This handler will be called on an arbitrary queue.
+
 ## See Also
 
 ### Sessions

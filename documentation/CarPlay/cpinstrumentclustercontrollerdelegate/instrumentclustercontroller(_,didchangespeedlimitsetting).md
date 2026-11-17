@@ -4,6 +4,8 @@
 **Kind**: method  
 **Role**: Instance Method
 
+Tells the delegate to adjust how your app displays speed limit information.
+
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
@@ -19,14 +21,20 @@ optional func instrumentClusterController(_ instrumentClusterController: CPInstr
 - (void) instrumentClusterController:(CPInstrumentClusterController *) instrumentClusterController didChangeSpeedLimitSetting:(CPInstrumentClusterSetting) speedLimitSetting;
 ```
 
+## Discussion
+
+Some vehicles can ask your app to display speed limit information along with the app’s other content. Use this method to either show or hide the information based on the provided setting value.
+
+## Parameters
+
+- `instrumentClusterController`: The controller object with the new setting.
+- `speedLimitSetting`: The new setting to apply to your content.
+
 ## See Also
 
-### Instance Methods
+### Responding to setting changes
 - [func instrumentClusterController(CPInstrumentClusterController, didChangeCompassSetting: CPInstrumentClusterSetting)](./instrumentclustercontroller%28_,didchangecompasssetting%29.md)
-- [func instrumentClusterControllerDidConnect(UIWindow)](./instrumentclustercontrollerdidconnect%28_%29.md)
-- [func instrumentClusterControllerDidDisconnectWindow(UIWindow)](./instrumentclustercontrollerdiddisconnectwindow%28_%29.md)
-- [func instrumentClusterControllerDidZoom(in: CPInstrumentClusterController)](./instrumentclustercontrollerdidzoom%28in%29.md)
-- [func instrumentClusterControllerDidZoomOut(CPInstrumentClusterController)](./instrumentclustercontrollerdidzoomout%28_%29.md)
+  Tells the delegate to adjust how your app displays compass information.
 
 
 ---

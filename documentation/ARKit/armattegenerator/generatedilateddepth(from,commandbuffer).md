@@ -22,11 +22,16 @@ func generateDilatedDepth(from frame: ARFrame, commandBuffer: any MTLCommandBuff
 
 ## Return Value
 
-A dilated depth texture which consists of a single channel of type `float32`.
+Dilated depth `MTLTexture` for the given `ARFrame` at the segmentation stencil resolution. The texture consists of a single channel and is of type `float16`.
 
 ## Discussion
 
-You use the linear depth information this function provides when compositing a virtual object with the camera image.
+You use the linear depth information this function provides when compositing a virtual object with the camera image. The reprojection of this depth to the caller’s scene space is carried out externally.
+
+## Parameters
+
+- `frame`: Current `ARFrame` containing camera image and estimated depth buffer. The caller is to ensure that a valid depth buffer is present.
+- `commandBuffer`: Metal command buffer for encoding depth dilation operations. The command buffer is committed by the caller externally.
 
 
 ---

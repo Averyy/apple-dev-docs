@@ -15,6 +15,14 @@ Gets the number of bytes between one vector and another in a geometry source’s
 extern size_t ar_geometry_source_get_stride(ar_geometry_source_t geometry_source);
 ```
 
+## Return Value
+
+The stride between vectors, in bytes.
+
+## Parameters
+
+- `geometry_source`: The geometry source.
+
 ## See Also
 
 ### Geometry

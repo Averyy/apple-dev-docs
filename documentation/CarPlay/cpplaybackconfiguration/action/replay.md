@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+An option to start playback of the item from the beginning.
+
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+

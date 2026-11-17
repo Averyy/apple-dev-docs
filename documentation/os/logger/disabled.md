@@ -7,13 +7,13 @@
 A disabled Logger that won’t emit log messages at runtime. Use to turn off all logging emitted using a specific logger variable.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS
-- watchOS 7.0+
+- iOS 26.4+
+- iPadOS 26.4+
+- Mac Catalyst 26.4+
+- macOS 26.4+
+- tvOS 26.4+
+- visionOS 26.4+
+- watchOS 26.4+
 
 ## Declaration
 

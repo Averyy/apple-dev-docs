@@ -4,6 +4,8 @@
 **Kind**: property  
 **Role**: Instance Property
 
+The timestamp of this anchor.
+
 **Availability**:
 - macOS 26.0+
 - visionOS 2.0+

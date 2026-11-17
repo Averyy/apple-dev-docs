@@ -27,6 +27,7 @@ init(maneuvers: [CPManeuver], laneGuidances: [CPLaneGuidance], currentManeuvers:
 - `laneGuidances`: An array of [`CPLaneGuidance`](../cplaneguidance.md) objects.
 - `currentManeuvers`: An array of `CPManeuver` objects that represent the current list of maneuvers.
 - `currentLaneGuidance`: A [`CPLaneGuidance`](../cplaneguidance.md) object that represents the guidance for the current lane.
+- `tripTravelEstimates`: The [`CPTravelEstimates`](../cptravelestimates.md) that represent the travel estimates for the current trip.
 - `maneuverTravelEstimates`: The `CPTravelEstimates` that present the estimates for the trip’s maneuvers.
 
 

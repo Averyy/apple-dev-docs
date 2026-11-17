@@ -34,12 +34,6 @@ A newly initialized navigation alert.
 - `secondaryAction`: An optional, secondary action with its button.
 - `duration`: The amount of time, in seconds, that the alert is visible. Setting the duration to 0 displays the alert until dismissed by the user.
 
-## See Also
-
-### Creating a Navigation Alert
-- [init(titleVariants: [String], subtitleVariants: [String]?, image: UIImage?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)](./init%28titlevariants,subtitlevariants,image,primaryaction,secondaryaction,duration%29.md)
-  Creates a navigation alert.
-
 
 ---
 

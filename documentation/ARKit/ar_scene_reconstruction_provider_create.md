@@ -15,10 +15,23 @@ Creates a provider that reconstructs the person’s surroundings.
 extern ar_scene_reconstruction_provider_tar_scene_reconstruction_provider_create(ar_scene_reconstruction_configuration_t scene_reconstruction_configuration);
 ```
 
+## Return Value
+
+An instance of `ar_scene_reconstruction_provider_t`.
+
+## Discussion
+
+> **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
+
+## Parameters
+
+- `scene_reconstruction_configuration`: The configuration for scene reconstruction.
+
 ## See Also
 
 ### Scene reconstruction
 - [ar_scene_reconstruction_configuration_t](./ar_scene_reconstruction_configuration_t.md)
+  Configuration for scene reconstruction.
 - [ar_scene_reconstruction_mode_t](./ar_scene_reconstruction_mode_t.md)
   The additional kinds of information you can request about a person’s surroundings.
 - [ar_scene_reconstruction_provider_is_supported](./ar_scene_reconstruction_provider_is_supported.md)
@@ -42,7 +55,7 @@ extern ar_scene_reconstruction_provider_tar_scene_reconstruction_provider_create
 - [ar_mesh_anchors_enumerate_anchors](./ar_mesh_anchors_enumerate_anchors.md)
   Enumerates a collection of mesh anchors.
 - [ar_mesh_anchors_enumerate_anchors_f](./ar_mesh_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of mesh anchors.
+  Enumerates a collection of mesh anchors using a function.
 - [ar_mesh_anchors_get_count](./ar_mesh_anchors_get_count.md)
   Gets the number of mesh anchors in the collection.
 - [ar_mesh_anchor_get_origin_from_anchor_transform_with_correction](./ar_mesh_anchor_get_origin_from_anchor_transform_with_correction.md)

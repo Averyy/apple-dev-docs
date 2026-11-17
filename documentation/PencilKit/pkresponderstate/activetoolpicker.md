@@ -31,6 +31,8 @@ If `nil` the active tool picker is based on the next responder.
 ## See Also
 
 ### Configuring the tool picker
+- [var toolPickerVisibility: PKToolPickerVisibility?](./toolpickervisibility-7cj3c.md)
+  The visibility state of the tool picker.
 - [enum PKToolPickerVisibility](../pktoolpickervisibility.md)
   Constants that describe the visibility state of a tool picker.
 

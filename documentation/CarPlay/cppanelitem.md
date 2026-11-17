@@ -27,17 +27,18 @@ The `CPPanelItem` type defines the default behaviors for content you display in 
 
 ## Topics
 
-### Initializers
-- [init?(coder: NSCoder)](./cppanelitem/init%28coder%29.md)
-- [init(gridButtons: [CPGridButton])](./cppanelitem/init%28gridbuttons%29.md)
-  Initialize the item using one or more grid buttons.
+### Initializing the panel
 - [init(listItem: CPListItem)](./cppanelitem/init%28listitem%29.md)
   Initialize the item using a list item.
-### Instance Properties
+- [init(gridButtons: [CPGridButton])](./cppanelitem/init%28gridbuttons%29.md)
+  Initialize the item using one or more grid buttons.
+- [init?(coder: NSCoder)](./cppanelitem/init%28coder%29.md)
+### Configuring the panel’s behavior
 - [var isEnabled: Bool](./cppanelitem/isenabled.md)
   A Boolean value that indicates whether the item supports interactions.
 - [var showsBottomSeparator: Bool](./cppanelitem/showsbottomseparator.md)
   A Boolean value that indicates whether a separator line appears at the bottom edge of the item.
+### Accessing app-specific data
 - [var userInfo: Any?](./cppanelitem/userinfo.md)
   Custom information you want to store with the item.
 
@@ -56,6 +57,22 @@ The `CPPanelItem` type defines the default behaviors for content you display in 
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
+
+## See Also
+
+### Common types
+- [class CPTemplate](./cptemplate.md)
+  An abstract base class for interface templates.
+- [class CPTextButton](./cptextbutton.md)
+  A button that displays a stylized title.
+- [class CPButton](./cpbutton.md)
+  A button that displays an image and invokes a handler when the user taps it.
+- [class CPImageSet](./cpimageset.md)
+  Light and dark representations of an image.
+- [class CPPanel](./cppanel.md)
+  A type that provides the common behaviors for panels you display on top of your app’s content.
+- [class CPPanelButtonConfiguration](./cppanelbuttonconfiguration.md)
+  A type that provides the common behaviors for a button layout in a panel.
 
 
 ---

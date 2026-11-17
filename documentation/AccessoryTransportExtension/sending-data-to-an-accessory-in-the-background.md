@@ -62,7 +62,7 @@ Add the [`com.apple.developer.accessory-data-provider`](../BundleResources/entit
 
 ## Open a session when your accessory reports a change
 
-The system launches or wakes your transport extension when your accessory reports a change, for example, by signaling a Bluetooth event. Your transport extension enrolls a worker feature for the accessory by calling `AccessoryWorker/requestAuthorization(for:)`.
+The system launches or wakes your transport extension when your accessory reports a change, for example, by signaling a Bluetooth event. Your transport extension enrolls a worker feature for the accessory by calling [`requestAuthorization(for:)`](./accessoryworker/requestauthorization%28for%29.md).
 
 Then your extension calls [`makeFeatureSession(_:)`](./accessorytransportsession/makefeaturesession%28_%29.md) to open a *feature session*, which is a data channel between the transport extension and your data provider extension. The framework scopes communication through this data channel to just the one feature rather than the entire accessory connection.
 
@@ -97,7 +97,7 @@ class TransportEventHandler: AccessoryTransportSession.EventHandler {
 
 Add the [`com.apple.developer.accessory-transport-extension`](../BundleResources/entitlements/com.apple.developer.accessory-transport-extension.md) entitlement to your extension’s code signature to use the [`AccessoryTransportAppExtension`](./accessorytransportappextension.md) protocol.
 
-When the accessory reports that the person changed the thermostat’s mode using the physical dial, the handler calls `AccessoryWorker/requestAuthorization(for:)` to enroll the worker feature for the accessory. The system returns an authorized status immediately, without prompting the person:
+When the accessory reports that the person changed the thermostat’s mode using the physical dial, the handler calls [`requestAuthorization(for:)`](./accessoryworker/requestauthorization%28for%29.md) to enroll the worker feature for the accessory. The system returns an authorized status immediately, without prompting the person:
 
 ```swift
 func accessoryReportedModeChange(_ mode: Data) async throws {
@@ -118,7 +118,7 @@ func invalidationHandler(error: AccessoryTransportSession.Error?) {
 }
 ```
 
-> **Note**: To read the status without enrolling, call `AccessoryWorker/authorizationStatus(for:)`. [`AccessoryGPUWorker`](./accessorygpuworker.md) declares the same two methods.
+> **Note**: To read the status without enrolling, call [`authorizationStatus(for:)`](./accessoryworker/authorizationstatus%28for%29.md). [`AccessoryGPUWorker`](./accessorygpuworker.md) declares the same two methods.
 
 The code checks the status first because returning from [`activate()`](./accessoryfeatureruntimesession/activate%28%29.md) doesn’t mean the session started, and the method doesn’t throw when the feature isn’t enrolled. The system can also decline to launch your data provider extension for the feature session when the device is under heavy load or the battery is low.
 

@@ -6,6 +6,11 @@ Manage the code and resources you use to build apps, libraries, and other softwa
 
 ## Topics
 
+### Files and workspaces
+- [Managing files and folders in your Xcode project](./managing-files-and-folders-in-your-xcode-project.md)
+  Add new or existing files to your project, and use groups to organize the files and folders in the Project navigator.
+- [Managing multiple projects and their dependencies](./managing-multiple-projects-and-their-dependencies.md)
+  Manage related projects in one place using a workspace, or configure build-time dependencies between different Xcode projects using cross-project references.
 ### Navigation
 - [Configuring the Xcode project window](./configuring-the-xcode-project-window.md)
   Customize the Xcode project window and editor area to view and edit project files in a configuration you prefer.

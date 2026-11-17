@@ -43,6 +43,8 @@ Feature point detection requires a [`ARWorldTrackingConfiguration`](../arworldtr
   Data on the distance between a device’s rear camera and real-world objects in an AR experience.
 - [var smoothedSceneDepth: ARDepthData?](./smoothedscenedepth.md)
   An average of distance measurements between a device’s rear camera and real-world objects that creates smoother visuals in an AR experience.
+- [- displayTransformForOrientation:viewportSize:](./displaytransformfororientation_viewportsize_.md)
+  Returns an affine transform for converting between normalized image coordinates and a coordinate space appropriate for rendering the camera image onscreen.
 
 
 ---

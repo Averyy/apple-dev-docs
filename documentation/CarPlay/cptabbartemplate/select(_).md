@@ -21,8 +21,10 @@ func select(_ newTemplate: CPTemplate)
 
 ## See Also
 
-### Instance Methods
+### Selecting a tab
 - [func selectTemplate(at: Int)](./selecttemplate%28at%29.md)
+- [var selectedTemplate: CPTemplate?](./selectedtemplate.md)
+  The currently selected template in the tab bar.
 
 
 ---

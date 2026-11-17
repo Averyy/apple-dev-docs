@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Type Property
 
-The maximum size of a list item’s image and accessory image.
+The maximum dimensions for the list item images.
 
 **Availability**:
 - iOS 14.0+
@@ -23,23 +23,27 @@ class var maximumImageSize: CGSize { get }
 
 ## Discussion
 
-At runtime, use this value to determine the maximum size for a list item’s image and accessory image.
+This property contains the maximum permissible dimensions, in points, for the images in the [`image`](./image.md) and [`accessoryImage`](./accessoryimage.md) properties. When creating images for your items, use this information to determine the maximum size of your images.
+
+To determine the maximum pixel dimensions for images, multiply the value in this property by the current scale factor for your CarPlay interface. Get the interface scale factor from the traits in the [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property of your interface controller.
 
 ## See Also
 
-### Managing Content
+### Managing the row’s content
 - [var text: String?](./text.md)
-  The list item’s primary text.
-- [func setText(String)](./settext%28_%29.md)
-  Updates the list item’s primary text.
+  The primary text for the list item.
 - [var detailText: String?](./detailtext.md)
-  The list item’s secondary text.
-- [func setDetailText(String?)](./setdetailtext%28_%29.md)
-  Updates the list item’s secondary text.
+  The secondary text for the list item.
 - [var image: UIImage?](./image.md)
-  The image that the list item displays in its leading region.
+  The image to display on the leading edge of the cell.
+- [func setText(String)](./settext%28_%29.md)
+  Updates the primary text of the list item.
+- [func setDetailText(String?)](./setdetailtext%28_%29.md)
+  Updates the secondary text of the list item.
 - [func setImage(UIImage?)](./setimage%28_%29.md)
-  Updates the list item’s image.
+  Updates the leading image of the list item.
+- [var userInfo: Any?](./userinfo.md)
+  App-specific data you associate with the item.
 
 
 ---

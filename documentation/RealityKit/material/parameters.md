@@ -30,6 +30,7 @@ typealias Parameters = MaterialParameters
 - [struct MaterialParameterTypes](../materialparametertypes.md)
   A set of types that material parameters can use.
 - [struct MaterialParameters](../materialparameters.md)
+  A collection of types that represent material parameter values, handles, and textures.
 - [enum MaterialColorParameter](../materialcolorparameter.md)
   The color parameter applied to a material.
 - [enum MaterialScalarParameter](../materialscalarparameter.md)

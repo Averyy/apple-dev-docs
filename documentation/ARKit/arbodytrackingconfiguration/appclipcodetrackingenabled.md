@@ -22,9 +22,9 @@ var appClipCodeTrackingEnabled: Bool { get set }
 
 ## Discussion
 
-When this property’s value is [`true`](../../Swift/true.md), the session delegate recieves an [`ARAppClipCodeAnchor`](../arappclipcodeanchor.md) via [`session(_:didAdd:)`](../arsessiondelegate/session%28_,didadd%29.md) for every App Clip Code that ARKit detects in the physical environment. The default value is `false`.
+When this property’s value is [`true`](../../Swift/true.md), the session delegate receives an [`ARAppClipCodeAnchor`](../arappclipcodeanchor.md) via [`session(_:didAdd:)`](../arsessiondelegate/session%28_,didadd%29.md) for every App Clip Code that ARKit detects in the physical environment. The default value is `false`.
 
-Before calling this function, check that the configuration supports App Clip Code tracking by  calling [`supportsAppClipCodeTracking`](./supportsappclipcodetracking.md).
+Before calling this function, check that the configuration supports App Clip Code tracking by calling [`supportsAppClipCodeTracking`](./supportsappclipcodetracking.md).
 
 To avoid scanning a physical code that’s not connected to an App Clip, the system ensures that an app provides an App Clip before allowing the app to interact with App Clip Codes. Without providing an App Clip, the app can recognize codes in the environment by determining their physical location ([`transform`](../aranchor/transform.md)), but code URLs ([`url`](../arappclipcodeanchor/url.md)) remain `nil`.
 

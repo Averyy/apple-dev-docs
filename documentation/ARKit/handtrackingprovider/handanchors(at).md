@@ -21,6 +21,8 @@ A tuple that contains optional left and right anchors for the given time. Anchor
 
 ## Discussion
 
+Obtain the `timestamp` you provide to this function from the [`trackableAnchorTime`](../../CompositorServices/layerrenderer/frame/timing/trackableanchortime.md) property of [`LayerRenderer.Frame.Timing`](../../CompositorServices/layerrenderer/frame/timing.md).
+
 > ❗ **Important**:  This function isn’t safe to call on multiple threads at the same time. You need to provide your own synchronization.
 
 ## Parameters
@@ -31,9 +33,7 @@ A tuple that contains optional left and right anchors for the given time. Anchor
 
 ### Inspecting a hand-tracking provider
 - [var state: DataProviderState](./state.md)
-  The current status of data coming from a provider.
-- [var description: String](./description.md)
-  A textual representation of this hand tracking provider.
+  The current status of this hand tracking provider.
 
 
 ---

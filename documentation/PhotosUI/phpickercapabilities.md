@@ -45,6 +45,13 @@ This enumeration defines the possible values for the photo picker configuration 
 ### Creating a capability
 - [init(rawValue: UInt)](./phpickercapabilities/init%28rawvalue%29.md)
   Creates a photo picker capability.
+### Type Properties
+- [static var automaticModalInPresentation: PHPickerCapabilities](./phpickercapabilities/automaticmodalinpresentation.md)
+  Automatically updates the modal in presentation (interactive dismissal) state.
+- [static var automaticPreferredContentSize: PHPickerCapabilities](./phpickercapabilities/automaticpreferredcontentsize.md)
+  Automatically updates the preferred content size.
+- [static var sidebar: PHPickerCapabilities](./phpickercapabilities/sidebar.md)
+  The sidebar for navigation.
 
 ## Relationships
 

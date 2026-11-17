@@ -23,17 +23,12 @@ typedef void (^)(CPBarButton *) CPBarButtonHandler;
 
 ## See Also
 
-### Creating a CarPlay Bar Button
-- [init?(coder: NSCoder)](./cpbarbutton/init%28coder%29.md)
-  Creates a button initialized  from data in the specified coder object.
-- [init(type: CPBarButton.Type, handler: CPBarButtonHandler?)](./cpbarbutton/init%28type,handler%29.md)
-  Creates a bar button with a type and handler.
+### Creating a bar button
 - [init(image: UIImage, handler: CPBarButtonHandler?)](./cpbarbutton/init%28image,handler%29.md)
   Creates a bar button that displays an image.
 - [init(title: String, handler: CPBarButtonHandler?)](./cpbarbutton/init%28title,handler%29.md)
-  Creates a bar button that displays a text label.
-- [CPBarButton.Type](./cpbarbutton/type.md)
-  Types of bar buttons.
+  Creates a bar button that displays a text string.
+- [init?(coder: NSCoder)](./cpbarbutton/init%28coder%29.md)
 
 
 ---

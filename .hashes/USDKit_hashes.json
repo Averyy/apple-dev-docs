@@ -1146,7 +1146,7 @@
     },
     "https://developer.apple.com/documentation/usdkit/usdplayer/materialdata/shadergraph": {
       "file_path": "documentation/USDKit/usdplayer/materialdata/shadergraph.md",
-      "hash": "2904b6e2e30961caf011fe0fe2a482d3cb51535cee6205420b1eb8b5008948da"
+      "hash": "6cf8544935cea05bca8ce0ad7cb56665567e688a64235d12deddf8b3b3da6d7b"
     },
     "https://developer.apple.com/documentation/usdkit/usdplayer/materialdata/update": {
       "file_path": "documentation/USDKit/usdplayer/materialdata/update.md",
@@ -5750,7 +5750,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usdkit/usdplayer/materialdata/shadergraph.json": {
       "file_path": "documentation/USDKit/usdplayer/materialdata/shadergraph.md",
-      "hash": "2904b6e2e30961caf011fe0fe2a482d3cb51535cee6205420b1eb8b5008948da"
+      "hash": "6cf8544935cea05bca8ce0ad7cb56665567e688a64235d12deddf8b3b3da6d7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/usdkit/usdplayer/materialdata/update.json": {
       "file_path": "documentation/USDKit/usdplayer/materialdata/update.md",

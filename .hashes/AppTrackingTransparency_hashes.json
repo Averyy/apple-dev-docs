@@ -46,7 +46,7 @@
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(preferexpandedinterface:additionalinformationaction:completionhandler:)": {
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization(preferexpandedinterface,additionalinformationaction,completionhandler).md",
-      "hash": "7a8d82946ba6e8c2e2523aa6cc4b870ba4b53f65fa2a68c8633be0d786aa302b"
+      "hash": "fb29f78470f15b7af201365d18ffd1434ad3230aebd0acc6e10eca300c443a4f"
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/trackingauthorizationstatus": {
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/trackingauthorizationstatus.md",
@@ -98,7 +98,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(preferexpandedinterface:additionalinformationaction:completionhandler:).json": {
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization(preferexpandedinterface,additionalinformationaction,completionhandler).md",
-      "hash": "7a8d82946ba6e8c2e2523aa6cc4b870ba4b53f65fa2a68c8633be0d786aa302b"
+      "hash": "fb29f78470f15b7af201365d18ffd1434ad3230aebd0acc6e10eca300c443a4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/trackingauthorizationstatus.json": {
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/trackingauthorizationstatus.md",

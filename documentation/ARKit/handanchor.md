@@ -28,12 +28,12 @@ struct HandAnchor
   A value that indicates a left or right hand.
 - [var isTracked: Bool](./handanchor/istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking this hand.
-- [var description: String](./handanchor/description.md)
-  A textual representation of this anchor.
 ### Identifying hand anchors
 - [var id: UUID](./handanchor/id.md)
   The unique identifier of this anchor.
 ### Instance Properties
+- [var description: String](./handanchor/description.md)
+  A textual representation of this anchor.
 - [var fidelity: HandAnchor.Fidelity](./handanchor/fidelity-swift.property.md)
   The fidelity of this hand.
 ### Enumerations

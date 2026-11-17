@@ -5142,11 +5142,11 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/auheadtrackingbinauralrenderer/isdisabled": {
       "file_path": "documentation/AudioToolbox/auheadtrackingbinauralrenderer/isdisabled.md",
-      "hash": "cd71254f1128f63d027a108b3ffd44fa66390198158c7f946d4c933af0fc7673"
+      "hash": "843c32fc25c647e1151e056ecdb1dc1aabfe91e42e1a47804559b08ad7a4739b"
     },
     "https://developer.apple.com/documentation/audiotoolbox/auheadtrackingbinauralrenderer/isheadtracking": {
       "file_path": "documentation/AudioToolbox/auheadtrackingbinauralrenderer/isheadtracking.md",
-      "hash": "e896cda41e109c79747d8ef2175eaf23d5e708a4337158c8b09a5ce6b623d7e6"
+      "hash": "95a77b67d811bf147a2c5f20ede317ee09c86dcedbced22d2e86c8e1f3206fc1"
     },
     "https://developer.apple.com/documentation/audiotoolbox/auhostidentifier": {
       "file_path": "documentation/AudioToolbox/auhostidentifier.md",
@@ -14778,7 +14778,7 @@
     },
     "https://developer.apple.com/documentation/audiotoolbox/rendering-spatial-audio-from-bluetooth-headphones": {
       "file_path": "documentation/AudioToolbox/rendering-spatial-audio-from-bluetooth-headphones.md",
-      "hash": "6c56bfe141ede6594872accf4891a8c6b7fe56cc987002e82027f6a59c192312"
+      "hash": "ce95c89e58922a0d84d3de6aaab3d0afda58d3d988450225c162ee27fdb42eaf"
     },
     "https://developer.apple.com/documentation/audiotoolbox/scheduledaudiofileregion": {
       "file_path": "documentation/AudioToolbox/scheduledaudiofileregion.md",
@@ -20118,11 +20118,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/auheadtrackingbinauralrenderer/isdisabled.json": {
       "file_path": "documentation/AudioToolbox/auheadtrackingbinauralrenderer/isdisabled.md",
-      "hash": "cd71254f1128f63d027a108b3ffd44fa66390198158c7f946d4c933af0fc7673"
+      "hash": "843c32fc25c647e1151e056ecdb1dc1aabfe91e42e1a47804559b08ad7a4739b"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/auheadtrackingbinauralrenderer/isheadtracking.json": {
       "file_path": "documentation/AudioToolbox/auheadtrackingbinauralrenderer/isheadtracking.md",
-      "hash": "e896cda41e109c79747d8ef2175eaf23d5e708a4337158c8b09a5ce6b623d7e6"
+      "hash": "95a77b67d811bf147a2c5f20ede317ee09c86dcedbced22d2e86c8e1f3206fc1"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/auhostidentifier.json": {
       "file_path": "documentation/AudioToolbox/auhostidentifier.md",
@@ -29754,7 +29754,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/rendering-spatial-audio-from-bluetooth-headphones.json": {
       "file_path": "documentation/AudioToolbox/rendering-spatial-audio-from-bluetooth-headphones.md",
-      "hash": "6c56bfe141ede6594872accf4891a8c6b7fe56cc987002e82027f6a59c192312"
+      "hash": "ce95c89e58922a0d84d3de6aaab3d0afda58d3d988450225c162ee27fdb42eaf"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/scheduledaudiofileregion.json": {
       "file_path": "documentation/AudioToolbox/scheduledaudiofileregion.md",

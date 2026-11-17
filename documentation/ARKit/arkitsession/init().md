@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a new session.
+Creates a session.
 
 **Availability**:
 - visionOS 1.0+

@@ -67,8 +67,8 @@ Multiple `Sorting` objects can be included in the `sorting` array of a reporting
   Cost metrics breakdown by attribution type.
 - [object RateMetrics](./ratemetrics.md)
   Rate metrics breakdown by attribution type.
-- [type ReportingAdChannelType](./reportingadchanneltype.md)
-  The ad channel that served a report row’s metrics.
+- [type ReportingBillingEvent](./reportingbillingevent.md)
+  The billing event of the campaign a report row belongs to.
 
 
 ---

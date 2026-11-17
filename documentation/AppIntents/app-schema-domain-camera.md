@@ -38,11 +38,11 @@ For more information about making your app’s actions available to Apple Intell
   Identifies intent schemas in the camera domain.
 ### Types for static parameters
 - [var captureDevice: some AppSchemaEnum](./appschema/cameraenum/capturedevice.md)
-  An enum schema for a capture device parameter.
+  An enum schema for a capture device.
 - [var captureDuration: some AppSchemaEnum](./appschema/cameraenum/captureduration.md)
-  An enum schema for a capture duration parameter.
+  An enum schema for a capture duration.
 - [var captureMode: some AppSchemaEnum](./appschema/cameraenum/capturemode.md)
-  An enum schema for a capture mode parameter.
+  An enum schema for a capture mode.
 - [AppSchema.CameraEnum](./appschema/cameraenum.md)
   Identifies enum schemas in the camera domain.
 

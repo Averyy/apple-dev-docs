@@ -19,13 +19,11 @@ final var allAnchors: [ObjectAnchor] { get }
 
 ### Inspecting an object-tracking provider
 - [var state: DataProviderState](./state.md)
-  The state of an object-tracking provider.
+  The current status of an object-tracking provider.
 - [var anchorUpdates: AnchorUpdateSequence<ObjectAnchor>](./anchorupdates.md)
   An asynchronous sequence of anchors the framework updates.
 - [ObjectTrackingProvider.Error](./error.md)
-  Values that represent an object-tracking error.
-- [var description: String](./description.md)
-  A textual representation of this object tracking provider.
+  An error an object-tracking provider reports.
 
 
 ---

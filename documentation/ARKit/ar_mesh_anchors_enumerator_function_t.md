@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+Function for enumerating a collection of mesh anchors.
+
 **Availability**:
 - visionOS 1.0+
 
@@ -12,6 +14,15 @@
 ```c
 typedef _Bool (*)(void *, NSObject<OS_ar_mesh_anchor> *) ar_mesh_anchors_enumerator_function_t;
 ```
+
+## Return Value
+
+`true` to continue enumerating, or `false` to stop enumerating.
+
+## Parameters
+
+- `context`: The application-defined context.
+- `mesh_anchor`: The mesh anchor.
 
 ## See Also
 

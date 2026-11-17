@@ -21,14 +21,17 @@ var update: some AppSchemaIntent { get }
 
 ## Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `presentation` domain and one of your app’s actions matches the `update` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .presentation.update)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `presentation` domain and one of your app’s actions matches the `update` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent(schema: .presentation.update)` Swift macro.
 
-The following example shows an intent that conforms to the `update` schema:
+The following example shows an intent that conforms to the `update` schema. You can create a type that conforms to the schema by adding the `@AppIntent` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `presentation_update` and select it from the code-completion suggestions:
 
 ```swift
 @AppIntent(schema: .presentation.update)
 struct UpdatePresentationIntent {
+    /// Presentation to rename.
     var target: <#PresentationEntity#>
+
+    /// New name of presentation.
     var name: String?
 
     func perform() async throws -> some IntentResult {
@@ -42,6 +45,15 @@ The schema supports the following system experiences:
 - Shortcuts
 
 For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
+
+## Parameters for the update intent
+
+Each parameter in the code listing above plays a specific role when your app performs this action. The following table describes what each parameter represents and any behavior to account for when you set it.
+
+| Parameter | Type | Origin | Discussion |
+| --- | --- | --- | --- |
+| `target` | `@AppEntity(schema: .presentation.document)` | Your app | Presentation to rename. `PresentationEntity` is a placeholder name for a type that conforms to the [`document`](../presentationentity/document.md) entity schema, which your app defines and implements. |
+| `name` | `String?` | Swift | New name of presentation. |
 
 ## See Also
 

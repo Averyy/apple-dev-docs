@@ -18,6 +18,12 @@ The blend-shape configuration, or `nil` if blend-shape deformation is not used.
 var blendShape: LowLevelDeformation.Descriptor.BlendShape?
 ```
 
+## See Also
+
+### Configuring blend shapes
+- [LowLevelDeformation.Descriptor.BlendShape](./blendshape-swift.struct.md)
+  The blend-shape data dimensions for a [`LowLevelDeformation`](../../lowleveldeformation.md).
+
 
 ---
 

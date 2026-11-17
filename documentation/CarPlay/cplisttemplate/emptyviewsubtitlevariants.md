@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An array of subtitle variants for the template’s empty view.
+An array of localized subtitle strings to display when the list contains no items.
 
 **Availability**:
 - iOS 14.0+
@@ -23,15 +23,17 @@ var emptyViewSubtitleVariants: [String] { get set }
 
 ## Discussion
 
-When the list contains zero items, the template displays an empty view with a title and a subtitle. The template removes the empty view if you update the list and provide items.
+When the list contains no items in any of its sections, the template displays an empty view with a title and a subtitle string. This property contains the potential strings to display in the subtitle position of the view. CarPlay displays the first string from the array that fits the available space, so arrange your strings in the array from most- to least-preferred.
 
-Provide at least one nonzero length subtitle variant. The view displays the first subtitle variant that fits into the available screen space, so arrange your variants array from most- to least-preferred. Provide the strings as localized displayable content.
+When you update the list and add one or more items, CarPlay removes the empty view.
 
 ## See Also
 
-### Managing an Empty List
+### Managing an empty list
+- [var showsSpinnerWhileEmpty: Bool](./showsspinnerwhileempty.md)
+  A Boolean value that indicates whether to display a spinning activity indicator when the list contains no items.
 - [var emptyViewTitleVariants: [String]](./emptyviewtitlevariants.md)
-  An array of title variants for the template’s empty view.
+  An array of localized title strings to display when the list contains no items.
 
 
 ---

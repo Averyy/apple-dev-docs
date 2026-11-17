@@ -33,11 +33,9 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, shouldUpdateNotification
 
 ## See Also
 
-### Displaying Notifications
+### Displaying maneuver-related notifications
 - [func mapTemplate(CPMapTemplate, shouldShowNotificationFor: CPManeuver) -> Bool](./maptemplate%28_,shouldshownotificationfor%29-4mnm1.md)
   Asks the delegate whether the system should display the maneuver as a notification when the app is in the background.
-- [func mapTemplate(CPMapTemplate, shouldShowNotificationFor: CPNavigationAlert) -> Bool](./maptemplate%28_,shouldshownotificationfor%29-5lu8a.md)
-  Asks the delegate whether the system should display the navigation alert as a notification when the app is in the background.
 
 
 ---

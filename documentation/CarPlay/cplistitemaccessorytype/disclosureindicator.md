@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Show a chevron icon.
+A chevron image that signifies the item displays new content.
 
 **Availability**:
 - iOS 14.0+
@@ -23,11 +23,11 @@ CPListItemAccessoryTypeDisclosureIndicator
 
 ## See Also
 
-### Accessory Types
+### Accessory types
 - [CPListItemAccessoryType.none](./none.md)
-  Don’t show an accessory.
+  A value that indicates the list item has no standard accessory type.
 - [CPListItemAccessoryType.cloud](./cloud.md)
-  Show a cloud icon.
+  A cloud image that signifies the item contains cloud-based content.
 
 
 ---

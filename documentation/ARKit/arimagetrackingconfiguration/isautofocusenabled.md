@@ -20,6 +20,10 @@ var isAutoFocusEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isAutoFocusEnabled) BOOL autoFocusEnabled;
 ```
 
+## Discussion
+
+Autofocus is enabled by default.
+
 
 ---
 

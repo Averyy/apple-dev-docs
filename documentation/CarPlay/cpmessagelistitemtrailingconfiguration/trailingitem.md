@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The configuration’s item.
+The standard system symbol to display in the row’s trailing region.
 
 **Availability**:
 - iOS 14.0+
@@ -23,13 +23,13 @@ var trailingItem: CPMessageTrailingItem { get }
 
 ## Discussion
 
-Configurations are immutable. To change or remove the item that the message list item’s trailing region shows, create a new configuration and update the list item’s [`trailingConfiguration`](../cpmessagelistitem/trailingconfiguration.md) property.
+Specify this information at initialization time.
 
 ## See Also
 
-### Getting the Trailing Item
+### Getting the trailing item
 - [enum CPMessageTrailingItem](../cpmessagetrailingitem.md)
-  The accessories that a message list item can display in its trailing region.
+  Constants that indicate the type of symbol to display at the trailing edge of a message list row.
 
 
 ---

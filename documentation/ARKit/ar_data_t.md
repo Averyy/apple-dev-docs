@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+A container for binary data.
+
 **Availability**:
 - visionOS 2.0+
 

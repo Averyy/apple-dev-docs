@@ -86,6 +86,7 @@ A representation of a shape.
 - [CollisionComponent.Mode](./collisioncomponent/mode-swift.enum.md)
   A mode that dictates how much collision data is collected for a given entity.
 - [enum ShapeResourceError](./shaperesourceerror.md)
+  Errors that can occur when generating a static mesh or convex polyhedron shape resource.
 - [struct CollisionGroup](./collisiongroup.md)
   A bitmask used to define the collision group to which an entity belongs.
 - [struct CollisionFilter](./collisionfilter.md)

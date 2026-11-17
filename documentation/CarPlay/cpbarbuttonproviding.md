@@ -4,7 +4,7 @@
 **Kind**: protocol  
 **Role**: Protocol
 
-The methods that templates use to provide buttons for the navigation bar.
+The interface templates you use to manage buttons in the navigation bar.
 
 **Availability**:
 - iOS 12.0+
@@ -23,25 +23,25 @@ protocol CPBarButtonProviding : NSObjectProtocol
 
 ## Overview
 
-`CPBarButtonProviding` is a protocol that templates use to provide a Back button and leading and trailing buttons for the navigation bar.
+This protocol adds support for displaying custom buttons in the navigation bar that appears above your app’s template-based content. CarPlay implements a navigation-style interface for apps, which allows your app to make changes to the interface by pushing and popping templates off the system-managed navigation stack. The navigation bar at the top of each template offers a place to add custom actions relevant to the current content.
 
-You don’t adopt this protocol in your own types. If you want to add buttons to the navigation bar, you must use one of the prebuilt templates that already conforms to the protocol, such as [`CPMapTemplate`](./cpmaptemplate.md) or [`CPContactTemplate`](./cpcontacttemplate.md).
+System-provided templates adopt this protocol to support the addition of buttons to the navigation bar when the template is visible. You don’t adopt this protocol in your app’s custom types. When you prepare a template for display, add buttons to the properties of this protocol if you have actions you want to make available.
 
-> **Note**:  The root templates of a tab bar don’t show leading or trailing bar buttons, and the system throws an exception if you attempt to assign bar buttons to the Now Playing template.
+> **Note**: The [`CPNowPlayingTemplate`](./cpnowplayingtemplate.md), [`CPSearchTemplate`](./cpsearchtemplate.md), [`CPTabBarTemplate`](./cptabbartemplate.md), and [`CPActionSheetTemplate`](./cpactionsheettemplate.md) types don’t support navigation bar buttons. The [`CPVoiceControlTemplate`](./cpvoicecontroltemplate.md) type supports navigation bar buttons only in iOS 26.4 and later.
 
 ## Topics
 
-### Providing Navigation Bar Buttons
+### Providing navigation bar buttons
 - [var backButton: CPBarButton?](./cpbarbuttonproviding/backbutton.md)
-  A button to display as the Back button on the navigation bar.
+  A button you use to implement custom transitions.
 - [var leadingNavigationBarButtons: [CPBarButton]](./cpbarbuttonproviding/leadingnavigationbarbuttons.md)
-  An array of bar buttons to display on the leading side of the navigation bar.
+  Additional buttons to display at the leading edge of the navigation bar.
 - [var trailingNavigationBarButtons: [CPBarButton]](./cpbarbuttonproviding/trailingnavigationbarbuttons.md)
-  An array of bar buttons to display on the trailing side of the navigation bar.
+  Additional buttons to display at the trailing edge of the navigation bar.
 - [class CPBarButton](./cpbarbutton.md)
-  A button for placement in a navigation bar.
+  A button that appears in a navigation bar.
 - [class CPMessageComposeBarButton](./cpmessagecomposebarbutton.md)
-  A button that activates Siri and initiates the compose message flow.
+  A button that activates Siri and initiates the process for composing a message.
 
 ## Relationships
 
@@ -58,15 +58,11 @@ You don’t adopt this protocol in your own types. If you want to add buttons to
 
 ## See Also
 
-### General Purpose Templates
-- [class CPListTemplate](./cplisttemplate.md)
-  A template that displays and manages a list of items.
-- [class CPGridTemplate](./cpgridtemplate.md)
-  A template that displays and manages a grid of items.
-- [class CPTabBarTemplate](./cptabbartemplate.md)
-  A container template that displays and manages other templates, presenting them as tabs.
-- [class CPTemplate](./cptemplate.md)
-  An abstract base class for interface templates.
+### Navigation bar
+- [class CPBarButton](./cpbarbutton.md)
+  A button that appears in a navigation bar.
+- [class CPMessageComposeBarButton](./cpmessagecomposebarbutton.md)
+  A button that activates Siri and initiates the process for composing a message.
 
 
 ---

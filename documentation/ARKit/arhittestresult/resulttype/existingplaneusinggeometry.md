@@ -24,7 +24,7 @@ ARHitTestResultTypeExistingPlaneUsingGeometry
 
 When searching for this result type, ARKit returns a point coplanar with an already detected plane only if that point lies within the area defined by the plane’s [`geometry`](../../arplaneanchor/geometry.md). That property (together with the anchor’s [`transform`](../../aranchor/transform.md)) defines the smallest polygonal area that includes all regions ARKit estimates to be a part of the plane.
 
-Because that polygon is always convex, it may contain regions that are not part of the same real-world surface. (It does, however, provide a more precise esitmate than a bounding rectangle provided by the [`existingPlaneUsingExtent`](./existingplaneusingextent.md) type.) There may also be parts of the same real-world surface that lie outside the polygon because ARKit has not yet recognized them as part of the same plane. You extend your hit test to an infinite plane by using the [`existingPlane`](./existingplane.md) type.
+Because that polygon is always convex, it may contain regions that are not part of the same real-world surface. (It does, however, provide a more precise estimate than a bounding rectangle provided by the [`existingPlaneUsingExtent`](./existingplaneusingextent.md) type.) There may also be parts of the same real-world surface that lie outside the polygon because ARKit has not yet recognized them as part of the same plane. You extend your hit test to an infinite plane by using the [`existingPlane`](./existingplane.md) type.
 
 An existing plane search can return any number of results, depending on how many already-detected planes the hit test ray intersects (if any).
 

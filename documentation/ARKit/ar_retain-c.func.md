@@ -15,6 +15,10 @@ Adds a reference count to an ARKit object.
 extern void *ar_retain(void *object);
 ```
 
+## Parameters
+
+- `object`: An ARKit.framework object.
+
 ## See Also
 
 ### Memory Management

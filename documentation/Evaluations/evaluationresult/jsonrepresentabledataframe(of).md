@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Transforms a DataFrame into one with column types compatible with JSON representation.
+Transforms a data frame into one with column types compatible with JSON representation.
 
 **Availability**:
 - iOS 27.0+
@@ -23,7 +23,7 @@ func jsonRepresentableDataFrame(of kind: EvaluationResult.DataFrameKind) throws 
 
 ## Return Value
 
-A new DataFrame with JSON-serializable column types.
+A new [`DataFrame`](../../TabularData/dataframe.md) with JSON-serializable column types.
 
 ## Discussion
 
@@ -31,7 +31,7 @@ The detailed branch always excludes the `Transcript` column from this public hel
 
 ## Parameters
 
-- `kind`: Whether to convert the summary or detailed DataFrame.
+- `kind`: Whether to convert the summary or detailed data frame.
 
 ## See Also
 

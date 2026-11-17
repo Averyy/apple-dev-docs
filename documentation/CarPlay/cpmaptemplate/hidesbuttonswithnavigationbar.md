@@ -27,11 +27,13 @@ The default is [`true`](../../Swift/true.md).
 
 ## See Also
 
-### Configuring Map Templates
+### Configuring the map template
 - [var automaticallyHidesNavigationBar: Bool](./automaticallyhidesnavigationbar.md)
   A Boolean value that indicates whether the template should automatically hide the navigation bar.
 - [var guidanceBackgroundColor: UIColor](./guidancebackgroundcolor.md)
   The background color the map template uses when displaying guidance.
+- [var mapButtons: [CPMapButton]](./mapbuttons.md)
+  An array of map buttons on the trailing bottom corner of the map template.
 
 
 ---

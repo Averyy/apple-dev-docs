@@ -23,7 +23,7 @@ protocol PhoneEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var audioVisualMode: some AppSchemaEnum](./phoneenum/audiovisualmode.md)
-  An enum schema for an audio visual mode parameter.
+  An enum schema for an audio visual mode.
 
 ## Relationships
 
@@ -36,7 +36,7 @@ protocol PhoneEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var audioVisualMode: some AppSchemaEnum](./phoneenum/audiovisualmode.md)
-  An enum schema for an audio visual mode parameter.
+  An enum schema for an audio visual mode.
 
 
 ---

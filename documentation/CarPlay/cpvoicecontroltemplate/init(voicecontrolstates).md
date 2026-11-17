@@ -35,7 +35,7 @@ When presenting the voice control template for the first time, the template defa
 
 ## See Also
 
-### Creating a Voice Control Template
+### Creating a voice control template
 - [class CPVoiceControlState](../cpvoicecontrolstate.md)
   A voice control state containing title variants and images for use by a voice control template.
 

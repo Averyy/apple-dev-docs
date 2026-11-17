@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The Now Playing template’s playback control buttons.
+Additional app-specific playback controls to display in the lower region of the Now Playing interface.
 
 **Availability**:
 - iOS 14.0+
@@ -23,27 +23,15 @@ var nowPlayingButtons: [CPNowPlayingButton] { get }
 
 ## Discussion
 
-You use the [`updateNowPlayingButtons(_:)`](./updatenowplayingbuttons%28_%29.md) method to provide a maximum of five playback control buttons. The template arranges the buttons using the array’s order, from the leading edge of the CarPlay screen to the trailing edge.
+This property contains the buttons for any additional features your app supports during playback. The template places the buttons in the lower region of the interface starting at the leading edge, and displays them in the same order as they appear in the array.
+
+The default value of this property is an empty array. To specify buttons for your interface, call the [`updateNowPlayingButtons(_:)`](./updatenowplayingbuttons%28_%29.md) method. For example, you might include buttons to shuffle the queued songs, repeat songs, or change the playback rate.
 
 ## See Also
 
-### Managing the Template’s Buttons
+### Adding app-specific controls
 - [func updateNowPlayingButtons([CPNowPlayingButton])](./updatenowplayingbuttons%28_%29.md)
-  Updates the playback control buttons the template displays.
-- [class CPNowPlayingButton](../cpnowplayingbutton.md)
-  The abstract base class that Now Playing template buttons use.
-- [class CPNowPlayingImageButton](../cpnowplayingimagebutton.md)
-  A button that displays an image.
-- [class CPNowPlayingAddToLibraryButton](../cpnowplayingaddtolibrarybutton.md)
-  A button for adding the current playing item to a collection.
-- [class CPNowPlayingMoreButton](../cpnowplayingmorebutton.md)
-  A button for presenting more options to the user.
-- [class CPNowPlayingPlaybackRateButton](../cpnowplayingplaybackratebutton.md)
-  A button for cycling through the available playback rates.
-- [class CPNowPlayingRepeatButton](../cpnowplayingrepeatbutton.md)
-  A button for cycling through the available repeat modes.
-- [class CPNowPlayingShuffleButton](../cpnowplayingshufflebutton.md)
-  A button for cycling through the available shuffle modes.
+  Updates the app-specific playback controls that appear in the lower region of the Now Playing interface.
 
 
 ---

@@ -24,7 +24,7 @@ var currentLaneGuidance: CPLaneGuidance { get }
 
 ## See Also
 
-### Properties
+### Getting route details
 - [var currentManeuvers: [CPManeuver]](./currentmaneuvers.md)
   An array of maneuver objects that describes the current maneuvers.
 - [var laneGuidances: [CPLaneGuidance]](./laneguidances.md)

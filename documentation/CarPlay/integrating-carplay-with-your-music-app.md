@@ -20,7 +20,7 @@ CarPlay Music is a sample music app that demonstrates how to display a custom UI
 
 To configure the sample code project, perform the following:
 
-1. Complete the steps in [Requesting CarPlay Entitlements](./requesting-carplay-entitlements.md) to request the CarPlay audio entitlement and configure the Xcode project.
+1. Complete the steps in [Requesting CarPlay Entitlements](./preparing-your-ios-app-for-carplay-development.md) to request the CarPlay audio entitlement and configure the Xcode project.
 2. Create a key and developer token for the [MusicKit](https://developer.apple.com/musickit) service. For more information, see [Getting Keys and Creating Tokens](../AppleMusicAPI/generating-developer-tokens.md).
 3. Update the `developerToken` variable in the `AppleMusicAPIController.swift` file to use the developer token you create.
 
@@ -121,9 +121,9 @@ self.nowPlayingItemObserver = NotificationCenter.default.addObserver(
 
 ## See Also
 
-### Audio
-- [class CPNowPlayingTemplate](./cpnowplayingtemplate.md)
-  A shared system template that displays Now Playing information.
+### Essentials
+- [CarPlay Audio App](../BundleResources/entitlements/com.apple.developer.carplay-audio.md)
+  A Boolean value that indicates whether the CarPlay app plays audio.
 
 
 ---

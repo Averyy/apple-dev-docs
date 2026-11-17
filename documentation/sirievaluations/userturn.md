@@ -18,11 +18,15 @@ A single utterance a person says, with what you expect Siri to do in response.
 struct UserTurn
 ```
 
+## Mentions
+
+- [Evaluating your app’s integration with Siri](./evaluating-your-apps-integration-with-siri.md)
+
 ## Overview
 
 A user turn is one thing the person says to Siri. Create a turn with only an utterance to give Siri context for a later turn, or add a closure of expectations to check what Siri does in response. A turn accepts [`Calls`](./calls.md), [`Finds`](./finds.md), [`OnScreen`](./onscreen.md), [`Loads`](./loads.md), and [`SiriResponse`](./siriresponse.md) expectations. It compares them only with that turn, so something Siri does in another turn can’t satisfy them.
 
-Each turn has an [`id`](./userturn/id.md). After a run, the framework matches each action Siri performs to its turn by identifier. A run that stops early never checks one turn’s expectations against another turn.
+Each turn has an [`id`](./userturn/id.md). The framework records what Siri does during each turn under that turn’s identifier, so a run that stops early never checks one turn’s expectations against another turn. Make each turn its own `UserTurn` value. Turns that share an identifier, such as one `UserTurn` listed twice, are all checked against the first one’s run.
 
 The following shows a turn that expects Siri to start a science quiz, not to create a reminder, and to include the name of the topic in its reply:
 
@@ -31,19 +35,19 @@ let quizExampleIntents = IntentDefinitions(bundleIdentifier: "com.example.QuizEx
 let startQuizIntent = quizExampleIntents.intents["StartQuizIntent"]
 let createQuizReminderIntent = quizExampleIntents.intents["CreateQuizReminderIntent"]
 
-UserTurn("In QuizExample, start a science quiz with 5 questions") {
+UserTurn("In QuizExample, start a Science quiz with 5 questions.") {
     Calls {
         startQuizIntent
             .expect(topic: .equals("Science"))
     }
 
-    // Fails if Siri runs or asks the person to confirm the intent.
+    // Fails if the intent runs or fails, or if Siri asks the person to confirm it.
     Calls(.disallowed) {
         createQuizReminderIntent
     }
 
     // Checks if the reply names the topic.
-    SiriResponse(.contains("Science"))
+    SiriResponse(.contains("science", caseSensitive: false))
 }
 ```
 

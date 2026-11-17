@@ -198,7 +198,7 @@
     },
     "https://developer.apple.com/documentation/foundationmodels/dynamicgenerationschema/init(name:description:representnilexplicitlyingeneratedcontent:properties:)": {
       "file_path": "documentation/FoundationModels/dynamicgenerationschema/init(name,description,representnilexplicitlyingeneratedcontent,properties).md",
-      "hash": "59d64454340cd45604c9f3a7f585754bbc3c3e3662251bd29f4dd7862236fd1d"
+      "hash": "71e0e3499542a1323729117e8127b412216175afa2d51919fca5eb01d53811f5"
     },
     "https://developer.apple.com/documentation/foundationmodels/dynamicgenerationschema/init(referenceto:)": {
       "file_path": "documentation/FoundationModels/dynamicgenerationschema/init(referenceto).md",
@@ -746,7 +746,7 @@
     },
     "https://developer.apple.com/documentation/foundationmodels/generationschema/init(type:description:representnilexplicitlyingeneratedcontent:properties:)": {
       "file_path": "documentation/FoundationModels/generationschema/init(type,description,representnilexplicitlyingeneratedcontent,properties).md",
-      "hash": "c7b40a7402838359f1db3b1fcff81a8ff24cf736ac5bed511d673122e2a4dd39"
+      "hash": "61b13e8d3b13be502abe699cf796207ef96c9f1e1b3d19f1ce0b2091e4eb1dc7"
     },
     "https://developer.apple.com/documentation/foundationmodels/generationschema/name": {
       "file_path": "documentation/FoundationModels/generationschema/name.md",
@@ -1974,11 +1974,11 @@
     },
     "https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:dynamicinstructions:history:)": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,dynamicinstructions,history).md",
-      "hash": "f509c7fdfbc416e7e84f45e43c00e08323537e7ba22438aaace0a98422737dbb"
+      "hash": "1dbdd94aeea21ae8fdd69d93231a002de3223a2233eb4471e1a5a1ed563a7238"
     },
     "https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:)": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,instructions).md",
-      "hash": "c985566f25fcf59e31a48269c63dfb94f6790f21f90a49bcb0eaa1c90f851b2b"
+      "hash": "32d0f6e08bef60087ca3d0e2cf2d2f0bd2af8319493d4fb1d55cf7b737aeafee"
     },
     "https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:)-1en3z": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,instructions)-1en3z.md",
@@ -1986,11 +1986,11 @@
     },
     "https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:)-2puiq": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,instructions)-2puiq.md",
-      "hash": "a78bfd33977599bcb806878b1824acecf65a22589debfbed8f41109289435162"
+      "hash": "4ee61cc877cd9b628497c2323904b4c6054d4f91e54cf5d68607c1cdb6197ce4"
     },
     "https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:)-2q75q": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,instructions)-2q75q.md",
-      "hash": "2d0da3d385b0520f28d01efc5d41d3948bee5b35cae93d67cbc095261baf1046"
+      "hash": "dad87a28458e0e05a58ae05080d28311a815df793c37bfe7e28b9370497c2de9"
     },
     "https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:)-2vug": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,instructions)-2vug.md",
@@ -2002,7 +2002,7 @@
     },
     "https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:transcript:)": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,transcript).md",
-      "hash": "c8edc16f9294a9795fe7a94d252ba6800751df004568b70e74d32b0f0b84b2fb"
+      "hash": "3d1c6df670281a0815b5628841f697d8d7bdc6881db831d388e4b7ec0bca59a4"
     },
     "https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:transcript:)-7dxeh": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,transcript)-7dxeh.md",
@@ -2402,7 +2402,7 @@
     },
     "https://developer.apple.com/documentation/foundationmodels/origami-crafting-a-dynamic-tutorial-for-apple-intelligence": {
       "file_path": "documentation/FoundationModels/origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md",
-      "hash": "39a031b39cfbd4277da8232dff1e297d2b03880693c1534c86fb79883626b1bd"
+      "hash": "d1ed094fb797782e11386c6ff78b354686913015cb37f8dadcea42250f08e4b9"
     },
     "https://developer.apple.com/documentation/foundationmodels/privatecloudcomputelanguagemodel": {
       "file_path": "documentation/FoundationModels/privatecloudcomputelanguagemodel.md",
@@ -2698,75 +2698,75 @@
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel.md",
-      "hash": "e359d150a0ce9e56b19ad3cc7f12992b1141b2044208409f46d36973ef131967"
+      "hash": "3a8f8ddf6f96dfb8b8ba517973428b832dcd400443d14f76f2aa5a73da485f46"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum.md",
-      "hash": "b92fae80abd34cc790065375a8add317749769bab5e39cc4a35a57588a703c2a"
+      "hash": "38efd6edf35e358b1e1790fcabcb06ffa7bb761841a5819202ebe8b2d7d67c77"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/available": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/available.md",
-      "hash": "d985a9e00d532519488a98dccc7370bee601e29e98f61fdf967c9ea7b129088d"
+      "hash": "4ed73e7f89f6536aaaeab0645a664f8d04667b572dc7d235f0ada8df2aa6757b"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/unavailable(_:)": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/unavailable(_).md",
-      "hash": "035dbb4f813ce7eb5c233df57db199c5982ca0d7eae3eac4d61d4ec09f664fb4"
+      "hash": "ec39b5035959b249c52eb152213de2103f106ec96603cd525249e54a9d6693f0"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/unavailablereason": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/unavailablereason.md",
-      "hash": "9d49a2be046ecf8bc5bedbb71d43e6cb3d00dc23e53cb14ddcf50050e721e266"
+      "hash": "517c6c3404ceab92016e486ae3a2f7392fd90a3c99af28d82e0b554dd87778bb"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/unavailablereason/appleintelligencenotenabled": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/unavailablereason/appleintelligencenotenabled.md",
-      "hash": "b11879ce9699d1dc75984c82ccbd3838bd4d78b7a573b06add8dc249bb920d41"
+      "hash": "ccc09a5a9911e6c74a7cb96e2cda7d7bff187164fab31e6ab29d44532f48210e"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/unavailablereason/devicenoteligible": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/unavailablereason/devicenoteligible.md",
-      "hash": "2d4e89073616fea77af1852927e4e9ca3871b7468b98596fa248842b3cb7c1c0"
+      "hash": "3f5a3e46077abbdb662845e03da041d7c8a42e2f306a962fd3311df9cb511b55"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/unavailablereason/modelnotready": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/unavailablereason/modelnotready.md",
-      "hash": "33d241fb6efbe59a76e0fafc050436af77b4c8156257db9e482bb27aa84af9f0"
+      "hash": "54170725419f8bf0c50348632189cd5d34f264b69b3c937ecefadf302e69cad3"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.property": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.property.md",
-      "hash": "9acf016a0915b103cfaf03aba2ab03104a8e22e7854b74439d6ab8487fe3cf9d"
+      "hash": "b807d1db75f47b0f5051d993f7e80925e1f1dbb10458320e9ca16ba1e1b0a127"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/contextsize": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/contextsize.md",
-      "hash": "b34da30a49c4cddcbcf9c69a737444fe5ff2e04c6ea2708c4d13b5ee586514ae"
+      "hash": "0c0cb28a9ccfdaa264dec756cded1121b475a65015912cce3c4a8c6e06125c7c"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/default": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/default.md",
-      "hash": "ac944926080356c9f6124903685792fc9d440bd1e25b1ebeacbfc795e6de7f17"
+      "hash": "60378b864c2a0e3bfb0f999c678d060fc2d48314000f8d2a68e26835ee7bf3c5"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/error": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/error.md",
-      "hash": "da249b933bbf4ea3d7eb96dacad6892ebcbd0a3d7691ec79561ed1092f31ca0b"
+      "hash": "e76cd80bfbd89c05b6978e6bc023cc7754bcb6c8b22390f2728cee844aadf0f7"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/error/assetsunavailable": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/error/assetsunavailable.md",
-      "hash": "81ffe2e5b36c47406c04ff8fc867691053d887af613388e6f4c56cad0686d50c"
+      "hash": "9ff0c79491dff283bdf72066798e6322e5c4f2611323f74c05b5894face5e14f"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/error/assetsunavailable(_:)": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/error/assetsunavailable(_).md",
-      "hash": "60bbcd6482723af65ae0250f3ab061e9bc71f61c0df8cec559588eea4b606e3f"
+      "hash": "18249ee444c8c14e32a7544470b4599c9248949534941a4c5dcbaac4f3b073f4"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/error/assetsunavailable/debugdescription": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/error/assetsunavailable/debugdescription.md",
-      "hash": "802d691e0cece7cd4ad511323f2d6d0a3889a685a0eff802d31c3c8dd6b8e992"
+      "hash": "de2277a356f793d795d09ef8a1308fba4354edf61aea38b0924e7b36244f4ce1"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/error/assetsunavailable/init(debugdescription:)": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/error/assetsunavailable/init(debugdescription).md",
-      "hash": "152f313fc27636470042397a69a54e73ec943a6e6b8ee6237fe3208937b5f996"
+      "hash": "360a8872a050c8ee87533de36044f35422e3a28db99f80596d47b3362fa8edee"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/executor": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/executor.md",
-      "hash": "1f8c533328d0810e216f74816016ffae76d6906c171f039b64c85a6ade173c0a"
+      "hash": "25223066e8e7a32ec6191171e6c2ccd9d7fb2c2aef1ec84c0651c65fa80b8276"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/executor/configuration": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/executor/configuration.md",
-      "hash": "4619801ff2fb35fbf4db4b4d07669db863d504dbdd8f737d785521500d60d7e2"
+      "hash": "16434f944bff958b1668ad7fc57f13631697bf02813ea2c05129a78511de14a3"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/executor/languagemodelexecutor-implementations": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/executor/languagemodelexecutor-implementations.md",
@@ -2774,27 +2774,27 @@
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/executor/model": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/executor/model.md",
-      "hash": "358feb401a94c13aff04f6ca1e353a6dda1bd562660331c89ca9c28acc5256b2"
+      "hash": "41ec94139f13e788cf455af22a35928919ae75c1c4c7f080a6531193b8aaef19"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/guardrails": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/guardrails.md",
-      "hash": "c1c823153e512775d1a27f71f4146f25c8f752b291004ba1f39570b2cab32626"
+      "hash": "f6d467e8c26545040bd6cc4fad2f20c333043f219e227ce8ce333f60fd93a8bc"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/guardrails/default": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/guardrails/default.md",
-      "hash": "4b1d1e85adeb4fc344fda5ae8f9a797c5c503cf435aa625abd74de8794657ab5"
+      "hash": "d1723dd6d8455291399b73f786a8d5a2638041c93a79c3dde965a1b67eb59453"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/guardrails/permissivecontenttransformations": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/guardrails/permissivecontenttransformations.md",
-      "hash": "a167d3573c76ec58487ee42c97309dfbf06f223ae2dbc8593db1a94a2af13361"
+      "hash": "58e8ad6d7e6b70e409df21c5a6c0d51d441054334f1cdb686cc064784d7af137"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/init(usecase:guardrails:)": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/init(usecase,guardrails).md",
-      "hash": "58de5818f1f1e15961cc30125e6cd6d62b762f186a8761c96655a5a4d9b05abc"
+      "hash": "d18fbb9166211015e415e955d887409be09d01ca037c68ce9d9d2f01261c0742"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/isavailable": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/isavailable.md",
-      "hash": "c8c0ba779a622b297a337582f00b9a16f8d254395b1ef700c6db31188881d443"
+      "hash": "c1ac64d51a97e1a4f4838317930e299488060a478bdccc76c19a4e8549f97310"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/languagemodel-implementations": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/languagemodel-implementations.md",
@@ -2802,63 +2802,63 @@
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/supportedlanguages": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/supportedlanguages.md",
-      "hash": "1bd13df9018985082ac0ee4a39cb5e6525e0c499631de8d0372720caa71788ea"
+      "hash": "26dfc3dc7c8759008025aa0100f7e97712d2975ad64481fa742b165a39cf00cf"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/supportslocale(_:)": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/supportslocale(_).md",
-      "hash": "df62d18cb6abd226e81560d368b1a20f3a53ab10339517b22f8be46192f53bd6"
+      "hash": "5658e34302f088ff2175b1d0a73e52a8f293fbf15f7ff0166aeababbcb0c5412"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/tokencount(for:)": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/tokencount(for).md",
-      "hash": "958d6e31af3962b8660a184d64330304dacc3864553e752c4f74d9d7f693d8e4"
+      "hash": "9fdaec41b14c2674d50b5475e8ddbf5504565c2c71e5334ed99b49f4cd2f398e"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/tokencount(for:)-58ro9": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/tokencount(for)-58ro9.md",
-      "hash": "168053bf4dea209bcf38babe8039f7677b1308e2aac005ab699ef7eefebfd361"
+      "hash": "a8819fe11214e9d972fefc5fcbcfdbfd606719a55ca8edf633b6af38f594a0ec"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/tokencount(for:)-7j36t": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/tokencount(for)-7j36t.md",
-      "hash": "e422da01a8b1003ac115760119bfc1b7aded2cd29750842241deb7a5226e8351"
+      "hash": "1affad65fd6d3d8491fead47d54bc0d16bc2096a73591a0c24da4dcb73afd9a9"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/tokencount(for:)-8ywjk": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/tokencount(for)-8ywjk.md",
-      "hash": "c9c0d09bbc40d116da2f198dbbb653559ef719d12e8eb14c64397de4078f3d7b"
+      "hash": "74d044fc88b018a0cb2cba160a3601625c0bceaef7e7cf79516c8421927f66ce"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/tokencount(for:)-9qgvw": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/tokencount(for)-9qgvw.md",
-      "hash": "ef0298475f020a6bbda0d5f670bf55755978d3da9b73e69248046f0e0da772ba"
+      "hash": "6dfd07d4e0f682c03a9686ffeea0131b2279768da5f4b01db5093a104a76df6c"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/usecase.md",
-      "hash": "d822b090d14f6ebbe9a769e8d751fe62c3c9a8be45ca444bec3beac471c537d3"
+      "hash": "41361085ed1f067e4a01dffaafe820b0c2ba837fca0309ec939705f730fe6abb"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/contenttagging": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/usecase/contenttagging.md",
-      "hash": "60dadf1b86414c22410787b73fc6f49ea0d065da58dcd1ee05c890ff7c3a3b77"
+      "hash": "ad4354538612d5f34b22cff96c9802ec5686d0f6ebb2a9b0bacdd63d75e30095"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/general": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/usecase/general.md",
-      "hash": "47eb0599be6877c2e95e6d26a87ec6f5d74b11b71f0faa5a6ea36d78610a27dc"
+      "hash": "2ed53c82e2071637f664c20ac1eead1b4989c3e359d5489d7cead0ab0570185e"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/variant-swift.property": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/variant-swift.property.md",
-      "hash": "1071eeefbf640444fe5c279219a7639adad55c9dcc70071635e803310fc34bd6"
+      "hash": "47e6b656018331980a62cd3208c0d2590120b4af0b537ee3d47f88fa46045374"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/variant-swift.struct": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/variant-swift.struct.md",
-      "hash": "abdd6360459c3be60f6abead1cc0c5bf077f1afcbaea96ddc01bd6d9446e18ae"
+      "hash": "e7ecda43d3a6896cbfa0f4b72b7571e3e8445984dcd3beb794001b2b7534fb80"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/variant-swift.struct/core3": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/variant-swift.struct/core3.md",
-      "hash": "b23167cd9a872e7e436b305e469999689736427efbdf5036e151b970b4915646"
+      "hash": "f0d026c98223248a32c5fdcc76464c911847ee77f7caa25ab3c18d28aad7d3dd"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/variant-swift.struct/coreadvanced3": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/variant-swift.struct/coreadvanced3.md",
-      "hash": "16c13251c7911693d4eeb1df40dabb975913272205ec7682403d1f4d92ed902c"
+      "hash": "282089f0452cfa05e1bbf9150f263098040426c681f8989c785451781d6987f1"
     },
     "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/variant-swift.struct/displayname": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/variant-swift.struct/displayname.md",
-      "hash": "930aefd6a0fb61b760005a4d8e713efd0a40b5e342ce6f146acdffdce0866a90"
+      "hash": "72ef8605c3e6a8eba262b6d4d8007de72aaf3035be2ad27640cecb3a434c17c7"
     },
     "https://developer.apple.com/documentation/foundationmodels/tool": {
       "file_path": "documentation/FoundationModels/tool.md",
@@ -3618,7 +3618,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/dynamicgenerationschema/init(name:description:representnilexplicitlyingeneratedcontent:properties:).json": {
       "file_path": "documentation/FoundationModels/dynamicgenerationschema/init(name,description,representnilexplicitlyingeneratedcontent,properties).md",
-      "hash": "59d64454340cd45604c9f3a7f585754bbc3c3e3662251bd29f4dd7862236fd1d"
+      "hash": "71e0e3499542a1323729117e8127b412216175afa2d51919fca5eb01d53811f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/dynamicgenerationschema/init(referenceto:).json": {
       "file_path": "documentation/FoundationModels/dynamicgenerationschema/init(referenceto).md",
@@ -4166,7 +4166,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/generationschema/init(type:description:representnilexplicitlyingeneratedcontent:properties:).json": {
       "file_path": "documentation/FoundationModels/generationschema/init(type,description,representnilexplicitlyingeneratedcontent,properties).md",
-      "hash": "c7b40a7402838359f1db3b1fcff81a8ff24cf736ac5bed511d673122e2a4dd39"
+      "hash": "61b13e8d3b13be502abe699cf796207ef96c9f1e1b3d19f1ce0b2091e4eb1dc7"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/generationschema/name.json": {
       "file_path": "documentation/FoundationModels/generationschema/name.md",
@@ -5394,7 +5394,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodelsession/init(model:dynamicinstructions:history:).json": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,dynamicinstructions,history).md",
-      "hash": "f509c7fdfbc416e7e84f45e43c00e08323537e7ba22438aaace0a98422737dbb"
+      "hash": "1dbdd94aeea21ae8fdd69d93231a002de3223a2233eb4471e1a5a1ed563a7238"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:)-1en3z.json": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,instructions)-1en3z.md",
@@ -5402,11 +5402,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:)-2puiq.json": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,instructions)-2puiq.md",
-      "hash": "a78bfd33977599bcb806878b1824acecf65a22589debfbed8f41109289435162"
+      "hash": "4ee61cc877cd9b628497c2323904b4c6054d4f91e54cf5d68607c1cdb6197ce4"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:)-2q75q.json": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,instructions)-2q75q.md",
-      "hash": "2d0da3d385b0520f28d01efc5d41d3948bee5b35cae93d67cbc095261baf1046"
+      "hash": "dad87a28458e0e05a58ae05080d28311a815df793c37bfe7e28b9370497c2de9"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:)-2vug.json": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,instructions)-2vug.md",
@@ -5418,7 +5418,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:).json": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,instructions).md",
-      "hash": "c985566f25fcf59e31a48269c63dfb94f6790f21f90a49bcb0eaa1c90f851b2b"
+      "hash": "32d0f6e08bef60087ca3d0e2cf2d2f0bd2af8319493d4fb1d55cf7b737aeafee"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodelsession/init(model:tools:transcript:)-7dxeh.json": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,transcript)-7dxeh.md",
@@ -5426,7 +5426,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodelsession/init(model:tools:transcript:).json": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(model,tools,transcript).md",
-      "hash": "c8edc16f9294a9795fe7a94d252ba6800751df004568b70e74d32b0f0b84b2fb"
+      "hash": "3d1c6df670281a0815b5628841f697d8d7bdc6881db831d388e4b7ec0bca59a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodelsession/init(profile:history:).json": {
       "file_path": "documentation/FoundationModels/languagemodelsession/init(profile,history).md",
@@ -5822,7 +5822,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/origami-crafting-a-dynamic-tutorial-for-apple-intelligence.json": {
       "file_path": "documentation/FoundationModels/origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md",
-      "hash": "39a031b39cfbd4277da8232dff1e297d2b03880693c1534c86fb79883626b1bd"
+      "hash": "d1ed094fb797782e11386c6ff78b354686913015cb37f8dadcea42250f08e4b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/privatecloudcomputelanguagemodel.json": {
       "file_path": "documentation/FoundationModels/privatecloudcomputelanguagemodel.md",
@@ -6118,75 +6118,75 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel.md",
-      "hash": "e359d150a0ce9e56b19ad3cc7f12992b1141b2044208409f46d36973ef131967"
+      "hash": "3a8f8ddf6f96dfb8b8ba517973428b832dcd400443d14f76f2aa5a73da485f46"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum.md",
-      "hash": "b92fae80abd34cc790065375a8add317749769bab5e39cc4a35a57588a703c2a"
+      "hash": "38efd6edf35e358b1e1790fcabcb06ffa7bb761841a5819202ebe8b2d7d67c77"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/available.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/available.md",
-      "hash": "d985a9e00d532519488a98dccc7370bee601e29e98f61fdf967c9ea7b129088d"
+      "hash": "4ed73e7f89f6536aaaeab0645a664f8d04667b572dc7d235f0ada8df2aa6757b"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/unavailable(_:).json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/unavailable(_).md",
-      "hash": "035dbb4f813ce7eb5c233df57db199c5982ca0d7eae3eac4d61d4ec09f664fb4"
+      "hash": "ec39b5035959b249c52eb152213de2103f106ec96603cd525249e54a9d6693f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/unavailablereason.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/unavailablereason.md",
-      "hash": "9d49a2be046ecf8bc5bedbb71d43e6cb3d00dc23e53cb14ddcf50050e721e266"
+      "hash": "517c6c3404ceab92016e486ae3a2f7392fd90a3c99af28d82e0b554dd87778bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/unavailablereason/appleintelligencenotenabled.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/unavailablereason/appleintelligencenotenabled.md",
-      "hash": "b11879ce9699d1dc75984c82ccbd3838bd4d78b7a573b06add8dc249bb920d41"
+      "hash": "ccc09a5a9911e6c74a7cb96e2cda7d7bff187164fab31e6ab29d44532f48210e"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/unavailablereason/devicenoteligible.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/unavailablereason/devicenoteligible.md",
-      "hash": "2d4e89073616fea77af1852927e4e9ca3871b7468b98596fa248842b3cb7c1c0"
+      "hash": "3f5a3e46077abbdb662845e03da041d7c8a42e2f306a962fd3311df9cb511b55"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum/unavailablereason/modelnotready.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.enum/unavailablereason/modelnotready.md",
-      "hash": "33d241fb6efbe59a76e0fafc050436af77b4c8156257db9e482bb27aa84af9f0"
+      "hash": "54170725419f8bf0c50348632189cd5d34f264b69b3c937ecefadf302e69cad3"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/availability-swift.property.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/availability-swift.property.md",
-      "hash": "9acf016a0915b103cfaf03aba2ab03104a8e22e7854b74439d6ab8487fe3cf9d"
+      "hash": "b807d1db75f47b0f5051d993f7e80925e1f1dbb10458320e9ca16ba1e1b0a127"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/contextsize.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/contextsize.md",
-      "hash": "b34da30a49c4cddcbcf9c69a737444fe5ff2e04c6ea2708c4d13b5ee586514ae"
+      "hash": "0c0cb28a9ccfdaa264dec756cded1121b475a65015912cce3c4a8c6e06125c7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/default.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/default.md",
-      "hash": "ac944926080356c9f6124903685792fc9d440bd1e25b1ebeacbfc795e6de7f17"
+      "hash": "60378b864c2a0e3bfb0f999c678d060fc2d48314000f8d2a68e26835ee7bf3c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/error.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/error.md",
-      "hash": "da249b933bbf4ea3d7eb96dacad6892ebcbd0a3d7691ec79561ed1092f31ca0b"
+      "hash": "e76cd80bfbd89c05b6978e6bc023cc7754bcb6c8b22390f2728cee844aadf0f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/error/assetsunavailable(_:).json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/error/assetsunavailable(_).md",
-      "hash": "60bbcd6482723af65ae0250f3ab061e9bc71f61c0df8cec559588eea4b606e3f"
+      "hash": "18249ee444c8c14e32a7544470b4599c9248949534941a4c5dcbaac4f3b073f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/error/assetsunavailable.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/error/assetsunavailable.md",
-      "hash": "81ffe2e5b36c47406c04ff8fc867691053d887af613388e6f4c56cad0686d50c"
+      "hash": "9ff0c79491dff283bdf72066798e6322e5c4f2611323f74c05b5894face5e14f"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/error/assetsunavailable/debugdescription.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/error/assetsunavailable/debugdescription.md",
-      "hash": "802d691e0cece7cd4ad511323f2d6d0a3889a685a0eff802d31c3c8dd6b8e992"
+      "hash": "de2277a356f793d795d09ef8a1308fba4354edf61aea38b0924e7b36244f4ce1"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/error/assetsunavailable/init(debugdescription:).json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/error/assetsunavailable/init(debugdescription).md",
-      "hash": "152f313fc27636470042397a69a54e73ec943a6e6b8ee6237fe3208937b5f996"
+      "hash": "360a8872a050c8ee87533de36044f35422e3a28db99f80596d47b3362fa8edee"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/executor.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/executor.md",
-      "hash": "1f8c533328d0810e216f74816016ffae76d6906c171f039b64c85a6ade173c0a"
+      "hash": "25223066e8e7a32ec6191171e6c2ccd9d7fb2c2aef1ec84c0651c65fa80b8276"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/executor/configuration.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/executor/configuration.md",
-      "hash": "4619801ff2fb35fbf4db4b4d07669db863d504dbdd8f737d785521500d60d7e2"
+      "hash": "16434f944bff958b1668ad7fc57f13631697bf02813ea2c05129a78511de14a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/executor/languagemodelexecutor-implementations.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/executor/languagemodelexecutor-implementations.md",
@@ -6194,27 +6194,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/executor/model.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/executor/model.md",
-      "hash": "358feb401a94c13aff04f6ca1e353a6dda1bd562660331c89ca9c28acc5256b2"
+      "hash": "41ec94139f13e788cf455af22a35928919ae75c1c4c7f080a6531193b8aaef19"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/guardrails.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/guardrails.md",
-      "hash": "c1c823153e512775d1a27f71f4146f25c8f752b291004ba1f39570b2cab32626"
+      "hash": "f6d467e8c26545040bd6cc4fad2f20c333043f219e227ce8ce333f60fd93a8bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/guardrails/default.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/guardrails/default.md",
-      "hash": "4b1d1e85adeb4fc344fda5ae8f9a797c5c503cf435aa625abd74de8794657ab5"
+      "hash": "d1723dd6d8455291399b73f786a8d5a2638041c93a79c3dde965a1b67eb59453"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/guardrails/permissivecontenttransformations.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/guardrails/permissivecontenttransformations.md",
-      "hash": "a167d3573c76ec58487ee42c97309dfbf06f223ae2dbc8593db1a94a2af13361"
+      "hash": "58e8ad6d7e6b70e409df21c5a6c0d51d441054334f1cdb686cc064784d7af137"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/init(usecase:guardrails:).json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/init(usecase,guardrails).md",
-      "hash": "58de5818f1f1e15961cc30125e6cd6d62b762f186a8761c96655a5a4d9b05abc"
+      "hash": "d18fbb9166211015e415e955d887409be09d01ca037c68ce9d9d2f01261c0742"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/isavailable.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/isavailable.md",
-      "hash": "c8c0ba779a622b297a337582f00b9a16f8d254395b1ef700c6db31188881d443"
+      "hash": "c1ac64d51a97e1a4f4838317930e299488060a478bdccc76c19a4e8549f97310"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/languagemodel-implementations.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/languagemodel-implementations.md",
@@ -6222,63 +6222,63 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/supportedlanguages.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/supportedlanguages.md",
-      "hash": "1bd13df9018985082ac0ee4a39cb5e6525e0c499631de8d0372720caa71788ea"
+      "hash": "26dfc3dc7c8759008025aa0100f7e97712d2975ad64481fa742b165a39cf00cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/supportslocale(_:).json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/supportslocale(_).md",
-      "hash": "df62d18cb6abd226e81560d368b1a20f3a53ab10339517b22f8be46192f53bd6"
+      "hash": "5658e34302f088ff2175b1d0a73e52a8f293fbf15f7ff0166aeababbcb0c5412"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/tokencount(for:)-58ro9.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/tokencount(for)-58ro9.md",
-      "hash": "168053bf4dea209bcf38babe8039f7677b1308e2aac005ab699ef7eefebfd361"
+      "hash": "a8819fe11214e9d972fefc5fcbcfdbfd606719a55ca8edf633b6af38f594a0ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/tokencount(for:)-7j36t.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/tokencount(for)-7j36t.md",
-      "hash": "e422da01a8b1003ac115760119bfc1b7aded2cd29750842241deb7a5226e8351"
+      "hash": "1affad65fd6d3d8491fead47d54bc0d16bc2096a73591a0c24da4dcb73afd9a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/tokencount(for:)-8ywjk.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/tokencount(for)-8ywjk.md",
-      "hash": "c9c0d09bbc40d116da2f198dbbb653559ef719d12e8eb14c64397de4078f3d7b"
+      "hash": "74d044fc88b018a0cb2cba160a3601625c0bceaef7e7cf79516c8421927f66ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/tokencount(for:)-9qgvw.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/tokencount(for)-9qgvw.md",
-      "hash": "ef0298475f020a6bbda0d5f670bf55755978d3da9b73e69248046f0e0da772ba"
+      "hash": "6dfd07d4e0f682c03a9686ffeea0131b2279768da5f4b01db5093a104a76df6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/tokencount(for:).json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/tokencount(for).md",
-      "hash": "958d6e31af3962b8660a184d64330304dacc3864553e752c4f74d9d7f693d8e4"
+      "hash": "9fdaec41b14c2674d50b5475e8ddbf5504565c2c71e5334ed99b49f4cd2f398e"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/usecase.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/usecase.md",
-      "hash": "d822b090d14f6ebbe9a769e8d751fe62c3c9a8be45ca444bec3beac471c537d3"
+      "hash": "41361085ed1f067e4a01dffaafe820b0c2ba837fca0309ec939705f730fe6abb"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/usecase/contenttagging.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/usecase/contenttagging.md",
-      "hash": "60dadf1b86414c22410787b73fc6f49ea0d065da58dcd1ee05c890ff7c3a3b77"
+      "hash": "ad4354538612d5f34b22cff96c9802ec5686d0f6ebb2a9b0bacdd63d75e30095"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/usecase/general.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/usecase/general.md",
-      "hash": "47eb0599be6877c2e95e6d26a87ec6f5d74b11b71f0faa5a6ea36d78610a27dc"
+      "hash": "2ed53c82e2071637f664c20ac1eead1b4989c3e359d5489d7cead0ab0570185e"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/variant-swift.property.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/variant-swift.property.md",
-      "hash": "1071eeefbf640444fe5c279219a7639adad55c9dcc70071635e803310fc34bd6"
+      "hash": "47e6b656018331980a62cd3208c0d2590120b4af0b537ee3d47f88fa46045374"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/variant-swift.struct.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/variant-swift.struct.md",
-      "hash": "abdd6360459c3be60f6abead1cc0c5bf077f1afcbaea96ddc01bd6d9446e18ae"
+      "hash": "e7ecda43d3a6896cbfa0f4b72b7571e3e8445984dcd3beb794001b2b7534fb80"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/variant-swift.struct/core3.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/variant-swift.struct/core3.md",
-      "hash": "b23167cd9a872e7e436b305e469999689736427efbdf5036e151b970b4915646"
+      "hash": "f0d026c98223248a32c5fdcc76464c911847ee77f7caa25ab3c18d28aad7d3dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/variant-swift.struct/coreadvanced3.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/variant-swift.struct/coreadvanced3.md",
-      "hash": "16c13251c7911693d4eeb1df40dabb975913272205ec7682403d1f4d92ed902c"
+      "hash": "282089f0452cfa05e1bbf9150f263098040426c681f8989c785451781d6987f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/variant-swift.struct/displayname.json": {
       "file_path": "documentation/FoundationModels/systemlanguagemodel/variant-swift.struct/displayname.md",
-      "hash": "930aefd6a0fb61b760005a4d8e713efd0a40b5e342ce6f146acdffdce0866a90"
+      "hash": "72ef8605c3e6a8eba262b6d4d8007de72aaf3035be2ad27640cecb3a434c17c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/tool.json": {
       "file_path": "documentation/FoundationModels/tool.md",

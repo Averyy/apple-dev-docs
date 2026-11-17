@@ -24,7 +24,11 @@ optional func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoaching
 
 Implement this function to do any custom actions your app requires to begin the AR experience. For example, when coaching is deactivated, your app might restore custom UI.
 
-When the coaching overlay is deactivating, [`isActive`](../arcoachingoverlayview/isactive.md) is [`false`](../../Swift/false.md). If the `animated` property of [`setActive(_:animated:)`](../arcoachingoverlayview/setactive%28_,animated%29.md) is [`true`](../../Swift/true.md), [`isActive`](../arcoachingoverlayview/isactive.md) and [`isHidden`](../../UIKit/uiview/ishidden.md) are [`false`](../../Swift/false.md) while the coaching overlay is fading out. When the coaching overlay is deactivated without animation, or when the animation finishes, ARKit sends a  [`coachingOverlayViewDidDeactivate(_:)`](./coachingoverlayviewdiddeactivate%28_%29.md) notification.
+When the coaching overlay is deactivating, [`isActive`](../arcoachingoverlayview/isactive.md) is [`false`](../../Swift/false.md). If the `animated` property of [`setActive(_:animated:)`](../arcoachingoverlayview/setactive%28_,animated%29.md) is [`true`](../../Swift/true.md), [`isActive`](../arcoachingoverlayview/isactive.md) and [`isHidden`](../../UIKit/uiview/ishidden.md) are [`false`](../../Swift/false.md) while the coaching overlay is fading out. When the coaching overlay is deactivated without animation, or when the animation finishes, ARKit sends a [`coachingOverlayViewDidDeactivate(_:)`](./coachingoverlayviewdiddeactivate%28_%29.md) notification.
+
+## Parameters
+
+- `coachingOverlayView`: The view that was deactivated.
 
 ## See Also
 

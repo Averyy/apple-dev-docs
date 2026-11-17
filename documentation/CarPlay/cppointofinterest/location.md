@@ -23,7 +23,7 @@ var location: MKMapItem { get set }
 
 ## See Also
 
-### Managing the Map Annotation
+### Managing the map annotation
 - [var pinImage: UIImage?](./pinimage.md)
   A custom image that the map annotation displays.
 

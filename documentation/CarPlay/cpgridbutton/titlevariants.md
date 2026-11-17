@@ -27,9 +27,11 @@ When the system displays the button, it selects the title that best fits the ava
 
 ## See Also
 
-### Obtaining Grid Button Information
+### Managing the button content
 - [var image: UIImage](./image.md)
   The image displayed on the button.
+- [func updateImage(UIImage)](./updateimage%28_%29.md)
+- [func updateTitleVariants([String])](./updatetitlevariants%28_%29.md)
 
 
 ---

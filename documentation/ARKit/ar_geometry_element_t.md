@@ -15,6 +15,10 @@ A container for vertex indices of lines or triangles.
 typedef NSObject<OS_ar_geometry_element> * ar_geometry_element_t;
 ```
 
+## Discussion
+
+Describes geometry index data organized as primitives like triangles or lines.
+
 ## See Also
 
 ### Geometry

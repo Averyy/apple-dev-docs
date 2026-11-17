@@ -26,7 +26,7 @@ Add members to this set for each image that ARKit searches for in the user’s e
 
 To define the reference images that this property contains, create an asset catalog in Xcode or create [`ARReferenceImage`](../arreferenceimage.md) objects programmatically. For more information, see [Detecting Images in an AR Experience](../detecting-images-in-an-ar-experience.md).
 
-If you set a nonzero value for [`maximumNumberOfTrackedImages`](../arworldtrackingconfiguration/maximumnumberoftrackedimages.md), ARKit enables image *tracking*, which continuously updates the transform for up to four of the reference image anchors as the session progresses. For an example, see [Tracking and altering images](../tracking-and-altering-images.md).
+If you set a nonzero value for [`maximumNumberOfTrackedImages`](./maximumnumberoftrackedimages.md), ARKit enables image *tracking*, which continuously updates the transform for up to four of the reference image anchors as the session progresses. For an example, see [Tracking and altering images](../tracking-and-altering-images.md).
 
 ### Limit Reference Images for Performance
 

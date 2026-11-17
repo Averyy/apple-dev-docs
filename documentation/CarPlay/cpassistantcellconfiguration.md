@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-An object that provides the configuration attributes for the assistant cell.
+A type that configures a special row in for performing app-related actions using Siri.
 
 **Availability**:
 - iOS 15.0+
@@ -23,26 +23,33 @@ class CPAssistantCellConfiguration
 
 ## Overview
 
-An audio or communication CarPlay app can choose to display an *assistant cell* in a list template that allows the user to interact with the app using Siri. You create an instance of this configuration object that describes the position, visibility, and supported Siri intent, and provide that to your app’s list template using the [`init(title:sections:assistantCellConfiguration:)`](./cplisttemplate/init%28title,sections,assistantcellconfiguration%29.md) initializer or the [`assistantCellConfiguration`](./cplisttemplate/assistantcellconfiguration.md) property.
+The `CPAssistantCellConfiguration` type tells CarPlay how to display the *assistant cell* in a list interface. The assistant cell is a system-provided row that allows people to play audio or video content or start a call using Siri. If you’re building an audio, video, or communication app, you can add this cell to your list to give people the ability a hands-free way to perform these actions.
 
-Your app must include an Intents Extension that handles the intent corresponding to the action you specify in the [`assistantAction`](./cpassistantcellconfiguration/assistantaction.md) property; audio apps must support [`INPlayMediaIntent`](../Intents/inplaymediaintent.md) and communication apps must support [`INStartCallIntent`](../Intents/instartcallintent.md). For more information, see [Creating an Intents App Extension](../SiriKit/creating-an-intents-app-extension.md).
+> ❗ **Important**: The assistant cell is available only in audio, video, and communication apps. Trying to display it in other app types generates a build-time error.
+
+To add an assistant cell to your app’s interface, create a `CPAssistantCellConfiguration` type and configure it with the type of action to perform and the placement of the cell in your list. When your [`CPListTemplate`](./cplisttemplate.md) object contains a cell configuration, the list displays an extra row with instructions on how to perform the action you specified. A person can then use Siri to complete the action and deliver details back to your app.
+
+CarPlay reports Siri-based interactions to your app’s Intents extension, which you implement using [SiriKit](../SiriKit/SiriKit.md). To play a media file from your audio or video app, CarPlay expects this extension to implement the [`INPlayMediaIntent`](../Intents/inplaymediaintent.md) type. To start a call, CarPlay expects the extension to implement the [`INStartCallIntent`](../Intents/instartcallintent.md) type. If your app extension doesn’t implement the expected type, CarPlay raises an exception. For more information about how to implement an Intents extension, see [Creating an Intents App Extension](../SiriKit/creating-an-intents-app-extension.md).
 
 ## Topics
 
-### Creating an Assistant Cell Configuration
+### Creating an assistant cell configuration
 - [init(position: CPListItem.AssistantCellPosition, visibility: CPListItem.AssistantCellVisibility, assistantAction: CPAssistantCellActionType)](./cpassistantcellconfiguration/init%28position,visibility,assistantaction%29.md)
   Creates a configuration object with the specified position, visibility, and action.
-### Getting the Configuration Attributes
+- [init?(coder: NSCoder)](./cpassistantcellconfiguration/init%28coder%29.md)
+### Getting the configuration attributes
+- [var assistantAction: CPAssistantCellActionType](./cpassistantcellconfiguration/assistantaction.md)
+  The action that Siri performs when the user selects the assistant cell.
 - [var position: CPListItem.AssistantCellPosition](./cpassistantcellconfiguration/position.md)
   The position of the assistant cell in the list template.
 - [var visibility: CPListItem.AssistantCellVisibility](./cpassistantcellconfiguration/visibility.md)
   The visibility of the assistant cell in the list template.
-- [var assistantAction: CPAssistantCellActionType](./cpassistantcellconfiguration/assistantaction.md)
-  The action that Siri performs when the user selects the assistant cell.
 - [enum CPAssistantCellActionType](./cpassistantcellactiontype.md)
-  The supported Siri actions of the assistant cell.
-### Initializers
-- [init?(coder: NSCoder)](./cpassistantcellconfiguration/init%28coder%29.md)
+  The supported actions of the assistant cell.
+- [CPListItem.AssistantCellPosition](./cplistitem/assistantcellposition.md)
+  The supported placement options for the assistant cell.
+- [CPListItem.AssistantCellVisibility](./cplistitem/assistantcellvisibility.md)
+  The visibility options for the assistant cell.
 
 ## Relationships
 
@@ -60,9 +67,9 @@ Your app must include an Intents Extension that handles the intent corresponding
 
 ## See Also
 
-### Managing the Assistant Cell
-- [var assistantCellConfiguration: CPAssistantCellConfiguration?](./cplisttemplate/assistantcellconfiguration.md)
-  The object that provides the configuration attributes for the assistant cell.
+### Headers and special cells
+- [class CPListTemplateDetailsHeader](./cplisttemplatedetailsheader.md)
+  A header section that displays rich media content and action buttons above a list of items.
 
 
 ---

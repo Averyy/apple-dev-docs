@@ -21,18 +21,29 @@ var updateAlarm: some AppSchemaIntent { get }
 
 ## Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `clock` domain and one of your app’s actions matches the `updateAlarm` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .clock.updateAlarm)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `clock` domain and one of your app’s actions matches the `updateAlarm` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent(schema: .clock.updateAlarm)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an intent that conforms to the `updateAlarm` schema:
+The following example shows an intent that conforms to the `updateAlarm` schema. You can create a type that conforms to the schema by adding the `@AppIntent` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `clock_updateAlarm` and select it from the code-completion suggestions:
 
 ```swift
 @AppIntent(schema: .clock.updateAlarm)
 struct UpdateAlarmIntent {
+    /// Alarm to update.
     var alarm: <#AlarmEntity#>
+
+    /// True to enable the alarm, False to disable the alarm.
     var isEnabled: Bool?
+
+    /// Alarm time.
     var time: DateComponents?
+
+    /// Alarm label.
     var label: String?
+
+    /// Alarm repeating schedule.
     var recurrenceDays: Calendar.RecurrenceRule?
+
+    /// If the alarm allows snooze or not.
     var allowsSnooze: Bool?
 
     func perform() async throws -> some ReturnsValue<<#AlarmEntity#>> {
@@ -47,6 +58,19 @@ The schema supports the following system experiences:
 - Shortcuts
 
 For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
+
+## Parameters for the update-alarm intent
+
+Each parameter in the code listing above plays a specific role when your app performs this action. The following table describes what each parameter represents and any behavior to account for when you set it.
+
+| Parameter | Type | Origin | Discussion |
+| --- | --- | --- | --- |
+| `alarm` | `@AppEntity(schema: .clock.alarm)` | Your app | Alarm to update. `AlarmEntity` is a placeholder name for a type that conforms to the [`alarm`](../clockentity/alarm.md) entity schema, which your app defines and implements. |
+| `isEnabled` | `Bool?` | Swift | True to enable the alarm, False to disable the alarm. |
+| `time` | `DateComponents?` | Foundation | Alarm time. |
+| `label` | `String?` | Swift | Alarm label. |
+| `recurrenceDays` | `Calendar.RecurrenceRule?` | Foundation | Alarm repeating schedule. |
+| `allowsSnooze` | `Bool?` | Swift | If the alarm allows snooze or not. |
 
 ## See Also
 

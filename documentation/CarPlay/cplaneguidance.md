@@ -23,7 +23,7 @@ class CPLaneGuidance
 
 ## Topics
 
-### Properties
+### Getting the lane guidance
 - [var instructionVariants: [String]](./cplaneguidance/instructionvariants.md)
   An array of strings that represent the instruction for this lane guidance, arranged from most- to least-preferred.
 - [var lanes: [CPLane]](./cplaneguidance/lanes.md)
@@ -48,15 +48,18 @@ class CPLaneGuidance
 
 ## See Also
 
-### Routes, lanes and junctions
-- [class CPRouteInformation](./cprouteinformation.md)
-  A class that describes the characteristic elements of a route.
+### Lanes and junctions
 - [class CPLane](./cplane.md)
   A class that describes characteristics of a lane on a roadway.
 - [enum CPLaneStatus](./cplanestatus.md)
   Values that describe the status or preferability of a lane.
 - [enum CPJunctionType](./cpjunctiontype.md)
   Values that represent types of roadway junctions.
+- [enum CPTrafficSide](./cptrafficside.md)
+  Values that represent which side of the road the traffic drives on.
+- [func NSStringFromCPJunctionType(CPJunctionType) -> String!](./nsstringfromcpjunctiontype%28_%29.md)
+- [func NSStringFromCPLaneStatus(CPLaneStatus) -> String!](./nsstringfromcplanestatus%28_%29.md)
+- [func NSStringFromCPTrafficSide(CPTrafficSide) -> String!](./nsstringfromcptrafficside%28_%29.md)
 
 
 ---

@@ -2,11 +2,11 @@
   "hashes": {
     "https://developer.apple.com/documentation/sirievaluations": {
       "file_path": "documentation/sirievaluations/sirievaluations.md",
-      "hash": "1c5ce9f753bcfed9117a9918f53b652b9cca507320ed8519d4c15911085626d7"
+      "hash": "1913acbeadfae8d2705991c9aca4f94793e8c0fbe00810f91470b0efee041603"
     },
     "https://developer.apple.com/documentation/sirievaluations/calls": {
       "file_path": "documentation/sirievaluations/calls.md",
-      "hash": "9673e87d549ccba6c4f4ecd074d1855f64dc69ad934150eddfc3732053a6a7df"
+      "hash": "ea9a121a66ef1d00ec730d374670807eac2f3004c73e2a03a91af5cdb20a0442"
     },
     "https://developer.apple.com/documentation/sirievaluations/calls/init(_:_:)": {
       "file_path": "documentation/sirievaluations/calls/init(_,_).md",
@@ -18,7 +18,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/calls/ordering-swift.enum/disallowed": {
       "file_path": "documentation/sirievaluations/calls/ordering-swift.enum/disallowed.md",
-      "hash": "bdb7d2c3aa2936c264dff243214317e04fd6064e29e5db604233abede5b0a38c"
+      "hash": "1fed4be1b539f548fcc085a81cae90f6089372023112a3a36ca57db064d2bab8"
     },
     "https://developer.apple.com/documentation/sirievaluations/calls/ordering-swift.enum/ordered": {
       "file_path": "documentation/sirievaluations/calls/ordering-swift.enum/ordered.md",
@@ -26,7 +26,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/calls/ordering-swift.enum/unordered": {
       "file_path": "documentation/sirievaluations/calls/ordering-swift.enum/unordered.md",
-      "hash": "bac9323170ed0c12e919d0a878d8a51c74711e987d401b4f6e4a57b714b95d8a"
+      "hash": "3bb86a6c001822099757dfca9456e002e1b5756997afa3070dd6b954f264d164"
     },
     "https://developer.apple.com/documentation/sirievaluations/calls/ordering-swift.property": {
       "file_path": "documentation/sirievaluations/calls/ordering-swift.property.md",
@@ -60,13 +60,17 @@
       "file_path": "documentation/sirievaluations/entityfindexpectationbuilder/buildoptional(_).md",
       "hash": "b43cd86c252d6d1a42c10cc545eaf0be3852252188dd00f136e6c83c0975f2c6"
     },
+    "https://developer.apple.com/documentation/sirievaluations/evaluating-your-apps-integration-with-siri": {
+      "file_path": "documentation/sirievaluations/evaluating-your-apps-integration-with-siri.md",
+      "hash": "c72dde6bb2c1534d421b49da1450cad155ad0bdac104a481d7aa54954d3a218e"
+    },
     "https://developer.apple.com/documentation/sirievaluations/finds": {
       "file_path": "documentation/sirievaluations/finds.md",
-      "hash": "f21f7004eb85e554d7bd7dfe20ef64e402c7b5e869d890395684af7d78394b01"
+      "hash": "fcf9b8e2e2b2064f15f6a1cea1148d57e0800cb7e9a3e2a410ee88b28ae30b6a"
     },
     "https://developer.apple.com/documentation/sirievaluations/finds/init(_:)": {
       "file_path": "documentation/sirievaluations/finds/init(_).md",
-      "hash": "98f9710b190e54450c912a9e0edc0f6125d8d7dc26f132223b78d54421105341"
+      "hash": "1dc4fd9d012e67f4b26d561454d5f5b9cae59f639ff9168c8c2b6be281e50b90"
     },
     "https://developer.apple.com/documentation/sirievaluations/intentexpectationbuilder": {
       "file_path": "documentation/sirievaluations/intentexpectationbuilder.md",
@@ -98,7 +102,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/loads": {
       "file_path": "documentation/sirievaluations/loads.md",
-      "hash": "bae85a724492f774fab396b40023846a1bc3918f4bbdcba080308da1c09ccdcc"
+      "hash": "bc8145900dba2a586ccddc55e1b49e32b8d0fa202cad9a8c37aeec4eba19a764"
     },
     "https://developer.apple.com/documentation/sirievaluations/loads/enforcement-swift.enum": {
       "file_path": "documentation/sirievaluations/loads/enforcement-swift.enum.md",
@@ -122,7 +126,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/onscreen": {
       "file_path": "documentation/sirievaluations/onscreen.md",
-      "hash": "673b5130c70f49a11ef5d54aa14cc0f12ccf1ad5ec38f28ec83b027b0b88c966"
+      "hash": "0d9a43d4a8d098e9b97860d534f28e940518414cef0bb9a9c24d4f50c244a924"
     },
     "https://developer.apple.com/documentation/sirievaluations/onscreen/init(_:)": {
       "file_path": "documentation/sirievaluations/onscreen/init(_).md",
@@ -158,7 +162,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siriexpectationevaluator": {
       "file_path": "documentation/sirievaluations/siriexpectationevaluator.md",
-      "hash": "e9837b882f0e405ab7fb6351199bc68bb57872ee64d5affeccb56ee070d70702"
+      "hash": "ad3890edc581626b747cf9d7b567745a18a9afef66abca05dbe642f26da1cf8d"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriexpectationevaluator/init()": {
       "file_path": "documentation/sirievaluations/siriexpectationevaluator/init().md",
@@ -170,7 +174,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siriresponse": {
       "file_path": "documentation/sirievaluations/siriresponse.md",
-      "hash": "0cbd2df76e3c6dee8dd74b73bff1d6d24766727656bc6fe0fb0fc7905aaf5381"
+      "hash": "70760f93c224027104a558c2649d7eab93ed591809caa28a4750dbd716f85d59"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriresponse/init(_:)": {
       "file_path": "documentation/sirievaluations/siriresponse/init(_).md",
@@ -186,7 +190,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenario": {
       "file_path": "documentation/sirievaluations/siriscenario.md",
-      "hash": "1807768d94e149bd6c60ebf84b69d0de63167e9064bd334df5ce3f2361726ebb"
+      "hash": "8494a07395a676701206d0a0ba168ae20abb74c97404cd108f048f7d68ab5419"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenario/encode(to:)": {
       "file_path": "documentation/sirievaluations/siriscenario/encode(to).md",
@@ -194,7 +198,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenario/expected": {
       "file_path": "documentation/sirievaluations/siriscenario/expected.md",
-      "hash": "5a5fa4264dffba8a4d5ebc89bde9c6970e32654659e81b359644467034f52c09"
+      "hash": "a7ece4da4120babf0aaa839fac712397284e687cf07a5c4a2108c1fd88a5deb5"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenario/init(_:)": {
       "file_path": "documentation/sirievaluations/siriscenario/init(_).md",
@@ -202,15 +206,15 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenario/init(_:expectation:)": {
       "file_path": "documentation/sirievaluations/siriscenario/init(_,expectation).md",
-      "hash": "2d6f0fbfc0af01d26424a223ea2c149357741c55d318d9c094f13c7641b5d42c"
+      "hash": "b9385d79e8455ae74b376cb8c99234fd2ccecc8b023afb3190ed68d35168d478"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenario/input": {
       "file_path": "documentation/sirievaluations/siriscenario/input.md",
-      "hash": "b589fabb257018e0dc52c17dc0e4e56cadf71c088f1a45cb002e2f12b3a58e54"
+      "hash": "d6f4c77c7ddc3aca42b22b00590ee0ac03d2b6b51fc82ebed61935a359d274db"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenario/turns": {
       "file_path": "documentation/sirievaluations/siriscenario/turns.md",
-      "hash": "a66d72717226f5bb8bf6254c4873be12e9819d8cc30e850d34a65fa46c2b1d62"
+      "hash": "ee29b058e1d120055c6c6af45ebeee4d0a1110694a1f7608cc1ffe4ee5f4f72a"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenariobuilder": {
       "file_path": "documentation/sirievaluations/siriscenariobuilder.md",
@@ -242,7 +246,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenarioexpectationbuilder": {
       "file_path": "documentation/sirievaluations/siriscenarioexpectationbuilder.md",
-      "hash": "89c60a4cbb9f15b3529c24860fcb31cf645362774000ffd2558b69e6f657d751"
+      "hash": "d2a8f155176c846b97ecb8fbd4ed46d03ae55cb828a2c8027df30422de817a51"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenarioexpectationbuilder/buildarray(_:)": {
       "file_path": "documentation/sirievaluations/siriscenarioexpectationbuilder/buildarray(_).md",
@@ -286,7 +290,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenarioloader": {
       "file_path": "documentation/sirievaluations/siriscenarioloader.md",
-      "hash": "84b6de066ba2516a780b6bc5db9904da63d6405dee0fa06a8f3b11d1c8d5882b"
+      "hash": "693ca88b92abc762beb5a17dd2eaedd1113c90de1212f4f73e725e953036d4a3"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenarioloader/init(_:)": {
       "file_path": "documentation/sirievaluations/siriscenarioloader/init(_).md",
@@ -338,7 +342,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenariosubject": {
       "file_path": "documentation/sirievaluations/siriscenariosubject.md",
-      "hash": "77cae7f67ca6f75cbf77dc784c333691f2973e7aca84e608734fbf690f4efbf0"
+      "hash": "8ea9cdcd32a31a7fadd7cb6d28bc409eb707552e89614f9d80776fbd1481010f"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenariosubject/scenarioreport": {
       "file_path": "documentation/sirievaluations/siriscenariosubject/scenarioreport.md",
@@ -346,23 +350,23 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenariosubject/siritranscript": {
       "file_path": "documentation/sirievaluations/siriscenariosubject/siritranscript.md",
-      "hash": "fac18bf42a834e4bfa0abee7530ede7a59f4ff57e16670123633b4859f4d84a5"
+      "hash": "e216fbbeba9b79fd6bf201eccda01e9144822d79e9609767de75761b4f905b98"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriscenariosubject/value": {
       "file_path": "documentation/sirievaluations/siriscenariosubject/value.md",
-      "hash": "7ba875a2ffae3923ad8a74f80a11a61e037db86d81efb248343019f251bd020d"
+      "hash": "001499e6b0410ca8b0bb61d9e5c9c74dd825f959acf1f4ddc1522b40e6924eff"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriservice": {
       "file_path": "documentation/sirievaluations/siriservice.md",
-      "hash": "91a3110f6665bad84d1a04b5ba32541a1493a57b1145f088d2ba88617a2ff909"
+      "hash": "7c59a5487d77b2220ed712afdb3e6bf6b46ba675d72a7f066ee536150b3f499b"
     },
     "https://developer.apple.com/documentation/sirievaluations/siriservice/run(scenario:)": {
       "file_path": "documentation/sirievaluations/siriservice/run(scenario).md",
-      "hash": "132cbace458331e6409f29a29a09dd41c5d37a95f33ca9639dc48f5da136a241"
+      "hash": "6ece337cf96fd73422eabc0b608bbe5e278daeeb3b8bd4ac7d352c75c35371a9"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript": {
       "file_path": "documentation/sirievaluations/siritranscript.md",
-      "hash": "832a6a1e61fa2bf759d75313c78c598e4907c078dfe2870eb4042d376d905b95"
+      "hash": "ddcc493214bfeb1d6852e05486b7c85f3d932fd83fdfa17ac2494cad1a3d5778"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation.md",
@@ -378,23 +382,23 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum.md",
-      "hash": "a932167ea3d1c77f611868da58a0201873b5d6eed9a73e7e56f094474c86f2dc"
+      "hash": "b5d814950ac8cdfc18859a95058b22f39cadbc0ee96464ca1c3225cc19f0a877"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/awaitingconfirmation": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/awaitingconfirmation.md",
-      "hash": "43f2de842e786060562aca76ffafea47239a55f24fb8c19a7acca3e6de6bc801"
+      "hash": "f42e0c5eec264ca3d47c651619191e88d70feb9e33a6e145416de845624e9585"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/committed": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/committed.md",
-      "hash": "bdc97896070477a9c32ab61aae033540bdd65ce8dcccbea217b6a4f31a397133"
+      "hash": "81ea27d0021ee134b572e22b1e839ad4f6ebdd9fa8513f5da05e87d145689223"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/failed": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/failed.md",
-      "hash": "6d937d46ca374270c60883a78ce854d47db9f7037741f3a7af6b910628f769a2"
+      "hash": "361a701284ed70671fa35b39355feb81b95bcd355018f13815018c930c87965e"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/needsinput": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/needsinput.md",
-      "hash": "491cf393faf1fd7daf7467d6d7752d377371e240b27ff2c46424641e26d34c80"
+      "hash": "b3f79f6d2d1d2633a1b962d29476763c7ff1e937422c0c6dd7ae07e6584b2b32"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/ran": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/ran.md",
@@ -402,23 +406,23 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/succeeded": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/succeeded.md",
-      "hash": "035cd40846bb0b17e81a81dec97cf6d4d350df55f13687b117934ed5503f6ec1"
+      "hash": "2d34ac5a104257d47debfab29ab1bb0d038e3463e53991623e66af5724b9d2ec"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/unknown": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/unknown.md",
-      "hash": "c41e6029e5ab19039c9f11053aef3efe40e17e731380128d6ae4da6111a1bcd2"
+      "hash": "cd450b3b8e84aff259876ef6c6f52d12af03e0ea4c17629de132b6a4c808e40e"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/unreported": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/unreported.md",
-      "hash": "157be02f8aa11a902f845a60df4eb22cf1945df87826efab26ecef43bcef4e78"
+      "hash": "5a1331c5db1c5c07b84c531f73edd9239d733365b58f0388ddf9e81e6944cec2"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.property": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.property.md",
-      "hash": "c68086e38601fa48785dcfd1da9139b815e1315a2f18f5f7ec3b0f8f98cbc5f4"
+      "hash": "213084c8e1f8a21498389208216a911d43fc0e7f822561c9e778359dd8d62828"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/intentinvocation/result": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/result.md",
-      "hash": "387832f90987a2e7ee47cc03a6205a85e570404b9152bce7998f1c5c860b23f1"
+      "hash": "89c0726c707beccba23374f221e158c66aa9c7b01517f2565eff1aec495d7aa0"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/observation": {
       "file_path": "documentation/sirievaluations/siritranscript/observation.md",
@@ -434,7 +438,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/turn": {
       "file_path": "documentation/sirievaluations/siritranscript/turn.md",
-      "hash": "301f26794c16e37c5595ae055f00160c4ca3536ee0bceb7cc182a1a843b1e5ea"
+      "hash": "9f23d140d81fe3950db970853ed6e105b9b9583f7243b8918dca0049470752c9"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/turn(for:)": {
       "file_path": "documentation/sirievaluations/siritranscript/turn(for).md",
@@ -442,7 +446,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/turn/foundentities": {
       "file_path": "documentation/sirievaluations/siritranscript/turn/foundentities.md",
-      "hash": "bbde02779a8c385a89a43af9463d59171ff6550df68895d86895cdde3fa803df"
+      "hash": "66b415a0da2d2f71c73802020687216c8c8eaf2be853064c638d8130c4bc5692"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/turn/id": {
       "file_path": "documentation/sirievaluations/siritranscript/turn/id.md",
@@ -454,11 +458,11 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/turn/loadedskills": {
       "file_path": "documentation/sirievaluations/siritranscript/turn/loadedskills.md",
-      "hash": "0cbc45436e017bf7665bcfbead615602d2f2b114502efe520cb604bc254477d3"
+      "hash": "ee0887b2485a84360e91856a14095e2aeb0be415ae6a05e7db077a184a2c49df"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/turn/onscreenentities": {
       "file_path": "documentation/sirievaluations/siritranscript/turn/onscreenentities.md",
-      "hash": "460c2613ebe11fbd2acd7350016cddb096fadd5da30fafdb2fc33fbbbbe07bb8"
+      "hash": "72fab8ffb3ff9aebe740bb060b9ddca2f025ea51487d5739080cc89da6997a19"
     },
     "https://developer.apple.com/documentation/sirievaluations/siritranscript/turn/response": {
       "file_path": "documentation/sirievaluations/siritranscript/turn/response.md",
@@ -546,7 +550,7 @@
     },
     "https://developer.apple.com/documentation/sirievaluations/userturn": {
       "file_path": "documentation/sirievaluations/userturn.md",
-      "hash": "131e0708cb4d391fbe3ec8bd4604b8da0c6006a530ddaacd2b74719d04551ef2"
+      "hash": "261293b4b6bfc4515b8a24b1e620fe3f92e69018f417bc5893a3b656bbd82660"
     },
     "https://developer.apple.com/documentation/sirievaluations/userturn/id": {
       "file_path": "documentation/sirievaluations/userturn/id.md",
@@ -566,11 +570,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations.json": {
       "file_path": "documentation/sirievaluations/sirievaluations.md",
-      "hash": "1c5ce9f753bcfed9117a9918f53b652b9cca507320ed8519d4c15911085626d7"
+      "hash": "1913acbeadfae8d2705991c9aca4f94793e8c0fbe00810f91470b0efee041603"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/calls.json": {
       "file_path": "documentation/sirievaluations/calls.md",
-      "hash": "9673e87d549ccba6c4f4ecd074d1855f64dc69ad934150eddfc3732053a6a7df"
+      "hash": "ea9a121a66ef1d00ec730d374670807eac2f3004c73e2a03a91af5cdb20a0442"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/calls/init(_:_:).json": {
       "file_path": "documentation/sirievaluations/calls/init(_,_).md",
@@ -582,7 +586,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/calls/ordering-swift.enum/disallowed.json": {
       "file_path": "documentation/sirievaluations/calls/ordering-swift.enum/disallowed.md",
-      "hash": "bdb7d2c3aa2936c264dff243214317e04fd6064e29e5db604233abede5b0a38c"
+      "hash": "1fed4be1b539f548fcc085a81cae90f6089372023112a3a36ca57db064d2bab8"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/calls/ordering-swift.enum/ordered.json": {
       "file_path": "documentation/sirievaluations/calls/ordering-swift.enum/ordered.md",
@@ -590,7 +594,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/calls/ordering-swift.enum/unordered.json": {
       "file_path": "documentation/sirievaluations/calls/ordering-swift.enum/unordered.md",
-      "hash": "bac9323170ed0c12e919d0a878d8a51c74711e987d401b4f6e4a57b714b95d8a"
+      "hash": "3bb86a6c001822099757dfca9456e002e1b5756997afa3070dd6b954f264d164"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/calls/ordering-swift.property.json": {
       "file_path": "documentation/sirievaluations/calls/ordering-swift.property.md",
@@ -624,13 +628,17 @@
       "file_path": "documentation/sirievaluations/entityfindexpectationbuilder/buildoptional(_).md",
       "hash": "b43cd86c252d6d1a42c10cc545eaf0be3852252188dd00f136e6c83c0975f2c6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sirievaluations/evaluating-your-apps-integration-with-siri.json": {
+      "file_path": "documentation/sirievaluations/evaluating-your-apps-integration-with-siri.md",
+      "hash": "c72dde6bb2c1534d421b49da1450cad155ad0bdac104a481d7aa54954d3a218e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/finds.json": {
       "file_path": "documentation/sirievaluations/finds.md",
-      "hash": "f21f7004eb85e554d7bd7dfe20ef64e402c7b5e869d890395684af7d78394b01"
+      "hash": "fcf9b8e2e2b2064f15f6a1cea1148d57e0800cb7e9a3e2a410ee88b28ae30b6a"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/finds/init(_:).json": {
       "file_path": "documentation/sirievaluations/finds/init(_).md",
-      "hash": "98f9710b190e54450c912a9e0edc0f6125d8d7dc26f132223b78d54421105341"
+      "hash": "1dc4fd9d012e67f4b26d561454d5f5b9cae59f639ff9168c8c2b6be281e50b90"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/intentexpectationbuilder.json": {
       "file_path": "documentation/sirievaluations/intentexpectationbuilder.md",
@@ -662,7 +670,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/loads.json": {
       "file_path": "documentation/sirievaluations/loads.md",
-      "hash": "bae85a724492f774fab396b40023846a1bc3918f4bbdcba080308da1c09ccdcc"
+      "hash": "bc8145900dba2a586ccddc55e1b49e32b8d0fa202cad9a8c37aeec4eba19a764"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/loads/enforcement-swift.enum.json": {
       "file_path": "documentation/sirievaluations/loads/enforcement-swift.enum.md",
@@ -686,7 +694,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/onscreen.json": {
       "file_path": "documentation/sirievaluations/onscreen.md",
-      "hash": "673b5130c70f49a11ef5d54aa14cc0f12ccf1ad5ec38f28ec83b027b0b88c966"
+      "hash": "0d9a43d4a8d098e9b97860d534f28e940518414cef0bb9a9c24d4f50c244a924"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/onscreen/init(_:).json": {
       "file_path": "documentation/sirievaluations/onscreen/init(_).md",
@@ -722,7 +730,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriexpectationevaluator.json": {
       "file_path": "documentation/sirievaluations/siriexpectationevaluator.md",
-      "hash": "e9837b882f0e405ab7fb6351199bc68bb57872ee64d5affeccb56ee070d70702"
+      "hash": "ad3890edc581626b747cf9d7b567745a18a9afef66abca05dbe642f26da1cf8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriexpectationevaluator/init().json": {
       "file_path": "documentation/sirievaluations/siriexpectationevaluator/init().md",
@@ -734,7 +742,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriresponse.json": {
       "file_path": "documentation/sirievaluations/siriresponse.md",
-      "hash": "0cbd2df76e3c6dee8dd74b73bff1d6d24766727656bc6fe0fb0fc7905aaf5381"
+      "hash": "70760f93c224027104a558c2649d7eab93ed591809caa28a4750dbd716f85d59"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriresponse/init(_:).json": {
       "file_path": "documentation/sirievaluations/siriresponse/init(_).md",
@@ -750,7 +758,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenario.json": {
       "file_path": "documentation/sirievaluations/siriscenario.md",
-      "hash": "1807768d94e149bd6c60ebf84b69d0de63167e9064bd334df5ce3f2361726ebb"
+      "hash": "8494a07395a676701206d0a0ba168ae20abb74c97404cd108f048f7d68ab5419"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenario/encode(to:).json": {
       "file_path": "documentation/sirievaluations/siriscenario/encode(to).md",
@@ -758,7 +766,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenario/expected.json": {
       "file_path": "documentation/sirievaluations/siriscenario/expected.md",
-      "hash": "5a5fa4264dffba8a4d5ebc89bde9c6970e32654659e81b359644467034f52c09"
+      "hash": "a7ece4da4120babf0aaa839fac712397284e687cf07a5c4a2108c1fd88a5deb5"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenario/init(_:).json": {
       "file_path": "documentation/sirievaluations/siriscenario/init(_).md",
@@ -766,15 +774,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenario/init(_:expectation:).json": {
       "file_path": "documentation/sirievaluations/siriscenario/init(_,expectation).md",
-      "hash": "2d6f0fbfc0af01d26424a223ea2c149357741c55d318d9c094f13c7641b5d42c"
+      "hash": "b9385d79e8455ae74b376cb8c99234fd2ccecc8b023afb3190ed68d35168d478"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenario/input.json": {
       "file_path": "documentation/sirievaluations/siriscenario/input.md",
-      "hash": "b589fabb257018e0dc52c17dc0e4e56cadf71c088f1a45cb002e2f12b3a58e54"
+      "hash": "d6f4c77c7ddc3aca42b22b00590ee0ac03d2b6b51fc82ebed61935a359d274db"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenario/turns.json": {
       "file_path": "documentation/sirievaluations/siriscenario/turns.md",
-      "hash": "a66d72717226f5bb8bf6254c4873be12e9819d8cc30e850d34a65fa46c2b1d62"
+      "hash": "ee29b058e1d120055c6c6af45ebeee4d0a1110694a1f7608cc1ffe4ee5f4f72a"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenariobuilder.json": {
       "file_path": "documentation/sirievaluations/siriscenariobuilder.md",
@@ -806,7 +814,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenarioexpectationbuilder.json": {
       "file_path": "documentation/sirievaluations/siriscenarioexpectationbuilder.md",
-      "hash": "89c60a4cbb9f15b3529c24860fcb31cf645362774000ffd2558b69e6f657d751"
+      "hash": "d2a8f155176c846b97ecb8fbd4ed46d03ae55cb828a2c8027df30422de817a51"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenarioexpectationbuilder/buildarray(_:).json": {
       "file_path": "documentation/sirievaluations/siriscenarioexpectationbuilder/buildarray(_).md",
@@ -850,7 +858,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenarioloader.json": {
       "file_path": "documentation/sirievaluations/siriscenarioloader.md",
-      "hash": "84b6de066ba2516a780b6bc5db9904da63d6405dee0fa06a8f3b11d1c8d5882b"
+      "hash": "693ca88b92abc762beb5a17dd2eaedd1113c90de1212f4f73e725e953036d4a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenarioloader/init(_:).json": {
       "file_path": "documentation/sirievaluations/siriscenarioloader/init(_).md",
@@ -902,7 +910,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenariosubject.json": {
       "file_path": "documentation/sirievaluations/siriscenariosubject.md",
-      "hash": "77cae7f67ca6f75cbf77dc784c333691f2973e7aca84e608734fbf690f4efbf0"
+      "hash": "8ea9cdcd32a31a7fadd7cb6d28bc409eb707552e89614f9d80776fbd1481010f"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenariosubject/scenarioreport.json": {
       "file_path": "documentation/sirievaluations/siriscenariosubject/scenarioreport.md",
@@ -910,23 +918,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenariosubject/siritranscript.json": {
       "file_path": "documentation/sirievaluations/siriscenariosubject/siritranscript.md",
-      "hash": "fac18bf42a834e4bfa0abee7530ede7a59f4ff57e16670123633b4859f4d84a5"
+      "hash": "e216fbbeba9b79fd6bf201eccda01e9144822d79e9609767de75761b4f905b98"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriscenariosubject/value.json": {
       "file_path": "documentation/sirievaluations/siriscenariosubject/value.md",
-      "hash": "7ba875a2ffae3923ad8a74f80a11a61e037db86d81efb248343019f251bd020d"
+      "hash": "001499e6b0410ca8b0bb61d9e5c9c74dd825f959acf1f4ddc1522b40e6924eff"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriservice.json": {
       "file_path": "documentation/sirievaluations/siriservice.md",
-      "hash": "91a3110f6665bad84d1a04b5ba32541a1493a57b1145f088d2ba88617a2ff909"
+      "hash": "7c59a5487d77b2220ed712afdb3e6bf6b46ba675d72a7f066ee536150b3f499b"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siriservice/run(scenario:).json": {
       "file_path": "documentation/sirievaluations/siriservice/run(scenario).md",
-      "hash": "132cbace458331e6409f29a29a09dd41c5d37a95f33ca9639dc48f5da136a241"
+      "hash": "6ece337cf96fd73422eabc0b608bbe5e278daeeb3b8bd4ac7d352c75c35371a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript.json": {
       "file_path": "documentation/sirievaluations/siritranscript.md",
-      "hash": "832a6a1e61fa2bf759d75313c78c598e4907c078dfe2870eb4042d376d905b95"
+      "hash": "ddcc493214bfeb1d6852e05486b7c85f3d932fd83fdfa17ac2494cad1a3d5778"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation.md",
@@ -942,23 +950,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum.md",
-      "hash": "a932167ea3d1c77f611868da58a0201873b5d6eed9a73e7e56f094474c86f2dc"
+      "hash": "b5d814950ac8cdfc18859a95058b22f39cadbc0ee96464ca1c3225cc19f0a877"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/awaitingconfirmation.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/awaitingconfirmation.md",
-      "hash": "43f2de842e786060562aca76ffafea47239a55f24fb8c19a7acca3e6de6bc801"
+      "hash": "f42e0c5eec264ca3d47c651619191e88d70feb9e33a6e145416de845624e9585"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/committed.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/committed.md",
-      "hash": "bdc97896070477a9c32ab61aae033540bdd65ce8dcccbea217b6a4f31a397133"
+      "hash": "81ea27d0021ee134b572e22b1e839ad4f6ebdd9fa8513f5da05e87d145689223"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/failed.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/failed.md",
-      "hash": "6d937d46ca374270c60883a78ce854d47db9f7037741f3a7af6b910628f769a2"
+      "hash": "361a701284ed70671fa35b39355feb81b95bcd355018f13815018c930c87965e"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/needsinput.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/needsinput.md",
-      "hash": "491cf393faf1fd7daf7467d6d7752d377371e240b27ff2c46424641e26d34c80"
+      "hash": "b3f79f6d2d1d2633a1b962d29476763c7ff1e937422c0c6dd7ae07e6584b2b32"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/ran.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/ran.md",
@@ -966,23 +974,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/succeeded.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/succeeded.md",
-      "hash": "035cd40846bb0b17e81a81dec97cf6d4d350df55f13687b117934ed5503f6ec1"
+      "hash": "2d34ac5a104257d47debfab29ab1bb0d038e3463e53991623e66af5724b9d2ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/unknown.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/unknown.md",
-      "hash": "c41e6029e5ab19039c9f11053aef3efe40e17e731380128d6ae4da6111a1bcd2"
+      "hash": "cd450b3b8e84aff259876ef6c6f52d12af03e0ea4c17629de132b6a4c808e40e"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/unreported.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.enum/unreported.md",
-      "hash": "157be02f8aa11a902f845a60df4eb22cf1945df87826efab26ecef43bcef4e78"
+      "hash": "5a1331c5db1c5c07b84c531f73edd9239d733365b58f0388ddf9e81e6944cec2"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.property.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/outcome-swift.property.md",
-      "hash": "c68086e38601fa48785dcfd1da9139b815e1315a2f18f5f7ec3b0f8f98cbc5f4"
+      "hash": "213084c8e1f8a21498389208216a911d43fc0e7f822561c9e778359dd8d62828"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/intentinvocation/result.json": {
       "file_path": "documentation/sirievaluations/siritranscript/intentinvocation/result.md",
-      "hash": "387832f90987a2e7ee47cc03a6205a85e570404b9152bce7998f1c5c860b23f1"
+      "hash": "89c0726c707beccba23374f221e158c66aa9c7b01517f2565eff1aec495d7aa0"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/observation.json": {
       "file_path": "documentation/sirievaluations/siritranscript/observation.md",
@@ -1002,11 +1010,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/turn.json": {
       "file_path": "documentation/sirievaluations/siritranscript/turn.md",
-      "hash": "301f26794c16e37c5595ae055f00160c4ca3536ee0bceb7cc182a1a843b1e5ea"
+      "hash": "9f23d140d81fe3950db970853ed6e105b9b9583f7243b8918dca0049470752c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/turn/foundentities.json": {
       "file_path": "documentation/sirievaluations/siritranscript/turn/foundentities.md",
-      "hash": "bbde02779a8c385a89a43af9463d59171ff6550df68895d86895cdde3fa803df"
+      "hash": "66b415a0da2d2f71c73802020687216c8c8eaf2be853064c638d8130c4bc5692"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/turn/id.json": {
       "file_path": "documentation/sirievaluations/siritranscript/turn/id.md",
@@ -1018,11 +1026,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/turn/loadedskills.json": {
       "file_path": "documentation/sirievaluations/siritranscript/turn/loadedskills.md",
-      "hash": "0cbc45436e017bf7665bcfbead615602d2f2b114502efe520cb604bc254477d3"
+      "hash": "ee0887b2485a84360e91856a14095e2aeb0be415ae6a05e7db077a184a2c49df"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/turn/onscreenentities.json": {
       "file_path": "documentation/sirievaluations/siritranscript/turn/onscreenentities.md",
-      "hash": "460c2613ebe11fbd2acd7350016cddb096fadd5da30fafdb2fc33fbbbbe07bb8"
+      "hash": "72fab8ffb3ff9aebe740bb060b9ddca2f025ea51487d5739080cc89da6997a19"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/siritranscript/turn/response.json": {
       "file_path": "documentation/sirievaluations/siritranscript/turn/response.md",
@@ -1110,7 +1118,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/userturn.json": {
       "file_path": "documentation/sirievaluations/userturn.md",
-      "hash": "131e0708cb4d391fbe3ec8bd4604b8da0c6006a530ddaacd2b74719d04551ef2"
+      "hash": "261293b4b6bfc4515b8a24b1e620fe3f92e69018f417bc5893a3b656bbd82660"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirievaluations/userturn/id.json": {
       "file_path": "documentation/sirievaluations/userturn/id.md",
@@ -1133,6 +1141,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 282
+    "total_pages": 284
   }
 }

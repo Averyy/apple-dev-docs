@@ -27,7 +27,7 @@ The array must include at least one action.
 
 ## See Also
 
-### Getting Action Sheet Template Information
+### Getting the template content
 - [var title: String?](./title.md)
   The title of the action sheet.
 - [var message: String?](./message.md)

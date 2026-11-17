@@ -38,30 +38,30 @@ For more information about app schemas, see [App schema domains](./app-schema-do
 - [var book: some AppSchemaEntity](./appschema/booksentity/book.md)
   An entity schema for a book.
 - [var settings: some AppSchemaEntity](./appschema/booksentity/settings.md)
-  An entity schema for  settings.
+  An entity schema for settings.
 - [AppSchema.BooksEntity](./appschema/booksentity.md)
   Identifies entity schemas in the books domain.
 ### Types for static parameters
 - [var contentType: some AppSchemaEnum](./appschema/booksenum/contenttype.md)
-  An enum schema for a content type parameter.
+  An enum schema for a content type.
 - [var font: some AppSchemaEnum](./appschema/booksenum/font.md)
-  An enum schema for a font parameter.
+  An enum schema for a font.
 - [var fontSize: some AppSchemaEnum](./appschema/booksenum/fontsize.md)
-  An enum schema for a font size parameter.
+  An enum schema for a font size.
 - [var navigationDirection: some AppSchemaEnum](./appschema/booksenum/navigationdirection.md)
-  An enum schema for a navigation direction parameter.
+  An enum schema for a navigation direction.
 - [var pageNavigationSetting: some AppSchemaEnum](./appschema/booksenum/pagenavigationsetting.md)
-  An enum schema for a page navigation setting parameter.
+  An enum schema for a page navigation setting.
 - [var relativeCharacterSpacingChange: some AppSchemaEnum](./appschema/booksenum/relativecharacterspacingchange.md)
-  An enum schema for a relative character spacing change parameter.
+  An enum schema for a relative character spacing change.
 - [var relativeFontChange: some AppSchemaEnum](./appschema/booksenum/relativefontchange.md)
-  An enum schema for a relative font change parameter.
+  An enum schema for a relative font change.
 - [var relativeLineSpacingChange: some AppSchemaEnum](./appschema/booksenum/relativelinespacingchange.md)
-  An enum schema for a relative line spacing change parameter.
+  An enum schema for a relative line spacing change.
 - [var relativeWordSpacingChange: some AppSchemaEnum](./appschema/booksenum/relativewordspacingchange.md)
-  An enum schema for a relative word spacing change parameter.
+  An enum schema for a relative word spacing change.
 - [var theme: some AppSchemaEnum](./appschema/booksenum/theme.md)
-  An enum schema for a theme parameter.
+  An enum schema for a theme.
 - [AppSchema.BooksEnum](./appschema/booksenum.md)
   Identifies enum schemas in the books domain.
 ### Deprecated schemas

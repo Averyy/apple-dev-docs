@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/CoreAudioTypes": {
       "file_path": "documentation/CoreAudioTypes/CoreAudioTypes.md",
-      "hash": "8910c3785e969de4302ae7d91dca97231e1bfb8a2e4b61e02c7ccca4170e0ebb"
+      "hash": "3db05014eb94f4f66ef448d3c0d1cc09d8c17f86ca795a861de1522e54ff4175"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/2962796-anonymous": {
       "file_path": "documentation/CoreAudioTypes/api-2962796-anonymous.md",
@@ -14,23 +14,23 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audio-channel-coordinates": {
       "file_path": "documentation/CoreAudioTypes/audio-channel-coordinates.md",
-      "hash": "ab513d481750d64227cc022fe3c97fd5ce44691473dd287b2a79babe338b2718"
+      "hash": "f3c847bb8f8cacb3769f4504d4a218b0a34b115647f48ed6f2cb35328bcb776a"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audio-channel-labels": {
       "file_path": "documentation/CoreAudioTypes/audio-channel-labels.md",
-      "hash": "8c39a9f89996cc7d2bd53fea0734228391209df7835adb770b10621f6c81db3b"
+      "hash": "3d8bcc10a664abbf79dc73dabb97510b6260868092df02a3ef2b11453ac0af34"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audio-channel-layout-tags": {
       "file_path": "documentation/CoreAudioTypes/audio-channel-layout-tags.md",
-      "hash": "24f164780d5ceaea79ec26fe9becae47b93c39623a69e3d903482c3d7e342678"
+      "hash": "9bd4d150cae146439370103cfdf44d875f7f72dee26dfc1b136a7bea3fae81f9"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audio-format-flags": {
       "file_path": "documentation/CoreAudioTypes/audio-format-flags.md",
-      "hash": "665144ececfd1c1d2704db17e025db15a9fcd41c765946f82796aa05b14d4546"
+      "hash": "fb8cc99295087942a66f159fff66d0a75b57a1e988bd07ce0188cd61d53da859"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audio-format-identifiers": {
       "file_path": "documentation/CoreAudioTypes/audio-format-identifiers.md",
-      "hash": "30e9d9d414852d2cc98b2d3630ae7ac2375327b5e8e910b1e77205f5dbfe64bd"
+      "hash": "d77c29b329d038d3d374a02d8d9b0671bd1aafdde24b95fd7dd4da6476af4a4f"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audio-stream-basic-description-flags": {
       "file_path": "documentation/CoreAudioTypes/audio-stream-basic-description-flags.md",
@@ -94,7 +94,7 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannelbitmap": {
       "file_path": "documentation/CoreAudioTypes/audiochannelbitmap.md",
-      "hash": "636a4f153e2d6a9fc3f377552bd35e553c1c17bb5bf1a6c8b5d37a8b251ba8c2"
+      "hash": "b9c31aa073ad64d2884f5f8d4bd11d82522ba34e26efbddbc4d18d196783504a"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannelbitmap/bit_center": {
       "file_path": "documentation/CoreAudioTypes/audiochannelbitmap/bit_center.md",
@@ -242,7 +242,7 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochanneldescription": {
       "file_path": "documentation/CoreAudioTypes/audiochanneldescription.md",
-      "hash": "78c5aa66809e7d4cc14c1a8498de7182b37850b29ec5a2d21d3b1ecc0a552e56"
+      "hash": "1cd4f16ae624314d4e9bd654470a0f75b60894d8920b30981e7eab7356353116"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochanneldescription/==(_:_:)": {
       "file_path": "documentation/CoreAudioTypes/audiochanneldescription/eqeq(_,_).md",
@@ -258,19 +258,19 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochanneldescription/mchannelflags": {
       "file_path": "documentation/CoreAudioTypes/audiochanneldescription/mchannelflags.md",
-      "hash": "6253bdfb6af92d2e55d5dcc667819c4837748fd9576c7855c3bced3cb6e7ec5a"
+      "hash": "977833439e648f21791fd3f26297c4bfa9b02434fa2c3ce49208a43cb7439ad2"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochanneldescription/mchannellabel": {
       "file_path": "documentation/CoreAudioTypes/audiochanneldescription/mchannellabel.md",
-      "hash": "7ec9ff97f110dbef3954a17b5b6c1f535b149d21a5c52a55bc6d1130c2f3475d"
+      "hash": "1a79abd467e36f3ae239db355531ff2c01fb3718db9592e25ee0c6443fa7e55e"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochanneldescription/mcoordinates": {
       "file_path": "documentation/CoreAudioTypes/audiochanneldescription/mcoordinates.md",
-      "hash": "4943cdd83de3c552fa89fd566e87894468b7d4d85bdf7cf908ef04f233f16f6f"
+      "hash": "09cae080d98a84f61e3819d49cdf75f4bf938271b17e7416adfa35fb37eeec47"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannelflags": {
       "file_path": "documentation/CoreAudioTypes/audiochannelflags.md",
-      "hash": "03824147e82321300678bf5d87d192927be19dbab8b31d30202d1cf68c2a28f4"
+      "hash": "26135585a8508460f6437540d839eab47d258695591b265123657ebfbe847e0c"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannelflags/init(rawvalue:)": {
       "file_path": "documentation/CoreAudioTypes/audiochannelflags/init(rawvalue).md",
@@ -294,11 +294,11 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannellabel": {
       "file_path": "documentation/CoreAudioTypes/audiochannellabel.md",
-      "hash": "e0a1c5ca7f985d13bd36c9df1b7be77aa66d74b5caa79507d46b9d9368789541"
+      "hash": "c0ebf57e21165c9f51e2217a9332615aaa936b911c438f0445bb2442e274901a"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout.md",
-      "hash": "3379f239ee4ae88027506b5a7d442bdd51598f29a5120f92cfa2db2d7d8c6145"
+      "hash": "405b53d8a70965416d8959e9487c105a58795aff3ca57ab012abd4bdad176b31"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout/allocate(maximumdescriptions:)": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/allocate(maximumdescriptions).md",
@@ -314,19 +314,19 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout/mchannelbitmap": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/mchannelbitmap.md",
-      "hash": "c5a7f81f195f5891628debe1faf74ae91a00513d99ea5f771b600c9ac4e94315"
+      "hash": "a2fbbf8b1e085e4e257e0de0a5d8136633c579bc01379eefee5907e9330bdb45"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout/mchanneldescriptions": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/mchanneldescriptions.md",
-      "hash": "1ea89d224e2f9d377abf9bfc6fd428bd299421a01d88dbdaf572a69e39702c16"
+      "hash": "6d4787c25f3131dc196e55ac1a42f65056860b18b3901e28362f13509f808b6c"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout/mchannellayouttag": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/mchannellayouttag.md",
-      "hash": "7a830aba0462bbd298b3b0b74713a4eb7ec4e91abcbd5adc2c44f27096bd08a6"
+      "hash": "e7c4bd62c433ee846874de1448c64dffa82341c7f9ff0259b72090bf37f9d39c"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout/mnumberchanneldescriptions": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/mnumberchanneldescriptions.md",
-      "hash": "ce9d5d247c827ad404c5037d59465675d0a088f9648d17872901b606126857e8"
+      "hash": "38c110b593a58f55a0d9855ee689608105043cf5f0a496a993d7b96f3e699522"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout/sizeinbytes(maximumdescriptions:)": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/sizeinbytes(maximumdescriptions).md",
@@ -378,11 +378,11 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannellayouttag": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayouttag.md",
-      "hash": "0f531888831254450d0532612f085a60feaf3758b4193ef123b24be51ff02f6b"
+      "hash": "1e9edffa00cc0412c5dfb42e4495a39321e8b95b1487208a38e89d1867ed0eba"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannellayouttag_getnumberofchannels(_:)": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayouttag_getnumberofchannels(_).md",
-      "hash": "39ac3f4c4dd7636fd81b3a46b575456bfec9298c901a66345de52829d6489e06"
+      "hash": "2fd0c52cd223c3fecd963a9a221af0ac504042bae6cf6daa18ca8b4af5050726"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audioclassdescription": {
       "file_path": "documentation/CoreAudioTypes/audioclassdescription.md",
@@ -410,11 +410,11 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audioformatflags": {
       "file_path": "documentation/CoreAudioTypes/audioformatflags.md",
-      "hash": "4ee55c86a97e0074f77a8a7886895c6eb7b52222061ac578c705960502707b5d"
+      "hash": "0078e89b5c274ff6dd55d2f5b39c993c73647a4ddb69754b8a7ae8d0599b4c98"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audioformatid": {
       "file_path": "documentation/CoreAudioTypes/audioformatid.md",
-      "hash": "20e87e15470154427ac0eb5afa0703f19591309140b4aaf6353baad2debea490"
+      "hash": "883b9a7c2dca13bb5df2412aad87eb1e207dde7fe973560e939773ad88466fa0"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audioformatlistitem": {
       "file_path": "documentation/CoreAudioTypes/audioformatlistitem.md",
@@ -446,7 +446,7 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription": {
       "file_path": "documentation/CoreAudioTypes/audiostreambasicdescription.md",
-      "hash": "47a9bda5ccdbd4bc015bb1ab53755f443b374c25384dd77c0fdbfb3da4169181"
+      "hash": "2b8a0e73de4cae370f040e88aa2882d853a24cf6d52b5cec4c6fba3210a5150e"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription/init()": {
       "file_path": "documentation/CoreAudioTypes/audiostreambasicdescription/init().md",
@@ -522,7 +522,7 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiostreampacketdescription": {
       "file_path": "documentation/CoreAudioTypes/audiostreampacketdescription.md",
-      "hash": "7f5ed5989c1af1b851b0c6b4c344c518b6a838bb86f59ea28f182681b17b061f"
+      "hash": "9a654186f7427072547d6e68ff6a951a6d6618f179e2b03d62381dc9e0fc9829"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/audiostreampacketdescription/init()": {
       "file_path": "documentation/CoreAudioTypes/audiostreampacketdescription/init().md",
@@ -762,7 +762,7 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/coreaudiotypes-enumerations": {
       "file_path": "documentation/CoreAudioTypes/coreaudiotypes-enumerations.md",
-      "hash": "edd0c80cdf086e2211773a0e4e4523be84f84f2857e06b8b291856f765227bfe"
+      "hash": "b8ea2867fa851e390ec0a8dd8aab7391c5504df39edef50b3ae03701843ec38f"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/coreaudiotypes_version": {
       "file_path": "documentation/CoreAudioTypes/coreaudiotypes_version.md",
@@ -1982,27 +1982,27 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_3_0": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_3_0.md",
-      "hash": "29142c5a544ee486372712f62f96d178a233a971bd1f1daade5d5a14dd53490d"
+      "hash": "79d1ebf7d9adf990f45622fa521f1b994924f6babf644427bbd308e48cf759e5"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_4_0": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_4_0.md",
-      "hash": "ea50ea891580cde35b6f9f3e6515eb6b86340cde6cd226e5e432171eb671c383"
+      "hash": "eea638ecf5b827199e8dfaebf68e1852696112d909aafb434ef07a8ef450ad5d"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_5_0": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_5_0.md",
-      "hash": "4efda59e36dace362b7fcf63d7e743871b6c5038e41dcc4f615977b2eb54d028"
+      "hash": "063aa08050e9af126a67f71aa9600329802dc207268dc824fd96f6917145ee80"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_5_1": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_5_1.md",
-      "hash": "b49b3538208a6d2e2acfce7f7c6bbe1dd99e5d6ce09128091ad65a940e06981e"
+      "hash": "2036902aee9586d78cb1d4257fc5d28096ec38333c55bd9b217bbd87b9470530"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_6_1": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_6_1.md",
-      "hash": "297b8f52b93de9e0aeabbbf9f7c4674b2a3d6da2e99054d20c1dffaccfd3691e"
+      "hash": "0f32c6dceaef1ad16b32216f931bf0747d4b40bd2a1794a08c8d2ebedf1547c3"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_7_1": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_7_1.md",
-      "hash": "60fdaa26f3ac9325579cd4b88fd153379b6cade0d14f019a6be1cda1d4cbdd87"
+      "hash": "1306cd22a58b3bb453b481b322297cbf325f94e8dff2e6dbef4f2f40acf3ed46"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_pentagonal": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_pentagonal.md",
@@ -2302,7 +2302,7 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/kaudiostreamanyrate": {
       "file_path": "documentation/CoreAudioTypes/kaudiostreamanyrate.md",
-      "hash": "635e7a707b76f71ddf3d0393b8511fe6fabe32c0e98d1c5b6e3702cf9b0ce5ac"
+      "hash": "a9874ea3442099c5cbbf3e06446779614585ba26ad32282ed4666eecbec1d5de"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/kaudiounitsamplefractionbits": {
       "file_path": "documentation/CoreAudioTypes/kaudiounitsamplefractionbits.md",
@@ -2350,7 +2350,7 @@
     },
     "https://developer.apple.com/documentation/coreaudiotypes/mpeg4objectid": {
       "file_path": "documentation/CoreAudioTypes/mpeg4objectid.md",
-      "hash": "ecc4188d3a8c6fc43d073fdfa94447697f33c75a82cc2c307dbd80867d8b30b2"
+      "hash": "9d0ab1e6d7119c08f3ea64eccf0bacb9cbce78bd17af8fd15dfd11519fc25f35"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/mpeg4objectid/aac_lc": {
       "file_path": "documentation/CoreAudioTypes/mpeg4objectid/aac_lc.md",
@@ -2522,7 +2522,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/CoreAudioTypes.json": {
       "file_path": "documentation/CoreAudioTypes/CoreAudioTypes.md",
-      "hash": "8910c3785e969de4302ae7d91dca97231e1bfb8a2e4b61e02c7ccca4170e0ebb"
+      "hash": "3db05014eb94f4f66ef448d3c0d1cc09d8c17f86ca795a861de1522e54ff4175"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/2962796-anonymous.json": {
       "file_path": "documentation/CoreAudioTypes/api-2962796-anonymous.md",
@@ -2534,23 +2534,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audio-channel-coordinates.json": {
       "file_path": "documentation/CoreAudioTypes/audio-channel-coordinates.md",
-      "hash": "ab513d481750d64227cc022fe3c97fd5ce44691473dd287b2a79babe338b2718"
+      "hash": "f3c847bb8f8cacb3769f4504d4a218b0a34b115647f48ed6f2cb35328bcb776a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audio-channel-labels.json": {
       "file_path": "documentation/CoreAudioTypes/audio-channel-labels.md",
-      "hash": "8c39a9f89996cc7d2bd53fea0734228391209df7835adb770b10621f6c81db3b"
+      "hash": "3d8bcc10a664abbf79dc73dabb97510b6260868092df02a3ef2b11453ac0af34"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audio-channel-layout-tags.json": {
       "file_path": "documentation/CoreAudioTypes/audio-channel-layout-tags.md",
-      "hash": "24f164780d5ceaea79ec26fe9becae47b93c39623a69e3d903482c3d7e342678"
+      "hash": "9bd4d150cae146439370103cfdf44d875f7f72dee26dfc1b136a7bea3fae81f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audio-format-flags.json": {
       "file_path": "documentation/CoreAudioTypes/audio-format-flags.md",
-      "hash": "665144ececfd1c1d2704db17e025db15a9fcd41c765946f82796aa05b14d4546"
+      "hash": "fb8cc99295087942a66f159fff66d0a75b57a1e988bd07ce0188cd61d53da859"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audio-format-identifiers.json": {
       "file_path": "documentation/CoreAudioTypes/audio-format-identifiers.md",
-      "hash": "30e9d9d414852d2cc98b2d3630ae7ac2375327b5e8e910b1e77205f5dbfe64bd"
+      "hash": "d77c29b329d038d3d374a02d8d9b0671bd1aafdde24b95fd7dd4da6476af4a4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audio-stream-basic-description-flags.json": {
       "file_path": "documentation/CoreAudioTypes/audio-stream-basic-description-flags.md",
@@ -2614,7 +2614,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannelbitmap.json": {
       "file_path": "documentation/CoreAudioTypes/audiochannelbitmap.md",
-      "hash": "636a4f153e2d6a9fc3f377552bd35e553c1c17bb5bf1a6c8b5d37a8b251ba8c2"
+      "hash": "b9c31aa073ad64d2884f5f8d4bd11d82522ba34e26efbddbc4d18d196783504a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannelbitmap/bit_center.json": {
       "file_path": "documentation/CoreAudioTypes/audiochannelbitmap/bit_center.md",
@@ -2762,7 +2762,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochanneldescription.json": {
       "file_path": "documentation/CoreAudioTypes/audiochanneldescription.md",
-      "hash": "78c5aa66809e7d4cc14c1a8498de7182b37850b29ec5a2d21d3b1ecc0a552e56"
+      "hash": "1cd4f16ae624314d4e9bd654470a0f75b60894d8920b30981e7eab7356353116"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochanneldescription/==(_:_:).json": {
       "file_path": "documentation/CoreAudioTypes/audiochanneldescription/eqeq(_,_).md",
@@ -2778,19 +2778,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochanneldescription/mchannelflags.json": {
       "file_path": "documentation/CoreAudioTypes/audiochanneldescription/mchannelflags.md",
-      "hash": "6253bdfb6af92d2e55d5dcc667819c4837748fd9576c7855c3bced3cb6e7ec5a"
+      "hash": "977833439e648f21791fd3f26297c4bfa9b02434fa2c3ce49208a43cb7439ad2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochanneldescription/mchannellabel.json": {
       "file_path": "documentation/CoreAudioTypes/audiochanneldescription/mchannellabel.md",
-      "hash": "7ec9ff97f110dbef3954a17b5b6c1f535b149d21a5c52a55bc6d1130c2f3475d"
+      "hash": "1a79abd467e36f3ae239db355531ff2c01fb3718db9592e25ee0c6443fa7e55e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochanneldescription/mcoordinates.json": {
       "file_path": "documentation/CoreAudioTypes/audiochanneldescription/mcoordinates.md",
-      "hash": "4943cdd83de3c552fa89fd566e87894468b7d4d85bdf7cf908ef04f233f16f6f"
+      "hash": "09cae080d98a84f61e3819d49cdf75f4bf938271b17e7416adfa35fb37eeec47"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannelflags.json": {
       "file_path": "documentation/CoreAudioTypes/audiochannelflags.md",
-      "hash": "03824147e82321300678bf5d87d192927be19dbab8b31d30202d1cf68c2a28f4"
+      "hash": "26135585a8508460f6437540d839eab47d258695591b265123657ebfbe847e0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannelflags/init(rawvalue:).json": {
       "file_path": "documentation/CoreAudioTypes/audiochannelflags/init(rawvalue).md",
@@ -2814,11 +2814,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannellabel.json": {
       "file_path": "documentation/CoreAudioTypes/audiochannellabel.md",
-      "hash": "e0a1c5ca7f985d13bd36c9df1b7be77aa66d74b5caa79507d46b9d9368789541"
+      "hash": "c0ebf57e21165c9f51e2217a9332615aaa936b911c438f0445bb2442e274901a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannellayout.json": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout.md",
-      "hash": "3379f239ee4ae88027506b5a7d442bdd51598f29a5120f92cfa2db2d7d8c6145"
+      "hash": "405b53d8a70965416d8959e9487c105a58795aff3ca57ab012abd4bdad176b31"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannellayout/allocate(maximumdescriptions:).json": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/allocate(maximumdescriptions).md",
@@ -2834,19 +2834,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannellayout/mchannelbitmap.json": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/mchannelbitmap.md",
-      "hash": "c5a7f81f195f5891628debe1faf74ae91a00513d99ea5f771b600c9ac4e94315"
+      "hash": "a2fbbf8b1e085e4e257e0de0a5d8136633c579bc01379eefee5907e9330bdb45"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannellayout/mchanneldescriptions.json": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/mchanneldescriptions.md",
-      "hash": "1ea89d224e2f9d377abf9bfc6fd428bd299421a01d88dbdaf572a69e39702c16"
+      "hash": "6d4787c25f3131dc196e55ac1a42f65056860b18b3901e28362f13509f808b6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannellayout/mchannellayouttag.json": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/mchannellayouttag.md",
-      "hash": "7a830aba0462bbd298b3b0b74713a4eb7ec4e91abcbd5adc2c44f27096bd08a6"
+      "hash": "e7c4bd62c433ee846874de1448c64dffa82341c7f9ff0259b72090bf37f9d39c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannellayout/mnumberchanneldescriptions.json": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/mnumberchanneldescriptions.md",
-      "hash": "ce9d5d247c827ad404c5037d59465675d0a088f9648d17872901b606126857e8"
+      "hash": "38c110b593a58f55a0d9855ee689608105043cf5f0a496a993d7b96f3e699522"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannellayout/sizeinbytes(maximumdescriptions:).json": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayout/sizeinbytes(maximumdescriptions).md",
@@ -2898,11 +2898,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannellayouttag.json": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayouttag.md",
-      "hash": "0f531888831254450d0532612f085a60feaf3758b4193ef123b24be51ff02f6b"
+      "hash": "1e9edffa00cc0412c5dfb42e4495a39321e8b95b1487208a38e89d1867ed0eba"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannellayouttag_getnumberofchannels(_:).json": {
       "file_path": "documentation/CoreAudioTypes/audiochannellayouttag_getnumberofchannels(_).md",
-      "hash": "39ac3f4c4dd7636fd81b3a46b575456bfec9298c901a66345de52829d6489e06"
+      "hash": "2fd0c52cd223c3fecd963a9a221af0ac504042bae6cf6daa18ca8b4af5050726"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audioclassdescription.json": {
       "file_path": "documentation/CoreAudioTypes/audioclassdescription.md",
@@ -2930,11 +2930,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audioformatflags.json": {
       "file_path": "documentation/CoreAudioTypes/audioformatflags.md",
-      "hash": "4ee55c86a97e0074f77a8a7886895c6eb7b52222061ac578c705960502707b5d"
+      "hash": "0078e89b5c274ff6dd55d2f5b39c993c73647a4ddb69754b8a7ae8d0599b4c98"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audioformatid.json": {
       "file_path": "documentation/CoreAudioTypes/audioformatid.md",
-      "hash": "20e87e15470154427ac0eb5afa0703f19591309140b4aaf6353baad2debea490"
+      "hash": "883b9a7c2dca13bb5df2412aad87eb1e207dde7fe973560e939773ad88466fa0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audioformatlistitem.json": {
       "file_path": "documentation/CoreAudioTypes/audioformatlistitem.md",
@@ -2966,7 +2966,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiostreambasicdescription.json": {
       "file_path": "documentation/CoreAudioTypes/audiostreambasicdescription.md",
-      "hash": "47a9bda5ccdbd4bc015bb1ab53755f443b374c25384dd77c0fdbfb3da4169181"
+      "hash": "2b8a0e73de4cae370f040e88aa2882d853a24cf6d52b5cec4c6fba3210a5150e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiostreambasicdescription/init().json": {
       "file_path": "documentation/CoreAudioTypes/audiostreambasicdescription/init().md",
@@ -3042,7 +3042,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiostreampacketdescription.json": {
       "file_path": "documentation/CoreAudioTypes/audiostreampacketdescription.md",
-      "hash": "7f5ed5989c1af1b851b0c6b4c344c518b6a838bb86f59ea28f182681b17b061f"
+      "hash": "9a654186f7427072547d6e68ff6a951a6d6618f179e2b03d62381dc9e0fc9829"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiostreampacketdescription/init().json": {
       "file_path": "documentation/CoreAudioTypes/audiostreampacketdescription/init().md",
@@ -3282,7 +3282,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/coreaudiotypes-enumerations.json": {
       "file_path": "documentation/CoreAudioTypes/coreaudiotypes-enumerations.md",
-      "hash": "edd0c80cdf086e2211773a0e4e4523be84f84f2857e06b8b291856f765227bfe"
+      "hash": "b8ea2867fa851e390ec0a8dd8aab7391c5504df39edef50b3ae03701843ec38f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/coreaudiotypes_version.json": {
       "file_path": "documentation/CoreAudioTypes/coreaudiotypes_version.md",
@@ -4502,27 +4502,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_3_0.json": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_3_0.md",
-      "hash": "29142c5a544ee486372712f62f96d178a233a971bd1f1daade5d5a14dd53490d"
+      "hash": "79d1ebf7d9adf990f45622fa521f1b994924f6babf644427bbd308e48cf759e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_4_0.json": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_4_0.md",
-      "hash": "ea50ea891580cde35b6f9f3e6515eb6b86340cde6cd226e5e432171eb671c383"
+      "hash": "eea638ecf5b827199e8dfaebf68e1852696112d909aafb434ef07a8ef450ad5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_5_0.json": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_5_0.md",
-      "hash": "4efda59e36dace362b7fcf63d7e743871b6c5038e41dcc4f615977b2eb54d028"
+      "hash": "063aa08050e9af126a67f71aa9600329802dc207268dc824fd96f6917145ee80"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_5_1.json": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_5_1.md",
-      "hash": "b49b3538208a6d2e2acfce7f7c6bbe1dd99e5d6ce09128091ad65a940e06981e"
+      "hash": "2036902aee9586d78cb1d4257fc5d28096ec38333c55bd9b217bbd87b9470530"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_6_1.json": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_6_1.md",
-      "hash": "297b8f52b93de9e0aeabbbf9f7c4674b2a3d6da2e99054d20c1dffaccfd3691e"
+      "hash": "0f32c6dceaef1ad16b32216f931bf0747d4b40bd2a1794a08c8d2ebedf1547c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/kaudiochannellayouttag_ogg_7_1.json": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_ogg_7_1.md",
-      "hash": "60fdaa26f3ac9325579cd4b88fd153379b6cade0d14f019a6be1cda1d4cbdd87"
+      "hash": "1306cd22a58b3bb453b481b322297cbf325f94e8dff2e6dbef4f2f40acf3ed46"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/kaudiochannellayouttag_pentagonal.json": {
       "file_path": "documentation/CoreAudioTypes/kaudiochannellayouttag_pentagonal.md",
@@ -4822,7 +4822,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/kaudiostreamanyrate.json": {
       "file_path": "documentation/CoreAudioTypes/kaudiostreamanyrate.md",
-      "hash": "635e7a707b76f71ddf3d0393b8511fe6fabe32c0e98d1c5b6e3702cf9b0ce5ac"
+      "hash": "a9874ea3442099c5cbbf3e06446779614585ba26ad32282ed4666eecbec1d5de"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/kaudiounitsamplefractionbits.json": {
       "file_path": "documentation/CoreAudioTypes/kaudiounitsamplefractionbits.md",
@@ -4870,7 +4870,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/mpeg4objectid.json": {
       "file_path": "documentation/CoreAudioTypes/mpeg4objectid.md",
-      "hash": "ecc4188d3a8c6fc43d073fdfa94447697f33c75a82cc2c307dbd80867d8b30b2"
+      "hash": "9d0ab1e6d7119c08f3ea64eccf0bacb9cbce78bd17af8fd15dfd11519fc25f35"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/mpeg4objectid/aac_lc.json": {
       "file_path": "documentation/CoreAudioTypes/mpeg4objectid/aac_lc.md",

@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+An option to enable the specified setting.
+
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
@@ -19,12 +21,19 @@ case enabled
 CPInstrumentClusterSettingEnabled
 ```
 
+## Discussion
+
+Display information for the associated setting if you’re able to do so.
+
 ## See Also
 
-### Enumeration Cases
+### Getting the instrument cluster settings
 - [CPInstrumentClusterSetting.disabled](./disabled.md)
+  An option to disable the specified setting.
 - [CPInstrumentClusterSetting.unspecified](./unspecified.md)
+  An option that represents no configured value.
 - [CPInstrumentClusterSetting.userPreference](./userpreference.md)
+  An option to enable the setting according to personal preferences your app manages.
 
 
 ---

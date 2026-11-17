@@ -18,6 +18,10 @@ A requirement that Siri calls every intent, in any order.
 case unordered
 ```
 
+## Mentions
+
+- [Evaluating your app’s integration with Siri](../../evaluating-your-apps-integration-with-siri.md)
+
 ## See Also
 
 ### Specifying ordering

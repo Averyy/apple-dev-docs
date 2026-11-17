@@ -25,15 +25,15 @@ struct Weight
 ## Topics
 
 ### Getting font weights
-- [static let black: Font.Weight](./weight/black.md)
+- [static let ultraLight: Font.Weight](./weight/ultralight.md)
+- [static let thin: Font.Weight](./weight/thin.md)
+- [static let light: Font.Weight](./weight/light.md)
+- [static let regular: Font.Weight](./weight/regular.md)
+- [static let medium: Font.Weight](./weight/medium.md)
+- [static let semibold: Font.Weight](./weight/semibold.md)
 - [static let bold: Font.Weight](./weight/bold.md)
 - [static let heavy: Font.Weight](./weight/heavy.md)
-- [static let light: Font.Weight](./weight/light.md)
-- [static let medium: Font.Weight](./weight/medium.md)
-- [static let regular: Font.Weight](./weight/regular.md)
-- [static let semibold: Font.Weight](./weight/semibold.md)
-- [static let thin: Font.Weight](./weight/thin.md)
-- [static let ultraLight: Font.Weight](./weight/ultralight.md)
+- [static let black: Font.Weight](./weight/black.md)
 
 ## Relationships
 

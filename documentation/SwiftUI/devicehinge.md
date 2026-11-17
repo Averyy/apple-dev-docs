@@ -23,7 +23,7 @@ struct DeviceHinge
 
 ## Overview
 
-A hinge provides its angle along with a status determined by the system based on the current angle and device orientation. You use this type with the `View/onHingeChange(_:)` modifier.
+A hinge provides its angle along with a status determined by the system based on the current angle and device orientation. You use this type with the [`onHingeChange(isEnabled:_:)`](./view/onhingechange%28isenabled,_%29.md) modifier.
 
 ```swift
 @State private var hinge: DeviceHinge? = nil
@@ -46,6 +46,10 @@ var body: some View {
 ```
 
 In the example above, the current angle and status of the hinge will be displayed in the app as you interact with the hinge.
+
+> ❗ **Important**: Use hinge updates when your app treats the hinge as input, such as driving an animation that responds to granular hinge angle changes, controlling a game, or showing the current angle. Hinge updates arrive while the hinge is moving, at a pace the system sets.
+>
+> Don’t use hinge updates for layout. To adapt your layout to the fold, use [`ArrangementView`](./arrangementview.md) or [`ReservedRegion`](./reservedregion.md) instead. Reserved region updates arrive during a layout pass, which might be animated.
 
 ## Topics
 

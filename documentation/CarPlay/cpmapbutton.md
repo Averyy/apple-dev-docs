@@ -24,15 +24,15 @@ class CPMapButton
 
 ## Topics
 
-### Creating a Map Button
+### Creating a map button
 - [init(handler: ((CPMapButton) -> Void)?)](./cpmapbutton/init%28handler%29.md)
   Creates a new map button.
-### Providing Button Images
+### Managing the images
 - [var image: UIImage?](./cpmapbutton/image.md)
   The image to display on the button.
 - [var focusedImage: UIImage?](./cpmapbutton/focusedimage.md)
   The image to display when focus is on the button.
-### Controlling the Button
+### Configuring the button
 - [var isEnabled: Bool](./cpmapbutton/isenabled.md)
   A Boolean value that enables and disables the map button.
 - [var isHidden: Bool](./cpmapbutton/ishidden.md)
@@ -57,9 +57,19 @@ class CPMapButton
 
 ## See Also
 
-### Managing Map Buttons
-- [var mapButtons: [CPMapButton]](./cpmaptemplate/mapbuttons.md)
-  An array of map buttons on the trailing bottom corner of the map template.
+### Maps
+- [class CPMapTemplate](./cpmaptemplate.md)
+  A template that displays a navigation overlay that your app draws on the map.
+- [class CPMapPanel](./cpmappanel.md)
+  An overlay for a custom map interface that shows navigation-related instructions or information over a portion of the map.
+- [class CPMapPanelSection](./cpmappanelsection.md)
+  A single section of a map panel that you fill with a title and one or more items.
+- [class CPMapPanelItem](./cpmappanelitem.md)
+  A type that manages the waypoint, route, trip, and other information you display in a map panel.
+- [class CPMapPanelButtonConfiguration](./cpmappanelbuttonconfiguration.md)
+  A type that manages the action buttons and travel estimates in a map panel.
+- [class CPChargingStationConnection](./cpchargingstationconnection.md)
+  Details about the equipment at an electric vehicle charging station.
 
 
 ---

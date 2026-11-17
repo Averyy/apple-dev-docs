@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-The state, accuracy, and reason that are possible for geo-tracking’s current condition.
+The state, accuracy, and reason that are possible for geo tracking’s current condition.
 
 **Availability**:
 - iOS 14.0+
@@ -22,9 +22,9 @@ class ARGeoTrackingStatus
 
 ## Overview
 
-Geo tracking requires coordination with the user at various phases of the geo-tracking lifecycle. To elicit the right user actions, an app needs to provide clear instructions to the user based on the current frame’s [`geoTrackingStatus`](./arframe/geotrackingstatus.md):
+Geo tracking requires coordination with the user at various phases of the geo tracking lifecycle. To elicit the right user actions, an app needs to provide clear instructions to the user based on the current frame’s [`geoTrackingStatus`](./arframe/geotrackingstatus.md):
 
-- Geo-tracking [`state`](./argeotrackingstatus/state-swift.property.md) most notably regards the important process in which ARKit acquires a better understanding of the user’s geographic location and orientation than is possible with GPS and the compass heading alone. See [`ARGeoTrackingStatus.State.localizing`](./argeotrackingstatus/state-swift.enum/localizing.md) for more information.
+- Geo tracking [`state`](./argeotrackingstatus/state-swift.property.md) most notably regards the important process in which ARKit acquires a better understanding of the user’s geographic location and orientation than is possible with GPS and the compass heading alone. See [`ARGeoTrackingStatus.State.localizing`](./argeotrackingstatus/state-swift.enum/localizing.md) for more information.
 - Given a particular [`state`](./argeotrackingstatus/state-swift.property.md), the app needs to tailor its user messaging according to the [`stateReason`](./argeotrackingstatus/statereason-swift.property.md).
 - An app may need to monitor [`accuracy`](./argeotrackingstatus/accuracy-swift.property.md) closely if it requires high-precision localization.
 
@@ -32,14 +32,14 @@ Geo tracking requires coordination with the user at various phases of the geo-tr
 
 ### Checking State
 - [var state: ARGeoTrackingStatus.State](./argeotrackingstatus/state-swift.property.md)
-  A value that describes the session’s current geo-tracking state.
+  A value that describes the session’s current geo tracking state.
 - [ARGeoTrackingStatus.State](./argeotrackingstatus/state-swift.enum.md)
-  Values that are possible for the current state of geo-tracking.
+  Values that are possible for the current state of geo tracking.
 ### Determining the Reason
 - [var stateReason: ARGeoTrackingStatus.StateReason](./argeotrackingstatus/statereason-swift.property.md)
-  The reasons for the app’s geotracking status.
+  The reasons for the app’s geo tracking status.
 - [ARGeoTrackingStatus.StateReason](./argeotrackingstatus/statereason-swift.enum.md)
-  The reasons for the app’s geotracking status.
+  The reasons that describe a geo tracking session’s status.
 ### Judging Accuracy
 - [var accuracy: ARGeoTrackingStatus.Accuracy](./argeotrackingstatus/accuracy-swift.property.md)
   The accuracy of geo tracking at the time the session captured the frame.

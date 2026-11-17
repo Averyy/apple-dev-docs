@@ -38,6 +38,8 @@ The functionality this method adds to the authorization process is available reg
 
 Outside of the European Union, the system doesn’t use either parameter, and presents a system alert displaying the original [`NSUserTrackingUsageDescription`](../../BundleResources/information-property-list/nsusertrackingusagedescription.md), which is equivalent to calling [`requestTrackingAuthorization(completionHandler:)`](./requesttrackingauthorization%28completionhandler%29.md).
 
+> ❗ **Important**: You can test the full-page sheet in any region by running a development or ad hoc build on a physical device, or by distributing an internal TestFlight build. Outside a qualifying region, external TestFlight installations still present the standard system alert. Simulator doesn’t support the full-page sheet.
+
 ## Handle the person’s response
 
 When the person answers the prompt, the system calls the argument completion handler with a status object ([`ATTrackingManager.AuthorizationStatus`](./authorizationstatus.md)) set to [`ATTrackingManager.AuthorizationStatus.authorized`](./authorizationstatus/authorized.md) or [`ATTrackingManager.AuthorizationStatus.denied`](./authorizationstatus/denied.md), depending on the person’s response.

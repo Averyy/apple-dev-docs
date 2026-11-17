@@ -15,7 +15,7 @@ Creates a request scene for handling a full ISO 18013 mobile document raw reques
 
 ```swift
 @MainActor
-@preconcurrency init(@ViewBuilder content: @escaping (ISO18013MobileDocumentRawRequestContext) -> Content)
+@preconcurrency init(@ContentBuilder content: @escaping (ISO18013MobileDocumentRawRequestContext) -> Content)
 ```
 
 ## Parameters

@@ -53,6 +53,9 @@ struct SaveButton: View {
 
     var body: some View {
         Button("Save") {
+            // If saving fails, this call sets `didError` to
+            // `true`, so the system presents the alert. The call
+            // also returns the details that the alert displays.
             details = model.save(didError: $didError)
         }
         .alert(

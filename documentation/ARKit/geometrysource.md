@@ -17,7 +17,7 @@ struct GeometrySource
 
 ## Overview
 
-Mesh-anchor geometry ([`MeshDescriptor`](../RealityKit/meshdescriptor.md)) uses geometry sources to hold 3D data like vertices and normals in an efficent, array-like format. A Metal buffer wraps the data and other properties specify how to interpret that data.
+Mesh-anchor geometry ([`MeshDescriptor`](../RealityKit/meshdescriptor.md)) uses geometry sources to hold 3D data like vertices and normals in an efficient, array-like format. A Metal buffer wraps the data and other properties specify how to interpret that data.
 
 If [`componentsPerVector`](./geometrysource/componentspervector.md) is greater than one, the element type of the geometry-source array is itself a sequence (pairs, triplets, and so on).
 
@@ -36,6 +36,7 @@ If [`componentsPerVector`](./geometrysource/componentspervector.md) is greater t
   The offset, in bytes, from the beginning of a geometry source’s buffer.
 - [var stride: Int](./geometrysource/stride.md)
   The number of bytes between one vector and another in a geometry source’s buffer.
+### Instance Properties
 - [var description: String](./geometrysource/description.md)
   A textual representation of this geometry source.
 ### Default Implementations

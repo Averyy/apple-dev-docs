@@ -35,6 +35,8 @@ After a run, Xcode shows a report of what Siri says and does in each turn.
 ## Topics
 
 ### Evaluations
+- [Evaluating your app’s integration with Siri](./evaluating-your-apps-integration-with-siri.md)
+  Create conversations to confirm that Siri runs the correct intents from your app, with the parameter values you expect.
 - [enum SiriService](./siriservice.md)
   A service that runs a scenario through Siri and records what Siri does.
 - [struct SiriExpectationEvaluator](./siriexpectationevaluator.md)

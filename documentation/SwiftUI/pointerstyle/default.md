@@ -20,6 +20,10 @@ static let `default`: PointerStyle
 
 This is the default pointer style for interacting with content and UI elements if no other pointer style is more appropriate. This pointer style displays an arrow in macOS and a circle in iPadOS and visionOS.
 
+The following image shows the default pointer in macOS:
+
+![An arrow pointer.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-default@2x.png)
+
 You might want to set this pointer style explicitly using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier to override another style in the environment.
 
 ## See Also

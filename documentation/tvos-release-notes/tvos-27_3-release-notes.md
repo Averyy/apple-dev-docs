@@ -1,4 +1,4 @@
-# tvOS 27.3 Beta Release Notes
+# tvOS 27.3 Beta 2 Release Notes
 
 **Framework**: tvOS Release Notes  
 **Role**: Article
@@ -7,19 +7,32 @@ Update your apps to use new features, and test your apps against API changes.
 
 ## Overview
 
-The tvOS 27.3 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27.3 beta. The SDK comes bundled with Xcode 27.3. For information on the compatibility requirements for Xcode 27.3, see [Xcode 27.3 Release Notes](../Xcode-Release-Notes/xcode-27_3-release-notes.md).
+The tvOS 27.3 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27.3 beta 2. The SDK comes bundled with Xcode 27.3. For information on the compatibility requirements for Xcode 27.3, see [Xcode 27.3 Release Notes](../Xcode-Release-Notes/xcode-27_3-release-notes.md).
+
+### App Intents
+
+#### New Features
+
+- The Video schema domain is now available for apps to integrate with Siri AI on tvOS, iOS, macOS, and visionOS. (189805051)
+
+### Apple Video Podcasts in the TV App
+
+#### New Features
+
+- Apple Video Podcasts are now available in the Apple TV app. Watch full episodes of your favorite video podcasts, and pick up where you left off from Apple Podcasts. (192370477)
+
+### CoreImage
+
+#### New Features
+
+- CIRAWFilter now relies on resources that aren’t included with the operating system. To download them, use the `downloadresources` and `downloadallresources` methods of CIRAWFilter. (190766743)
 
 ### StoreKit Testing in Xcode
 
 #### Resolved Issues
 
 - Fixed: Making an in-app purchase for a subscription that is a member of a subscription bundle incorrectly allows the user to unbundle instead of throwing an error. (186018916)
-
-#### Known Issues
-
-- When you launch an app that uses `SKTestSession` for the first time, some StoreKit Test API calls might hang. (186670057) (FB24651858)
-
-  **Workaround:** Set a StoreKit configuration file in your scheme’s run options, then rerun the tests.
+- Fixed: When you launch an app that uses `SKTestSession` for the first time, some StoreKit Test API calls might hang. (186670057) (FB24651858)
 
 ## See Also
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The column name in the DataFrame.
+The column name in the [`DataFrame`](../../TabularData/dataframe.md).
 
 **Availability**:
 - iOS 27.0+

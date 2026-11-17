@@ -25,7 +25,7 @@ class PKConvertedBezierPointReference
 
 ## Overview
 
-`PKConvertedBezierPointReference` is passed to the `pointProvider` block of `PKStrokePathReference/initWithBezierPath:creationDate:pointProvider:` so you can initialize each `PKStrokePoint` of the resulting path with appropriate values. A single instance is reused for each point in the conversion.
+`PKConvertedBezierPointReference` is passed to the `pointProvider` block of [`init(bezierPath:creationDate:pointProvider:)`](./pkstrokepathreference/init%28bezierpath,creationdate,pointprovider%29.md) so you can initialize each [`PKStrokePointReference`](./pkstrokepointreference.md) of the resulting path with appropriate values. A single instance is reused for each point in the conversion.
 
 In Swift, use the equivalent value type [`PKStrokePath.ConvertedBezierPoint`](./pkstrokepath-swift.struct/convertedbezierpoint.md) instead.
 
@@ -40,9 +40,6 @@ In Swift, use the equivalent value type [`PKStrokePath.ConvertedBezierPoint`](./
   The location of the cubic uniform B-Spline control point.
 - [var bezierSegmentIndex: Int](./pkconvertedbezierpointreference/beziersegmentindex.md)
   The index of the Bézier segment the point originates from, not including `move to` elements.
-### Using Swift types
-- [PKStrokePath.ConvertedBezierPoint](./pkstrokepath-swift.struct/convertedbezierpoint.md)
-  Information about a B-spline control point converted from a Bézier path.
 
 ## Relationships
 

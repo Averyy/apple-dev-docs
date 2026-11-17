@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-11-13T08:09:00.532188",
+    "last_updated": "2026-11-17T07:58:58.497227",
     "total_files": 173,
     "source": "scrape_hig_docs.py",
     "render": {
@@ -174,14 +174,14 @@
       "last_updated": "2026-10-20T17:45:05.266879"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/right-to-left.json": {
-      "hash": "e240050536c4dc604aac2108c3c6962f21c70fdce283b5ab61d1520ddabee6ec",
+      "hash": "27890690ebc0a41f191e0c26696f1e92906e0e99308626f4234cc817a0c5e98f",
       "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/right-to-left.md",
-      "last_updated": "2026-10-20T17:45:05.465023"
+      "last_updated": "2026-11-17T07:58:35.465475"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sf-symbols.json": {
-      "hash": "cd57c0c0f85045f526cd88db21e05de02e74372a092f2da2289113fa54af40fb",
+      "hash": "720444443624084aea61c3d6c8d9832ab723531cb3374431ebc196d29b219037",
       "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/sf-symbols.md",
-      "last_updated": "2026-11-13T08:08:35.862343"
+      "last_updated": "2026-11-17T07:58:35.651231"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/spatial-layout.json": {
       "hash": "85aaa342c5604b4202361de29eea459ec15182456281642302383ab24a69fc3e",

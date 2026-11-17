@@ -29,7 +29,7 @@ Examples of additional information variants include *Fastest Route* and *Avoids 
 
 ## See Also
 
-### Getting Variants
+### Getting the variant details
 - [var summaryVariants: [String]](./summaryvariants.md)
   An array of summary variants.
 - [var selectionSummaryVariants: [String]?](./selectionsummaryvariants.md)

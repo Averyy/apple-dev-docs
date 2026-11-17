@@ -26,8 +26,6 @@ var chirality: HandAnchor.Chirality { get }
   A value that indicates a left or right hand.
 - [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking this hand.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 
 
 ---

@@ -16,9 +16,13 @@ An array of metal pixel formats the layer renderer drawable supports with its re
 var drawableRenderContextSupportedStencilFormats: [MTLPixelFormat] { get }
 ```
 
+## Mentions
+
+- [Controlling Metal rendering immersion level](../../controlling-metal-rendering-immersion-level.md)
+
 ## Discussion
 
-The pixel formats in this property tell you which [`MTLPixelFormat`](../../../Metal/mtlpixelformat.md) pixel arrangements and characteristics the layer supports for its stencil textures with the `RenderContext`.
+The pixel formats in this property tell you which [`MTLPixelFormat`](../../../Metal/mtlpixelformat.md) pixel arrangements and characteristics the layer supports for its stencil textures with the [`LayerRenderer.Drawable.RenderContext`](../drawable/rendercontext.md).
 
 > **Note**: Pixel formats are further detailed in [Metal Feature Set Tables](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
 

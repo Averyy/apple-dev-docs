@@ -166,7 +166,7 @@ float4 transformedVertex = displayTransform * vertexImageSpace;
 _geometry.texcoords[0] = transformedVertex.xy;
 ```
 
-When you assign a shader code string to the [`geometry`](../SceneKit/scnshadermodifierentrypoint/geometry.md) entry point, SceneKit configures its renderer to automatically run that code on the GPU for each vertex in the mesh. This shader code also needs to know the intended orientation for the camera image, so the sample gets that from the ARKit `ARFrame/displayTransform(for:viewportSize:)` method and passes it to the shader’s `displayTransform` argument:
+When you assign a shader code string to the [`geometry`](../SceneKit/scnshadermodifierentrypoint/geometry.md) entry point, SceneKit configures its renderer to automatically run that code on the GPU for each vertex in the mesh. This shader code also needs to know the intended orientation for the camera image, so the sample gets that from the ARKit [`displayTransformForOrientation:viewportSize:`](./arframe/displaytransformfororientation_viewportsize_.md) method and passes it to the shader’s `displayTransform` argument:
 
 ```swift
 // Pass view-appropriate image transform to the shader modifier so

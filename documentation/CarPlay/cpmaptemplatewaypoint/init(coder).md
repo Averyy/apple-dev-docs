@@ -15,6 +15,12 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating a trip
+- [init(waypoint: CPNavigationWaypoint, travelEstimates: CPTravelEstimates)](./init%28waypoint,travelestimates%29.md)
+  Initializes a new CPMapTemplateWaypoint with the specified waypoint and travel estimates.
+
 
 ---
 

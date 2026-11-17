@@ -21,7 +21,7 @@ func multiSeatInvitationBehavior(_ behavior: MultiSeatInvitationBehavior) -> som
 
 ## Discussion
 
-The behavior you set applies to StoreKit views within this view, and only to the sheet the system presents in-line once a purchase completes. It has no effect on [`multiSeatInvitationSheet(isPresented:subscriptionGroupID:onCompletion:)`](./multiseatinvitationsheet%28ispresented,subscriptiongroupid,oncompletion%29.md), which your app presents on demand.
+The behavior you set applies to StoreKit views within this view, and only to the sheet the system presents in-line once a purchase completes. It has no effect on [`multiSeatInvitationSheet(isPresented:originalTransactionID:onCompletion:)`](./multiseatinvitationsheet%28ispresented,originaltransactionid,oncompletion%29.md), which your app presents on demand.
 
 Behaviors you set in this modifier overwrite any behavior you specified in ancestor views.
 

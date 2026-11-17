@@ -25,6 +25,10 @@ A set of methods that the delegate must implement to respond to `PHPickerViewCon
 ### Instance Methods
 - [func picker(PHPickerViewController, didFinishPicking: [PHPickerResult])](./phpickerviewcontrollerdelegate-5yntc/picker%28_,didfinishpicking%29.md)
   Called when the user completes a selection or dismisses `PHPickerViewController` using the cancel button.
+- [func pickerDidPerformPrimaryAction(PHPickerViewController)](./phpickerviewcontrollerdelegate-5yntc/pickerdidperformprimaryaction%28_%29.md)
+  Called when the user taps the primary button.
+- [func pickerDidPerformSecondaryAction(PHPickerViewController)](./phpickerviewcontrollerdelegate-5yntc/pickerdidperformsecondaryaction%28_%29.md)
+  Called when the user taps the secondary button.
 
 ## See Also
 

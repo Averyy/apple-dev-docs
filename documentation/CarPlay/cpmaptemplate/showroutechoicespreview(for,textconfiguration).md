@@ -32,7 +32,7 @@ The trip preview can appear over an active navigation session.
 
 ## See Also
 
-### Displaying Trip Previews
+### Displaying trip previews
 - [func showTripPreviews([CPTrip], textConfiguration: CPTripPreviewTextConfiguration?)](./showtrippreviews%28_,textconfiguration%29.md)
   Displays the preview for one or more trips, and allows route selection.
 - [func showTripPreviews([CPTrip], selectedTrip: CPTrip?, textConfiguration: CPTripPreviewTextConfiguration?)](./showtrippreviews%28_,selectedtrip,textconfiguration%29.md)

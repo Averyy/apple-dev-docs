@@ -18,6 +18,12 @@ The vertex attributes to renormalize to unit length.
 var outputs: LowLevelDeformation.Pipeline.Descriptor.Renormalization.VertexSemanticOutputs
 ```
 
+## See Also
+
+### Selecting attributes to renormalize
+- [LowLevelDeformation.Pipeline.Descriptor.Renormalization.VertexSemanticOutputs](./vertexsemanticoutputs.md)
+  Identifies which vertex attributes are renormalized to unit length.
+
 
 ---
 

@@ -23,7 +23,13 @@ var carTraitCollection: UITraitCollection { get }
 
 ## Discussion
 
-Use this trait collection to derive metrics, such as display scale, for your CarPlay templates. For example, images you display in a [`CPListTemplate`](../cplisttemplate.md) can use this trait collection’s display scale rather than the scale of the user’s iPhone screen.
+Use this trait collection to derive metrics for the content you display in your CarPlay interface. For example, create or select images at the display scale you get from this trait collection, and not from the display scale from the person’s iPhone.
+
+## See Also
+
+### Configuring interface-related details
+- [var prefersDarkUserInterfaceStyle: Bool](./prefersdarkuserinterfacestyle.md)
+  A Boolean value that indicates whether you prefer Dark Mode for your interface.
 
 
 ---

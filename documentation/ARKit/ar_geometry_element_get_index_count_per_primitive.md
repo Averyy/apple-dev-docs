@@ -15,6 +15,18 @@ Gets the number of indices for each primitive.
 extern size_t ar_geometry_element_get_index_count_per_primitive(ar_geometry_element_t geometry_element);
 ```
 
+## Return Value
+
+The number of indices for each of the geometry element’s primitives.
+
+## Discussion
+
+This is based on the primitive type. For `ar_geometry_primitive_type_triangle` the value is `3`.
+
+## Parameters
+
+- `geometry_element`: The geometry element.
+
 ## See Also
 
 ### Geometry

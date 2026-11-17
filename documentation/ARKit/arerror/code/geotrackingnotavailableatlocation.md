@@ -24,7 +24,7 @@ ARErrorCodeGeoTrackingNotAvailableAtLocation
 
 This error code indicates that ARKit does not have the necessary localization imagery to support geo tracking at the user’s current location. See [`checkAvailability(completionHandler:)`](../../argeotrackingconfiguration/checkavailability%28completionhandler%29.md) for more information.
 
-If [`checkAvailability(completionHandler:)`](../../argeotrackingconfiguration/checkavailability%28completionhandler%29.md) returns [`true`](../../../Swift/true.md) and an app begins geo-tracking session, ARKit provides this state reason when the user has moved to an unsupported area.
+If [`checkAvailability(completionHandler:)`](../../argeotrackingconfiguration/checkavailability%28completionhandler%29.md) returns [`true`](../../../Swift/true.md) and an app begins a geo-tracking session, ARKit provides this error when the user has moved to an unsupported area.
 
 ## See Also
 
@@ -58,7 +58,7 @@ If [`checkAvailability(completionHandler:)`](../../argeotrackingconfiguration/ch
 - [ARError.Code.unsupportedConfiguration](./unsupportedconfiguration.md)
   An error that indicates the device lacks support for the session’s configuration.
 - [ARError.Code.worldTrackingFailed](./worldtrackingfailed.md)
-  An error that indicates when world tracking experiences an unrecoverable problem.
+  An error that indicates world tracking experienced an unrecoverable problem.
 
 
 ---

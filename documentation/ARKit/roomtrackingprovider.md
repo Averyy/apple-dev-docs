@@ -27,13 +27,14 @@ final class RoomTrackingProvider
   An asynchronous sequence of room anchor updates.
 - [var currentRoomAnchor: RoomAnchor?](./roomtrackingprovider/currentroomanchor.md)
   The room a person is in currently, if any.
+- [var state: DataProviderState](./roomtrackingprovider/state.md)
+  The status of a room-tracking provider.
+### Instance Properties
 - [var description: String](./roomtrackingprovider/description.md)
   A textual representation of this room tracking provider.
-- [var state: DataProviderState](./roomtrackingprovider/state.md)
-  The state of a room-tracking provider.
-### Type properties
+### Type Properties
 - [static var isSupported: Bool](./roomtrackingprovider/issupported.md)
-  A Boolean values that indicates whether a device supports the room-tracking provider.
+  A Boolean value that indicates whether a device supports the room-tracking provider.
 - [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./roomtrackingprovider/requiredauthorizations.md)
   An array of authorization types the room-tracking provider requires.
 

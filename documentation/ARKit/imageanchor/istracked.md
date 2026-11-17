@@ -24,8 +24,6 @@ var isTracked: Bool { get }
   The reference image that this image anchor tracks.
 - [var estimatedScaleFactor: Float](./estimatedscalefactor.md)
   The estimated scale factor between the tracked image’s physical size and the reference image’s size.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 - [var id: UUID](./id.md)
   The unique identifier of this anchor.
 

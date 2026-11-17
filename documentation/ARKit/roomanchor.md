@@ -37,16 +37,17 @@ A `RoomAnchor` structure describes an approximate representation of the room’s
 ### Inspecting a room anchor
 - [func contains(SIMD3<Float>) -> Bool](./roomanchor/contains%28_%29.md)
   Returns a Boolean value that indicates whether a room contains the provided point.
+- [func geometries(classifiedAs: SurfaceClassification) -> [MeshAnchor.Geometry]](./roomanchor/geometries%28classifiedas%29.md)
+  Get disjoint mesh geometries of a given surface classification.
+### Deprecated
 - [func geometries(of: MeshAnchor.MeshClassification) -> [MeshAnchor.Geometry]](./roomanchor/geometries%28of%29.md)
   Returns the disjoint mesh geometries of a given classification.
-- [var description: String](./roomanchor/description.md)
-  A textual representation of this anchor.
 ### Operators
 - [static func == (RoomAnchor, RoomAnchor) -> Bool](./roomanchor/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two room anchors are equal.
-### Instance Methods
-- [func geometries(classifiedAs: SurfaceClassification) -> [MeshAnchor.Geometry]](./roomanchor/geometries%28classifiedas%29.md)
-  Get disjoint mesh geometries of a given surface classification.
+### Instance Properties
+- [var description: String](./roomanchor/description.md)
+  A textual representation of this anchor.
 ### Default Implementations
 - [ARKitCoordinateSpaceProviding Implementations](./roomanchor/arkitcoordinatespaceproviding-implementations.md)
 

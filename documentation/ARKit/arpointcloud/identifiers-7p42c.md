@@ -23,10 +23,10 @@ Each identifier in this list corresponds to the point vector at the same index i
 ## See Also
 
 ### Identifying Feature Points
-- [count](./count.md)
-  The number of points in the point cloud.
 - [points](./points-7mppp.md)
   The list of detected points.
+- [count](./count.md)
+  The number of points in the point cloud.
 
 
 ---

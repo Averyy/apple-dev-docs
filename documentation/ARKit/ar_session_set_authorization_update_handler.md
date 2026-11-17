@@ -15,6 +15,16 @@ Sets the handler for receiving updates in authorization status for a specific au
 extern void ar_session_set_authorization_update_handler(ar_session_t session, dispatch_queue_t authorization_update_queue, ar_authorization_update_handler_t authorization_update_handler);
 ```
 
+## Discussion
+
+> **Note**: Setting this handler will override the function set using `ar_session_set_authorization_update_handler_f`.
+
+## Parameters
+
+- `session`: The session.
+- `authorization_update_queue`: The queue on which the handler will be called. Passing NULL will default to the main queue.
+- `authorization_update_handler`: The handler to be called when there is an update to authorization status.
+
 ## See Also
 
 ### Sessions

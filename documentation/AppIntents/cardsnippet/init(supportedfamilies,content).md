@@ -18,7 +18,7 @@ Creates a card snippet with the views for specific families of content.
 ## Declaration
 
 ```swift
-init(supportedFamilies: [CardSnippetFamily], @ViewBuilder content: @escaping @MainActor (Entity, CardSnippetContext) -> Content)
+init(supportedFamilies: [CardSnippetFamily], @ViewBuilder content: @escaping @MainActor @Sendable (Entity, CardSnippetContext) -> Content)
 ```
 
 ## Discussion

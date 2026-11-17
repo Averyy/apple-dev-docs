@@ -15,6 +15,14 @@ Creates an empty collection of data providers.
 extern ar_data_providers_tar_data_providers_create();
 ```
 
+## Return Value
+
+An instance of `ar_data_providers_t`.
+
+## Discussion
+
+> **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
+
 ## See Also
 
 ### Data providers
@@ -23,7 +31,7 @@ extern ar_data_providers_tar_data_providers_create();
 - [ar_data_provider_get_required_authorization_type](./ar_data_provider_get_required_authorization_type.md)
   The kinds of authorization you need to use a particular data provider type.
 - [ar_data_provider_get_state](./ar_data_provider_get_state.md)
-  Gets the current status of data coming from this provider.
+  Gets the current status of data coming from a data provider.
 - [ar_data_providers_enumerator_t](./ar_data_providers_enumerator_t.md)
   A handler for enumerating a collection of data providers.
 - [ar_data_providers_t](./ar_data_providers_t.md)
@@ -35,7 +43,7 @@ extern ar_data_providers_tar_data_providers_create();
 - [ar_data_providers_create_with_data_providers](./ar_data_providers_create_with_data_providers.md)
   Creates a collection of data providers that contains the data providers you supply.
 - [ar_data_providers_enumerate_data_providers_f](./ar_data_providers_enumerate_data_providers_f.md)
-  Enumerates a collection of data providers.
+  Enumerates a collection of data providers using a function.
 - [ar_data_providers_get_count](./ar_data_providers_get_count.md)
   Gets the number of data providers in a collection.
 - [ar_data_providers_enumerate_data_providers](./ar_data_providers_enumerate_data_providers.md)
@@ -45,6 +53,7 @@ extern ar_data_providers_tar_data_providers_create();
 - [ar_data_providers_remove_data_providers](./ar_data_providers_remove_data_providers.md)
   Removes multiple data providers from a collection.
 - [ar_data_providers_enumerator_function_t](./ar_data_providers_enumerator_function_t.md)
+  Function for enumerating a collection of data providers.
 - [ar_session_data_provider_state_change_handler_function_t](./ar_session_data_provider_state_change_handler_function_t.md)
   A handler function that the session calls when one or more data providers associated with it change state.
 

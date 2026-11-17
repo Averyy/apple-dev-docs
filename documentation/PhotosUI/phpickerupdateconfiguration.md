@@ -32,8 +32,20 @@ While a photos picker is visible, you can use an instance of this object to chan
 - [edgesWithoutContentMargins](./phpickerupdateconfiguration/edgeswithoutcontentmargins.md)
   The portions of a photo picker’s permiter that are borderless.
 ### Instance Properties
+- [containerIdentifier](./phpickerupdateconfiguration/containeridentifier.md)
+  The collection of items to be shown. Default is \c nil.
+- [minimumSelectionLimit](./phpickerupdateconfiguration/minimumselectionlimit.md)
+  The minimum number of items that should be selected. Default is \c NSNotFound.
+- [primaryButtonType](./phpickerupdateconfiguration/primarybuttontype.md)
+  The primary button type. Default is \c PHPickerPrimaryButtonTypeAutomatic.
+- [prompt](./phpickerupdateconfiguration/prompt.md)
+  The localized string to be shown when the picker is presented. Default is \c nil.
 - [searchText](./phpickerupdateconfiguration/searchtext.md)
   The search text for the picker.
+- [secondaryButtonType](./phpickerupdateconfiguration/secondarybuttontype.md)
+  The secondary button type. Default is \c PHPickerSecondaryButtonTypeAutomatic.
+- [title](./phpickerupdateconfiguration/title.md)
+  The localized title to override the default title when the picker is presented. Default is \c nil.
 
 ## Relationships
 

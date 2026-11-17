@@ -19,7 +19,9 @@ typedef enum { ... } ar_hand_anchor_query_status_t;
 
 ### Query states
 - [ar_hand_anchor_query_status_failure](./ar_hand_anchor_query_status_t/ar_hand_anchor_query_status_failure.md)
+  An enumeration that describes the status of a hand anchor query.
 - [ar_hand_anchor_query_status_success](./ar_hand_anchor_query_status_t/ar_hand_anchor_query_status_success.md)
+  An enumeration that describes the status of a hand anchor query.
 
 ## See Also
 
@@ -35,7 +37,7 @@ typedef enum { ... } ar_hand_anchor_query_status_t;
 - [ar_anchor_t](./ar_anchor_t.md)
   The identity, location, and orientation of an object in world space.
 - [ar_mesh_anchor_t](./ar_mesh_anchor_t.md)
-  A surface’s position in a person’s surroundings.
+  An anchor that represents a reconstructed mesh from the physical environment.
 - [ar_mesh_anchors_t](./ar_mesh_anchors_t.md)
   A collection of mesh anchors.
 - [ar_mesh_anchors_enumerator_t](./ar_mesh_anchors_enumerator_t.md)

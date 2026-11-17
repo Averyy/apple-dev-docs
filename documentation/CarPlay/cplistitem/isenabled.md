@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A Boolean value that indicates if the item is enabled.
+A Boolean value that indicates whether the item is enabled.
 
 **Availability**:
 - iOS 15.0+
@@ -23,15 +23,13 @@ var isEnabled: Bool { get set }
 
 ## Discussion
 
-The default value is [`true`](../../Swift/true.md).
+The default value of this property is `true`. Set the property to `false` to disable the item in your list interface. CarPlay doesn’t report interactions with disabled items and changes their appearance to reflect their disabled state.
 
 ## See Also
 
-### Managing Configuration
+### Responding to interactions
 - [var handler: ((any CPSelectableListItem, () -> Void) -> Void)?](./handler.md)
-  An optional closure that CarPlay invokes when the user selects the list item.
-- [var userInfo: Any?](./userinfo.md)
-  An opaque value for the list item.
+  The closure to run when someone interacts with any part of the list item.
 
 
 ---

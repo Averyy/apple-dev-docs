@@ -30,7 +30,7 @@ Different types of AR experiences (which you configure using concrete [`ARConfig
 
 Before attempting to create an AR configuration, verify that the user’s device supports the configuration you plan to use by checking the [`isSupported`](./issupported.md) property of the corresponding configuration class. If this property’s value is [`false`](../../Swift/false.md), the current device does not support the requested configuration.
 
-> ❗ **Important**:  All ARKit configurations require an iOS device with an A9 or later processor. If your app otherwise supports other devices and offers augmented reality as a secondary feature, use this property to determine whether to offer AR-based features to the user.
+> ❗ **Important**: All ARKit configurations require an iOS device with an A9 or later processor. If your app otherwise supports other devices and offers augmented reality as a secondary feature, use this property to determine whether to offer AR-based features to the user.
 >
 > If your app requires ARKit for its core functionality, use the `arkit` key in the [`UIRequiredDeviceCapabilities`](../../BundleResources/information-property-list/uirequireddevicecapabilities.md) section of your app’s Info.plist to make your app available only on devices that support ARKit.
 

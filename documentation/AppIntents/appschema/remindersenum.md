@@ -23,9 +23,9 @@ protocol RemindersEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var listType: some AppSchemaEnum](./remindersenum/listtype.md)
-  An enum schema for a list type parameter.
+  An enum schema for a list type.
 - [var locationTriggerEvent: some AppSchemaEnum](./remindersenum/locationtriggerevent.md)
-  An enum schema for a location trigger event parameter.
+  An enum schema for a location trigger event.
 
 ## Relationships
 
@@ -38,9 +38,9 @@ protocol RemindersEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var listType: some AppSchemaEnum](./remindersenum/listtype.md)
-  An enum schema for a list type parameter.
+  An enum schema for a list type.
 - [var locationTriggerEvent: some AppSchemaEnum](./remindersenum/locationtriggerevent.md)
-  An enum schema for a location trigger event parameter.
+  An enum schema for a location trigger event.
 
 
 ---

@@ -40,7 +40,7 @@ In a declaration that includes generic type parameters, each generic type parame
 
 ```swift
 struct MyStructure { }
-struct MyStructere: Copyable { }
+struct MyStructure: Copyable { }
 
 protocol MyProtocol { }
 protocol MyProtocol: Copyable { }

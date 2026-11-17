@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/TechnologyOverviews": {
       "file_path": "documentation/TechnologyOverviews/TechnologyOverviews.md",
-      "hash": "2f93f09cfc8121bcac1e5575c14df2a68e72749e4a8b14aa83c69ba6ddf50424"
+      "hash": "7650d133d92d1055bce9477187170a49708fcfa0128f68ffac9bf1e3f22d8406"
     },
     "https://developer.apple.com/documentation/technologyoverviews/3d-content": {
       "file_path": "documentation/TechnologyOverviews/api-3d-content.md",
@@ -10,7 +10,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/adopting-liquid-glass": {
       "file_path": "documentation/TechnologyOverviews/adopting-liquid-glass.md",
-      "hash": "a41d1485f9815b51d040d2f723e7372e066eacbbda02b81493f21f6fee52ad47"
+      "hash": "6ebae3d6b1486d33757ab6c7bff3c170df0874416287b08bc1576e44449d0909"
     },
     "https://developer.apple.com/documentation/technologyoverviews/ai-machine-learning": {
       "file_path": "documentation/TechnologyOverviews/ai-machine-learning.md",
@@ -20,21 +20,29 @@
       "file_path": "documentation/TechnologyOverviews/animations.md",
       "hash": "6a2163db9bf1792a69eae756de881d8412bca4878808d7e34f5b3bcf18e9ea1d"
     },
-    "https://developer.apple.com/documentation/technologyoverviews/annotating-sf-symbols": {
-      "file_path": "documentation/TechnologyOverviews/annotating-sf-symbols.md",
-      "hash": "fcc89437a7e031b1ca0279b61f1f63f2bca1256f6d8745e027e59b83b0708be8"
-    },
-    "https://developer.apple.com/documentation/technologyoverviews/app-design-and-ui": {
-      "file_path": "documentation/TechnologyOverviews/app-design-and-ui.md",
-      "hash": "01f2919d8047641ae62462dd8cb853938b3aa7550d0fd5139f20bed252e34581"
+    "https://developer.apple.com/documentation/technologyoverviews/annotating-custom-sf-symbols": {
+      "file_path": "documentation/TechnologyOverviews/annotating-custom-sf-symbols.md",
+      "hash": "8f16d84c5190b7c760ef23a420e53b30a177841794655dc667a37eb139cb073f"
     },
     "https://developer.apple.com/documentation/technologyoverviews/app-extensions": {
       "file_path": "documentation/TechnologyOverviews/app-extensions.md",
-      "hash": "5448b375263904725dd60eed89a06726d0eeb6f8d91dc068d1936c5047455d70"
+      "hash": "99d02ea4900bc0ee624cc4312be889960d79dcae21c942f60fed6d85f51d7f01"
+    },
+    "https://developer.apple.com/documentation/technologyoverviews/apple-experiences": {
+      "file_path": "documentation/TechnologyOverviews/apple-experiences.md",
+      "hash": "d8961f8ffa68a2b3be4ba47d4f8f5a93f2c6d0973f983a99af53a39135850b1f"
     },
     "https://developer.apple.com/documentation/technologyoverviews/apple-intelligence": {
       "file_path": "documentation/TechnologyOverviews/apple-intelligence.md",
       "hash": "1f52ed17535470e0212eb5f330efcbcff6033166103e6a44fbeb680c51f23351"
+    },
+    "https://developer.apple.com/documentation/technologyoverviews/apps": {
+      "file_path": "documentation/TechnologyOverviews/apps.md",
+      "hash": "701256b5593822ef3177ed54d664e4f218c6eea274b623bf44c8813ae1d43daa"
+    },
+    "https://developer.apple.com/documentation/technologyoverviews/apps-and-content": {
+      "file_path": "documentation/TechnologyOverviews/apps-and-content.md",
+      "hash": "78775f1248c62b2d123d9d15d9726d127b6a8c02a24502ef02578409b6ada447"
     },
     "https://developer.apple.com/documentation/technologyoverviews/audio-and-music": {
       "file_path": "documentation/TechnologyOverviews/audio-and-music.md",
@@ -44,9 +52,17 @@
       "file_path": "documentation/TechnologyOverviews/audio-and-video.md",
       "hash": "ef59be1812b998a6bbd35b61c695f7eb0851be3c4ff473e6953c4132b7670672"
     },
+    "https://developer.apple.com/documentation/technologyoverviews/building-your-apps-content-with-swiftui": {
+      "file_path": "documentation/TechnologyOverviews/building-your-apps-content-with-swiftui.md",
+      "hash": "c07a95e4ffa8bf8eded56570f1bafc0e4bbee6a98eaf99ad76302cacd2e118b8"
+    },
+    "https://developer.apple.com/documentation/technologyoverviews/building-your-apps-content-with-uikit-appkit": {
+      "file_path": "documentation/TechnologyOverviews/building-your-apps-content-with-uikit-appkit.md",
+      "hash": "43c562d5cb192bc64e089748dbf6cf9a9274b540efda2fac5d9d9f727520c685"
+    },
     "https://developer.apple.com/documentation/technologyoverviews/building-your-macos-game-remotely-from-your-pc": {
       "file_path": "documentation/TechnologyOverviews/building-your-macos-game-remotely-from-your-pc.md",
-      "hash": "1226edad4758de0f4be4f15d404531310e28c74372870677b293f6860e99eeda"
+      "hash": "64cde90060e10d65099c003f0f83dcb869b298baf4751bd7bd4f00404653978f"
     },
     "https://developer.apple.com/documentation/technologyoverviews/built-in-intelligence": {
       "file_path": "documentation/TechnologyOverviews/built-in-intelligence.md",
@@ -54,19 +70,15 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/communication-and-connection": {
       "file_path": "documentation/TechnologyOverviews/communication-and-connection.md",
-      "hash": "e4ff7bff178d9fd830413d41b64bec51f8db5e1a2ab4fb8f7ee736e70e253e13"
+      "hash": "708868ca53c9114fdacba5563514d5854ce96039c6ffa14645b54dd0f5a163d6"
     },
     "https://developer.apple.com/documentation/technologyoverviews/convenience": {
       "file_path": "documentation/TechnologyOverviews/convenience.md",
-      "hash": "fd3da9a801d8f12527b8790af5c7b58a34a71b08b3fbfe5a0fd748b982736d77"
+      "hash": "7e9683d96578a451bfd2935f67e4a5cbb0aa50e41d8eba04748fcc2586834bf8"
     },
-    "https://developer.apple.com/documentation/technologyoverviews/core-experiences": {
-      "file_path": "documentation/TechnologyOverviews/core-experiences.md",
-      "hash": "b4631fc631a257f6e28e72682a3bc6cea330dafa9fd0cf855195760d4b0c396c"
-    },
-    "https://developer.apple.com/documentation/technologyoverviews/custom-sf-symbols": {
-      "file_path": "documentation/TechnologyOverviews/custom-sf-symbols.md",
-      "hash": "01481bf594daf6ce242fe0ed364175b7979a1af977e60ad9870c5d24c111e5b8"
+    "https://developer.apple.com/documentation/technologyoverviews/creating-custom-sf-symbols": {
+      "file_path": "documentation/TechnologyOverviews/creating-custom-sf-symbols.md",
+      "hash": "f07032224e71cc4ca2c56999c2ef3e93d1a8947ca00e0e83402d965aebbd9f16"
     },
     "https://developer.apple.com/documentation/technologyoverviews/data-management": {
       "file_path": "documentation/TechnologyOverviews/data-management.md",
@@ -74,7 +86,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/development-process": {
       "file_path": "documentation/TechnologyOverviews/development-process.md",
-      "hash": "266021b15950b4200b4c37e17e492b597d5bd89e11b7c954e861831d2d38c100"
+      "hash": "9c7a20133f81a4db807f3a67f8f18fb9733551cb225e022da9ddeb48359fb16d"
     },
     "https://developer.apple.com/documentation/technologyoverviews/device-sensors": {
       "file_path": "documentation/TechnologyOverviews/device-sensors.md",
@@ -92,17 +104,9 @@
       "file_path": "documentation/TechnologyOverviews/files-and-directories.md",
       "hash": "1a88eec10c254c3bc211e27c406724998316c6ed3e5dac12f8c0a41490211442"
     },
-    "https://developer.apple.com/documentation/technologyoverviews/fonts": {
-      "file_path": "documentation/TechnologyOverviews/fonts.md",
-      "hash": "f4dcf11dfd072f66fd0b9a538e5c3a462700b3c54c133e7da64a83ea3ed9dbda"
-    },
     "https://developer.apple.com/documentation/technologyoverviews/games": {
       "file_path": "documentation/TechnologyOverviews/games.md",
-      "hash": "702b80f0cb67e0f0da77ffd4e0cdf2da6c3cf4ab76a83703827aa153ac33977f"
-    },
-    "https://developer.apple.com/documentation/technologyoverviews/games-technologies": {
-      "file_path": "documentation/TechnologyOverviews/games-technologies.md",
-      "hash": "a9281542065633b5c1e9d492966b7fe87b13e17a1e6f5f90c475b36568d72050"
+      "hash": "56123853647fca2f73976ea72e2d86ba5248b30d05860b8b8fc7e7fbf02d5944"
     },
     "https://developer.apple.com/documentation/technologyoverviews/generative-models": {
       "file_path": "documentation/TechnologyOverviews/generative-models.md",
@@ -110,7 +114,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/graphics-drawing-and-animation": {
       "file_path": "documentation/TechnologyOverviews/graphics-drawing-and-animation.md",
-      "hash": "fa7be9e72d4663dd942e4f7b4d825179acd7a2fdd4b898df33e6b65640096050"
+      "hash": "91988a83ab7d6ddce76b781df514b41ce1779156997a26f621e0610140a1a216"
     },
     "https://developer.apple.com/documentation/technologyoverviews/hardware-level-interactions": {
       "file_path": "documentation/TechnologyOverviews/hardware-level-interactions.md",
@@ -118,11 +122,11 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/hardware-networking-sensors": {
       "file_path": "documentation/TechnologyOverviews/hardware-networking-sensors.md",
-      "hash": "3fa3dd66b9dbd63b45bbf1c872068f0672900979cd07cc77d5f670b874074414"
+      "hash": "f94624364d172b3ec3cd5510ae0e9b3a9bdac41e9fbdd370c54143392f547b7f"
     },
     "https://developer.apple.com/documentation/technologyoverviews/images-camera-and-photos": {
       "file_path": "documentation/TechnologyOverviews/images-camera-and-photos.md",
-      "hash": "033ae3627428772edc3b559bdb2d65da3ba049481a8d21155b13bed10aa59fe4"
+      "hash": "ab75839229561b09919254df860dfd79248ce1ab6a0a25fa8faf8e09ab8eb2e7"
     },
     "https://developer.apple.com/documentation/technologyoverviews/immersive-media": {
       "file_path": "documentation/TechnologyOverviews/immersive-media.md",
@@ -130,15 +134,23 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/information": {
       "file_path": "documentation/TechnologyOverviews/information.md",
-      "hash": "36308e59edfc773bb056cdba7ef2571dc8526e21a43ff0e697482e47a3b782b6"
+      "hash": "e370a9b7f821295b76655455793621a23bcf2be2d03b747fac8c586f7d15cfb6"
+    },
+    "https://developer.apple.com/documentation/technologyoverviews/interface": {
+      "file_path": "documentation/TechnologyOverviews/interface.md",
+      "hash": "241f5541dc624241cd066e88a08c1e1e99f3a6082c16187ae19b941693827813"
     },
     "https://developer.apple.com/documentation/technologyoverviews/interface-fundamentals": {
       "file_path": "documentation/TechnologyOverviews/interface-fundamentals.md",
-      "hash": "3686e6f022eb58cdfad4ec4cd04335d5f191ef61dacfb1c812cf7a2f452bdccb"
+      "hash": "c50fdf4ca47de17e5d69fafd51cbcceaa475cd454c12796d1ff268cea2f679bd"
     },
     "https://developer.apple.com/documentation/technologyoverviews/liquid-glass": {
       "file_path": "documentation/TechnologyOverviews/liquid-glass.md",
-      "hash": "6bb5642ad84c2450b12b82417c5b00e17eb7163adf688b64fed7c5240f26c87f"
+      "hash": "ec090bc8611dc31a1408b408fb31799e47f344ad75d57d1501b43d55d7bf366b"
+    },
+    "https://developer.apple.com/documentation/technologyoverviews/managing-the-fonts-for-your-app": {
+      "file_path": "documentation/TechnologyOverviews/managing-the-fonts-for-your-app.md",
+      "hash": "2e46d936d728ac76e399bc133945db2cd9e1d8067dd8891d3e4644c7bee79b42"
     },
     "https://developer.apple.com/documentation/technologyoverviews/networking-and-communication": {
       "file_path": "documentation/TechnologyOverviews/networking-and-communication.md",
@@ -150,7 +162,7 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/preparing-your-app-for-iphone-duo": {
       "file_path": "documentation/TechnologyOverviews/preparing-your-app-for-iphone-duo.md",
-      "hash": "dfb9a0f375ea090f5b2456ac4a96be21e62c75db947a002fea1092d61309a0fd"
+      "hash": "e613bf40342d67bc2a3796f5291ca72219f2e703c902d84092b0951813078711"
     },
     "https://developer.apple.com/documentation/technologyoverviews/shared-data": {
       "file_path": "documentation/TechnologyOverviews/shared-data.md",
@@ -168,9 +180,9 @@
       "file_path": "documentation/TechnologyOverviews/structured-data-models.md",
       "hash": "b4bf2faf013afd90dcbb4cfbc451abaf956bf20848c71941db1ee4bf10297f03"
     },
-    "https://developer.apple.com/documentation/technologyoverviews/swiftui": {
-      "file_path": "documentation/TechnologyOverviews/swiftui.md",
-      "hash": "4cc93882bc0edbf75d3a9e8f5d33047b5383f0d3eb463c28c37c3f0e9dc4f728"
+    "https://developer.apple.com/documentation/technologyoverviews/system-experiences": {
+      "file_path": "documentation/TechnologyOverviews/system-experiences.md",
+      "hash": "71340635fcd97d8f6d8e8820fbea2fde4b831171a9b169daed277e4d0bcaddc9"
     },
     "https://developer.apple.com/documentation/technologyoverviews/testing-and-performance": {
       "file_path": "documentation/TechnologyOverviews/testing-and-performance.md",
@@ -178,23 +190,19 @@
     },
     "https://developer.apple.com/documentation/technologyoverviews/text-display": {
       "file_path": "documentation/TechnologyOverviews/text-display.md",
-      "hash": "77c6873e54d578ba546b61fc07a493bb2ed25cb73578ffebe4bd692bb0a53ab3"
+      "hash": "3ac82f27c85cf1883a4591d6dddfe127afbb0b8dcda7188b8d091b33657c8c85"
     },
     "https://developer.apple.com/documentation/technologyoverviews/tools-and-distribution": {
       "file_path": "documentation/TechnologyOverviews/tools-and-distribution.md",
-      "hash": "1a489b470834f3c39ebe85a0232d2d69009acb6b72836f8826c4635977b16190"
-    },
-    "https://developer.apple.com/documentation/technologyoverviews/uikit-appkit": {
-      "file_path": "documentation/TechnologyOverviews/uikit-appkit.md",
-      "hash": "eeea0cf10a8161cf377301555409a5578da9349201fba939bc1769f1e60e6077"
+      "hash": "1b227f9023ff2cad0a6f3abb028282e01e9b5c33831a1309a8d1132795a2f3b6"
     },
     "https://developer.apple.com/documentation/technologyoverviews/video": {
       "file_path": "documentation/TechnologyOverviews/video.md",
-      "hash": "7fbfeee020b08e7ba1e8f73b928288ceec516b5e4508d1b44dbfb6c8e296d44e"
+      "hash": "6b117d8e88f32706f989802dc19ce57baf5b14118a90cdf7f967e39cb8c23f92"
     },
     "https://developer.apple.com/tutorials/data/documentation/TechnologyOverviews.json": {
       "file_path": "documentation/TechnologyOverviews/TechnologyOverviews.md",
-      "hash": "2f93f09cfc8121bcac1e5575c14df2a68e72749e4a8b14aa83c69ba6ddf50424"
+      "hash": "7650d133d92d1055bce9477187170a49708fcfa0128f68ffac9bf1e3f22d8406"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/3d-content.json": {
       "file_path": "documentation/TechnologyOverviews/api-3d-content.md",
@@ -202,7 +210,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/adopting-liquid-glass.json": {
       "file_path": "documentation/TechnologyOverviews/adopting-liquid-glass.md",
-      "hash": "a41d1485f9815b51d040d2f723e7372e066eacbbda02b81493f21f6fee52ad47"
+      "hash": "6ebae3d6b1486d33757ab6c7bff3c170df0874416287b08bc1576e44449d0909"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/ai-machine-learning.json": {
       "file_path": "documentation/TechnologyOverviews/ai-machine-learning.md",
@@ -212,21 +220,29 @@
       "file_path": "documentation/TechnologyOverviews/animations.md",
       "hash": "6a2163db9bf1792a69eae756de881d8412bca4878808d7e34f5b3bcf18e9ea1d"
     },
-    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/annotating-sf-symbols.json": {
-      "file_path": "documentation/TechnologyOverviews/annotating-sf-symbols.md",
-      "hash": "fcc89437a7e031b1ca0279b61f1f63f2bca1256f6d8745e027e59b83b0708be8"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/app-design-and-ui.json": {
-      "file_path": "documentation/TechnologyOverviews/app-design-and-ui.md",
-      "hash": "01f2919d8047641ae62462dd8cb853938b3aa7550d0fd5139f20bed252e34581"
+    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/annotating-custom-sf-symbols.json": {
+      "file_path": "documentation/TechnologyOverviews/annotating-custom-sf-symbols.md",
+      "hash": "8f16d84c5190b7c760ef23a420e53b30a177841794655dc667a37eb139cb073f"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/app-extensions.json": {
       "file_path": "documentation/TechnologyOverviews/app-extensions.md",
-      "hash": "5448b375263904725dd60eed89a06726d0eeb6f8d91dc068d1936c5047455d70"
+      "hash": "99d02ea4900bc0ee624cc4312be889960d79dcae21c942f60fed6d85f51d7f01"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/apple-experiences.json": {
+      "file_path": "documentation/TechnologyOverviews/apple-experiences.md",
+      "hash": "d8961f8ffa68a2b3be4ba47d4f8f5a93f2c6d0973f983a99af53a39135850b1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/apple-intelligence.json": {
       "file_path": "documentation/TechnologyOverviews/apple-intelligence.md",
       "hash": "1f52ed17535470e0212eb5f330efcbcff6033166103e6a44fbeb680c51f23351"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/apps-and-content.json": {
+      "file_path": "documentation/TechnologyOverviews/apps-and-content.md",
+      "hash": "78775f1248c62b2d123d9d15d9726d127b6a8c02a24502ef02578409b6ada447"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/apps.json": {
+      "file_path": "documentation/TechnologyOverviews/apps.md",
+      "hash": "701256b5593822ef3177ed54d664e4f218c6eea274b623bf44c8813ae1d43daa"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/audio-and-music.json": {
       "file_path": "documentation/TechnologyOverviews/audio-and-music.md",
@@ -236,9 +252,17 @@
       "file_path": "documentation/TechnologyOverviews/audio-and-video.md",
       "hash": "ef59be1812b998a6bbd35b61c695f7eb0851be3c4ff473e6953c4132b7670672"
     },
+    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/building-your-apps-content-with-swiftui.json": {
+      "file_path": "documentation/TechnologyOverviews/building-your-apps-content-with-swiftui.md",
+      "hash": "c07a95e4ffa8bf8eded56570f1bafc0e4bbee6a98eaf99ad76302cacd2e118b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/building-your-apps-content-with-uikit-appkit.json": {
+      "file_path": "documentation/TechnologyOverviews/building-your-apps-content-with-uikit-appkit.md",
+      "hash": "43c562d5cb192bc64e089748dbf6cf9a9274b540efda2fac5d9d9f727520c685"
+    },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/building-your-macos-game-remotely-from-your-pc.json": {
       "file_path": "documentation/TechnologyOverviews/building-your-macos-game-remotely-from-your-pc.md",
-      "hash": "1226edad4758de0f4be4f15d404531310e28c74372870677b293f6860e99eeda"
+      "hash": "64cde90060e10d65099c003f0f83dcb869b298baf4751bd7bd4f00404653978f"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/built-in-intelligence.json": {
       "file_path": "documentation/TechnologyOverviews/built-in-intelligence.md",
@@ -246,19 +270,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/communication-and-connection.json": {
       "file_path": "documentation/TechnologyOverviews/communication-and-connection.md",
-      "hash": "e4ff7bff178d9fd830413d41b64bec51f8db5e1a2ab4fb8f7ee736e70e253e13"
+      "hash": "708868ca53c9114fdacba5563514d5854ce96039c6ffa14645b54dd0f5a163d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/convenience.json": {
       "file_path": "documentation/TechnologyOverviews/convenience.md",
-      "hash": "fd3da9a801d8f12527b8790af5c7b58a34a71b08b3fbfe5a0fd748b982736d77"
+      "hash": "7e9683d96578a451bfd2935f67e4a5cbb0aa50e41d8eba04748fcc2586834bf8"
     },
-    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/core-experiences.json": {
-      "file_path": "documentation/TechnologyOverviews/core-experiences.md",
-      "hash": "b4631fc631a257f6e28e72682a3bc6cea330dafa9fd0cf855195760d4b0c396c"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/custom-sf-symbols.json": {
-      "file_path": "documentation/TechnologyOverviews/custom-sf-symbols.md",
-      "hash": "01481bf594daf6ce242fe0ed364175b7979a1af977e60ad9870c5d24c111e5b8"
+    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/creating-custom-sf-symbols.json": {
+      "file_path": "documentation/TechnologyOverviews/creating-custom-sf-symbols.md",
+      "hash": "f07032224e71cc4ca2c56999c2ef3e93d1a8947ca00e0e83402d965aebbd9f16"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/data-management.json": {
       "file_path": "documentation/TechnologyOverviews/data-management.md",
@@ -266,7 +286,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/development-process.json": {
       "file_path": "documentation/TechnologyOverviews/development-process.md",
-      "hash": "266021b15950b4200b4c37e17e492b597d5bd89e11b7c954e861831d2d38c100"
+      "hash": "9c7a20133f81a4db807f3a67f8f18fb9733551cb225e022da9ddeb48359fb16d"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/device-sensors.json": {
       "file_path": "documentation/TechnologyOverviews/device-sensors.md",
@@ -284,17 +304,9 @@
       "file_path": "documentation/TechnologyOverviews/files-and-directories.md",
       "hash": "1a88eec10c254c3bc211e27c406724998316c6ed3e5dac12f8c0a41490211442"
     },
-    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/fonts.json": {
-      "file_path": "documentation/TechnologyOverviews/fonts.md",
-      "hash": "f4dcf11dfd072f66fd0b9a538e5c3a462700b3c54c133e7da64a83ea3ed9dbda"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/games-technologies.json": {
-      "file_path": "documentation/TechnologyOverviews/games-technologies.md",
-      "hash": "a9281542065633b5c1e9d492966b7fe87b13e17a1e6f5f90c475b36568d72050"
-    },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/games.json": {
       "file_path": "documentation/TechnologyOverviews/games.md",
-      "hash": "702b80f0cb67e0f0da77ffd4e0cdf2da6c3cf4ab76a83703827aa153ac33977f"
+      "hash": "56123853647fca2f73976ea72e2d86ba5248b30d05860b8b8fc7e7fbf02d5944"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/generative-models.json": {
       "file_path": "documentation/TechnologyOverviews/generative-models.md",
@@ -302,7 +314,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/graphics-drawing-and-animation.json": {
       "file_path": "documentation/TechnologyOverviews/graphics-drawing-and-animation.md",
-      "hash": "fa7be9e72d4663dd942e4f7b4d825179acd7a2fdd4b898df33e6b65640096050"
+      "hash": "91988a83ab7d6ddce76b781df514b41ce1779156997a26f621e0610140a1a216"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/hardware-level-interactions.json": {
       "file_path": "documentation/TechnologyOverviews/hardware-level-interactions.md",
@@ -310,11 +322,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/hardware-networking-sensors.json": {
       "file_path": "documentation/TechnologyOverviews/hardware-networking-sensors.md",
-      "hash": "3fa3dd66b9dbd63b45bbf1c872068f0672900979cd07cc77d5f670b874074414"
+      "hash": "f94624364d172b3ec3cd5510ae0e9b3a9bdac41e9fbdd370c54143392f547b7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/images-camera-and-photos.json": {
       "file_path": "documentation/TechnologyOverviews/images-camera-and-photos.md",
-      "hash": "033ae3627428772edc3b559bdb2d65da3ba049481a8d21155b13bed10aa59fe4"
+      "hash": "ab75839229561b09919254df860dfd79248ce1ab6a0a25fa8faf8e09ab8eb2e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/immersive-media.json": {
       "file_path": "documentation/TechnologyOverviews/immersive-media.md",
@@ -322,15 +334,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/information.json": {
       "file_path": "documentation/TechnologyOverviews/information.md",
-      "hash": "36308e59edfc773bb056cdba7ef2571dc8526e21a43ff0e697482e47a3b782b6"
+      "hash": "e370a9b7f821295b76655455793621a23bcf2be2d03b747fac8c586f7d15cfb6"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/interface-fundamentals.json": {
       "file_path": "documentation/TechnologyOverviews/interface-fundamentals.md",
-      "hash": "3686e6f022eb58cdfad4ec4cd04335d5f191ef61dacfb1c812cf7a2f452bdccb"
+      "hash": "c50fdf4ca47de17e5d69fafd51cbcceaa475cd454c12796d1ff268cea2f679bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/interface.json": {
+      "file_path": "documentation/TechnologyOverviews/interface.md",
+      "hash": "241f5541dc624241cd066e88a08c1e1e99f3a6082c16187ae19b941693827813"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/liquid-glass.json": {
       "file_path": "documentation/TechnologyOverviews/liquid-glass.md",
-      "hash": "6bb5642ad84c2450b12b82417c5b00e17eb7163adf688b64fed7c5240f26c87f"
+      "hash": "ec090bc8611dc31a1408b408fb31799e47f344ad75d57d1501b43d55d7bf366b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/managing-the-fonts-for-your-app.json": {
+      "file_path": "documentation/TechnologyOverviews/managing-the-fonts-for-your-app.md",
+      "hash": "2e46d936d728ac76e399bc133945db2cd9e1d8067dd8891d3e4644c7bee79b42"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/networking-and-communication.json": {
       "file_path": "documentation/TechnologyOverviews/networking-and-communication.md",
@@ -342,7 +362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/preparing-your-app-for-iphone-duo.json": {
       "file_path": "documentation/TechnologyOverviews/preparing-your-app-for-iphone-duo.md",
-      "hash": "dfb9a0f375ea090f5b2456ac4a96be21e62c75db947a002fea1092d61309a0fd"
+      "hash": "e613bf40342d67bc2a3796f5291ca72219f2e703c902d84092b0951813078711"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/shared-data.json": {
       "file_path": "documentation/TechnologyOverviews/shared-data.md",
@@ -360,9 +380,9 @@
       "file_path": "documentation/TechnologyOverviews/structured-data-models.md",
       "hash": "b4bf2faf013afd90dcbb4cfbc451abaf956bf20848c71941db1ee4bf10297f03"
     },
-    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/swiftui.json": {
-      "file_path": "documentation/TechnologyOverviews/swiftui.md",
-      "hash": "4cc93882bc0edbf75d3a9e8f5d33047b5383f0d3eb463c28c37c3f0e9dc4f728"
+    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/system-experiences.json": {
+      "file_path": "documentation/TechnologyOverviews/system-experiences.md",
+      "hash": "71340635fcd97d8f6d8e8820fbea2fde4b831171a9b169daed277e4d0bcaddc9"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/testing-and-performance.json": {
       "file_path": "documentation/TechnologyOverviews/testing-and-performance.md",
@@ -370,19 +390,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/text-display.json": {
       "file_path": "documentation/TechnologyOverviews/text-display.md",
-      "hash": "77c6873e54d578ba546b61fc07a493bb2ed25cb73578ffebe4bd692bb0a53ab3"
+      "hash": "3ac82f27c85cf1883a4591d6dddfe127afbb0b8dcda7188b8d091b33657c8c85"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/tools-and-distribution.json": {
       "file_path": "documentation/TechnologyOverviews/tools-and-distribution.md",
-      "hash": "1a489b470834f3c39ebe85a0232d2d69009acb6b72836f8826c4635977b16190"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/uikit-appkit.json": {
-      "file_path": "documentation/TechnologyOverviews/uikit-appkit.md",
-      "hash": "eeea0cf10a8161cf377301555409a5578da9349201fba939bc1769f1e60e6077"
+      "hash": "1b227f9023ff2cad0a6f3abb028282e01e9b5c33831a1309a8d1132795a2f3b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/video.json": {
       "file_path": "documentation/TechnologyOverviews/video.md",
-      "hash": "7fbfeee020b08e7ba1e8f73b928288ceec516b5e4508d1b44dbfb6c8e296d44e"
+      "hash": "6b117d8e88f32706f989802dc19ce57baf5b14118a90cdf7f967e39cb8c23f92"
     }
   },
   "metadata": {
@@ -397,6 +413,6 @@
         "https://developer.apple.com/documentation/technologyoverviews/documentation/security/notarizing-macos-software-before-distribution"
       ]
     },
-    "total_pages": 96
+    "total_pages": 100
   }
 }

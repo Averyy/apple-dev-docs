@@ -23,7 +23,7 @@ CPTrafficSideLeft
 
 ## See Also
 
-### Lane statuses
+### Getting the traffic side
 - [CPTrafficSide.right](./right.md)
   Indicates the traffic drives on the right side of the roadway.
 

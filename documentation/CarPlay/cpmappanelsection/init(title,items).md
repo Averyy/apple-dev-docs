@@ -30,6 +30,11 @@ An initialized section object.
 - `title`: The localized title of the section. The system displays this string at the top of the section’s content. The section object stores a copy of the provided string. Specify `nil` if you don’t want to display a title for the section.
 - `items`: The array of items to display in the section. Specify at least one item in this array. The section object stores a copy of the provided array.
 
+## See Also
+
+### Creating a map panel section
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

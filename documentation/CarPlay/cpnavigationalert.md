@@ -30,58 +30,56 @@ The system displays the primary and secondary actions as buttons on the alert. A
 
 ## Topics
 
-### Creating a Navigation Alert
+### Creating a navigation alert
 - [init(titleVariants: [String], subtitleVariants: [String]?, image: UIImage?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)](./cpnavigationalert/init%28titlevariants,subtitlevariants,image,primaryaction,secondaryaction,duration%29.md)
   Creates a navigation alert.
-- [init(titleVariants: [String], subtitleVariants: [String]?, imageSet: CPImageSet?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)](./cpnavigationalert/init%28titlevariants,subtitlevariants,imageset,primaryaction,secondaryaction,duration%29.md)
-  Creates a navigation alert.
-### Getting Titles
+- [init(titleVariants: [String], subtitleVariants: [String], avatarImage: UIImage?, alert: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](./cpnavigationalert/init%28titlevariants,subtitlevariants,avatarimage,alert,actions,duration%29.md)
+  Initialize a @c CPNavigationAlert with a title, image, an array of actions, and duration.
+- [init(titleVariants: [String], subtitleVariants: [String], avatarImage: UIImage?, alertImage: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](./cpnavigationalert/init%28titlevariants,subtitlevariants,avatarimage,alertimage,actions,duration%29.md)
+- [init?(coder: NSCoder)](./cpnavigationalert/init%28coder%29.md)
+### Getting title values
 - [var titleVariants: [String]](./cpnavigationalert/titlevariants.md)
   An array of title strings.
 - [var subtitleVariants: [String]](./cpnavigationalert/subtitlevariants.md)
   An array of subtitle strings.
 - [func updateTitleVariants([String], subtitleVariants: [String])](./cpnavigationalert/updatetitlevariants%28_,subtitlevariants%29.md)
   Updates title and subtitle variants.
-### Getting the Alert Image
+- [func updateTitleVariants([String], subtitleVariants: [String], avatarImage: UIImage?, alert: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](./cpnavigationalert/updatetitlevariants%28_,subtitlevariants,avatarimage,alert,actions,duration%29.md)
+  Update the navigation alert with new title variants, subtitle variants, image, actions, and duration.
+### Getting the alert image
 - [var image: UIImage?](./cpnavigationalert/image.md)
   An image displayed in the navigation alert.
 - [var imageSet: CPImageSet?](./cpnavigationalert/imageset.md)
   An image set displayed in the navigation alert.
-### Getting the Actions
-- [var primaryAction: CPAlertAction](./cpnavigationalert/primaryaction.md)
-  The primary action, and button, for the navigation alert.
-- [var secondaryAction: CPAlertAction?](./cpnavigationalert/secondaryaction.md)
-  An optional secondary action, and button, for the navigation alert.
-### Getting the Alert Duration
-- [var duration: TimeInterval](./cpnavigationalert/duration.md)
-  The amount of time, in seconds, that the alert is visible.
-- [var CPNavigationAlertMinimumDuration: TimeInterval](./cpnavigationalertminimumduration.md)
-  A constant that defines the minimum amount of time that an alert is visible.
-### Enumerations
-- [CPNavigationAlert.DismissalContext](./cpnavigationalert/dismissalcontext.md)
-  A set of reasons for dismissing a navigation alert.
-### Initializers
-- [init?(coder: NSCoder)](./cpnavigationalert/init%28coder%29.md)
-- [init(titleVariants: [String], subtitleVariants: [String], avatarImage: UIImage?, alert: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](./cpnavigationalert/init%28titlevariants,subtitlevariants,avatarimage,alert,actions,duration%29.md)
-  Initialize a @c CPNavigationAlert with a title, image, an array of actions, and duration.
-- [init(titleVariants: [String], subtitleVariants: [String], avatarImage: UIImage?, alertImage: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](./cpnavigationalert/init%28titlevariants,subtitlevariants,avatarimage,alertimage,actions,duration%29.md)
-### Instance Properties
-- [var actions: [CPAlertAction]](./cpnavigationalert/actions.md)
-  The array of actions associated with this navigation alert.
 - [var alertImage: UIImage?](./cpnavigationalert/alertimage.md)
 - [var avatarImage: UIImage?](./cpnavigationalert/avatarimage.md)
-- [var showsCloseButton: Bool](./cpnavigationalert/showsclosebutton.md)
-  A Boolean value indicating whether the close button is allowed to appear.
-### Instance Methods
-- [func updateTitleVariants([String], subtitleVariants: [String], avatarImage: UIImage?, alert: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](./cpnavigationalert/updatetitlevariants%28_,subtitlevariants,avatarimage,alert,actions,duration%29.md)
-  Update the navigation alert with new title variants, subtitle variants, image, actions, and duration.
-### Type Properties
-- [class var maximumActionsCount: Int](./cpnavigationalert/maximumactionscount.md)
-  The maximum number of actions that a @c CPNavigationAlert can display.
 - [class var maximumAlertImageSize: CGSize](./cpnavigationalert/maximumalertimagesize.md)
   The maximum image size for the alert image that a @c CPNavigationAlert can display.
 - [class var maximumAvatarImageSize: CGSize](./cpnavigationalert/maximumavatarimagesize.md)
   The maximum image size for the avatar image that a @c CPNavigationAlert can display.
+### Getting the actions
+- [var actions: [CPAlertAction]](./cpnavigationalert/actions.md)
+  The array of actions associated with this navigation alert.
+- [var primaryAction: CPAlertAction](./cpnavigationalert/primaryaction.md)
+  The primary action, and button, for the navigation alert.
+- [var secondaryAction: CPAlertAction?](./cpnavigationalert/secondaryaction.md)
+  An optional secondary action, and button, for the navigation alert.
+- [class var maximumActionsCount: Int](./cpnavigationalert/maximumactionscount.md)
+  The maximum number of actions that a @c CPNavigationAlert can display.
+### Configuring the alert behavior
+- [var showsCloseButton: Bool](./cpnavigationalert/showsclosebutton.md)
+  A Boolean value indicating whether the close button is allowed to appear.
+### Getting the alert duration
+- [var duration: TimeInterval](./cpnavigationalert/duration.md)
+  The amount of time, in seconds, that the alert is visible.
+- [var CPNavigationAlertMinimumDuration: TimeInterval](./cpnavigationalertminimumduration.md)
+  A constant that defines the minimum amount of time that an alert is visible.
+### Getting the dismissal context
+- [CPNavigationAlert.DismissalContext](./cpnavigationalert/dismissalcontext.md)
+  A set of reasons for dismissing a navigation alert.
+### Deprecated
+- [init(titleVariants: [String], subtitleVariants: [String]?, imageSet: CPImageSet?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)](./cpnavigationalert/init%28titlevariants,subtitlevariants,imageset,primaryaction,secondaryaction,duration%29.md)
+  Creates a navigation alert.
 
 ## Relationships
 
@@ -97,16 +95,6 @@ The system displays the primary and secondary actions as buttons on the alert. A
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
 - [Sendable](../Swift/sendable.md)
-
-## See Also
-
-### Displaying a Navigation Alert
-- [func present(navigationAlert: CPNavigationAlert, animated: Bool)](./cpmaptemplate/present%28navigationalert,animated%29.md)
-  Displays a navigation alert on the map template.
-- [func dismissNavigationAlert(animated: Bool, completion: (Bool) -> Void)](./cpmaptemplate/dismissnavigationalert%28animated,completion%29.md)
-  Tells the map template to dismiss the visable navigation alert.
-- [var currentNavigationAlert: CPNavigationAlert?](./cpmaptemplate/currentnavigationalert.md)
-  The visible navigation alert.
 
 
 ---

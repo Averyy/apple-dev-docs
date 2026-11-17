@@ -16,7 +16,7 @@ Starting with iOS 17, an app can launch another app’s App Clip using the invoc
 
 Use the [Link Presentation](../LinkPresentation/LinkPresentation.md) framework to include a rich preview of the App Clip in your app that people tap to launch the App Clip directly:
 
-1. To fetch metadata using the invokation URL of the App Clip, use [`LPMetadataProvider`](../LinkPresentation/lpmetadataprovider.md).
+1. To fetch metadata using the invocation URL of the App Clip, use [`LPMetadataProvider`](../LinkPresentation/lpmetadataprovider.md).
 2. To display the App Clip preview, use the metadata you receive in an [`LPLinkView`](../LinkPresentation/lplinkview.md).
 
 The following example fetches the metadata and then passes it to a link view.

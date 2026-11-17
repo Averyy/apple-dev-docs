@@ -17,13 +17,13 @@ struct TrackingConfiguration
 
 ## Overview
 
-Your app needs to include the [`Object-tracking parameter adjustment`](../../BundleResources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow.md) entitlement to modify the tracking configuration; otherwise, it has no effect.
+Modifying the tracking configuration requires an enterprise license. Your app needs to include the [`Object-tracking parameter adjustment`](../../BundleResources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow.md) entitlement; otherwise, it has no effect.
 
 ## Topics
 
 ### Creating a tracking configuration
 - [init()](./trackingconfiguration-swift.struct/init%28%29.md)
-  Creates a tracking configuration.
+  Creates a tracking configuration with default parameter values.
 ### Inspecting a tracking configuration
 - [var detectionRate: Float](./trackingconfiguration-swift.struct/detectionrate.md)
   The frequency at which object detection runs, in Hz.

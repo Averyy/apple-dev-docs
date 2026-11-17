@@ -19,6 +19,10 @@ static let link: PointerStyle
 
 This pointer style displays a pointing hand. You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 
+The following image shows the link pointer:
+
+![A pointing hand pointer.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-link@2x.png)
+
 ## See Also
 
 ### Getting built-in pointer styles

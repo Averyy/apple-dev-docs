@@ -52,9 +52,9 @@ enum ARErrorCode : NSInteger;
 - [ARError.Code.unsupportedConfiguration](./code/unsupportedconfiguration.md)
   An error that indicates the device lacks support for the session’s configuration.
 - [ARError.Code.worldTrackingFailed](./code/worldtrackingfailed.md)
-  An error that indicates when world tracking experiences an unrecoverable problem.
+  An error that indicates world tracking experienced an unrecoverable problem.
 - [ARError.Code.geoTrackingFailed](./code/geotrackingfailed.md)
-  An error that indicates when localization imagery fails to match the device’s camera captures.
+  An error that indicates localization imagery fails to match the device’s camera captures.
 - [ARError.Code.geoTrackingNotAvailableAtLocation](./code/geotrackingnotavailableatlocation.md)
   An error that indicates a location lacks geotracking support.
 - [ARError.Code.locationUnauthorized](./code/locationunauthorized.md)

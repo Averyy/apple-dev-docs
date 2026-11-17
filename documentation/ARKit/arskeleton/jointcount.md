@@ -16,8 +16,6 @@ The skeleton’s total number of joints.
 @property (nonatomic, readonly) NSUInteger jointCount;
 ```
 
-## Discussion
-
 ## See Also
 
 ### Getting Joint Information

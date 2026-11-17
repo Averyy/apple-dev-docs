@@ -23,6 +23,7 @@ var originFromAnchorTransform: simd_float4x4 { get }
 - [var id: UUID](./id.md)
   A unique identifier that distinguishes this anchor from all other anchors.
 - [var timestamp: TimeInterval](./timestamp.md)
+  The timestamp of this anchor
 
 
 ---

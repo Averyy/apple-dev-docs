@@ -15,6 +15,10 @@ Returns a Boolean value that indicates whether the current runtime environment s
 extern bool ar_world_tracking_provider_is_supported();
 ```
 
+## Return Value
+
+`true` if the world tracking provider is supported on this device, `false` otherwise.
+
 ## See Also
 
 ### World tracking
@@ -43,7 +47,7 @@ extern bool ar_world_tracking_provider_is_supported();
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

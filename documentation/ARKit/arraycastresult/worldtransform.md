@@ -32,7 +32,7 @@ var worldTransform: simd_float4x4 { get }
 - [var targetAlignment: ARRaycastQuery.TargetAlignment](./targetalignment.md)
   The alignment of the plane that the ray intersected.
 - [ARRaycastQuery.TargetAlignment](../arraycastquery/targetalignment-swift.enum.md)
-  A specification that indicates a target’s alignment with respect to gravity
+  A specification that indicates a target’s alignment with respect to gravity.
 
 
 ---

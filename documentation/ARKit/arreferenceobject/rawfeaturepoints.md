@@ -28,6 +28,8 @@ These points represent notable features detected in camera imagery during the se
 
 ARKit does not guarantee that the number and arrangement of raw feature points will remain stable between software releases. However, you can visualize the point cloud to debug your app’s object recording or detection, or inspect its size to estimate the quality of a recorded object.
 
+For reference objects loaded from a `.referenceobject` file, this property returns an empty point cloud.
+
 
 ---
 

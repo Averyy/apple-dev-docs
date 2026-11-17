@@ -20,7 +20,7 @@ var expected: SiriScenarioSubject.ScenarioReport? { get }
 
 ## Discussion
 
-One row per thing each expectation checks, keyed as the subject’s report keys it, so Xcode flags exactly the checks that failed. Built from the scenario alone, as EvalKit requires. `nil` when the scenario expects nothing.
+One row per thing each expectation checks, keyed as the subject’s report keys it, so Xcode flags exactly the checks that failed. Built from the scenario alone, as the Evaluations framework requires, or `nil` when the scenario expects nothing.
 
 ## See Also
 
@@ -28,7 +28,7 @@ One row per thing each expectation checks, keyed as the subject’s report keys 
 - [let turns: [UserTurn]](./turns.md)
   The turns of the conversation in the order that the person says them.
 - [var input: String](./input.md)
-  The scenario’s utterances joined into one line for the report’s Input column.
+  The scenario’s utterances joined into one line for the report’s input column.
 
 
 ---

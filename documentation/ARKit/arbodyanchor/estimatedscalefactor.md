@@ -22,11 +22,13 @@ var estimatedScaleFactor: CGFloat { get }
 
 ## Discussion
 
-The default value is 1.0. If you set [`automaticSkeletonScaleEstimationEnabled`](../arbodytrackingconfiguration/automaticskeletonscaleestimationenabled.md) to [`true`](../../Swift/true.md) on [`ARBodyTrackingConfiguration`](../arbodytrackingconfiguration.md), ARKit sets this property to a value between 0.0 and 1.0.
+The default value is 1.0. If you set [`automaticSkeletonScaleEstimationEnabled`](../arbodytrackingconfiguration/automaticskeletonscaleestimationenabled.md) to [`true`](../../Swift/true.md) on [`ARBodyTrackingConfiguration`](../arbodytrackingconfiguration.md), ARKit sets this property to a scale factor that relates the estimated height of the person in the camera feed to the default body height.
 
 ARKit must know the height of a person in the camera feed to estimate an accurate world position for the person’s body anchor. ARKit uses the value of [`estimatedScaleFactor`](./estimatedscalefactor.md) to correct the body anchor’s position in the physical environment.
 
-The default body is 1.8 meters tall.
+The default body is 1.71 meters tall.
+
+> **See Also**: [`neutralBodySkeleton3D`](../arskeletondefinition/neutralbodyskeleton3d.md)
 
 
 ---

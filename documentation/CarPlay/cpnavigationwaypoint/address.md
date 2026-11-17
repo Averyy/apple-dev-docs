@@ -21,6 +21,12 @@ var address: String? { get }
 @property (nonatomic, readonly, nullable) NSString * address;
 ```
 
+## See Also
+
+### Deprecated
+- [var name: String?](./name.md)
+  name is an optional display name for the waypoint.
+
 
 ---
 

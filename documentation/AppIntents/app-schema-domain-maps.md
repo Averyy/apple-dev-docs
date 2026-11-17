@@ -64,19 +64,19 @@ A *use-case group* is a set of related schemas that share a single purpose. The 
   Identifies entity schemas in the maps domain.
 ### Types for static parameters
 - [var amenity: some AppSchemaEnum](./appschema/mapsenum/amenity.md)
-  An enum schema for an amenity parameter.
+  An enum schema for an amenity.
 - [var incident: some AppSchemaEnum](./appschema/mapsenum/incident.md)
-  An enum schema for an incident parameter.
+  An enum schema for an incident.
 - [var navigationPreferences: some AppSchemaEnum](./appschema/mapsenum/navigationpreferences.md)
-  An enum schema for a navigation preferences parameter.
+  An enum schema for a navigation preferences.
 - [var operatingStatus: some AppSchemaEnum](./appschema/mapsenum/operatingstatus.md)
-  An enum schema for an operating status parameter.
+  An enum schema for an operating status.
 - [var priceRange: some AppSchemaEnum](./appschema/mapsenum/pricerange.md)
-  An enum schema for a price range parameter.
+  An enum schema for a price range.
 - [var ratingDescriptor: some AppSchemaEnum](./appschema/mapsenum/ratingdescriptor.md)
-  An enum schema for a rating descriptor parameter.
+  An enum schema for a rating descriptor.
 - [var transportType: some AppSchemaEnum](./appschema/mapsenum/transporttype.md)
-  An enum schema for a transport type parameter.
+  An enum schema for a transport type.
 - [AppSchema.MapsEnum](./appschema/mapsenum.md)
   Identifies enum schemas in the maps domain.
 

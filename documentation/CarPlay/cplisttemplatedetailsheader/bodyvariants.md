@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An optional array of strings, ordered from most to least preferred.
+An optional array of localized strings to display beneath the subtitle.
 
 **Availability**:
 - iOS 26.4+
@@ -23,7 +23,21 @@ var bodyVariants: [NSAttributedString] { get set }
 
 ## Discussion
 
-The variant strings should be provided as localized, displayable content. The system will select the first variant that fits the available space.
+Specify strings in the array from most to least preferred. The system chooses the first string that fits the available space and displays it below the subtitle.
+
+## See Also
+
+### Managing the header’s content
+- [var thumbnail: CPThumbnailImage](./thumbnail.md)
+  The thumbnail image to display in the header.
+- [var title: String?](./title.md)
+  The primary text to display in the header.
+- [var subtitle: String?](./subtitle.md)
+  The text to display in the header below the title.
+- [var actionButtons: [CPButton]](./actionbuttons.md)
+  An array of action buttons to display in the header.
+- [var wantsAdaptiveBackgroundStyle: Bool](./wantsadaptivebackgroundstyle.md)
+  A Boolean value that indicates whether to apply a custom background style to the header.
 
 
 ---

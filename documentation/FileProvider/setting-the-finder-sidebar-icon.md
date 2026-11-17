@@ -43,7 +43,7 @@ Alternatively, you can open the `Info.plist` file as source code and edit the XM
 </plist>
 ```
 
-To create a custom symbol for your app, see [Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md). To see a sample code project that uses a custom symbol, see [Synchronizing files using file provider extensions](./synchronizing-files-using-file-provider-extensions.md).
+To create a custom symbol for your app, see [Creating custom SF Symbols](../TechnologyOverviews/creating-custom-sf-symbols.md). To see a sample code project that uses a custom symbol, see [Synchronizing files using file provider extensions](./synchronizing-files-using-file-provider-extensions.md).
 
 ## See Also
 

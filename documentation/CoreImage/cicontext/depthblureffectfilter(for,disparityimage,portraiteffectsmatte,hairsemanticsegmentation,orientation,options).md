@@ -41,6 +41,7 @@ The receiver context is used to render the image in order to get the facial land
 
 ### Related Documentation
 - [struct CIImageOption](../ciimageoption.md)
+  Image option dictionary keys.
 - [Configuring camera capture to collect a Portrait Effects matte](../../AVFoundation/configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
   Prepare your app to capture a portrait effects matte when taking photos.
 ### Creating Depth Blur Filters

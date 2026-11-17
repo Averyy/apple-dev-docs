@@ -23,9 +23,9 @@ var routeChoices: [CPRouteChoice] { get }
 
 ## See Also
 
-### Getting Route Choices
-- [var destinationNameVariants: [String]?](./destinationnamevariants.md)
-  An array of strings that represents the names of the destination for this trip, arranged from most to least preferred.
+### Getting the route information
+- [var originWaypoint: CPNavigationWaypoint](./originwaypoint.md)
+- [var destinationWaypoint: CPNavigationWaypoint](./destinationwaypoint.md)
 
 
 ---

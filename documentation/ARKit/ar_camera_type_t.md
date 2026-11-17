@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-An enumeration that describes camera types.
+A value describing a type of camera.
 
 **Availability**:
 - visionOS
@@ -19,6 +19,7 @@ typedef enum { ... } ar_camera_type_t;
 
 ### Camera types
 - [ar_camera_type_main](./ar_camera_type_t/ar_camera_type_main.md)
+  The main camera.
 
 ## See Also
 
@@ -48,7 +49,7 @@ typedef enum { ... } ar_camera_type_t;
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

@@ -28,6 +28,7 @@ struct GeometryElement
   The number of primitives in the Metal buffer for a geometry element.
 - [var bytesPerIndex: Int](./geometryelement/bytesperindex.md)
   The number of bytes that represent an index value.
+### Instance Properties
 - [var description: String](./geometryelement/description.md)
   A textual representation of this geometry element.
 ### Default Implementations

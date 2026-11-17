@@ -27,7 +27,7 @@ When the title is `nil`, the button displays a system-provided title.
 
 ## See Also
 
-### Setting Button Titles
+### Accessing button titles
 - [var additionalRoutesButtonTitle: String?](./additionalroutesbuttontitle.md)
   The title displayed on the routes button.
 - [var overviewButtonTitle: String?](./overviewbuttontitle.md)

@@ -25,8 +25,6 @@ var isTracked: Bool { get }
   Tracking state of this anchor
 - [DeviceAnchor.TrackingState](./trackingstate-swift.enum.md)
   Values that describe the tracking state of a device anchor.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 - [var id: UUID](./id.md)
   The unique identifier of this anchor.
 

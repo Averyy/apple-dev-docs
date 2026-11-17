@@ -32,7 +32,7 @@ The available target types are plane, infinite plane, and estimated plane.
 - [var targetAlignment: ARRaycastQuery.TargetAlignment](./targetalignment-swift.property.md)
   The target’s alignment with respect to gravity.
 - [ARRaycastQuery.TargetAlignment](./targetalignment-swift.enum.md)
-  A specification that indicates a target’s alignment with respect to gravity
+  A specification that indicates a target’s alignment with respect to gravity.
 
 
 ---

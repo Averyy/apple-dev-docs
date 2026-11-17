@@ -18,7 +18,9 @@ The joint landmarks in normalized coordinates.
 
 ## Discussion
 
-The joint landmarks are normalized within the range [0..1] in the coordinate space of the current frame’s camera image, where 0 is the upper left, and 1 is the bottom right.
+The joint landmarks are detected in the captured image on the `ARFrame`. The joint landmarks are normalized within the range [0..1] in the coordinate space of the current frame’s camera image, where 0 is the upper left, and 1 is the bottom right.
+
+> **See Also**: [`capturedImage`](../arframe/capturedimage.md)
 
 ## See Also
 

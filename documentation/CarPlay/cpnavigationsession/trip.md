@@ -21,12 +21,6 @@ var trip: CPTrip { get }
 @property (nonatomic, strong, readonly) CPTrip * trip;
 ```
 
-## See Also
-
-### Getting the Trip
-- [class CPTrip](../cptrip.md)
-  An object that represents a journey between an origin and a destination.
-
 
 ---
 

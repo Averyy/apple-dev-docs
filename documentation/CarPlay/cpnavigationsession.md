@@ -34,16 +34,10 @@ When CarPlay pauses, finishes, or cancels route guidance, you must call the corr
 
 ## Topics
 
-### Getting the Trip
+### Getting the trip
 - [var trip: CPTrip](./cpnavigationsession/trip.md)
   The trip associated with the navigation session.
-- [class CPTrip](./cptrip.md)
-  An object that represents a journey between an origin and a destination.
-### Managing Trip Navigation
-- [func cancelTrip()](./cpnavigationsession/canceltrip%28%29.md)
-  Tells the navigation session to cancel the trip.
-- [func finishTrip()](./cpnavigationsession/finishtrip%28%29.md)
-  Tells the navigation session to finish the trip.
+### Managing trip navigation
 - [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?)](./cpnavigationsession/pausetrip%28for,description%29.md)
   Tells the navigation session to pause the trip for the specified reason.
 - [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?, turnCardColor: UIColor?)](./cpnavigationsession/pausetrip%28for,description,turncardcolor%29.md)
@@ -51,7 +45,11 @@ When CarPlay pauses, finishes, or cancels route guidance, you must call the corr
   A set of reasons for pausing a trip.
 - [func resumeTrip(updatedRouteInformation: CPRouteInformation)](./cpnavigationsession/resumetrip%28updatedrouteinformation%29.md)
   Resumes the current trip with updated route information.
-### Managing Upcoming Maneuvers
+- [func finishTrip()](./cpnavigationsession/finishtrip%28%29.md)
+  Tells the navigation session to finish the trip.
+- [func cancelTrip()](./cpnavigationsession/canceltrip%28%29.md)
+  Tells the navigation session to cancel the trip.
+### Managing upcoming maneuvers
 - [var upcomingManeuvers: [CPManeuver]](./cpnavigationsession/upcomingmaneuvers.md)
   The next set of maneuvers the user should perform while following the current route.
 - [var maneuverState: CPManeuverState](./cpnavigationsession/maneuverstate.md)
@@ -66,7 +64,7 @@ When CarPlay pauses, finishes, or cancels route guidance, you must call the corr
   Adds one or more lane guidance instances to the navigation session.
 - [class CPManeuver](./cpmaneuver.md)
   An object that describes a single navigation instruction.
-### Updating Travel Estimates
+### Updating travel estimates
 - [func updateEstimates(CPTravelEstimates, for: CPManeuver)](./cpnavigationsession/updateestimates%28_,for%29.md)
   Updates the travel estimates for the specified maneuver.
 - [class CPTravelEstimates](./cptravelestimates.md)
@@ -102,12 +100,6 @@ When CarPlay pauses, finishes, or cancels route guidance, you must call the corr
 - [Hashable](../Swift/hashable.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [Sendable](../Swift/sendable.md)
-
-## See Also
-
-### Navigating a Trip
-- [func startNavigationSession(for: CPTrip) -> CPNavigationSession](./cpmaptemplate/startnavigationsession%28for%29.md)
-  Begins navigational guidance for a trip.
 
 
 ---

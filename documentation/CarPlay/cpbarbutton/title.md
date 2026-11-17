@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The title displayed on the bar button.
+The text to display in the button.
 
 **Availability**:
 - iOS 12.0+
@@ -23,15 +23,15 @@ var title: String? { get set }
 
 ## Discussion
 
-Setting this property has an effect only when the button type is [`CPBarButton.Type.text`](./type/text.md).
+Specify the button’s text at initialization time and use this property to update it. If you initialize the button with an image instead of text, this property is `nil`.
 
 ## See Also
 
-### Configuring the Button
-- [var isEnabled: Bool](./isenabled.md)
-  A Boolean value that enables and disables the bar button.
+### Configuring the button
 - [var image: UIImage?](./image.md)
-  The image displayed on the bar button.
+  The image to display in the button.
+- [var isEnabled: Bool](./isenabled.md)
+  A Boolean value that indicates whether the button is enabled.
 
 
 ---

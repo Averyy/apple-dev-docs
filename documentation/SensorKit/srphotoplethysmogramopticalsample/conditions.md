@@ -49,6 +49,7 @@ Use these flags to determine whether the data is valid or other system condition
 - [SRPhotoplethysmogramOpticalSample.NoiseTerms](./noiseterms-swift.struct.md)
   The mathematical terms that you use to compute the photoplethysmogram (PPG) noise.
 - [var normalizedReflectance: Double?](./normalizedreflectance-15f2k.md)
+  The photoplethysmogram waveform in normalized units.
 - [whiteNoise](./whitenoise.md)
   An estimate of the white noise of the sensor.
 - [pinkNoise](./pinknoise.md)

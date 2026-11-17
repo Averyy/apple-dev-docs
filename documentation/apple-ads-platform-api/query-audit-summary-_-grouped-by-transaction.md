@@ -26,7 +26,7 @@ The following fields support filtering. For non-time fields, the API supports on
 | Field | Operators | Notes |
 | --- | --- | --- |
 | `eventTime` | `BETWEEN`, `GREATER_THAN`, `LESS_THAN` | **Required.** ISO 8601 date strings. Maximum lookback is 6 months. `BETWEEN` requires two values. `GREATER_THAN` and `LESS_THAN` take one. |
-| `entityType` | `IN` | Not a closed enum. A string matching the name of the API entity that changed, such as `Campaign`, `AdGroup`, `Keyword`, `NegativeKeyword`, `Ad`, `Creative`, `AdAccount`, `Org`, or `LocationGroup`. See [Change History Endpoints](./change-history-endpoints.md) for the entity types this endpoint reports on. |
+| `entityType` | `IN` | **Required.** Not a closed enum. A string matching the name of the API entity that changed, such as `Campaign`, `AdGroup`, `Keyword`, `NegativeKeyword`, `Ad`, `Creative`, `AdAccount`, `Org`, or `LocationGroup`. See [Change History Endpoints](./change-history-endpoints.md) for the entity types this endpoint reports on. |
 | `entityId` | `EQUALS`, `IN` | The specific entity that changed. |
 | `eventType` | `IN` | `CREATE`, `UPDATE`, `DELETE` |
 | `userType` | `IN` | `CUSTOMER`, `CUSTOMER_API`, `APPLE_SUPPORT` |

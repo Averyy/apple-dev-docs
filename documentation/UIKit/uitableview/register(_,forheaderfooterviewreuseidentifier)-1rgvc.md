@@ -33,7 +33,7 @@ If you previously registered a class or nib file with the same reuse identifier,
 
 ## Parameters
 
-- `nib`: A nib object that specifies the nib file to use to create the header or footer view. This parameter can’t be `nil`.
+- `nib`: A nib object that specifies the nib file to use to create the header or footer view.
 - `identifier`: The reuse identifier for the header or footer view. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also

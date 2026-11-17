@@ -20,8 +20,6 @@ var allJoints: [HandSkeleton.Joint] { get }
 ### Inspecting hand skeletons
 - [static var neutralPose: HandSkeleton](./neutralpose.md)
   A hand pose that you can use as a reference.
-- [var description: String](./description.md)
-  A textual representation of this Skeleton.
 
 
 ---

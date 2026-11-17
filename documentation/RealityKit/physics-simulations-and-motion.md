@@ -43,6 +43,18 @@ RealityKit simulates physical interactions between virtual objects in your scene
 - [ParticleEmitterComponent.ParticleEmitter](./particleemittercomponent/particleemitter.md)
 - [ParticleEmitterComponent.Presets](./particleemittercomponent/presets.md)
   Initial configurations that can be set when starting a new simulation.
+- [struct ComputeGraphComponent](./computegraphcomponent.md)
+  A component that drives a compute graph–based particle simulation on an entity.
+- [class ComputeGraphResource](./computegraphresource.md)
+  A loaded compute graph resource containing the graph definition, compiled pipelines, and all associated rendering assets.
+- [struct ComputeGraphOutputComponent](./computegraphoutputcomponent.md)
+  A transient component that identifies the compute graph output associated with an entity.
+- [struct ComputeGraphRuntimeComponent](./computegraphruntimecomponent.md)
+  Manages the live GPU simulation for an entity’s `ComputeGraphComponent_v1`.
+- [struct ComputeGraphViewpointComponent](./computegraphviewpointcomponent.md)
+  A transient component that provides camera viewpoint information to the particle simulation.
+- [class ComputeGraphSharedUniforms](./computegraphshareduniforms.md)
+  A transient component that stores typed uniform values shared across all ComputeGraph simulations.
 ### Entity compliance
 - [protocol HasPhysicsBody](./hasphysicsbody.md)
   An interface that enables physics simulations based on the rules of Newtonian mechanics.

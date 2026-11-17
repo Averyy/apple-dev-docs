@@ -26,8 +26,6 @@ var id: UUID { get }
   The trained USDZ file, if the reference object includes one.
 - [var name: String](./name.md)
   The name of a reference object.
-- [var description: String](./description.md)
-  A textual representation of this reference object.
 
 
 ---

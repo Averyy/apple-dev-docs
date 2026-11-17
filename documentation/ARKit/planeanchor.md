@@ -23,13 +23,9 @@ struct PlaneAnchor
 - [var alignment: PlaneAnchor.Alignment](./planeanchor/alignment-swift.property.md)
   The general orientation of the detected plane with respect to gravity.
 - [PlaneAnchor.Alignment](./planeanchor/alignment-swift.enum.md)
-  Values describing possible general orientations of a detected plane with respect to gravity.
-- [var classification: PlaneAnchor.Classification](./planeanchor/classification-swift.property.md)
-  Get the classification of this plane.
-- [PlaneAnchor.Classification](./planeanchor/classification-swift.enum.md)
-  The kinds of object classification a plane anchor can have.
-- [var description: String](./planeanchor/description.md)
-  A textual representation of this anchor.
+  The possible general orientations of a detected plane with respect to gravity.
+- [var surfaceClassification: SurfaceClassification](./planeanchor/surfaceclassification.md)
+  Get the surface classification of this plane.
 ### Getting the shape of a plane anchor
 - [var geometry: PlaneAnchor.Geometry](./planeanchor/geometry-swift.property.md)
   Get the geometry of the plane in the anchor’s coordinate system.
@@ -38,9 +34,14 @@ struct PlaneAnchor
 ### Identifying a plane anchor
 - [var id: UUID](./planeanchor/id.md)
   The unique identifier of this anchor.
+### Deprecated
+- [var classification: PlaneAnchor.Classification](./planeanchor/classification-swift.property.md)
+  Get the classification of this plane.
+- [PlaneAnchor.Classification](./planeanchor/classification-swift.enum.md)
+  The kinds of object classification a plane anchor can have.
 ### Instance Properties
-- [var surfaceClassification: SurfaceClassification](./planeanchor/surfaceclassification.md)
-  Get the surface classification of this plane.
+- [var description: String](./planeanchor/description.md)
+  A textual representation of this anchor.
 ### Default Implementations
 - [ARKitCoordinateSpaceProviding Implementations](./planeanchor/arkitcoordinatespaceproviding-implementations.md)
 - [Equatable Implementations](./planeanchor/equatable-implementations.md)

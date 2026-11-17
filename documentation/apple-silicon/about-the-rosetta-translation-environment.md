@@ -13,7 +13,7 @@ Rosetta is a translation process that allows users to run Mac apps that contain 
 
 To someone using a Mac, Rosetta is mostly transparent. If a macOS binary contains only Intel instructions, macOS automatically launches Rosetta and begins the translation process. When translation finishes, the system launches the translated executable in place of the original. However, the translation process takes time, so a person might perceive that translated apps launch or run more slowly at times.
 
-The system prefers to execute a Mac app’s `arm64` instructions on Apple silicon. If a binary includes both `arm64` and `x86_64` instructions, a person can tell the system to launch the app using Rosetta translation from the app’s Get Info window in the Finder. For example, someone might enable Rosetta translation to allow the app to run older plug-ins that don’t yet support the `arm64` architecture
+The system prefers to run a Mac app’s `arm64` instructions on Apple silicon. If a binary includes both `arm64` and `x86_64` instructions, a person can tell the system to launch the app using Rosetta translation from the app’s Get Info window in the Finder. For example, someone might enable Rosetta translation to allow the app to run older plug-ins that don’t yet support the `arm64` architecture
 
 ![A screen that highlights the Open using Rosetta option in the Get Info window for Mail.](https://developer.apple.com/tutorials/images/com.apple.Apple-Silicon/about-the-rosetta-translation-environment-1@2x.png)
 
@@ -26,7 +26,7 @@ Rosetta can translate most Intel-based apps, including apps that contain just-in
 - Kernel extensions
 - Virtual Machine apps that virtualize x86_64 computer platforms
 
-Rosetta translates all `x86_64` instructions, including ones from the AVX and AVX2  instruction set, but it doesn’t support the execution of AVX512 vector instructions. If you include these unsupported instructions in your code, run them only after verifying that they’re available. For example, to determine if AVX512 vector instructions are available, use the [`sysctlbyname`](../kernel/api-1387446-sysctlbyname.md) function to check the `hw.optional.avx512f` attribute.
+Rosetta translates all `x86_64` instructions, including ones from the AVX and AVX2  instruction set, but it doesn’t support running AVX512 vector instructions. If you include these unsupported instructions in your code, run them only after verifying that they’re available. For example, to determine if AVX512 vector instructions are available, use the [`sysctlbyname`](../kernel/api-1387446-sysctlbyname.md) function to check the `hw.optional.avx512f` attribute.
 
 ### Determine whether your app is running as a translated binary
 

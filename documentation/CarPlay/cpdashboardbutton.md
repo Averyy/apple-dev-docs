@@ -23,18 +23,17 @@ class CPDashboardButton
 
 ## Topics
 
-### Creating a Dashboard Button
+### Creating a dashboard button
 - [init(titleVariants: [String], subtitleVariants: [String], image: UIImage, handler: ((CPDashboardButton) -> Void)?)](./cpdashboardbutton/init%28titlevariants,subtitlevariants,image,handler%29.md)
   Creates a dashboard button that displays a title, an optional subtitle, and an image.
-### Accessing the Button Configuration
+- [init?(coder: NSCoder)](./cpdashboardbutton/init%28coder%29.md)
+### Accessing the button configuration
 - [var titleVariants: [String]](./cpdashboardbutton/titlevariants.md)
   The array of title variants for the button.
 - [var subtitleVariants: [String]](./cpdashboardbutton/subtitlevariants.md)
   The array of subtitle variants for the button.
 - [var image: UIImage](./cpdashboardbutton/image.md)
   The image the button displays.
-### Initializers
-- [init?(coder: NSCoder)](./cpdashboardbutton/init%28coder%29.md)
 
 ## Relationships
 
@@ -52,9 +51,15 @@ class CPDashboardButton
 
 ## See Also
 
-### Providing Dashboard Buttons
-- [var shortcutButtons: [CPDashboardButton]](./cpdashboardcontroller/shortcutbuttons.md)
-  An array of shortcut buttons to display on the CarPlay Dashboard.
+### Dashboard display
+- [class CPDashboardController](./cpdashboardcontroller.md)
+  A controller that provides shortcut buttons for the CarPlay Dashboard.
+- [class CPTemplateApplicationDashboardScene](./cptemplateapplicationdashboardscene.md)
+  A CarPlay scene that controls your app’s dashboard navigation window.
+- [protocol CPTemplateApplicationDashboardSceneDelegate](./cptemplateapplicationdashboardscenedelegate.md)
+  The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
+- [CPSupportsDashboardNavigationScene](../BundleResources/information-property-list/uiapplicationscenemanifest/cpsupportsdashboardnavigationscene.md)
+  A Boolean value that indicates whether your app supports displaying navigation content in the CarPlay Dashboard.
 
 
 ---

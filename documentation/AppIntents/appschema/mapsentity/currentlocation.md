@@ -21,27 +21,31 @@ var currentLocation: some AppSchemaEntity { get }
 
 ## Discussion
 
-To make your app’s content available to Apple Intelligence, conform your [`AppEntity`](../../appentity.md) to a schema that describes your content to the system. If your app’s functionality aligns with the `maps` domain and its content matches the `currentLocation` schema, you can generate the properties and protocol conformance the schema requires for your app entity implementation with the `@AppEntity( .maps.currentLocation)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s content available to Apple Intelligence, conform your [`AppEntity`](../../appentity.md) to a schema that describes your content to the system. If your app’s functionality aligns with the `maps` domain and its content matches the `currentLocation` schema, you can generate the properties and protocol conformance the schema requires for your app entity implementation with the `@AppEntity(schema: .maps.currentLocation)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an app entity that conforms to the `currentLocation` schema:
+The following example shows an app entity that conforms to the `currentLocation` schema. You can create a type that conforms to the schema by adding the `@AppEntity` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `maps_currentLocation` and select it from the code-completion suggestions:
 
 ```swift
 @AppEntity(schema: .maps.currentLocation)
 struct MapsCurrentLocationEntity {
-    // MARK: Static
+    // MARK: Default query
 
+    /// The standard lookup the system runs to find one or more current location entities, unless you provide another.
     static let defaultQuery = MapsCurrentLocationEntityQuery()
 
-    // MARK: Properties
+    // MARK: Entity properties
 
+    /// The unique identifier for the current location entity.
     let id: <#Identifiable.ID#>
 
+    /// The details the system shows to identify the current location entity to a person, such as a title and image.
     var displayRepresentation: DisplayRepresentation {
         <#DisplayRepresentation#>
     }
 
-    // MARK: Query
+    // MARK: Query type
 
+    /// A type that looks up one or more current location entities by their identifiers.
     struct MapsCurrentLocationEntityQuery: EntityQuery {
         func entities(for identifiers: [MapsCurrentLocationEntity.ID]) async throws -> [MapsCurrentLocationEntity] {
             <#code#>

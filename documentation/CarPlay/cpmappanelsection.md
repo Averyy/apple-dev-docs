@@ -29,15 +29,15 @@ Create a `CPMapPanelSection` object and configure it with the section title and 
 
 ## Topics
 
-### Initializers
-- [init?(coder: NSCoder)](./cpmappanelsection/init%28coder%29.md)
+### Creating a map panel section
 - [init(title: String?, items: [CPMapPanelItem])](./cpmappanelsection/init%28title,items%29.md)
   Initializes the section with the specified title and items.
-### Instance Properties
-- [var items: [CPMapPanelItem]](./cpmappanelsection/items.md)
-  The items to display in the section.
+- [init?(coder: NSCoder)](./cpmappanelsection/init%28coder%29.md)
+### Accessing the section’s content
 - [var title: String?](./cpmappanelsection/title.md)
   The localized string to display for the section title.
+- [var items: [CPMapPanelItem]](./cpmappanelsection/items.md)
+  The items to display in the section.
 
 ## Relationships
 
@@ -52,6 +52,22 @@ Create a `CPMapPanelSection` object and configure it with the section title and 
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
+
+## See Also
+
+### Maps
+- [class CPMapTemplate](./cpmaptemplate.md)
+  A template that displays a navigation overlay that your app draws on the map.
+- [class CPMapButton](./cpmapbutton.md)
+  A button that represents an action that a map template displays on the CarPlay screen.
+- [class CPMapPanel](./cpmappanel.md)
+  An overlay for a custom map interface that shows navigation-related instructions or information over a portion of the map.
+- [class CPMapPanelItem](./cpmappanelitem.md)
+  A type that manages the waypoint, route, trip, and other information you display in a map panel.
+- [class CPMapPanelButtonConfiguration](./cpmappanelbuttonconfiguration.md)
+  A type that manages the action buttons and travel estimates in a map panel.
+- [class CPChargingStationConnection](./cpchargingstationconnection.md)
+  Details about the equipment at an electric vehicle charging station.
 
 
 ---

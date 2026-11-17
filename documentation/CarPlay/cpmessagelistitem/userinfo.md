@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An opaque value for the list item.
+Custom information you want to store with the message list item.
 
 **Availability**:
 - iOS 14.0+
@@ -23,7 +23,15 @@ var userInfo: Any? { get set }
 
 ## Discussion
 
-Use this property to attach a value that provides additional context to the list item.
+Store any app-specific data for the item in this property. For example, store the unique ID of the conversation or contact object. The item maintains a strong reference to the object you specify.
+
+## See Also
+
+### Configuring additional details
+- [var leadingConfiguration: CPMessageListItemLeadingConfiguration](./leadingconfiguration.md)
+  Additional content to display at the leading edge of the row.
+- [var trailingConfiguration: CPMessageListItemTrailingConfiguration?](./trailingconfiguration.md)
+  Additional content to display at the trailing edge of the row.
 
 
 ---

@@ -15,6 +15,14 @@ Gets the transform from the anchor to the origin coordinate system.
 extern simd_float4x4 ar_anchor_get_origin_from_anchor_transform(ar_anchor_t anchor);
 ```
 
+## Return Value
+
+The origin from anchor transform.
+
+## Parameters
+
+- `anchor`: The anchor.
+
 ## See Also
 
 ### Anchors
@@ -27,7 +35,7 @@ extern simd_float4x4 ar_anchor_get_origin_from_anchor_transform(ar_anchor_t anch
 - [ar_anchor_t](./ar_anchor_t.md)
   The identity, location, and orientation of an object in world space.
 - [ar_mesh_anchor_t](./ar_mesh_anchor_t.md)
-  A surface’s position in a person’s surroundings.
+  An anchor that represents a reconstructed mesh from the physical environment.
 - [ar_mesh_anchors_t](./ar_mesh_anchors_t.md)
   A collection of mesh anchors.
 - [ar_mesh_anchors_enumerator_t](./ar_mesh_anchors_enumerator_t.md)

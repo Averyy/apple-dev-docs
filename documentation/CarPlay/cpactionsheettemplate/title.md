@@ -23,7 +23,7 @@ var title: String? { get }
 
 ## See Also
 
-### Getting Action Sheet Template Information
+### Getting the template content
 - [var message: String?](./message.md)
   The descriptive message providing details about the reason for displaying the action sheet.
 - [var actions: [CPAlertAction]](./actions.md)

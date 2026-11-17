@@ -41,6 +41,8 @@ Call [`supportsFrameSemantics(_:)`](../arconfiguration/supportsframesemantics%28
   The time at which depth data for the frame (if any) was captured.
 - [var sceneDepth: ARDepthData?](./scenedepth.md)
   Data on the distance between a device’s rear camera and real-world objects in an AR experience.
+- [- displayTransformForOrientation:viewportSize:](./displaytransformfororientation_viewportsize_.md)
+  Returns an affine transform for converting between normalized image coordinates and a coordinate space appropriate for rendering the camera image onscreen.
 
 
 ---

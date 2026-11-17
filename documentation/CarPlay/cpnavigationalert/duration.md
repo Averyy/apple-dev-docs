@@ -27,7 +27,7 @@ Set `duration` to zero to display the alert until dismissed by the user. When `d
 
 ## See Also
 
-### Getting the Alert Duration
+### Getting the alert duration
 - [var CPNavigationAlertMinimumDuration: TimeInterval](../cpnavigationalertminimumduration.md)
   A constant that defines the minimum amount of time that an alert is visible.
 

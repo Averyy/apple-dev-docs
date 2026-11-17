@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+Configuration for room tracking.
+
 **Availability**:
 - visionOS 2.0+
 
@@ -17,8 +19,11 @@ typedef NSObject<OS_ar_room_tracking_configuration> * ar_room_tracking_configura
 
 ### Room tracking data types
 - [ar_room_tracking_provider_t](./ar_room_tracking_provider_t.md)
+  A data provider for room tracking.
 - [ar_room_tracking_update_handler_function_t](./ar_room_tracking_update_handler_function_t.md)
+  Function called when there are updates to room anchors.
 - [ar_room_tracking_update_handler_t](./ar_room_tracking_update_handler_t.md)
+  Handler called when there are updates to room anchors.
 
 
 ---

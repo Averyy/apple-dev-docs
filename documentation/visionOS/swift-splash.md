@@ -2,7 +2,7 @@
 
 **Framework**: visionOS  
 **Role**: Sample Code  
-**Download**: [SwiftSplash.zip](https://docs-assets.developer.apple.com/published/ace0eae5beca/SwiftSplash.zip)
+**Download**: [SwiftSplash.zip](https://docs-assets.developer.apple.com/published/910a16bf6ee8/SwiftSplash.zip)
 
 Use RealityKit to create an interactive ride in visionOS.
 

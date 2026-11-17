@@ -29,6 +29,13 @@ When providing an image, your app should provide a @c UIImage that is display-re
 
 UIImageAsset is used to combine multiple UIImages with different trait collections into a single UIImage.
 
+## See Also
+
+### Creating a configuration object
+- [init(title: String?, buttons: [CPTextButton])](./init%28title,buttons%29.md)
+  Initializes a MultiStopCardConfiguration with an optional title and an array of text buttons
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

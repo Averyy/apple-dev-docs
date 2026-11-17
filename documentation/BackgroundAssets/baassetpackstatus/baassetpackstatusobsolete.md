@@ -24,6 +24,16 @@ BAAssetPackStatusObsolete
 
 Obsolete asset packs can’t be updated, and they also can’t be redownloaded once removed.
 
+## See Also
+
+### Updating assets
+- [BAAssetPackStatusUpToDate](./baassetpackstatusuptodate.md)
+  A status value that indicates that the downloaded asset pack is up to date.
+- [BAAssetPackStatusOutOfDate](./baassetpackstatusoutofdate.md)
+  A status value that indicates that the downloaded asset pack is out of date.
+- [BAAssetPackStatusUpdateAvailable](./baassetpackstatusupdateavailable.md)
+  A status value that indicates that an update to the asset pack is available to download.
+
 
 ---
 

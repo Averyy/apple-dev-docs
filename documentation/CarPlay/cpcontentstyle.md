@@ -29,14 +29,11 @@ You don’t create instances of `CPContentStyle`. Instead, the session configura
 
 ## Topics
 
-### Creating a Content Style
-- [init(rawValue: UInt)](./cpcontentstyle/init%28rawvalue%29.md)
-  Creates a content style from a raw value.
-### Content Styles
+### Getting the content styles
 - [static var dark: CPContentStyle](./cpcontentstyle/dark.md)
-  The indication from the vehicle to draw the content in a dark style.
 - [static var light: CPContentStyle](./cpcontentstyle/light.md)
-  The indication from the vehicle to draw the content in a light style.
+### Creating a content style
+- [init(rawValue: UInt)](./cpcontentstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
@@ -52,9 +49,15 @@ You don’t create instances of `CPContentStyle`. Instead, the session configura
 
 ## See Also
 
-### Getting the Content Style
+### Getting the configuration details
 - [var contentStyle: CPContentStyle](./cpsessionconfiguration/contentstyle.md)
-  The content style that the vehicle selects.
+  The preferred interface style for your app’s content.
+- [var limitedUserInterfaces: CPLimitableUserInterface](./cpsessionconfiguration/limiteduserinterfaces.md)
+  A bitmask of the interface restrictions that currently apply to your app.
+- [var supportsVideoPlayback: Bool](./cpsessionconfiguration/supportsvideoplayback.md)
+  A Boolean value that indicates whether CarPlay supports playing video content.
+- [struct CPLimitableUserInterface](./cplimitableuserinterface.md)
+  The types of interfaces to which a vehicle can limit access.
 
 
 ---

@@ -19,6 +19,22 @@ func NSStringFromCPLaneStatus(_ laneStatus: CPLaneStatus) -> String!
 NSString *NSStringFromCPLaneStatus(CPLaneStatus laneStatus);
 ```
 
+## See Also
+
+### Lanes and junctions
+- [class CPLane](./cplane.md)
+  A class that describes characteristics of a lane on a roadway.
+- [class CPLaneGuidance](./cplaneguidance.md)
+  A class that provides information that describes the number of lanes on a roadway and navigation instruction variants.
+- [enum CPLaneStatus](./cplanestatus.md)
+  Values that describe the status or preferability of a lane.
+- [enum CPJunctionType](./cpjunctiontype.md)
+  Values that represent types of roadway junctions.
+- [enum CPTrafficSide](./cptrafficside.md)
+  Values that represent which side of the road the traffic drives on.
+- [func NSStringFromCPJunctionType(CPJunctionType) -> String!](./nsstringfromcpjunctiontype%28_%29.md)
+- [func NSStringFromCPTrafficSide(CPTrafficSide) -> String!](./nsstringfromcptrafficside%28_%29.md)
+
 
 ---
 

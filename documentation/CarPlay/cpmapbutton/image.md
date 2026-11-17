@@ -27,7 +27,7 @@ This property doesn’t support animated images. If it’s set with an animated 
 
 ## See Also
 
-### Providing Button Images
+### Managing the images
 - [var focusedImage: UIImage?](./focusedimage.md)
   The image to display when focus is on the button.
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A closure that receives the spatial events updates from the LayerRenderer
+A closure that receives spatial event updates from the layer renderer.
 
 **Availability**:
 - visionOS 1.0+
@@ -15,6 +15,10 @@ A closure that receives the spatial events updates from the LayerRenderer
 @MainActor
 @preconcurrency var onSpatialEvent: @MainActor (SpatialEventCollection) -> Void { get set }
 ```
+
+## Discussion
+
+Assign a closure to this property when configuring your layer renderer. When a person interacts with your immersive content, the layer renderer delivers the associated events as a parameter to your closure.
 
 
 ---

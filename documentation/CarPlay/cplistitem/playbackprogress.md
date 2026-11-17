@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The playback progress status for the content that the list item represents.
+The current playback progress for a media item.
 
 **Availability**:
 - iOS 14.0+
@@ -23,19 +23,21 @@ var playbackProgress: CGFloat { get set }
 
 ## Discussion
 
-If the list item represents media content that is playable, set this property’s value to a fractional number between 0 and 1 to indicate its playback progress. The list item displays a progress bar that derives its value from this property.
+Set the value of this property to a floating-point value between `0.0` and `1.0`, with `0.0` indicating the start of playback and `1.0` indicating the end of playback.
+
+When the [`isPlaying`](./isplaying.md) property is `true`, CarPlay displays a progress bar and configures it with the value in this property. If you change the value of this property while the list item is visible, CarPlay updates the interface to reflect the new value.
 
 ## See Also
 
-### Managing Playback Information
-- [var isExplicitContent: Bool](./isexplicitcontent.md)
-  A Boolean value that determines whether the list item displays its explicit content indicator.
+### Managing playback information
 - [var isPlaying: Bool](./isplaying.md)
-  A Boolean value that determines whether the list item displays its Now Playing indicator.
+  A Boolean value that indicates whether the list item displays the Now Playing indicator.
 - [var playingIndicatorLocation: CPListItemPlayingIndicatorLocation](./playingindicatorlocation.md)
-  The location where the list item displays its Now Playing indicator.
+  The placement of the Now Playing indicator in the list item’s row.
 - [enum CPListItemPlayingIndicatorLocation](../cplistitemplayingindicatorlocation.md)
   The locations where a list item can display the Now Playing indicator.
+- [var isExplicitContent: Bool](./isexplicitcontent.md)
+  A Boolean value that indicates whether the list item displays an explicit content indicator.
 
 
 ---

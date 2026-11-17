@@ -33,9 +33,13 @@ A newly initialized trip.
 
 ## See Also
 
-### Creating a Trip
-- [class CPRouteChoice](../cproutechoice.md)
-  A possible route for a trip.
+### Deprecated
+- [var origin: MKMapItem](./origin.md)
+  The trip’s origin.
+- [var destination: MKMapItem](./destination.md)
+  The trip’s destination.
+- [var destinationNameVariants: [String]?](./destinationnamevariants.md)
+  An array of strings that represents the names of the destination for this trip, arranged from most to least preferred.
 
 
 ---

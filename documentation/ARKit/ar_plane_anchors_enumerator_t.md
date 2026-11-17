@@ -15,6 +15,14 @@ A handler for enumerating a collection of plane anchors.
 typedef _Bool (^)(NSObject<OS_ar_plane_anchor> *) ar_plane_anchors_enumerator_t;
 ```
 
+## Return Value
+
+`true` to continue enumerating, or `false` to stop enumerating.
+
+## Parameters
+
+- `plane_anchor`: The plane anchor.
+
 ## See Also
 
 ### Anchors
@@ -29,7 +37,7 @@ typedef _Bool (^)(NSObject<OS_ar_plane_anchor> *) ar_plane_anchors_enumerator_t;
 - [ar_anchor_t](./ar_anchor_t.md)
   The identity, location, and orientation of an object in world space.
 - [ar_mesh_anchor_t](./ar_mesh_anchor_t.md)
-  A surface’s position in a person’s surroundings.
+  An anchor that represents a reconstructed mesh from the physical environment.
 - [ar_mesh_anchors_t](./ar_mesh_anchors_t.md)
   A collection of mesh anchors.
 - [ar_mesh_anchors_enumerator_t](./ar_mesh_anchors_enumerator_t.md)

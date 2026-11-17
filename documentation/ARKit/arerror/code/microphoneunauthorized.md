@@ -54,9 +54,9 @@ When this error occurs, the app needs to prompt the user to give permission to u
 - [ARError.Code.unsupportedConfiguration](./unsupportedconfiguration.md)
   An error that indicates the device lacks support for the session’s configuration.
 - [ARError.Code.worldTrackingFailed](./worldtrackingfailed.md)
-  An error that indicates when world tracking experiences an unrecoverable problem.
+  An error that indicates world tracking experienced an unrecoverable problem.
 - [ARError.Code.geoTrackingFailed](./geotrackingfailed.md)
-  An error that indicates when localization imagery fails to match the device’s camera captures.
+  An error that indicates localization imagery fails to match the device’s camera captures.
 
 
 ---

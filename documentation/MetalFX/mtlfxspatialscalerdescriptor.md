@@ -11,7 +11,7 @@ A set of properties that configure a spatial scaling effect, and a factory metho
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 27.1+
+- tvOS 27.2+
 - visionOS 1.0+
 
 ## Declaration

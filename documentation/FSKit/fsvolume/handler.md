@@ -122,11 +122,16 @@ Conform to this protocol in your subclass of [`FSVolume`](../fsvolume.md). To pr
 ### Supporting types
 - [class FSContext](../fscontext.md)
   A context object that provides information about the initiator of a file system operation.
+### Instance Properties
+- [var supportedRenameFlags: FSVolume.RenameFlags](./handler/supportedrenameflags.md)
+  The subset of `renamex_np(2)` flags this volume can honor.
 ### Instance Methods
 - [func activateVolume(options: FSTaskOptions, replyHandler: (FSActivateResult?, (any Error)?) -> Void)](./handler/activatevolume%28options,replyhandler%29.md)
   Activates the volume using the specified options.
 - [func deactivateVolume(options: FSDeactivateOptions, replyHandler: ((any Error)?) -> Void)](./handler/deactivatevolume%28options,replyhandler%29.md)
   Tears down a previously initialized volume instance.
+- [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, flags: FSVolume.RenameFlags, context: FSContext, replyHandler: (FSRenameItemResult?, (any Error)?) -> Void)](./handler/renameitem%28_,indirectory,named,to,indirectory,overitem,flags,context,replyhandler%29.md)
+  Renames an item, honoring the flags of `renamex_np(2)`.
 
 ## Relationships
 

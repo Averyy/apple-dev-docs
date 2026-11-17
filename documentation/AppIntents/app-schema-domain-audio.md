@@ -68,9 +68,9 @@ A *use-case group* is a set of related schemas that share a single purpose. The 
 - [var liveRadioStation: some AppSchemaEntity](./appschema/audioentity/liveradiostation.md)
   An entity schema for a live radio station.
 - [var newsBrief: some AppSchemaEntity](./appschema/audioentity/newsbrief.md)
-  An entity schema for  news brief.
+  An entity schema for news brief.
 - [var newsProvider: some AppSchemaEntity](./appschema/audioentity/newsprovider.md)
-  An entity schema for  news provider.
+  An entity schema for news provider.
 - [var playlist: some AppSchemaEntity](./appschema/audioentity/playlist.md)
   An entity schema for a playlist.
 - [var podcastCollection: some AppSchemaEntity](./appschema/audioentity/podcastcollection.md)
@@ -93,17 +93,17 @@ A *use-case group* is a set of related schemas that share a single purpose. The 
   Identifies entity schemas in the audio domain.
 ### Types for static parameters
 - [var activity: some AppSchemaEnum](./appschema/audioenum/activity.md)
-  An enum schema for an activity parameter.
+  An enum schema for an activity.
 - [var affinityState: some AppSchemaEnum](./appschema/audioenum/affinitystate.md)
-  An enum schema for an affinity state parameter.
+  An enum schema for an affinity state.
 - [var appViewIdentifier: some AppSchemaEnum](./appschema/audioenum/appviewidentifier.md)
-  An enum schema for an app view identifier parameter.
+  An enum schema for an app view identifier.
 - [var invocationSource: some AppSchemaEnum](./appschema/audioenum/invocationsource.md)
-  An enum schema for an invocation source parameter.
+  An enum schema for an invocation source.
 - [var playbackAttributes: some AppSchemaEnum](./appschema/audioenum/playbackattributes.md)
-  An enum schema for a playback attributes parameter.
+  An enum schema for a playback attributes.
 - [var queueInsertionLocation: some AppSchemaEnum](./appschema/audioenum/queueinsertionlocation.md)
-  An enum schema for a queue insertion location parameter.
+  An enum schema for a queue insertion location.
 - [AppSchema.AudioEnum](./appschema/audioenum.md)
   Identifies enum schemas in the audio domain.
 

@@ -39,17 +39,7 @@ Attach a navigation mesh component to an entity to supply the walkable surfaces 
 
 ## See Also
 
-### Game development
-- [Gaming sample code projects](./game-development-sample-code.md)
-  Explore a collection of projects relating to game development.
-- [Entity animations](./game-development-entity-animations.md)
-  Dynamically move, rotate, and scale entities at runtime.
-- [Character control, skeletons, and inverse kinematics](./game-development-character-skeletons.md)
-  Direct the movements and animation of models.
-- [struct NavigationComponent](./navigationcomponent.md)
-  A component that defines which areas of a navigation mesh an entity can move through.
-- [struct NavigationController](./navigationcontroller.md)
-  An interface for finding paths for an entity moving across a scene’s navigation mesh.
+### Navigation meshes
 - [class NavigationMeshResource](./navigationmeshresource.md)
   A representation of a scene’s navigable surfaces that the system uses to compute paths.
 

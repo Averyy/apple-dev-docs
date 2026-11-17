@@ -26,6 +26,14 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, didEndZoomGestureWithVel
 - `mapTemplate`: The [`CPMapTemplate`](../cpmaptemplate.md) the gesture applies to.
 - `velocity`: The velocity of the zoom gesture in scale factor per second.
 
+## See Also
+
+### Changing the zoom level
+- [func mapTemplateDidBeginZoomGesture(CPMapTemplate)](./maptemplatedidbeginzoomgesture%28_%29.md)
+  Tells the delegate that the zoom gesture started.
+- [func mapTemplate(CPMapTemplate, didUpdateZoomGestureWithCenter: CGPoint, scale: CGFloat, velocity: CGFloat)](./maptemplate%28_,didupdatezoomgesturewithcenter,scale,velocity%29.md)
+  Tells the delegate that a person is zooming on the map.
+
 
 ---
 

@@ -68,9 +68,14 @@ To learn more, read the [Human Interface Guidelines](https://developer.apple.com
 - [Build an AppKit app with the new design](https://developer.apple.com/videos/play/wwdc2025/310)
   Update your AppKit app to take full advantage of the new design system. We’ll dive into key changes to tab views, split views, bars, presentations, search, and controls, and show you how to use Liquid Glass in your custom UI. To get the most out of this video, we recommend first watching “Get to know the new design system” for general design guidance.
 
+## Related articles
+
+- [Adopting Liquid Glass](./adopting-liquid-glass.md)
+  Find out how to bring the new material to your app.
+
 ## Topics
 
-### Essentials
+### Adoption
 - [Adopting Liquid Glass](./adopting-liquid-glass.md)
   Find out how to bring the new material to your app.
 

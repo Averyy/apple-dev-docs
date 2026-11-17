@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The number of samples whose subject failed to be produced.
+The number of rows whose subject failed to be produced; a sample run more than once counts once per failed run.
 
 **Availability**:
 - iOS 27.0+

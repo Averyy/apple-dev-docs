@@ -16,9 +16,17 @@ Returns the index for a given joint identifier.
 - (NSUInteger) indexForJointName:(ARSkeletonJointName) jointName;
 ```
 
+## Return Value
+
+The joint index.
+
 ## Discussion
 
 This function returns `NSNotFound` if an invalid joint name is passed in.
+
+## Parameters
+
+- `jointName`: Name of a given joint.
 
 ## See Also
 

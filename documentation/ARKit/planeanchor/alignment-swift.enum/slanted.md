@@ -15,6 +15,14 @@ The plane is in a slanted orientation.
 case slanted
 ```
 
+## See Also
+
+### Alignment Values
+- [PlaneAnchor.Alignment.horizontal](./horizontal.md)
+  The plane is in a horizontal orientation.
+- [PlaneAnchor.Alignment.vertical](./vertical.md)
+  The plane is in a vertical orientation.
+
 
 ---
 

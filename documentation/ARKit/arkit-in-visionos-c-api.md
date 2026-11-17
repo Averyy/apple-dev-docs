@@ -61,7 +61,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_authorization_results_enumerate_results](./ar_authorization_results_enumerate_results.md)
   Enumerates a collection of authorization results.
 - [ar_authorization_results_enumerate_results_f](./ar_authorization_results_enumerate_results_f.md)
-  Enumerates a collection of authorization results.
+  Enumerates a collection of authorization results using a function.
 - [ar_authorization_results_get_count](./ar_authorization_results_get_count.md)
   Gets the number of authorization results in a collection.
 - [ar_authorization_status_allowed](./ar_authorization_status_t/ar_authorization_status_allowed.md)
@@ -71,7 +71,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_authorization_status_not_determined](./ar_authorization_status_t/ar_authorization_status_not_determined.md)
   Permission for your app to use the associated kind of ARKit data is undetermined.
 - [ar_authorization_result_t](./ar_authorization_result_t.md)
-  An authorization result.
+  Result of an authorization request.
 - [ar_authorization_results_enumerator_t](./ar_authorization_results_enumerator_t.md)
   A handler for enumerating a collection of authorization results.
 - [ar_authorization_results_handler_t](./ar_authorization_results_handler_t.md)
@@ -81,8 +81,11 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_authorization_update_handler_t](./ar_authorization_update_handler_t.md)
   A handler for receiving updates in authorization status for a specific authorization type.
 - [ar_authorization_results_handler_function_t](./ar_authorization_results_handler_function_t.md)
+  Function to be called upon completion of an authorization request.
 - [ar_authorization_update_handler_function_t](./ar_authorization_update_handler_function_t.md)
+  Function to be called when there are updates to authorization.
 - [ar_authorization_results_enumerator_function_t](./ar_authorization_results_enumerator_function_t.md)
+  Function for enumerating a collection of authorization results.
 ### Anchors
 - [ar_anchor_get_identifier](./ar_anchor_get_identifier.md)
   Gets the unique identifier that distinguishes this anchor from all other anchors.
@@ -95,7 +98,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_anchor_t](./ar_anchor_t.md)
   The identity, location, and orientation of an object in world space.
 - [ar_mesh_anchor_t](./ar_mesh_anchor_t.md)
-  A surface’s position in a person’s surroundings.
+  An anchor that represents a reconstructed mesh from the physical environment.
 - [ar_mesh_anchors_t](./ar_mesh_anchors_t.md)
   A collection of mesh anchors.
 - [ar_mesh_anchors_enumerator_t](./ar_mesh_anchors_enumerator_t.md)
@@ -127,7 +130,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_plane_detection_provider_t](./ar_plane_detection_provider_t.md)
   A source of live data about planes in a person’s surroundings.
 - [ar_hand_skeleton_joint_name_t](./ar_hand_skeleton_joint_name_t.md)
-  An enumeration that describes hand joint names.
+  Joint names in the hand skeleton.
 - [ar_hand_anchor_query_status_t](./ar_hand_anchor_query_status_t.md)
   An enumeration that describes the status of a hand anchor query.
 ### Data providers
@@ -136,7 +139,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_data_provider_get_required_authorization_type](./ar_data_provider_get_required_authorization_type.md)
   The kinds of authorization you need to use a particular data provider type.
 - [ar_data_provider_get_state](./ar_data_provider_get_state.md)
-  Gets the current status of data coming from this provider.
+  Gets the current status of data coming from a data provider.
 - [ar_data_providers_enumerator_t](./ar_data_providers_enumerator_t.md)
   A handler for enumerating a collection of data providers.
 - [ar_data_providers_t](./ar_data_providers_t.md)
@@ -150,7 +153,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_data_providers_create_with_data_providers](./ar_data_providers_create_with_data_providers.md)
   Creates a collection of data providers that contains the data providers you supply.
 - [ar_data_providers_enumerate_data_providers_f](./ar_data_providers_enumerate_data_providers_f.md)
-  Enumerates a collection of data providers.
+  Enumerates a collection of data providers using a function.
 - [ar_data_providers_get_count](./ar_data_providers_get_count.md)
   Gets the number of data providers in a collection.
 - [ar_data_providers_enumerate_data_providers](./ar_data_providers_enumerate_data_providers.md)
@@ -160,6 +163,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_data_providers_remove_data_providers](./ar_data_providers_remove_data_providers.md)
   Removes multiple data providers from a collection.
 - [ar_data_providers_enumerator_function_t](./ar_data_providers_enumerator_function_t.md)
+  Function for enumerating a collection of data providers.
 - [ar_session_data_provider_state_change_handler_function_t](./ar_session_data_provider_state_change_handler_function_t.md)
   A handler function that the session calls when one or more data providers associated with it change state.
 - [ar_data_provider_t](./ar_data_provider_t.md)
@@ -200,9 +204,10 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_mesh_geometry_t](./ar_mesh_geometry_t.md)
   The shapes that make up a mesh anchor.
 - [ar_mesh_anchors_enumerator_function_t](./ar_mesh_anchors_enumerator_function_t.md)
+  Function for enumerating a collection of mesh anchors.
 ### Plane detection
 - [ar_plane_alignment_t](./ar_plane_alignment_t.md)
-  The kinds of alignment — horizontal or vertical — that a plane anchor can have.
+  Option set describing possible orientation alignments of a detected plane.
 - [ar_plane_classification_t](./ar_plane_classification_t.md)
   The kinds of object classification a plane anchor can have.
 - [ar_plane_classification_ceiling](./ar_plane_classification_t/ar_plane_classification_ceiling.md)
@@ -228,18 +233,19 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_plane_anchor_get_alignment](./ar_plane_anchor_get_alignment.md)
   Gets the alignment — horizontal or vertical — of a plane anchor relative to gravity.
 - [ar_plane_anchor_get_geometry](./ar_plane_anchor_get_geometry.md)
-  Gets the shape of a plane anchor.
+  Gets the geometry of a plane anchor.
 - [ar_plane_anchor_get_plane_classification](./ar_plane_anchor_get_plane_classification.md)
   Gets the kind of real-world object that ARKit determines the plane anchor might be.
 - [ar_plane_anchors_enumerate_anchors](./ar_plane_anchors_enumerate_anchors.md)
-  Enumerates a collection of plane anchors using the collection of plane anchors and the enumeratin handler you provide.
-- [ar_plane_anchors_enumerate_anchors_f](./ar_plane_anchors_enumerate_anchors_f.md)
   Enumerates a collection of plane anchors.
+- [ar_plane_anchors_enumerate_anchors_f](./ar_plane_anchors_enumerate_anchors_f.md)
+  Enumerates a collection of plane anchors using a function.
 - [ar_plane_anchors_get_count](./ar_plane_anchors_get_count.md)
   Gets the number of plane anchors in a collection.
 - [ar_plane_anchor_get_surface_classification](./ar_plane_anchor_get_surface_classification.md)
   Get the surface classification of a plane anchor.
 - [ar_plane_detection_configuration_t](./ar_plane_detection_configuration_t.md)
+  Configuration for plane detection.
 - [ar_plane_detection_provider_create](./ar_plane_detection_provider_create.md)
   Creates a plane detection provider for the types of planes you want to detect.
 - [ar_plane_detection_provider_is_supported](./ar_plane_detection_provider_is_supported.md)
@@ -259,13 +265,13 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_plane_detection_provider_set_update_handler](./ar_plane_detection_provider_set_update_handler.md)
   Sets the handler for receiving plane detection updates.
 - [ar_plane_detection_provider_set_update_handler_f](./ar_plane_detection_provider_set_update_handler_f.md)
-  Sets the handler for receiving plane detection updates using the plane detection provider and plane detection update queue you provide.
+  Sets the function for receiving plane detection updates.
 - [ar_plane_extent_t](./ar_plane_extent_t.md)
   The size of a plane.
 - [ar_plane_extent_get_height](./ar_plane_extent_get_height.md)
   Gets the height of a plane.
 - [ar_plane_extent_get_plane_anchor_from_plane_extent_transform](./ar_plane_extent_get_plane_anchor_from_plane_extent_transform.md)
-  Gets the transform of a plane anchor from its extent transform.
+  Gets the transform from a plane extent to the plane anchor’s coordinate system.
 - [ar_plane_extent_get_width](./ar_plane_extent_get_width.md)
   Gets the width of a plane.
 - [ar_plane_geometry_t](./ar_plane_geometry_t.md)
@@ -273,7 +279,9 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_plane_detection_update_handler_t](./ar_plane_detection_update_handler_t.md)
   A handler for receiving updates to plane anchors.
 - [ar_plane_anchors_enumerator_function_t](./ar_plane_anchors_enumerator_function_t.md)
+  Function for enumerating a collection of plane anchors.
 - [ar_plane_detection_update_handler_function_t](./ar_plane_detection_update_handler_function_t.md)
+  Function called when there are updates to plane anchors.
 - [ARPlaneClassificationStatus](./arplaneclassificationstatus.md)
   Possible states of ARKit’s process for classifying plane anchors.
 - [ar_surface_classification_t](./ar_surface_classification_t.md)
@@ -304,7 +312,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)
@@ -322,9 +330,9 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_world_tracking_provider_set_anchor_update_handler](./ar_world_tracking_provider_set_anchor_update_handler.md)
   Sets the handler for receiving world tracking updates.
 - [ar_world_tracking_provider_set_anchor_update_handler_f](./ar_world_tracking_provider_set_anchor_update_handler_f.md)
-  Sets the handler for receiving world tracking updates.
+  Set the function for receiving world tracking anchor updates.
 - [ar_world_tracking_provider_remove_anchor_with_identifier](./ar_world_tracking_provider_remove_anchor_with_identifier.md)
-  Removes a world anchor from a world tracking provider based on its ID.
+  Removes a world anchor from a world tracking provider using its identifier.
 - [ar_world_tracking_provider_remove_anchor](./ar_world_tracking_provider_remove_anchor.md)
   Removes a world anchor from a world tracking provider.
 - [ar_world_tracking_provider_remove_anchor_f](./ar_world_tracking_provider_remove_anchor_f.md)
@@ -340,21 +348,29 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_world_tracking_provider_set_world_anchor_sharing_availability_update_handler_f](./ar_world_tracking_provider_set_world_anchor_sharing_availability_update_handler_f.md)
   Set the function for receiving world anchor sharing availability updates
 - [ar_world_tracking_configuration_t](./ar_world_tracking_configuration_t.md)
+  Configuration for world tracking.
 - [ar_device_anchor_t](./ar_device_anchor_t.md)
+  An anchor representing the device’s position and orientation.
 - [ar_device_anchor_create](./ar_device_anchor_create.md)
+  Create a device anchor.
 - [ar_device_anchor_query_status_t](./ar_device_anchor_query_status_t.md)
+  Return status enum values for getting the device anchor at a specified timestamp from the world tracking provider.
 - [ar_world_anchors_enumerator_function_t](./ar_world_anchors_enumerator_function_t.md)
+  Function for enumerating a collection of world anchors.
 - [ar_world_tracking_add_anchor_completion_handler_function_t](./ar_world_tracking_add_anchor_completion_handler_function_t.md)
+  Function called when a request to add a world anchor has completed (successfully or not).
 - [ar_world_tracking_anchor_update_handler_function_t](./ar_world_tracking_anchor_update_handler_function_t.md)
+  Function called when there are updates to world anchors. This includes updates to persisted world anchors from previous runs of the app.
 - [ar_world_tracking_remove_anchor_completion_handler_function_t](./ar_world_tracking_remove_anchor_completion_handler_function_t.md)
+  Function called when a request to remove a world anchor has completed (successfully or not).
 - [ar_world_tracking_provider_t](./ar_world_tracking_provider_t.md)
   A source of live data about the device pose and anchors in a person’s surroundings.
 - [ar_world_anchor_get_origin_from_anchor_transform_with_correction](./ar_world_anchor_get_origin_from_anchor_transform_with_correction.md)
   Get the transform from an anchor to the origin coordinate system.
 - [ar_camera_position_t](./ar_camera_position_t.md)
-  An enumeration that describes possible camera positions.
+  Option set describing physical position of a camera sensor on the device relative to the user.
 - [ar_camera_type_t](./ar_camera_type_t.md)
-  An enumeration that describes camera types.
+  A value describing a type of camera.
 - [ar_device_anchor_tracking_state_t](./ar_device_anchor_tracking_state_t.md)
   Values that describe the tracking states of a device anchor.
 - [ar_world_tracking_error_code_t](./ar_world_tracking_error_code_t.md)
@@ -363,6 +379,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
   The error codes for ARKit sessions.
 ### Scene reconstruction
 - [ar_scene_reconstruction_configuration_t](./ar_scene_reconstruction_configuration_t.md)
+  Configuration for scene reconstruction.
 - [ar_scene_reconstruction_mode_t](./ar_scene_reconstruction_mode_t.md)
   The additional kinds of information you can request about a person’s surroundings.
 - [ar_scene_reconstruction_provider_create](./ar_scene_reconstruction_provider_create.md)
@@ -388,7 +405,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_mesh_anchors_enumerate_anchors](./ar_mesh_anchors_enumerate_anchors.md)
   Enumerates a collection of mesh anchors.
 - [ar_mesh_anchors_enumerate_anchors_f](./ar_mesh_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of mesh anchors.
+  Enumerates a collection of mesh anchors using a function.
 - [ar_mesh_anchors_get_count](./ar_mesh_anchors_get_count.md)
   Gets the number of mesh anchors in the collection.
 - [ar_mesh_anchor_get_origin_from_anchor_transform_with_correction](./ar_mesh_anchor_get_origin_from_anchor_transform_with_correction.md)
@@ -406,6 +423,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_scene_reconstruction_update_handler_t](./ar_scene_reconstruction_update_handler_t.md)
   A handler for receiving updates to mesh anchors.
 - [ar_scene_reconstruction_update_handler_function_t](./ar_scene_reconstruction_update_handler_function_t.md)
+  Function called when there are updates to mesh anchors.
 ### Hand tracking
 - [ar_hand_chirality_t](./ar_hand_chirality_t.md)
   The values identifying hand chirality.
@@ -418,8 +436,9 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_hand_anchor_get_origin_from_anchor_transform_with_correction](./ar_hand_anchor_get_origin_from_anchor_transform_with_correction.md)
   Get the transform from an anchor to the origin coordinate system.
 - [ar_hand_tracking_configuration_t](./ar_hand_tracking_configuration_t.md)
+  Configuration for hand tracking.
 - [ar_hand_tracking_provider_create](./ar_hand_tracking_provider_create.md)
-  A source of live data about the position of a person’s hands and hand joints.
+  Creates a hand tracking provider.
 - [ar_hand_tracking_provider_is_supported](./ar_hand_tracking_provider_is_supported.md)
   Returns a Boolean value that indicates whether the current runtime environment supports hand tracking providers.
 - [ar_hand_tracking_provider_get_latest_anchors](./ar_hand_tracking_provider_get_latest_anchors.md)
@@ -427,37 +446,65 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_hand_tracking_provider_get_required_authorization_type](./ar_hand_tracking_provider_get_required_authorization_type.md)
   Gets the types of authorizations required to track hands.
 - [ar_hand_tracking_configuration_create](./ar_hand_tracking_configuration_create.md)
+  Create a hand tracking configuration.
 - [ar_hand_tracking_provider_set_update_handler](./ar_hand_tracking_provider_set_update_handler.md)
   Sets the handler for receiving hand tracking updates.
 - [ar_hand_tracking_provider_set_update_handler_f](./ar_hand_tracking_provider_set_update_handler_f.md)
-  Sets the handler for receiving hand tracking updates.
+  Sets the function for receiving hand tracking updates.
 - [ar_hand_skeleton_joint_name_forearm_arm](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_forearm_arm.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_forearm_wrist](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_forearm_wrist.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_index_finger_intermediate_base](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_intermediate_base.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_index_finger_intermediate_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_intermediate_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_index_finger_knuckle](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_knuckle.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_index_finger_metacarpal](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_metacarpal.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_index_finger_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_little_finger_intermediate_base](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_little_finger_intermediate_base.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_little_finger_intermediate_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_little_finger_intermediate_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_little_finger_knuckle](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_little_finger_knuckle.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_little_finger_metacarpal](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_little_finger_metacarpal.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_little_finger_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_little_finger_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_middle_finger_intermediate_base](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_middle_finger_intermediate_base.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_middle_finger_intermediate_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_middle_finger_intermediate_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_middle_finger_knuckle](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_middle_finger_knuckle.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_middle_finger_metacarpal](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_middle_finger_metacarpal.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_middle_finger_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_middle_finger_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_ring_finger_intermediate_base](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_ring_finger_intermediate_base.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_ring_finger_intermediate_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_ring_finger_intermediate_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_ring_finger_knuckle](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_ring_finger_knuckle.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_ring_finger_metacarpal](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_ring_finger_metacarpal.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_ring_finger_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_ring_finger_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_thumb_intermediate_base](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_thumb_intermediate_base.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_thumb_intermediate_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_thumb_intermediate_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_thumb_knuckle](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_thumb_knuckle.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_thumb_tip](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_thumb_tip.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_wrist](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_wrist.md)
+  Joint names in the hand skeleton.
 - [ar_hand_chirality_left](./ar_hand_chirality_t/ar_hand_chirality_left.md)
   A left hand.
 - [ar_hand_chirality_right](./ar_hand_chirality_t/ar_hand_chirality_right.md)
@@ -467,6 +514,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_hand_tracking_update_handler_t](./ar_hand_tracking_update_handler_t.md)
   A handler for receiving updates to hand anchors.
 - [ar_hand_tracking_update_handler_function_t](./ar_hand_tracking_update_handler_function_t.md)
+  Function to be called when there are updates to hand tracking.
 - [ar_hand_fidelity_t](./ar_hand_fidelity_t.md)
   Enum for hand fidelity.
 ### Image tracking
@@ -477,7 +525,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_image_anchors_enumerate_anchors](./ar_image_anchors_enumerate_anchors.md)
   Enumerates a collection of image anchors.
 - [ar_image_anchors_enumerate_anchors_f](./ar_image_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of image anchors.
+  Enumerates a collection of image anchors using a function.
 - [ar_image_anchors_get_count](./ar_image_anchors_get_count.md)
   Gets the number of image anchors in the collection.
 - [ar_image_tracking_provider_create](./ar_image_tracking_provider_create.md)
@@ -489,13 +537,15 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_image_tracking_provider_set_update_handler](./ar_image_tracking_provider_set_update_handler.md)
   Sets the handler for receiving image tracking updates.
 - [ar_image_tracking_provider_set_update_handler_f](./ar_image_tracking_provider_set_update_handler_f.md)
-  Sets the handler for receiving image tracking updates.
+  Sets the function for receiving image tracking updates.
 - [ar_image_tracking_configuration_add_reference_images](./ar_image_tracking_configuration_add_reference_images.md)
   Adds reference images to the set to be tracked.
 - [ar_image_tracking_configuration_create](./ar_image_tracking_configuration_create.md)
   Creates an image tracking configuration.
 - [ar_image_tracking_configuration_t](./ar_image_tracking_configuration_t.md)
+  Configuration for image tracking.
 - [ar_image_tracking_provider_copy_all_image_anchors](./ar_image_tracking_provider_copy_all_image_anchors.md)
+  Copy all image anchors.
 - [ar_reference_images_t](./ar_reference_images_t.md)
   A collection of reference images.
 - [ar_reference_images_enumerator_t](./ar_reference_images_enumerator_t.md)
@@ -509,7 +559,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_reference_images_enumerate_images](./ar_reference_images_enumerate_images.md)
   Enumerates a collection of reference images.
 - [ar_reference_images_enumerate_images_f](./ar_reference_images_enumerate_images_f.md)
-  Enumerates a collection of reference images.
+  Enumerates a collection of reference images using a function.
 - [ar_reference_images_get_count](./ar_reference_images_get_count.md)
   Gets the number of reference images in a collection.
 - [ar_reference_images_load_reference_images_in_group](./ar_reference_images_load_reference_images_in_group.md)
@@ -525,7 +575,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_reference_image_get_physical_height](./ar_reference_image_get_physical_height.md)
   Gets the height, in meters, of a reference image in the real world.
 - [ar_reference_image_get_physical_width](./ar_reference_image_get_physical_width.md)
-  Gets the height, in meters, of a reference image in the real world.
+  Gets the width, in meters, of a reference image in the real world.
 - [ar_image_tracking_provider_t](./ar_image_tracking_provider_t.md)
   A source of live data about a 2D image’s position in a person’s surroundings.
 - [ar_image_tracking_update_handler_t](./ar_image_tracking_update_handler_t.md)
@@ -533,8 +583,11 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_reference_image_t](./ar_reference_image_t.md)
   A 2D image the system uses as a reference to find the same image in a person’s surroundings.
 - [ar_image_anchors_enumerator_function_t](./ar_image_anchors_enumerator_function_t.md)
+  Function for enumerating a collection of image anchors.
 - [ar_image_tracking_update_handler_function_t](./ar_image_tracking_update_handler_function_t.md)
+  Function called when there are updates to image anchors.
 - [ar_reference_images_enumerator_function_t](./ar_reference_images_enumerator_function_t.md)
+  Function for enumerating a collection of reference images.
 - [ar_image_anchor_get_origin_from_anchor_transform_with_correction](./ar_image_anchor_get_origin_from_anchor_transform_with_correction.md)
   Get the transform from an anchor to the origin coordinate system.
 ### Accessory tracking
@@ -948,13 +1001,19 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
   Device fit validation status.
 ### Object tracking
 - [ar_object_tracking_provider_create](./ar_object_tracking_provider_create.md)
+  Create an object tracking provider.
 - [ar_object_tracking_provider_copy_all_object_anchors](./ar_object_tracking_provider_copy_all_object_anchors.md)
+  Copy all object anchors.
 - [ar_object_tracking_provider_get_required_authorization_type](./ar_object_tracking_provider_get_required_authorization_type.md)
+  Get the authorization type required by the object tracking provider.
 - [ar_object_tracking_provider_is_supported](./ar_object_tracking_provider_is_supported.md)
+  Determine whether this device supports the object tracking provider.
 - [ar_object_tracking_provider_set_update_handler](./ar_object_tracking_provider_set_update_handler.md)
+  Set the handler for receiving object tracking updates.
 - [ar_object_tracking_provider_set_update_handler_f](./ar_object_tracking_provider_set_update_handler_f.md)
+  Set the handler for receiving object tracking updates.
 - [ar_object_tracking_error_code_t](./ar_object_tracking_error_code_t.md)
-  An enumeration that describes object tracking errors.
+  Error codes that describe object tracking failures.
 - [ar_reference_object_configuration_create](./ar_reference_object_configuration_create.md)
   Create a reference object configuration.
 - [ar_reference_object_configuration_enable_high_frame_rate_tracking](./ar_reference_object_configuration_enable_high_frame_rate_tracking.md)
@@ -972,15 +1031,25 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_reference_object_load_with_name_and_configuration_f](./ar_reference_object_load_with_name_and_configuration_f.md)
   Load a reference object from a bundle.
 - [ar_reference_object_load_from_url](./ar_reference_object_load_from_url.md)
+  Load a reference object from a URL.
 - [ar_reference_object_load_from_url_f](./ar_reference_object_load_from_url_f.md)
+  Load a reference object from a URL.
 - [ar_reference_object_load_with_name](./ar_reference_object_load_with_name.md)
+  Load a reference object from a bundle.
 - [ar_reference_object_load_with_name_f](./ar_reference_object_load_with_name_f.md)
+  Load a reference object from a bundle.
 - [ar_reference_objects_add_object](./ar_reference_objects_add_object.md)
+  Add a reference object to a collection.
 - [ar_reference_objects_add_objects](./ar_reference_objects_add_objects.md)
+  Add reference objects to a collection.
 - [ar_reference_objects_create](./ar_reference_objects_create.md)
+  Create an empty collection of reference objects.
 - [ar_reference_objects_enumerate_objects](./ar_reference_objects_enumerate_objects.md)
+  Enumerates a collection of reference objects.
 - [ar_reference_objects_enumerate_objects_f](./ar_reference_objects_enumerate_objects_f.md)
+  Enumerates a collection of reference objects using a function.
 - [ar_reference_objects_get_count](./ar_reference_objects_get_count.md)
+  Get the count of reference objects in the collection.
 ### Strings
 - [ar_strings_enumerator_function_t](./ar_strings_enumerator_function_t.md)
   Function for enumerating a collection of strings.

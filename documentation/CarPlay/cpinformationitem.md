@@ -27,10 +27,10 @@ class CPInformationItem
 
 ## Topics
 
-### Creating an Information Item
+### Creating an information item
 - [init(title: String?, detail: String?)](./cpinformationitem/init%28title,detail%29.md)
   Creates an information item with a title and detail text.
-### Accessing the Item’s Attributes
+### Accessing the item’s attributes
 - [var title: String?](./cpinformationitem/title.md)
   The text that the template displays as the item’s title.
 - [var detail: String?](./cpinformationitem/detail.md)
@@ -56,7 +56,7 @@ class CPInformationItem
 
 ## See Also
 
-### Managing the Items
+### Managing the items
 - [var items: [CPInformationItem]](./cpinformationtemplate/items.md)
   The items that the template displays.
 - [class CPInformationRatingItem](./cpinformationratingitem.md)

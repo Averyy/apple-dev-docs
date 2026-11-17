@@ -19,6 +19,10 @@ static let grabIdle: PointerStyle
 
 This pointer style displays an open hand to indicate that the content can be repositioned. Typically it’s used along with the `PointerStyle.grabActive` pointer style while a mouse or trackpad is actively clicked to indicate that the content is currently being repositioned.
 
+The following image shows the grab idle pointer:
+
+![An open hand pointer.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-grabIdle@2x.png)
+
 You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 
 ## See Also

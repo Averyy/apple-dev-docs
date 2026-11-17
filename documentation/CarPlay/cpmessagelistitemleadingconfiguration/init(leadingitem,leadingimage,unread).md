@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a leading configuration that contains an item and an image.
+Creates the configuration object with the items to display at the leading edge of the row.
 
 **Availability**:
 - iOS 14.0+
@@ -21,23 +21,15 @@ init(leadingItem: CPMessageLeadingItem, leadingImage: UIImage?, unread: Bool)
 - (instancetype) initWithLeadingItem:(CPMessageLeadingItem) leadingItem leadingImage:(UIImage *) leadingImage unread:(BOOL) unread;
 ```
 
-## Discussion
+## Return Value
 
-Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property. Make sure that the image isn’t larger than [`CPMaximumMessageItemImageSize`](../cpmaximummessageitemimagesize.md).
-
-CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
+An initialized configuration object.
 
 ## Parameters
 
-- `leadingItem`: The item to show in the leading region of the message list item. See [`CPMessageLeadingItem`](../cpmessageleadingitem.md) for the available options.
-- `leadingImage`: The image to show in the leading region of the message list item.
-- `unread`: If [`true`](../../Swift/true.md), the message list item displays an indicator that shows the message is in an unread state.
-
-## See Also
-
-### Creating a Configuration
-- [let CPMaximumMessageItemImageSize: CGSize](../cpmaximummessageitemimagesize.md)
-  The maximum size of a message list item’s image.
+- `leadingItem`: A standard system symbol to display. Specify [`CPMessageLeadingItem.none`](../cpmessageleadingitem/none.md) if you don’t want to display a standard symbol.
+- `leadingImage`: A custom image you provide. If the image originates from an asset catalog, CarPlay manages light and dark variants of your image and switches them when needed. If you specify an image larger or smaller than the value in [`CPMaximumMessageItemImageSize`](../cpmaximummessageitemimagesize.md), the initializer scales the image to that size. If the image contains an animated sequence, CarPlay shows only the first image in the sequence.
+- `unread`: A Boolean that indicates the unread status of the message. When you specify `true`, CarPlay marks the message as unread and tells Siri to read the message when someone interacts with the row. When you specify `false`, CarPlay doesn’t display an unread indicator and tells Siri to initiate a workflow for composing a message in response to interactions.
 
 
 ---

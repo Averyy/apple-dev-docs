@@ -24,7 +24,7 @@ Presents an image viewer for the resulting image containing Apple Reference Imag
 - Parameters
 
   - pickerResult: The result from a `PHPickerViewController`
-  - onProcessingCompletion: An optional closure called when processing completes.
+  - onProcessingCompletion: An optional closure called when processing completes. The closure contains a result with either the newly created asset that contains the processed reference image, or an error detailing why the processing failed. The original asset is deleted, so you should use the returned asset as the new representation of the originally provided picker result.
 
 ## See Also
 

@@ -22,7 +22,12 @@ func generateMatte(from frame: ARFrame, commandBuffer: any MTLCommandBuffer) -> 
 
 ## Return Value
 
-An alpha matte texture at the resolution you chose at initialization.
+An alpha matte `MTLTexture` for the given `ARFrame` at the resolution you chose at initialization.
+
+## Parameters
+
+- `frame`: Current `ARFrame` containing camera image and segmentation stencil. The caller is to ensure that a valid segmentation buffer is present.
+- `commandBuffer`: Metal command buffer for encoding matting related operations. The command buffer is committed by the caller externally.
 
 
 ---

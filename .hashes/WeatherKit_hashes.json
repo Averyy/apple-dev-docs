@@ -1262,11 +1262,15 @@
     },
     "https://developer.apple.com/documentation/weatherkit/weathercondition": {
       "file_path": "documentation/WeatherKit/weathercondition.md",
-      "hash": "bb4374b207aa80c5c395154c9421d096dc2191446bd435b0e0baff63c405b2e2"
+      "hash": "b411dc84d1121ff57692ac4da979f48e5f5a18337c373d72f030b5a529f9eff2"
     },
     "https://developer.apple.com/documentation/weatherkit/weathercondition/accessibilitydescription": {
       "file_path": "documentation/WeatherKit/weathercondition/accessibilitydescription.md",
       "hash": "decefcda206f77765560e5f6336b506eee6436b3cfeca14cc5a76fc66da7e0d7"
+    },
+    "https://developer.apple.com/documentation/weatherkit/weathercondition/allcases": {
+      "file_path": "documentation/WeatherKit/weathercondition/allcases.md",
+      "hash": "75995de39914f11899f1ea8532e09ea55354ec17e5ab0fc98270bbe0022d7cf1"
     },
     "https://developer.apple.com/documentation/weatherkit/weathercondition/blizzard": {
       "file_path": "documentation/WeatherKit/weathercondition/blizzard.md",
@@ -2994,11 +2998,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weathercondition.json": {
       "file_path": "documentation/WeatherKit/weathercondition.md",
-      "hash": "bb4374b207aa80c5c395154c9421d096dc2191446bd435b0e0baff63c405b2e2"
+      "hash": "b411dc84d1121ff57692ac4da979f48e5f5a18337c373d72f030b5a529f9eff2"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weathercondition/accessibilitydescription.json": {
       "file_path": "documentation/WeatherKit/weathercondition/accessibilitydescription.md",
       "hash": "decefcda206f77765560e5f6336b506eee6436b3cfeca14cc5a76fc66da7e0d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/weatherkit/weathercondition/allcases.json": {
+      "file_path": "documentation/WeatherKit/weathercondition/allcases.md",
+      "hash": "75995de39914f11899f1ea8532e09ea55354ec17e5ab0fc98270bbe0022d7cf1"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weathercondition/blizzard.json": {
       "file_path": "documentation/WeatherKit/weathercondition/blizzard.md",
@@ -3469,6 +3477,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 866
+    "total_pages": 868
   }
 }

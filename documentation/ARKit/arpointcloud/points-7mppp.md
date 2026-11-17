@@ -19,10 +19,10 @@ The list of detected points.
 ## See Also
 
 ### Identifying Feature Points
-- [count](./count.md)
-  The number of points in the point cloud.
 - [identifiers](./identifiers-7p42c.md)
   A list of unique identifiers corresponding to detected feature points.
+- [count](./count.md)
+  The number of points in the point cloud.
 
 
 ---

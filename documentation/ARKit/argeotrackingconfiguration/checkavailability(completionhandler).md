@@ -34,7 +34,7 @@ For a list of supported areas and cities, see [`ARGeoTrackingConfiguration`](../
 
 ## Parameters
 
-- `completionHandler`: Code you supply that runs after the function returns. The closure takes a Boolean argument that indicates whether geotracking is available.
+- `completionHandler`: Code you supply that runs after the function returns. The closure takes a Boolean argument (`isAvailable`) that indicates whether geotracking is available, and an `NSError` argument that describes the failure if the check could not be completed. This handler is executed on an arbitrary serial queue.
 
 ## See Also
 

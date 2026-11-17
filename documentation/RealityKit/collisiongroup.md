@@ -91,6 +91,7 @@ redTeamPlayer1.collision?.filter = allButRedFilter
 - [class ShapeResource](./shaperesource.md)
   A representation of a shape.
 - [enum ShapeResourceError](./shaperesourceerror.md)
+  Errors that can occur when generating a static mesh or convex polyhedron shape resource.
 - [struct CollisionFilter](./collisionfilter.md)
   A set of masks that determine whether entities can collide during simulations.
 - [class TriggerVolume](./triggervolume.md)

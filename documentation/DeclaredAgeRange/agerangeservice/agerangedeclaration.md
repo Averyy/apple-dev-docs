@@ -30,7 +30,7 @@ The system provides this information to help you understand the reliability and 
 - [AgeRangeService.AgeRangeDeclaration.guardianDeclared](./agerangedeclaration/guardiandeclared.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range.
 - [AgeRangeService.AgeRangeDeclaration.confirmed](./agerangedeclaration/confirmed.md)
-  A status that indicates a person confirmed their age-range declaration using a credit card or government ID.
+  A status that indicates a person confirmed their age-range declaration.
 ### Deprecated
 - [AgeRangeService.AgeRangeDeclaration.paymentChecked](./agerangedeclaration/paymentchecked.md)
   Indicates the person set their own age range using a payment method, like a credit card.

@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-Constants to specify the position of the assistant cell.
+The supported placement options for the assistant cell.
 
 **Availability**:
 - iOS 15.0+
@@ -21,13 +21,17 @@ enum AssistantCellPosition
 enum CPAssistantCellPosition : NSInteger;
 ```
 
+## Overview
+
+The assistant cell supports a specific set of placement options, and you use these constants to indicate whether to place the cell before or after your app’s content.
+
 ## Topics
 
-### Controlling the Assistant Cell Position
+### Enumeration Cases
 - [CPListItem.AssistantCellPosition.bottom](./assistantcellposition/bottom.md)
-  Positions the assistant cell at the bottom of all visible cells.
+  An option to place the assistant cell above all visible cells in your list template.
 - [CPListItem.AssistantCellPosition.top](./assistantcellposition/top.md)
-  Positions the assistant cell at the top of all visible cells.
+  An option to place the assistant cell below all visible cells in your list template.
 ### Initializers
 - [init?(rawValue: Int)](./assistantcellposition/init%28rawvalue%29.md)
 
@@ -43,9 +47,17 @@ enum CPAssistantCellPosition : NSInteger;
 
 ## See Also
 
-### Managing the Assistant Cell
+### Getting the configuration attributes
+- [var assistantAction: CPAssistantCellActionType](../cpassistantcellconfiguration/assistantaction.md)
+  The action that Siri performs when the user selects the assistant cell.
+- [var position: CPListItem.AssistantCellPosition](../cpassistantcellconfiguration/position.md)
+  The position of the assistant cell in the list template.
+- [var visibility: CPListItem.AssistantCellVisibility](../cpassistantcellconfiguration/visibility.md)
+  The visibility of the assistant cell in the list template.
+- [enum CPAssistantCellActionType](../cpassistantcellactiontype.md)
+  The supported actions of the assistant cell.
 - [CPListItem.AssistantCellVisibility](./assistantcellvisibility.md)
-  Constants to specify the visibility of the assistant cell.
+  The visibility options for the assistant cell.
 
 
 ---

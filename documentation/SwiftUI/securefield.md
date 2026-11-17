@@ -136,6 +136,8 @@ If you remove the prompt from the previous example, the field keeps the label on
   Sets the style for text fields within this view.
 - [struct TextEditor](./texteditor.md)
   A view that can display and edit long-form text.
+- [struct TextFieldLink](./textfieldlink.md)
+  A control that requests text input from the user when pressed.
 
 
 ---

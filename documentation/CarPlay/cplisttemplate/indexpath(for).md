@@ -23,21 +23,17 @@ func indexPath(for item: any CPListTemplateItem) -> IndexPath?
 
 ## Return Value
 
-The item’s index path in the list, or [`nil`](../../ObjectiveC/nil-227m0.md) if the list doesn’t contain the item.
+The index path to the item, or `nil` if `item` doesn’t appear in the list. This method configures the [`section`](../../Foundation/nsindexpath/section.md) and [`row`](../../Foundation/nsindexpath/row.md) properties of the returned type with the index and row information.
 
 ## Parameters
 
-- `item`: The item to find in the list.
+- `item`: A row in the list.
 
 ## See Also
 
-### Getting Supplementary Information
-- [class var maximumItemCount: Int](./maximumitemcount.md)
-  The maximum number of items, across all sections, that the template can display.
+### Getting item details
 - [var itemCount: Int](./itemcount.md)
   The total number of items, across all sections, in the list.
-- [var title: String?](./title.md)
-  The title that the navigation bar displays when the template is visible.
 
 
 ---

@@ -4,6 +4,8 @@
 **Kind**: method  
 **Role**: Instance Method
 
+Tells the delegate to decrease map magnification by one level.
+
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
@@ -19,14 +21,19 @@ optional func instrumentClusterControllerDidZoomOut(_ instrumentClusterControlle
 - (void) instrumentClusterControllerDidZoomOut:(CPInstrumentClusterController *) instrumentClusterController;
 ```
 
+## Discussion
+
+Using vehicle controls, someone can change the magnification level of the map you display in the instrument cluster. You define the magnification levels for your content. Each time the system calls this method, decrease the magnification of your map’s content by one level. If your map is already at the minimum supported magnification level, don’t reduce magnification any further.
+
+## Parameters
+
+- `instrumentClusterController`: The controller object associated with your interface.
+
 ## See Also
 
-### Instance Methods
-- [func instrumentClusterController(CPInstrumentClusterController, didChangeCompassSetting: CPInstrumentClusterSetting)](./instrumentclustercontroller%28_,didchangecompasssetting%29.md)
-- [func instrumentClusterController(CPInstrumentClusterController, didChangeSpeedLimitSetting: CPInstrumentClusterSetting)](./instrumentclustercontroller%28_,didchangespeedlimitsetting%29.md)
-- [func instrumentClusterControllerDidConnect(UIWindow)](./instrumentclustercontrollerdidconnect%28_%29.md)
-- [func instrumentClusterControllerDidDisconnectWindow(UIWindow)](./instrumentclustercontrollerdiddisconnectwindow%28_%29.md)
+### Handling zoom events
 - [func instrumentClusterControllerDidZoom(in: CPInstrumentClusterController)](./instrumentclustercontrollerdidzoom%28in%29.md)
+  Tells the delegate to increase map magnification by one level.
 
 
 ---

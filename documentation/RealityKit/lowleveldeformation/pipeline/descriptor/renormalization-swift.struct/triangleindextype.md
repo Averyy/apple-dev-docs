@@ -18,6 +18,14 @@ The data type of the triangle index buffer.
 var triangleIndexType: MTLIndexType
 ```
 
+## See Also
+
+### Configuring index buffer types
+- [var adjacencyIndexType: MTLIndexType](./adjacencyindextype.md)
+  The data type of the per-vertex adjacencies buffer.
+- [var adjacencyEndIndexType: MTLIndexType](./adjacencyendindextype.md)
+  The data type of the per-vertex adjacency end-indices buffer.
+
 
 ---
 

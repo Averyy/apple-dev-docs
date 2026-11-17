@@ -36,7 +36,7 @@ The display style only applies to the second maneuver that you provide in the na
 
 ## See Also
 
-### Setting the Display Style
+### Configuring the map’s appearance
 - [struct CPManeuverDisplayStyle](../cpmaneuverdisplaystyle.md)
   A display style that determines the visual layout for a maneuver.
 

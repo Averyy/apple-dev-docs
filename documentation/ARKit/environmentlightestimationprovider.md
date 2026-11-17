@@ -27,11 +27,12 @@ Use the anchor this provider returns to reflect lighting from a person’s surro
 ### Inspecting the environment light estimation provider
 - [var anchorUpdates: AnchorUpdateSequence<EnvironmentProbeAnchor>](./environmentlightestimationprovider/anchorupdates.md)
   An asynchronous sequence of all anchor updates.
-- [var description: String](./environmentlightestimationprovider/description.md)
-  A textual representation of this environment light estimation provider.
 - [var state: DataProviderState](./environmentlightestimationprovider/state.md)
   The state of an environment light estimation provider.
-### Type properties
+### Instance Properties
+- [var description: String](./environmentlightestimationprovider/description.md)
+  A textual representation of this environment light estimation provider.
+### Type Properties
 - [static var isSupported: Bool](./environmentlightestimationprovider/issupported.md)
   A Boolean value that indicates whether a device supports the environment light estimation provider.
 - [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./environmentlightestimationprovider/requiredauthorizations.md)

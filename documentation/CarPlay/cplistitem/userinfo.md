@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An opaque value for the list item.
+App-specific data you associate with the item.
 
 **Availability**:
 - iOS 12.0+
@@ -23,15 +23,25 @@ var userInfo: Any? { get set }
 
 ## Discussion
 
-Use this property to attach a value that provides additional context to the list item. For example, you can attach a model object and reference it in the list item’s [`handler`](./handler.md) when processing the selection.
+Use this property to attach app-specific data to the list item. For example, you might attach the model object from your app that corresponds to the list item’s content. This information is just for your app, and CarPlay doesn’t use it. The default value of this property is `nil`.
 
 ## See Also
 
-### Managing Configuration
-- [var isEnabled: Bool](./isenabled.md)
-  A Boolean value that indicates if the item is enabled.
-- [var handler: ((any CPSelectableListItem, () -> Void) -> Void)?](./handler.md)
-  An optional closure that CarPlay invokes when the user selects the list item.
+### Managing the row’s content
+- [var text: String?](./text.md)
+  The primary text for the list item.
+- [var detailText: String?](./detailtext.md)
+  The secondary text for the list item.
+- [var image: UIImage?](./image.md)
+  The image to display on the leading edge of the cell.
+- [func setText(String)](./settext%28_%29.md)
+  Updates the primary text of the list item.
+- [func setDetailText(String?)](./setdetailtext%28_%29.md)
+  Updates the secondary text of the list item.
+- [func setImage(UIImage?)](./setimage%28_%29.md)
+  Updates the leading image of the list item.
+- [class var maximumImageSize: CGSize](./maximumimagesize.md)
+  The maximum dimensions for the list item images.
 
 
 ---

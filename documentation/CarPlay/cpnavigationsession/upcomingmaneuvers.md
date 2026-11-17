@@ -27,7 +27,7 @@ The system displays multiple maneuvers at the same time. However, the system may
 
 ## See Also
 
-### Managing Upcoming Maneuvers
+### Managing upcoming maneuvers
 - [var maneuverState: CPManeuverState](./maneuverstate.md)
   The current maneuver state.
 - [var currentRoadNameVariants: [String]](./currentroadnamevariants.md)

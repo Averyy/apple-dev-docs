@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a list item that represents an existing conversation.
+Creates a message list item with the identifier for one of your app’s conversations.
 
 **Availability**:
 - iOS 14.0+
@@ -21,20 +21,28 @@ init(conversationIdentifier: String, text: String, leadingConfiguration: CPMessa
 - (instancetype) initWithConversationIdentifier:(NSString *) conversationIdentifier text:(NSString *) text leadingConfiguration:(CPMessageListItemLeadingConfiguration *) leadingConfiguration trailingConfiguration:(CPMessageListItemTrailingConfiguration *) trailingConfiguration detailText:(NSString *) detailText trailingText:(NSString *) trailingText;
 ```
 
+## Return Value
+
+An initialized message list item to add to your list content.
+
+## Discussion
+
+Use this initializer to create a row that represents a conversation with one or more people.
+
 ## Parameters
 
-- `conversationIdentifier`: Your app’s unique identifier for the conversation. Siri passes this value to your app when the user selects the list item.
-- `text`: The conversation’s content. Siri speaks this when the user selects the list item.
-- `leadingConfiguration`: The configuration that describes the visual elements of the list item’s leading region.
-- `trailingConfiguration`: The configuration that describes the visual elements of the list item’s trailing region.
-- `detailText`: The list item’s secondary text.
-- `trailingText`: Supplementary text that the list item’s trailing region displays.
+- `conversationIdentifier`: An app-specific conversation identifier. Specify a unique string your app can use to differentiate the conversation from others. CarPlay doesn’t display the provided string in the row. When someone selects the row, SiriKit provides this identifier to your app so you can identify the referenced conversation.
+- `text`: The main text to display in the row. When someone selects the row, Siri speaks the text.
+- `leadingConfiguration`: Configuration options for the leading edge of the row.
+- `trailingConfiguration`: Configuration options for the trailing edge of the row.
+- `detailText`: Additional text to display below the main text string. Specify `nil` to omit this string from the row.
+- `trailingText`: Additional text to display at the trailing edge of the row. Specify `nil` to omit this string from the row.
 
 ## See Also
 
-### Creating a Message List Item
+### Creating a message list item
 - [init(fullName: String, phoneOrEmailAddress: String, leadingConfiguration: CPMessageListItemLeadingConfiguration, trailingConfiguration: CPMessageListItemTrailingConfiguration?, detailText: String?, trailingText: String?)](./init%28fullname,phoneoremailaddress,leadingconfiguration,trailingconfiguration,detailtext,trailingtext%29.md)
-  Creates a list item that represents a contact.
+  Creates a message list item with the identifier for one of your app’s conversations.
 
 
 ---

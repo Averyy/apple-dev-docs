@@ -20,10 +20,10 @@ struct BlendShape
 
 ## Topics
 
-### Initializers
+### Creating a blend shape descriptor
 - [init(targetCount: Int)](./blendshape-swift.struct/init%28targetcount%29.md)
   Creates a blend-shape descriptor.
-### Instance Properties
+### Configuring blend targets
 - [var targetCount: Int](./blendshape-swift.struct/targetcount.md)
   The number of blend-shape targets.
 
@@ -32,6 +32,12 @@ struct BlendShape
 ### Conforms To
 - [Sendable](../../../Swift/sendable.md)
 - [SendableMetatype](../../../Swift/sendablemetatype.md)
+
+## See Also
+
+### Configuring blend shapes
+- [var blendShape: LowLevelDeformation.Descriptor.BlendShape?](./blendshape-swift.property.md)
+  The blend-shape configuration, or `nil` if blend-shape deformation is not used.
 
 
 ---

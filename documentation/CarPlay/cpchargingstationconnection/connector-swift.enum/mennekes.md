@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+A Mennekes connector.
+
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
@@ -18,6 +20,10 @@ case mennekes
 ```c
 CPChargingStationConnectionConnectorMennekes
 ```
+
+## Discussion
+
+This type of connector supports AC charging. It’s standard in Europe and commonly available in Australia, New Zealand, parts of Asia, South America, and Africa.
 
 
 ---

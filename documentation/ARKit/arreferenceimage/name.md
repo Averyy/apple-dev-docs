@@ -24,7 +24,7 @@ var name: String? { get set }
 
 For reference images loaded from an Xcode asset catalog, this property is the name assigned in the asset catalog. For programmatically created reference images, this value is `nil`.
 
-> **Note**:  This string is not localized text intended for user display. However, in debugging  you can use this property to indicate which image was detected.
+> **Note**: This string is not localized text intended for user display. However, in debugging you can use this property to indicate which image was detected.
 
 ## See Also
 

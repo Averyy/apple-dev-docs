@@ -2,7 +2,7 @@
 
 **Framework**: visionOS  
 **Role**: Sample Code  
-**Download**: [HappyBeam.zip](https://docs-assets.developer.apple.com/published/2de9080abe63/HappyBeam.zip)
+**Download**: [HappyBeam.zip](https://docs-assets.developer.apple.com/published/5b9b7371afbd/HappyBeam.zip)
 
 Leverage a Full Space to create a fun game using ARKit.
 
@@ -93,13 +93,14 @@ struct HappyBeamApp: App {
     var body: some SwiftUI.Scene {
         WindowGroup("HappyBeam", id: "happyBeamApp") {
             HappyBeam()
-                .environmentObject(gameModel)
+                .environment(gameModel)
+            // ...
         }
         .windowStyle(.plain)
         
         ImmersiveSpace(id: "happyBeam") {
             HappyBeamSpace(gestureModel: HeartGestureModelContainer.heartGestureModel)
-                .environmentObject(gameModel)
+                .environment(gameModel)
         }
         .immersionStyle(selection: $immersionState, in: .mixed)
     }
@@ -129,9 +130,12 @@ The Happy Beam app recognizes the central *heart-shaped hands* gesture using ARK
 ![A screenshot showing someone making a heart gesture with their hands. A beam projects from the center of the player's hands and extends into a living room where grumpy clouds float toward the player.](https://developer.apple.com/tutorials/images/com.apple.visionOS/HB-custom-gestures@2x.png)
 
 ```swift
-Task {
+func start() async {
     do {
-        try await session.run([handTrackingProvider])
+        if HandTrackingProvider.isSupported {
+            print("ARKitSession starting.")
+            try await session.run([handTracking])
+        }
     } catch {
         print("ARKitSession error:", error)
     }
@@ -215,19 +219,30 @@ Happy Beam supports several kinds of input:
 
 The 3D content in the app comes in the form of assets that you can export from Reality Composer Pro. You place each asset in the `RealityView` that represents your immersive space.
 
-The following shows how Happy Beam generates clouds when the game starts, as well as materials for the floor-based beam projector. Because the game uses collision detection to keep score — the beam cheers up grumpy clouds when they collide — you make collision shapes for each model that might be involved.
-
 ```swift
 @MainActor
-func placeCloud(start: Point3D, end: Point3D, speed: Double) async throws -> Entity {
-    let cloud = await loadFromRealityComposerPro(
-        named: BundleAssets.cloudEntity,
-        fromSceneNamed: BundleAssets.cloudScene
-    )!
-        .clone(recursive: true)
+func spawnCloudExact(start: Point3D, end: Point3D, speed: Double) async throws -> Entity {
+    if cloudTemplate == nil {
+        guard let cloud = await loadFromRealityComposerPro(
+            named: BundleAssets.cloudEntity,
+            fromSceneNamed: BundleAssets.cloudScene
+        ) else {
+            fatalError("Error loading cloud from Reality Composer Pro project.")
+        }
+        cloudTemplate = cloud
+    }
     
+    // ...
+    
+    let cloud = cloudTemplate.clone(recursive: true)
     cloud.generateCollisionShapes(recursive: true)
+    cloud.name = "CCloud\(cloudNumber)"
+    cloudNumber += 1
+    
     cloud.components[PhysicsBodyComponent.self] = PhysicsBodyComponent()
+    cloud.scale = .init(repeating: 0.001)
+    
+    cloud.position = simd_float(start.vector + .init(x: 0, y: 0, z: -0.7))
     
     var accessibilityComponent = AccessibilityComponent()
     accessibilityComponent.label = "Cloud"
@@ -240,6 +255,9 @@ func placeCloud(start: Point3D, end: Point3D, speed: Double) async throws -> Ent
     let animation = cloudMovementAnimations[cloudPathsIndex]
     
     cloud.playAnimation(animation, transitionDuration: 1.0, startsPaused: false)
+    cloud.setMaterialParameterValues(parameter: "saturation", value: .float(0.0))
+    cloud.setMaterialParameterValues(parameter: "animate_texture", value: .bool(false))
+    
     cloudAnimate(cloud, kind: .sadBlink, shouldRepeat: false)
     spaceOrigin.addChild(cloud)
     
@@ -256,15 +274,14 @@ You use the Group Activities framework in visionOS to support SharePlay during a
 Use a reliable channel to send information that’s important to be correct, even if it can be slightly delayed as a result. The following shows how Happy Beam updates the game model’s score state in response to a score message:
 
 ```swift
-sessionInfo.reliableMessenger = GroupSessionMessenger(session: newSession, deliveryMode: .reliable)
+sessionInfo?.reliableMessenger = GroupSessionMessenger(session: newSession, deliveryMode: .reliable)
 
 Task {
     for await (message, sender) in sessionInfo!.reliableMessenger!.messages(of: ScoreMessage.self) {
         gameModel.clouds[message.cloudID].isHappy = true
         gameModel
             .players
-            .filter { $0.name == sender.source.id.asPlayerName }
-            .first!
+            .first(where: { $0.name == sender.source.id.asPlayerName })!
             .score += 1
     }
 }
@@ -273,7 +290,7 @@ Task {
 Use an unreliable messenger for sending data with low-latency requirements. Because the delivery mode is unreliable, some messages might not make it. Happy Beam uses the unreliable mode to send live updates to the position of the beam when each participant in the call chooses the Spatial option in FaceTime.
 
 ```swift
-sessionInfo.messenger = GroupSessionMessenger(session: newSession, deliveryMode: .unreliable)
+sessionInfo?.messenger = GroupSessionMessenger(session: newSession, deliveryMode: .unreliable)
 ```
 
 The following shows how Happy Beam serializes beam data for each message:

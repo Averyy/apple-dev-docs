@@ -21,6 +21,9 @@ A search text for \c PHPickerViewController.
 
 ## Topics
 
+### Instance Properties
+- [prefersAutomaticFocus](./phpickersearchtext-c.class/prefersautomaticfocus.md)
+  Whether the search field should be focused when the picker opens, or when this search text is updated via \c PHPickerUpdateConfiguration. Default is \c NO.
 ### Instance Methods
 - [- initWithPhotoSearchSuggestion:](./phpickersearchtext-c.class/initwithphotosearchsuggestion_.md)
   Creates a search text from a photo search suggestion.

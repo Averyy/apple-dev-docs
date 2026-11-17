@@ -55,6 +55,8 @@ struct PHPickerFilter
 - [static func any(of: [PHPickerFilter]) -> PHPickerFilter](./phpickerfilter-swift.struct/any%28of%29.md)
   Returns a new filter formed by OR-ing the filters in a given array.
 ### Type Properties
+- [static let landscapeAspectRatio: PHPickerFilter](./phpickerfilter-swift.struct/landscapeaspectratio.md)
+  The filter for media with a landscape aspect ratio.
 - [static let spatialMedia: PHPickerFilter](./phpickerfilter-swift.struct/spatialmedia.md)
 
 ## Relationships

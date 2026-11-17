@@ -32,13 +32,11 @@ This method has no effect when the map template is already displaying a navigati
 
 ## See Also
 
-### Displaying a Navigation Alert
+### Displaying navigation alerts
 - [func dismissNavigationAlert(animated: Bool, completion: (Bool) -> Void)](./dismissnavigationalert%28animated,completion%29.md)
   Tells the map template to dismiss the visable navigation alert.
 - [var currentNavigationAlert: CPNavigationAlert?](./currentnavigationalert.md)
   The visible navigation alert.
-- [class CPNavigationAlert](../cpnavigationalert.md)
-  An alert that displays map- or navigation-related information to the user.
 
 
 ---

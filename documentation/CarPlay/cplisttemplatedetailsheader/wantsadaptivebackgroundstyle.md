@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A Boolean value that determines whether to use a custom background style.
+A Boolean value that indicates whether to apply a custom background style to the header.
 
 **Availability**:
 - iOS 26.4+
@@ -23,11 +23,21 @@ var wantsAdaptiveBackgroundStyle: Bool { get set }
 
 ## Discussion
 
-When set to YES, the header will use a custom background style derived from the thumbnail image. This creates an adaptive background that automatically generates light and dark mode variants.
+When the value of this property is `true`, the system uses perceptually aware color transformations to create a background from the header’s thumbnail image. The background adapts to the current interface style preferences and adjusts automatically to light and dark interfaces. When the value of this property is `false`, CarPlay displays the standard background. The default value of this property is `false`.
 
-When set to NO (default), the header uses the standard CarPlay background.
+## See Also
 
-The custom background style uses perceptually-aware color transformation to create visually harmonious backgrounds that adapt to the user’s interface style preference.
+### Managing the header’s content
+- [var thumbnail: CPThumbnailImage](./thumbnail.md)
+  The thumbnail image to display in the header.
+- [var title: String?](./title.md)
+  The primary text to display in the header.
+- [var subtitle: String?](./subtitle.md)
+  The text to display in the header below the title.
+- [var bodyVariants: [NSAttributedString]](./bodyvariants.md)
+  An optional array of localized strings to display beneath the subtitle.
+- [var actionButtons: [CPButton]](./actionbuttons.md)
+  An array of action buttons to display in the header.
 
 
 ---

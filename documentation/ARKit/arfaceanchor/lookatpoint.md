@@ -22,7 +22,7 @@ var lookAtPoint: simd_float3 { get }
 
 ## Discussion
 
-This vector abstracts from the [`leftEyeTransform`](./lefteyetransform.md) and [`rightEyeTransform`](./righteyetransform.md) matrices to estimate what point,  relative to the face, the user’s eyes are focused upon. For example:
+This vector abstracts from the [`leftEyeTransform`](./lefteyetransform.md) and [`rightEyeTransform`](./righteyetransform.md) matrices to estimate what point, relative to the face, the user’s eyes are focused upon. For example:
 
 - If the user is looking to the left, the vector has a positive x-axis component.
 - If the user is focused on a nearby object, the vector’s length is shorter.

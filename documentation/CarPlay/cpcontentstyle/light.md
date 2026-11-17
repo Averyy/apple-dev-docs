@@ -4,8 +4,6 @@
 **Kind**: property  
 **Role**: Type Property
 
-The indication from the vehicle to draw the content in a light style.
-
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -23,9 +21,8 @@ CPContentStyleLight
 
 ## See Also
 
-### Content Styles
+### Getting the content styles
 - [static var dark: CPContentStyle](./dark.md)
-  The indication from the vehicle to draw the content in a dark style.
 
 
 ---

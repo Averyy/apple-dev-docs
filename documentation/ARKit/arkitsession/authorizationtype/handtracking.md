@@ -23,6 +23,8 @@ case handTracking
   The authorization for access to plane detection, scene reconstruction, and image tracking.
 - [ARKitSession.AuthorizationType.cameraAccess](./cameraaccess.md)
   The authorization for camera access.
+- [ARKitSession.AuthorizationType.accessoryTracking](./accessorytracking.md)
+  The authorization for access to accessory tracking data.
 
 
 ---

@@ -33,12 +33,6 @@ Keep a reference to the navigation session to perform guidance updates.
 
 - `trip`: The trip to provide guidance for.
 
-## See Also
-
-### Navigating a Trip
-- [class CPNavigationSession](../cpnavigationsession.md)
-  An object that represents an active route guidance session.
-
 
 ---
 

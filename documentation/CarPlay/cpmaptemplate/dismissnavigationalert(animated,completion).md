@@ -42,13 +42,11 @@ func dismissNavigationAlert(animated: Bool) async -> Bool
 
 ## See Also
 
-### Displaying a Navigation Alert
+### Displaying navigation alerts
 - [func present(navigationAlert: CPNavigationAlert, animated: Bool)](./present%28navigationalert,animated%29.md)
   Displays a navigation alert on the map template.
 - [var currentNavigationAlert: CPNavigationAlert?](./currentnavigationalert.md)
   The visible navigation alert.
-- [class CPNavigationAlert](../cpnavigationalert.md)
-  An alert that displays map- or navigation-related information to the user.
 
 
 ---

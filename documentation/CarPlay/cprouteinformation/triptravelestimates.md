@@ -24,7 +24,7 @@ var tripTravelEstimates: CPTravelEstimates { get }
 
 ## See Also
 
-### Properties
+### Getting route details
 - [var currentLaneGuidance: CPLaneGuidance](./currentlaneguidance.md)
   A lane guidance object that describes the current lane guidance.
 - [var currentManeuvers: [CPManeuver]](./currentmaneuvers.md)

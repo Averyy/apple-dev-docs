@@ -30,7 +30,7 @@ The [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md) class tr
 
 This kind of tracking can create immersive AR experiences: A virtual object can appear to stay in the same place relative to the real world, even as the user tilts the device to look above or below the object, or moves the device around to see the object’s sides and back.
 
-![Three illustrated variations of an iPhone running an app that displays an AR experience using the rear camera. The physical environment is depicted with a couch, in front of which, the app displays a virtual character. In the left picture, the iPhone views the couch straight on with the virtual character centered onscreen. In the middle picture, the device is rotated 30 degrees about the y-axis to the right, and the right-most portion of the couch and virtual character are visible onscreen only. In the right picture, the device is translated slightly to the left, and the left-most portions of the couch and virtual character are visible onscreen only.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2923906@2x.png)
+Tracking can no longer be resumed once you pause the session.
 
 World-tracking sessions also provide several ways for your app to recognize or interact with elements of the real-world scene visible to the camera:
 
@@ -38,6 +38,10 @@ World-tracking sessions also provide several ways for your app to recognize or i
 - Recognize and track the movement of 2D images with [`detectionImages`](./arworldtrackingconfiguration/detectionimages.md). Add 2D images to the scene as [`ARImageAnchor`](./arimageanchor.md) objects.
 - Recognize 3D objects with [`detectionObjects`](./arworldtrackingconfiguration/detectionobjects.md). Add 3D objects to the scene as [`ARObjectAnchor`](./arobjectanchor.md) objects.
 - Find the 3D positions of real-world features that correspond to a touch point on the device’s screen with ray casting.
+
+## Discussion
+
+![Three illustrated variations of an iPhone running an app that displays an AR experience using the rear camera. The physical environment is depicted with a couch, in front of which, the app displays a virtual character. In the left picture, the iPhone views the couch straight on with the virtual character centered onscreen. In the middle picture, the device is rotated 30 degrees about the y-axis to the right, and the right-most portion of the couch and virtual character are visible onscreen only. In the right picture, the device is translated slightly to the left, and the left-most portions of the couch and virtual character are visible onscreen only.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2923906@2x.png)
 
 ## Topics
 

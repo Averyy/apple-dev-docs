@@ -15,6 +15,14 @@ Gets the offset, in bytes, from the beginning of a geometry source’s buffer.
 extern size_t ar_geometry_source_get_offset(ar_geometry_source_t geometry_source);
 ```
 
+## Return Value
+
+The offset in bytes.
+
+## Parameters
+
+- `geometry_source`: The geometry source.
+
 ## See Also
 
 ### Geometry

@@ -20,14 +20,14 @@ enum EnvironmentTexturing
 enum AREnvironmentTexturing : NSInteger;
 ```
 
-## Discussion
+## Overview
 
 Environment textures are cube-map textures that depict the view in all directions from a specific point in a scene. In 3D asset rendering, environment textures are the basis for image-based lighting algorithms where surfaces can realistically reflect light from their surroundings. ARKit generates environment textures during an AR session using camera imagery, allowing SceneKit or a custom-rendering engine to provide realistic image-based lighting for virtual objects in your AR experience.
 
-To enable texture map generation for your configuration, change this property (from its default value of [`ARWorldTrackingConfiguration.EnvironmentTexturing.none`](./environmenttexturing-swift.enum/none.md)):
+To enable texture map generation for your configuration, change this property (from its default value of `AREnvironmentTexturingNone`):
 
-- With [`ARWorldTrackingConfiguration.EnvironmentTexturing.manual`](./environmenttexturing-swift.enum/manual.md) environment texturing, you identify points in the scene for which you want light probe texture maps by creating [`AREnvironmentProbeAnchor`](../arenvironmentprobeanchor.md) objects and adding them to the session.
-- With [`ARWorldTrackingConfiguration.EnvironmentTexturing.automatic`](./environmenttexturing-swift.enum/automatic.md) environment texturing, ARKit automatically creates, positions, and adds [`AREnvironmentProbeAnchor`](../arenvironmentprobeanchor.md) objects to the session.
+- With `AREnvironmentTexturingManual` environment texturing, you identify points in the scene for which you want light probe texture maps by creating [`AREnvironmentProbeAnchor`](../arenvironmentprobeanchor.md) objects and adding them to the session.
+- With `AREnvironmentTexturingAutomatic` environment texturing, ARKit automatically creates, positions, and adds [`AREnvironmentProbeAnchor`](../arenvironmentprobeanchor.md) objects to the session.
 
 In both cases, ARKit automatically generates environment textures as the session collects camera imagery. Use a delegate method such as [`session(_:didUpdate:)`](../arsessiondelegate/session%28_,didupdate%29-3qtt8.md) to find out when a texture is available, and access it from the anchor’s [`environmentTexture`](../arenvironmentprobeanchor/environmenttexture.md) property.
 

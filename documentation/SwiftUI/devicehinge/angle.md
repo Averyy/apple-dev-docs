@@ -21,6 +21,10 @@ Current angle of the hinge.
 var angle: Angle
 ```
 
+## Discussion
+
+The rate and granularity of angle updates are system policy and can change based on system state, so don’t depend on a particular update frequency or precision. If you only need to know whether the hinge is closed, partially open, or fully open, prefer [`status`](./status-swift.property.md) over the angle.
+
 ## See Also
 
 ### Getting hinge information

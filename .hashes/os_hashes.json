@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/os": {
       "file_path": "documentation/os/os.md",
-      "hash": "2d3ac4c50c1d4bbd2de5e89c6dc5f542377bda67f1b4db53f2ee077738c05fce"
+      "hash": "b9238c68a7ac52153737a05db562aadc9481dcba376f3a11db355ad22e19b7dd"
     },
     "https://developer.apple.com/documentation/os/animationformatstring": {
       "file_path": "documentation/os/animationformatstring.md",
@@ -162,7 +162,7 @@
     },
     "https://developer.apple.com/documentation/os/logger/disabled": {
       "file_path": "documentation/os/logger/disabled.md",
-      "hash": "bf6f42c498fb8490337226811b51f08f54f2ee403683e3921aede03aa88ff930"
+      "hash": "9ba30e4e23bb15221b01d3cca76c108a4f667cdf76b243d77a9c5c063b0e53fc"
     },
     "https://developer.apple.com/documentation/os/logger/error(_:)": {
       "file_path": "documentation/os/logger/error(_).md",
@@ -190,7 +190,7 @@
     },
     "https://developer.apple.com/documentation/os/logger/isenabled(type:)": {
       "file_path": "documentation/os/logger/isenabled(type).md",
-      "hash": "7033cbdf64c2f40cbadd7d515c9a5bcc10c7f5f675e18c6de200fcde85a49513"
+      "hash": "546f709f5df84bd4efda01581f8ee291da22c6ca7e075930e47f8b99b23e5f11"
     },
     "https://developer.apple.com/documentation/os/logger/log(_:)": {
       "file_path": "documentation/os/logger/log(_).md",
@@ -988,6 +988,14 @@
       "file_path": "documentation/os/os_pure.md",
       "hash": "62d1c9e42d59abef5fe3785a82a1cb74d0993775d3dc19919dcf799ba6266abb"
     },
+    "https://developer.apple.com/documentation/os/os_recursive_lock_api_version": {
+      "file_path": "documentation/os/os_recursive_lock_api_version.md",
+      "hash": "ceaf80ccd33520967fd4049dd198c17920bde50b05b3a616048e91598e8b8afd"
+    },
+    "https://developer.apple.com/documentation/os/os_recursive_lock_supports_at_least": {
+      "file_path": "documentation/os/os_recursive_lock_supports_at_least.md",
+      "hash": "41018d67f93f21a602facb2d4f2ab8b5a656df859d775a03c28fb52c9912cbda"
+    },
     "https://developer.apple.com/documentation/os/os_refined_for_swift": {
       "file_path": "documentation/os/os_refined_for_swift.md",
       "hash": "1552643ed350a9bf9f5a760ba5a88cdfbfb1532cbd6b6873933db2be96a85dde"
@@ -1363,6 +1371,62 @@
     "https://developer.apple.com/documentation/os/os_unfair_lock_unlock": {
       "file_path": "documentation/os/os_unfair_lock_unlock.md",
       "hash": "32af0251bc0f7e04a12f4eb4f71c33c4bb538e3d82cdb6f9c92d547fdf3f1443"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock": {
+      "file_path": "documentation/os/os_unfair_recursive_lock.md",
+      "hash": "6555c9db1b5a7e930ed5e12415305db4bdab1218b69be63338dc1a7c6a20dda3"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_assert_not_owned_by_self": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_assert_not_owned_by_self.md",
+      "hash": "2a3a8d51c5c20c49d9a71eaebcf36da2521f3a076d9904e3d4ad0c094dc15bf7"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_assert_owned_by_self": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_assert_owned_by_self.md",
+      "hash": "6e232cf6845b20b568f7fe8f3caeb8bf532ddf15bdf482ac22fb983048bf1b51"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_flags_t": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_flags_t.md",
+      "hash": "24145dac4174f5d1d7db93456b8d18662f653dd335add7ab3b964a04fed115f9"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_flags_t/os_unfair_recursive_lock_flag_adaptive_spin": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_flags_t/os_unfair_recursive_lock_flag_adaptive_spin.md",
+      "hash": "0d7220ec92fbf5c4e8448067e57d94d5d284b16a159d2668b2f3a261caa690da"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_flags_t/os_unfair_recursive_lock_flag_none": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_flags_t/os_unfair_recursive_lock_flag_none.md",
+      "hash": "bb86bd13d4b94a1bbe7d2e10ac9d99d34bd82cdf7dc408915ad978c8b8f285eb"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_init": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_init.md",
+      "hash": "6aedd6abd55912330e23bdf22ea62492a8aa5ac098afdaad28239ded4e908b23"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_lock": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_lock.md",
+      "hash": "4b1c9293aa390733eb4c0d8c774647e89558cfc15e37843983458c6dc3481952"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_lock_with_flags": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_lock_with_flags.md",
+      "hash": "1eb6e1230d1fbfeb28e549e0b991533afd097cfc95b5bfa436826d7ef1881eda"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_no_backdeploy": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_no_backdeploy.md",
+      "hash": "8fccae371d26925a9ffe371bc730ba0f6a229d33df65e0f7e6871559d7946d99"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_s": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_s.md",
+      "hash": "e15c23077bb909e1df0a5ec04f3ee975fb5478ff8b15d2cda987c413bf454c74"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_t": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_t.md",
+      "hash": "ae8f0e6bf20a4a592bd363e31eedde5e2957821b387097d56531745b28efbf32"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_trylock": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_trylock.md",
+      "hash": "9bac1dfa4024e8f8c22332c155138e01d0ea68daca918c22d6eb9f6e72d1e453"
+    },
+    "https://developer.apple.com/documentation/os/os_unfair_recursive_lock_unlock": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_unlock.md",
+      "hash": "26d9860d0c9d015b347c8fde3f911214fb918022d9288edbdbbb611293556df8"
     },
     "https://developer.apple.com/documentation/os/os_unsafe_indexable": {
       "file_path": "documentation/os/os_unsafe_indexable.md",
@@ -2394,7 +2458,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/os.json": {
       "file_path": "documentation/os/os.md",
-      "hash": "2d3ac4c50c1d4bbd2de5e89c6dc5f542377bda67f1b4db53f2ee077738c05fce"
+      "hash": "b9238c68a7ac52153737a05db562aadc9481dcba376f3a11db355ad22e19b7dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/os/animationformatstring.json": {
       "file_path": "documentation/os/animationformatstring.md",
@@ -2554,7 +2618,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/os/logger/disabled.json": {
       "file_path": "documentation/os/logger/disabled.md",
-      "hash": "bf6f42c498fb8490337226811b51f08f54f2ee403683e3921aede03aa88ff930"
+      "hash": "9ba30e4e23bb15221b01d3cca76c108a4f667cdf76b243d77a9c5c063b0e53fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/os/logger/error(_:).json": {
       "file_path": "documentation/os/logger/error(_).md",
@@ -2582,7 +2646,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/os/logger/isenabled(type:).json": {
       "file_path": "documentation/os/logger/isenabled(type).md",
-      "hash": "7033cbdf64c2f40cbadd7d515c9a5bcc10c7f5f675e18c6de200fcde85a49513"
+      "hash": "546f709f5df84bd4efda01581f8ee291da22c6ca7e075930e47f8b99b23e5f11"
     },
     "https://developer.apple.com/tutorials/data/documentation/os/logger/log(_:).json": {
       "file_path": "documentation/os/logger/log(_).md",
@@ -3380,6 +3444,14 @@
       "file_path": "documentation/os/os_pure.md",
       "hash": "62d1c9e42d59abef5fe3785a82a1cb74d0993775d3dc19919dcf799ba6266abb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_recursive_lock_api_version.json": {
+      "file_path": "documentation/os/os_recursive_lock_api_version.md",
+      "hash": "ceaf80ccd33520967fd4049dd198c17920bde50b05b3a616048e91598e8b8afd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_recursive_lock_supports_at_least.json": {
+      "file_path": "documentation/os/os_recursive_lock_supports_at_least.md",
+      "hash": "41018d67f93f21a602facb2d4f2ab8b5a656df859d775a03c28fb52c9912cbda"
+    },
     "https://developer.apple.com/tutorials/data/documentation/os/os_refined_for_swift.json": {
       "file_path": "documentation/os/os_refined_for_swift.md",
       "hash": "1552643ed350a9bf9f5a760ba5a88cdfbfb1532cbd6b6873933db2be96a85dde"
@@ -3755,6 +3827,62 @@
     "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_lock_unlock.json": {
       "file_path": "documentation/os/os_unfair_lock_unlock.md",
       "hash": "32af0251bc0f7e04a12f4eb4f71c33c4bb538e3d82cdb6f9c92d547fdf3f1443"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock.md",
+      "hash": "6555c9db1b5a7e930ed5e12415305db4bdab1218b69be63338dc1a7c6a20dda3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_assert_not_owned_by_self.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_assert_not_owned_by_self.md",
+      "hash": "2a3a8d51c5c20c49d9a71eaebcf36da2521f3a076d9904e3d4ad0c094dc15bf7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_assert_owned_by_self.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_assert_owned_by_self.md",
+      "hash": "6e232cf6845b20b568f7fe8f3caeb8bf532ddf15bdf482ac22fb983048bf1b51"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_flags_t.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_flags_t.md",
+      "hash": "24145dac4174f5d1d7db93456b8d18662f653dd335add7ab3b964a04fed115f9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_flags_t/os_unfair_recursive_lock_flag_adaptive_spin.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_flags_t/os_unfair_recursive_lock_flag_adaptive_spin.md",
+      "hash": "0d7220ec92fbf5c4e8448067e57d94d5d284b16a159d2668b2f3a261caa690da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_flags_t/os_unfair_recursive_lock_flag_none.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_flags_t/os_unfair_recursive_lock_flag_none.md",
+      "hash": "bb86bd13d4b94a1bbe7d2e10ac9d99d34bd82cdf7dc408915ad978c8b8f285eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_init.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_init.md",
+      "hash": "6aedd6abd55912330e23bdf22ea62492a8aa5ac098afdaad28239ded4e908b23"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_lock.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_lock.md",
+      "hash": "4b1c9293aa390733eb4c0d8c774647e89558cfc15e37843983458c6dc3481952"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_lock_with_flags.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_lock_with_flags.md",
+      "hash": "1eb6e1230d1fbfeb28e549e0b991533afd097cfc95b5bfa436826d7ef1881eda"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_no_backdeploy.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_no_backdeploy.md",
+      "hash": "8fccae371d26925a9ffe371bc730ba0f6a229d33df65e0f7e6871559d7946d99"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_s.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_s.md",
+      "hash": "e15c23077bb909e1df0a5ec04f3ee975fb5478ff8b15d2cda987c413bf454c74"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_t.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_t.md",
+      "hash": "ae8f0e6bf20a4a592bd363e31eedde5e2957821b387097d56531745b28efbf32"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_trylock.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_trylock.md",
+      "hash": "9bac1dfa4024e8f8c22332c155138e01d0ea68daca918c22d6eb9f6e72d1e453"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/os/os_unfair_recursive_lock_unlock.json": {
+      "file_path": "documentation/os/os_unfair_recursive_lock_unlock.md",
+      "hash": "26d9860d0c9d015b347c8fde3f911214fb918022d9288edbdbbb611293556df8"
     },
     "https://developer.apple.com/tutorials/data/documentation/os/os_unsafe_indexable.json": {
       "file_path": "documentation/os/os_unsafe_indexable.md",
@@ -4801,6 +4929,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 1199
+    "total_pages": 1231
   }
 }

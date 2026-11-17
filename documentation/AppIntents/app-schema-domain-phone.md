@@ -29,7 +29,7 @@ For more information about making your app’s actions available to Apple Intell
   Identifies entity schemas in the phone domain.
 ### Types for static parameters
 - [var audioVisualMode: some AppSchemaEnum](./appschema/phoneenum/audiovisualmode.md)
-  An enum schema for an audio visual mode parameter.
+  An enum schema for an audio visual mode.
 - [AppSchema.PhoneEnum](./appschema/phoneenum.md)
   Identifies enum schemas in the phone domain.
 

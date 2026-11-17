@@ -53,6 +53,7 @@ struct NoiseTerms
 - [var noiseTerms: SRPhotoplethysmogramOpticalSample.NoiseTerms?](./noiseterms-swift.property.md)
   The mathematical terms for computing the noise in this sample.
 - [var normalizedReflectance: Double?](./normalizedreflectance-15f2k.md)
+  The photoplethysmogram waveform in normalized units.
 
 
 ---

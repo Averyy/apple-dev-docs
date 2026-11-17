@@ -22,8 +22,6 @@ var originFromAnchorTransform: simd_float4x4 { get }
   The shape of a mesh anchor.
 - [MeshAnchor.Geometry](./geometry-swift.struct.md)
   The shapes that make up a mesh anchor.
-- [MeshAnchor.MeshClassification](./meshclassification.md)
-  The kinds of classification a face of a mesh can have.
 
 
 ---

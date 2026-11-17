@@ -13,7 +13,7 @@ When you create or modify strokes in code, PencilKit doesn’t automatically car
 
 ## Slice a stroke at any point
 
-`PKStrokePath` lets you slice a path at any position, not just at whole-number positions. Specify the slice as a range where `0` is the start, `count - 1` is the end, and values like `2.5` fall between two points.
+[`PKStrokePath`](./pkstrokepath-swift.struct.md) lets you slice a path at any position, not just at whole-number positions. Specify the slice as a range where `0` is the start, `count - 1` is the end, and values like `2.5` fall between two points.
 
 ```swift
 let path = stroke.path

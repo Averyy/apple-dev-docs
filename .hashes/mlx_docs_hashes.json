@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-11-13T08:12:46.329139",
+    "last_updated": "2026-11-17T08:01:39.547122",
     "total_files": 854,
     "source": "scrape_mlx_docs.py",
     "sources": {
@@ -856,12 +856,12 @@
     "github:apple/container:docs/resource-usage.md": "23d14f8962c24ce2654e2c7ae0490ccb4294fc5675dcd13a78bba89ea1c6782c",
     "github:apple/container:docs/runtime-configuration.md": "8e8254751d6572f079df24671bb905f0c71da7a003ee30ccaf71777dd83305a8",
     "github:apple/container:docs/shell-completions.md": "1eb54cde79cbe3830b67abfb49a96481429fbc6fc310845b8d1736dc1705ef72",
-    "github:apple/container:docs/technical-overview.md": "0309094d5446de88a680abf240f3ed1f3e1158c2d43f7e1d60e4616c841d79bd",
+    "github:apple/container:docs/technical-overview.md": "e552f650031d0af112138be5166a1f2f1d2d3d5b31505fcd5c1c07f2b362d883",
     "github:apple/container:docs/ulimits.md": "e7a8a28026ba4abccba7d6d7cfb6a0434cf82daf369df72f8ab805462fe43f6e",
     "github:apple/container:docs/volumes.md": "cf1265531abd00f47f678c004ead4ec7fe7bb0b73c14462b3be771527092e244",
     "github:apple/container:docs/architecture/dns.md": "0e0b989d600d2d1caa6294912a18097a8d02d8a4a5ffe4ddf4e1b1f8a9586344",
     "github:apple/container:docs/tutorials/container-system-config-tutorial.md": "5007ca8534ad2d9ecb08c1b930e3130c0415c28f7ad1708e12041e368c8c0446",
-    "github:apple/container:docs/tutorials/start-here.md": "48089feeae1afa9f3e1f5ef35aeb075f7f18906618e6db993cc45cf1bae44aa2",
+    "github:apple/container:docs/tutorials/start-here.md": "41e566a62b564b322f595b4d710e0eb24a14d7af8e9cca3548f70ee43b097331",
     "github:swiftlang/sourcekit-lsp:Documentation/Configuration File.md": "f321a7161985647b16c0ca334d8b4357a51c8602c247825c8bbddb5093a48173",
     "github:swiftlang/sourcekit-lsp:Documentation/Diagnose Bundle.md": "495b319ada32b6d0e03b8c609ac452d31232795b9542e2221de1766534bc3e9d",
     "github:swiftlang/sourcekit-lsp:Documentation/Editor Integration.md": "b5d4160990980e2c86b28aa6013df5c4248e9f840f0e9e811b2de451cb1a7dd3",
@@ -875,7 +875,7 @@
     "github:swiftlang/swift-format:Documentation/IgnoringSource.md": "a57aa595a8c07690b908b5285e8ba94fe36ec31d98a44e4f90bed71fc4dc65f1",
     "github:swiftlang/swift-format:Documentation/PrettyPrinter.md": "8d2ea148360c888d1728abe03722f72c2b413626eb131d666c0d8a19151cca82",
     "github:swiftlang/swift-format:Documentation/RuleDocumentation.md": "5f520184ab84b55cbdf8bfc5fe26b99204de18518751a25f84fdcf877efac6c8",
-    "App-Store:https://developer.apple.com/app-store/review/guidelines/": "387cbe8e10518ebe381959ac748d0b06e4e841970721bd393b33a4b773c5fbbe",
+    "App-Store:https://developer.apple.com/app-store/review/guidelines/": "c45988908f32977bbab5d8ac5ae2e1033d10d6340004aba3a7849535dbc911f6",
     "App-Store:https://developer.apple.com/app-store/app-privacy-details/": "cdc97e2ae1144946632a4dd0e229d33824201dd26dff33e8c0e43d4f8e6e6c17",
     "App-Store:https://developer.apple.com/app-store/user-privacy-and-data-use/": "7a41460b36d2673f132b2576c76d0a2fc574674e744e6a92f7d5a2922fb4749c"
   }

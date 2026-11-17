@@ -27,11 +27,13 @@ Each title should be localized and ready for display to the user. The system sel
 
 ## See Also
 
-### Getting Titles
+### Getting title values
 - [var subtitleVariants: [String]](./subtitlevariants.md)
   An array of subtitle strings.
 - [func updateTitleVariants([String], subtitleVariants: [String])](./updatetitlevariants%28_,subtitlevariants%29.md)
   Updates title and subtitle variants.
+- [func updateTitleVariants([String], subtitleVariants: [String], avatarImage: UIImage?, alert: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](./updatetitlevariants%28_,subtitlevariants,avatarimage,alert,actions,duration%29.md)
+  Update the navigation alert with new title variants, subtitle variants, image, actions, and duration.
 
 
 ---

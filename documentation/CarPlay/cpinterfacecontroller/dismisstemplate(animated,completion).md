@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Dismisses a modal template.
+Dismisses the template you previously presented modally.
 
 **Availability**:
 - iOS 14.0+
@@ -27,28 +27,22 @@ func dismissTemplate(animated: Bool) async throws -> Bool
 
 ## Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
->
-> ```swift
-> func dismissTemplate(animated: Bool) async throws -> Bool
-> ```
->
-> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
+Call this method to dismiss a template you presented using the [`presentTemplate(_:animated:completion:)`](./presenttemplate%28_,animated,completion%29.md) method.
 
-CarPlay calls `completion` after it dismisses the template. The Boolean parameter is [`true`](../../Swift/true.md) when the dismissal succeeds; otherwise, it’s [`false`](../../Swift/false.md) and CarPlay provides an error that describes the failure. CarPlay throws an exception if the dismissal fails and you don’t provide a closure.
+> **Note**: You can call this method from synchronous code using a completion handler, or you can call it as an asynchronous method without the completion handler. For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
-- `animated`: If [`true`](../../Swift/true.md), CarPlay animates the dismissal of the template.
-- `completion`: The closure CarPlay calls after it dismisses the template.
+- `animated`: If `true`, CarPlay animates the dismissal of the modal presentation.
+- `completion`: The closure to run with the results of the operation. This closure receives a Boolean value and an optional error as parameters. The Boolean value is `true` if CarPlay successfully dismissed the modal presentation. If the value is `false`, CarPlay provides an error with information about what happened. If you don’t provide a closure, CarPlay throws an exception when an error occurs. CarPlay runs this closure on your app’s main thread.
 
 ## See Also
 
-### Displaying Templates Modally
+### Presenting a template modally
 - [func presentTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./presenttemplate%28_,animated,completion%29.md)
-  Presents a template modally.
+  Presents the template modally over your app’s navigation interface.
 - [var presentedTemplate: CPTemplate?](./presentedtemplate.md)
-  The interface controller’s current modal template.
+  The current modally-presented template.
 
 
 ---

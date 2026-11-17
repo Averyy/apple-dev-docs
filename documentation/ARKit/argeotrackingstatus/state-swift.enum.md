@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-Values that are possible for the current state of geo-tracking.
+Values that are possible for the current state of geo tracking.
 
 **Availability**:
 - iOS 14.0+
@@ -20,9 +20,9 @@ enum State
 enum ARGeoTrackingState : NSInteger;
 ```
 
-## Discussion
+## Overview
 
-For any [`state`](./state-swift.property.md) in a frame’s [`geoTrackingStatus`](../arframe/geotrackingstatus.md), ARKit provides a [`stateReason`](./statereason-swift.property.md). A given geo-tracking status may intermix states and reasons, so the reasons are not tied to specific states.
+For any [`state`](./state-swift.property.md) in a frame’s [`geoTrackingStatus`](../arframe/geotrackingstatus.md), ARKit provides a [`stateReason`](./statereason-swift.property.md). A given geo tracking status may intermix states and reasons, so the reasons are not tied to specific states.
 
 ## Topics
 
@@ -60,7 +60,7 @@ For any [`state`](./state-swift.property.md) in a frame’s [`geoTrackingStatus`
 
 ### Checking State
 - [var state: ARGeoTrackingStatus.State](./state-swift.property.md)
-  A value that describes the session’s current geo-tracking state.
+  A value that describes the session’s current geo tracking state.
 
 
 ---

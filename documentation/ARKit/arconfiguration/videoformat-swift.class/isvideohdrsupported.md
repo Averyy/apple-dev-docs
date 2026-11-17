@@ -22,7 +22,7 @@ var isVideoHDRSupported: Bool { get }
 
 ## Discussion
 
-Call this function before setting [`videoHDRAllowed`](../videohdrallowed.md) to `true` to first check whether a video format supports HDR.
+Read this property before setting [`videoHDRAllowed`](../videohdrallowed.md) to `true` to first check whether a video format supports HDR.
 
 ## See Also
 

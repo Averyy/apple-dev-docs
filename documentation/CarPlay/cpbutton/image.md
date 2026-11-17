@@ -28,6 +28,12 @@ This property returns the custom image you provide at initialization, or a syste
 
 CarPlay doesn’t support animated images. If you provide an animated image, this property returns the first image in the animation sequence.
 
+## See Also
+
+### Getting the button’s content
+- [var title: String?](./title.md)
+  The button’s title.
+
 
 ---
 

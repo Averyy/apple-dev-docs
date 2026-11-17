@@ -15,6 +15,14 @@ Gets a Metal buffer that contains per-vector data for a geometry source.
 extern id<MTLBuffer>ar_geometry_source_get_buffer(ar_geometry_source_t geometry_source);
 ```
 
+## Return Value
+
+A Metal buffer containing per-vector data.
+
+## Parameters
+
+- `geometry_source`: The geometry source.
+
 ## See Also
 
 ### Geometry

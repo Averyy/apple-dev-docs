@@ -31,6 +31,14 @@ A [`LowLevelRenderPipelineState.Descriptor.Blending`](../blending-swift.struct.m
 - `destinationAlphaBlendFactor`: The blend factor applied to the destination alpha value.
 - `alphaBlendOperation`: The blend operation used to combine source and destination alpha values.
 
+## See Also
+
+### Creating a blending mode
+- [static var sourceOver: LowLevelRenderPipelineState.Descriptor.Blending](./sourceover.md)
+  Standard source-over alpha blending with pre-multiplied alpha.
+- [static var add: LowLevelRenderPipelineState.Descriptor.Blending](./add.md)
+  Additive blending that combines source and destination colors.
+
 
 ---
 

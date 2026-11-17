@@ -20,6 +20,10 @@ func addRenderContext(commandBuffer cmd_buffer: any MTLCommandBuffer) -> LayerRe
 cp_drawable_render_context_tcp_drawable_add_render_context(cp_drawable_t drawable, id<MTLCommandBuffer>cmd_buffer);
 ```
 
+## Mentions
+
+- [Controlling Metal rendering immersion level](../../controlling-metal-rendering-immersion-level.md)
+
 ## Discussion
 
 This object draws any content that the compositor needs to render in the app. The [`LayerRenderer.Drawable.RenderContext`](./rendercontext.md) can only be used when the layer renderer is using layered layout or on platforms that only render one view, such as the Simulator. The `RenderContext` makes use of the [`deviceAnchor`](./deviceanchor.md) set in [`cp_drawable_set_device_anchor`](../../cp_drawable_set_device_anchor.md). Only use the `deviceAnchor` in the layer renderer drawable before calling [`addRenderContext(commandBuffer:)`](./addrendercontext%28commandbuffer%29.md).
@@ -27,6 +31,8 @@ This object draws any content that the compositor needs to render in the app. Th
 ## See Also
 
 ### Adding a render context
+- [Controlling Metal rendering immersion level](../../controlling-metal-rendering-immersion-level.md)
+  Enable flexible immersive rendering by supporting progressive immersion when rendering your Metal content.
 - [LayerRenderer.Drawable.RenderContext](./rendercontext.md)
   An object the compositer uses for rendering all effects associated with a layer renderer drawable.
 - [func addRenderContext() -> LayerRenderer.Drawable.RenderContext](./addrendercontext%28%29.md)

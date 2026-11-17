@@ -24,7 +24,7 @@ class var supportsAppClipCodeTracking: Bool { get }
 
 Devices require the Apple Neural Engine (ANE) to track App Clip Codes. The system sets this property to [`true`](../../Swift/true.md) if the device contains the ANE chip. The default value of this property is [`false`](../../Swift/false.md).
 
-Call this function before setting [`appClipCodeTrackingEnabled`](../arworldtrackingconfiguration/appclipcodetrackingenabled.md).
+Call this function before setting [`appClipCodeTrackingEnabled`](./appclipcodetrackingenabled.md).
 
 ## See Also
 

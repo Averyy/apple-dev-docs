@@ -56,7 +56,7 @@ To resolve this issue, the app needs to ask the user to enable location access f
 - [ARError.Code.unsupportedConfiguration](./unsupportedconfiguration.md)
   An error that indicates the device lacks support for the session’s configuration.
 - [ARError.Code.worldTrackingFailed](./worldtrackingfailed.md)
-  An error that indicates when world tracking experiences an unrecoverable problem.
+  An error that indicates world tracking experienced an unrecoverable problem.
 
 
 ---

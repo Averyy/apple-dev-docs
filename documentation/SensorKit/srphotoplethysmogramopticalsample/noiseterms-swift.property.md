@@ -45,6 +45,7 @@ If the sensor data is invalid, this property is [`nil`](../../ObjectiveC/nil-227
 - [SRPhotoplethysmogramOpticalSample.NoiseTerms](./noiseterms-swift.struct.md)
   The mathematical terms that you use to compute the photoplethysmogram (PPG) noise.
 - [var normalizedReflectance: Double?](./normalizedreflectance-15f2k.md)
+  The photoplethysmogram waveform in normalized units.
 
 
 ---

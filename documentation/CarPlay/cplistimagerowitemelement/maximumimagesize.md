@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Type Property
 
-The expected image size for the image in your @c CPListImageRowItemElement. Images provided will be resized to this size.
+The maximum dimensions for the element’s image.
 
 **Availability**:
 - iOS 26.0+
@@ -23,7 +23,15 @@ class var maximumImageSize: CGSize { get }
 
 ## Discussion
 
-To properly size your images, your app should size them to the display scale of the car screen. See -[CPInterfaceController carTraitCollection].
+Use this property to retrieve the standard maximum image dimensions for images. Card elements define an additional set of dimensions for images that fill the content.
+
+When the [`showsImageFullHeight`](../cplistimagerowitemcardelement/showsimagefullheight.md) property is `false`, this property defines the maximum size for images. When creating images, adjust the size of your image based on the current maximum value.
+
+## See Also
+
+### Getting the element’s content
+- [var image: UIImage](./image.md)
+  The image associated with the element.
 
 
 ---

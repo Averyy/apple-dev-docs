@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-The kind of DataFrame to convert for JSON serialization.
+The kind of data frame to convert for JSON serialization.
 
 **Availability**:
 - iOS 27.0+
@@ -23,6 +23,8 @@ enum DataFrameKind
 
 ## Overview
 
+An [`EvaluationResult`](../evaluationresult.md) holds two [`DataFrame`](../../TabularData/dataframe.md) values: an aggregated [`summary`](./summary.md) and a per-sample [`detailed`](./detailed.md) data frame. Pass a value of this type to [`jsonRepresentableDataFrame(of:)`](./jsonrepresentabledataframe%28of%29.md) to choose which of the two to convert.
+
 ```swift
 let kind: EvaluationResult.DataFrameKind = .summary
 ```
@@ -31,9 +33,9 @@ let kind: EvaluationResult.DataFrameKind = .summary
 
 ### Enumeration Cases
 - [EvaluationResult.DataFrameKind.detailed](./dataframekind/detailed.md)
-  The sample-level detailed results DataFrame.
+  The sample-level detailed results data frame.
 - [EvaluationResult.DataFrameKind.summary](./dataframekind/summary.md)
-  The aggregated summary DataFrame.
+  The aggregated summary data frame.
 
 ## Relationships
 

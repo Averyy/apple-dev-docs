@@ -23,7 +23,7 @@ var activeStateIdentifier: String? { get }
 
 ## See Also
 
-### Activating a State
+### Activating a state
 - [func activateVoiceControlState(withIdentifier: String)](./activatevoicecontrolstate%28withidentifier%29.md)
   Changes the template’s state to the one matching the specified identifier.
 

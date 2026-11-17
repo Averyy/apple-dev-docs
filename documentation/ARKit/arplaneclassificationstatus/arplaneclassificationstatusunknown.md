@@ -28,7 +28,7 @@ ARKit attempts to classify detected planes using a finite set of common categori
 - [ARPlaneClassificationStatusUndetermined](./arplaneclassificationstatusundetermined.md)
   ARKit has not yet produced a classification for the plane anchor.
 - [ARPlaneClassificationStatusKnown](./arplaneclassificationstatusknown.md)
-  ARKit has completed its classfication process for the plane anchor.
+  ARKit has completed its classification process for the plane anchor.
 
 
 ---

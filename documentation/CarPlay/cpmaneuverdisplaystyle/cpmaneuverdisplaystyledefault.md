@@ -23,7 +23,7 @@ The visual layout for this display style is the same as [`leadingSymbol`](./lead
 
 ## See Also
 
-### Display Styles
+### Getting the display styles
 - [static var leadingSymbol: CPManeuverDisplayStyle](./leadingsymbol.md)
   The symbol appears before the instructions for the maneuver.
 - [static var trailingSymbol: CPManeuverDisplayStyle](./trailingsymbol.md)

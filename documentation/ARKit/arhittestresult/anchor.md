@@ -24,7 +24,7 @@ var anchor: ARAnchor? { get }
 
 ## Discussion
 
-Results of the [`featurePoint`](./resulttype/featurepoint.md) type do not include an anchor.
+ARKit provides an anchor only for existing-plane result types. Feature-point and estimated-plane results don’t include an anchor.
 
 ## See Also
 

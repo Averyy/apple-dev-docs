@@ -5,7 +5,7 @@
 **Role**: Instance Property  
 **Required**: Yes
 
-An optional closure that CarPlay invokes when the user selects the list item.
+The closure to run when someone interacts with any part of the item.
 
 **Availability**:
 - iOS 14.0+
@@ -21,6 +21,16 @@ var handler: ((any CPSelectableListItem, @escaping () -> Void) -> Void)? { get s
 ```objc
 @property (nonatomic, copy, nullable) void (^handler)(id<CPSelectableListItem>item, dispatch_block_t completionBlock);
 ```
+
+## Discussion
+
+After creating an item, set the value of this property to the closure you want CarPlay to run when someone interacts with it. Define your closure to return no value and receive the following parameters:
+
+The item the person selected A completion closure to call when you finish processing the selection
+
+In your closure, perform any necessary work and call the provided completion closure. CarPlay runs the closure on your app’s main queue, so finish your tasks as quickly as possible. If you need to perform work that might take longer to finish, perform that work asynchronously or on a background queue to avoid tying up the main queue.
+
+As soon as you complete all your work, including any asynchronous work, call the provided completion closure to let CarPlay know you’re done. Until you run the completion closure, CarPlay displays an asynchronous progress indicator in your list item. Running the closure removes this indicator so that people know the task finished.
 
 
 ---

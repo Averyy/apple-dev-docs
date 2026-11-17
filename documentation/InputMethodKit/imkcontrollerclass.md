@@ -4,6 +4,8 @@
 **Kind**: var  
 **Role**: Global Variable
 
+The input method controller class key.
+
 **Availability**:
 - macOS 10.5+
 
@@ -24,10 +26,10 @@ The key used to find an input method  input controller class name from the input
 ## See Also
 
 ### Constants
-- [let IMKCandidatesOpacityAttributeName: String](./imkcandidatesopacityattributename.md)
-- [let IMKCandidatesSendServerKeyEventFirst: String](./imkcandidatessendserverkeyeventfirst.md)
-- [let IMKDelegateClass: String](./imkdelegateclass.md)
 - [let IMKModeDictionary: String](./imkmodedictionary.md)
+  The input method mode dictionary key.
+- [let IMKDelegateClass: String](./imkdelegateclass.md)
+  The input method delegate class key.
 
 
 ---

@@ -32,11 +32,17 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, shouldShowNotificationFo
 
 ## See Also
 
-### Displaying Notifications
-- [func mapTemplate(CPMapTemplate, shouldShowNotificationFor: CPManeuver) -> Bool](./maptemplate%28_,shouldshownotificationfor%29-4mnm1.md)
-  Asks the delegate whether the system should display the maneuver as a notification when the app is in the background.
-- [func mapTemplate(CPMapTemplate, shouldUpdateNotificationFor: CPManeuver, with: CPTravelEstimates) -> Bool](./maptemplate%28_,shouldupdatenotificationfor,with%29.md)
-  Asks the delegate whether the system should display the maneuver with updated travel estimates as a notification when the app is in the background.
+### Handling navigation alerts
+- [func mapTemplate(CPMapTemplate, willShow: CPNavigationAlert)](./maptemplate%28_,willshow%29.md)
+  Tells the delegate that the system will show the navigation alert.
+- [func mapTemplate(CPMapTemplate, didShow: CPNavigationAlert)](./maptemplate%28_,didshow%29.md)
+  Tells the delegate that the system showed the navigation alert.
+- [func mapTemplate(CPMapTemplate, willDismiss: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)](./maptemplate%28_,willdismiss,dismissalcontext%29.md)
+  Tells the delegate that the system is preparing to dismiss the navigation alert.
+- [func mapTemplate(CPMapTemplate, didDismiss: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)](./maptemplate%28_,diddismiss,dismissalcontext%29.md)
+  Tells the delegate that the system dismissed the navigation alert.
+- [CPNavigationAlert.DismissalContext](../cpnavigationalert/dismissalcontext.md)
+  A set of reasons for dismissing a navigation alert.
 
 
 ---

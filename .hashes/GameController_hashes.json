@@ -22,7 +22,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/discovering-game-controllers": {
       "file_path": "documentation/GameController/discovering-game-controllers.md",
-      "hash": "cf2bd91978b0d18d317d464bc901ef71d8ce28ee825e82d3a3cac8f6601ac55f"
+      "hash": "d7523dbb4db050572f07040cacd3e372e56b7f837c6006422f137bbee5108bdc"
     },
     "https://developer.apple.com/documentation/gamecontroller/dualshock-controller-input-names": {
       "file_path": "documentation/GameController/dualshock-controller-input-names.md",
@@ -862,7 +862,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerplayerindex/indexunset": {
       "file_path": "documentation/GameController/gccontrollerplayerindex/indexunset.md",
-      "hash": "d92fed17b4543e47bc68fdca31c77850fa652b8f4ed3985dd8fac8b00f966498"
+      "hash": "a2d963852c7bc67c8906cf68151ee2b6f175586587e3f82264b3d9d3a3dabf7c"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerplayerindex/init(rawvalue:)": {
       "file_path": "documentation/GameController/gccontrollerplayerindex/init(rawvalue).md",
@@ -1194,7 +1194,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdirectionalgamepad": {
       "file_path": "documentation/GameController/gcdirectionalgamepad.md",
-      "hash": "dfb166ebc9093900c68002f207a0e4cae62a10eac0ff1f8de90605d8eb068e14"
+      "hash": "1d635473c32a6efe8360a93185be9b34e3b5cf0defe3ad0bd52e048f76506486"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdirectionpadelement": {
       "file_path": "documentation/GameController/gcdirectionpadelement.md",
@@ -1414,7 +1414,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsensegamepad": {
       "file_path": "documentation/GameController/gcdualsensegamepad.md",
-      "hash": "f4aef01565e04628dab7c12e2de1b18a830d1bcd9cf89aea270a9062e57994c6"
+      "hash": "e45768ef8af30b056cafe3ab0cabedf97237376ca376fa77c590523c6575c770"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsensegamepad/lefttrigger": {
       "file_path": "documentation/GameController/gcdualsensegamepad/lefttrigger.md",
@@ -1438,7 +1438,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualshockgamepad": {
       "file_path": "documentation/GameController/gcdualshockgamepad.md",
-      "hash": "fd66f8e84fb14b9fb22f03254f9acba7be4a24398f4e8c2f7153272bd5b2ad03"
+      "hash": "a538646ef28321f8098f54d3fcc79feb6cf53334321d5b1c1c4cb779626f7059"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualshockgamepad/touchpadbutton": {
       "file_path": "documentation/GameController/gcdualshockgamepad/touchpadbutton.md",
@@ -1810,7 +1810,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepad": {
       "file_path": "documentation/GameController/gcgamepad.md",
-      "hash": "9f4b23656aaa7cfaff3815ea46e2b776e177d27e6a4f94aaa1f39d0902d8bc4e"
+      "hash": "04e76add1a7e7335d5db4a51c5a4f856353ad2d3570b7d51371ef2888e3a9d4b"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepad/buttona": {
       "file_path": "documentation/GameController/gcgamepad/buttona.md",
@@ -1850,7 +1850,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepad/valuechangedhandler": {
       "file_path": "documentation/GameController/gcgamepad/valuechangedhandler.md",
-      "hash": "a4c4cbec9f64bce7b54afaef62929d548da1b97149854fc93f05276f2e394f49"
+      "hash": "74dd99e2cfc0f123ef451163c60673249114b3a9fe880473914ac99fef22466c"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepadsnapshot": {
       "file_path": "documentation/GameController/gcgamepadsnapshot.md",
@@ -1926,7 +1926,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepadvaluechangedhandler": {
       "file_path": "documentation/GameController/gcgamepadvaluechangedhandler.md",
-      "hash": "d3e7eae05f2ae080a2173192abfd1e638ec8d43a9b91a8e8c9a009b987cccbb5"
+      "hash": "7c21956fa3974d112edbbc7bee2e4161550957366b1eeb01917147a2f197b196"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgearshifterelement": {
       "file_path": "documentation/GameController/gcgearshifterelement.md",
@@ -3534,7 +3534,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad": {
       "file_path": "documentation/GameController/gcmicrogamepad.md",
-      "hash": "81be6277bd6bd4789138b7ca1e14dc6218b5ca38a4e8e2988517fbe7ac1ee64d"
+      "hash": "8448d1aeffe07867121e07cad5df01adafbbc9983964fe902745d8d71111100a"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/allowsrotation": {
       "file_path": "documentation/GameController/gcmicrogamepad/allowsrotation.md",
@@ -4686,7 +4686,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcxboxgamepad": {
       "file_path": "documentation/GameController/gcxboxgamepad.md",
-      "hash": "0006bc7a780bd09698c92b7cfbb24ad63706be58dc06b12b42dbd3b649904905"
+      "hash": "0b5e1a470bcb74d6fddbb5614163c5adec81df97ea9e92a1d51beceb0b3b56ea"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcxboxgamepad/buttonshare": {
       "file_path": "documentation/GameController/gcxboxgamepad/buttonshare.md",
@@ -4798,7 +4798,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/discovering-game-controllers.json": {
       "file_path": "documentation/GameController/discovering-game-controllers.md",
-      "hash": "cf2bd91978b0d18d317d464bc901ef71d8ce28ee825e82d3a3cac8f6601ac55f"
+      "hash": "d7523dbb4db050572f07040cacd3e372e56b7f837c6006422f137bbee5108bdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/dualshock-controller-input-names.json": {
       "file_path": "documentation/GameController/dualshock-controller-input-names.md",
@@ -5638,7 +5638,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerplayerindex/indexunset.json": {
       "file_path": "documentation/GameController/gccontrollerplayerindex/indexunset.md",
-      "hash": "d92fed17b4543e47bc68fdca31c77850fa652b8f4ed3985dd8fac8b00f966498"
+      "hash": "a2d963852c7bc67c8906cf68151ee2b6f175586587e3f82264b3d9d3a3dabf7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerplayerindex/init(rawvalue:).json": {
       "file_path": "documentation/GameController/gccontrollerplayerindex/init(rawvalue).md",
@@ -5970,7 +5970,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdirectionalgamepad.json": {
       "file_path": "documentation/GameController/gcdirectionalgamepad.md",
-      "hash": "dfb166ebc9093900c68002f207a0e4cae62a10eac0ff1f8de90605d8eb068e14"
+      "hash": "1d635473c32a6efe8360a93185be9b34e3b5cf0defe3ad0bd52e048f76506486"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdirectionpadelement.json": {
       "file_path": "documentation/GameController/gcdirectionpadelement.md",
@@ -6190,7 +6190,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsensegamepad.json": {
       "file_path": "documentation/GameController/gcdualsensegamepad.md",
-      "hash": "f4aef01565e04628dab7c12e2de1b18a830d1bcd9cf89aea270a9062e57994c6"
+      "hash": "e45768ef8af30b056cafe3ab0cabedf97237376ca376fa77c590523c6575c770"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsensegamepad/lefttrigger.json": {
       "file_path": "documentation/GameController/gcdualsensegamepad/lefttrigger.md",
@@ -6214,7 +6214,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualshockgamepad.json": {
       "file_path": "documentation/GameController/gcdualshockgamepad.md",
-      "hash": "fd66f8e84fb14b9fb22f03254f9acba7be4a24398f4e8c2f7153272bd5b2ad03"
+      "hash": "a538646ef28321f8098f54d3fcc79feb6cf53334321d5b1c1c4cb779626f7059"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualshockgamepad/touchpadbutton.json": {
       "file_path": "documentation/GameController/gcdualshockgamepad/touchpadbutton.md",
@@ -6586,7 +6586,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepad.json": {
       "file_path": "documentation/GameController/gcgamepad.md",
-      "hash": "9f4b23656aaa7cfaff3815ea46e2b776e177d27e6a4f94aaa1f39d0902d8bc4e"
+      "hash": "04e76add1a7e7335d5db4a51c5a4f856353ad2d3570b7d51371ef2888e3a9d4b"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepad/buttona.json": {
       "file_path": "documentation/GameController/gcgamepad/buttona.md",
@@ -6626,7 +6626,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepad/valuechangedhandler.json": {
       "file_path": "documentation/GameController/gcgamepad/valuechangedhandler.md",
-      "hash": "a4c4cbec9f64bce7b54afaef62929d548da1b97149854fc93f05276f2e394f49"
+      "hash": "74dd99e2cfc0f123ef451163c60673249114b3a9fe880473914ac99fef22466c"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepadsnapshot.json": {
       "file_path": "documentation/GameController/gcgamepadsnapshot.md",
@@ -6702,7 +6702,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepadvaluechangedhandler.json": {
       "file_path": "documentation/GameController/gcgamepadvaluechangedhandler.md",
-      "hash": "d3e7eae05f2ae080a2173192abfd1e638ec8d43a9b91a8e8c9a009b987cccbb5"
+      "hash": "7c21956fa3974d112edbbc7bee2e4161550957366b1eeb01917147a2f197b196"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgearshifterelement.json": {
       "file_path": "documentation/GameController/gcgearshifterelement.md",
@@ -8310,7 +8310,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepad.json": {
       "file_path": "documentation/GameController/gcmicrogamepad.md",
-      "hash": "81be6277bd6bd4789138b7ca1e14dc6218b5ca38a4e8e2988517fbe7ac1ee64d"
+      "hash": "8448d1aeffe07867121e07cad5df01adafbbc9983964fe902745d8d71111100a"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepad/allowsrotation.json": {
       "file_path": "documentation/GameController/gcmicrogamepad/allowsrotation.md",
@@ -9462,7 +9462,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcxboxgamepad.json": {
       "file_path": "documentation/GameController/gcxboxgamepad.md",
-      "hash": "0006bc7a780bd09698c92b7cfbb24ad63706be58dc06b12b42dbd3b649904905"
+      "hash": "0b5e1a470bcb74d6fddbb5614163c5adec81df97ea9e92a1d51beceb0b3b56ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcxboxgamepad/buttonshare.json": {
       "file_path": "documentation/GameController/gcxboxgamepad/buttonshare.md",

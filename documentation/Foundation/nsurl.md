@@ -394,7 +394,6 @@ if (!success) {
 - [init(fileURLWithFileSystemRepresentation: UnsafePointer<CChar>, isDirectory: Bool, relativeToURL: URL?)](./nsurl/init%28fileurlwithfilesystemrepresentation,isdirectory,relativetourl%29.md)
 - [init(fileURLWithPath: String, isDirectory: Bool, relativeToURL: URL?)](./nsurl/init%28fileurlwithpath,isdirectory,relativetourl%29.md)
 - [init(fileURLWithPath: String, relativeToURL: URL?)](./nsurl/init%28fileurlwithpath,relativetourl%29.md)
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](./nsurl/init%28pasteboardpropertylist,oftype%29.md)
 - [convenience init?(string: String, relativeToURL: URL?)](./nsurl/init%28string,relativetourl%29-48a3i.md)
 - [init?(string: String, relativeToURL: URL?)](./nsurl/init%28string,relativetourl%29-6beup.md)
 ### Identifying and Comparing Objects

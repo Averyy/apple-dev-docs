@@ -18,11 +18,15 @@ An expectation that Siri loads specific app skills.
 struct Loads
 ```
 
+## Mentions
+
+- [Evaluating your app’s integration with Siri](./evaluating-your-apps-integration-with-siri.md)
+
 ## Overview
 
 A skill is the Markdown instructions an app ships for a task, which can reference the app’s intents and chain them to satisfy a request. Use `Loads` to check whether Siri loads a skill into its planning for a turn.
 
-`Loads` has no default enforcement, so you write [`Loads.Enforcement.required`](./loads/enforcement-swift.enum/required.md) or [`Loads.Enforcement.preferred`](./loads/enforcement-swift.enum/preferred.md). Only a required skill counts toward the [`skillsLoadedPass`](../Evaluations/metric/skillsloadedpass.md) metric. A turn fails a required `Loads` if Siri doesn’t load the skill.
+`Loads` has no default enforcement, so you write [`Loads.Enforcement.required`](./loads/enforcement-swift.enum/required.md) or [`Loads.Enforcement.preferred`](./loads/enforcement-swift.enum/preferred.md). Only a required skill counts toward the [`skillsLoadedAllPass`](../Evaluations/metric/skillsloadedallpass.md) metric. A turn fails a required `Loads` if Siri doesn’t load the skill.
 
 A preferred skill appears in the report but never affects the score. Siri sees the app’s intents alongside the skill and might satisfy the request by calling them directly.
 

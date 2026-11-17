@@ -18,9 +18,10 @@ var parameters: CameraFrame.Sample.Parameters { get }
 ## See Also
 
 ### Inspecting camera frame samples
+- [var buffer: CVReadOnlyPixelBuffer](./buffer.md)
+  The pixel buffer.
 - [CameraFrame.Sample.Parameters](./parameters-swift.struct.md)
   A frame’s parameters, such as the camera type, intrinsics, timestamps, exposure, and so on.
-- [var pixelBuffer: CVPixelBuffer](./pixelbuffer.md)
 
 
 ---

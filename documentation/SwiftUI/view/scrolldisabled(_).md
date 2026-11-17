@@ -40,7 +40,7 @@ var body: some View {
 }
 ```
 
-SwiftUI passes the disabled property through the environment, which means you can use this modifier to disable scrolling for all scroll views within a view hierarchy. In the following example, the modifier affects both scroll views:
+SwiftUI passes the disabled property through the environment, which means you can use this modifier to disable scrolling for the scroll views within a view hierarchy. A scroll view doesn’t pass the disabled property to the scroll views nested inside it. In the following example, the modifier disables only the outer scroll view; the nested scroll views remain enabled unless you also apply the modifier to them:
 
 ```swift
  ScrollView {

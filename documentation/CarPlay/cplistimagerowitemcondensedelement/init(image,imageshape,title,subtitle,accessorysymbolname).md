@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initialize a list image row condensed element with an image, an image shape, a title, subtitle and a system symbol name.
+Creates a condensed row element with the specified image, text, and attributes.
 
 **Availability**:
 - iOS 26.0+
@@ -21,13 +21,17 @@ init(image: UIImage, imageShape: CPListImageRowItemCondensedElement.Shape, title
 - (instancetype) initWithImage:(UIImage *) image imageShape:(CPListImageRowItemCondensedElementShape) imageShape title:(NSString *) title subtitle:(NSString *) subtitle accessorySymbolName:(NSString *) accessorySymbolName;
 ```
 
+## Return Value
+
+An initialized element you can add to a row.
+
 ## Parameters
 
-- `image`: The image associated to the element.
-- `imageShape`: The @c CPListImageRowItemCondensedElementShape shape being applied on the image.
-- `title`: The title of the element.
-- `subtitle`: The subtitle of the element.
-- `accessorySymbolName`: The system symbol used as an accessory view.
+- `image`: The image to display as the element’s primary content. If the image originates from an asset catalog, CarPlay manages the light and dark variants of your image and switches them when needed. Specify images with the dimensions listed in the [`maximumImageSize`](../cplistimagerowitemcardelement/maximumimagesize.md) property. If your image is smaller or larger than the maximum dimensions, CarPlay scales the image as needed to fit the space. Don’t specify an image object with an animated sequence of images.
+- `imageShape`: The shape to apply to `image`.
+- `title`: The primary text to display beneath the image. CarPlay displays this string with a visually prominent style.
+- `subtitle`: The secondary text to display beneath the title. CarPlay displays this string less prominently than the title.
+- `accessorySymbolName`: The name of an image to display at the trailing edge of the element. Specify the name of an SF Symbol or the name of a custom image resource in your app’s main bundle. Specify `nil` to omit this image.
 
 
 ---

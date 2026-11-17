@@ -49,6 +49,7 @@ Many material properties support more than one type of data. For example, you ca
 - [typealias Parameters](./material/parameters.md)
   The parameter type that custom materials uses for properties the framework passes to shader functions.
 - [struct MaterialParameters](./materialparameters.md)
+  A collection of types that represent material parameter values, handles, and textures.
 - [enum MaterialColorParameter](./materialcolorparameter.md)
   The color parameter applied to a material.
 - [enum MaterialScalarParameter](./materialscalarparameter.md)

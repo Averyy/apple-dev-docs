@@ -29,8 +29,6 @@ You use this method to update the actions the menu displays. The method calls [`
 ## See Also
 
 ### Managing edit menu interactions
-- [var delegate: (any UIEditMenuInteractionDelegate)?](./delegate.md)
-  An object that customizes presentation of the menu and actions to display for an edit menu interaction.
 - [func presentEditMenu(with: UIEditMenuConfiguration)](./presenteditmenu%28with%29.md)
   Presents an edit menu using the object you provide for configuration.
 - [func updateVisibleMenuPosition(animated: Bool)](./updatevisiblemenuposition%28animated%29.md)

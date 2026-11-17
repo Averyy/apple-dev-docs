@@ -35,6 +35,14 @@ struct VertexSemanticOutputs
 - [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 - [SetAlgebra](../../../../../Swift/setalgebra.md)
 
+## See Also
+
+### Configuring blended attributes
+- [var blendsOutputs: LowLevelDeformation.Pipeline.Descriptor.BlendShape.VertexSemanticOutputs](./blendsoutputs.md)
+  Indicates which vertices of the tangent frame are blended in addition to positions. Currently supported: [normal|tangent]
+- [var computesBitangent: Bool](./computesbitangent.md)
+  Indicates if bitangents should be recomputed from blended normals and tangents. Only valid if blendsOutputs = [normal, tangent].
+
 
 ---
 

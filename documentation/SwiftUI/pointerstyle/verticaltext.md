@@ -19,6 +19,10 @@ static let verticalText: PointerStyle
 
 This pointer style is sometimes referred to as the I-beam pointer. You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 
+The following image shows the vertical text pointer:
+
+![An I-beam pointer rotated to lie on its side, with a horizontal bar](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-verticalText@2x.png)
+
 ## See Also
 
 ### Getting built-in pointer styles

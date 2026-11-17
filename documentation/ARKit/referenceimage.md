@@ -30,7 +30,8 @@ struct ReferenceImage
 - [var name: String?](./referenceimage/name.md)
   The name of a reference image.
 - [var resourceGroupName: String?](./referenceimage/resourcegroupname.md)
-  A string value the represents the name of the resource group the framework loads an image from.
+  The name of the resource group the framework loads an image from.
+### Instance Properties
 - [var description: String](./referenceimage/description.md)
   A textual representation of this reference image.
 ### Default Implementations

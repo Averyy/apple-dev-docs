@@ -17,9 +17,19 @@ Provides the number at the subscripted index.
 subscript(index: Int32) -> CUnsignedChar { get }
 ```
 
-## Discussion
+## Return Value
+
+An unsigned char value.
+
+## Overview
 
 This subscript operates on one-component geometry sources with a [`format`](./format.md) of [`MTLVertexFormat.uchar`](../../Metal/mtlvertexformat/uchar.md), such as [`classification`](../armeshgeometry/classification.md).
+
+Using this subscript operator leads to a crash if the geometry source has a `.format` other than `MTLVertexFormat.uchar`.
+
+## Parameters
+
+- `index`: Index of the element to access.
 
 ## See Also
 

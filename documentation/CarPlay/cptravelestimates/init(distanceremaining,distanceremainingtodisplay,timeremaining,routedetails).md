@@ -21,6 +21,15 @@ init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Mea
 - (instancetype) initWithDistanceRemaining:(NSMeasurement<NSUnitLength *> *) distanceRemaining distanceRemainingToDisplay:(NSMeasurement<NSUnitLength *> *) distanceRemainingToDisplay timeRemaining:(NSTimeInterval) time routeDetails:(NSArray<CPRouteDetail *> *) routeDetails;
 ```
 
+## See Also
+
+### Creating travel estimates
+- [init(distanceRemaining: Measurement<UnitLength>, timeRemaining: TimeInterval)](./init%28distanceremaining,timeremaining%29.md)
+  Creates travel estimates with the remaining distance and time.
+- [init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining: TimeInterval)](./init%28distanceremaining,distanceremainingtodisplay,timeremaining%29.md)
+  Creates a travel estimates instance with the distance remaining that the framework displays to a person.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

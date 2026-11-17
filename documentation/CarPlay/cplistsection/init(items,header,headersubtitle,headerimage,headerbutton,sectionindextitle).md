@@ -25,29 +25,28 @@ init(items: [any CPListTemplateItem], header: String, headerSubtitle: String?, h
 
 A newly initialized list section.
 
+## Discussion
+
+CarPlay formats the header content based on the information you provide.
+
 ## Parameters
 
-- `items`: A list of items to include in the section.
-- `header`: The section header text.
-- `sectionIndexTitle`: A section index title. The system displays only the first character of the title, so choose a single-character section index title.
+- `items`: The items to include in the section. CarPlay displays your items in the same order as your array. You can specify only [`CPListItem`](../cplistitem.md), [`CPListImageRowItem`](../cplistimagerowitem.md), and [`CPMessageListItem`](../cpmessagelistitem.md) types in your array. You can’t specify custom types that conform to the [`CPListTemplateItem`](../cplisttemplateitem.md) protocol. If you specify an empty array, the list interface hides the section. Empty sections count against the maximum number of allowed sections.
+- `header`: Text to display in the area immediately above the items.    - headerSubtitle: Secondary text to display below the `header` text.
+- `headerImage`: An image to display in the header. If you initialize your image from an asset catalog resource, CarPlay manages light and dark variants of your image and switches them when needed. The [`CPMaximumListSectionImageSize`](../cpmaximumlistsectionimagesize.md) constant contains the maximum dimensions for the image.
+- `headerButton`: An interactive button to display in the header. Include a button to give someone the ability to perform some section-related task.
+- `sectionIndexTitle`: The string to display for this section in the index. For long lists, an index helps people navigate quickly to specific sections of content. If you specify a string with more than one character, CarPlay uses only the first character in the string.
 
 ## See Also
 
-### Creating a Section
-- [protocol CPListTemplateItem](../cplisttemplateitem.md)
-  A description of the common properties of all list item types.
-- [protocol CPSelectableListItem](../cpselectablelistitem.md)
-  A description of a selectable list item.
-- [class CPListItem](../cplistitem.md)
-  A selectable row in a list template.
-- [class CPListImageRowItem](../cplistimagerowitem.md)
-  A list template row that displays a series of images.
-- [class CPMessageListItem](../cpmessagelistitem.md)
-  A list template row that represents a conversation or contact.
-- [- initWithItems:](./initwithitems_.md)
-  Creates a section with list items.
-- [- initWithItems:header:sectionIndexTitle:](./initwithitems_header_sectionindextitle_.md)
-  Creates a section with list items, a header, and a section index title.
+### Creating a section
+- [convenience init(items: [any CPListTemplateItem])](./init%28items%29-6ksy3.md)
+- [convenience init(items: [any CPListTemplateItem], header: String?, sectionIndexTitle: String?)](./init%28items,header,sectionindextitle%29-6xewg.md)
+- [convenience init(items: [CPListItem])](./init%28items%29-32d0q.md)
+- [convenience init(items: [CPListItem], header: String?, sectionIndexTitle: String?)](./init%28items,header,sectionindextitle%29-743we.md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+- [let CPMaximumListSectionImageSize: CGSize](../cpmaximumlistsectionimagesize.md)
+  The maximum size of images you include in section headers.
 
 
 ---

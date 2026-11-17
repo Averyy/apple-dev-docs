@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Creates a section with list items, a header, and a section index title.
+Creates a section with the provided items and header information.
 
 **Availability**:
 - iOS 12.0+
@@ -17,33 +17,15 @@ Creates a section with list items, a header, and a section index title.
 - (instancetype) initWithItems:(NSArray<id<CPListTemplateItem>> *) items header:(NSString *) header sectionIndexTitle:(NSString *) sectionIndexTitle;
 ```
 
-## Return Value
+## Discussion
 
-A newly initialized list section.
+- Return: An initialized section object.
 
 ## Parameters
 
-- `items`: A list of items to include in the section.
-- `header`: The section header text.
-- `sectionIndexTitle`: A section index title. The system displays only the first character of the title, so choose a single-character section index title.
-
-## See Also
-
-### Creating a Section
-- [- initWithItems:](./initwithitems_.md)
-  Creates a section with list items.
-- [init(items: [any CPListTemplateItem], header: String, headerSubtitle: String?, headerImage: UIImage?, headerButton: CPButton?, sectionIndexTitle: String?)](./init%28items,header,headersubtitle,headerimage,headerbutton,sectionindextitle%29.md)
-  Creates a section with list items, a header, a section index title, and section header details.
-- [protocol CPListTemplateItem](../cplisttemplateitem.md)
-  A description of the common properties of all list item types.
-- [protocol CPSelectableListItem](../cpselectablelistitem.md)
-  A description of a selectable list item.
-- [class CPListItem](../cplistitem.md)
-  A selectable row in a list template.
-- [class CPListImageRowItem](../cplistimagerowitem.md)
-  A list template row that displays a series of images.
-- [class CPMessageListItem](../cpmessagelistitem.md)
-  A list template row that represents a conversation or contact.
+- `items`: The items to include in the section. CarPlay displays your items in the same order as your array. You can specify only [`CPListItem`](../cplistitem.md), [`CPListImageRowItem`](../cplistimagerowitem.md), and [`CPMessageListItem`](../cpmessagelistitem.md) types in your array. You can’t specify custom types that conform to the [`CPListTemplateItem`](../cplisttemplateitem.md) protocol. If you specify an empty array, the list interface hides the section. Empty sections count against the maximum number of allowed sections.
+- `header`: Text to display in the area immediately above the items. CarPlay formats the string to stand out in the list interface.
+- `sectionIndexTitle`: The string to display for this section in the index. For long lists, an index helps people navigate quickly to specific sections of content. If you specify a string with more than one character, CarPlay uses only the first character in the string.
 
 
 ---

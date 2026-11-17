@@ -27,14 +27,6 @@ class ARCoachingOverlayView
 
 This view offers your users a standardized onboarding routine. You can configure this view to automatically display during session initialization and in limited tracking situations, while giving the user specific instructions that best facilitate ARKit’s world tracking.
 
-These illustrations show overlay views with horizontal- and vertical-plane goals, indicating that the user should begin moving the device:
-
-![Illustration showing two overlay views. The view at the left shows a horizontal plane, and the view at the right shows a vertical plane. Both views indicate that the user should begin moving the device.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3403212@2x.png)
-
-These illustrations show overlay views indicating that the user should continue moving the phone or change the speed with which they move it:
-
-![Illustration showing two overlay views. The view at the left indicates that the device is moving and the user should continue moving it. The view at the right indicates that the device is moving too fast and the user should move it more slowly.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3403211@2x.png)
-
 When you start your app, the coaching overlay asks the user to move the device in ways that help ARKit establish tracking. When you choose a specific goal like finding a plane, the view tailors its instructions accordingly. After the coaching overlay determines the goal has been met and no further coaching is required, it hides from the user’s view.
 
 For an example app that uses the coaching overlay, see [Placing objects and handling 3D interaction](./placing-objects-and-handling-3d-interaction.md).
@@ -47,23 +39,19 @@ By default, [`activatesAutomatically`](./arcoachingoverlayview/activatesautomati
 
 If relocalization is enabled (see [`sessionShouldAttemptRelocalization(_:)`](./arsessionobserver/sessionshouldattemptrelocalization%28_%29.md)), ARKit attempts to restore your session if any interruptions degrade your app’s tracking state. In this event, the coaching overlay presents itself and gives the user instructions to assist ARKit with relocalizing.
 
-![User instruction to return to the user’s previous location so ARKit can restore the session. ](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3394488@2x.png)
-
 During this time, the coaching overlay includes a button that lets the user indicate they’d like to start over rather than restore the session.
-
-![Button that enables the user to indicate they’d like to start over rather than restore the session.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3394474@2x.png)
 
 ARKit notifies you when the user presses Start Over by calling your delegate’s [`coachingOverlayViewDidRequestSessionReset(_:)`](./arcoachingoverlayviewdelegate/coachingoverlayviewdidrequestsessionreset%28_%29.md) function. Implement this callback if your app requires any custom actions to restart the AR experience.
 
 ```swift
-func coachingOverlayViewDidRequestSessionReset(_ coachingOverlayView: ARCoachingOverlayView) {    
+func coachingOverlayViewDidRequestSessionReset(_ coachingOverlayView: ARCoachingOverlayView) {
 
     // Reset the session.
     let configuration = ARWorldTrackingConfiguration()
     configuration.planeDetection = [.horizontal, .vertical]
     session.run(configuration, options: [.resetTracking])
 
-    // Custom actions to restart the AR experience. 
+    // Custom actions to restart the AR experience.
     // ...
 }
 ```
@@ -71,6 +59,20 @@ func coachingOverlayViewDidRequestSessionReset(_ coachingOverlayView: ARCoaching
 If you do not implement [`coachingOverlayViewDidRequestSessionReset(_:)`](./arcoachingoverlayviewdelegate/coachingoverlayviewdidrequestsessionreset%28_%29.md), the coaching overlay responds to the Start Over button by resetting tracking, which also removes any existing anchors.
 
 For more information about relocalization, see [Managing Session Life Cycle and Tracking Quality](./managing-session-life-cycle-and-tracking-quality.md).
+
+## Discussion
+
+These illustrations show overlay views with horizontal- and vertical-plane goals, indicating that the user should begin moving the device:
+
+![Illustration showing two overlay views. The view at the left shows a horizontal plane, and the view at the right shows a vertical plane. Both views indicate that the user should begin moving the device.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3403212@2x.png)
+
+These illustrations show overlay views indicating that the user should continue moving the phone or change the speed with which they move it:
+
+![Illustration showing two overlay views. The view at the left indicates that the device is moving and the user should continue moving it. The view at the right indicates that the device is moving too fast and the user should move it more slowly.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3403211@2x.png)
+
+![User instruction to return to the user’s previous location so ARKit can restore the session. ](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3394488@2x.png)
+
+![Button that enables the user to indicate they’d like to start over rather than restore the session.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3394474@2x.png)
 
 ## Topics
 

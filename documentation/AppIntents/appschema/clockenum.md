@@ -23,11 +23,11 @@ protocol ClockEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var alarmTriggerState: some AppSchemaEnum](./clockenum/alarmtriggerstate.md)
-  An enum schema for an alarm trigger state parameter.
+  An enum schema for an alarm trigger state.
 - [var stopwatchState: some AppSchemaEnum](./clockenum/stopwatchstate.md)
-  An enum schema for a stopwatch state parameter.
+  An enum schema for a stopwatch state.
 - [var timerState: some AppSchemaEnum](./clockenum/timerstate.md)
-  An enum schema for a timer state parameter.
+  An enum schema for a timer state.
 
 ## Relationships
 
@@ -40,9 +40,9 @@ protocol ClockEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var alarmTriggerState: some AppSchemaEnum](./clockenum/alarmtriggerstate.md)
-  An enum schema for an alarm trigger state parameter.
+  An enum schema for an alarm trigger state.
 - [var timerState: some AppSchemaEnum](./clockenum/timerstate.md)
-  An enum schema for a timer state parameter.
+  An enum schema for a timer state.
 
 
 ---

@@ -25,7 +25,6 @@ struct Blending
   Standard source-over alpha blending with pre-multiplied alpha.
 - [static var add: LowLevelRenderPipelineState.Descriptor.Blending](./blending-swift.struct/add.md)
   Additive blending that combines source and destination colors.
-### Type Methods
 - [static func custom(sourceRGBBlendFactor: MTLBlendFactor, destinationRGBBlendFactor: MTLBlendFactor, rgbBlendOperation: MTLBlendOperation, sourceAlphaBlendFactor: MTLBlendFactor, destinationAlphaBlendFactor: MTLBlendFactor, alphaBlendOperation: MTLBlendOperation) -> LowLevelRenderPipelineState.Descriptor.Blending](./blending-swift.struct/custom%28sourcergbblendfactor,destinationrgbblendfactor,rgbblendoperation,sourcealphablendfactor,destinationalphablendfactor,alphablendoperation%29.md)
   Creates a custom blending configuration with explicit Metal blend factors and operations.
 

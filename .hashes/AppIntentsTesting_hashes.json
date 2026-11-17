@@ -242,7 +242,7 @@
     },
     "https://developer.apple.com/documentation/appintentstesting/appenumdefinition": {
       "file_path": "documentation/AppIntentsTesting/appenumdefinition.md",
-      "hash": "a51e5d18c88b364ba8ba00db2be9d41ccdaabec527a2310392cac066c480f140"
+      "hash": "d01368d02be131ccc2f347505536a6217a2695dee0193ea1cc8ccfbb246fb93d"
     },
     "https://developer.apple.com/documentation/appintentstesting/appenumdefinition/appintenttypedefinition-implementations": {
       "file_path": "documentation/AppIntentsTesting/appenumdefinition/appintenttypedefinition-implementations.md",
@@ -498,7 +498,7 @@
     },
     "https://developer.apple.com/documentation/appintentstesting/resolvableintentvalueexpectation": {
       "file_path": "documentation/AppIntentsTesting/resolvableintentvalueexpectation.md",
-      "hash": "dedd8abdee2b726be64a46ec988932d4ec4c85eae6391a81716093ab49ab4730"
+      "hash": "6f076c62970097f445e25627912379dcf9b5f33e819e66d310322b1a0e3f8156"
     },
     "https://developer.apple.com/documentation/appintentstesting/resolvedintentresult": {
       "file_path": "documentation/AppIntentsTesting/resolvedintentresult.md",
@@ -838,7 +838,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appenumdefinition.json": {
       "file_path": "documentation/AppIntentsTesting/appenumdefinition.md",
-      "hash": "a51e5d18c88b364ba8ba00db2be9d41ccdaabec527a2310392cac066c480f140"
+      "hash": "d01368d02be131ccc2f347505536a6217a2695dee0193ea1cc8ccfbb246fb93d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appenumdefinition/appintenttypedefinition-implementations.json": {
       "file_path": "documentation/AppIntentsTesting/appenumdefinition/appintenttypedefinition-implementations.md",
@@ -1094,7 +1094,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/resolvableintentvalueexpectation.json": {
       "file_path": "documentation/AppIntentsTesting/resolvableintentvalueexpectation.md",
-      "hash": "dedd8abdee2b726be64a46ec988932d4ec4c85eae6391a81716093ab49ab4730"
+      "hash": "6f076c62970097f445e25627912379dcf9b5f33e819e66d310322b1a0e3f8156"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/resolvedintentresult.json": {
       "file_path": "documentation/AppIntentsTesting/resolvedintentresult.md",

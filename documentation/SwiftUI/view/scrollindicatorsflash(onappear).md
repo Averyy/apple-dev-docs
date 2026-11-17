@@ -53,7 +53,7 @@ Only scroll indicators that you configure to be visible flash. To flash scroll i
 - [var horizontalScrollIndicatorVisibility: ScrollIndicatorVisibility](../environmentvalues/horizontalscrollindicatorvisibility.md)
   The visibility to apply to scroll indicators of any horizontally scrollable content.
 - [var verticalScrollIndicatorVisibility: ScrollIndicatorVisibility](../environmentvalues/verticalscrollindicatorvisibility.md)
-  The visiblity to apply to scroll indicators of any vertically scrollable content.
+  The visibility to apply to scroll indicators of any vertically scrollable content.
 - [struct ScrollIndicatorVisibility](../scrollindicatorvisibility.md)
   The visibility of scroll indicators of a UI element.
 

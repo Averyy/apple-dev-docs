@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Enumeration Case
 
+The main camera.
+
 **Availability**:
 - visionOS
 

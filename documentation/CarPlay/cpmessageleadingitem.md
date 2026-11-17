@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-The accessories that a message list item can display in its leading region.
+Constants that indicate the type of symbol to display at the leading edge of a message list row.
 
 **Availability**:
 - iOS 12.0+
@@ -23,17 +23,17 @@ enum CPMessageLeadingItem : NSInteger;
 
 ## Overview
 
-Use these constants when creating instances of [`CPMessageListItemLeadingConfiguration`](./cpmessagelistitemleadingconfiguration.md). A leading item can provide additional context for a list item’s contents, or help communicate its behavior.
+Use these constants to specify symbols that are common to conversations and contacts.
 
 ## Topics
 
 ### Leading Items
 - [CPMessageLeadingItem.none](./cpmessageleadingitem/none.md)
-  Don’t show a leading item.
+  An option to display no symbol.
 - [CPMessageLeadingItem.pin](./cpmessageleadingitem/pin.md)
-  Show a pin icon.
+  An option to display a pin image in the row.
 - [CPMessageLeadingItem.star](./cpmessageleadingitem/star.md)
-  Show a star icon.
+  An option to display a star image in the row.
 ### Initializers
 - [init?(rawValue: Int)](./cpmessageleadingitem/init%28rawvalue%29.md)
 
@@ -49,9 +49,9 @@ Use these constants when creating instances of [`CPMessageListItemLeadingConfigu
 
 ## See Also
 
-### Getting the Leading Item
+### Getting the leading item
 - [var leadingItem: CPMessageLeadingItem](./cpmessagelistitemleadingconfiguration/leadingitem.md)
-  The configuration’s item.
+  The standard system symbol to display in the row’s leading region.
 
 
 ---

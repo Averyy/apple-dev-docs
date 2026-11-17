@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-The sample-level detailed results DataFrame.
+The sample-level detailed results data frame.
 
 **Availability**:
 - iOS 27.0+

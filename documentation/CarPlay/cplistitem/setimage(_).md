@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Updates the list item’s image.
+Updates the leading image of the list item.
 
 **Availability**:
 - iOS 14.0+
@@ -21,31 +21,27 @@ func setImage(_ image: UIImage?)
 - (void) setImage:(UIImage *) image;
 ```
 
-## Discussion
-
-Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property. At runtime, use [`maximumImageSize`](./maximumimagesize.md) to determine the maximum size for a list item’s image.
-
-CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
-
 ## Parameters
 
-- `image`: The image to display in the item’s leading region.
+- `image`: An image to display on the leading edge of the list item’s row. If the image originates from an asset catalog, CarPlay manages light and dark variants of your image and switches them when needed. Specify images with the dimensions listed in the [`maximumImageSize`](./maximumimagesize.md) property. If your image is smaller or larger than the maximum dimensions, CarPlay scales the image as needed to fit the space. Don’t specify an image object with an animated sequence of images.
 
 ## See Also
 
-### Managing Content
+### Managing the row’s content
 - [var text: String?](./text.md)
-  The list item’s primary text.
-- [func setText(String)](./settext%28_%29.md)
-  Updates the list item’s primary text.
+  The primary text for the list item.
 - [var detailText: String?](./detailtext.md)
-  The list item’s secondary text.
-- [func setDetailText(String?)](./setdetailtext%28_%29.md)
-  Updates the list item’s secondary text.
+  The secondary text for the list item.
 - [var image: UIImage?](./image.md)
-  The image that the list item displays in its leading region.
+  The image to display on the leading edge of the cell.
+- [func setText(String)](./settext%28_%29.md)
+  Updates the primary text of the list item.
+- [func setDetailText(String?)](./setdetailtext%28_%29.md)
+  Updates the secondary text of the list item.
+- [var userInfo: Any?](./userinfo.md)
+  App-specific data you associate with the item.
 - [class var maximumImageSize: CGSize](./maximumimagesize.md)
-  The maximum size of a list item’s image and accessory image.
+  The maximum dimensions for the list item images.
 
 
 ---

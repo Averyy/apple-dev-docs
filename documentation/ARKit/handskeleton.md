@@ -29,6 +29,7 @@ struct HandSkeleton
   All of the joints in a hand skeleton.
 - [static var neutralPose: HandSkeleton](./handskeleton/neutralpose.md)
   A hand pose that you can use as a reference.
+### Instance Properties
 - [var description: String](./handskeleton/description.md)
   A textual representation of this Skeleton.
 ### Default Implementations

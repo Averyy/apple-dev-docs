@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a session configuration with a delegate.
+Configures a session configuration with the custom delegate object you provide.
 
 **Availability**:
 - iOS 12.0+
@@ -23,17 +23,17 @@ init(delegate: any CPSessionConfigurationDelegate)
 
 ## Return Value
 
-A newly initialized session configuration.
+A new session configuration object with the specified delegate.
 
 ## Parameters
 
-- `delegate`: The delegate object.
+- `delegate`: A custom type you use to handle subsequent changes to environment values.
 
 ## See Also
 
-### Creating a Session Configuration
+### Creating a session configuration
 - [protocol CPSessionConfigurationDelegate](../cpsessionconfigurationdelegate.md)
-  A protocol for receiving notifications about changes to vehicle properties and configuration.
+  Methods you use to respond to changes in the CarPlay environment.
 
 
 ---

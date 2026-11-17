@@ -16,6 +16,9 @@ Use this resource to:
 
 ## Topics
 
+### Replacing an app
+- [Replacing a Game Center app](./replacing-an-app.md)
+  Replace an existing Game Center app with a new one that belongs to the same Game Center and app groups as the original.
 ### Managing groups
 - [Read Group Information](./get-v1-gamecentergroups.md)
   List information for all groups.

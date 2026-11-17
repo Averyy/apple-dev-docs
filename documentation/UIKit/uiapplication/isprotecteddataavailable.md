@@ -30,6 +30,8 @@ The value of this property is [`false`](../../Swift/false.md) if data protection
 
 When the value of this property is [`false`](../../Swift/false.md), files that were assigned the [`complete`](../../Foundation/fileprotectiontype/complete.md) or [`completeUnlessOpen`](../../Foundation/fileprotectiontype/completeunlessopen.md) protection key cannot be read or written by your app. The user must unlock the device before your app can access them.
 
+You can read this property safely on a thread that isn’t the main thread.
+
 ## See Also
 
 ### Accessing protected content

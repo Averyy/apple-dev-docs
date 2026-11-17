@@ -27,7 +27,7 @@ CarPlays doesn’t support animated images. If you provide an animated image, th
 
 ## See Also
 
-### Accessing the Button Configuration
+### Accessing the button configuration
 - [var titleVariants: [String]](./titlevariants.md)
   The array of title variants for the button.
 - [var subtitleVariants: [String]](./subtitlevariants.md)

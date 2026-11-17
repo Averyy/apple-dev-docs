@@ -165,6 +165,7 @@ Asset objects are immutable. To edit an asset’s metadata (such as marking it a
 ### Enumerations
 - [PHAsset.AdjustmentsState](./phasset/adjustmentsstate-swift.enum.md)
 - [PHAsset.PlaybackVariation](./phasset/playbackvariation-swift.enum.md)
+  Playback variation describes the Live Photo presentation effect applied to an asset (for example, Long Exposure).
 ### Default Implementations
 - [PersistentlyIdentifiable Implementations](./phasset/persistentlyidentifiable-implementations.md)
 

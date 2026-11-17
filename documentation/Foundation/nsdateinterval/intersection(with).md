@@ -35,7 +35,7 @@ Calculating the intersection of date intervals is a commutative and associative 
 
 The following figure illustrates five `NSDateInterval` objects plotted on an arbitrary time axis. Each date interval spans its [`duration`](./duration.md) from left to right, from its [`startDate`](./startdate.md) to its [`endDate`](./enddate.md).
 
-![](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2556958@2x.png)
+![A diagram of five date intervals, labeled A through E, plotted as horizontal bars above a time axis marked from t equals 0 to 5. A spans roughly 0 to 1 and B spans roughly 2 to 3, with a gap between them. C spans 0 to 4 and D spans roughly 2.5 to 5. E, drawn with a dashed outline, spans roughly 2.5 to 4, the overlap of C and D.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2556958@2x.png)
 
 The date intervals labeled **A** and **B** do not intersect, because the [`startDate`](./startdate.md) of **B** occurs later than the [`endDate`](./enddate.md) of **A**.
 

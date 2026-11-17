@@ -19,7 +19,7 @@ ar_plane_classification_door
 
 ### Plane detection
 - [ar_plane_alignment_t](../ar_plane_alignment_t.md)
-  The kinds of alignment — horizontal or vertical — that a plane anchor can have.
+  Option set describing possible orientation alignments of a detected plane.
 - [ar_plane_classification_t](../ar_plane_classification_t.md)
   The kinds of object classification a plane anchor can have.
 - [ar_plane_classification_ceiling](./ar_plane_classification_ceiling.md)
@@ -43,11 +43,11 @@ ar_plane_classification_door
 - [ar_plane_anchor_get_alignment](../ar_plane_anchor_get_alignment.md)
   Gets the alignment — horizontal or vertical — of a plane anchor relative to gravity.
 - [ar_plane_anchor_get_geometry](../ar_plane_anchor_get_geometry.md)
-  Gets the shape of a plane anchor.
+  Gets the geometry of a plane anchor.
 - [ar_plane_anchor_get_plane_classification](../ar_plane_anchor_get_plane_classification.md)
   Gets the kind of real-world object that ARKit determines the plane anchor might be.
 - [ar_plane_anchors_enumerate_anchors](../ar_plane_anchors_enumerate_anchors.md)
-  Enumerates a collection of plane anchors using the collection of plane anchors and the enumeratin handler you provide.
+  Enumerates a collection of plane anchors.
 
 
 ---

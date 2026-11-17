@@ -20,6 +20,10 @@ var width: Float { get }
 @property (nonatomic, readonly) float width;
 ```
 
+## Discussion
+
+This corresponds to the length of the plane along the x-axis, prior to applying `rotationOnYAxis`.
+
 ## See Also
 
 ### Inspecting Plane Size

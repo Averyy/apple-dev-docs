@@ -21,16 +21,23 @@ var playAudio: some AppSchemaIntent { get }
 
 ## Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `audio` domain and one of your app’s actions matches the `playAudio` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .audio.playAudio)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `audio` domain and one of your app’s actions matches the `playAudio` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent(schema: .audio.playAudio)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an intent that conforms to the `playAudio` schema:
+The following example shows an intent that conforms to the `playAudio` schema. You can create a type that conforms to the schema by adding the `@AppIntent` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `audio_playAudio` and select it from the code-completion suggestions:
 
 ```swift
 @AppIntent(schema: .audio.playAudio)
 struct PlayAudioIntent: AudioStartingIntent {
+    /// The item to play, such as a song, album, playlist, or podcast episode.
     var audioEntity: <#AudioItem#>
+
+    /// Attributes that define how the item plays, such as shuffle or repeat mode.
     var playbackAttributes: Set<<#PlaybackAttributes#>>
+
+    /// Optional pre loaded and warmed up queue.
     var warmupAudioQueueResult: <#WarmupAudioQueueResult#>?
+
+    /// The position in the playback queue to play the item, such as play next or add to the end of the queue.
     var queueLocation: <#QueueInsertionLocation#>?
 
     func perform() async throws -> some IntentResult {
@@ -72,6 +79,17 @@ The schema supports the following system experiences:
 - Shortcuts
 
 For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
+
+## Parameters for the play-audio intent
+
+Each parameter in the code listing above plays a specific role when your app performs this action. The following table describes what each parameter represents and any behavior to account for when you set it.
+
+| Parameter | Type | Origin | Discussion |
+| --- | --- | --- | --- |
+| `audioEntity` | `@UnionValue` | Your app | The item to play, such as a song, album, playlist, or podcast episode. `AudioItem` is a placeholder name for the `@UnionValue` type your app defines, as shown in the example above the table. |
+| `playbackAttributes` | `Set<@AppEnum(schema: .audio.playbackAttributes)>` | Your app | Attributes that define how the item plays, such as shuffle or repeat mode. `PlaybackAttributes` is a placeholder name for a type that conforms to the [`playbackAttributes`](../audioenum/playbackattributes.md) enum schema, which your app defines and implements. |
+| `warmupAudioQueueResult` | `@AppEntity(schema: .audio.warmupAudioQueueResult)?` | Your app | Optional pre loaded and warmed up queue. `WarmupAudioQueueResult` is a placeholder name for a type that conforms to the [`warmupAudioQueueResult`](../audioentity/warmupaudioqueueresult.md) entity schema, which your app defines and implements. |
+| `queueLocation` | `@AppEnum(schema: .audio.queueInsertionLocation)?` | Your app | The position in the playback queue to play the item, such as play next or add to the end of the queue. `QueueInsertionLocation` is a placeholder name for a type that conforms to the [`queueInsertionLocation`](../audioenum/queueinsertionlocation.md) enum schema, which your app defines and implements. |
 
 ## See Also
 

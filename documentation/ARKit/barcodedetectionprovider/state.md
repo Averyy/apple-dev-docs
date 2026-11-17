@@ -20,8 +20,6 @@ final var state: DataProviderState { get }
 ### Inspecting a barcode detection provider
 - [var anchorUpdates: AnchorUpdateSequence<BarcodeAnchor>](./anchorupdates.md)
   An asynchronous sequence of anchor updates that describe the anchors in a person’s surroundings.
-- [var description: String](./description.md)
-  A textual representation of this barcode detection provider.
 
 
 ---

@@ -4,8 +4,6 @@
 **Kind**: case  
 **Role**: Case
 
-A text style bar button.
-
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
@@ -20,12 +18,6 @@ case text
 ```c
 CPBarButtonTypeText
 ```
-
-## See Also
-
-### Button Types
-- [CPBarButton.Type.image](./image.md)
-  An image style bar button.
 
 
 ---

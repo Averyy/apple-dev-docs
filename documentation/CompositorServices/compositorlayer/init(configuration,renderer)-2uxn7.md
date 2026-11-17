@@ -4,8 +4,6 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a [`CompositorLayer`](../compositorlayer.md) instance.
-
 **Availability**:
 - macOS 26.0+
 - visionOS 2.0+
@@ -16,11 +14,6 @@ Creates a [`CompositorLayer`](../compositorlayer.md) instance.
 nonisolated
 init(configuration: any CompositorLayerConfiguration = .default, renderer: @escaping @MainActor (LayerRenderer) -> Void)
 ```
-
-## Parameters
-
-- `configuration`: The configuration to use when creating the LayerRenderer.
-- `renderer`: A closure that receives the layer to use when rendering the content for the immersive space
 
 
 ---

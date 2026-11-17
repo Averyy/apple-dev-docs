@@ -44,8 +44,10 @@ Lighting and shadows are an essential part of creating immersive and realistic e
 - [SpotLightComponent.Shadow.ShadowMapCullMode](./spotlightcomponent/shadow/shadowmapcullmode.md)
 ### Image-based lights
 - [struct ImageBasedLightComponent](./imagebasedlightcomponent.md)
+  A component that supplies image-based lighting from an environment image to entities that receive it.
 - [ImageBasedLightComponent.Source](./imagebasedlightcomponent/source-swift.enum.md)
 - [struct ImageBasedLightReceiverComponent](./imagebasedlightreceivercomponent.md)
+  A component that lights an entity using the image-based light of another entity.
 ### General shadows
 - [struct GroundingShadowComponent](./groundingshadowcomponent.md)
   A component that controls an entity’s grounding shadow.

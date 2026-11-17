@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-The assistant cell is visible only while Limited UI mode is active.
+An option to show the assistant cell only when Limited UI mode is active.
 
 **Availability**:
 - iOS 15.0+
@@ -20,14 +20,6 @@ case whileLimitedUIActive
 ```c
 CPAssistantCellVisibilityWhileLimitedUIActive
 ```
-
-## See Also
-
-### Controlling the Assistant Cell Visibility
-- [CPListItem.AssistantCellVisibility.off](./off.md)
-  The assistant cell isn’t visible.
-- [CPListItem.AssistantCellVisibility.always](./always.md)
-  The assistant cell is always visible.
 
 
 ---

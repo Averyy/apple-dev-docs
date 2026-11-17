@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+A collection of room anchors.
+
 **Availability**:
 - visionOS 2.0+
 
@@ -17,8 +19,11 @@ typedef NSObject<OS_ar_room_anchors> * ar_room_anchors_t;
 
 ### Room anchor data types
 - [ar_room_anchor_t](./ar_room_anchor_t.md)
+  An anchor representing a physical room.
 - [ar_room_anchors_enumerator_function_t](./ar_room_anchors_enumerator_function_t.md)
+  Function for enumerating a collection of room anchors.
 - [ar_room_anchors_enumerator_t](./ar_room_anchors_enumerator_t.md)
+  Handler for enumerating a collection of room anchors.
 
 
 ---

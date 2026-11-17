@@ -27,6 +27,14 @@ Localize each variant for display to the user, and make sure the array contains 
 
 > **Note**:  If you provide both [`instructionVariants`](./instructionvariants.md) and [`attributedInstructionVariants`](./attributedinstructionvariants.md), the system displays instructions from the attributed instruction variants array.
 
+## See Also
+
+### Providing instructions
+- [var dashboardInstructionVariants: [String]](./dashboardinstructionvariants.md)
+  An array of instruction variants for the CarPlay dashboard.
+- [var notificationInstructionVariants: [String]](./notificationinstructionvariants.md)
+  An array of instruction variants for notification banners.
+
 
 ---
 

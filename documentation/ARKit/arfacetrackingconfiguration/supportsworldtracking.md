@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Type Property
 
-A Boolean value that indicates whether the iOS device supports tracking the user’s facial features in a world-tracking session.
+A Boolean value that indicates whether the iOS device supports tracking the world in a face-tracking session.
 
 **Availability**:
 - iOS 13.0+
@@ -22,7 +22,7 @@ class var supportsWorldTracking: Bool { get }
 
 ## Discussion
 
-Call this function before attempting to enable world tracking in a face tracking configuration using [`isWorldTrackingEnabled`](./isworldtrackingenabled.md).
+Check this property before attempting to enable world tracking in a face tracking configuration using [`isWorldTrackingEnabled`](./isworldtrackingenabled.md).
 
 ## See Also
 

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Asynchronously advances to the next element and returns it, or ends the sequence if there’s no next element.
+Asynchronously retrieve the next camera frame.
 
 **Availability**:
 - visionOS 2.0+
@@ -17,7 +17,7 @@ mutating func next() async -> CameraFrameProvider.CameraFrameUpdates.Element?
 
 ## Return Value
 
-The next element, if it exists, or nil to signal the end of the sequence.
+The next camera frame if one has been captured since the last call to this function. Otherwise suspends the caller until a new camera frame has been captured. Returns `nil` (signals end of the sequence) if the provider has been stopped.
 
 
 ---

@@ -69,6 +69,15 @@ DragGesture(coordinateSpace: .global).targetedToEntity().updating($state) { stat
   A component that adds fluid and immersive interactive behaviors and effects.
 - [struct GestureComponent](./gesturecomponent.md)
   A component attaching a UI gesture to an entity.
+- [func targetedToEntity(Entity) -> some Gesture<EntityTargetValue<Self.Value>>
+](../SwiftUI/gesture/targetedtoentity%28_%29.md)
+  Requires this gesture to target an entity or a descendant of entity.
+- [func targetedToEntity(where: QueryPredicate<Entity>) -> some Gesture<EntityTargetValue<Self.Value>>
+](../SwiftUI/gesture/targetedtoentity%28where%29.md)
+  Requires this gesture to target an entity that can be found in the results of the query.
+- [func targetedToAnyEntity() -> some Gesture<EntityTargetValue<Self.Value>>
+](../SwiftUI/gesture/targetedtoanyentity%28%29.md)
+  Requires this gesture to target an entity.
 
 
 ---

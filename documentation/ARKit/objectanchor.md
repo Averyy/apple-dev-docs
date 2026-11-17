@@ -26,8 +26,6 @@ You use object anchors to learn about the position and orientation of a real-wor
   The bounding box of an anchor.
 - [ObjectAnchor.AxisAlignedBoundingBox](./objectanchor/axisalignedboundingbox.md)
   Values that describe an axis-aligned bounding box.
-- [var description: String](./objectanchor/description.md)
-  A textual representation of this anchor.
 - [var isTracked: Bool](./objectanchor/istracked.md)
   A Boolean value that indicates whether the framework is currently tracking an object anchor.
 - [var originFromAnchorTransform: simd_float4x4](./objectanchor/originfromanchortransform.md)
@@ -48,6 +46,9 @@ You use object anchors to learn about the position and orientation of a real-wor
 ### Operators
 - [static func == (ObjectAnchor, ObjectAnchor) -> Bool](./objectanchor/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two object anchors are equal.
+### Instance Properties
+- [var description: String](./objectanchor/description.md)
+  A textual representation of this anchor.
 ### Default Implementations
 - [ARKitCoordinateSpaceProviding Implementations](./objectanchor/arkitcoordinatespaceproviding-implementations.md)
 

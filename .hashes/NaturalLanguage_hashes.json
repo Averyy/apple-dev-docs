@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/NaturalLanguage": {
       "file_path": "documentation/NaturalLanguage/NaturalLanguage.md",
-      "hash": "cbe7df680316b819c7299c5ccb4eccc79bf7f3bfcdb3956525edafa80bc16a52"
+      "hash": "204a25b2c8e88fd4354211da32d4683a4bcdc43e5e08a4fc72fdb23e2ff08fea"
     },
     "https://developer.apple.com/documentation/naturallanguage/finding-similarities-between-pieces-of-text": {
       "file_path": "documentation/NaturalLanguage/finding-similarities-between-pieces-of-text.md",
@@ -1318,7 +1318,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/NaturalLanguage.json": {
       "file_path": "documentation/NaturalLanguage/NaturalLanguage.md",
-      "hash": "cbe7df680316b819c7299c5ccb4eccc79bf7f3bfcdb3956525edafa80bc16a52"
+      "hash": "204a25b2c8e88fd4354211da32d4683a4bcdc43e5e08a4fc72fdb23e2ff08fea"
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/finding-similarities-between-pieces-of-text.json": {
       "file_path": "documentation/NaturalLanguage/finding-similarities-between-pieces-of-text.md",

@@ -24,7 +24,7 @@ enum SpellOutAttribute
 
 ## Overview
 
-For example, a number representing a series of digits, like 25, spoken as “two-five” rather than “twenty-five”. Another usecase is acronyms, like APPL, spoken as “A-P-P-L”
+For example, a number representing a series of digits, like 25, spoken as “two-five” rather than “twenty-five”. Another use case is acronyms, like APPL, spoken as “A-P-P-L”
 
 ## Relationships
 

@@ -26,7 +26,7 @@ Added support for webhooks, which send notifications to a URL you specify when e
 
 Webhooks can subscribe to the following event types: `ORG_DEVICE_ATTRIBUTE_CHANGED`, `ORG_DEVICE_ATTRIBUTE_MIGRATION_DETAILS_CHANGED`, `ORG_DEVICE_RELATIONSHIP_ASSIGNED_SERVER_CHANGED`, and `ORG_DEVICE_RELATIONSHIP_WARRANTY_CHANGED`.
 
-For the data each event contains, see [Understanding webhook events](../AppleBusinessAPI/understanding-apple-business-api-webhook-events.md).
+For the data each event contains, see Understanding webhook events.
 
 Expanded [Audit Events](../AppleBusinessAPI/get-audit-events.md) with the `WEBHOOK_ACTIVITY` category and the `WEBHOOK_CREATED`, `WEBHOOK_UPDATED`, and `WEBHOOK_DELETED` event types.
 
@@ -90,7 +90,7 @@ Added support for organizational units using the following endpoints:
 
 - [Get Organizational Units.](../AppleBusinessAPI/get-organizational-units.md)
 - [Get Organizational Unit Information.](../AppleBusinessAPI/get-organizationalunit-information.md)
-- Get User IDs for an Organizational Unit.
+- [Get User IDs for an Organizational Unit.](../AppleBusinessAPI/get-all-user-ids-for-an-organizationalunit.md)
 
 ### 2.1 (Apple Business) - 2026/6/3
 
@@ -172,7 +172,7 @@ Added detailed device information for devices enrolled in the built-in device ma
 
 Changes
 
-- Updated Python script example to use PwJWT in the article [Implementing OAuth for the Apple School and Business Manager API](./implementing-oauth-for-the-apple-school-and-business-manager-api.md)
+- Updated Python script example to use PwJWT in the article Implementing OAuth for the Apple School and Business Manager API
 - Updated MAC address types in Apple School Manager [OrgDevice.Attributes](../AppleSchoolManagerAPI/orgdevice/attributes-data.dictionary.md).
 - Updated MAC address types in Apple Business [OrgDevice.Attributes](https://developer.apple.com/documentation/applebusinessmanagerapi/orgdevice/attributes-data.dictionary).
 
@@ -187,7 +187,7 @@ New features
 
 New features
 
-- Added AppleCare content to the [Apple School Manager API](../AppleSchoolManagerAPI/get-all-apple-care-coverage-for-an-orgdevice.md)
+- Added AppleCare content to the Apple School Manager API
 - Added AppleCare content to the [Apple Business API](https://developer.apple.com/documentation/applebusinessmanagerapi/get-all-apple-care-coverage-for-an-orgdevice)
 
 ### 1.2 (Apple School Manager and Apple Business) - 2025/07/16
@@ -201,7 +201,7 @@ New features
 
 Changes
 
-- Updated content in the article [Implementing OAuth for the Apple School and Business Manager API](./implementing-oauth-for-the-apple-school-and-business-manager-api.md)
+- Updated content in the article Implementing OAuth for the Apple School and Business Manager API
 
 
 ---

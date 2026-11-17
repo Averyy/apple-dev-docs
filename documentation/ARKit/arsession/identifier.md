@@ -29,8 +29,8 @@ This property might change after you call the run function, but not immediately.
 var sessionIDObservation: NSKeyValueObservation?
 ...
 sessionIDObservation = observe(
-    .arView.session.identifier,
-    options: [.old, .new]) { 
+    \.arView.session.identifier,
+    options: [.old, .new]) {
         object, change in
         print("SessionID changed to: \(change.newValue!)")
     }

@@ -16,9 +16,17 @@ Returns the local transform for a joint with a given name.
 - (simd_float4x4) localTransformForJointName:(ARSkeletonJointName) jointName;
 ```
 
+## Return Value
+
+The local transform.
+
 ## Discussion
 
-Local space refers to the joints position relative to its parent joint. If an invalid joint name is passed the returned matrix will be filled with `NaN` values.
+Local space refers to the joint’s position relative to its parent joint. If an invalid joint name is passed the returned matrix will be filled with `NaN` values.
+
+## Parameters
+
+- `jointName`: The name of the joint.
 
 ## See Also
 

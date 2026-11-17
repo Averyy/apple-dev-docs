@@ -33,7 +33,7 @@ While showing the panning interface, the system hides all map buttons. The syste
 
 ## See Also
 
-### Panning the Map
+### Displaying the panning interface
 - [func dismissPanningInterface(animated: Bool)](./dismisspanninginterface%28animated%29.md)
   Dismisses the panning interface.
 - [var isPanningInterfaceVisible: Bool](./ispanninginterfacevisible.md)

@@ -15,12 +15,6 @@ A Boolean value that indicates whether a device supports the environment light e
 static var isSupported: Bool { get }
 ```
 
-## See Also
-
-### Type properties
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
-  The authorization types that an environment light estimation provider requires.
-
 
 ---
 

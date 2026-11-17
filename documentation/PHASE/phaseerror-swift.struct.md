@@ -30,7 +30,7 @@ struct PHASEError
 ### Creating an Error
 - [PHASEError.Code](./phaseerror-swift.struct/code.md)
   Codes that identify errors in PHASE.
-### Type Properties
+### Inspecting Error Information
 - [static var errorDomain: String](./phaseerror-swift.struct/errordomain.md)
 
 ## Relationships

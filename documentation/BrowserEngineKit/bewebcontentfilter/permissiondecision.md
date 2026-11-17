@@ -4,6 +4,8 @@
 **Kind**: enum  
 **Role**: Enumeration
 
+The outcome of a request to add a blocked URL to the web content filter’s allow list.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,17 +22,22 @@ enum BEWebContentFilterPermissionDecision : NSInteger;
 
 ## Overview
 
-The outcome of a Permission Request to add URL to allow-list
+The [`requestPermission(for:referrerURL:presenting:completionHandler:)`](./requestpermission%28for,referrerurl,presenting,completionhandler%29.md) method sends an instance of this enumeration to its completion handler.
 
 ## Topics
 
-### Enumeration Cases
+### Determining the result
 - [BEWebContentFilter.PermissionDecision.allowed](./permissiondecision/allowed.md)
+  A value that indicates a guardian approves the request and the system can add the URL to the allow list.
 - [BEWebContentFilter.PermissionDecision.denied](./permissiondecision/denied.md)
-- [BEWebContentFilter.PermissionDecision.error](./permissiondecision/error.md)
+  A value that indicates a guardian denies the request.
 - [BEWebContentFilter.PermissionDecision.pending](./permissiondecision/pending.md)
-### Initializers
+  A value that indicates the request awaits a guardian’s response.
+- [BEWebContentFilter.PermissionDecision.error](./permissiondecision/error.md)
+  A value that indicates the system fails to retrieve a decision.
+### Creating a permission decision
 - [init?(rawValue: Int)](./permissiondecision/init%28rawvalue%29.md)
+  Creates a decision with the specified permission value.
 
 ## Relationships
 
@@ -41,6 +48,12 @@ The outcome of a Permission Request to add URL to allow-list
 - [RawRepresentable](../../Swift/rawrepresentable.md)
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
+
+## See Also
+
+### Requesting permission for a blocked URL
+- [func requestPermission(for: URL, referrerURL: URL?, presenting: UIView?, completionHandler: (BEWebContentFilter.PermissionDecision, (any Error)?) -> Void)](./requestpermission%28for,referrerurl,presenting,completionhandler%29.md)
+  Requests permission to add a blocked URL to the web content filter’s allow list.
 
 
 ---

@@ -33,6 +33,7 @@ Calling this function has no effect if the timer source has already been cancele
 
 ## Parameters
 
+- `source`: The dispatch timer source to modify.
 - `start`: The start time of the timer. See [`dispatch_time`](./dispatch_time.md) and [`dispatch_walltime`](./dispatch_walltime.md) for more information.
 - `interval`: The nanosecond interval for the timer.
 - `leeway`: The amount of time, in nanoseconds, that the system can defer the timer.

@@ -4,7 +4,7 @@
 **Kind**: protocol  
 **Role**: Protocol
 
-A protocol for receiving notifications about changes to vehicle properties and configuration.
+Methods you use to respond to changes in the CarPlay environment.
 
 **Availability**:
 - iOS 12.0+
@@ -22,14 +22,17 @@ protocol CPSessionConfigurationDelegate : NSObjectProtocol
 @protocol CPSessionConfigurationDelegate <NSObject>
 ```
 
+## Overview
+
+Implement this protocol in the custom delegate object you create and assign to a [`CPSessionConfiguration`](./cpsessionconfiguration.md) object. When the CarPlay environment changes, the session configuration reports the changes to the methods of this protocol. For example, vehicles typically disable keyboard input when the vehicle starts moving and reenable it when the vehicle parks. Use your implementations of these methods to update your app’s interface.
+
 ## Topics
 
-### Handling Content Style Changes
+### Handling environmental changes
 - [func sessionConfiguration(CPSessionConfiguration, contentStyleChanged: CPContentStyle)](./cpsessionconfigurationdelegate/sessionconfiguration%28_,contentstylechanged%29.md)
-  Tells the delegate that the vehicle changed its selected content style.
-### Handling Limit Changes
+  Tells the delegate about changes to the interface’s appearance.
 - [func sessionConfiguration(CPSessionConfiguration, limitedUserInterfacesChanged: CPLimitableUserInterface)](./cpsessionconfigurationdelegate/sessionconfiguration%28_,limiteduserinterfaceschanged%29.md)
-  Tells the delegate that the system changed keyboard or list limits on the user interface.
+  Tells the delegate about changes to the availability of interface features.
 
 ## Relationships
 
@@ -38,9 +41,9 @@ protocol CPSessionConfigurationDelegate : NSObjectProtocol
 
 ## See Also
 
-### Creating a Session Configuration
+### Creating a session configuration
 - [init(delegate: any CPSessionConfigurationDelegate)](./cpsessionconfiguration/init%28delegate%29.md)
-  Creates a session configuration with a delegate.
+  Configures a session configuration with the custom delegate object you provide.
 
 
 ---

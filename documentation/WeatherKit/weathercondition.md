@@ -103,6 +103,9 @@ enum WeatherCondition
   A localized accessibility description describing the weather condition.
 - [var description: String](./weathercondition/description.md)
   A localized string describing the current condition.
+### Type Properties
+- [static var allCases: [WeatherCondition]](./weathercondition/allcases.md)
+  A collection of all values of this type.
 
 ## Relationships
 

@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-A button that displays an image.
+A custom Now Playing button that displays an image.
 
 **Availability**:
 - iOS 14.0+
@@ -24,24 +24,20 @@ class CPNowPlayingImageButton
 
 ## Overview
 
-`CPNowPlayingImageButton` is a concrete subclass of [`CPNowPlayingButton`](./cpnowplayingbutton.md). Use this class when you want to display a button that contains an image.
+Use a `CPNowPlayingImageButton` object to add custom actions to the Now Playing interface. This button type displays the image you provide and calls your handler in response to interactions. The system displays your image with a tint color, so specify images with a single color for the best results.
 
-In iOS 17 and later, CarPlay retints the custom now playing image buttons your app provides; you need to provide images  as monocolor assets.
-
-CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
-
-To properly size your image, use the display scale of the vehicle’s primary screen—see your interface controller’s [`carTraitCollection`](./cpinterfacecontroller/cartraitcollection.md) property—and make sure it is no larger than [`CPNowPlayingButtonMaximumImageSize`](./cpnowplayingbuttonmaximumimagesize.md).
+Create the button and add it as one of the [`nowPlayingButtons`](./cpnowplayingtemplate/nowplayingbuttons.md) in your Now Playing template. Create this type of button only for custom actions, and don’t use it to replicate the behavior of system-provided types like [`CPNowPlayingShuffleButton`](./cpnowplayingshufflebutton.md) or [`CPNowPlayingRepeatButton`](./cpnowplayingrepeatbutton.md).
 
 ## Topics
 
-### Creating a Button
+### Creating the button
 - [init(image: UIImage, handler: ((CPNowPlayingButton) -> Void)?)](./cpnowplayingimagebutton/init%28image,handler%29.md)
-  Creates a Now Playing button that displays a custom image and invokes a handler.
+  Creates a button with the specified image and handler.
 - [let CPNowPlayingButtonMaximumImageSize: CGSize](./cpnowplayingbuttonmaximumimagesize.md)
-  The maximum size CarPlay supports for a button’s image.
-### Getting the Button’s Image
+  The dimensions for images in custom buttons.
+### Getting the button’s image
 - [var image: UIImage?](./cpnowplayingimagebutton/image.md)
-  The image that the button displays.
+  The image to display for the button.
 
 ## Relationships
 
@@ -61,23 +57,19 @@ To properly size your image, use the display scale of the vehicle’s primary sc
 
 ## See Also
 
-### Managing the Template’s Buttons
-- [var nowPlayingButtons: [CPNowPlayingButton]](./cpnowplayingtemplate/nowplayingbuttons.md)
-  The Now Playing template’s playback control buttons.
-- [func updateNowPlayingButtons([CPNowPlayingButton])](./cpnowplayingtemplate/updatenowplayingbuttons%28_%29.md)
-  Updates the playback control buttons the template displays.
-- [class CPNowPlayingButton](./cpnowplayingbutton.md)
-  The abstract base class that Now Playing template buttons use.
-- [class CPNowPlayingAddToLibraryButton](./cpnowplayingaddtolibrarybutton.md)
-  A button for adding the current playing item to a collection.
-- [class CPNowPlayingMoreButton](./cpnowplayingmorebutton.md)
-  A button for presenting more options to the user.
-- [class CPNowPlayingPlaybackRateButton](./cpnowplayingplaybackratebutton.md)
-  A button for cycling through the available playback rates.
+### Now Playing buttons
+- [class CPNowPlayingShuffleButton](./cpnowplayingshufflebutton.md)
+  A button for toggling shuffle mode on and off.
 - [class CPNowPlayingRepeatButton](./cpnowplayingrepeatbutton.md)
   A button for cycling through the available repeat modes.
-- [class CPNowPlayingShuffleButton](./cpnowplayingshufflebutton.md)
-  A button for cycling through the available shuffle modes.
+- [class CPNowPlayingPlaybackRateButton](./cpnowplayingplaybackratebutton.md)
+  A button for changing the playback rate of the media.
+- [class CPNowPlayingAddToLibraryButton](./cpnowplayingaddtolibrarybutton.md)
+  A button for adding the current item to a collection, such as the person’s library.
+- [class CPNowPlayingMoreButton](./cpnowplayingmorebutton.md)
+  A button for displaying additional playback options.
+- [class CPNowPlayingButton](./cpnowplayingbutton.md)
+  The abstract base class for buttons in the Now Playing interface.
 
 
 ---

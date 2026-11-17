@@ -59,6 +59,9 @@ struct SaveButton: View {
 
     var body: some View {
         Button("Save") {
+            // If saving fails, this call sets `didError` to
+            // `true`, so the system presents the alert. The call
+            // also returns the details that the alert displays.
             details = model.save(didError: $didError)
         }
         .alert(
@@ -94,7 +97,7 @@ Only unstyled text is supported for the message.
 ## Parameters
 
 - `title`: A text string used as the title of the alert.
-- `isPresented`: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
+- `isPresented`: A binding to a Boolean value that determines whether to present the alert. The system presents the alert when the value is `true`. When a person presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses the alert.
 - `data`: An optional source of truth for the alert. The system passes the contents to the modifier’s closures. You use this data to populate the fields of an alert that you create that the system displays to the user.
 - `actions`: A [`ContentBuilder`](../contentbuilder.md) returning the alert’s actions given the currently available data.
 - `message`: A [`ContentBuilder`](../contentbuilder.md) returning the message for the alert given the currently available data.

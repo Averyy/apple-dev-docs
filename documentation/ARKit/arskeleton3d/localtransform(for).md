@@ -17,9 +17,17 @@ Returns the local transform for a joint with a given name.
 func localTransform(for jointName: ARSkeleton.JointName) -> simd_float4x4?
 ```
 
+## Return Value
+
+The local space transformation matrix for the joint relative to its parent, or `nil` if the joint name is not found.
+
 ## Discussion
 
-Local space refers to the joints position relative to its parent joint. If an invalid joint name is passed the returned matrix will be filled with `NaN` values.
+Local space refers to the joint’s position relative to its parent joint.
+
+## Parameters
+
+- `jointName`: The name of the joint.
 
 ## See Also
 

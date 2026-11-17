@@ -60,15 +60,15 @@ A *use-case group* is a set of related schemas that share a single purpose. The 
   Identifies entity schemas in the messages domain.
 ### Types for static parameters
 - [var conversationAttribute: some AppSchemaEnum](./appschema/messagesenum/conversationattribute.md)
-  An enum schema for a conversation attribute parameter.
+  An enum schema for a conversation attribute.
 - [var customReaction: some AppSchemaEnum](./appschema/messagesenum/customreaction.md)
-  An enum schema for a custom reaction parameter.
+  An enum schema for a custom reaction.
 - [var messageAttribute: some AppSchemaEnum](./appschema/messagesenum/messageattribute.md)
-  An enum schema for a message attribute parameter.
+  An enum schema for a message attribute.
 - [var messageEffect: some AppSchemaEnum](./appschema/messagesenum/messageeffect.md)
-  An enum schema for a message effect parameter.
+  An enum schema for a message effect.
 - [var messageType: some AppSchemaEnum](./appschema/messagesenum/messagetype.md)
-  An enum schema for a message type parameter.
+  An enum schema for a message type.
 - [AppSchema.MessagesEnum](./appschema/messagesenum.md)
   Identifies enum schemas in the messages domain.
 

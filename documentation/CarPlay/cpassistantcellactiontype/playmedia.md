@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Provides an action that uses Siri to prompt the user for media playback.
+An option to to play audio or video content.
 
 **Availability**:
 - iOS 15.0+
@@ -23,15 +23,11 @@ CPAssistantCellActionTypePlayMedia
 
 ## Discussion
 
-> **Note**:  This action is only available in audio apps that include an Intents Extension capable of handling [`INSearchCallHistoryIntent`](../../Intents/insearchcallhistoryintent.md). For more information, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
+To respond to this action, make sure your app implements an Intents extension capable of handling the [`INPlayMediaIntent`](../../Intents/inplaymediaintent.md) type. When someone chooses this action, Siri prompts the person to specify the media item to play and passes that information to your app extension. Use the information to locate the specified media item, start playback, and display the [`CPNowPlayingTemplate`](../cpnowplayingtemplate.md).
 
-The system provides the user’s response to your app’s Intents Extension. Your app must respond by searching for the requested media and, if it’s available, start its playback and display a [`CPNowPlayingTemplate`](../cpnowplayingtemplate.md).
+> **Note**: This action is available only to audio or video apps.
 
-## See Also
-
-### Siri Actions
-- [CPAssistantCellActionType.startCall](./startcall.md)
-  Provides an action that uses Siri to prompt the user for a person, group, or business to call.
+For more information about how to implement an Intents extension, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
 
 
 ---

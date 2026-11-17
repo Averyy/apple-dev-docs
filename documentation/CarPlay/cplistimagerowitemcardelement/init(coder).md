@@ -15,6 +15,14 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating a card element
+- [init(image: UIImage, showsImageFullHeight: Bool, title: String?, subtitle: String?, tintColor: UIColor?)](./init%28image,showsimagefullheight,title,subtitle,tintcolor%29.md)
+  Creates a card row element with the specified image, text, and card background color.
+- [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, tintColor: UIColor?)](./init%28thumbnail,title,subtitle,tintcolor%29.md)
+  Creates a card row element with a thumbnail image, text, and background color.
+
 
 ---
 

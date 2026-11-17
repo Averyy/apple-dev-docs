@@ -22,7 +22,7 @@ let turns: [UserTurn]
 
 ### Inspecting a scenario
 - [var input: String](./input.md)
-  The scenario’s utterances joined into one line for the report’s Input column.
+  The scenario’s utterances joined into one line for the report’s input column.
 - [var expected: SiriScenarioSubject.ScenarioReport?](./expected.md)
   The scenario’s expectations as the report’s Expected column.
 

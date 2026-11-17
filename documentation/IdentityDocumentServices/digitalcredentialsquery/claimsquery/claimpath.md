@@ -76,6 +76,8 @@ Since a path can select more than one claim, a single claims query can request s
 ### Initializers
 - [init([DigitalCredentialsQuery.ClaimsQuery.PathComponent])](./claimpath/init%28_%29.md)
   Initializes a claim path.
+- [init(arrayLiteral: DigitalCredentialsQuery.ClaimsQuery.PathComponent...)](./claimpath/init%28arrayliteral%29.md)
+  Initialize a claims path pointer from a list of steps.
 ### Instance Properties
 - [var components: [DigitalCredentialsQuery.ClaimsQuery.PathComponent]](./claimpath/components.md)
   The steps that lead from the top level of a credential to the claim.

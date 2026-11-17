@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+An axis-aligned bounding box for the extent of an object.
+
 **Availability**:
 - visionOS 2.0+
 

@@ -34,6 +34,8 @@ init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform = .identity, m
   Creates a stroke with the line properties, path, transform, mask, and random seed that you specify.
 - [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?, randomSeed: UInt32)](./init%28ink,path,transform,mask,randomseed%29-epus.md)
   Creates a macOS stroke with the line properties, path, transform, mask, and random seed that you specify.
+- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?, randomSeed: UInt32, id: UUID, renderGroupID: UUID?, renderState: PKStroke.RenderState?)](./init%28ink,path,transform,mask,randomseed,id,rendergroupid,renderstate%29-1qvj7.md)
+- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32, id: UUID, renderGroupID: UUID?, renderState: PKStroke.RenderState?)](./init%28ink,path,transform,mask,randomseed,id,rendergroupid,renderstate%29-idqu.md)
 
 
 ---

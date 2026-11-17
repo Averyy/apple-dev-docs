@@ -32,6 +32,14 @@ After the closure returns, the framework validates every vertex index against th
 
 - `body`: A closure that receives a mutable span over the buffer.
 
+## See Also
+
+### Replacing geometry data
+- [func replaceAdjacencies<R>((inout MutableRawSpan) -> R) throws -> R](./replaceadjacencies%28_%29.md)
+  Fills the adjacency buffer using the given closure.
+- [func replaceAdjacencyEndIndices<R>((inout MutableRawSpan) -> R) throws -> R](./replaceadjacencyendindices%28_%29.md)
+  Fills the per-vertex adjacency end-indices buffer using the given closure.
+
 
 ---
 

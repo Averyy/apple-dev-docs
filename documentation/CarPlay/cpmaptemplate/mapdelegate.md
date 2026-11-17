@@ -23,7 +23,7 @@ weak var mapDelegate: (any CPMapTemplateDelegate)? { get set }
 
 ## See Also
 
-### Handling Map Template Events
+### Responding to map-related events
 - [protocol CPMapTemplateDelegate](../cpmaptemplatedelegate.md)
   The protocol an object implements to handle events from a map template.
 

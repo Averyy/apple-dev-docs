@@ -45,7 +45,7 @@ Alternatively, you can specify the class name when creating a [`UISceneConfigura
 In a scene-based app:
 
 - UIKit usually creates a `UIWindowScene` object instead of a [`UIScene`](../UIKit/uiscene.md) object. When configuring your app’s scene support, specify `UIWindowScene` objects instead of `UIScene` objects.
-- Use [`CPTemplateApplicationScene`](../CarPlay/cptemplateapplicationscene.md) if your app is adopting scenes for CarPlay. To learn how to add a CarPlay scene see [Displaying Content in CarPlay](../CarPlay/displaying-content-in-carplay.md).
+- Use [`CPTemplateApplicationScene`](../CarPlay/cptemplateapplicationscene.md) if your app is adopting scenes for CarPlay. To learn how to add a CarPlay scene see [Building your app’s initial CarPlay interface](../CarPlay/building-your-apps-initial-carplay-interface.md).
 - [`UISceneSession`](../UIKit/uiscenesession.md) contains a unique identifier and the configuration details of the scene.
 - `UISceneDelegate` and [`UIWindowSceneDelegate`](../UIKit/uiwindowscenedelegate.md) both handle scene-specific life-cycle events.
 - `UISceneConfiguration` defines how to create and configure scenes.

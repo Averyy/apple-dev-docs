@@ -28,7 +28,9 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, willShow navigationAlert
 
 ## See Also
 
-### Handling Navigation Alerts
+### Handling navigation alerts
+- [func mapTemplate(CPMapTemplate, shouldShowNotificationFor: CPNavigationAlert) -> Bool](./maptemplate%28_,shouldshownotificationfor%29-5lu8a.md)
+  Asks the delegate whether the system should display the navigation alert as a notification when the app is in the background.
 - [func mapTemplate(CPMapTemplate, didShow: CPNavigationAlert)](./maptemplate%28_,didshow%29.md)
   Tells the delegate that the system showed the navigation alert.
 - [func mapTemplate(CPMapTemplate, willDismiss: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)](./maptemplate%28_,willdismiss,dismissalcontext%29.md)

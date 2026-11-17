@@ -23,7 +23,7 @@ protocol ReaderEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var documentKind: some AppSchemaEnum](./readerenum/documentkind.md)
-  An enum schema for a document kind parameter.
+  An enum schema for a document kind.
 
 ## Relationships
 
@@ -36,7 +36,7 @@ protocol ReaderEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var documentKind: some AppSchemaEnum](./readerenum/documentkind.md)
-  An enum schema for a document kind parameter.
+  An enum schema for a document kind.
 
 
 ---

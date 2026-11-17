@@ -4,6 +4,8 @@
 **Kind**: property  
 **Role**: Instance Property
 
+The camera intrinsics.
+
 **Availability**:
 - visionOS 2.0+
 
@@ -19,6 +21,7 @@ var intrinsics: simd_float3x3 { get }
 - [var cameraPosition: CameraFrameProvider.CameraPosition](./cameraposition.md)
   The camera position.
 - [var cameraType: CameraFrameProvider.CameraType](./cameratype.md)
+  The camera type.
 - [var captureTimestamp: TimeInterval](./capturetimestamp.md)
   The capture timestamp.
 - [var colorTemperature: Int](./colortemperature.md)

@@ -40,6 +40,8 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
   Events associated with video playback for VideoPlayerComponent.
 - [enum ImagePresentationEvents](./imagepresentationevents.md)
   Events associated with viewing mode transitions for image presentation components.
+- [enum GaussianSplatEvents](./gaussiansplatevents.md)
+  A namespace for events about Gaussian splat rendering.
 
 
 ---

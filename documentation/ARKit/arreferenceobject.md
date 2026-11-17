@@ -47,13 +47,14 @@ ARKit on iOS supports the `.referenceobject` format starting in iOS 27. If you a
 - [var rawFeaturePoints: ARPointCloud](./arreferenceobject/rawfeaturepoints.md)
   A coarse representation of the space-mapping data contained in the reference object.
 - [var resourceGroupName: String?](./arreferenceobject/resourcegroupname.md)
+  The AR resource group name for this object.
 - [var scale: simd_float3](./arreferenceobject/scale.md)
   A scale factor for the local coordinate space the reference object defines.
 - [var usdzFile: URL?](./arreferenceobject/usdzfile.md)
   The URL to the extracted USDZ model, if available.
 ### Instance Methods
 - [func applyingTransform(simd_float4x4) -> ARReferenceObject](./arreferenceobject/applyingtransform%28_%29.md)
-  Returns a new reference object created by applying the specified transform to this reference object’s geometric data.
+  Returns a new reference object by applying the specified transform to the object’s origin.
 - [func export(to: URL, previewImage: UIImage?) throws](./arreferenceobject/export%28to,previewimage%29.md)
   Writes a binary representation of the object to the specified file URL.
 - [func merging(ARReferenceObject) throws -> ARReferenceObject](./arreferenceobject/merging%28_%29.md)
@@ -63,7 +64,7 @@ ARKit on iOS supports the `.referenceobject` format starting in iOS 27. If you a
   The standard filename extension for exported [`ARReferenceObject`](./arreferenceobject.md) instances.
 ### Type Methods
 - [class func referenceObjects(inGroupNamed: String, bundle: Bundle?) -> Set<ARReferenceObject>?](./arreferenceobject/referenceobjects%28ingroupnamed,bundle%29.md)
-  Loads all reference objects in the specified AR Resource Group in your Xcode project’s asset catalog.
+  Returns the set of ARReferenceObjects in the specified resource group and bundle.
 
 ## Relationships
 

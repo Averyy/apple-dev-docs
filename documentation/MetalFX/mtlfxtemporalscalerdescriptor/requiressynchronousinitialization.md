@@ -11,7 +11,7 @@ A Boolean value that indicates whether MetalFX compiles a temporal scaling effec
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 27.1+
+- tvOS 27.2+
 
 ## Declaration
 
@@ -30,7 +30,7 @@ This property gives you the option to decide when it’s better for your app to 
 - As you create the effect
 - After you create the effect, likely when your app needs to upscale the initial textures
 
-You can create a `MFXTemporalScalingEffect` instance that can upscale textures at its best speed immediately after you create it by setting this property to [`true`](../../Swift/true.md) and then calling the [`makeTemporalScaler(device:)`](./maketemporalscaler%28device%29.md) method. However, it may take the framework more time for that method to return while the framework creates the temporal scaling effect and compiles its underlying scaler.
+You can create a [`MTLFXTemporalScaler`](../mtlfxtemporalscaler.md) instance that can upscale textures at its best speed immediately after you create it by setting this property to [`true`](../../Swift/true.md) and then calling the [`makeTemporalScaler(device:)`](./maketemporalscaler%28device%29.md) method. However, it may take the framework more time for that method to return while the framework creates the temporal scaling effect and compiles its underlying scaler.
 
 By default, the property is equal to [`false`](../../Swift/false.md), which tells MetalFX to quickly create and return the temporal scaling-effect instance, and then compile a faster upscaler in the background. However, this means the effect can take more time to upscale textures while the framework compiles the underlying upscaler. When the framework finishes compiling, the effect runs just as fast as if you set the property to `true`.
 

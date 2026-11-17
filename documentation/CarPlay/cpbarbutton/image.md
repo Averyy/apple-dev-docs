@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The image displayed on the bar button.
+The image to display in the button.
 
 **Availability**:
 - iOS 12.0+
@@ -23,17 +23,15 @@ var image: UIImage? { get set }
 
 ## Discussion
 
-If you provide an animated image, the button displays only the first image in the animation sequence.
-
-Setting this property has an effect only when the button type is [`CPBarButton.Type.image`](./type/image.md).
+Specify the button’s image at initialization time and use this property to update it. If you initialize the button with text instead of an image, this property is `nil`.
 
 ## See Also
 
-### Configuring the Button
-- [var isEnabled: Bool](./isenabled.md)
-  A Boolean value that enables and disables the bar button.
+### Configuring the button
 - [var title: String?](./title.md)
-  The title displayed on the bar button.
+  The text to display in the button.
+- [var isEnabled: Bool](./isenabled.md)
+  A Boolean value that indicates whether the button is enabled.
 
 
 ---

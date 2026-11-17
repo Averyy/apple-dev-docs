@@ -29,7 +29,7 @@ CarPlay only displays the indicator when the template is a root-template of a ta
 
 ## See Also
 
-### Accessing Tab Information
+### Accessing tab information
 - [var tabTitle: String?](./tabtitle.md)
   A short title that describes the content of the tab.
 - [var tabImage: UIImage?](./tabimage.md)

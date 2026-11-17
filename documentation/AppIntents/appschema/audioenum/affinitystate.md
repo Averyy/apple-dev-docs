@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An enum schema for an affinity state parameter.
+An enum schema for an affinity state.
 
 **Availability**:
 - iOS 27.0+
@@ -21,9 +21,9 @@ var affinityState: some AppSchemaEnum { get }
 
 ## Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `audio` domain and a parameter type matches the `affinityState` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .audio.affinityState)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `audio` domain and a parameter type matches the `affinityState` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum(schema: .audio.affinityState)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an app enum that conforms to the `affinityState` schema:
+The following example shows an app enum that conforms to the `affinityState` schema. You can create a type that conforms to the schema by adding the `@AppEnum` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `audio_affinityState` and select it from the code-completion suggestions:
 
 ```swift
 @AppEnum(schema: .audio.affinityState)
@@ -51,15 +51,15 @@ For more information about the App Intents framework and the experiences it supp
 
 ### Types for static parameters
 - [var activity: some AppSchemaEnum](./activity.md)
-  An enum schema for an activity parameter.
+  An enum schema for an activity.
 - [var appViewIdentifier: some AppSchemaEnum](./appviewidentifier.md)
-  An enum schema for an app view identifier parameter.
+  An enum schema for an app view identifier.
 - [var invocationSource: some AppSchemaEnum](./invocationsource.md)
-  An enum schema for an invocation source parameter.
+  An enum schema for an invocation source.
 - [var playbackAttributes: some AppSchemaEnum](./playbackattributes.md)
-  An enum schema for a playback attributes parameter.
+  An enum schema for a playback attributes.
 - [var queueInsertionLocation: some AppSchemaEnum](./queueinsertionlocation.md)
-  An enum schema for a queue insertion location parameter.
+  An enum schema for a queue insertion location.
 - [AppSchema.AudioEnum](../audioenum.md)
   Identifies enum schemas in the audio domain.
 

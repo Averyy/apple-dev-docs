@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+A GB/T connector with direct current.
+
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
@@ -18,6 +20,10 @@ case gbtDC
 ```c
 CPChargingStationConnectionConnectorGBTDC
 ```
+
+## Discussion
+
+This connector type offers DC charging for electric vehicles in China.
 
 
 ---

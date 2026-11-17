@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Tells the delegate that the vehicle changed its selected content style.
+Tells the delegate about changes to the interface’s appearance.
 
 **Availability**:
 - iOS 13.0+
@@ -23,12 +23,17 @@ optional func sessionConfiguration(_ sessionConfiguration: CPSessionConfiguratio
 
 ## Discussion
 
-The vehicle selects the content style according to the ambient light level, which can change periodically. Use this method to make sure your navigation app is always drawing the most appropriate style of map content in its base view.
+Use this method to toggle your interface between a light or dark style. When the ambient light levels change, a vehicle might update this value to ensure content on the center display remains easy to see.
 
 ## Parameters
 
-- `sessionConfiguration`: The current session configuration.
-- `contentStyle`: The vehicle’s selected content style.
+- `sessionConfiguration`: The session configuration object that reports the change.
+
+## See Also
+
+### Handling environmental changes
+- [func sessionConfiguration(CPSessionConfiguration, limitedUserInterfacesChanged: CPLimitableUserInterface)](./sessionconfiguration%28_,limiteduserinterfaceschanged%29.md)
+  Tells the delegate about changes to the availability of interface features.
 
 
 ---

@@ -15,7 +15,7 @@ Creates a section with a header and the provided section content.
 - visionOS 1.0+ - Deprecated in 27.3 (renamed: Section(content:header:))
 - watchOS 6.0+ - Deprecated in 27.3 (renamed: Section(content:header:))
 
-> **Deprecated**: Use `init(content:header:)-29e2l` instead.
+> **Deprecated**: Use [`init(content:header:)`](./init%28content,header%29-8u854.md) instead.
 
 ## Declaration
 

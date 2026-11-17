@@ -38,6 +38,8 @@ When [`extendedMetadata`](./phasset/extendedmetadata.md) is called, these proper
 ### Instance Properties
 - [var originalFilename: String?](./phassetextendedmetadata/originalfilename.md)
   The original file name of this asset.
+- [var timeZone: TimeZone?](./phassetextendedmetadata/timezone.md)
+  The time zone in which this asset was captured.
 
 ## Relationships
 

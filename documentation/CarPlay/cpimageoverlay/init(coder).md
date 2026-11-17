@@ -15,6 +15,14 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating an image overlay
+- [init(image: UIImage, alignment: CPImageOverlay.Alignment)](./init%28image,alignment%29.md)
+  Creates an overlay that displays an image.
+- [init(text: String, textColor: UIColor, backgroundColor: UIColor, alignment: CPImageOverlay.Alignment)](./init%28text,textcolor,backgroundcolor,alignment%29.md)
+  Creates an overlay that displays text in a colored badge.
+
 
 ---
 

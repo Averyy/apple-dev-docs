@@ -27,7 +27,7 @@ Assigning a new instance of [`CPContact`](../cpcontact.md) updates the template.
 
 ## See Also
 
-### Configuring the Contact
+### Configuring the contact
 - [class CPContact](../cpcontact.md)
   A data object that contains information about a contact.
 

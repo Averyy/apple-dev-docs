@@ -26,6 +26,12 @@ var primaryAction: CPTextButton { get }
 
 Specify the button at initialization time and use this property to retrieve it later.
 
+## See Also
+
+### Getting the action buttons
+- [var secondaryAction: CPTextButton?](./secondaryaction.md)
+  An optional action button to display in the panel.
+
 
 ---
 

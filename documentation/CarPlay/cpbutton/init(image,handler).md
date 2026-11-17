@@ -38,7 +38,7 @@ CarPlay doesn’t support animated images. If you provide an animated image, Car
 
 ## See Also
 
-### Creating a Button
+### Creating a button
 - [let CPButtonMaximumImageSize: CGSize](../cpbuttonmaximumimagesize.md)
   The maximum size of a button’s image that CarPlay supports.
 

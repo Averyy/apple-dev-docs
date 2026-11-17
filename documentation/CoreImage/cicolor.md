@@ -56,6 +56,10 @@ Standard dynamic range (SDR) color color component values range from `0.0` to `1
 - [convenience init(color: UIColor)](./cicolor/init%28color%29.md)
 - [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./cicolor/init%28red,green,blue,alpha%29.md)
   Initialize a Core Image color object in the sRGB color space with the specified red, green, blue, and alpha component values.
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](./cicolor/init%28red,green,blue,colorspace%29-6d8o.md)
+  Initialize a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)](./cicolor/init%28red,green,blue,alpha,colorspace%29-8yg0z.md)
+  Initialize a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
 - [- initWithRed:green:blue:](./cicolor/initwithred_green_blue_.md)
   Initialize a Core Image color object in the sRGB color space with the specified red, green, and blue component values.
 ### Creating Color Objects
@@ -113,10 +117,6 @@ Standard dynamic range (SDR) color color component values range from `0.0` to `1
 - [convenience init(CGColor: CGColor)](./cicolor/init%28cgcolor%29-2n26w.md)
 - [init(CGColor: CGColor)](./cicolor/init%28cgcolor%29-2nx98.md)
 - [init?(coder: NSCoder)](./cicolor/init%28coder%29.md)
-- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)](./cicolor/init%28red,green,blue,alpha,colorspace%29-8yg0z.md)
-  Initialize a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
-- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](./cicolor/init%28red,green,blue,colorspace%29-6d8o.md)
-  Initialize a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
 
 ## Relationships
 

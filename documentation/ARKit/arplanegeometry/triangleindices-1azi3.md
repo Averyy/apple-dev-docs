@@ -18,7 +18,7 @@ A buffer of indices describing the triangle mesh formed by the plane geometry’
 
 ## Discussion
 
-Each 16-bit integer value in this buffer represents an index into the [`vertices`](./vertices-3kgkm.md) and [`textureCoordinates`](./texturecoordinates-91pbc.md) buffers. Each set of three indices identifies the vertices that form a single triangle in the mesh. You can use buffer as an index buffer for a triangle mesh in GPU-based rendering or to create 3D model asset files.
+Each 16-bit integer value in this buffer represents an index into the [`vertices`](./vertices-3kgkm.md) and [`textureCoordinates`](./texturecoordinates-91pbc.md) buffers. Each set of three indices identifies the vertices that form a single triangle in the mesh. You can use this buffer as an index buffer for a triangle mesh in GPU-based rendering or to create 3D model asset files.
 
 Each set of three indices forms a triangle, so the number of indices in the [`triangleIndices`](./triangleindices-1azi3.md) buffer is three times the [`triangleCount`](./trianglecount.md) value.
 

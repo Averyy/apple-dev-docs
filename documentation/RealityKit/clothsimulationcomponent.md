@@ -98,6 +98,8 @@ The simulation component also stores various parameters that affect the entire s
 ## See Also
 
 ### Simulation and bodies
+- [Simulating cloth bodies, materials, and forces](./simulating-cloth-bodies-materials-and-forces.md)
+  Create realistic fabric motion with Reality Composer Pro.
 - [struct ClothBodyComponent](./clothbodycomponent.md)
   A component that simulates an entity as a deformable cloth body, when part of a cloth simulation.
 - [struct ClothBodyMaterial](./clothbodymaterial.md)

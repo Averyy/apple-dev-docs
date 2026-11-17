@@ -21,6 +21,16 @@ class var maximumActionsCount: Int { get }
 @property (class, nonatomic, readonly) NSInteger maximumActionsCount;
 ```
 
+## See Also
+
+### Getting the actions
+- [var actions: [CPAlertAction]](./actions.md)
+  The array of actions associated with this navigation alert.
+- [var primaryAction: CPAlertAction](./primaryaction.md)
+  The primary action, and button, for the navigation alert.
+- [var secondaryAction: CPAlertAction?](./secondaryaction.md)
+  An optional secondary action, and button, for the navigation alert.
+
 
 ---
 

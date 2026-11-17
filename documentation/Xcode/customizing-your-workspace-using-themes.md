@@ -19,7 +19,7 @@ When you use theme presets, the light appearance has a subtle look while the dar
 
 ## Select themes from presets
 
-On the Theme pane of Appearance settings, click Choose in the Theme row, and choose a custom or preset theme from the popover that appears. The preview updates to show your changes. Changes you make to themes also appear immediately in open Xcode windows. All types of editors and even live issues use the themes that you configure in the Theme pane.
+On the Theme pane of Appearance settings, click Choose in the Theme row, and choose a custom or preset theme from the popover that appears. The preview updates to show your changes. Changes you make to themes also appear immediately in open Xcode windows. All types of editors and even predictive issues use the themes that you configure in the Theme pane.
 
 ![A screenshot of Theme settings showing the preset popover.](https://developer.apple.com/tutorials/images/com.apple.Xcode/select-theme-presets@2x.png)
 

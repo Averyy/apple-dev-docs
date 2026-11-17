@@ -36,6 +36,8 @@ The Input Method Kit uses the hint to place the candidates window in a location 
 ### Constants
 - [typealias IMKCandidatePanelType](./imkcandidatepaneltype.md)
   Types of candidates windows provide by the Input Method Kit.
+- [let IMKCandidatesOpacityAttributeName: String](./imkcandidatesopacityattributename.md)
+  The opacity level for a candidates window.
 
 
 ---

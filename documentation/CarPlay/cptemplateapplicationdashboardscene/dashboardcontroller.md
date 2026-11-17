@@ -27,7 +27,7 @@ Use this property to access the controller CarPlay creates when it connects your
 
 ## See Also
 
-### Accessing the Dashboard Controller
+### Accessing the dashboard controller
 - [class CPDashboardController](../cpdashboardcontroller.md)
   A controller that provides shortcut buttons for the CarPlay Dashboard.
 

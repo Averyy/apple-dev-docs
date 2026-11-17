@@ -32,6 +32,9 @@ The system defines families broadly so that it can reuse your snippets in multip
 ### Getting the supported families
 - [static var standard: CardSnippetFamily](./cardsnippetfamily/standard.md)
   A family that supports a standard amount of space.
+### Type Properties
+- [static var compact: CardSnippetFamily](./cardsnippetfamily/compact.md)
+  A smaller amount of detail, for contexts with little room, such as Apple Watch.
 
 ## Relationships
 
@@ -54,8 +57,6 @@ The system defines families broadly so that it can reuse your snippets in multip
   A visual representation that the system renders for an entity.
 - [enum EntitySnippetContentBuilder](./entitysnippetcontentbuilder.md)
   A result builder that assembles an entity’s snippet declarations.
-- [struct CardSnippetSize](./cardsnippetsize.md)
-  A size category for a snippet card.
 
 
 ---

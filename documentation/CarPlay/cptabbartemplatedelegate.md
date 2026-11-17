@@ -28,7 +28,7 @@ You use the `CPTabBarTemplateDelegate` protocol to respond to a tab bar template
 
 ## Topics
 
-### Managing the Selected Template
+### Responding to tab selections
 - [func tabBarTemplate(CPTabBarTemplate, didSelect: CPTemplate)](./cptabbartemplatedelegate/tabbartemplate%28_,didselect%29.md)
   Tells the delegate when the tab bar selects the specified template.
 
@@ -39,7 +39,7 @@ You use the `CPTabBarTemplateDelegate` protocol to respond to a tab bar template
 
 ## See Also
 
-### Managing Tab Bar Interactions
+### Responding to tab selections
 - [var delegate: (any CPTabBarTemplateDelegate)?](./cptabbartemplate/delegate.md)
   The object that acts as the template’s delegate.
 

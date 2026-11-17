@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A Boolean value that indicates whether the button is in a selected state.
+A Boolean value that indicates the selected state of a custom button.
 
 **Availability**:
 - iOS 14.0+
@@ -23,15 +23,15 @@ var isSelected: Bool { get set }
 
 ## Discussion
 
-When this property is set to [`true`](../../Swift/true.md), CarPlay draws the button with a selected appearance to indicate its selected state. You can only update this property manually on instances of [`CPNowPlayingImageButton`](../cpnowplayingimagebutton.md). All system-provided buttons—for example, [`CPNowPlayingShuffleButton`](../cpnowplayingshufflebutton.md) or [`CPNowPlayingRepeatButton`](../cpnowplayingrepeatbutton.md)—manage their own selected states internally.
+Use this property in [`CPNowPlayingImageButton`](../cpnowplayingimagebutton.md) objects to change the selected state of your button. Setting this property to `true` draws the button with a selected appearance. Setting the property to `false` draws the button with its unselected appearance. The default value of this property is `false`.
 
-The default value is [`false`](../../Swift/false.md).
+> **Note**: You can’t change the selected state of system-provided button types such as [`CPNowPlayingShuffleButton`](../cpnowplayingshufflebutton.md) or [`CPNowPlayingRepeatButton`](../cpnowplayingrepeatbutton.md). Those buttons manage their own selected state and ignore any attempts to change this value.
 
 ## See Also
 
-### Managing the Button State
+### Managing the button state
 - [var isEnabled: Bool](./isenabled.md)
-  A Boolean value that indicates whether the button is in an enabled state.
+  A Boolean value that indicates whether the button is enabled.
 
 
 ---

@@ -26,6 +26,8 @@ The translation aspect of this matrix indicates the position of the center of th
 
 Rotational aspects of the matrix indicate the orientation of the eyeball—for example, a rotation about the x-axis directs the pupil upward or downward. The eye does not rotate about the z-axis.
 
+## Discussion
+
 ![Diagram showing the coordinate axis origin defined by the leftEyeTransform, representing both the position and rotation of the eye relative to the face anchor.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3001546@2x.png)
 
 ## See Also

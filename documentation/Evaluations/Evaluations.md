@@ -80,13 +80,13 @@ The framework evaluates your intelligence-powered features against the metrics y
 - [struct EvaluationRunErrors](./evaluationrunerrors.md)
   A summary of the failures encountered during an evaluation run.
 - [struct ResultColumn](./resultcolumn.md)
-  A typed descriptor for a column in an evaluation result DataFrame.
+  A typed descriptor for a column in an evaluation result data frame.
 - [var inputColumn: ResultColumn<Self.Sample>](./evaluation/inputcolumn.md)
-  A typed column descriptor for the input samples in the detailed DataFrame.
+  A typed column descriptor for the input samples in the detailed [`DataFrame`](../TabularData/dataframe.md).
 - [var responseColumn: ResultColumn<Self.Subject>](./evaluation/responsecolumn.md)
-  A typed column descriptor for the model responses in the detailed DataFrame.
+  A typed column descriptor for the model responses in the detailed [`DataFrame`](../TabularData/dataframe.md).
 - [var expectedColumn: ResultColumn<Self.Sample.ExpectedValue>](./evaluation/expectedcolumn.md)
-  A typed column descriptor for the expected values in the detailed DataFrame.
+  A typed column descriptor for the expected values in the detailed [`DataFrame`](../TabularData/dataframe.md).
 ### Model-judge evaluations
 - [Designing effective model-judge evaluators](./designing-effective-model-judges.md)
   Configure model-judge evaluators that produce scores you correlate with human review.

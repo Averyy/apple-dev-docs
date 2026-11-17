@@ -6,7 +6,7 @@ Discover the tools, programming languages, and resources you use to develop apps
 
 Xcode is Apple’s integrated developer environment (IDE). It offers the tools you need to develop, test, and distribute apps for Apple platforms, including predictive code completion, generative intelligence powered by the best coding models and agents, advanced profiling and debugging tools, and simulators for Apple devices. Use it to create:
 
-- [Apps](./app-design-and-ui.md) that you ship on the App Store
+- [Apps](./apps-and-content.md) that you ship on the App Store
 - [App extensions](./app-extensions.md) that augment system or app-specific features
 - [Swift packages](../Xcode/swift-packages.md), libraries, and frameworks that contain code for distribution
 - [Scripts](./development-process.md#Automate-tasks-with-shell-scripts), [tools](../Xcode/command-line-tools.md), [documentation](../Xcode/writing-documentation.md), and other types of content

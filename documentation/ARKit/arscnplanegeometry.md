@@ -22,9 +22,9 @@ class ARSCNPlaneGeometry
 
 ## Overview
 
-[`ARSCNPlaneGeometry`](./arscnplanegeometry.md) is a subclass of [`SCNGeometry`](../SceneKit/scngeometry.md) that wraps the mesh data provided by the [`ARPlaneGeometry`](./arplanegeometry.md) class. You can use [`ARSCNPlaneGeometry`](./arscnplanegeometry.md) to visualize the plane shape estimates provided by ARKit in a SceneKit view.
+`ARSCNPlaneGeometry` is a subclass of [`SCNGeometry`](../SceneKit/scngeometry.md) that wraps the mesh data provided by the [`ARPlaneGeometry`](./arplanegeometry.md) class. You can use `ARSCNPlaneGeometry` to visualize the plane shape estimates provided by ARKit in a SceneKit view.
 
-> ❗ **Important**:  [`ARSCNPlaneGeometry`](./arscnplanegeometry.md) is available only in SceneKit views or renderers that use Metal. This class is not supported for OpenGL-based SceneKit rendering.
+> ❗ **Important**:  `ARSCNPlaneGeometry` is available only in SceneKit views or renderers that use Metal. This class is not supported for OpenGL-based SceneKit rendering.
 
 As your AR session continues to run, ARKit provides refined estimates of a detected plane’s 2D shape. Use the [`update(from:)`](./arscnplanegeometry/update%28from%29.md) method to incorporate those refinements into the plane’s SceneKit representation.
 

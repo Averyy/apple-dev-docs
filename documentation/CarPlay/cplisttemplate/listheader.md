@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An optional details header displayed at the top of the list template.
+An optional header to display between the navigation bar and first section of content.
 
 **Availability**:
 - iOS 26.4+
@@ -23,9 +23,17 @@ var listHeader: CPListTemplateDetailsHeader? { get set }
 
 ## Discussion
 
-The list header provides a way to display additional context or summary information above the list sections. When set, the header appears between the navigation bar and the first list section.
+The list header displays additional context or summary information above the sections of the list. Use this property to retrieve the previously configured header. If you modify this property when the list is visible, CarPlay refreshes the appearance of the header to reflect the new content.
 
-Assigning to this property will dynamically update the List Template to show or hide the header.
+## See Also
+
+### Managing the supplemental content
+- [var title: String?](./title.md)
+  The title to display in the navigation bar when the list is visible.
+- [var headerGridButtons: [CPGridButton]?](./headergridbuttons.md)
+  Buttons to display in the header area above the list content.
+- [var assistantCellConfiguration: CPAssistantCellConfiguration?](./assistantcellconfiguration.md)
+  The object that provides the configuration attributes for the assistant cell.
 
 
 ---

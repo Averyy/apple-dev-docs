@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/MediaIntents": {
       "file_path": "documentation/MediaIntents/MediaIntents.md",
-      "hash": "730a45755713b3009a41cdaa81f723426c5dab8435ec5a5e09e17d99e3a79dc7"
+      "hash": "1b8fc4430d558b94ce4b39647989fd456749769076dedd811cb5cc32ba458b5c"
     },
     "https://developer.apple.com/documentation/mediaintents/audiosearch": {
       "file_path": "documentation/MediaIntents/audiosearch.md",
@@ -56,9 +56,37 @@
       "file_path": "documentation/MediaIntents/responding-to-audio-search-and-playback-requests.md",
       "hash": "9534916fc96890a9fca41a5db39e7b367816257305d9e79f6e73384a8cc6a853"
     },
+    "https://developer.apple.com/documentation/mediaintents/videosearch": {
+      "file_path": "documentation/MediaIntents/videosearch.md",
+      "hash": "6be30557a9ecc84e9f5eed04966879b13a539c35656ee726c98846178d99a7bb"
+    },
+    "https://developer.apple.com/documentation/mediaintents/videosearch/criteria-swift.enum": {
+      "file_path": "documentation/MediaIntents/videosearch/criteria-swift.enum.md",
+      "hash": "bd5bd54758e03e420452e1a27ec2edd156aa869fda0992452262c53ec8ffd6ae"
+    },
+    "https://developer.apple.com/documentation/mediaintents/videosearch/criteria-swift.enum/searchquery(_:)": {
+      "file_path": "documentation/MediaIntents/videosearch/criteria-swift.enum/searchquery(_).md",
+      "hash": "28cd2bfa3003c32a1dc94e80e7781cb9ee5b85eeba9ecc98b82c37c21e8d0fad"
+    },
+    "https://developer.apple.com/documentation/mediaintents/videosearch/criteria-swift.enum/unspecified": {
+      "file_path": "documentation/MediaIntents/videosearch/criteria-swift.enum/unspecified.md",
+      "hash": "c04a208d324a909f9c0b7d999f6b6b3e063aa99b989f3321a36d7e53164252c3"
+    },
+    "https://developer.apple.com/documentation/mediaintents/videosearch/criteria-swift.enum/urls(_:)": {
+      "file_path": "documentation/MediaIntents/videosearch/criteria-swift.enum/urls(_).md",
+      "hash": "ffc3837fbc874926b82f7c24bc02bf70f0cc1fa9e7867ac7be6425b5d0351158"
+    },
+    "https://developer.apple.com/documentation/mediaintents/videosearch/criteria-swift.property": {
+      "file_path": "documentation/MediaIntents/videosearch/criteria-swift.property.md",
+      "hash": "a89ae838ac10313de5f7778cfb2074689d86f5e693625d5a2ef82e53a794f4e2"
+    },
+    "https://developer.apple.com/documentation/mediaintents/videosearch/init(criteria:)": {
+      "file_path": "documentation/MediaIntents/videosearch/init(criteria).md",
+      "hash": "bcab54007db9d48a380fff51fb7dd43ea20cc0c8ccba43517391f20bd6238c64"
+    },
     "https://developer.apple.com/tutorials/data/documentation/MediaIntents.json": {
       "file_path": "documentation/MediaIntents/MediaIntents.md",
-      "hash": "730a45755713b3009a41cdaa81f723426c5dab8435ec5a5e09e17d99e3a79dc7"
+      "hash": "1b8fc4430d558b94ce4b39647989fd456749769076dedd811cb5cc32ba458b5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch.json": {
       "file_path": "documentation/MediaIntents/audiosearch.md",
@@ -111,12 +139,40 @@
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/responding-to-audio-search-and-playback-requests.json": {
       "file_path": "documentation/MediaIntents/responding-to-audio-search-and-playback-requests.md",
       "hash": "9534916fc96890a9fca41a5db39e7b367816257305d9e79f6e73384a8cc6a853"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaintents/videosearch.json": {
+      "file_path": "documentation/MediaIntents/videosearch.md",
+      "hash": "6be30557a9ecc84e9f5eed04966879b13a539c35656ee726c98846178d99a7bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaintents/videosearch/criteria-swift.enum.json": {
+      "file_path": "documentation/MediaIntents/videosearch/criteria-swift.enum.md",
+      "hash": "bd5bd54758e03e420452e1a27ec2edd156aa869fda0992452262c53ec8ffd6ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaintents/videosearch/criteria-swift.enum/searchquery(_:).json": {
+      "file_path": "documentation/MediaIntents/videosearch/criteria-swift.enum/searchquery(_).md",
+      "hash": "28cd2bfa3003c32a1dc94e80e7781cb9ee5b85eeba9ecc98b82c37c21e8d0fad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaintents/videosearch/criteria-swift.enum/unspecified.json": {
+      "file_path": "documentation/MediaIntents/videosearch/criteria-swift.enum/unspecified.md",
+      "hash": "c04a208d324a909f9c0b7d999f6b6b3e063aa99b989f3321a36d7e53164252c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaintents/videosearch/criteria-swift.enum/urls(_:).json": {
+      "file_path": "documentation/MediaIntents/videosearch/criteria-swift.enum/urls(_).md",
+      "hash": "ffc3837fbc874926b82f7c24bc02bf70f0cc1fa9e7867ac7be6425b5d0351158"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaintents/videosearch/criteria-swift.property.json": {
+      "file_path": "documentation/MediaIntents/videosearch/criteria-swift.property.md",
+      "hash": "a89ae838ac10313de5f7778cfb2074689d86f5e693625d5a2ef82e53a794f4e2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaintents/videosearch/init(criteria:).json": {
+      "file_path": "documentation/MediaIntents/videosearch/init(criteria).md",
+      "hash": "bcab54007db9d48a380fff51fb7dd43ea20cc0c8ccba43517391f20bd6238c64"
     }
   },
   "metadata": {
     "render": {
       "version": 4
     },
-    "total_pages": 28
+    "total_pages": 42
   }
 }

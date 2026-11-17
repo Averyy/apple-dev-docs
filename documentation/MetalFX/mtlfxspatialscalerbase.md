@@ -11,7 +11,7 @@ An upscaling effect that generates a higher resolution texture in a render pass 
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 27.1+
+- tvOS 27.2+
 - visionOS 1.0+
 
 ## Declaration
@@ -57,33 +57,33 @@ MetalFX doesn’t track that you assign the same texture instances to each prope
 
 ### Instance Properties
 - [var colorProcessingMode: MTLFXSpatialScalerColorProcessingMode](./mtlfxspatialscalerbase/colorprocessingmode.md)
-  The color processing mode you set in this spatial scaler’s descriptor.
+  Reflects the color processing mode you set in this spatial scaler’s descriptor.
 - [var colorTexture: (any MTLTexture)?](./mtlfxspatialscalerbase/colortexture.md)
-  Input color texture you set for the scaler that supports the correct color texture usage options.
+  An input color texture you set for the spatial scaler that supports the correct color texture usage options.
 - [var colorTextureFormat: MTLPixelFormat](./mtlfxspatialscalerbase/colortextureformat.md)
-  The pixel format of the input color texture for this this scaler.
+  The pixel format of the input color texture for the spatial scaler.
 - [var colorTextureUsage: MTLTextureUsage](./mtlfxspatialscalerbase/colortextureusage.md)
-  The minimal texture usage options that your app’s input color texture needs in order to support this scaler.
+  The minimal texture usage options that your app’s input color texture must set to apply the spatial scaler.
 - [var fence: (any MTLFence)?](./mtlfxspatialscalerbase/fence.md)
-  An optional fence that you provide to synchronize your app’s untracked resources.
+  An optional fence instance that you provide to synchronize your app’s untracked resources.
 - [var inputContentHeight: Int](./mtlfxspatialscalerbase/inputcontentheight.md)
-  The height, in pixels, of the region within the color texture the scaler uses as its input.
+  The height, in pixels, of the region within the color texture the spatial scaler uses as its input.
 - [var inputContentWidth: Int](./mtlfxspatialscalerbase/inputcontentwidth.md)
-  The width, in pixels, of the region within the color texture the scaler uses as its input.
+  The width, in pixels, of the region within the color texture the spatial scaler uses as its input.
 - [var inputHeight: Int](./mtlfxspatialscalerbase/inputheight.md)
-  The height, in pixels, of the input color texture for this scaler.
+  The height, in pixels, of the input color texture for the spatial scaler.
 - [var inputWidth: Int](./mtlfxspatialscalerbase/inputwidth.md)
-  The width, in pixels, of the input color texture for this scaler.
+  The width, in pixels, of the input color texture for the spatial scaler.
 - [var outputHeight: Int](./mtlfxspatialscalerbase/outputheight.md)
-  The height, in pixels, of the output color texture for this scaler.
+  The height, in pixels, of the output color texture for the spatial scaler.
 - [var outputTexture: (any MTLTexture)?](./mtlfxspatialscalerbase/outputtexture.md)
-  The output texture into which this scaler writes its output.
+  An output texture that supports the correct depth texture usage options.
 - [var outputTextureFormat: MTLPixelFormat](./mtlfxspatialscalerbase/outputtextureformat.md)
-  The pixel format of the output color texture for this this scaler.
+  The pixel format of the output color texture for the spatial scaler.
 - [var outputTextureUsage: MTLTextureUsage](./mtlfxspatialscalerbase/outputtextureusage.md)
-  The minimal texture usage options that your app’s output color texture needs in order to support this scaler.
+  The minimal texture usage options that your app’s output texture must set to apply the spatial scaler.
 - [var outputWidth: Int](./mtlfxspatialscalerbase/outputwidth.md)
-  The width, in pixels, of the output color texture for this scaler.
+  The width, in pixels, of the output color texture for the spatial scaler.
 
 ## Relationships
 

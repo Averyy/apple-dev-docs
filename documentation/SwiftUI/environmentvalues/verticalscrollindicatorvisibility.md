@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The visiblity to apply to scroll indicators of any vertically scrollable content.
+The visibility to apply to scroll indicators of any vertically scrollable content.
 
 **Availability**:
 - iOS 16.0+

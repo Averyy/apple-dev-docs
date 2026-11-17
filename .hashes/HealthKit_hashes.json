@@ -3002,7 +3002,7 @@
     },
     "https://developer.apple.com/documentation/healthkit/hkhealthstore/getreferencesex:error:": {
       "file_path": "documentation/HealthKit/hkhealthstore/getreferencesex_error_.md",
-      "hash": "0e9dfd652016dbe3326dea3e2fd421696f2cd8d14108e398b5f8f98b88839bd0"
+      "hash": "9d836c9f35af0692eb03d691dc0dc522c76d011f221f0efc2a5d9d70e96772e6"
     },
     "https://developer.apple.com/documentation/healthkit/hkhealthstore/getrequeststatusforauthorization(toshare:read:completion:)": {
       "file_path": "documentation/HealthKit/hkhealthstore/getrequeststatusforauthorization(toshare,read,completion).md",
@@ -11638,7 +11638,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/getreferencesex:error:.json": {
       "file_path": "documentation/HealthKit/hkhealthstore/getreferencesex_error_.md",
-      "hash": "0e9dfd652016dbe3326dea3e2fd421696f2cd8d14108e398b5f8f98b88839bd0"
+      "hash": "9d836c9f35af0692eb03d691dc0dc522c76d011f221f0efc2a5d9d70e96772e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/getrequeststatusforauthorization(toshare:read:completion:).json": {
       "file_path": "documentation/HealthKit/hkhealthstore/getrequeststatusforauthorization(toshare,read,completion).md",

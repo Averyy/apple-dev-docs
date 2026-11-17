@@ -23,7 +23,7 @@ CPBarButtonStyleNone
 
 ## See Also
 
-### Button Styles
+### Getting the button style
 - [CPBarButtonStyle.rounded](./rounded.md)
   A style that provides a rounded background.
 

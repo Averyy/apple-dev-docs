@@ -15,6 +15,10 @@ Stops a session.
 extern void ar_session_stop(ar_session_t session);
 ```
 
+## Parameters
+
+- `session`: The session.
+
 ## See Also
 
 ### Sessions

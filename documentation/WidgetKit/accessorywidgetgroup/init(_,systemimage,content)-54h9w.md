@@ -20,7 +20,7 @@ Available when `Label` is `Label<Text, Image>` and `Content` conforms to `View`.
 
 ## Discussion
 
-This initializer creates a `Label` view on your behalf, and treats the localized key similar to `Text/init(_:tableName:bundle:comment:)`. See `Text` for more information about localizing strings.
+This initializer creates a `SwiftUI/Label` view on your behalf, and treats the localized key similar to `SwiftUI/Text/init(_:tableName:bundle:comment:)`. See `SwiftUI/Text` for more information about localizing strings.
 
 ## Parameters
 

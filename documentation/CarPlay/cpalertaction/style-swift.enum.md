@@ -45,9 +45,10 @@ enum CPAlertActionStyle : NSUInteger;
 
 ## See Also
 
-### Getting the Action Style
+### Getting the action style
 - [var style: CPAlertAction.Style](./style-swift.property.md)
   The display style for the action button.
+- [var color: UIColor?](./color.md)
 
 
 ---

@@ -82,6 +82,7 @@ The trigger volume itself is very simple. It lacks any physical appearance, and 
 - [class ShapeResource](./shaperesource.md)
   A representation of a shape.
 - [enum ShapeResourceError](./shaperesourceerror.md)
+  Errors that can occur when generating a static mesh or convex polyhedron shape resource.
 - [struct CollisionGroup](./collisiongroup.md)
   A bitmask used to define the collision group to which an entity belongs.
 - [struct CollisionFilter](./collisionfilter.md)

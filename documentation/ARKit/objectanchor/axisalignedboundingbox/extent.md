@@ -23,7 +23,7 @@ var extent: SIMD3<Float> { get }
 - [var max: SIMD3<Float>](./max.md)
   The maximum coordinates for the bounding box.
 - [var min: SIMD3<Float>](./min.md)
-  Minimum coordinates for the bounding box.
+  The minimum coordinates for the bounding box.
 
 
 ---

@@ -15,6 +15,12 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating a sports mode type
+- [init(eventStatusText: [String]?, eventStatusImage: UIImage?, eventClock: CPNowPlayingSportsClock?)](./init%28eventstatustext,eventstatusimage,eventclock%29.md)
+  Creates an event status object from information you provide.
+
 
 ---
 

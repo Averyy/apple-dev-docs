@@ -23,7 +23,7 @@ enum CredentialFormat
 ### Enumeration Cases
 - [DigitalCredentialsQuery.CredentialFormat.dcSDJWT](./credentialformat/dcsdjwt.md)
   An IETF SD-JWT verifiable credential.
-- [DigitalCredentialsQuery.CredentialFormat.msoMdoc](./credentialformat/msomdoc.md)
+- [DigitalCredentialsQuery.CredentialFormat.msoMDoc](./credentialformat/msomdoc.md)
   An ISO 18013-5 mobile document.
 - [DigitalCredentialsQuery.CredentialFormat.unknown](./credentialformat/unknown.md)
   A format the system doesn’t support.

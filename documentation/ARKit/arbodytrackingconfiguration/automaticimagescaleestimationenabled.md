@@ -26,6 +26,8 @@ If set to [`true`](../../Swift/true.md), ARKit uses its knowledge of the world t
 
 Enable this property when you want to detect different sized versions of a reference image. ARKit must know the physical size of an image in the real world to accurately estimate its real-world position. You enable this property to tell ARKit to estimate a recognized image’s physical size before it calculates the real-world position.
 
+> **Note**: When set to true the transform of a returned `ARImageAnchor` will use the estimated scale factor to correct the translation. Default value is `NO`.
+
 ## See Also
 
 ### Enabling Image Tracking

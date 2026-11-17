@@ -270,7 +270,7 @@
     },
     "https://developer.apple.com/documentation/devicemanagement/allowing-and-denying-apps-and-binaries": {
       "file_path": "documentation/DeviceManagement/allowing-and-denying-apps-and-binaries.md",
-      "hash": "00b82ba0c1f744088f08ccdab6e83709f49c80d5b4a247479f8275a8a1f001d1"
+      "hash": "bfc1fb581cda9e5b67df91ce329536f52b686d095ba71f5acaba661b4c0d0a02"
     },
     "https://developer.apple.com/documentation/devicemanagement/apn": {
       "file_path": "documentation/DeviceManagement/apn.md",
@@ -5950,7 +5950,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/allowing-and-denying-apps-and-binaries.json": {
       "file_path": "documentation/DeviceManagement/allowing-and-denying-apps-and-binaries.md",
-      "hash": "00b82ba0c1f744088f08ccdab6e83709f49c80d5b4a247479f8275a8a1f001d1"
+      "hash": "bfc1fb581cda9e5b67df91ce329536f52b686d095ba71f5acaba661b4c0d0a02"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/apn.json": {
       "file_path": "documentation/DeviceManagement/apn.md",

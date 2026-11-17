@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The image that the list item displays in its trailing region.
+The custom accessory image to display on the trailing edge of the list item.
 
 **Availability**:
 - iOS 12.0+
@@ -21,15 +21,19 @@ var accessoryImage: UIImage? { get }
 @property (nonatomic, strong, readonly, nullable) UIImage * accessoryImage;
 ```
 
+## Discussion
+
+If the [`accessoryType`](./accessorytype.md) property is set to [`CPListItemAccessoryType.none`](../cplistitemaccessorytype/none.md), the list item displays the image in this property. To change the accessory image in this property, call the [`setAccessoryImage(_:)`](./setaccessoryimage%28_%29.md) method.
+
 ## See Also
 
-### Managing Accessories
+### Managing accessories
 - [var accessoryType: CPListItemAccessoryType](./accessorytype.md)
-  The accessory that the list item displays in its trailing region.
-- [enum CPListItemAccessoryType](../cplistitemaccessorytype.md)
-  The accessory types that a list item can display.
+  The standard accessory type to display on the trailing edge of the list item.
 - [func setAccessoryImage(UIImage?)](./setaccessoryimage%28_%29.md)
-  Updates the list item’s accessory image.
+  The custom accessory image to display on the trailing edge of the list item.
+- [enum CPListItemAccessoryType](../cplistitemaccessorytype.md)
+  The standard image types a list item can display in its accessory region.
 
 
 ---

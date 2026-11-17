@@ -1934,11 +1934,11 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample.md",
-      "hash": "8b30f55bafb85734c3383f597818838f300289db2454d64fab9fc1f80f9a5d53"
+      "hash": "118d88049fb0cf4ba9b435b671e5718f9831c5184194622af47c66eea75b0e99"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/activephotodiodeindexes": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/activephotodiodeindexes.md",
-      "hash": "b918027724d7853fcfef50aa5a9288a662677238c67176d8a201342e58cffd70"
+      "hash": "c1520704ef912a8d161d028c43b64c94eaf030db3c624c598c802cbc6c1cf675"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/backgroundnoise": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/backgroundnoise.md",
@@ -1950,7 +1950,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/condition": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/condition.md",
-      "hash": "60e2860da345864ee3351e0b7dcdf8252a8893a97c41f1aa55eff07deae01a05"
+      "hash": "530da2c3cf4726941a3aafdcd325d1ca036beff5ad35837dac8ea9dce8de127c"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/condition/init(rawvalue:)": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/condition/init(rawvalue).md",
@@ -1966,31 +1966,31 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/conditions": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/conditions.md",
-      "hash": "1cdce7b1c9a7ee5dadbda249fe34a8c19cb17b5a913163652b475c6ec5c20d4d"
+      "hash": "e8c6e727a495d400061521797b47c59a4ddb300bf297d2c6bbb04db991f18ba3"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/effectivewavelength": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/effectivewavelength.md",
-      "hash": "defcf1b90a936221a744daa5dd63e3dec1bc28bc3d58ee9fcdb04ce58136f845"
+      "hash": "2b0bda469400d467a3119a30de8c4cd6780183a8e7ee8cb597f237d8e92938cd"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/emitter": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/emitter.md",
-      "hash": "22d8b22a3dbd89b73ba93e30c76f66ac3d50c512d987c7937e54f854d21a5ed8"
+      "hash": "915c353f832193172f7a1cef4a3199f25edcd62aa494ccc6ad4f9857b35a52a5"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/nanosecondssincestart": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/nanosecondssincestart.md",
-      "hash": "2af48aae2d0ad853d06be6bb5e5270ef17c175ca260ec24f56c5c1ce00564792"
+      "hash": "0d55f0eb1eb90173fa2b77325f9fa7d02c321816b5dea10c90f575db42cee128"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.property": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.property.md",
-      "hash": "900d8937f1fbc7e2fc1bb692e08f601f9f9f715e15f228e17678ee7e64dac933"
+      "hash": "4b3c949986e10aa211715a563a9c905d545ca08ebf6ce225dd238410b37578e3"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct.md",
-      "hash": "e685a1e71fb3fc461cdb93a3bb23f892be28cd1b3b14f01a8c86dbf30c23c043"
+      "hash": "6fc416a2eff3dbf802cce30908d8ce00b492fca1a68ea958a1178d0a62057f1e"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoise": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoise.md",
-      "hash": "e96cd887e3a54160a2a1ab78d3e54f535e410b9f3a79a54f22749e8bd32d4d83"
+      "hash": "bf961186d4834d1e3318e6f7bc8c828c3644632ee721dd28f6aae2ff3e78c94e"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoiseoffset": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoiseoffset.md",
@@ -1998,19 +1998,19 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/pinknoise": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/pinknoise.md",
-      "hash": "43545e1e1f5be7953b0ff3de3a07400fae43eeec5d493dc7e22cb72d64f47410"
+      "hash": "15726ee39a824e75f8bb688b71834c64649bcddfeee0cab15853ea09694f73bf"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/whitenoise": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/whitenoise.md",
-      "hash": "4785cafb64309d84fd3fb8c10f79367af8cfd00586940e52cfe60f155c1a9f48"
+      "hash": "9ba2fb2b090daeedafde091003b7d57bcf9befae3c24bdfb4b3dadadf94b1383"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/nominalwavelength": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/nominalwavelength.md",
-      "hash": "1d1fd87cf8b2bd6517cf55e12a19b81e4d7193161140d367d0785ba71a172232"
+      "hash": "62968d1f0d3f08dc3b16f26b596013a6c9c92937f7e6924098c058c7226dddfa"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/normalizedreflectance-15f2k": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md",
-      "hash": "08b87090c863025229528dce688998c1031caed10e628ac020c7f49e7efd27cc"
+      "hash": "ec1f2849286d72ca489b9f5949c8b8252c2fe029f7ed4c1bcad35d7e84204f37"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/normalizedreflectance-9aidm": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/normalizedreflectance-9aidm.md",
@@ -2022,11 +2022,11 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/samplingfrequency": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/samplingfrequency.md",
-      "hash": "44357f688567f88114c964483c7c4d3d3d270608d49988dabeb0d389898e1b2b"
+      "hash": "2d045cbaf3f205349c4e3bdbf2ea1dff11795c10d112ad3313c5815b6f4d9f5e"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/signalidentifier": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/signalidentifier.md",
-      "hash": "f62c34977f7a86c5111c9b4dae9512b5c7047ab6edd59041a0807ad79db57a2c"
+      "hash": "80e07e5293a5fac9f0e1b787e9dbff1baeb29255c2301e48a50996ac6c6c2f5e"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/whitenoise": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/whitenoise.md",
@@ -4646,11 +4646,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample.md",
-      "hash": "8b30f55bafb85734c3383f597818838f300289db2454d64fab9fc1f80f9a5d53"
+      "hash": "118d88049fb0cf4ba9b435b671e5718f9831c5184194622af47c66eea75b0e99"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/activephotodiodeindexes.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/activephotodiodeindexes.md",
-      "hash": "b918027724d7853fcfef50aa5a9288a662677238c67176d8a201342e58cffd70"
+      "hash": "c1520704ef912a8d161d028c43b64c94eaf030db3c624c598c802cbc6c1cf675"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/backgroundnoise.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/backgroundnoise.md",
@@ -4662,7 +4662,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/condition.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/condition.md",
-      "hash": "60e2860da345864ee3351e0b7dcdf8252a8893a97c41f1aa55eff07deae01a05"
+      "hash": "530da2c3cf4726941a3aafdcd325d1ca036beff5ad35837dac8ea9dce8de127c"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/condition/init(rawvalue:).json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/condition/init(rawvalue).md",
@@ -4678,31 +4678,31 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/conditions.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/conditions.md",
-      "hash": "1cdce7b1c9a7ee5dadbda249fe34a8c19cb17b5a913163652b475c6ec5c20d4d"
+      "hash": "e8c6e727a495d400061521797b47c59a4ddb300bf297d2c6bbb04db991f18ba3"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/effectivewavelength.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/effectivewavelength.md",
-      "hash": "defcf1b90a936221a744daa5dd63e3dec1bc28bc3d58ee9fcdb04ce58136f845"
+      "hash": "2b0bda469400d467a3119a30de8c4cd6780183a8e7ee8cb597f237d8e92938cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/emitter.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/emitter.md",
-      "hash": "22d8b22a3dbd89b73ba93e30c76f66ac3d50c512d987c7937e54f854d21a5ed8"
+      "hash": "915c353f832193172f7a1cef4a3199f25edcd62aa494ccc6ad4f9857b35a52a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/nanosecondssincestart.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/nanosecondssincestart.md",
-      "hash": "2af48aae2d0ad853d06be6bb5e5270ef17c175ca260ec24f56c5c1ce00564792"
+      "hash": "0d55f0eb1eb90173fa2b77325f9fa7d02c321816b5dea10c90f575db42cee128"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.property.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.property.md",
-      "hash": "900d8937f1fbc7e2fc1bb692e08f601f9f9f715e15f228e17678ee7e64dac933"
+      "hash": "4b3c949986e10aa211715a563a9c905d545ca08ebf6ce225dd238410b37578e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct.md",
-      "hash": "e685a1e71fb3fc461cdb93a3bb23f892be28cd1b3b14f01a8c86dbf30c23c043"
+      "hash": "6fc416a2eff3dbf802cce30908d8ce00b492fca1a68ea958a1178d0a62057f1e"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoise.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoise.md",
-      "hash": "e96cd887e3a54160a2a1ab78d3e54f535e410b9f3a79a54f22749e8bd32d4d83"
+      "hash": "bf961186d4834d1e3318e6f7bc8c828c3644632ee721dd28f6aae2ff3e78c94e"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoiseoffset.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoiseoffset.md",
@@ -4710,19 +4710,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/pinknoise.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/pinknoise.md",
-      "hash": "43545e1e1f5be7953b0ff3de3a07400fae43eeec5d493dc7e22cb72d64f47410"
+      "hash": "15726ee39a824e75f8bb688b71834c64649bcddfeee0cab15853ea09694f73bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/whitenoise.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/whitenoise.md",
-      "hash": "4785cafb64309d84fd3fb8c10f79367af8cfd00586940e52cfe60f155c1a9f48"
+      "hash": "9ba2fb2b090daeedafde091003b7d57bcf9befae3c24bdfb4b3dadadf94b1383"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/nominalwavelength.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/nominalwavelength.md",
-      "hash": "1d1fd87cf8b2bd6517cf55e12a19b81e4d7193161140d367d0785ba71a172232"
+      "hash": "62968d1f0d3f08dc3b16f26b596013a6c9c92937f7e6924098c058c7226dddfa"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md",
-      "hash": "08b87090c863025229528dce688998c1031caed10e628ac020c7f49e7efd27cc"
+      "hash": "ec1f2849286d72ca489b9f5949c8b8252c2fe029f7ed4c1bcad35d7e84204f37"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/normalizedreflectance-9aidm.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/normalizedreflectance-9aidm.md",
@@ -4734,11 +4734,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/samplingfrequency.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/samplingfrequency.md",
-      "hash": "44357f688567f88114c964483c7c4d3d3d270608d49988dabeb0d389898e1b2b"
+      "hash": "2d045cbaf3f205349c4e3bdbf2ea1dff11795c10d112ad3313c5815b6f4d9f5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/signalidentifier.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/signalidentifier.md",
-      "hash": "f62c34977f7a86c5111c9b4dae9512b5c7047ab6edd59041a0807ad79db57a2c"
+      "hash": "80e07e5293a5fac9f0e1b787e9dbff1baeb29255c2301e48a50996ac6c6c2f5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/whitenoise.json": {
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/whitenoise.md",

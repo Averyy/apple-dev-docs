@@ -18,6 +18,10 @@ An expectation that Siri surfaces specific app entities by search or resolution.
 struct Finds
 ```
 
+## Mentions
+
+- [Evaluating your app’s integration with Siri](./evaluating-your-apps-integration-with-siri.md)
+
 ## Overview
 
 Use `Finds` to name the app entities Siri finds when it searches or resolves entities in your app for a request. The expectation holds when Siri finds an entity that matches, including its type. A bare entity definition matches any entity of that type, and you can add constraints on its properties with [`expect`](../AppIntentsTesting/appentitydefinition/expect.md).

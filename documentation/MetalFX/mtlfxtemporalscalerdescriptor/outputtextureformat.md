@@ -11,7 +11,7 @@ The pixel format of the output color texture for the temporal scaler you create 
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 27.1+
+- tvOS 27.2+
 
 ## Declaration
 

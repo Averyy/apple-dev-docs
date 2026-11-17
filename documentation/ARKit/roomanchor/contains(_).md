@@ -17,7 +17,7 @@ func contains(_ point: SIMD3<Float>) -> Bool
 
 ## Return Value
 
-Returns `true` if the room contains the point, otherwise `false`.
+`true` if the room contains the point, otherwise `false`.
 
 ## Parameters
 
@@ -26,10 +26,8 @@ Returns `true` if the room contains the point, otherwise `false`.
 ## See Also
 
 ### Inspecting a room anchor
-- [func geometries(of: MeshAnchor.MeshClassification) -> [MeshAnchor.Geometry]](./geometries%28of%29.md)
-  Returns the disjoint mesh geometries of a given classification.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
+- [func geometries(classifiedAs: SurfaceClassification) -> [MeshAnchor.Geometry]](./geometries%28classifiedas%29.md)
+  Get disjoint mesh geometries of a given surface classification.
 
 
 ---

@@ -21,6 +21,12 @@ var nameVariants: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * nameVariants;
 ```
 
+## See Also
+
+### Getting the route information
+- [var addressVariants: [String]](./addressvariants.md)
+  addressVariants is an array of @c NSString representing variants of the waypoint’s address, arranged from most to least preferred. The variant strings should be provided as localized, displayable content.
+
 
 ---
 

@@ -74,7 +74,7 @@
     },
     "https://developer.apple.com/documentation/safariservices/distributing-your-safari-web-extension": {
       "file_path": "documentation/SafariServices/distributing-your-safari-web-extension.md",
-      "hash": "eb30260e87e31dfe4f376f8b4bc1a20dab51969795d6b1a309dea10e499e97b2"
+      "hash": "b5b10c759ec39be45f3a1a3382df3d02ee84f5fbbe4a6e085dba55f9481eb738"
     },
     "https://developer.apple.com/documentation/safariservices/importing-data-exported-from-safari": {
       "file_path": "documentation/SafariServices/importing-data-exported-from-safari.md",
@@ -1194,7 +1194,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/distributing-your-safari-web-extension.json": {
       "file_path": "documentation/SafariServices/distributing-your-safari-web-extension.md",
-      "hash": "eb30260e87e31dfe4f376f8b4bc1a20dab51969795d6b1a309dea10e499e97b2"
+      "hash": "b5b10c759ec39be45f3a1a3382df3d02ee84f5fbbe4a6e085dba55f9481eb738"
     },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/importing-data-exported-from-safari.json": {
       "file_path": "documentation/SafariServices/importing-data-exported-from-safari.md",

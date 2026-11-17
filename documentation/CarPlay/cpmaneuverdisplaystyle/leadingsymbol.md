@@ -23,7 +23,7 @@ CPManeuverDisplayStyleLeadingSymbol
 
 ## See Also
 
-### Display Styles
+### Getting the display styles
 - [static var trailingSymbol: CPManeuverDisplayStyle](./trailingsymbol.md)
   The symbol appears after the instructions for the maneuver.
 - [static var instructionOnly: CPManeuverDisplayStyle](./instructiononly.md)

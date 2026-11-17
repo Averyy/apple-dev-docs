@@ -20,6 +20,14 @@ var color: UIColor? { get }
 @property (nonatomic, copy, readonly, nullable) UIColor * color;
 ```
 
+## See Also
+
+### Getting the action style
+- [var style: CPAlertAction.Style](./style-swift.property.md)
+  The display style for the action button.
+- [CPAlertAction.Style](./style-swift.enum.md)
+  Display styles for an alert’s action button.
+
 
 ---
 

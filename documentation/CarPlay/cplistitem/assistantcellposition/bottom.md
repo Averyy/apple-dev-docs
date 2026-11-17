@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Positions the assistant cell at the bottom of all visible cells.
+An option to place the assistant cell above all visible cells in your list template.
 
 **Availability**:
 - iOS 15.0+
@@ -20,12 +20,6 @@ case bottom
 ```c
 CPAssistantCellPositionBottom
 ```
-
-## See Also
-
-### Controlling the Assistant Cell Position
-- [CPListItem.AssistantCellPosition.top](./top.md)
-  Positions the assistant cell at the top of all visible cells.
 
 
 ---

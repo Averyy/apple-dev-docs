@@ -27,6 +27,12 @@ Use this function to inform people about important changes to your app that requ
 - [func callAsFunction(updateDescription: String) async throws](./significantupdateaction/callasfunction%28updatedescription%29.md)
   Shows the significant update acknowledgment interface.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+
 
 ---
 

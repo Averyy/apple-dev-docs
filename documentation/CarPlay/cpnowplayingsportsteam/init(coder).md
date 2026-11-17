@@ -15,6 +15,12 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating a sports team object
+- [init(name: String, logo: CPNowPlayingSportsTeamLogo, teamStandings: String?, eventScore: String, possessionIndicator: UIImage?, favorite: Bool)](./init%28name,logo,teamstandings,eventscore,possessionindicator,favorite%29.md)
+  Creates an object using a team’s name, logo, and other information.
+
 
 ---
 

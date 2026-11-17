@@ -80,11 +80,7 @@ struct SubscriptionInfo
 - [Product.SubscriptionInfo.RenewalState](./subscriptioninfo/renewalstate.md)
   The renewal states of auto-renewable subscriptions.
 ### Checking data sharing consent eligibility
-- [var multiSeatDataSharingConsentEligibility: Product.SubscriptionInfo.MultiSeatDataSharingConsentEligibility](./subscriptioninfo/multiseatdatasharingconsenteligibility-swift.property.md)
-  A value that indicates whether you can request consent to share group information for this subscription’s subscription group.
-- [static func multiSeatDataSharingConsentEligibility(subscriptionGroupID: String) async throws -> Product.SubscriptionInfo.MultiSeatDataSharingConsentEligibility](./subscriptioninfo/multiseatdatasharingconsenteligibility%28subscriptiongroupid%29.md)
-  Gets a value that indicates whether you can request consent to share group information for a subscription group.
-- [Product.SubscriptionInfo.MultiSeatDataSharingConsentEligibility](./subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum.md)
+- [Product.SubscriptionInfo.MultiSeatDataSharingConsentEligibility](./subscriptioninfo/multiseatdatasharingconsenteligibility.md)
   Values that indicate whether you can request consent to share group information for a subscription group.
 ### Structures
 - [Product.SubscriptionInfo.BundledSubscription](./subscriptioninfo/bundledsubscription.md)
@@ -92,6 +88,9 @@ struct SubscriptionInfo
 ### Instance Properties
 - [let bundledSubscriptions: [Product.SubscriptionInfo.BundledSubscription]](./subscriptioninfo/bundledsubscriptions.md)
   Properties and functionality specific to auto-renewable subscriptions included in a subscription bundle.
+### Type Methods
+- [static func multiSeatDataSharingConsentEligibility(originalTransactionID: UInt64) async throws -> Product.SubscriptionInfo.MultiSeatDataSharingConsentEligibility](./subscriptioninfo/multiseatdatasharingconsenteligibility%28originaltransactionid%29.md)
+  The user’s eligibility to receive the data sharing consent sheet for the specified original transaction’s multi-seat subscription.
 
 ## Relationships
 

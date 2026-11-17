@@ -38,6 +38,14 @@ struct Skinning
 ### Configuring deformation stages
 - [var skinning: LowLevelDeformation.Skinning](./skinning-swift.property.md)
   The skinning data accessors for this deformation.
+- [var blendShape: LowLevelDeformation.BlendShape](./blendshape-swift.property.md)
+  The blend-shape data accessors for this deformation.
+- [LowLevelDeformation.BlendShape](./blendshape-swift.struct.md)
+  An accessor for the blend-shape buffers of a [`LowLevelDeformation`](../lowleveldeformation.md).
+- [var renormalization: LowLevelDeformation.Renormalization](./renormalization-swift.property.md)
+  The renormalization data accessors for this deformation.
+- [LowLevelDeformation.Renormalization](./renormalization-swift.struct.md)
+  An accessor for the renormalization buffers of a [`LowLevelDeformation`](../lowleveldeformation.md).
 
 
 ---

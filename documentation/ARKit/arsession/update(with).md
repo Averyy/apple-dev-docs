@@ -26,6 +26,10 @@ Call this function to update a session when the app receives collaboration data 
 
 Collaboration is supported for world tracking configurations only.
 
+## Parameters
+
+- `collaborationData`: Collaboration data for updating the session.
+
 ## See Also
 
 ### Managing collaboration

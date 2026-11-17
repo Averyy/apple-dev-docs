@@ -27,6 +27,14 @@ You specify this information initially when you create the panel, but can also u
 
 If the panel isn’t tall enough to display all of the sections at the same time, it places them in a scrollable interface.
 
+## See Also
+
+### Getting the panel’s content
+- [var title: String?](./title.md)
+  The title to display at the top of the panel.
+- [var buttonConfiguration: CPMapPanelButtonConfiguration?](./buttonconfiguration.md)
+  The button information and travel estimates to display in the panel.
+
 
 ---
 

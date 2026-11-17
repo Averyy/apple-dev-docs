@@ -37,7 +37,7 @@ required init(anchor: ARAnchor) {
 }
 ```
 
-> ❗ **Important**:  Carefully consider performance and your app’s data model when storing references to other objects in anchors. Copying custom values might be expensive, but multiple references to the same data might or might not be correct for your app
+> ❗ **Important**:  Carefully consider performance and your app’s data model when storing references to other objects in anchors. Copying custom values might be expensive, but multiple references to the same data might or might not be correct for your app.
 
 ## Parameters
 

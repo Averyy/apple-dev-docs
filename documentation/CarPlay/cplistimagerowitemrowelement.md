@@ -4,6 +4,8 @@
 **Kind**: class  
 **Role**: Class
 
+A row element that displays an image, title, and subtitle.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -20,16 +22,22 @@ class CPListImageRowItemRowElement
 @interface CPListImageRowItemRowElement : CPListImageRowItemElement
 ```
 
+## Overview
+
+The `CPListImageRowItemRowElement` class defines an element you add to a row in a list template. Use this class in conjunction with the [`CPListImageRowItem`](./cplistimagerowitem.md) type to include more content in each row of your list. This element type displays a required image and an optional title and subtitle on top of the standard background. Provide the text values when possible to add meaningful information. For example, an element displaying the artwork for an album might display the album’s name and band information in the text fields.
+
+When building a list interface, create instances of this class and use them to populate your [`CPListImageRowItem`](./cplistimagerowitem.md) type. To handle row-related interactions with elements in a row, configure the [`listImageRowHandler`](./cplistimagerowitem/listimagerowhandler.md) property of the row itself.
+
 ## Topics
 
-### Initializers
+### Creating a row element
 - [init(image: UIImage, title: String?, subtitle: String?)](./cplistimagerowitemrowelement/init%28image,title,subtitle%29.md)
-  Initialize an element that is constituted of an image, title and subtitle. Only image is required while the two others can be omitted.
-### Instance Properties
-- [var subtitle: String?](./cplistimagerowitemrowelement/subtitle.md)
-  The subtitle associated with this element.
+  Creates a row element with the specified image and optional text.
+### Getting the element’s content
 - [var title: String?](./cplistimagerowitemrowelement/title.md)
-  The title associated with this element.
+  The primary text for the element.
+- [var subtitle: String?](./cplistimagerowitemrowelement/subtitle.md)
+  The secondary text for the element.
 
 ## Relationships
 
@@ -45,6 +53,18 @@ class CPListImageRowItemRowElement
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+
+## See Also
+
+### Row elements
+- [class CPListImageRowItemCardElement](./cplistimagerowitemcardelement.md)
+  A row element that displays an image and text on a card-style background.
+- [class CPListImageRowItemCondensedElement](./cplistimagerowitemcondensedelement.md)
+  A row element that displays an image and text in a vertically condensed style.
+- [class CPListImageRowItemGridElement](./cplistimagerowitemgridelement.md)
+  A row element that displays an image.
+- [class CPListImageRowItemImageGridElement](./cplistimagerowitemimagegridelement.md)
+  A row element that displays an image with a custom cutout shape and a title.
 
 
 ---

@@ -74,7 +74,7 @@
     },
     "https://developer.apple.com/documentation/storekit/appstore": {
       "file_path": "documentation/StoreKit/appstore.md",
-      "hash": "ccd1606664cc51d5c5dce4c81923165d0c051bbafa2b6773871acf82d0e9e7d7"
+      "hash": "d304cf480366bea570fcb0c044a83d2bd37b239bbfa092edf4382d3f772db7a0"
     },
     "https://developer.apple.com/documentation/storekit/appstore/ageratingcode": {
       "file_path": "documentation/StoreKit/appstore/ageratingcode.md",
@@ -136,21 +136,21 @@
       "file_path": "documentation/StoreKit/appstore/presentmerchandising(_,from)-hkrd.md",
       "hash": "1c5aaa2b0779d412bf0132c33153aa40c8820def3ed624126a5b76e462bfc1ce"
     },
-    "https://developer.apple.com/documentation/storekit/appstore/presentmultiseatdatasharingconsentsheet(from:subscriptiongroupid:)-3j1t4": {
-      "file_path": "documentation/StoreKit/appstore/presentmultiseatdatasharingconsentsheet(from,subscriptiongroupid)-3j1t4.md",
-      "hash": "3d1bf4025a12065e79e4dbf6fef307faad5d5d4df7cef9c523aa3299d9edc6bd"
+    "https://developer.apple.com/documentation/storekit/appstore/presentmultiseatdatasharingconsentsheet(from:originaltransactionid:)-4cvx8": {
+      "file_path": "documentation/StoreKit/appstore/presentmultiseatdatasharingconsentsheet(from,originaltransactionid)-4cvx8.md",
+      "hash": "6e1661c1d15f16294e810589250e3eff0c50a38611e4170c10ee9dc2ee743960"
     },
-    "https://developer.apple.com/documentation/storekit/appstore/presentmultiseatdatasharingconsentsheet(from:subscriptiongroupid:)-9gr5s": {
-      "file_path": "documentation/StoreKit/appstore/presentmultiseatdatasharingconsentsheet(from,subscriptiongroupid)-9gr5s.md",
-      "hash": "13f48e9078741f80918f47bd77bc65bd0143e14d1cdda5327fa64ec7858ad023"
+    "https://developer.apple.com/documentation/storekit/appstore/presentmultiseatdatasharingconsentsheet(from:originaltransactionid:)-8pwjw": {
+      "file_path": "documentation/StoreKit/appstore/presentmultiseatdatasharingconsentsheet(from,originaltransactionid)-8pwjw.md",
+      "hash": "2213f3aea0538a0ae72643c673e537142dfcc3a19183c83171bec68baa853a7b"
     },
-    "https://developer.apple.com/documentation/storekit/appstore/presentmultiseatinvitationsheet(from:subscriptiongroupid:)-5cmtd": {
-      "file_path": "documentation/StoreKit/appstore/presentmultiseatinvitationsheet(from,subscriptiongroupid)-5cmtd.md",
-      "hash": "acbce98a1450f46500789de288da5e33900072ea238b7bf0a706c560799e2034"
+    "https://developer.apple.com/documentation/storekit/appstore/presentmultiseatinvitationsheet(from:originaltransactionid:)-297p2": {
+      "file_path": "documentation/StoreKit/appstore/presentmultiseatinvitationsheet(from,originaltransactionid)-297p2.md",
+      "hash": "f6023c0f44bed09e504b03ffcf23fd4fb1b994fffa5ace99ee80858ad485c45e"
     },
-    "https://developer.apple.com/documentation/storekit/appstore/presentmultiseatinvitationsheet(from:subscriptiongroupid:)-ni0z": {
-      "file_path": "documentation/StoreKit/appstore/presentmultiseatinvitationsheet(from,subscriptiongroupid)-ni0z.md",
-      "hash": "dfe35cb6864c1dd0548c5f028ba65ed3b17d91dd9254fbae2c4cef73b756f5d5"
+    "https://developer.apple.com/documentation/storekit/appstore/presentmultiseatinvitationsheet(from:originaltransactionid:)-6bty5": {
+      "file_path": "documentation/StoreKit/appstore/presentmultiseatinvitationsheet(from,originaltransactionid)-6bty5.md",
+      "hash": "5d24ba36893d2f26feac4a42ed2b649c6121fe7d90e837b21240c8e9c850b6dc"
     },
     "https://developer.apple.com/documentation/storekit/appstore/presentoffercoderedeemsheet(from:)": {
       "file_path": "documentation/StoreKit/appstore/presentoffercoderedeemsheet(from).md",
@@ -742,7 +742,7 @@
     },
     "https://developer.apple.com/documentation/storekit/hosting-group-invitations-in-your-app": {
       "file_path": "documentation/StoreKit/hosting-group-invitations-in-your-app.md",
-      "hash": "46512fda8ca2f7ecb6ced481423c909ac23526cb7296a4987710a4f58e3a3229"
+      "hash": "323a4f93a14186b50699b54ac80e99e01d5c017dde73ac39770944e8acc0e85e"
     },
     "https://developer.apple.com/documentation/storekit/identifiedstorecontent": {
       "file_path": "documentation/StoreKit/identifiedstorecontent.md",
@@ -818,7 +818,7 @@
     },
     "https://developer.apple.com/documentation/storekit/managing-the-life-cycle-of-multiseat-subscriptions": {
       "file_path": "documentation/StoreKit/managing-the-life-cycle-of-multiseat-subscriptions.md",
-      "hash": "ed142f5c2e16cb223e7708ec5a6ddcbc38a19af3cf8a436d11c56c04c35d03f9"
+      "hash": "2ecaff73a77229b7f680a1ab61413c0519f81ebd7185b6233dc7e55763276a54"
     },
     "https://developer.apple.com/documentation/storekit/merchandising-win-back-offers-in-your-app": {
       "file_path": "documentation/StoreKit/merchandising-win-back-offers-in-your-app.md",
@@ -870,7 +870,7 @@
     },
     "https://developer.apple.com/documentation/storekit/multiseatinvitationbehavior": {
       "file_path": "documentation/StoreKit/multiseatinvitationbehavior.md",
-      "hash": "a9c2d2837325e4cfdc0484d2eff84e9cb25e6a400cc3ca2a63b5e0f1c2300c3d"
+      "hash": "5627ce8357e72b878e92e9a86628087a72f4afb6924aec8594b9b04b6e3b87c4"
     },
     "https://developer.apple.com/documentation/storekit/multiseatinvitationbehavior/automatic": {
       "file_path": "documentation/StoreKit/multiseatinvitationbehavior/automatic.md",
@@ -878,7 +878,7 @@
     },
     "https://developer.apple.com/documentation/storekit/multiseatinvitationbehavior/manual": {
       "file_path": "documentation/StoreKit/multiseatinvitationbehavior/manual.md",
-      "hash": "1fef993547324f3fc0a1207f960f7a08944f207a81c08d6abc8356e96ce66f6c"
+      "hash": "bf137bd7df5d25b46cd476cee0e64d7c91b4c7f15e3c33be952ee590914ccf43"
     },
     "https://developer.apple.com/documentation/storekit/offering-a-subscription-across-multiple-apps": {
       "file_path": "documentation/StoreKit/offering-a-subscription-across-multiple-apps.md",
@@ -1246,7 +1246,7 @@
     },
     "https://developer.apple.com/documentation/storekit/product/purchaseoption/multiseatinvitationsheetsuppressed(_:)": {
       "file_path": "documentation/StoreKit/product/purchaseoption/multiseatinvitationsheetsuppressed(_).md",
-      "hash": "060c5507b08ce0e69713f1cf1d79f8ddf42822584d0f717c58e7cda3d7ffedcb"
+      "hash": "b6a7f2ff0a16c36561c7a8ec3d5c0d7e74a5ee70520b63e1c423b6494d9ded57"
     },
     "https://developer.apple.com/documentation/storekit/product/purchaseoption/onstorefrontchange(shouldcontinuepurchase:)": {
       "file_path": "documentation/StoreKit/product/purchaseoption/onstorefrontchange(shouldcontinuepurchase).md",
@@ -1322,7 +1322,7 @@
     },
     "https://developer.apple.com/documentation/storekit/product/subscriptioninfo": {
       "file_path": "documentation/StoreKit/product/subscriptioninfo.md",
-      "hash": "91335bc29478795c9065c9cd5eb7ce180770adaabc0fcb76f5f9b02a1a5ba5eb"
+      "hash": "bf194551eeb0231f7e38d667991d82eb7de5e39d208127ee1b87d24fc25c1c9d"
     },
     "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/billinginfo": {
       "file_path": "documentation/StoreKit/product/subscriptioninfo/billinginfo.md",
@@ -1436,49 +1436,45 @@
       "file_path": "documentation/StoreKit/product/subscriptioninfo/iseligibleforintrooffer(for).md",
       "hash": "1ee2c29a1917aaac6b1c5ef0184ba4fb07a068ae2d25731fe0e0118d16012c23"
     },
-    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility(subscriptiongroupid:)": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility(subscriptiongroupid).md",
-      "hash": "cd0ee9a7364f0fd843ca8934238c22330e05c1b2366c02048b9c80117db57131"
+    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility.md",
+      "hash": "16a8de039ca296124102a056f839a939d3402fe2388d5d55efe986abf0b5fd7f"
     },
-    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum.md",
-      "hash": "3b940a36ce8633124d13c3e1bb06c7016ca7e31c23da7f19bcab35636edaf068"
+    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility(originaltransactionid:)": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility(originaltransactionid).md",
+      "hash": "205d09c41c58982f884290fbbe1cfce6b2d89dd6a1ed87887f3c6c859b110e7d"
     },
-    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/eligible": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/eligible.md",
-      "hash": "4e37dc6a62c0cbb4ea53f6d8ce4f38971aade7772f24a3a5e84d6e96e564a4f8"
+    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/eligible": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/eligible.md",
+      "hash": "a85da259d551dde2735da1c82423642832adec205bc16d9c3e733a1663027f48"
     },
-    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason.md",
-      "hash": "60569fb064926c607a21612a4742b9b3c950fb28abce24ec72a40f42cbb8e0b1"
+    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason.md",
+      "hash": "45c6e372bc0fa7711ac489faea1b8934760ce141a4abc9125164a67d936b2a5e"
     },
-    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/alreadyconsented": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/alreadyconsented.md",
-      "hash": "e722de1490e7210feda5357ced542cbdeb7104e458b8d4090c292d3e8bd6e69a"
+    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/alreadyconsented": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/alreadyconsented.md",
+      "hash": "be6a4e2a605365689095893758ae58944d2a3080820d4fef4a8b1cfb2c38e439"
     },
-    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/init(rawvalue:)": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/init(rawvalue).md",
-      "hash": "eb69759a3807803e741b84b7b3fb2a65c58993916f5a9099c915207ef8a58078"
+    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/init(rawvalue:)": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/init(rawvalue).md",
+      "hash": "60826a7c9075aaf90f488782a558bccaa20430f013bddcaebcfea6485454aee6"
     },
-    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/noownedactivesubscription": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/noownedactivesubscription.md",
-      "hash": "30d4227aa321a65a6f6293e27aa5f6817c8301571508f1897d23725889b7ff65"
+    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/noownedactivesubscription": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/noownedactivesubscription.md",
+      "hash": "4bb05ae6b90af3e2751ce2de4b4eab9078308b7fc83e49ab063f0be66b776bf1"
     },
-    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/notapplemanaged": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/notapplemanaged.md",
-      "hash": "a5dc6b09471b669e4bc3f184a59e76f40e4794c83c12435dd88f441d4f8939a1"
+    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/notapplemanaged": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/notapplemanaged.md",
+      "hash": "689019f5e963b9723156a4e6f32acde52682360f41ec952269cb487a6393bfee"
     },
-    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/rawvalue": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/rawvalue.md",
-      "hash": "b86b6d1fd73235037455250d1f9a500cabf51a73d12d5c2e7e8b63223c7d594f"
+    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/rawvalue": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/rawvalue.md",
+      "hash": "3358bc1e0e07fd855c7e8d2d0bde4a3d8bce21a52e0b3057fff88fb21f65b8e2"
     },
-    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligible(_:)": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligible(_).md",
-      "hash": "bb12c4c23a26db1e45c276c2e58d0761cbfa7efd0b79d5d2421a578199554732"
-    },
-    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.property": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.property.md",
-      "hash": "49b96c0e2eea1f9dd22b7bfb3d704826e0d0fe048a91b7c70505a7e0d71f9772"
+    "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligible(_:)": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligible(_).md",
+      "hash": "da0715ab080b350e0a310efa77021a0a133a4a7aed9a1002302bdbf13a8b6253"
     },
     "https://developer.apple.com/documentation/storekit/product/subscriptioninfo/pricingterms-swift.property": {
       "file_path": "documentation/StoreKit/product/subscriptioninfo/pricingterms-swift.property.md",
@@ -2906,7 +2902,7 @@
     },
     "https://developer.apple.com/documentation/storekit/skcloudservicesetupviewcontroller": {
       "file_path": "documentation/StoreKit/skcloudservicesetupviewcontroller.md",
-      "hash": "6e2f9ba4791d787e64a36b30c8eeb22a022a7d7f44d5fb150211a01de5718b64"
+      "hash": "69bb67b720841749d699e57d1f08d0131e1c5bab34053f951e89d8faa8c7e41b"
     },
     "https://developer.apple.com/documentation/storekit/skcloudservicesetupviewcontroller/delegate": {
       "file_path": "documentation/StoreKit/skcloudservicesetupviewcontroller/delegate.md",
@@ -4242,7 +4238,7 @@
     },
     "https://developer.apple.com/documentation/storekit/storekit-views": {
       "file_path": "documentation/StoreKit/storekit-views.md",
-      "hash": "082cf53c84c94ec22e1a95130a11c14e823cdecbc02fafcf2240105a9717fb8a"
+      "hash": "b22e9f72ca47a6d07a5f221633d8391e2b588b05db6ba8da7f7dc94cbb98cc8c"
     },
     "https://developer.apple.com/documentation/storekit/storekitbundle": {
       "file_path": "documentation/StoreKit/storekitbundle.md",
@@ -5054,7 +5050,7 @@
     },
     "https://developer.apple.com/documentation/storekit/supporting-multiseat-purchases-in-your-app": {
       "file_path": "documentation/StoreKit/supporting-multiseat-purchases-in-your-app.md",
-      "hash": "64a901c91ddd7f50ffe8e396b4b44a8a477516f0060a536421e80c13fad80311"
+      "hash": "d866d89dfb523f64bea1ee06ca31c4800c41c833762edcbad764c7effe8cfda5"
     },
     "https://developer.apple.com/documentation/storekit/supporting-offer-codes-in-your-app": {
       "file_path": "documentation/StoreKit/supporting-offer-codes-in-your-app.md",
@@ -5158,7 +5154,7 @@
     },
     "https://developer.apple.com/documentation/storekit/testing-multiseat-subscriptions": {
       "file_path": "documentation/StoreKit/testing-multiseat-subscriptions.md",
-      "hash": "8ba97026f2f9278b1e2870d99c21d66cf97dd74ec2fcb2a9b9ffa39dcccfbeb0"
+      "hash": "89c4b458f57457891c6686bba48227780d1cdeff7bb7d1f3eb36b7bb6603a7fd"
     },
     "https://developer.apple.com/documentation/storekit/testing-promoted-in-app-purchases": {
       "file_path": "documentation/StoreKit/testing-promoted-in-app-purchases.md",
@@ -5578,15 +5574,15 @@
     },
     "https://developer.apple.com/documentation/storekit/transaction/multiseatinfo-swift.struct": {
       "file_path": "documentation/StoreKit/transaction/multiseatinfo-swift.struct.md",
-      "hash": "8492e52b22fe659a3fcb1b49bd00ec1a12489e307f225d3133fde418af5342ce"
+      "hash": "5039c0071eee8665e42c4e8ad2eb5b63dc17dfca26460e49149ed4880b96e7bc"
     },
     "https://developer.apple.com/documentation/storekit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.property": {
       "file_path": "documentation/StoreKit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.property.md",
-      "hash": "85fd7f1490714f95b08438e1360d9af205ad7c002c593ffad3df1da6322c1d44"
+      "hash": "870f35c3419bc30306355c15001ad9bc34443104d8b369fef3fde2bb65ee4417"
     },
     "https://developer.apple.com/documentation/storekit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.struct": {
       "file_path": "documentation/StoreKit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.struct.md",
-      "hash": "ba03ca293bb5cfa3822828d59492dec14c02831e5d4403f731a3229f2fc59b87"
+      "hash": "ae0b065319949c33a54b240c345075689592697f15e2a94c04f42c2982242681"
     },
     "https://developer.apple.com/documentation/storekit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.struct/apple": {
       "file_path": "documentation/StoreKit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.struct/apple.md",
@@ -6158,7 +6154,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/appstore.json": {
       "file_path": "documentation/StoreKit/appstore.md",
-      "hash": "ccd1606664cc51d5c5dce4c81923165d0c051bbafa2b6773871acf82d0e9e7d7"
+      "hash": "d304cf480366bea570fcb0c044a83d2bd37b239bbfa092edf4382d3f772db7a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/ageratingcode.json": {
       "file_path": "documentation/StoreKit/appstore/ageratingcode.md",
@@ -6220,21 +6216,21 @@
       "file_path": "documentation/StoreKit/appstore/presentmerchandising(_,from)-hkrd.md",
       "hash": "1c5aaa2b0779d412bf0132c33153aa40c8820def3ed624126a5b76e462bfc1ce"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentmultiseatdatasharingconsentsheet(from:subscriptiongroupid:)-3j1t4.json": {
-      "file_path": "documentation/StoreKit/appstore/presentmultiseatdatasharingconsentsheet(from,subscriptiongroupid)-3j1t4.md",
-      "hash": "3d1bf4025a12065e79e4dbf6fef307faad5d5d4df7cef9c523aa3299d9edc6bd"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentmultiseatdatasharingconsentsheet(from:originaltransactionid:)-4cvx8.json": {
+      "file_path": "documentation/StoreKit/appstore/presentmultiseatdatasharingconsentsheet(from,originaltransactionid)-4cvx8.md",
+      "hash": "6e1661c1d15f16294e810589250e3eff0c50a38611e4170c10ee9dc2ee743960"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentmultiseatdatasharingconsentsheet(from:subscriptiongroupid:)-9gr5s.json": {
-      "file_path": "documentation/StoreKit/appstore/presentmultiseatdatasharingconsentsheet(from,subscriptiongroupid)-9gr5s.md",
-      "hash": "13f48e9078741f80918f47bd77bc65bd0143e14d1cdda5327fa64ec7858ad023"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentmultiseatdatasharingconsentsheet(from:originaltransactionid:)-8pwjw.json": {
+      "file_path": "documentation/StoreKit/appstore/presentmultiseatdatasharingconsentsheet(from,originaltransactionid)-8pwjw.md",
+      "hash": "2213f3aea0538a0ae72643c673e537142dfcc3a19183c83171bec68baa853a7b"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentmultiseatinvitationsheet(from:subscriptiongroupid:)-5cmtd.json": {
-      "file_path": "documentation/StoreKit/appstore/presentmultiseatinvitationsheet(from,subscriptiongroupid)-5cmtd.md",
-      "hash": "acbce98a1450f46500789de288da5e33900072ea238b7bf0a706c560799e2034"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentmultiseatinvitationsheet(from:originaltransactionid:)-297p2.json": {
+      "file_path": "documentation/StoreKit/appstore/presentmultiseatinvitationsheet(from,originaltransactionid)-297p2.md",
+      "hash": "f6023c0f44bed09e504b03ffcf23fd4fb1b994fffa5ace99ee80858ad485c45e"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentmultiseatinvitationsheet(from:subscriptiongroupid:)-ni0z.json": {
-      "file_path": "documentation/StoreKit/appstore/presentmultiseatinvitationsheet(from,subscriptiongroupid)-ni0z.md",
-      "hash": "dfe35cb6864c1dd0548c5f028ba65ed3b17d91dd9254fbae2c4cef73b756f5d5"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentmultiseatinvitationsheet(from:originaltransactionid:)-6bty5.json": {
+      "file_path": "documentation/StoreKit/appstore/presentmultiseatinvitationsheet(from,originaltransactionid)-6bty5.md",
+      "hash": "5d24ba36893d2f26feac4a42ed2b649c6121fe7d90e837b21240c8e9c850b6dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentoffercoderedeemsheet(from:).json": {
       "file_path": "documentation/StoreKit/appstore/presentoffercoderedeemsheet(from).md",
@@ -6826,7 +6822,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/hosting-group-invitations-in-your-app.json": {
       "file_path": "documentation/StoreKit/hosting-group-invitations-in-your-app.md",
-      "hash": "46512fda8ca2f7ecb6ced481423c909ac23526cb7296a4987710a4f58e3a3229"
+      "hash": "323a4f93a14186b50699b54ac80e99e01d5c017dde73ac39770944e8acc0e85e"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/identifiedstorecontent.json": {
       "file_path": "documentation/StoreKit/identifiedstorecontent.md",
@@ -6902,7 +6898,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/managing-the-life-cycle-of-multiseat-subscriptions.json": {
       "file_path": "documentation/StoreKit/managing-the-life-cycle-of-multiseat-subscriptions.md",
-      "hash": "ed142f5c2e16cb223e7708ec5a6ddcbc38a19af3cf8a436d11c56c04c35d03f9"
+      "hash": "2ecaff73a77229b7f680a1ab61413c0519f81ebd7185b6233dc7e55763276a54"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/merchandising-win-back-offers-in-your-app.json": {
       "file_path": "documentation/StoreKit/merchandising-win-back-offers-in-your-app.md",
@@ -6954,7 +6950,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/multiseatinvitationbehavior.json": {
       "file_path": "documentation/StoreKit/multiseatinvitationbehavior.md",
-      "hash": "a9c2d2837325e4cfdc0484d2eff84e9cb25e6a400cc3ca2a63b5e0f1c2300c3d"
+      "hash": "5627ce8357e72b878e92e9a86628087a72f4afb6924aec8594b9b04b6e3b87c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/multiseatinvitationbehavior/automatic.json": {
       "file_path": "documentation/StoreKit/multiseatinvitationbehavior/automatic.md",
@@ -6962,7 +6958,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/multiseatinvitationbehavior/manual.json": {
       "file_path": "documentation/StoreKit/multiseatinvitationbehavior/manual.md",
-      "hash": "1fef993547324f3fc0a1207f960f7a08944f207a81c08d6abc8356e96ce66f6c"
+      "hash": "bf137bd7df5d25b46cd476cee0e64d7c91b4c7f15e3c33be952ee590914ccf43"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/offering-a-subscription-across-multiple-apps.json": {
       "file_path": "documentation/StoreKit/offering-a-subscription-across-multiple-apps.md",
@@ -7330,7 +7326,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/purchaseoption/multiseatinvitationsheetsuppressed(_:).json": {
       "file_path": "documentation/StoreKit/product/purchaseoption/multiseatinvitationsheetsuppressed(_).md",
-      "hash": "060c5507b08ce0e69713f1cf1d79f8ddf42822584d0f717c58e7cda3d7ffedcb"
+      "hash": "b6a7f2ff0a16c36561c7a8ec3d5c0d7e74a5ee70520b63e1c423b6494d9ded57"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/purchaseoption/onstorefrontchange(shouldcontinuepurchase:).json": {
       "file_path": "documentation/StoreKit/product/purchaseoption/onstorefrontchange(shouldcontinuepurchase).md",
@@ -7406,7 +7402,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo.json": {
       "file_path": "documentation/StoreKit/product/subscriptioninfo.md",
-      "hash": "91335bc29478795c9065c9cd5eb7ce180770adaabc0fcb76f5f9b02a1a5ba5eb"
+      "hash": "bf194551eeb0231f7e38d667991d82eb7de5e39d208127ee1b87d24fc25c1c9d"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/billinginfo.json": {
       "file_path": "documentation/StoreKit/product/subscriptioninfo/billinginfo.md",
@@ -7520,49 +7516,45 @@
       "file_path": "documentation/StoreKit/product/subscriptioninfo/iseligibleforintrooffer.md",
       "hash": "3e6395455d2ad1bc5565914816492efceffaaec0ab1a416fb62ed1e63e1f2177"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility(subscriptiongroupid:).json": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility(subscriptiongroupid).md",
-      "hash": "cd0ee9a7364f0fd843ca8934238c22330e05c1b2366c02048b9c80117db57131"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility(originaltransactionid:).json": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility(originaltransactionid).md",
+      "hash": "205d09c41c58982f884290fbbe1cfce6b2d89dd6a1ed87887f3c6c859b110e7d"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum.json": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum.md",
-      "hash": "3b940a36ce8633124d13c3e1bb06c7016ca7e31c23da7f19bcab35636edaf068"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility.json": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility.md",
+      "hash": "16a8de039ca296124102a056f839a939d3402fe2388d5d55efe986abf0b5fd7f"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/eligible.json": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/eligible.md",
-      "hash": "4e37dc6a62c0cbb4ea53f6d8ce4f38971aade7772f24a3a5e84d6e96e564a4f8"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/eligible.json": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/eligible.md",
+      "hash": "a85da259d551dde2735da1c82423642832adec205bc16d9c3e733a1663027f48"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason.json": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason.md",
-      "hash": "60569fb064926c607a21612a4742b9b3c950fb28abce24ec72a40f42cbb8e0b1"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason.json": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason.md",
+      "hash": "45c6e372bc0fa7711ac489faea1b8934760ce141a4abc9125164a67d936b2a5e"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/alreadyconsented.json": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/alreadyconsented.md",
-      "hash": "e722de1490e7210feda5357ced542cbdeb7104e458b8d4090c292d3e8bd6e69a"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/alreadyconsented.json": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/alreadyconsented.md",
+      "hash": "be6a4e2a605365689095893758ae58944d2a3080820d4fef4a8b1cfb2c38e439"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/init(rawvalue:).json": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/init(rawvalue).md",
-      "hash": "eb69759a3807803e741b84b7b3fb2a65c58993916f5a9099c915207ef8a58078"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/init(rawvalue:).json": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/init(rawvalue).md",
+      "hash": "60826a7c9075aaf90f488782a558bccaa20430f013bddcaebcfea6485454aee6"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/noownedactivesubscription.json": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/noownedactivesubscription.md",
-      "hash": "30d4227aa321a65a6f6293e27aa5f6817c8301571508f1897d23725889b7ff65"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/noownedactivesubscription.json": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/noownedactivesubscription.md",
+      "hash": "4bb05ae6b90af3e2751ce2de4b4eab9078308b7fc83e49ab063f0be66b776bf1"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/notapplemanaged.json": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/notapplemanaged.md",
-      "hash": "a5dc6b09471b669e4bc3f184a59e76f40e4794c83c12435dd88f441d4f8939a1"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/notapplemanaged.json": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/notapplemanaged.md",
+      "hash": "689019f5e963b9723156a4e6f32acde52682360f41ec952269cb487a6393bfee"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/rawvalue.json": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligibilityreason/rawvalue.md",
-      "hash": "b86b6d1fd73235037455250d1f9a500cabf51a73d12d5c2e7e8b63223c7d594f"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/rawvalue.json": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligibilityreason/rawvalue.md",
+      "hash": "3358bc1e0e07fd855c7e8d2d0bde4a3d8bce21a52e0b3057fff88fb21f65b8e2"
     },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligible(_:).json": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.enum/ineligible(_).md",
-      "hash": "bb12c4c23a26db1e45c276c2e58d0761cbfa7efd0b79d5d2421a578199554732"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.property.json": {
-      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility-swift.property.md",
-      "hash": "49b96c0e2eea1f9dd22b7bfb3d704826e0d0fe048a91b7c70505a7e0d71f9772"
+    "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligible(_:).json": {
+      "file_path": "documentation/StoreKit/product/subscriptioninfo/multiseatdatasharingconsenteligibility/ineligible(_).md",
+      "hash": "da0715ab080b350e0a310efa77021a0a133a4a7aed9a1002302bdbf13a8b6253"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo/pricingterms-swift.property.json": {
       "file_path": "documentation/StoreKit/product/subscriptioninfo/pricingterms-swift.property.md",
@@ -8990,7 +8982,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skcloudservicesetupviewcontroller.json": {
       "file_path": "documentation/StoreKit/skcloudservicesetupviewcontroller.md",
-      "hash": "6e2f9ba4791d787e64a36b30c8eeb22a022a7d7f44d5fb150211a01de5718b64"
+      "hash": "69bb67b720841749d699e57d1f08d0131e1c5bab34053f951e89d8faa8c7e41b"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skcloudservicesetupviewcontroller/delegate.json": {
       "file_path": "documentation/StoreKit/skcloudservicesetupviewcontroller/delegate.md",
@@ -10326,7 +10318,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/storekit-views.json": {
       "file_path": "documentation/StoreKit/storekit-views.md",
-      "hash": "082cf53c84c94ec22e1a95130a11c14e823cdecbc02fafcf2240105a9717fb8a"
+      "hash": "b22e9f72ca47a6d07a5f221633d8391e2b588b05db6ba8da7f7dc94cbb98cc8c"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/storekitbundle.json": {
       "file_path": "documentation/StoreKit/storekitbundle.md",
@@ -11138,7 +11130,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/supporting-multiseat-purchases-in-your-app.json": {
       "file_path": "documentation/StoreKit/supporting-multiseat-purchases-in-your-app.md",
-      "hash": "64a901c91ddd7f50ffe8e396b4b44a8a477516f0060a536421e80c13fad80311"
+      "hash": "d866d89dfb523f64bea1ee06ca31c4800c41c833762edcbad764c7effe8cfda5"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/supporting-offer-codes-in-your-app.json": {
       "file_path": "documentation/StoreKit/supporting-offer-codes-in-your-app.md",
@@ -11242,7 +11234,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-multiseat-subscriptions.json": {
       "file_path": "documentation/StoreKit/testing-multiseat-subscriptions.md",
-      "hash": "8ba97026f2f9278b1e2870d99c21d66cf97dd74ec2fcb2a9b9ffa39dcccfbeb0"
+      "hash": "89c4b458f57457891c6686bba48227780d1cdeff7bb7d1f3eb36b7bb6603a7fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-promoted-in-app-purchases.json": {
       "file_path": "documentation/StoreKit/testing-promoted-in-app-purchases.md",
@@ -11662,15 +11654,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction/multiseatinfo-swift.struct.json": {
       "file_path": "documentation/StoreKit/transaction/multiseatinfo-swift.struct.md",
-      "hash": "8492e52b22fe659a3fcb1b49bd00ec1a12489e307f225d3133fde418af5342ce"
+      "hash": "5039c0071eee8665e42c4e8ad2eb5b63dc17dfca26460e49149ed4880b96e7bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.property.json": {
       "file_path": "documentation/StoreKit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.property.md",
-      "hash": "85fd7f1490714f95b08438e1360d9af205ad7c002c593ffad3df1da6322c1d44"
+      "hash": "870f35c3419bc30306355c15001ad9bc34443104d8b369fef3fde2bb65ee4417"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.struct.json": {
       "file_path": "documentation/StoreKit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.struct.md",
-      "hash": "ba03ca293bb5cfa3822828d59492dec14c02831e5d4403f731a3229f2fc59b87"
+      "hash": "ae0b065319949c33a54b240c345075689592697f15e2a94c04f42c2982242681"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.struct/apple.json": {
       "file_path": "documentation/StoreKit/transaction/multiseatinfo-swift.struct/invitationmanagement-swift.struct/apple.md",
@@ -12173,6 +12165,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 3042
+    "total_pages": 3040
   }
 }

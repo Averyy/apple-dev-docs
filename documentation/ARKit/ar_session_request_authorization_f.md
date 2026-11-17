@@ -15,6 +15,17 @@ Requests authorization from the user to use the specified kinds of ARKit data.
 extern void ar_session_request_authorization_f(ar_session_t session, ar_authorization_type_t authorization_types, void *context, ar_authorization_results_handler_function_t results_handler_function);
 ```
 
+## Discussion
+
+This will asynchronously prompt users for permission to access their data. If the authorization is already allowed or denied by the user, the function will be called without prompting the user for permission again.
+
+## Parameters
+
+- `session`: The session.
+- `authorization_types`: The authorization types to request.
+- `context`: The application-defined context parameter to pass to the function.
+- `results_handler_function`: The function to be called upon completion of the request. This function will be called on an arbitrary queue.
+
 ## See Also
 
 ### Sessions

@@ -32,6 +32,8 @@ The [`LiveAssistanceExtension`](./liveassistanceextension.md) and [`LiveAssistan
   The protocol you extend to provide live assistance services.
 - [enum LiveAssistance](./liveassistance.md)
   A namespace to collect APIs for use by container apps that provide live assistance services.
+- [protocol LiveAssistanceRequesterPresenceObserving](./liveassistancerequesterpresenceobserving.md)
+  A live assistance extension that wants to know when the requester leaves or rejoins the call, or when the call ends.
 
 
 ---

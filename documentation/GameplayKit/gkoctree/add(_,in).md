@@ -35,6 +35,7 @@ The [`GKOctree`](../gkoctree.md) class automatically creates nodes to manage the
 ## Parameters
 
 - `element`: The object to add to the tree.
+- `box`: The axis-aligned bounding volume in 3D space to which the object corresponds.
 
 ## See Also
 

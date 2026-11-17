@@ -9,7 +9,7 @@ Update your just-in-time (JIT) compiler to work with the Hardened Runtime capabi
 
 > ❗ **Important**:  If you need to build for Intel-based processors using Xcode 27 to target macOS 27 or DriverKit 27, add `x86_64` to the Architectures (`ARCHS`) build setting in Xcode, as described in the Architectures section of [Build settings reference](../Xcode/build-settings-reference.md) and [Configuring the build settings of a target](../Xcode/configuring-the-build-settings-of-a-target.md). If you need to run Xcode on an Intel-based processor, use Xcode 26 or earlier.
 
-A just-in-time (JIT) compiler translates byte-code or intermediate script code into machine-language instructions, and makes those instructions available for execution. An app initiates JIT compilation as needed to support relevant tasks, and the compilation process takes place within the app’s process space. For example, a web browser uses JIT compilation to transform a web page’s script code into runnable code when the user interacts with the appropriate page elements.
+A just-in-time (JIT) compiler translates byte-code or intermediate script code into machine-language instructions, and makes those instructions available to run. An app initiates JIT compilation as needed to support relevant tasks, and the compilation process takes place within the app’s process space. For example, a web browser uses JIT compilation to transform a web page’s script code into runnable code when the user interacts with the appropriate page elements.
 
 ![An illustration of an app compiling byte code into native instructions.](https://developer.apple.com/tutorials/images/com.apple.Apple-Silicon/porting-just-in-time-compilers-to-apple-silicon-1@2x.png)
 
@@ -17,7 +17,7 @@ Because JIT compilation uses some techniques that the Hardened Runtime capabilit
 
 ### Enable the JIT entitlements for the Hardened Runtime
 
-The Hardened Runtime capability prohibits the execution of code in a memory page, unless that code is accompanied by a valid code signature. Because a JIT compiler doesn’t sign the code it generates, it technically violates the rules of the Hardened Runtime. To fix this issue, you need to adjust your Hardened Runtime settings to allow JIT-related activities.
+The Hardened Runtime capability prohibits running code in a memory page, unless that code is accompanied by a valid code signature. Because a JIT compiler doesn’t sign the code it generates, it technically violates the rules of the Hardened Runtime. To fix this issue, you need to adjust your Hardened Runtime settings to allow JIT-related activities.
 
 To allow JIT compilation in your app, navigate to the Hardened Runtime capability in Xcode and enable the Allow Execution of JIT-compiled Code option for your app. When you enable this option, Xcode adds the `com.apple.security.cs.allow-jit` entitlement to your app. When this entitlement is present, the system allows your app to call `mmap` with the `MAP_JIT` flag. If you don’t have this entitlement, calls using that flag return an error.
 
@@ -27,7 +27,7 @@ Additionally, add the `com.apple.security.cs.jit-write-allowlist` entitlement wi
 
 > **Note**:  On macOS, when you add the `com.apple.security.cs.jit-write-allowlist` entitlement, your app can no longer call `pthread_jit_write_protect_np()`. The `pthread_jit_write_protect_np()` function isn’t available on iOS.
 
-When memory protection is enabled, a thread cannot write to a memory region and execute instructions in that region at the same time. Apple silicon enables memory protection for all apps, regardless of whether they adopt the Hardened Runtime. Intel-based Mac computers enable memory protection only for apps that adopt the Hardened Runtime.
+When memory protection is enabled, a thread cannot write to a memory region and run instructions in that region at the same time. Apple silicon enables memory protection for all apps, regardless of whether they adopt the Hardened Runtime. Intel-based Mac computers enable memory protection only for apps that adopt the Hardened Runtime.
 
 ### Create a callback to write JIT instructions
 
@@ -48,7 +48,7 @@ enum jit_code_safety {
   JIT_CODE_INVALID,
 };
 
-// Ensure that the JIT code is safe to execute.
+// Ensure that the JIT code is safe to run.
 enum jit_code_safety validate_jit_code(struct jit_code *code);
 
 int jit_writing_callback(void *context) {
@@ -105,9 +105,9 @@ if (status == JIT_COMPILATION_SUCCESS) {
 }
 ```
 
-### Invalidate caches and execute the code
+### Invalidate caches and run the code
 
-Always call `sys_icache_invalidate(_:_:)` before you execute the machine instructions on a recently updated memory page. On Apple silicon, the instruction caches aren’t coherent with data caches, and unexpected results might occur if you execute instructions without invalidating the caches. It’s also safe to call the `sys_icache_invalidate(_:_:)` function on Intel-based Mac computers, where the function does nothing.
+Always call `sys_icache_invalidate(_:_:)` before you run the machine instructions on a recently updated memory page. On Apple silicon, the instruction caches aren’t coherent with data caches, and unexpected results might occur if you run instructions without invalidating the caches. It’s also safe to call the `sys_icache_invalidate(_:_:)` function on Intel-based Mac computers, where the function does nothing.
 
 ```c
 sys_icache_invalidate(jit_region, code.instructions_length);

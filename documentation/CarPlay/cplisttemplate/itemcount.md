@@ -23,17 +23,13 @@ var itemCount: Int { get }
 
 ## Discussion
 
-This value never exceeds [`maximumItemCount`](./maximumitemcount.md). If you initialize a list where the total number of items, across all sections, is greater than [`maximumItemCount`](./maximumitemcount.md), CarPlay only displays items up to this limit and discards the rest.
+The value in this property never exceeds the maximum number of items, as set in the [`maximumItemCount`](./maximumitemcount.md) property. If you initialize or update the list with more items than the allowed maximum, CarPlay adds items until it reaches the maximum and discards the rest.
 
 ## See Also
 
-### Getting Supplementary Information
-- [class var maximumItemCount: Int](./maximumitemcount.md)
-  The maximum number of items, across all sections, that the template can display.
+### Getting item details
 - [func indexPath(for: any CPListTemplateItem) -> IndexPath?](./indexpath%28for%29.md)
   Returns the index path for the specified item.
-- [var title: String?](./title.md)
-  The title that the navigation bar displays when the template is visible.
 
 
 ---

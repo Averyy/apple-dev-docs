@@ -70,6 +70,9 @@ For information about how to create and configure a layer renderer and use it to
   A type that provides the textures and information you need to draw a frame of content.
 - [cp_drawable_t](./cp_drawable_t.md)
   A type that provides the textures and information you need to draw a frame of content.
+### Handling events
+- [var onSpatialEvent: (SpatialEventCollection) -> Void](./layerrenderer/onspatialevent-inq8.md)
+  A closure that receives spatial event updates from the layer renderer.
 ### Configuring the frame update rate
 - [var minimumFrameRepeatCount: Int32](./layerrenderer/minimumframerepeatcount.md)
   The number of additional frames for which the system displays the same content.
@@ -89,8 +92,6 @@ For information about how to create and configure a layer renderer and use it to
 - [var commandQueue: any MTL4CommandQueue](./layerrenderer/commandqueue.md)
   Returns the command queue that the layer uses for drawing operations.
 - [var onSpatialEvent: (SpatialEventCollection) -> Void](./layerrenderer/onspatialevent-2jg60.md)
-  A closure that receives the spatial events updates from the LayerRenderer
-- [var onSpatialEvent: (SpatialEventCollection) -> Void](./layerrenderer/onspatialevent-inq8.md)
   A closure that receives the spatial events updates from the LayerRenderer
 
 ## Relationships

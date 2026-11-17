@@ -19,6 +19,15 @@ init(location: MKMapItem, title: String, subtitle: String?, summary: String?, de
 - (instancetype) initWithLocation:(MKMapItem *) location title:(NSString *) title subtitle:(NSString *) subtitle summary:(NSString *) summary detailTitle:(NSString *) detailTitle detailSubtitle:(NSString *) detailSubtitle detailSummary:(NSString *) detailSummary pinImage:(UIImage *) pinImage selectedPinImage:(UIImage *) selectedPinImage;
 ```
 
+## See Also
+
+### Creating a point of interest
+- [convenience init(location: MKMapItem, title: String, subtitle: String?, summary: String?, detailTitle: String?, detailSubtitle: String?, detailSummary: String?, pinImage: UIImage?)](./init%28location,title,subtitle,summary,detailtitle,detailsubtitle,detailsummary,pinimage%29.md)
+  Creates a point of interest for a specific location.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+- [class var pinImageSize: CGSize](./pinimagesize.md)
+- [class var selectedPinImageSize: CGSize](./selectedpinimagesize.md)
+
 
 ---
 

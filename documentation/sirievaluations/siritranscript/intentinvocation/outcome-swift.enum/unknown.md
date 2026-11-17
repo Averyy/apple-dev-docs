@@ -28,9 +28,9 @@ Grading treats this as having run.
 - [SiriTranscript.IntentInvocation.Outcome.succeeded](./succeeded.md)
   The call ran and succeeded.
 - [SiriTranscript.IntentInvocation.Outcome.failed](./failed.md)
-  The call ran and failed, or could not find what it needed.
+  Siri called it and it failed: its tool threw, or it ended in another error. It doesn’t count as having run.
 - [SiriTranscript.IntentInvocation.Outcome.needsInput](./needsinput.md)
-  Siri stopped to ask the person for a missing value or to choose between candidates.
+  Siri stopped to ask the person for a missing value or to choose between candidates, or the person cancelled the call when asked.
 - [SiriTranscript.IntentInvocation.Outcome.awaitingConfirmation](./awaitingconfirmation.md)
   Siri chose the call and its arguments, and asked the person to confirm before running it.
 - [SiriTranscript.IntentInvocation.Outcome.unreported](./unreported.md)

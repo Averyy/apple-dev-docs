@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/LiveCommunicationKit": {
       "file_path": "documentation/LiveCommunicationKit/LiveCommunicationKit.md",
-      "hash": "129e2a90ac7b82ab98b4bd8146316e34897d3b05639550a968a670c1c6e78fbc"
+      "hash": "d956125eeb1ab9daca35053652152eeca1fccd8c779333a3f8aa45ba4bdf04d6"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/captioning-caption-message": {
       "file_path": "documentation/LiveCommunicationKit/captioning-caption-message.md",
@@ -510,7 +510,7 @@
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistance": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance.md",
-      "hash": "131631ee3fe8e30c1b18e1aa3876a1433f3c686e845f0df41e55604125ec1d2f"
+      "hash": "d9b6db56c7012f42c80876292ece493bea2277e76e1fc5db89ddd598aa6bb1df"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistance/containerapplaunchactivitytype": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/containerapplaunchactivitytype.md",
@@ -534,11 +534,11 @@
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistancecaptioning": {
       "file_path": "documentation/LiveCommunicationKit/liveassistancecaptioning.md",
-      "hash": "f84fb0e37c14b632c7780ca3dc6bbddac4741521b861405a17f95e0f180e5de5"
+      "hash": "a6f2115ba5dfe62da182b00491001aea00a06576c9e20105688f98a11e6a6009"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistanceextension": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension.md",
-      "hash": "33f95384b3d973b40b5e5d06de1717e8125009a8df70fb327fc15f125fdb0cf2"
+      "hash": "983111cc6ec5ff7a6eb220245e0ee8e03ca572c4a73110873e3a090a57faee97"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistanceextension/prepareassistancerequest(_:)": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension/prepareassistancerequest(_).md",
@@ -587,6 +587,22 @@
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistancerequest/url": {
       "file_path": "documentation/LiveCommunicationKit/liveassistancerequest/url.md",
       "hash": "20772397b2f170bdb0ab1f0d72a39db326e4b4621c8eb321a84d9afbb8de48b5"
+    },
+    "https://developer.apple.com/documentation/livecommunicationkit/liveassistancerequesterpresenceobserving": {
+      "file_path": "documentation/LiveCommunicationKit/liveassistancerequesterpresenceobserving.md",
+      "hash": "f3d5c7e0bb53ab4521c37fb1231efeddd849732f7529ce93ba639bd2860438dc"
+    },
+    "https://developer.apple.com/documentation/livecommunicationkit/liveassistancerequesterpresenceobserving/requestcalldidend(_:)": {
+      "file_path": "documentation/LiveCommunicationKit/liveassistancerequesterpresenceobserving/requestcalldidend(_).md",
+      "hash": "ae41e2a446f9adb1fb3a295bc4a3aa559ac48df3d3b1685c791a273e3ea86416"
+    },
+    "https://developer.apple.com/documentation/livecommunicationkit/liveassistancerequesterpresenceobserving/requesterdidleave(_:)": {
+      "file_path": "documentation/LiveCommunicationKit/liveassistancerequesterpresenceobserving/requesterdidleave(_).md",
+      "hash": "4cd6c64efb099e6905e1b8dc39a7ffe4682abf1e6e5b0652d867a6fd3ed27335"
+    },
+    "https://developer.apple.com/documentation/livecommunicationkit/liveassistancerequesterpresenceobserving/requesterdidrejoin(_:)": {
+      "file_path": "documentation/LiveCommunicationKit/liveassistancerequesterpresenceobserving/requesterdidrejoin(_).md",
+      "hash": "af594a8f51575797d4b39456ba3c7fe4e6864ed6825d02c895afface74072a8b"
     },
     "https://developer.apple.com/documentation/livecommunicationkit/liveassistancerequesterror": {
       "file_path": "documentation/LiveCommunicationKit/liveassistancerequesterror.md",
@@ -770,7 +786,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/LiveCommunicationKit.json": {
       "file_path": "documentation/LiveCommunicationKit/LiveCommunicationKit.md",
-      "hash": "129e2a90ac7b82ab98b4bd8146316e34897d3b05639550a968a670c1c6e78fbc"
+      "hash": "d956125eeb1ab9daca35053652152eeca1fccd8c779333a3f8aa45ba4bdf04d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/captioning-caption-message.json": {
       "file_path": "documentation/LiveCommunicationKit/captioning-caption-message.md",
@@ -1278,7 +1294,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistance.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance.md",
-      "hash": "131631ee3fe8e30c1b18e1aa3876a1433f3c686e845f0df41e55604125ec1d2f"
+      "hash": "d9b6db56c7012f42c80876292ece493bea2277e76e1fc5db89ddd598aa6bb1df"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistance/containerapplaunchactivitytype.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistance/containerapplaunchactivitytype.md",
@@ -1302,11 +1318,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistancecaptioning.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistancecaptioning.md",
-      "hash": "f84fb0e37c14b632c7780ca3dc6bbddac4741521b861405a17f95e0f180e5de5"
+      "hash": "a6f2115ba5dfe62da182b00491001aea00a06576c9e20105688f98a11e6a6009"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistanceextension.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension.md",
-      "hash": "33f95384b3d973b40b5e5d06de1717e8125009a8df70fb327fc15f125fdb0cf2"
+      "hash": "983111cc6ec5ff7a6eb220245e0ee8e03ca572c4a73110873e3a090a57faee97"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistanceextension/prepareassistancerequest(_:).json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistanceextension/prepareassistancerequest(_).md",
@@ -1355,6 +1371,22 @@
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistancerequest/url.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistancerequest/url.md",
       "hash": "20772397b2f170bdb0ab1f0d72a39db326e4b4621c8eb321a84d9afbb8de48b5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistancerequesterpresenceobserving.json": {
+      "file_path": "documentation/LiveCommunicationKit/liveassistancerequesterpresenceobserving.md",
+      "hash": "f3d5c7e0bb53ab4521c37fb1231efeddd849732f7529ce93ba639bd2860438dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistancerequesterpresenceobserving/requestcalldidend(_:).json": {
+      "file_path": "documentation/LiveCommunicationKit/liveassistancerequesterpresenceobserving/requestcalldidend(_).md",
+      "hash": "ae41e2a446f9adb1fb3a295bc4a3aa559ac48df3d3b1685c791a273e3ea86416"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistancerequesterpresenceobserving/requesterdidleave(_:).json": {
+      "file_path": "documentation/LiveCommunicationKit/liveassistancerequesterpresenceobserving/requesterdidleave(_).md",
+      "hash": "4cd6c64efb099e6905e1b8dc39a7ffe4682abf1e6e5b0652d867a6fd3ed27335"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistancerequesterpresenceobserving/requesterdidrejoin(_:).json": {
+      "file_path": "documentation/LiveCommunicationKit/liveassistancerequesterpresenceobserving/requesterdidrejoin(_).md",
+      "hash": "af594a8f51575797d4b39456ba3c7fe4e6864ed6825d02c895afface74072a8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/liveassistancerequesterror.json": {
       "file_path": "documentation/LiveCommunicationKit/liveassistancerequesterror.md",
@@ -1541,6 +1573,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 384
+    "total_pages": 392
   }
 }

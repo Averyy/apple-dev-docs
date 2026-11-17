@@ -34,12 +34,12 @@ Because a body anchor’s origin maps to the hip joint, you calculate the curren
 
 ```swift
 static var hipToFootOffset: Float {
-    // Get an index for a foot. 
-    let footIndex = ARSkeletonDefinition.defaultBody3D.index(forJointName: .leftFoot)
-    // Get the foot's world-space offset from the hip. 
+    // Get an index for a foot.
+    let footIndex = ARSkeletonDefinition.defaultBody3D.index(for: .leftFoot)
+    // Get the foot's world-space offset from the hip.
     let footTransform = ARSkeletonDefinition.defaultBody3D.neutralBodySkeleton3D!.jointModelTransforms[footIndex]
-    // Return the height by getting just the y-value. 
-    let distanceFromHipOnY = abs(footTransform.columns.3.y) 
+    // Return the height by getting just the y-value.
+    let distanceFromHipOnY = abs(footTransform.columns.3.y)
     return distanceFromHipOnY
 }
 ```

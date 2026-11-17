@@ -106,7 +106,7 @@
     },
     "https://developer.apple.com/documentation/gameplaykit/gkagent2d/update(deltatime:)": {
       "file_path": "documentation/GameplayKit/gkagent2d/update(deltatime).md",
-      "hash": "a4c2ae275d29139822d88a77ee7712816c7b98c9436591ce9d9d3bf9e3532bb6"
+      "hash": "b70e169f4de80fea496c1b1286d9efea1290b91e0e59475a043161714a7dd5cd"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkagent2d/velocity": {
       "file_path": "documentation/GameplayKit/gkagent2d/velocity.md",
@@ -130,7 +130,7 @@
     },
     "https://developer.apple.com/documentation/gameplaykit/gkagent3d/update(deltatime:)": {
       "file_path": "documentation/GameplayKit/gkagent3d/update(deltatime).md",
-      "hash": "a9194dd8f59f90e193be17e146c939c3daae4c3acf0dae9845f1438765eb1c16"
+      "hash": "043fd4ab054e4e38ca84acd602f03c1d6b5a453e832e74fb2e3e4852917e419e"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkagent3d/velocity": {
       "file_path": "documentation/GameplayKit/gkagent3d/velocity.md",
@@ -362,7 +362,7 @@
     },
     "https://developer.apple.com/documentation/gameplaykit/gkcomponentsystem/init(componentclass:)": {
       "file_path": "documentation/GameplayKit/gkcomponentsystem/init(componentclass).md",
-      "hash": "b85070c754a1e9d46b4081ca65b54af124a0266e9fe6ea957c7c30d728b1c76b"
+      "hash": "3a9d49cc39ed293948778be88239886c1fc6c40748af07c246f9383dee5fb193"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkcomponentsystem/removecomponent(_:)": {
       "file_path": "documentation/GameplayKit/gkcomponentsystem/removecomponent(_).md",
@@ -1226,7 +1226,7 @@
     },
     "https://developer.apple.com/documentation/gameplaykit/gknspredicaterule/evaluatepredicate(in:)": {
       "file_path": "documentation/GameplayKit/gknspredicaterule/evaluatepredicate(in).md",
-      "hash": "71341e8fbdcab80727fa5466f483990aada3a4981249d30227d6402ff11b1f80"
+      "hash": "9916f70dcdb00ad79dba1cc71dda8f5f198dba742520bad534a7f8466ede7169"
     },
     "https://developer.apple.com/documentation/gameplaykit/gknspredicaterule/init(predicate:)": {
       "file_path": "documentation/GameplayKit/gknspredicaterule/init(predicate).md",
@@ -1326,7 +1326,7 @@
     },
     "https://developer.apple.com/documentation/gameplaykit/gkoctree/add(_:in:)": {
       "file_path": "documentation/GameplayKit/gkoctree/add(_,in).md",
-      "hash": "d16955b4367a37434831d28cbf5a3ca26f2de650b32af274a481d1ad7fc5506b"
+      "hash": "27d027f863d250f31b3f0907594849413ac4025fa765d3eec36d164b4de516ba"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkoctree/elements(at:)": {
       "file_path": "documentation/GameplayKit/gkoctree/elements(at).md",
@@ -1334,7 +1334,7 @@
     },
     "https://developer.apple.com/documentation/gameplaykit/gkoctree/elements(in:)": {
       "file_path": "documentation/GameplayKit/gkoctree/elements(in).md",
-      "hash": "68b919ecaaf449ddeb7a5f4d3a4f4fc0c8fef5c73ead3e878fdbb2ea7b1ca1f3"
+      "hash": "0a03efeb1db8bfcab58b402426bed8df9e919dc4be22c848c9b478f9b09fc586"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkoctree/init(boundingbox:minimumcellsize:)": {
       "file_path": "documentation/GameplayKit/gkoctree/init(boundingbox,minimumcellsize).md",
@@ -1350,7 +1350,7 @@
     },
     "https://developer.apple.com/documentation/gameplaykit/gkoctree/remove(_:using:)": {
       "file_path": "documentation/GameplayKit/gkoctree/remove(_,using).md",
-      "hash": "aca7c9721783ec0eaf15fe6e07607a98afde987ff12f8453c88a93fca79d29fe"
+      "hash": "4fffc36513eada7111bf846aadec7f33c8fb4c7822546aa0d6ecb23c977a75b6"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkoctreenode": {
       "file_path": "documentation/GameplayKit/gkoctreenode.md",
@@ -1690,23 +1690,23 @@
     },
     "https://developer.apple.com/documentation/gameplaykit/gkrule/evaluatepredicate(in:)": {
       "file_path": "documentation/GameplayKit/gkrule/evaluatepredicate(in).md",
-      "hash": "a9419e7807239413ae41f1e9130369be3f373680d4d17bfa71eab2cdf230280e"
+      "hash": "2d508769703347268733f3a992afa8be2206fed52c4327dac2c941f45848d920"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkrule/init(blockpredicate:action:)": {
       "file_path": "documentation/GameplayKit/gkrule/init(blockpredicate,action).md",
-      "hash": "1e560d92cbd8e14e123dac13d0e013082eae5e173099b57ea8c3486d9bc56ce0"
+      "hash": "d0d0d90c8a954a4c54cb15500df8d4e8e6d5a81836539e1398511e1b63af344b"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkrule/init(predicate:assertingfact:grade:)": {
       "file_path": "documentation/GameplayKit/gkrule/init(predicate,assertingfact,grade).md",
-      "hash": "eb8784249d87ba48422bcacd021bfd62395350cef2885e6a4fe484514dd7420a"
+      "hash": "522232b61e3c346dfb19ed5be6ca9055bd05e9cee4634a14a055bdd625b72e34"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkrule/init(predicate:retractingfact:grade:)": {
       "file_path": "documentation/GameplayKit/gkrule/init(predicate,retractingfact,grade).md",
-      "hash": "a5141dd248aa28b575f6622b4532348a994df323e7adf5ab077783dd778814e0"
+      "hash": "c171139fe9a5caa1f4586cd3841769c10ae39b2124b0a79b5977f820779b417e"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkrule/performaction(in:)": {
       "file_path": "documentation/GameplayKit/gkrule/performaction(in).md",
-      "hash": "5d9ab1477705e7e1dd3b4ea6101e313451274cfe5f0050e391bf664ed9910d81"
+      "hash": "0c03b83db8ea8ca25bbe971be7d107ca21baa713f98ea022abf10e0a3daf5472"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkrule/salience": {
       "file_path": "documentation/GameplayKit/gkrule/salience.md",
@@ -1826,7 +1826,7 @@
     },
     "https://developer.apple.com/documentation/gameplaykit/gkscene/removegraph(_:)": {
       "file_path": "documentation/GameplayKit/gkscene/removegraph(_).md",
-      "hash": "fb8481f4a4fb31d0f5d21c92a11f2a6897ce9f4e32083bb75727b4d097400b8a"
+      "hash": "f5d10fdc4940fcc2b24ae5b726e8e687dcf935740a25c4c2b4a88c34371350af"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkscene/rootnode": {
       "file_path": "documentation/GameplayKit/gkscene/rootnode.md",
@@ -2142,7 +2142,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkagent2d/update(deltatime:).json": {
       "file_path": "documentation/GameplayKit/gkagent2d/update(deltatime).md",
-      "hash": "a4c2ae275d29139822d88a77ee7712816c7b98c9436591ce9d9d3bf9e3532bb6"
+      "hash": "b70e169f4de80fea496c1b1286d9efea1290b91e0e59475a043161714a7dd5cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkagent2d/velocity.json": {
       "file_path": "documentation/GameplayKit/gkagent2d/velocity.md",
@@ -2166,7 +2166,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkagent3d/update(deltatime:).json": {
       "file_path": "documentation/GameplayKit/gkagent3d/update(deltatime).md",
-      "hash": "a9194dd8f59f90e193be17e146c939c3daae4c3acf0dae9845f1438765eb1c16"
+      "hash": "043fd4ab054e4e38ca84acd602f03c1d6b5a453e832e74fb2e3e4852917e419e"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkagent3d/velocity.json": {
       "file_path": "documentation/GameplayKit/gkagent3d/velocity.md",
@@ -2398,7 +2398,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkcomponentsystem/init(componentclass:).json": {
       "file_path": "documentation/GameplayKit/gkcomponentsystem/init(componentclass).md",
-      "hash": "b85070c754a1e9d46b4081ca65b54af124a0266e9fe6ea957c7c30d728b1c76b"
+      "hash": "3a9d49cc39ed293948778be88239886c1fc6c40748af07c246f9383dee5fb193"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkcomponentsystem/removecomponent(_:).json": {
       "file_path": "documentation/GameplayKit/gkcomponentsystem/removecomponent(_).md",
@@ -3262,7 +3262,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gknspredicaterule/evaluatepredicate(in:).json": {
       "file_path": "documentation/GameplayKit/gknspredicaterule/evaluatepredicate(in).md",
-      "hash": "71341e8fbdcab80727fa5466f483990aada3a4981249d30227d6402ff11b1f80"
+      "hash": "9916f70dcdb00ad79dba1cc71dda8f5f198dba742520bad534a7f8466ede7169"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gknspredicaterule/init(predicate:).json": {
       "file_path": "documentation/GameplayKit/gknspredicaterule/init(predicate).md",
@@ -3362,7 +3362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkoctree/add(_:in:).json": {
       "file_path": "documentation/GameplayKit/gkoctree/add(_,in).md",
-      "hash": "d16955b4367a37434831d28cbf5a3ca26f2de650b32af274a481d1ad7fc5506b"
+      "hash": "27d027f863d250f31b3f0907594849413ac4025fa765d3eec36d164b4de516ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkoctree/elements(at:).json": {
       "file_path": "documentation/GameplayKit/gkoctree/elements(at).md",
@@ -3370,7 +3370,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkoctree/elements(in:).json": {
       "file_path": "documentation/GameplayKit/gkoctree/elements(in).md",
-      "hash": "68b919ecaaf449ddeb7a5f4d3a4f4fc0c8fef5c73ead3e878fdbb2ea7b1ca1f3"
+      "hash": "0a03efeb1db8bfcab58b402426bed8df9e919dc4be22c848c9b478f9b09fc586"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkoctree/init(boundingbox:minimumcellsize:).json": {
       "file_path": "documentation/GameplayKit/gkoctree/init(boundingbox,minimumcellsize).md",
@@ -3386,7 +3386,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkoctree/remove(_:using:).json": {
       "file_path": "documentation/GameplayKit/gkoctree/remove(_,using).md",
-      "hash": "aca7c9721783ec0eaf15fe6e07607a98afde987ff12f8453c88a93fca79d29fe"
+      "hash": "4fffc36513eada7111bf846aadec7f33c8fb4c7822546aa0d6ecb23c977a75b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkoctreenode.json": {
       "file_path": "documentation/GameplayKit/gkoctreenode.md",
@@ -3726,23 +3726,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkrule/evaluatepredicate(in:).json": {
       "file_path": "documentation/GameplayKit/gkrule/evaluatepredicate(in).md",
-      "hash": "a9419e7807239413ae41f1e9130369be3f373680d4d17bfa71eab2cdf230280e"
+      "hash": "2d508769703347268733f3a992afa8be2206fed52c4327dac2c941f45848d920"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkrule/init(blockpredicate:action:).json": {
       "file_path": "documentation/GameplayKit/gkrule/init(blockpredicate,action).md",
-      "hash": "1e560d92cbd8e14e123dac13d0e013082eae5e173099b57ea8c3486d9bc56ce0"
+      "hash": "d0d0d90c8a954a4c54cb15500df8d4e8e6d5a81836539e1398511e1b63af344b"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkrule/init(predicate:assertingfact:grade:).json": {
       "file_path": "documentation/GameplayKit/gkrule/init(predicate,assertingfact,grade).md",
-      "hash": "eb8784249d87ba48422bcacd021bfd62395350cef2885e6a4fe484514dd7420a"
+      "hash": "522232b61e3c346dfb19ed5be6ca9055bd05e9cee4634a14a055bdd625b72e34"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkrule/init(predicate:retractingfact:grade:).json": {
       "file_path": "documentation/GameplayKit/gkrule/init(predicate,retractingfact,grade).md",
-      "hash": "a5141dd248aa28b575f6622b4532348a994df323e7adf5ab077783dd778814e0"
+      "hash": "c171139fe9a5caa1f4586cd3841769c10ae39b2124b0a79b5977f820779b417e"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkrule/performaction(in:).json": {
       "file_path": "documentation/GameplayKit/gkrule/performaction(in).md",
-      "hash": "5d9ab1477705e7e1dd3b4ea6101e313451274cfe5f0050e391bf664ed9910d81"
+      "hash": "0c03b83db8ea8ca25bbe971be7d107ca21baa713f98ea022abf10e0a3daf5472"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkrule/salience.json": {
       "file_path": "documentation/GameplayKit/gkrule/salience.md",
@@ -3862,7 +3862,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkscene/removegraph(_:).json": {
       "file_path": "documentation/GameplayKit/gkscene/removegraph(_).md",
-      "hash": "fb8481f4a4fb31d0f5d21c92a11f2a6897ce9f4e32083bb75727b4d097400b8a"
+      "hash": "f5d10fdc4940fcc2b24ae5b726e8e687dcf935740a25c4c2b4a88c34371350af"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkscene/rootnode.json": {
       "file_path": "documentation/GameplayKit/gkscene/rootnode.md",

@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Enumeration Case
 
-The plane doesn’t have an alignment.
+No plane alignment.
 
 **Availability**:
 - visionOS
@@ -19,11 +19,11 @@ ar_plane_alignment_none
 
 ### Getting plane alignment
 - [ar_plane_alignment_horizontal](./ar_plane_alignment_horizontal.md)
-  The plane is in a horizontal position.
+  Planes orthogonal to the gravity vector.
 - [ar_plane_alignment_vertical](./ar_plane_alignment_vertical.md)
-  The plane is in a vertical position.
+  Planes parallel to the gravity vector.
 - [ar_plane_alignment_slanted](./ar_plane_alignment_slanted.md)
-  The plane is in a slanted orientation.
+  Planes that are neither horizontal nor vertical.
 
 
 ---

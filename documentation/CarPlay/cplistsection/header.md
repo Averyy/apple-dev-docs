@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The section’s header text.
+The main text to display in the header area of the section.
 
 **Availability**:
 - iOS 12.0+
@@ -23,9 +23,13 @@ var header: String? { get }
 
 ## See Also
 
-### Getting Supplementary Information
-- [var sectionIndexTitle: String?](./sectionindextitle.md)
-  The section’s index title.
+### Getting the section’s header content
+- [var headerSubtitle: String?](./headersubtitle.md)
+  The secondary text to display in the header area of the section.
+- [var headerButton: CPButton?](./headerbutton.md)
+  The button to display in the header area of the section.
+- [var headerImage: UIImage?](./headerimage.md)
+  The image to display in the header area of the section.
 
 
 ---

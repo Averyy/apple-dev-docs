@@ -25,6 +25,10 @@ var planeDetection: ARWorldTrackingConfiguration.PlaneDetection { get set }
 - [Displaying an AR Experience with Metal](../displaying-an-ar-experience-with-metal.md)
 - [Understanding World Tracking](../understanding-world-tracking.md)
 
+## Discussion
+
+If set, new planes will continue to be detected and updated over time. Detected planes will be added to the session as [`ARPlaneAnchor`](../arplaneanchor.md) objects. In the event that two planes are merged, the newer plane will be removed. Defaults to `ARPlaneDetectionNone`.
+
 ## See Also
 
 ### Tracking Surfaces

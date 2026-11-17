@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Sets the handler for receiving plane detection updates using the plane detection provider and plane detection update queue you provide.
+Sets the function for receiving plane detection updates.
 
 **Availability**:
 - visionOS 1.0+
@@ -15,11 +15,22 @@ Sets the handler for receiving plane detection updates using the plane detection
 extern void ar_plane_detection_provider_set_update_handler_f(ar_plane_detection_provider_t plane_detection_provider, dispatch_queue_t plane_detection_updates_queue, void *context, ar_plane_detection_update_handler_function_t plane_detection_update_handler_function);
 ```
 
+## Discussion
+
+> **Note**: Setting this function will override the handler set using `ar_plane_detection_provider_set_update_handler`.
+
+## Parameters
+
+- `plane_detection_provider`: The plane detection provider.
+- `plane_detection_updates_queue`: The plane detection update queue. Passing `NULL` will default to the main queue.
+- `context`: The application-defined context parameter to pass to the function.
+- `plane_detection_update_handler_function`: The plane detection update handler function.
+
 ## See Also
 
 ### Plane detection
 - [ar_plane_alignment_t](./ar_plane_alignment_t.md)
-  The kinds of alignment — horizontal or vertical — that a plane anchor can have.
+  Option set describing possible orientation alignments of a detected plane.
 - [ar_plane_classification_t](./ar_plane_classification_t.md)
   The kinds of object classification a plane anchor can have.
 - [ar_plane_classification_ceiling](./ar_plane_classification_t/ar_plane_classification_ceiling.md)
@@ -45,7 +56,7 @@ extern void ar_plane_detection_provider_set_update_handler_f(ar_plane_detection_
 - [ar_plane_anchor_get_alignment](./ar_plane_anchor_get_alignment.md)
   Gets the alignment — horizontal or vertical — of a plane anchor relative to gravity.
 - [ar_plane_anchor_get_geometry](./ar_plane_anchor_get_geometry.md)
-  Gets the shape of a plane anchor.
+  Gets the geometry of a plane anchor.
 - [ar_plane_anchor_get_plane_classification](./ar_plane_anchor_get_plane_classification.md)
   Gets the kind of real-world object that ARKit determines the plane anchor might be.
 

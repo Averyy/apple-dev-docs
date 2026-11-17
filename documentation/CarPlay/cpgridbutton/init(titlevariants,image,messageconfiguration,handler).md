@@ -21,6 +21,13 @@ init(titleVariants: [String], image: UIImage, messageConfiguration: CPMessageGri
 - (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants image:(UIImage *) image messageConfiguration:(CPMessageGridItemConfiguration *) messageConfiguration handler:(void (^)(CPGridButton *gridButton)) handler;
 ```
 
+## See Also
+
+### Creating a grid button
+- [convenience init(titleVariants: [String], image: UIImage, handler: ((CPGridButton) -> Void)?)](./init%28titlevariants,image,handler%29.md)
+  Creates a grid button with the specified title variants, image, and action handler.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

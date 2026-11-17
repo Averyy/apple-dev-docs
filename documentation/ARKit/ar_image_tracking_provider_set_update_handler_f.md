@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Sets the handler for receiving image tracking updates.
+Sets the function for receiving image tracking updates.
 
 **Availability**:
 - visionOS 1.0+
@@ -14,6 +14,17 @@ Sets the handler for receiving image tracking updates.
 ```c
 extern void ar_image_tracking_provider_set_update_handler_f(ar_image_tracking_provider_t image_tracking_provider, dispatch_queue_t image_tracking_updates_queue, void *context, ar_image_tracking_update_handler_function_t image_tracking_update_handler_function);
 ```
+
+## Discussion
+
+> **Note**: Setting this function will override the handler set using `ar_image_tracking_provider_set_update_handler`.
+
+## Parameters
+
+- `image_tracking_provider`: The image tracking provider.
+- `image_tracking_updates_queue`: The queue on which the function will be called. Passing `NULL` will default to the main queue.
+- `context`: The application-defined context parameter to pass to the function.
+- `image_tracking_update_handler_function`: The function to be called when new image tracking data arrives.
 
 ## See Also
 
@@ -25,7 +36,7 @@ extern void ar_image_tracking_provider_set_update_handler_f(ar_image_tracking_pr
 - [ar_image_anchors_enumerate_anchors](./ar_image_anchors_enumerate_anchors.md)
   Enumerates a collection of image anchors.
 - [ar_image_anchors_enumerate_anchors_f](./ar_image_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of image anchors.
+  Enumerates a collection of image anchors using a function.
 - [ar_image_anchors_get_count](./ar_image_anchors_get_count.md)
   Gets the number of image anchors in the collection.
 - [ar_image_tracking_provider_create](./ar_image_tracking_provider_create.md)
@@ -41,7 +52,9 @@ extern void ar_image_tracking_provider_set_update_handler_f(ar_image_tracking_pr
 - [ar_image_tracking_configuration_create](./ar_image_tracking_configuration_create.md)
   Creates an image tracking configuration.
 - [ar_image_tracking_configuration_t](./ar_image_tracking_configuration_t.md)
+  Configuration for image tracking.
 - [ar_image_tracking_provider_copy_all_image_anchors](./ar_image_tracking_provider_copy_all_image_anchors.md)
+  Copy all image anchors.
 - [ar_reference_images_t](./ar_reference_images_t.md)
   A collection of reference images.
 - [ar_reference_images_enumerator_t](./ar_reference_images_enumerator_t.md)

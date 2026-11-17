@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-The accessories that a message list item can display in its trailing region.
+Constants that indicate the type of symbol to display at the trailing edge of a message list row.
 
 **Availability**:
 - iOS 12.0+
@@ -23,15 +23,15 @@ enum CPMessageTrailingItem : NSInteger;
 
 ## Overview
 
-Use these constants when creating instances of [`CPMessageListItemTrailingConfiguration`](./cpmessagelistitemtrailingconfiguration.md). A trailing item can provide additional context for a list item’s contents, or help communicate its behavior.
+Use these constants to specify relevant symbols for the conversation or contact.
 
 ## Topics
 
 ### Trailing Items
 - [CPMessageTrailingItem.none](./cpmessagetrailingitem/none.md)
-  Don’t show a trailing item.
+  An option to display no symbol.
 - [CPMessageTrailingItem.mute](./cpmessagetrailingitem/mute.md)
-  Show a muted speaker icon.
+  An option to display a mute symbol.
 ### Initializers
 - [init?(rawValue: Int)](./cpmessagetrailingitem/init%28rawvalue%29.md)
 
@@ -47,9 +47,9 @@ Use these constants when creating instances of [`CPMessageListItemTrailingConfig
 
 ## See Also
 
-### Getting the Trailing Item
+### Getting the trailing item
 - [var trailingItem: CPMessageTrailingItem](./cpmessagelistitemtrailingconfiguration/trailingitem.md)
-  The configuration’s item.
+  The standard system symbol to display in the row’s trailing region.
 
 
 ---

@@ -23,9 +23,9 @@ protocol WhiteboardEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var color: some AppSchemaEnum](./whiteboardenum/color.md)
-  An enum schema for a color parameter.
+  An enum schema for a color.
 - [var itemType: some AppSchemaEnum](./whiteboardenum/itemtype.md)
-  An enum schema for an item type parameter.
+  An enum schema for an item type.
 
 ## Relationships
 
@@ -38,9 +38,9 @@ protocol WhiteboardEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var color: some AppSchemaEnum](./whiteboardenum/color.md)
-  An enum schema for a color parameter.
+  An enum schema for a color.
 - [var itemType: some AppSchemaEnum](./whiteboardenum/itemtype.md)
-  An enum schema for an item type parameter.
+  An enum schema for an item type.
 
 
 ---

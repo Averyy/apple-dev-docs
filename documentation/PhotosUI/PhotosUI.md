@@ -94,6 +94,8 @@ The framework also provides a view you can use to display Live Photos.
 - [class PHSharedAlbumCreationViewController](./phsharedalbumcreationviewcontroller.md)
 - [class PHSharedAlbumCustomizationViewController](./phsharedalbumcustomizationviewcontroller.md)
 - [class PHSharedAlbumPostingViewController](./phsharedalbumpostingviewcontroller.md)
+- [PHPickerAspectRatio](./phpickeraspectratio-c.class.md)
+  An aspect ratio for the items that \c PHPickerViewController shows.
 - [PHPickerSearchText](./phpickersearchtext-c.class.md)
   A search text for \c PHPickerViewController.
 - [PHSharedAlbumCreationConfiguration](./phsharedalbumcreationconfiguration-c.class.md)
@@ -101,6 +103,9 @@ The framework also provides a view you can use to display Live Photos.
 - [PHSharedAlbumCreationResult](./phsharedalbumcreationresult-c.class.md)
   An object that contains useful information about a created shared album.
 ### Structures
+- [struct PHPhotosUIError](./phphotosuierror-swift.struct.md)
+- [struct PHPickerAspectRatio](./phpickeraspectratio-swift.struct.md)
+  An aspect ratio for the items that `PHPickerViewController` shows.
 - [struct PHPickerMetadataOptions](./phpickermetadataoptions.md)
   Constants that specify metadata options for \c PHPickerViewController.
 - [struct PHPickerSearchText](./phpickersearchtext-swift.struct.md)
@@ -109,9 +114,18 @@ The framework also provides a view you can use to display Live Photos.
   An object used to configure a `PHSharedAlbumCreationViewController`.
 - [struct PHSharedAlbumCreationResult](./phsharedalbumcreationresult-swift.struct.md)
   The result of a user creating a shared album.
+### Variables
+- [let PHPhotosUIErrorDomain: String](./phphotosuierrordomain.md)
 ### Enumerations
+- [enum PHPickerPrimaryButtonType](./phpickerprimarybuttontype.md)
+  An enum that determines the primary button type for the picker.
+- [enum PHPickerResultThumbnailSize](./phpickerresultthumbnailsize.md)
+  An enum that determines the minimum length for the thumbnail.
+- [enum PHPickerSecondaryButtonType](./phpickersecondarybuttontype.md)
+  An enum that determines the secondary button type for the picker.
 - [enum PHSharedAlbumCreationSharingPolicy](./phsharedalbumcreationsharingpolicy.md)
   The sharing policy for creating shared albums.
+- [PHPhotosUIError](./phphotosuierror-swift.struct/code.md)
 ### Protocols
 - [PHSharedAlbumCreationViewControllerDelegate](./phsharedalbumcreationviewcontroller/delegate-swift.protocol.md)
 - [PHSharedAlbumCustomizationViewControllerDelegate](./phsharedalbumcustomizationviewcontroller/delegate-swift.protocol.md)

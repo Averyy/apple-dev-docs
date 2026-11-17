@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Enumerates a collection of data providers.
+Enumerates a collection of data providers using a function.
 
 **Availability**:
 - visionOS 1.0+
@@ -15,6 +15,12 @@ Enumerates a collection of data providers.
 extern void ar_data_providers_enumerate_data_providers_f(ar_data_providers_t data_providers, void *context, ar_data_providers_enumerator_function_t data_providers_enumerator_function);
 ```
 
+## Parameters
+
+- `data_providers`: The collection of data providers.
+- `context`: The application-defined context parameter to pass to the function.
+- `data_providers_enumerator_function`: The enumerator function.
+
 ## See Also
 
 ### Data providers
@@ -23,7 +29,7 @@ extern void ar_data_providers_enumerate_data_providers_f(ar_data_providers_t dat
 - [ar_data_provider_get_required_authorization_type](./ar_data_provider_get_required_authorization_type.md)
   The kinds of authorization you need to use a particular data provider type.
 - [ar_data_provider_get_state](./ar_data_provider_get_state.md)
-  Gets the current status of data coming from this provider.
+  Gets the current status of data coming from a data provider.
 - [ar_data_providers_enumerator_t](./ar_data_providers_enumerator_t.md)
   A handler for enumerating a collection of data providers.
 - [ar_data_providers_t](./ar_data_providers_t.md)
@@ -45,6 +51,7 @@ extern void ar_data_providers_enumerate_data_providers_f(ar_data_providers_t dat
 - [ar_data_providers_remove_data_providers](./ar_data_providers_remove_data_providers.md)
   Removes multiple data providers from a collection.
 - [ar_data_providers_enumerator_function_t](./ar_data_providers_enumerator_function_t.md)
+  Function for enumerating a collection of data providers.
 - [ar_session_data_provider_state_change_handler_function_t](./ar_session_data_provider_state_change_handler_function_t.md)
   A handler function that the session calls when one or more data providers associated with it change state.
 

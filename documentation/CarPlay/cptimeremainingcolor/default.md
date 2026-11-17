@@ -27,7 +27,7 @@ The color is white when the map template’s [`tripEstimateStyle`](../cpmaptempl
 
 ## See Also
 
-### Colors
+### Getting the color
 - [CPTimeRemainingColor.green](./green.md)
   A shade of green.
 - [CPTimeRemainingColor.orange](./orange.md)

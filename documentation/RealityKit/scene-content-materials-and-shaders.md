@@ -134,6 +134,8 @@ RealityKit includes a few material types to help you get started, including [`Si
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](./shadergraphmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
+- [class ShaderGraph](./shadergraph.md)
+  A graph of connected nodes that defines a shader, which you can build and edit in code.
 - [Modifying RealityKit rendering using custom materials](./modifying-realitykit-rendering-using-custom-materials.md)
   Write Metal shader functions to implement custom rendering effects.
 - [struct CustomMaterial](./custommaterial.md)
@@ -149,6 +151,7 @@ RealityKit includes a few material types to help you get started, including [`Si
 - [CustomMaterial.Program.Descriptor](./custommaterial/program-swift.class/descriptor-swift.struct.md)
   An object that specifies all parameters necessary to initialize `CustomMaterial` programs
 - [enum CustomShaderStage](./customshaderstage.md)
+  The shader stages of a custom material, which run your own geometry modifier or surface shader code.
 ### Object occlusion
 - [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
@@ -212,6 +215,7 @@ RealityKit includes a few material types to help you get started, including [`Si
 - [struct MaterialParameterTypes](./materialparametertypes.md)
   A set of types that material parameters can use.
 - [struct MaterialParameters](./materialparameters.md)
+  A collection of types that represent material parameter values, handles, and textures.
 - [enum MaterialColorParameter](./materialcolorparameter.md)
   The color parameter applied to a material.
 - [enum MaterialScalarParameter](./materialscalarparameter.md)

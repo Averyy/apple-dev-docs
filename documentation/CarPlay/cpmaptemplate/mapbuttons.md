@@ -27,9 +27,13 @@ When the array contains more than three buttons, the map template displays only 
 
 ## See Also
 
-### Managing Map Buttons
-- [class CPMapButton](../cpmapbutton.md)
-  A button that represents an action that a map template displays on the CarPlay screen.
+### Configuring the map template
+- [var automaticallyHidesNavigationBar: Bool](./automaticallyhidesnavigationbar.md)
+  A Boolean value that indicates whether the template should automatically hide the navigation bar.
+- [var hidesButtonsWithNavigationBar: Bool](./hidesbuttonswithnavigationbar.md)
+  A Boolean value that tells the system to hide the map buttons when hiding the navigation bar.
+- [var guidanceBackgroundColor: UIColor](./guidancebackgroundcolor.md)
+  The background color the map template uses when displaying guidance.
 
 
 ---

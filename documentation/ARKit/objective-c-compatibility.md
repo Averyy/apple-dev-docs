@@ -11,17 +11,17 @@
 - [protocol OS_ar_trackable_anchor](./os_ar_trackable_anchor.md)
   An anchor that can gain and lose its tracking state over the course of a session.
 - [protocol OS_ar_authorization_result](./os_ar_authorization_result.md)
-  An authorization result.
+  Result of an authorization request.
 - [protocol OS_ar_authorization_results](./os_ar_authorization_results.md)
   A collection of authorization results.
 - [protocol OS_ar_data_provider](./os_ar_data_provider.md)
   A source of live data from ARKit.
 - [protocol OS_ar_device_anchor](./os_ar_device_anchor.md)
-  The position and orientation of Apple Vision Pro.
+  An anchor representing the device’s position and orientation.
 - [protocol OS_ar_error](./os_ar_error.md)
   An error reported by ARKit.
 - [protocol OS_ar_data_providers](./os_ar_data_providers.md)
-  A source of live data from ARKit.
+  A collection of data providers.
 - [protocol OS_ar_geometry_element](./os_ar_geometry_element.md)
   A container for vertex indices of lines or triangles.
 - [protocol OS_ar_geometry_source](./os_ar_geometry_source.md)
@@ -29,19 +29,25 @@
 - [protocol OS_ar_hand_anchor](./os_ar_hand_anchor.md)
   A hand’s position in a person’s surroundings.
 - [protocol OS_ar_hand_skeleton](./os_ar_hand_skeleton.md)
+  Represents a hand skeleton with joints and their transforms.
 - [protocol OS_ar_hand_tracking_provider](./os_ar_hand_tracking_provider.md)
   A source of live data about the position of a person’s hands and hand joints.
 - [protocol OS_ar_hand_tracking_configuration](./os_ar_hand_tracking_configuration.md)
+  Configuration for hand tracking.
 - [protocol OS_ar_image_tracking_configuration](./os_ar_image_tracking_configuration.md)
+  Configuration for image tracking.
 - [protocol OS_ar_plane_detection_configuration](./os_ar_plane_detection_configuration.md)
+  Configuration for plane detection.
 - [protocol OS_ar_plane_extent](./os_ar_plane_extent.md)
   The size of a plane.
 - [protocol OS_ar_reference_images](./os_ar_reference_images.md)
   A collection of reference images.
 - [protocol OS_ar_scene_reconstruction_configuration](./os_ar_scene_reconstruction_configuration.md)
+  Configuration for scene reconstruction.
 - [protocol OS_ar_session](./os_ar_session.md)
   The main entry point for receiving data from ARKit.
 - [protocol OS_ar_world_tracking_configuration](./os_ar_world_tracking_configuration.md)
+  Configuration for world tracking.
 - [protocol OS_ar_image_anchor](./os_ar_image_anchor.md)
   A 2D image’s position in a person’s surroundings.
 - [protocol OS_ar_image_anchors](./os_ar_image_anchors.md)
@@ -49,9 +55,9 @@
 - [protocol OS_ar_image_tracking_provider](./os_ar_image_tracking_provider.md)
   A source of live data about a 2D image’s position in a person’s surroundings.
 - [protocol OS_ar_mesh_anchor](./os_ar_mesh_anchor.md)
-  A source of live data about a 2D image’s position in a person’s surroundings.
+  An anchor that represents a reconstructed mesh from the physical environment.
 - [protocol OS_ar_mesh_anchors](./os_ar_mesh_anchors.md)
-  A collection of mech anchors.
+  A collection of mesh anchors.
 - [protocol OS_ar_mesh_geometry](./os_ar_mesh_geometry.md)
   The shapes that make up a mesh anchor.
 - [protocol OS_ar_plane_anchor](./os_ar_plane_anchor.md)
@@ -67,6 +73,7 @@
 - [protocol OS_ar_scene_reconstruction_provider](./os_ar_scene_reconstruction_provider.md)
   A source of live data about the shape of a person’s surroundings.
 - [protocol OS_ar_skeleton_joint](./os_ar_skeleton_joint.md)
+  Represents a joint in a skeleton with its transform and tracking state.
 - [protocol OS_ar_world_anchor](./os_ar_world_anchor.md)
   A fixed location in a person’s surroundings.
 - [protocol OS_ar_world_anchors](./os_ar_world_anchors.md)
@@ -74,34 +81,63 @@
 - [protocol OS_ar_world_tracking_provider](./os_ar_world_tracking_provider.md)
   A source of live data about the device pose and anchors in a person’s surroundings.
 - [protocol OS_ar_barcode_anchor](./os_ar_barcode_anchor.md)
+  An anchor that tracks a barcode’s position and orientation in the physical environment.
 - [protocol OS_ar_barcode_anchors](./os_ar_barcode_anchors.md)
+  A collection of barcode anchors.
 - [protocol OS_ar_barcode_detection_callbacks](./os_ar_barcode_detection_callbacks.md)
+  Callbacks for barcode detection events.
 - [protocol OS_ar_barcode_detection_configuration](./os_ar_barcode_detection_configuration.md)
+  Configuration for barcode detection.
 - [protocol OS_ar_barcode_detection_provider](./os_ar_barcode_detection_provider.md)
+  A data provider for barcode detection.
 - [protocol OS_ar_camera_frame](./os_ar_camera_frame.md)
+  A camera frame containing one or more camera frame samples.
 - [protocol OS_ar_camera_frame_parameters](./os_ar_camera_frame_parameters.md)
+  Parameters for a camera frame including intrinsics, extrinsics, and timestamps.
 - [protocol OS_ar_camera_frame_provider](./os_ar_camera_frame_provider.md)
+  A data provider that delivers camera frames.
 - [protocol OS_ar_camera_frame_sample](./os_ar_camera_frame_sample.md)
+  A single camera frame sample with pixel buffer and metadata.
 - [protocol OS_ar_camera_video_format](./os_ar_camera_video_format.md)
+  Describes a camera video format with frame rate, size, and pixel format.
 - [protocol OS_ar_camera_video_formats](./os_ar_camera_video_formats.md)
+  A collection of camera video formats.
 - [protocol OS_ar_data](./os_ar_data.md)
+  A container for binary data.
 - [protocol OS_ar_environment_light_estimation_configuration](./os_ar_environment_light_estimation_configuration.md)
+  Configuration for environment light estimation.
 - [protocol OS_ar_environment_light_estimation_provider](./os_ar_environment_light_estimation_provider.md)
+  A data provider for environment light estimation.
 - [protocol OS_ar_environment_probe_anchor](./os_ar_environment_probe_anchor.md)
+  An anchor providing environment lighting information for realistic rendering.
 - [protocol OS_ar_environment_probe_anchors](./os_ar_environment_probe_anchors.md)
+  A collection of environment probe anchors.
 - [protocol OS_ar_identifiers](./os_ar_identifiers.md)
+  A collection of UUID identifiers.
 - [protocol OS_ar_mesh_geometries](./os_ar_mesh_geometries.md)
+  A collection of mesh geometries.
 - [protocol OS_ar_object_anchor](./os_ar_object_anchor.md)
+  An object that was detected in the environment.
 - [protocol OS_ar_object_anchors](./os_ar_object_anchors.md)
+  A collection of object anchors.
 - [protocol OS_ar_object_axis_aligned_bounding_box](./os_ar_object_axis_aligned_bounding_box.md)
+  An axis-aligned bounding box for the extent of an object.
 - [protocol OS_ar_object_tracking_configuration](./os_ar_object_tracking_configuration.md)
+  Object tracking configuration.
 - [protocol OS_ar_object_tracking_provider](./os_ar_object_tracking_provider.md)
+  Object tracking provider.
 - [protocol OS_ar_reference_object](./os_ar_reference_object.md)
+  Defines a physical object to detect in the environment.
 - [protocol OS_ar_reference_objects](./os_ar_reference_objects.md)
+  A collection of reference objects.
 - [protocol OS_ar_room_anchor](./os_ar_room_anchor.md)
+  An anchor representing a physical room.
 - [protocol OS_ar_room_anchors](./os_ar_room_anchors.md)
+  A collection of room anchors.
 - [protocol OS_ar_room_tracking_configuration](./os_ar_room_tracking_configuration.md)
+  Configuration for room tracking.
 - [protocol OS_ar_room_tracking_provider](./os_ar_room_tracking_provider.md)
+  A data provider for room tracking.
 - [protocol OS_ar_accessories](./os_ar_accessories.md)
   A collection of accessories.
 - [protocol OS_ar_accessory](./os_ar_accessory.md)

@@ -15,6 +15,10 @@ The total number of object instances that you can track at the same time.
 var maximumTrackableInstances: Int
 ```
 
+## Discussion
+
+The default is `10`.
+
 ## See Also
 
 ### Inspecting a tracking configuration

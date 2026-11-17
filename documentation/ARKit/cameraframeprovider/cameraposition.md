@@ -20,7 +20,6 @@ enum CameraPosition
 ### Camera positions
 - [CameraFrameProvider.CameraPosition.left](./cameraposition/left.md)
   Left camera.
-### Enumeration Cases
 - [CameraFrameProvider.CameraPosition.right](./cameraposition/right.md)
   Right camera.
 ### Instance Properties
@@ -35,12 +34,6 @@ enum CameraPosition
 - [Hashable](../../Swift/hashable.md)
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
-
-## See Also
-
-### Enumerations
-- [CameraFrameProvider.CameraType](./cameratype.md)
-  Values that describe possible camera types.
 
 
 ---

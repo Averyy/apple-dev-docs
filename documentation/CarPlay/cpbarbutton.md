@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-A button for placement in a navigation bar.
+A button that appears in a navigation bar.
 
 **Availability**:
 - iOS 12.0+
@@ -21,35 +21,39 @@ class CPBarButton
 @interface CPBarButton : NSObject
 ```
 
+## Overview
+
+A `CPBarButton` object is a button you display in the navigation bar of one of your app’s templates. Create buttons when you want to make custom actions available at all times from the template. For example, you might add a plus button to a list template to support adding items to the list. Configure buttons with either an image or custom text you provide.
+
+> **Note**: The back button always displays the system standard appearance, even if you provide a button with a custom image or text.
+
 ## Topics
 
-### Creating a CarPlay Bar Button
-- [init?(coder: NSCoder)](./cpbarbutton/init%28coder%29.md)
-  Creates a button initialized  from data in the specified coder object.
-- [init(type: CPBarButton.Type, handler: CPBarButtonHandler?)](./cpbarbutton/init%28type,handler%29.md)
-  Creates a bar button with a type and handler.
+### Creating a bar button
 - [init(image: UIImage, handler: CPBarButtonHandler?)](./cpbarbutton/init%28image,handler%29.md)
   Creates a bar button that displays an image.
 - [init(title: String, handler: CPBarButtonHandler?)](./cpbarbutton/init%28title,handler%29.md)
-  Creates a bar button that displays a text label.
-- [CPBarButton.Type](./cpbarbutton/type.md)
-  Types of bar buttons.
+  Creates a bar button that displays a text string.
 - [typealias CPBarButtonHandler](./cpbarbuttonhandler.md)
   A block that CarPlay calls when the user taps a bar button.
-### Configuring the Button
-- [var isEnabled: Bool](./cpbarbutton/isenabled.md)
-  A Boolean value that enables and disables the bar button.
+- [init?(coder: NSCoder)](./cpbarbutton/init%28coder%29.md)
+### Configuring the button
 - [var image: UIImage?](./cpbarbutton/image.md)
-  The image displayed on the bar button.
+  The image to display in the button.
 - [var title: String?](./cpbarbutton/title.md)
-  The title displayed on the bar button.
-### Getting the Button Style
-- [var buttonType: CPBarButton.Type](./cpbarbutton/buttontype.md)
-  The display type for the bar button.
+  The text to display in the button.
+- [var isEnabled: Bool](./cpbarbutton/isenabled.md)
+  A Boolean value that indicates whether the button is enabled.
+### Getting the display style
 - [var buttonStyle: CPBarButtonStyle](./cpbarbutton/buttonstyle.md)
-  The style to use when displaying the button.
+  The style to apply to the button.
 - [enum CPBarButtonStyle](./cpbarbuttonstyle.md)
   The display style of a bar button.
+### Deprecated
+- [init(type: CPBarButton.Type, handler: CPBarButtonHandler?)](./cpbarbutton/init%28type,handler%29.md)
+- [var buttonType: CPBarButton.Type](./cpbarbutton/buttontype.md)
+- [CPBarButton.Type](./cpbarbutton/type.md)
+  Specifies the type of a @c CPBarButton.
 
 ## Relationships
 
@@ -69,15 +73,11 @@ class CPBarButton
 
 ## See Also
 
-### Providing Navigation Bar Buttons
-- [var backButton: CPBarButton?](./cpbarbuttonproviding/backbutton.md)
-  A button to display as the Back button on the navigation bar.
-- [var leadingNavigationBarButtons: [CPBarButton]](./cpbarbuttonproviding/leadingnavigationbarbuttons.md)
-  An array of bar buttons to display on the leading side of the navigation bar.
-- [var trailingNavigationBarButtons: [CPBarButton]](./cpbarbuttonproviding/trailingnavigationbarbuttons.md)
-  An array of bar buttons to display on the trailing side of the navigation bar.
+### Navigation bar
+- [protocol CPBarButtonProviding](./cpbarbuttonproviding.md)
+  The interface templates you use to manage buttons in the navigation bar.
 - [class CPMessageComposeBarButton](./cpmessagecomposebarbutton.md)
-  A button that activates Siri and initiates the compose message flow.
+  A button that activates Siri and initiates the process for composing a message.
 
 
 ---

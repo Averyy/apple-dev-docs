@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A Boolean value that manages the display of the Up Next button.
+A Boolean value that indicates whether the Now Playing interface displays the Up Next button.
 
 **Availability**:
 - iOS 14.0+
@@ -23,17 +23,21 @@ var isUpNextButtonEnabled: Bool { get set }
 
 ## Discussion
 
-Set this property to [`true`](../../Swift/true.md) to have the Now Playing template display an Up Next button in the upper-right corner of the CarPlay screen.
+When the value of this property is `true`, the Now Playing interface displays an Up Next button in the upper-right corner of the Now Playing interface. This button provides access to content that’s queued and ready for playback. The default value of this property is `false`.
 
-The default value is [`false`](../../Swift/false.md).
+If you set this property to `true`, add an observer object to the Now Playing template. When someone taps the Up Next button, the template calls your observer’s  `CPNowPlayingTemplateDelegate/nowPlayingTemplateUpNextButtonTapped(_:)` method to notify you of the interaction.
 
 ## See Also
 
-### Managing Albums, Artists, and Up Next
-- [var isAlbumArtistButtonEnabled: Bool](./isalbumartistbuttonenabled.md)
-  A Boolean value that indicates whether the album and artist string is a button.
+### Configuring the interface
+- [var nowPlayingMode: CPNowPlayingMode?](./nowplayingmode.md)
+  The type that determines the layout of the Now Playing interface.
 - [var upNextTitle: String](./upnexttitle.md)
-  The title for the Up Next button.
+  The text to display in the Up Next button.
+- [var isAlbumArtistButtonEnabled: Bool](./isalbumartistbuttonenabled.md)
+  A Boolean value that indicates whether the album and artist information is a tappable button.
+- [var allowsMiniPlayer: Bool](./allowsminiplayer.md)
+  A Boolean value that indicates whether the app supports the mini-player interface.
 
 
 ---

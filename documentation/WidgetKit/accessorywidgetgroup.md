@@ -39,7 +39,7 @@ struct WeatherGroupView: View {
 
 The above example creates an `.accessoryRectangular` widget that has a `SwiftUI.Label` as its label and has three content views: temperature, conditions, and UVIndex; all of which are circular. If fewer than three views are provided, the content views are centered within the available space.
 
-You can change the shape with which the content views are masked using the `.accessoryWidgetGroupStyle(_:)` view modifier.
+You can change the shape with which the content views are masked using the `SwiftUI/View/accessoryWidgetGroupStyle(_:)` view modifier.
 
 ## Topics
 

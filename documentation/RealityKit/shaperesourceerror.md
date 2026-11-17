@@ -4,6 +4,8 @@
 **Kind**: enum  
 **Role**: Enumeration
 
+Errors that can occur when generating a static mesh or convex polyhedron shape resource.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

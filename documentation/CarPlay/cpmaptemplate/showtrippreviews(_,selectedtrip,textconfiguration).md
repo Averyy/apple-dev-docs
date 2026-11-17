@@ -35,7 +35,7 @@ The trip you want to select must be a member of the `tripPreviews` array.
 
 ## See Also
 
-### Displaying Trip Previews
+### Displaying trip previews
 - [func showTripPreviews([CPTrip], textConfiguration: CPTripPreviewTextConfiguration?)](./showtrippreviews%28_,textconfiguration%29.md)
   Displays the preview for one or more trips, and allows route selection.
 - [func hideTripPreviews()](./hidetrippreviews%28%29.md)

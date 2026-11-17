@@ -4,6 +4,8 @@
 **Kind**: func  
 **Role**: Function
 
+Get the count of reference objects in the collection.
+
 **Availability**:
 - visionOS 2.0+
 
@@ -13,17 +15,31 @@
 extern size_t ar_reference_objects_get_count(ar_reference_objects_t reference_objects);
 ```
 
+## Return Value
+
+The number of reference objects in the collection.
+
+## Parameters
+
+- `reference_objects`: The collection of reference objects.
+
 ## See Also
 
 ### Object tracking
 - [ar_object_tracking_provider_create](./ar_object_tracking_provider_create.md)
+  Create an object tracking provider.
 - [ar_object_tracking_provider_copy_all_object_anchors](./ar_object_tracking_provider_copy_all_object_anchors.md)
+  Copy all object anchors.
 - [ar_object_tracking_provider_get_required_authorization_type](./ar_object_tracking_provider_get_required_authorization_type.md)
+  Get the authorization type required by the object tracking provider.
 - [ar_object_tracking_provider_is_supported](./ar_object_tracking_provider_is_supported.md)
+  Determine whether this device supports the object tracking provider.
 - [ar_object_tracking_provider_set_update_handler](./ar_object_tracking_provider_set_update_handler.md)
+  Set the handler for receiving object tracking updates.
 - [ar_object_tracking_provider_set_update_handler_f](./ar_object_tracking_provider_set_update_handler_f.md)
+  Set the handler for receiving object tracking updates.
 - [ar_object_tracking_error_code_t](./ar_object_tracking_error_code_t.md)
-  An enumeration that describes object tracking errors.
+  Error codes that describe object tracking failures.
 - [ar_reference_object_configuration_create](./ar_reference_object_configuration_create.md)
   Create a reference object configuration.
 - [ar_reference_object_configuration_enable_high_frame_rate_tracking](./ar_reference_object_configuration_enable_high_frame_rate_tracking.md)

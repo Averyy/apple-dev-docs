@@ -35,8 +35,6 @@ Your app’s interface contains important context about what a person is doing, 
   A visual representation that the system renders for an entity.
 - [enum EntitySnippetContentBuilder](./entitysnippetcontentbuilder.md)
   A result builder that assembles an entity’s snippet declarations.
-- [struct CardSnippetSize](./cardsnippetsize.md)
-  A size category for a snippet card.
 ### View-entity association
 - [struct AppEntityUIElement](./appentityuielement.md)
   A type that wraps your app entity and adds information to make a custom view’s content discoverable by Apple Intelligence.

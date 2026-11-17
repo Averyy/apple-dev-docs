@@ -25,6 +25,18 @@ optional func mapTemplateShouldProvideMultiStopRouting(_ mapTemplate: CPMapTempl
 
 YES if the template should provide multi-stop routing functionalities, otherwise NO
 
+## See Also
+
+### Updating routes, stops, and destinations
+- [func mapTemplate(CPMapTemplate, didReceiveRequestForDestination: CPNavigationWaypoint)](./maptemplate%28_,didreceiverequestfordestination%29.md)
+  Called when a navigation request is received. Show a trip preview corresponding to this destination and start navigation if the destination is accepted by the user.
+- [func mapTemplate(CPMapTemplate, didRequestToRemoveDestination: CPNavigationWaypoint)](./maptemplate%28_,didrequesttoremovedestination%29.md)
+  Called when the user removes the waypoint corresponding to the trip’s destination. Perform a reroute to update both the trip and route accordingly.
+- [func mapTemplate(CPMapTemplate, didReceiveUpdatedRouteSource: CPRouteSource)](./maptemplate%28_,didreceiveupdatedroutesource%29.md)
+  Called when the route source status has been updated by the built-in system.
+- [func mapTemplate(CPMapTemplate, didRequestMultiStopCardConfigurationWithCompletion: (CPMultiStopCardConfiguration) -> Void)](./maptemplate%28_,didrequestmultistopcardconfigurationwithcompletion%29.md)
+  Called when the user requests multi-stop card to be displayed via tapping ETA tray.
+
 
 ---
 

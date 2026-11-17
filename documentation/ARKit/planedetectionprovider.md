@@ -37,6 +37,7 @@ Use this provider to indicate to ARKit the types of plane anchors for your app t
   The plane alignments that you configure a provider to detect.
 - [var state: DataProviderState](./planedetectionprovider/state.md)
   The current status of data coming from a provider.
+### Instance Properties
 - [var description: String](./planedetectionprovider/description.md)
   A textual representation of this plane detection provider.
 

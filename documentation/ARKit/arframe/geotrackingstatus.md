@@ -28,7 +28,7 @@ For the current geo-tracking status, check the value of this property on the ses
 
 ### Assessing geo-tracking condition
 - [class ARGeoTrackingStatus](../argeotrackingstatus.md)
-  The state, accuracy, and reason that are possible for geo-tracking’s current condition.
+  The state, accuracy, and reason that are possible for geo tracking’s current condition.
 
 
 ---

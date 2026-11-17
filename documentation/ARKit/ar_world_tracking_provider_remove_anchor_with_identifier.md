@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Removes a world anchor from a world tracking provider based on its ID.
+Removes a world anchor from a world tracking provider using its identifier.
 
 **Availability**:
 - visionOS 1.0+
@@ -14,6 +14,12 @@ Removes a world anchor from a world tracking provider based on its ID.
 ```c
 extern void ar_world_tracking_provider_remove_anchor_with_identifier(ar_world_tracking_provider_t world_tracking_provider, uuid_t anchor_identifier, ar_world_tracking_remove_anchor_completion_handler_t remove_anchor_completion_handler);
 ```
+
+## Parameters
+
+- `world_tracking_provider`: The world tracking provider.
+- `anchor_identifier`: The identifier of the world anchor to remove.
+- `remove_anchor_completion_handler`: The handler to be called after the request to remove the world anchor from the world tracking provider completes.
 
 ## See Also
 
@@ -43,7 +49,7 @@ extern void ar_world_tracking_provider_remove_anchor_with_identifier(ar_world_tr
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

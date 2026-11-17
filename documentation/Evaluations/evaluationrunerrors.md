@@ -34,7 +34,7 @@ Retrieved via [`errors`](./evaluationresult/errors.md).
   Used as the default when loading a file that carries no `runErrors`.
 ### Counting failures
 - [var inferenceFailureCount: Int](./evaluationrunerrors/inferencefailurecount.md)
-  The number of samples whose subject failed to be produced.
+  The number of rows whose subject failed to be produced; a sample run more than once counts once per failed run.
 - [var evaluatorFailureCount: Int](./evaluationrunerrors/evaluatorfailurecount.md)
   The total number of evaluator invocations that threw.
 - [var failingEvaluatorTypes: Set<String>](./evaluationrunerrors/failingevaluatortypes.md)
@@ -63,13 +63,13 @@ Retrieved via [`errors`](./evaluationresult/errors.md).
 - [struct EvaluationResult](./evaluationresult.md)
   The results of running a model evaluation.
 - [struct ResultColumn](./resultcolumn.md)
-  A typed descriptor for a column in an evaluation result DataFrame.
+  A typed descriptor for a column in an evaluation result data frame.
 - [var inputColumn: ResultColumn<Self.Sample>](./evaluation/inputcolumn.md)
-  A typed column descriptor for the input samples in the detailed DataFrame.
+  A typed column descriptor for the input samples in the detailed [`DataFrame`](../TabularData/dataframe.md).
 - [var responseColumn: ResultColumn<Self.Subject>](./evaluation/responsecolumn.md)
-  A typed column descriptor for the model responses in the detailed DataFrame.
+  A typed column descriptor for the model responses in the detailed [`DataFrame`](../TabularData/dataframe.md).
 - [var expectedColumn: ResultColumn<Self.Sample.ExpectedValue>](./evaluation/expectedcolumn.md)
-  A typed column descriptor for the expected values in the detailed DataFrame.
+  A typed column descriptor for the expected values in the detailed [`DataFrame`](../TabularData/dataframe.md).
 
 
 ---

@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-Types of bar buttons.
+Specifies the type of a @c CPBarButton.
 
 **Availability**:
 - iOS 12.0+
@@ -23,11 +23,9 @@ enum CPBarButtonType : NSUInteger;
 
 ## Topics
 
-### Button Types
-- [CPBarButton.Type.text](./type/text.md)
-  A text style bar button.
+### Enumeration Cases
 - [CPBarButton.Type.image](./type/image.md)
-  An image style bar button.
+- [CPBarButton.Type.text](./type/text.md)
 ### Initializers
 - [init?(rawValue: UInt)](./type/init%28rawvalue%29.md)
 
@@ -43,17 +41,9 @@ enum CPBarButtonType : NSUInteger;
 
 ## See Also
 
-### Creating a CarPlay Bar Button
-- [init?(coder: NSCoder)](./init%28coder%29.md)
-  Creates a button initialized  from data in the specified coder object.
+### Deprecated
 - [init(type: CPBarButton.Type, handler: CPBarButtonHandler?)](./init%28type,handler%29.md)
-  Creates a bar button with a type and handler.
-- [init(image: UIImage, handler: CPBarButtonHandler?)](./init%28image,handler%29.md)
-  Creates a bar button that displays an image.
-- [init(title: String, handler: CPBarButtonHandler?)](./init%28title,handler%29.md)
-  Creates a bar button that displays a text label.
-- [typealias CPBarButtonHandler](../cpbarbuttonhandler.md)
-  A block that CarPlay calls when the user taps a bar button.
+- [var buttonType: CPBarButton.Type](./buttontype.md)
 
 
 ---

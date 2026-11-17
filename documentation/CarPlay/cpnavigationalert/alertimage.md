@@ -20,6 +20,19 @@ var alertImage: UIImage? { get }
 @property (nonatomic, copy, readonly, nullable) UIImage * alertImage;
 ```
 
+## See Also
+
+### Getting the alert image
+- [var image: UIImage?](./image.md)
+  An image displayed in the navigation alert.
+- [var imageSet: CPImageSet?](./imageset.md)
+  An image set displayed in the navigation alert.
+- [var avatarImage: UIImage?](./avatarimage.md)
+- [class var maximumAlertImageSize: CGSize](./maximumalertimagesize.md)
+  The maximum image size for the alert image that a @c CPNavigationAlert can display.
+- [class var maximumAvatarImageSize: CGSize](./maximumavatarimagesize.md)
+  The maximum image size for the avatar image that a @c CPNavigationAlert can display.
+
 
 ---
 

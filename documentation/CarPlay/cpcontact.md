@@ -31,10 +31,10 @@ The framework provides specialized buttons for common actions, such as [`CPConta
 
 ## Topics
 
-### Creating a Contact
+### Creating a contact
 - [init(name: String, image: UIImage)](./cpcontact/init%28name,image%29.md)
   Creates a contact with a name and an image.
-### Configuring the Contact’s Attributes
+### Configuring the contact’s attributes
 - [var image: UIImage](./cpcontact/image.md)
   The contact’s image.
 - [var name: String](./cpcontact/name.md)
@@ -43,7 +43,7 @@ The framework provides specialized buttons for common actions, such as [`CPConta
   A subtitle that the template displays in addition to the contact’s name.
 - [var informativeText: String?](./cpcontact/informativetext.md)
   Additional text that the template displays.
-### Managing Interactions with the Contact
+### Managing interactions with the contact
 - [var actions: [CPButton]?](./cpcontact/actions.md)
   The actions that the template displays for this contact.
 - [class CPContactCallButton](./cpcontactcallbutton.md)
@@ -71,7 +71,7 @@ The framework provides specialized buttons for common actions, such as [`CPConta
 
 ## See Also
 
-### Configuring the Contact
+### Configuring the contact
 - [var contact: CPContact](./cpcontacttemplate/contact.md)
   The contact that the template displays.
 

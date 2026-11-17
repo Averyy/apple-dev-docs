@@ -4,6 +4,8 @@
 **Kind**: property  
 **Role**: Instance Property
 
+The camera type.
+
 **Availability**:
 - visionOS 2.0+
 
@@ -27,6 +29,7 @@ var cameraType: CameraFrameProvider.CameraType { get }
 - [var extrinsics: simd_float4x4](./extrinsics.md)
   The camera extrinsics.
 - [var intrinsics: simd_float3x3](./intrinsics.md)
+  The camera intrinsics.
 - [var midExposureTimestamp: TimeInterval](./midexposuretimestamp.md)
   The mid exposure timestamp.
 

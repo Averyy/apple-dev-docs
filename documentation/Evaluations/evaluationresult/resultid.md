@@ -37,7 +37,7 @@ let resultID: UUID
 - [func aggregateValue(AggregationOperation) -> Double](./aggregatevalue%28_%29.md)
   Returns the first aggregate value matching the given operation, or `-1` if not found.
 - [EvaluationResult.DataFrameKind](./dataframekind.md)
-  The kind of DataFrame to convert for JSON serialization.
+  The kind of data frame to convert for JSON serialization.
 
 
 ---

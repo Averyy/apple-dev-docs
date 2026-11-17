@@ -23,7 +23,7 @@ class var maximumActionCount: Int { get }
 
 ## See Also
 
-### Creating an Alert Template
+### Creating an alert template
 - [init(titleVariants: [String], actions: [CPAlertAction])](./init%28titlevariants,actions%29.md)
   Creates an alert template.
 

@@ -36,6 +36,12 @@ struct VertexSemanticOutputs
 - [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 - [SetAlgebra](../../../../../Swift/setalgebra.md)
 
+## See Also
+
+### Selecting attributes to renormalize
+- [var outputs: LowLevelDeformation.Pipeline.Descriptor.Renormalization.VertexSemanticOutputs](./outputs.md)
+  The vertex attributes to renormalize to unit length.
+
 
 ---
 

@@ -24,6 +24,11 @@ A protocol the picker uses to communicate user selections.
 ### Handling User Selection
 - [- picker:didFinishPicking:](./phpickerviewcontrollerdelegate-9y5xc/picker_didfinishpicking_.md)
   Notifies the delegate that the user completed a selection or dismissed the picker using the cancel button.
+### Instance Methods
+- [- pickerDidPerformPrimaryAction:](./phpickerviewcontrollerdelegate-9y5xc/pickerdidperformprimaryaction_.md)
+  Called when the user taps the primary button.
+- [- pickerDidPerformSecondaryAction:](./phpickerviewcontrollerdelegate-9y5xc/pickerdidperformsecondaryaction_.md)
+  Called when the user taps the secondary button.
 
 ## Relationships
 

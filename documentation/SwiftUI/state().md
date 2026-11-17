@@ -44,7 +44,7 @@ struct PlayButton: View {
 }
 ```
 
-SwiftUI manages the property’s storage. When the value changes, SwiftUI updates the parts of the view hierarchy that depend on the value. To access a state’s underlying value, you use its `wrappedValue` property. When you create state this way, you can access the wrapped value by referring directly to the state instance. The above example reads and writes the `isPlaying` state property’s wrapped value by referring to the property directly.
+SwiftUI manages the property’s storage. When the value changes, SwiftUI updates the parts of the view hierarchy that depend on the value. To access a state’s underlying value, you use its [`wrappedValue`](./state/wrappedvalue.md) property. When you create state this way, you can access the wrapped value by referring directly to the state instance. The above example reads and writes the `isPlaying` state property’s wrapped value by referring to the property directly.
 
 Declare state as private in the highest view in the view hierarchy that needs access to the value. Then share the state with any subviews that also need access, either directly for read-only access, or as a binding for read-write access. You can safely mutate state properties from any thread.
 
@@ -66,7 +66,7 @@ struct PlayButton: View {
 }
 ```
 
-Then you can define a player view that declares the state and creates a binding to the state. Get the binding to the state value by accessing the state’s `projectedValue`, which you get by prefixing the property name with a dollar sign (`$`):
+Then you can define a player view that declares the state and creates a binding to the state. Get the binding to the state value by accessing the state’s [`projectedValue`](./state/projectedvalue.md), which you get by prefixing the property name with a dollar sign (`$`):
 
 ```swift
 struct PlayerView: View {

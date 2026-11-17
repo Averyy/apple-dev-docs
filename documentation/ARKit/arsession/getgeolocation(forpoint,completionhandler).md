@@ -33,11 +33,7 @@ To succeed, this function requires an [`ARGeoTrackingConfiguration`](../argeotra
 ## Parameters
 
 - `position`: Position in local coordinates to convert.
-- `completionHandler`: Code that control will execute when this function returns. The session runs this code on its delegate queue. The parameters are:
-
-  - **coordinate**: Location coordinates (latitude, longitude).
-  - **altitude**: The altitude.
-  - **error**: The reason, if conversion fails.
+- `completionHandler`: Code that control will execute when this function returns. The session runs this code on its delegate queue. The parameters are: coordinate - Location coordinates (latitude, longitude). altitude - The altitude. error - The reason, if conversion fails.
 
 
 ---

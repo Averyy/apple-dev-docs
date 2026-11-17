@@ -31,11 +31,12 @@ final class HandTrackingProvider
   The most recent hand anchors for each hand.
 ### Inspecting a hand-tracking provider
 - [var state: DataProviderState](./handtrackingprovider/state.md)
-  The current status of data coming from a provider.
-- [var description: String](./handtrackingprovider/description.md)
-  A textual representation of this hand tracking provider.
+  The current status of this hand tracking provider.
 - [func handAnchors(at: TimeInterval) -> (leftHand: HandAnchor?, rightHand: HandAnchor?)](./handtrackingprovider/handanchors%28at%29.md)
   Queries for hand anchors at the provided target timestamp.
+### Instance Properties
+- [var description: String](./handtrackingprovider/description.md)
+  A textual representation of this hand tracking provider.
 
 ## Relationships
 

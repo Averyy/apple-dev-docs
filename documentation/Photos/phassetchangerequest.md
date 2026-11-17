@@ -116,6 +116,9 @@ If you create or use a change request object outside a photo library change bloc
   Reverts the asset’s content to its original, choosing which original resource to use as the unadjusted base for all renders.
 ### Initializers
 - [convenience init(forAsset: PHAsset)](./phassetchangerequest/init%28forasset%29.md)
+### Instance Properties
+- [var timeZone: TimeZone?](./phassetchangerequest/timezone.md)
+  The time zone in which the asset was captured.
 
 ## Relationships
 

@@ -22,16 +22,12 @@ init(name: String, transform: simd_float4x4)
 
 ## Discussion
 
-World coordinate space in ARKit always follows a right-handed convention, but is oriented based on the session configuration. For details, see [Understanding World Tracking](../understanding-world-tracking.md).
-
-## Discussion
-
 Use the [`add(anchor:)`](../arsession/add%28anchor%29.md) method to begin tracking your custom anchor in an AR session.
 
 ## Parameters
 
 - `name`: A descriptive name for the anchor. ARKit does not display the name to users, but your app can use it to identify anchors for debugging.
-- `transform`: A matrix encoding the position, orientation, and scale of the anchor relative to the world coordinate space of the AR session the anchor is placed in.
+- `transform`: A matrix encoding the position, orientation, and scale of the anchor relative to the world coordinate space of the AR session the anchor is placed in. World coordinate space in ARKit always follows a right-handed convention, but is oriented based on the session configuration. For details, see [Understanding World Tracking](../understanding-world-tracking.md).
 
 ## See Also
 

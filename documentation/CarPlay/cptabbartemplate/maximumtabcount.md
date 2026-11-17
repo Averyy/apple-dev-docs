@@ -27,7 +27,7 @@ This property’s value depends on the app’s entitlements. At runtime, use thi
 
 ## See Also
 
-### Managing the Templates
+### Managing the tabs
 - [var templates: [CPTemplate]](./templates.md)
   The tab bar’s templates.
 - [func updateTemplates([CPTemplate])](./updatetemplates%28_%29.md)

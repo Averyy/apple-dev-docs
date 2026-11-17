@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A button that the section header displays.
+The button to display in the header area of the section.
 
 **Availability**:
 - iOS 15.0+
@@ -24,11 +24,13 @@ var headerButton: CPButton? { get }
 
 ## See Also
 
-### Configuring Section Headers
-- [var headerImage: UIImage?](./headerimage.md)
-  An image that the section header displays.
+### Getting the section’s header content
+- [var header: String?](./header.md)
+  The main text to display in the header area of the section.
 - [var headerSubtitle: String?](./headersubtitle.md)
-  A string that the header displays as a subtitle.
+  The secondary text to display in the header area of the section.
+- [var headerImage: UIImage?](./headerimage.md)
+  The image to display in the header area of the section.
 
 
 ---

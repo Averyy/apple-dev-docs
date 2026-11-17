@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An enum schema for a location trigger event parameter.
+An enum schema for a location trigger event.
 
 **Availability**:
 - iOS 27.0+
@@ -21,9 +21,9 @@ var locationTriggerEvent: some AppSchemaEnum { get }
 
 ## Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `reminders` domain and a parameter type matches the `locationTriggerEvent` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .reminders.locationTriggerEvent)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `reminders` domain and a parameter type matches the `locationTriggerEvent` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum(schema: .reminders.locationTriggerEvent)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an app enum that conforms to the `locationTriggerEvent` schema:
+The following example shows an app enum that conforms to the `locationTriggerEvent` schema. You can create a type that conforms to the schema by adding the `@AppEnum` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `reminders_locationTriggerEvent` and select it from the code-completion suggestions:
 
 ```swift
 @AppEnum(schema: .reminders.locationTriggerEvent)
@@ -49,7 +49,7 @@ For more information about the App Intents framework and the experiences it supp
 
 ### Types for static parameters
 - [var listType: some AppSchemaEnum](./listtype.md)
-  An enum schema for a list type parameter.
+  An enum schema for a list type.
 - [AppSchema.RemindersEnum](../remindersenum.md)
   Identifies enum schemas in the reminders domain.
 

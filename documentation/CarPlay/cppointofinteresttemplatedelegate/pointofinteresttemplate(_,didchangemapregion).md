@@ -28,6 +28,7 @@ CarPlay calls this method whenever the user pans the template’s map and its vi
 
 ## Parameters
 
+- `pointOfInterestTemplate`: The point of interest template that displays the map.
 - `region`: The map’s new visible region.
 
 

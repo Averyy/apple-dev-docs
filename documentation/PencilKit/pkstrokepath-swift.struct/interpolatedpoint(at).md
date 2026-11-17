@@ -35,6 +35,8 @@ A [`PKStrokePoint`](../pkstrokepoint-swift.struct.md) interpolated from the supp
 - [func interpolatedLocation(at: CGFloat) -> CGPoint](./interpolatedlocation%28at%29.md)
   Returns the on-curve point for the floating point parametric value.
 - [func parametricValue(CGFloat, offsetBy: PKStrokePath.InterpolatedSlice.Stride) -> CGFloat](./parametricvalue%28_,offsetby%29.md)
+- [subscript(ClosedRange<CGFloat>) -> PKStrokePath](./subscript%28_%29.md)
+  Access the stroke point at the provided index.
 
 
 ---

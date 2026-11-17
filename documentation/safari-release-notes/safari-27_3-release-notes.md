@@ -3,7 +3,7 @@
 **Framework**: Safari Release Notes  
 **Role**: Article
 
-Released November 3, 2026 — 27.3 beta (20626.1.12)
+Released November 16, 2026 — 27.3 beta (20626.1.17)
 
 ## Overview
 
@@ -31,7 +31,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 
 #### New Features
 
-- Added support for running accelerated time-based animations in the remote layer tree to match how accelerated Scroll-driven Animations are run since Safari 26.3. Accelerated animations are animations targeting `transform` and individual transform CSS properties, `opacity`, `filter` and `backdrop-filter`. Animations that target the `offset` property, composed animations, animations that have a `playbackRate` other than 1 and animations that use the `linear()` and `steps()` easing functions are now also accelerated. (190761783)
+- Added support for running accelerated time-based animations in the remote layer tree to match how accelerated Scroll-driven Animations are run since Safari 26.4. Accelerated animations are animations targeting `transform` and individual transform CSS properties, `opacity`, `filter` and `backdrop-filter`. Animations that target the `offset` property, composed animations, animations that have a `playbackRate` other than 1 and animations that use the `linear()` and `steps()` easing functions are now also accelerated. (190761783)
 
 #### Resolved Issues
 
@@ -57,6 +57,8 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 #### New Features
 
 - Vertical Tabs introduces a new vertical layout for navigating and managing tabs with a space-efficient design that maximizes webpage content.  (188851209)
+- Added Adaptive Dark Mode, which automatically adapts bright web pages that don’t natively support dark mode, giving users an optimized viewing experience when browsing at night or in dark environments.  (189226811)
+- Added support for opting out of Adaptive Dark Mode when `color-scheme: only light` is specified.  (191328852)
 
 ### CSS
 
@@ -87,7 +89,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Added support for `random()` in custom properties. (184715508)
 - Added support for the `ident()` function. (184732904)
 - Added support for the `inherit()` function. (184738624)
-- Added support for `CSSConditionRule.supports`. (184943650)
+- Added support for `CSSSupportsRule.matches`. (184943650)
 - Added support for the `corner-shape` property. (184950973)
 - Added support for the unprefixed `user-select` CSS property. (184964807)
 - Added support for `CSSMediaRule.matches`. (185154835)
@@ -97,6 +99,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 
 #### Resolved Issues
 
+- Fixed text overflowing a `max-width` constrained box when the page is zoomed out, by scaling the minimum font size with the zoom factor. (66569768)
 - Fixed a background image not being repainted when only the URL fragment identifier changes. (105118256)
 - Fixed an issue where a near-zero fixed `background-size` value collapsed the image tile to nothing. (140387662)
 - Fixed outside list markers disappearing or being mispositioned around line breaks. (159277763)
@@ -152,6 +155,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Fixed an issue where an inset `box-shadow` with a large spread on a wrapped inline element painted outside the element as full-width bands. (185651318)
 - Fixed an issue where `CSS.highlights` iterated in hash order instead of registration order after its wrapper was garbage collected. (185754041)
 - Fixed `background-size: contain`, `background-size: cover`, and automatic sizing ignoring SVG images that have one intrinsic dimension and no aspect ratio. (185970333)
+- Fixed arguments to registered custom functions so that they are evaluated in the calling context. (185975255)
 - Fixed `:target` no longer matching an element after it was removed from the document and inserted again. (186059506)
 - Fixed an issue where a grid item with an `aspect-ratio` could keep a stale inline size contribution when the grid container shrank. (186101273)
 - Fixed an issue where flexible grid tracks did not respect the grid container’s minimum and maximum size. (186103325)
@@ -166,6 +170,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Fixed a regression where the line-height quirk in quirks mode was not applied to line boxes inside a nested `inline-block` element that had no `line-height` of its own. (186614663)
 - Fixed an issue where interpolating a `<length-percentage>` from a `calc()` value to a pure `<length>` dropped the percentage component at 100% progress. (186628152)
 - Fixed an issue where `text-decoration-thickness` and `text-underline-offset` did not preserve percentage values when interpolating. (186628810)
+- Fixed an issue where `align-content` left the list marker behind. (186676835)
 - Fixed an issue where `text-indent` moved an outside list marker along with the indented text. (186678552)
 - Fixed an issue where a float in a list item’s content pushed the outside list marker inward with the line. (186680551)
 - Fixed an issue where a tab character rendered too narrow when `tab-size` was small in a proportional font. (186698040)
@@ -186,18 +191,21 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Fixed scroll snap animation taking a long time to settle on iOS after flicking past the last snap position. (189473962)
 - Fixed word joiners breaking punctuation wrapping. (189968795)
 - Fixed `light-dark()` inside `image-set()` incorrectly accepting a bare string as an image URL. (190560743)
+- Fixed `word-break: keep-all` allowing incorrect line breaks, such as after commas within numbers and after opening parentheses. (190641823)
 - Fixed `document.fonts.ready` never resolving when an unused `@font-face` has a failing `local()` source followed by a `url()` source. (191158203)
 - Fixed content in flex containers being cut off, by reverting a change to the flex base size of items with `min-width` or `max-width`. (191245011)
 
 #### Deprecations
 
 - Removed the non-standard `percentage` value from `-webkit-line-clamp`. (159808285)
+- Removed `margin-trim` support from flex containers, following the CSSWG resolution limiting it to block and multi-column containers. (184151309)
 - Removed `margin-trim` support from grid containers, following the CSSWG resolution limiting it to block and multi-column containers. (184164505)
 
 ### Canvas
 
 #### Resolved Issues
 
+- Fixed `ctx.font` not re-resolving relative font sizes when set to the same string after the canvas element’s style changed. (184194378)
 - Fixed the canvas `font` keywords `larger` and `smaller` scaling by 1.02 instead of approximately 1.2. (184312611)
 - Fixed `isPointInPath()`, `isPointInStroke()`, and transform methods on a canvas with zero width or height returning wrong results or being ignored. (185387739)
 - Fixed an issue where a placeholder `<canvas>` element with no pushed `OffscreenCanvas` frame would fail instead of returning a transparent black image. (186229685)
@@ -223,6 +231,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Fixed an issue that  disallowed font names that were not a valid CSS identifiers. (51409819)
 - Fixed aborting a dead key composition not firing `compositionend`, or firing it with empty `data` instead of the dead key character. (166881240)
 - Fixed choosing a spelling suggestion firing input events with `inputType` set to `insertText` instead of `insertReplacementText`. (166940428)
+- Fixed pasted text being cut off in some web-based code editors. (184653264)
 - Fixed typing a space in editable content inside a `<summary>` or `<button>` element also activating that element. (185479319)
 - Fixed an issue on macOS where the Copy option was enabled in the edit menu after selecting text in a PDF that disallows copying. (186648332)
 
@@ -304,6 +313,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Fixed the `String.prototype.localeCompare()` collator cache going stale after a language change. (184096794)
 - Fixed `Array.prototype.sort()` not being stable when called without a comparator. (184189734)
 - Fixed global object attribute getters and setters throwing when called as bare functions from global scope. (184273476)
+- Fixed `Iterator.prototype.join()` to match the latest specification. (184321382)
 - Fixed `Iterator.prototype.chunks()` and `Iterator.prototype.windows()` to match the latest specification. (184321801)
 - Fixed `Intl.Locale` collections not being sorted. (184322384)
 - Fixed `formatToParts()` omitting the era separator that `format()` inserts. (184382546)
@@ -316,6 +326,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Fixed Unicode property escapes ignoring case-insensitive matching in `u` and `v` modes. (184762230)
 - Fixed the Before Hijra era year being computed from rendered text instead of the calendar. (184853584)
 - Fixed `Promise.try()` to resolve its result with `PromiseResolve`, so a promise returned by the callback is no longer wrapped in an extra promise. (185064567)
+- Fixed `Uint8Array.prototype.setFromBase64()` so that nothing is read and no error is thrown when the target array has zero length. (185073630)
 - Fixed the `Referer` header sent for descendant and dynamically imported module script fetches. (185943042)
 - Fixed `String.prototype.replace` with a unicode regular expression splitting a surrogate pair after an empty match. (186143674)
 - Fixed an issue where `TypedArray` `setFromTypedArray` could not use `memmove` when the region was intentionally overlapping and the spec algorithm needed to read back the modified result. (186145219)
@@ -356,7 +367,9 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Fixed the auto position of a WebVTT cue with `start` or `end` text alignment to be 50%. (184039946)
 - Fixed `MediaRecorder` dropping a frame whenever the writer input reports that it is not ready. (184271782)
 - Fixed an issue where wireless playback could create a remote media session helper too eagerly, which could delay switching an active playback route to a wireless device. (184536781)
+- Fixed an issue where a video could begin playing ahead of another video that requested playback earlier while audio session activation was still pending. (185043324)
 - Fixed an issue where `MediaRecorder` could hold back a lone video keyframe indefinitely instead of using it to start a new recording segment. (186229843)
+- Fixed an issue where an AV1 sequence header that exactly filled the buffer was incorrectly rejected due to an off-by-one bounds check. (187306821)
 - Fixed an issue where black video-range pixel buffers were produced with super-black values instead of legal black. (187309125)
 - Fixed the `play()` promise not resolving for MSE content when the FairPlay content key is already known. (188022794)
 - Fixed the WebCodecs H.264 encoder buffering too many frames. (188201578)
@@ -378,6 +391,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 
 - Fixed `sourceElement` reporting the deepest clicked element instead of the element responsible for the navigation. (184581613)
 - Fixed `NavigationHistoryEntry` returning `null` instead of the empty string for `url`, `key`, and `id` when the document is not fully active. (184590003)
+- Fixed `navigateEvent.scroll()` not scrolling to the beginning of the document when the fragment does not exist. (184595100)
 - Fixed `navigation.activation.from` not being `null` when navigating away from the initial `about:blank`. (184624752)
 - Fixed `navigateerror` not firing for a navigation started from a `navigateerror` handler. (184633618)
 
@@ -419,7 +433,6 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 #### New Features
 
 - Added support for dark mode in the XML document viewer. (122234600)
-- Added Adaptive Dark Mode, which automatically adapts bright web pages that don’t natively support dark mode, giving users an optimized viewing experience when browsing at night or in dark environments.  (189226811)
 
 #### Resolved Issues
 
@@ -474,7 +487,9 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Fixed an issue where an orthogonal block-level box inside an inline box made its container as wide as the box instead of as wide as its content. (185890940)
 - Fixed the position of an orthogonal block-level box inside an inline box. (185895981)
 - Fixed `background-size: cover` painting nothing for an SVG image with an extreme natural aspect ratio. (186006463)
+- Fixed an issue where accents and other combining marks could be painted outside their base letter when letter-spacing, word-spacing, expansion, or synthetic bold were applied. (186013305)
 - Fixed a regression that caused extra spacing to appear between an image and surrounding content near the bottom of a page. (186102748)
+- Fixed an issue where hovering links could trigger unnecessarily wide repaints, by repainting ink-overflow-only style changes without running inline layout. (186104270)
 - Fixed an issue where text nodes inside a `display: contents` element received redundant updates during style resolution. (186246705)
 - Fixed an issue where content changing inside an element with a `blur()` filter did not properly repaint, leaving stale pixels around the edge of the filtered region. (186278957)
 - Fixed an issue where a MathML `rowspan="0"` attribute was incorrectly clamped to 1. (186420659)
@@ -500,12 +515,14 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Fixed `SVGSVGElement.currentScale` being a no-op on an outermost `<svg>` that is not the document root. (180889449)
 - Fixed a `clip-path` basic shape being mispositioned on a `<foreignObject>` with a non-zero `x` or `y`. (182755161)
 - Fixed changes to the `href` of an SVG `<image>` not updating the `<use>` elements that reference it. (183402463)
+- Fixed SVG enumerated attributes not reverting to their initial value when removed or set to an invalid value. (184076505)
 - Fixed a `clip-path` basic shape being mispositioned on a rotated or scaled SVG element. (184494108)
 - Fixed `<animateMotion>` ignoring a zero-length motion path. (184569273)
 - Fixed an issue where a SMIL animation of a presentation attribute was never released after the animated element was detached from the document, permanently freezing the animated value. (185452156)
 - Fixed an issue where `SVGLength` resolved `ex` units by rounding the font’s x-height up to a whole pixel, causing the SVG DOM and `getComputedStyle` to disagree. (185984854)
 - Fixed an issue where additive color animations in SVG lost precision due to per-layer 8-bit rounding. (186223510)
 - Fixed an issue where an SVG transform change could leave an ancestor layer’s cached repaint rects stale, resulting in incorrect repainting. (187005898)
+- Fixed an issue where SVG images used in `<img>` elements or CSS `url()` references were treated as animating even when they contained no animations, and where CSS animations inside an SVG image were not counted as animation. (187106396)
 - Fixed tearing down SMIL animation correctly even if its target element or its attribute name changes in a reentrant code.  (189708246)
 - Fixed removing or retargeting an active `<animateMotion>` leaving its previous target in an animated state. (191240656)
 
@@ -578,6 +595,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Fixed a regression where WebXR hit testing failed with a `TypeError` when `offsetRay` was not specified. (186997100)
 - Fixed `DataTransferItemList.clear()` removing items when the drag data store is not in read/write mode. (187160061)
 - Fixed randomized `navigator.hardwareConcurrency` values in known fingerprinting scripts, which now alternate between 4 and 8. (190053521)
+- Fixed: Improved performance of repeated `document.querySelector()` calls by caching results. (190071412)
 - Fixed “Copy to clipboard” actions not always working the first time after script evaluated on behalf of a client consumed the page’s transient user activation. (190767489)
 
 #### Deprecations
@@ -588,10 +606,13 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 
 #### Resolved Issues
 
+- Fixed `AudioWorkletGlobalScope.currentFrame` reporting `0` for a worklet created while the context is suspended. (184081765)
 - Fixed an `AudioWorkletProcessor` being torn down too early after `process()` returns `false`. (184107806)
 - Fixed the `AudioWorkletNode` `processorerror` event missing `filename`, `lineno`, and `colno`. (184224032)
+- Fixed `MediaStreamAudioSourceNode` capturing the wrong track and continuing to play after the track ends. (184224142)
 - Fixed a zero-duration `exponentialRampToValueAtTime()` at a non-frame-aligned time rendering `NaN`. (184434164)
 - Fixed setting `ConvolverNode.buffer` to `null` not releasing the impulse response. (184434803)
+- Fixed reverse playback of buffers longer than 2^23 frames extrapolating outside the source samples. (184439324)
 - Fixed `AudioBufferSourceNode` ignoring the offset passed to `start()` when using a negative `playbackRate`. (184484940)
 - Fixed `AudioBufferSourceNode` to clamp out-of-range `loopStart` and `loopEnd` values. (185752079)
 - Fixed an issue where `AudioBufferSourceNode` rendered only silence when `start()` was called with an out-of-bounds offset and a negative `playbackRate`. (185769043)
@@ -607,6 +628,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 #### Resolved Issues
 
 - Fixed an issue where `i18n.getMessage()` dropped non-string substitution arguments instead of coercing them to strings. (149855718)
+- Fixed an issue where `webRequest.onBeforeRequest` reported the resource type `main_frame` instead of `sub_frame` for subframe document loads. (167403388)
 - Fixed an issue where a high priority static declarativeNetRequest redirect rule was not favored over a low priority session redirect rule. (176176246)
 - Fixed an issue where `webRequest` events did not fire for loads blocked by a declarativeNetRequest rule. (176177851)
 - Fixed an issue where `webRequest` events did not fire for page loads created with `tabs.create`. (177727052)
@@ -665,6 +687,7 @@ Safari 27.3 beta is available for iOS 27.3 beta, iPadOS 27.3 beta, visionOS 27.3
 - Fixed `WebAssembly.Module.imports()` and `WebAssembly.Module.exports()` exposing the `type` field from the unfinished JS Type Reflection proposal. (185281658)
 - Fixed an issue where JS string builtins and imported string constants were not applied when compiling WebAssembly modules loaded as ES modules. (186037843)
 - Fixed an issue where the `WebAssembly.Exception` constructor rejected `null` options and incorrectly accepted non-object options. (186319813)
+- Fixed an issue where the WebAssembly validator rejected `i31.get_s` and `i31.get_u` when the operand’s static type was a bottom reference type. (186660590)
 
 ### WebCodecs
 

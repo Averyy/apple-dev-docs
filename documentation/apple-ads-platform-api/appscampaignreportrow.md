@@ -52,8 +52,7 @@ The `metadata` field captures campaign identifiers and configuration at report t
         "amount": "1.50",
         "currency": "USD"
       }
-    },
-    "adChannelType": "SEARCH"
+    }
   },
   "totalMetrics": {
     "localSpend": {

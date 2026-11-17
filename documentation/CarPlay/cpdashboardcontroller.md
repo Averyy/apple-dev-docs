@@ -29,7 +29,7 @@ After receiving the controller, set [`shortcutButtons`](./cpdashboardcontroller/
 
 ## Topics
 
-### Providing Dashboard Buttons
+### Providing dashboard buttons
 - [var shortcutButtons: [CPDashboardButton]](./cpdashboardcontroller/shortcutbuttons.md)
   An array of shortcut buttons to display on the CarPlay Dashboard.
 - [class CPDashboardButton](./cpdashboardbutton.md)
@@ -49,9 +49,15 @@ After receiving the controller, set [`shortcutButtons`](./cpdashboardcontroller/
 
 ## See Also
 
-### Accessing the Dashboard Controller
-- [var dashboardController: CPDashboardController](./cptemplateapplicationdashboardscene/dashboardcontroller.md)
-  The controller that manages the dashboard scene’s shortcut buttons.
+### Dashboard display
+- [class CPDashboardButton](./cpdashboardbutton.md)
+  A shortcut button for placement on the CarPlay Dashboard.
+- [class CPTemplateApplicationDashboardScene](./cptemplateapplicationdashboardscene.md)
+  A CarPlay scene that controls your app’s dashboard navigation window.
+- [protocol CPTemplateApplicationDashboardSceneDelegate](./cptemplateapplicationdashboardscenedelegate.md)
+  The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
+- [CPSupportsDashboardNavigationScene](../BundleResources/information-property-list/uiapplicationscenemanifest/cpsupportsdashboardnavigationscene.md)
+  A Boolean value that indicates whether your app supports displaying navigation content in the CarPlay Dashboard.
 
 
 ---

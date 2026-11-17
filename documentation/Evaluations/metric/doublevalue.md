@@ -32,7 +32,7 @@ var doubleValue: Double? { get }
 
 ### Inspecting a result
 - [let name: String](./name.md)
-  The name of the metric, used as the DataFrame column name.
+  The name of the metric, which an [`Evaluation`](../evaluation.md) uses as the [`Column`](../../TabularData/column.md) name in its results.
 - [let value: Metric.Value](./value-swift.property.md)
   The result value of this metric.
 - [let rationale: String?](./rationale.md)

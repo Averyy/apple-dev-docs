@@ -29,7 +29,7 @@ If your app doesn’t provide turn-by-turn navigation, use the `maps` URL scheme
 
 ## Topics
 
-### Creating a Contact Directions Button
+### Creating a contact directions button
 - [init(handler: ((CPButton) -> Void)?)](./cpcontactdirectionsbutton/init%28handler%29.md)
   Creates a button that invokes a handler when the user taps it.
 
@@ -47,9 +47,11 @@ If your app doesn’t provide turn-by-turn navigation, use the `maps` URL scheme
 
 ## See Also
 
-### Managing Interactions with the Contact
-- [var actions: [CPButton]?](./cpcontact/actions.md)
-  The actions that the template displays for this contact.
+### Contacts
+- [class CPContactTemplate](./cpcontacttemplate.md)
+  A template that displays information about a person or a business.
+- [class CPContact](./cpcontact.md)
+  A data object that contains information about a contact.
 - [class CPContactCallButton](./cpcontactcallbutton.md)
   A button for calling the contact.
 - [class CPContactMessageButton](./cpcontactmessagebutton.md)

@@ -29,7 +29,7 @@ let op = AggregationOperation.mean(of: accuracy)
 print(op.label) // "Mean of Accuracy"
 ```
 
-The summary DataFrame stores one `AggregateMetric` for each column. Each value records the operation that produced it, and derives its display label and source metric name from the operation.
+The summary [`DataFrame`](../TabularData/dataframe.md) stores one `AggregateMetric` for each column. Each value records the operation that produced it, and derives its display label and source metric name from the operation.
 
 ## Topics
 

@@ -5,7 +5,7 @@
 **Role**: Instance Method  
 **Required**: Yes
 
-Tells the app delegate that the app connected to the CarPlay interface.
+The CarPlay screen has connected and is ready to present content.
 
 **Availability**:
 - iOS 12.0+ - Deprecated in 13.0
@@ -22,17 +22,11 @@ func application(_ application: UIApplication, didConnectCarInterfaceController 
 - (void) application:(UIApplication *) application didConnectCarInterfaceController:(CPInterfaceController *) interfaceController toWindow:(CPWindow *) window;
 ```
 
-## Parameters
+## Discussion
 
-- `application`: Your singleton app object.
-- `interfaceController`: The interface controller provided by CarPlay. Your app should maintain a reference to this controller.
-- `window`: The CarPlay window. Your app should create its view controller and assign the controller to the [`rootViewController`](../../UIKit/uiwindow/rootviewcontroller.md) property of this window.
+Your app should create its view controller and assign it to the @c rootViewController property of this window.
 
-## See Also
-
-### Connecting to the CarPlay Interface
-- [func application(UIApplication, didDisconnectCarInterfaceController: CPInterfaceController, from: CPWindow)](./application%28_,diddisconnectcarinterfacecontroller,from%29.md)
-  Tells the app delegate that the app disconnected from the CarPlay interface.
+> **Note**: It is the responsibility of the delegate to maintain a reference to the interface controller beyond the scope of this method.
 
 
 ---

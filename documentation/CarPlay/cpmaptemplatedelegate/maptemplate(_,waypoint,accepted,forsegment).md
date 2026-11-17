@@ -21,6 +21,14 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, waypoint: CPNavigationWa
 - (void) mapTemplate:(CPMapTemplate *) mapTemplate mapTemplateWaypoint:(CPNavigationWaypoint *) waypoint accepted:(BOOL) accepted forSegment:(CPRouteSegment *) segment;
 ```
 
+## See Also
+
+### Adding and removing waypoints
+- [func mapTemplate(CPMapTemplate, didRequestToInsert: CPNavigationWaypoint, into: CPRouteSegment, completion: (CPTravelEstimates) -> Void)](./maptemplate%28_,didrequesttoinsert,into,completion%29.md)
+  Called when the built-in navigation system sends a waypoint to the device for a specific segment.
+- [func mapTemplate(CPMapTemplate, didRequestToRemove: CPNavigationWaypoint)](./maptemplate%28_,didrequesttoremove%29.md)
+  Called when the user removes a waypoint. Perform a reroute to update the route accordingly.
+
 
 ---
 

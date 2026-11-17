@@ -18,7 +18,7 @@
     },
     "https://developer.apple.com/documentation/coredata/adopting-swiftdata-for-a-core-data-app": {
       "file_path": "documentation/CoreData/adopting-swiftdata-for-a-core-data-app.md",
-      "hash": "acaf7eaa2f72d29553e8ef48b9d4dd1c658323e8136599d44d395309a79e129d"
+      "hash": "65a9c1bca15a9ac61d892fb006c4e03371b0715cad830a416ef40ba9935c647d"
     },
     "https://developer.apple.com/documentation/coredata/batch-processing": {
       "file_path": "documentation/CoreData/batch-processing.md",
@@ -4714,7 +4714,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coredata/adopting-swiftdata-for-a-core-data-app.json": {
       "file_path": "documentation/CoreData/adopting-swiftdata-for-a-core-data-app.md",
-      "hash": "acaf7eaa2f72d29553e8ef48b9d4dd1c658323e8136599d44d395309a79e129d"
+      "hash": "65a9c1bca15a9ac61d892fb006c4e03371b0715cad830a416ef40ba9935c647d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coredata/batch-processing.json": {
       "file_path": "documentation/CoreData/batch-processing.md",

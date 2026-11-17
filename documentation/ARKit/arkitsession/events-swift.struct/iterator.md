@@ -4,7 +4,7 @@
 **Kind**: struct  
 **Role**: Structure
 
-A type that provides a sequence’s iteration interface and encapsulates its iteration state.
+An iterator over a sequence of session events.
 
 **Availability**:
 - macOS 26.0+
@@ -20,10 +20,10 @@ struct Iterator
 
 ### Type aliases
 - [ARKitSession.Events.Element](./element.md)
-  A type representing a sequence’s elements.
+  The type of element produced by this asynchronous sequence: ARKitSession.Event.
 ### Instance methods
 - [func next() async -> ARKitSession.Events.Element?](./iterator/next%28%29.md)
-  Returns the next element in a sequence.
+  Asynchronously retrieve the next Event.
 
 ## Relationships
 

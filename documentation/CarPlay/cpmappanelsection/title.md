@@ -25,6 +25,12 @@ var title: String? { get set }
 
 Set this property to `nil` if you don’t want to display a title for the section.
 
+## See Also
+
+### Accessing the section’s content
+- [var items: [CPMapPanelItem]](./items.md)
+  The items to display in the section.
+
 
 ---
 

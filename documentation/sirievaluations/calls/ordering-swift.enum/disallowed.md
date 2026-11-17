@@ -18,9 +18,13 @@ A requirement that Siri doesn’t call any of the intents.
 case disallowed
 ```
 
+## Mentions
+
+- [Evaluating your app’s integration with Siri](../../evaluating-your-apps-integration-with-siri.md)
+
 ## Discussion
 
-A property of the argument or result entity itself whose name begins with `_`, or that is named `liveAppEntityFeedId`, is never relayed, so a prohibition that requires it to have a value never matches, and holds whatever Siri bound. An entity nested in the argument or result keeps such properties.
+A property of the argument or result entity itself whose name begins with `_`, or that is named `liveAppEntityFeedId`, is never relayed. On an argument, or a result Siri returned whole, a prohibition that requires such a property to have a value never matches, so it holds whatever Siri bound. On a result Siri returned as a reference or a partial, the property isn’t read, so the call can’t be ruled out and the prohibition fails. An entity nested in the argument or result keeps such properties.
 
 ## See Also
 

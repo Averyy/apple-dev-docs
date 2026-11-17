@@ -22,6 +22,14 @@ var image: UIImage? { get }
 @property (nonatomic, copy, readonly, nullable) UIImage * image;
 ```
 
+## See Also
+
+### Getting the configuration details
+- [var title: String?](./title.md)
+  Title of panel presented to configure waypoints along a route. If no panel is provided, the panel title will default to “Add Stop”.
+- [var buttons: [CPTextButton]](./buttons.md)
+  An array of text buttons to be displayed at the bottom of the card presented to configure waypoints along a route.
+
 
 ---
 

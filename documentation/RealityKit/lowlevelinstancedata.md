@@ -4,6 +4,8 @@
 **Kind**: class  
 **Role**: Class
 
+A container for the transforms of mesh instances that you can update from the CPU or the GPU.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -66,6 +68,7 @@ final class LowLevelInstanceData
 - [LowLevelMesh.PartsCollection](./lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
 - [class LowLevelBuffer](./lowlevelbuffer.md)
+  A container for buffer data that you can read and update from the CPU or the GPU.
 
 
 ---

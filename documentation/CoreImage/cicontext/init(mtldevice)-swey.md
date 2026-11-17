@@ -42,7 +42,9 @@ Use this method to choose a specific Metal device for rendering when a system co
 - [init(mtlDevice: any MTLDevice, options: [CIContextOption : Any]?)](./init%28mtldevice,options%29-26usb.md)
   Creates a Core Image context using the specified Metal device and options.
 - [init(mtlCommandQueue: any MTLCommandQueue)](./init%28mtlcommandqueue%29-7dtqk.md)
+  Creates a Core Image context that commits commands to the specified Metal command queue.
 - [init(mtlCommandQueue: any MTLCommandQueue, options: [CIContextOption : Any]?)](./init%28mtlcommandqueue,options%29-6i3me.md)
+  Creates a Core Image context that commits commands to the specified Metal command queue.
 
 
 ---

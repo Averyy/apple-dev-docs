@@ -15,6 +15,13 @@
 convenience init(centerPoint: CPLocationCoordinate3D, locationThreshold: Measurement<UnitLength>?, name: String?, address: String?, entryPoints: [CPLocationCoordinate3D], timeZone: TimeZone?)
 ```
 
+## See Also
+
+### Creating a trip
+- [convenience init(centerPoint: CPLocationCoordinate3D, locationThreshold: Measurement<UnitLength>?, nameVariants: [String], addressVariants: [String], entryPoints: [CPLocationCoordinate3D], timeZone: TimeZone?)](./init%28centerpoint,locationthreshold,namevariants,addressvariants,entrypoints,timezone%29.md)
+- [convenience init(mapItem: MKMapItem, locationThreshold: Measurement<UnitLength>?, entryPoints: [CPLocationCoordinate3D])](./init%28mapitem,locationthreshold,entrypoints%29.md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

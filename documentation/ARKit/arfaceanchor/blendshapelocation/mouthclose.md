@@ -24,6 +24,8 @@ extern ARBlendShapeLocation const ARBlendShapeLocationMouthClose;
 
 This coefficient describes a closing of the lips without relation to the position of the jaw (the [`jawOpen`](./jawopen.md) coefficient), so some values of the [`mouthClose`](./mouthclose.md) coefficient can produce unrealistic facial expressions unless other coefficients are also set to realistic values.
 
+## Discussion
+
 The figure below shows a face geometry (see [`ARSCNFaceGeometry`](../../arscnfacegeometry.md)) in three states:
 
 1. A neutral face (all [`ARFaceAnchor.BlendShapeLocation`](../blendshapelocation.md) coefficient values at `0.0`, including both [`jawOpen`](./jawopen.md) and [`mouthClose`](./mouthclose.md))

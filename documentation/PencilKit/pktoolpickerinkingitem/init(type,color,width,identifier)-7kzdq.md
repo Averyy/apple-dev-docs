@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Create a new inking tool item.
+Creates a new inking item with the specified ink type, color, width, and identifier.
 
 **Availability**:
 - iOS 18.0+
@@ -17,13 +17,6 @@ Create a new inking tool item.
 ```swift
 convenience init(type: PKInkingTool.InkType, color: UIColor? = nil, width: CGFloat? = nil, identifier: String? = nil)
 ```
-
-## Parameters
-
-- `type`: The ink type for the tool.
-- `color`: The color for the tool. Passing `nil` resolves to a default value based on the `InkType`.
-- `width`: The width for the tool. Passing `nil` resolves to a default value based on the `InkType`.
-- `identifier`: The identifier for the tool item. Passing `nil` resolves to a default value based on the `InkType`.
 
 
 ---

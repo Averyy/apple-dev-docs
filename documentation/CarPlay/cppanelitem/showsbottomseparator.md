@@ -27,6 +27,12 @@ When the value of this property is `true`, CarPlay draws a line along the bottom
 
 When drawing the last section in the map panel, the system doesn’t draw a separator line, even if this property is `true`.
 
+## See Also
+
+### Configuring the panel’s behavior
+- [var isEnabled: Bool](./isenabled.md)
+  A Boolean value that indicates whether the item supports interactions.
+
 
 ---
 

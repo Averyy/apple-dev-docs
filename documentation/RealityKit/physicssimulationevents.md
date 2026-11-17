@@ -34,6 +34,7 @@ enum PhysicsSimulationEvents
 - [enum AnimationEvents](./animationevents.md)
   Notable milestones that the framework signals during animation playback.
 - [enum CollisionEvents](./collisionevents.md)
+  Events that occur when two collidable objects begin touching, stay in contact, or separate.
 
 
 ---

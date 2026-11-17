@@ -4,6 +4,8 @@
 **Kind**: struct  
 **Role**: Structure
 
+A collection of types that represent material parameter values, handles, and textures.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

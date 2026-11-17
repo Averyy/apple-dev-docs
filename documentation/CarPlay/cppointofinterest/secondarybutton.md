@@ -23,7 +23,7 @@ var secondaryButton: CPTextButton? { get set }
 
 ## See Also
 
-### Managing the Detail Card’s Buttons
+### Managing the buttons
 - [var primaryButton: CPTextButton?](./primarybutton.md)
   The detail card’s primary action button.
 

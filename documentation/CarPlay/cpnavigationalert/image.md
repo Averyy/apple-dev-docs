@@ -28,9 +28,15 @@ The navigation alert doesn’t support animated images. If `image` references an
 
 ## See Also
 
-### Getting the Alert Image
+### Getting the alert image
 - [var imageSet: CPImageSet?](./imageset.md)
   An image set displayed in the navigation alert.
+- [var alertImage: UIImage?](./alertimage.md)
+- [var avatarImage: UIImage?](./avatarimage.md)
+- [class var maximumAlertImageSize: CGSize](./maximumalertimagesize.md)
+  The maximum image size for the alert image that a @c CPNavigationAlert can display.
+- [class var maximumAvatarImageSize: CGSize](./maximumavatarimagesize.md)
+  The maximum image size for the avatar image that a @c CPNavigationAlert can display.
 
 
 ---

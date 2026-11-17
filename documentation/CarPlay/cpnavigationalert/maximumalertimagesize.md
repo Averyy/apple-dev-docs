@@ -21,6 +21,18 @@ class var maximumAlertImageSize: CGSize { get }
 @property (class, nonatomic, readonly) CGSize maximumAlertImageSize;
 ```
 
+## See Also
+
+### Getting the alert image
+- [var image: UIImage?](./image.md)
+  An image displayed in the navigation alert.
+- [var imageSet: CPImageSet?](./imageset.md)
+  An image set displayed in the navigation alert.
+- [var alertImage: UIImage?](./alertimage.md)
+- [var avatarImage: UIImage?](./avatarimage.md)
+- [class var maximumAvatarImageSize: CGSize](./maximumavatarimagesize.md)
+  The maximum image size for the avatar image that a @c CPNavigationAlert can display.
+
 
 ---
 

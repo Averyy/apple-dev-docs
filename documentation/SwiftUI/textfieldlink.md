@@ -35,15 +35,17 @@ A `TextFieldLink` should be used to request text input from the user through a b
 
 ## See Also
 
-### Linking to other content
-- [struct Link](./link.md)
-  A control for navigating to a URL.
-- [struct ShareLink](./sharelink.md)
-  A view that controls a sharing presentation.
-- [struct SharePreview](./sharepreview.md)
-  A representation of a type to display in a share preview.
-- [struct HelpLink](./helplink.md)
-  A button with a standard appearance that opens app-specific help documentation.
+### Getting text input
+- [Building rich SwiftUI text experiences](./building-rich-swiftui-text-experiences.md)
+  Build an editor for formatted text using SwiftUI text editor views and attributed strings.
+- [struct TextField](./textfield.md)
+  A control that displays an editable text interface.
+- [func textFieldStyle<S>(S) -> some View](./view/textfieldstyle%28_%29.md)
+  Sets the style for text fields within this view.
+- [struct SecureField](./securefield.md)
+  A control into which people securely enter private text.
+- [struct TextEditor](./texteditor.md)
+  A view that can display and edit long-form text.
 
 
 ---

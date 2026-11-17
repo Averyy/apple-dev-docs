@@ -29,6 +29,12 @@ Shortly after the system removes a map panel from your CarPlay interface, the sy
 
 - `panel`: The panel that disappeared from your map interface.
 
+## See Also
+
+### Responding to panel visibility changes
+- [func panelDidShow(CPMapPanel)](./paneldidshow%28_%29.md)
+  Tells the delegate that the system displayed the specified map panel.
+
 
 ---
 

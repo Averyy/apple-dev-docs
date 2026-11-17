@@ -18,11 +18,15 @@ An ordered, multiturn interaction run in one Siri session.
 struct SiriScenario
 ```
 
+## Mentions
+
+- [Evaluating your app’s integration with Siri](./evaluating-your-apps-integration-with-siri.md)
+
 ## Overview
 
 A *scenario* is a conversation made of a sequence of turns. Each turn is something a person says, and Siri handles the turns in one session in the order you write them. A turn carries its own expectations about what Siri does, and the scenario carries expectations about the whole conversation.
 
-A turn’s expectations apply only to that turn. A scenario’s expectations apply to all of its turns together. Put an expectation on the scenario when it spans turns, such as an intent that finishes only after the person answers a question. Using a [`Calls`](./calls.md) structure’s expectation on the scenario with [`Calls.Ordering.disallowed`](./calls/ordering-swift.enum/disallowed.md) fails if the call runs in any turn, or if Siri asks the person to confirm it in any turn. Use [`Calls.Ordering.unordered`](./calls/ordering-swift.enum/unordered.md) when each call happens in at least one turn, in any order.
+A turn’s expectations apply only to that turn. A scenario’s expectations apply to all of its turns together. Put an expectation on the scenario when it spans turns, such as an intent that finishes only after the person answers a question. A [`Calls`](./calls.md) expectation on the scenario with [`Calls.Ordering.disallowed`](./calls/ordering-swift.enum/disallowed.md) fails if any turn breaks it in one of the ways [`Calls`](./calls.md) describes, such as the call running or Siri asking the person to confirm it. Use [`Calls.Ordering.unordered`](./calls/ordering-swift.enum/unordered.md) when each call happens in at least one turn, in any order.
 
 A scenario conforms to [`Codable`](../Swift/codable.md), so you can encode a set of scenarios as JSON to review alongside your project.
 
@@ -36,10 +40,10 @@ let createQuizReminderIntent = quizExampleIntents.intents["CreateQuizReminderInt
 let scenario = SiriScenario {
     // In turn one, the person names the app but not the topic, so Siri
     // asks for one.
-    UserTurn("Start a quiz in QuizExample")
+    UserTurn("Start a quiz in QuizExample.")
 
     // The second turn answers with a topic.
-    UserTurn("Science")
+    UserTurn("Science.")
 } expectation: {
     Calls {
         // The topic label comes from the parameter on the intent.
@@ -47,7 +51,8 @@ let scenario = SiriScenario {
             .expect(topic: .equals("Science"))
     }
 
-    // Fails if Siri runs or asks the person to confirm the intent in any turn.
+    // Fails if, in any turn, the intent runs or fails, or Siri asks the person 
+    // to confirm it.
     Calls(.disallowed) {
         createQuizReminderIntent
     }
@@ -72,7 +77,7 @@ To run a scenario through Siri, pass it to a [`SiriScenarioLoader`](./siriscenar
 - [let turns: [UserTurn]](./siriscenario/turns.md)
   The turns of the conversation in the order that the person says them.
 - [var input: String](./siriscenario/input.md)
-  The scenario’s utterances joined into one line for the report’s Input column.
+  The scenario’s utterances joined into one line for the report’s input column.
 - [var expected: SiriScenarioSubject.ScenarioReport?](./siriscenario/expected.md)
   The scenario’s expectations as the report’s Expected column.
 ### Encoding a scenario

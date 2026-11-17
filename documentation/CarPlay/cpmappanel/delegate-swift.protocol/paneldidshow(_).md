@@ -29,6 +29,12 @@ Shortly after a panel appears in your CarPlay interface, the system calls this m
 
 - `panel`: The panel that appeared in your map interface.
 
+## See Also
+
+### Responding to panel visibility changes
+- [func panelDidHide(CPMapPanel)](./paneldidhide%28_%29.md)
+  Tells the delegate that the system hid the specified map panel.
+
 
 ---
 

@@ -28,7 +28,7 @@ Multiple users sharing collaboration data with each other results in an AR exper
 
 For more information, see [Creating a collaborative session](../creating-a-collaborative-session.md).
 
-> ❗ **Important**:  Collaborative sessions work best with up to four participants.
+> ❗ **Important**: Collaborative sessions work best with up to four participants.
 
 ### Sharing Collaboration Data Over the Network
 
@@ -37,7 +37,7 @@ You are responsible for sending collaboration data over the network, including c
 The data you send is a serialized version of the [`ARSession.CollaborationData`](../arsession/collaborationdata.md) object provided by your session. You serialize it using [`NSKeyedArchiver`](../../Foundation/nskeyedarchiver.md).
 
 ```swift
-func session(_ session: ARSession, didOutputCollaborationData data: ARSession.CollaborationData) {    
+func session(_ session: ARSession, didOutputCollaborationData data: ARSession.CollaborationData) {
     if let collaborationDataEncoded = try? NSKeyedArchiver.archivedData(withRootObject: data, requiringSecureCoding: true) {
         multipeerSession.sendToAllPeers(collaborationDataEncoded)
     } else {
@@ -51,14 +51,13 @@ func session(_ session: ARSession, didOutputCollaborationData data: ARSession.Co
 When you receive collaboration data from other people, you instantiate an [`ARSession.CollaborationData`](../arsession/collaborationdata.md) object with it and pass the object to your session with [`update(with:)`](../arsession/update%28with%29.md). For optimum performance, it’s helpful if the participants in a collaborative session are on the same OS version. Unarchiving `ARSession.CollaborationData` received from a device running a different OS version may fail.
 
 ```swift
-func receivedData(_ data: Data) {        
+func receivedData(_ data: Data) {
     if let collaborationData = try? NSKeyedUnarchiver.unarchivedObject(ofClass: ARSession.CollaborationData.self, from: data) {
         session.update(with: collaborationData)
     } else {
         print("A device running an incompatible OS version is in the collaborative session.")
     }
 }
-
 ```
 
 

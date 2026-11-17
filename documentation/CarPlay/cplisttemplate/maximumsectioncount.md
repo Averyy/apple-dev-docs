@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Type Property
 
-The maximum number of sections that the template can display.
+The maximum number of sections the template can display.
 
 **Availability**:
 - iOS 14.0+
@@ -23,19 +23,17 @@ class var maximumSectionCount: Int { get }
 
 ## Discussion
 
-This property’s value is dependent on any user interface limits that the vehicle imposes. See [`CPSessionConfiguration`](../cpsessionconfiguration.md) for more information. At runtime, use this value to determine the maximum number of sections that your list can display.
+When building your content, use this value to determine the maximum number of sections to create. A vehicle can provide a specific value for this property to accommodate any user interface limits. Determine if vehicle-specific limits are in place using the [`limitedUserInterfaces`](../cpsessionconfiguration/limiteduserinterfaces.md) property of [`CPSessionConfiguration`](../cpsessionconfiguration.md).
 
 ## See Also
 
-### Managing Sections
-- [var sectionCount: Int](./sectioncount.md)
-  The number of sections in the list.
-- [var sections: [CPListSection]](./sections.md)
-  The sections that the list displays.
-- [func updateSections([CPListSection])](./updatesections%28_%29.md)
-  Adds, removes, reorders, or updates the list’s sections.
-- [class CPListSection](../cplistsection.md)
-  A container that groups your list items into sections.
+### Getting the configuration limits
+- [class var maximumItemCount: Int](./maximumitemcount.md)
+  The maximum number of items, across all sections, that the template can display.
+- [class var maximumGridButtonImageSize: CGSize](./maximumgridbuttonimagesize.md)
+  The expected image size for any grid buttons you add to the header.
+- [class var maximumHeaderGridButtonCount: Int](./maximumheadergridbuttoncount.md)
+  The maximum number of grid buttons you can display in the header.
 
 
 ---

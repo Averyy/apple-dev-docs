@@ -20,29 +20,29 @@ struct Descriptor
 
 ## Topics
 
+### Creating a descriptor
+- [init(inputAttributes: [LowLevelDeformation.VertexAttribute], outputAttributes: [LowLevelDeformation.VertexAttribute], blendShape: LowLevelDeformation.Pipeline.Descriptor.BlendShape?, skinning: LowLevelDeformation.Pipeline.Descriptor.Skinning?, renormalization: LowLevelDeformation.Pipeline.Descriptor.Renormalization?)](./descriptor/init%28inputattributes,outputattributes,blendshape,skinning,renormalization%29.md)
+  Creates a pipeline descriptor.
 ### Specifying vertex attributes
 - [var inputAttributes: [LowLevelDeformation.VertexAttribute]](./descriptor/inputattributes.md)
   The vertex attributes for the input mesh.
 - [var outputAttributes: [LowLevelDeformation.VertexAttribute]](./descriptor/outputattributes.md)
   The vertex attributes for the output mesh.
+### Configuring blend shapes
+- [var blendShape: LowLevelDeformation.Pipeline.Descriptor.BlendShape?](./descriptor/blendshape-swift.property.md)
+  Blend-shape parameters, or `nil` to omit blend-shape deformation.
+- [LowLevelDeformation.Pipeline.Descriptor.BlendShape](./descriptor/blendshape-swift.struct.md)
+  The blend-shape configuration for a deformation pipeline.
 ### Configuring skinning
 - [var skinning: LowLevelDeformation.Pipeline.Descriptor.Skinning?](./descriptor/skinning-swift.property.md)
   Skinning parameters, or `nil` to omit skinning.
 - [LowLevelDeformation.Pipeline.Descriptor.Skinning](./descriptor/skinning-swift.struct.md)
   The skinning stage configuration for a deformation pipeline.
-### Structures
-- [LowLevelDeformation.Pipeline.Descriptor.BlendShape](./descriptor/blendshape-swift.struct.md)
-  The blend-shape configuration for a deformation pipeline.
-- [LowLevelDeformation.Pipeline.Descriptor.Renormalization](./descriptor/renormalization-swift.struct.md)
-  An object that describes which vertex attributes to renormalize to unit length after deformation.
-### Initializers
-- [init(inputAttributes: [LowLevelDeformation.VertexAttribute], outputAttributes: [LowLevelDeformation.VertexAttribute], blendShape: LowLevelDeformation.Pipeline.Descriptor.BlendShape?, skinning: LowLevelDeformation.Pipeline.Descriptor.Skinning?, renormalization: LowLevelDeformation.Pipeline.Descriptor.Renormalization?)](./descriptor/init%28inputattributes,outputattributes,blendshape,skinning,renormalization%29.md)
-  Creates a pipeline descriptor.
-### Instance Properties
-- [var blendShape: LowLevelDeformation.Pipeline.Descriptor.BlendShape?](./descriptor/blendshape-swift.property.md)
-  Blend-shape parameters, or `nil` to omit blend-shape deformation.
+### Configuring renormalization
 - [var renormalization: LowLevelDeformation.Pipeline.Descriptor.Renormalization?](./descriptor/renormalization-swift.property.md)
   Renormalization parameters, or `nil` to omit renormalization.
+- [LowLevelDeformation.Pipeline.Descriptor.Renormalization](./descriptor/renormalization-swift.struct.md)
+  An object that describes which vertex attributes to renormalize to unit length after deformation.
 
 ## Relationships
 

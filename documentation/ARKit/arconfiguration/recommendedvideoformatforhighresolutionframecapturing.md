@@ -26,6 +26,8 @@ The framework determines the resolution of the camera feed and still-image captu
 
 Other video formats may support still-image capture but at a lower quality or resolution.
 
+> **See Also**: [`captureHighResolutionFrame(completion:)`](../arsession/capturehighresolutionframe%28completion%29.md)
+
 ## See Also
 
 ### Managing video capture options

@@ -26,6 +26,9 @@ enum Kind
   A classification for alarm notifications.
 - [AlertingContext.Kind.timer](./kind-swift.enum/timer.md)
   A timer notification.
+### Enumeration Cases
+- [AlertingContext.Kind.activeCall](./kind-swift.enum/activecall.md)
+  An active call notification.
 
 ## Relationships
 

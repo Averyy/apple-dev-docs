@@ -19,7 +19,7 @@ static var isSupported: Bool { get }
 
 ## Discussion
 
-For example, data providers are not supported in Simulator.
+For example, Simulator doesn’t support data providers.
 
 ## See Also
 

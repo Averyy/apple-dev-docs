@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a Now Playing button that displays a custom image and invokes a handler.
+Creates a button with the specified image and handler.
 
 **Availability**:
 - iOS 14.0+
@@ -21,22 +21,24 @@ init(image: UIImage, handler: ((CPNowPlayingButton) -> Void)? = nil)
 - (instancetype) initWithImage:(UIImage *) image handler:(void (^)(CPNowPlayingButton *)) handler;
 ```
 
+## Return Value
+
+An initialized image button.
+
 ## Discussion
 
-Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen—see your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property—and make sure it is no larger than [`CPNowPlayingButtonMaximumImageSize`](../cpnowplayingbuttonmaximumimagesize.md).
-
-CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
+When calculating the size of your image, multiply the dimensions in [`CPNowPlayingButtonMaximumImageSize`](../cpnowplayingbuttonmaximumimagesize.md) by the current display scale to get the image size in pixels. You can retrieve the current display scale from the vehicle’s trait collection, which you get from the [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property of your interface controller.
 
 ## Parameters
 
-- `image`: An image to display on the button.
-- `handler`: A closure that the button invokes when the user taps it.
+- `image`: The image to display for the button. Specify an SF Symbol or an image with the dimensions in [`CPNowPlayingButtonMaximumImageSize`](../cpnowplayingbuttonmaximumimagesize.md). This method scales images to the expected dimensions as needed. If you specify an animated image, the system uses only the first image in the animation sequence.
+- `handler`: The handler to run when someone interacts with the button. This closure takes the button as a parameter and returns no value.
 
 ## See Also
 
-### Creating a Button
+### Creating the button
 - [let CPNowPlayingButtonMaximumImageSize: CGSize](../cpnowplayingbuttonmaximumimagesize.md)
-  The maximum size CarPlay supports for a button’s image.
+  The dimensions for images in custom buttons.
 
 
 ---

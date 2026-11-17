@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Creates a tracking configuration.
+Creates a tracking configuration with default parameter values.
 
 **Availability**:
 - visionOS 2.0+

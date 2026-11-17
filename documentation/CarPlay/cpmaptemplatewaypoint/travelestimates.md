@@ -21,6 +21,12 @@ var travelEstimates: CPTravelEstimates { get set }
 @property (nonatomic, strong) CPTravelEstimates * travelEstimates;
 ```
 
+## See Also
+
+### Getting the route information
+- [var waypoint: CPNavigationWaypoint](./waypoint.md)
+  The navigation waypoint containing location-based information and guidance for a point of interest along a route.
+
 
 ---
 

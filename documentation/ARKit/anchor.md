@@ -22,6 +22,7 @@ protocol Anchor : CustomStringConvertible, Identifiable, Sendable
 - [var id: UUID](./anchor/id.md)
   A unique identifier that distinguishes this anchor from all other anchors.
 - [var timestamp: TimeInterval](./anchor/timestamp.md)
+  The timestamp of this anchor
 - [var originFromAnchorTransform: simd_float4x4](./anchor/originfromanchortransform.md)
   The position and orientation of this anchor in world space.
 ### Tracking anchors over time

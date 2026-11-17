@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-The assistant cell isn’t visible.
+An option to hide the assistant cell.
 
 **Availability**:
 - iOS 15.0+
@@ -20,14 +20,6 @@ case off
 ```c
 CPAssistantCellVisibilityOff
 ```
-
-## See Also
-
-### Controlling the Assistant Cell Visibility
-- [CPListItem.AssistantCellVisibility.always](./always.md)
-  The assistant cell is always visible.
-- [CPListItem.AssistantCellVisibility.whileLimitedUIActive](./whilelimiteduiactive.md)
-  The assistant cell is visible only while Limited UI mode is active.
 
 
 ---

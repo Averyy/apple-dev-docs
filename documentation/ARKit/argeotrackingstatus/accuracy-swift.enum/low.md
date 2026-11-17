@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Geo-tracking accuracy is low.
+Geo tracking accuracy is low.
 
 **Availability**:
 - iOS 14.0+
@@ -22,7 +22,7 @@ ARGeoTrackingAccuracyLow
 
 ## Discussion
 
-This value indicates that visual localization is complete and geo-tracking accuracy is low.
+This value indicates that visual localization is complete and geo tracking accuracy is low.
 
 One technique an app can use to deal with low accuracy is to render location anchors with an asset that’s more forgiving, like a large ball. If an app renders the ball further in the air, any offset that results from low accuracy will be less noticeable, and less critical to the user.
 
@@ -30,11 +30,11 @@ One technique an app can use to deal with low accuracy is to render location anc
 
 ### Accuracies
 - [ARGeoTrackingStatus.Accuracy.high](./high.md)
-  Geo-tracking accuracy is high.
+  Geo tracking accuracy is high.
 - [ARGeoTrackingStatus.Accuracy.undetermined](./undetermined.md)
-  Geo-tracking accuracy is undetermined.
+  Geo tracking accuracy is undetermined.
 - [ARGeoTrackingStatus.Accuracy.medium](./medium.md)
-  Geo-tracking accuracy is average.
+  Geo tracking accuracy is average.
 
 
 ---

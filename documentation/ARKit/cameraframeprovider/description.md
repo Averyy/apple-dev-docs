@@ -15,12 +15,6 @@ A textual representation of this camera frame provider.
 final var description: String { get }
 ```
 
-## See Also
-
-### Getting information about the camera frame provider
-- [var state: DataProviderState](./state.md)
-  The state of a camera frame provider.
-
 
 ---
 

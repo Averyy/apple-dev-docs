@@ -23,13 +23,13 @@ protocol CalendarEnum : AppSchema.Kind
 
 ### Instance Properties
 - [var attendeeStatus: some AppSchemaEnum](./calendarenum/attendeestatus.md)
-  An enum schema for an attendee status parameter.
+  An enum schema for an attendee status.
 - [var attendeeType: some AppSchemaEnum](./calendarenum/attendeetype.md)
-  An enum schema for an attendee type parameter.
+  An enum schema for an attendee type.
 - [var eventSpan: some AppSchemaEnum](./calendarenum/eventspan.md)
-  An enum schema for an event span parameter.
+  An enum schema for an event span.
 - [var eventStatus: some AppSchemaEnum](./calendarenum/eventstatus.md)
-  An enum schema for an event status parameter.
+  An enum schema for an event status.
 
 ## Relationships
 
@@ -42,13 +42,13 @@ protocol CalendarEnum : AppSchema.Kind
 
 ### Types for static parameters
 - [var attendeeStatus: some AppSchemaEnum](./calendarenum/attendeestatus.md)
-  An enum schema for an attendee status parameter.
+  An enum schema for an attendee status.
 - [var attendeeType: some AppSchemaEnum](./calendarenum/attendeetype.md)
-  An enum schema for an attendee type parameter.
+  An enum schema for an attendee type.
 - [var eventSpan: some AppSchemaEnum](./calendarenum/eventspan.md)
-  An enum schema for an event span parameter.
+  An enum schema for an event span.
 - [var eventStatus: some AppSchemaEnum](./calendarenum/eventstatus.md)
-  An enum schema for an event status parameter.
+  An enum schema for an event status.
 
 
 ---

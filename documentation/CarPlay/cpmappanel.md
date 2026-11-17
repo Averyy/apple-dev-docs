@@ -31,21 +31,21 @@ To monitor the appearance and disappearance of the panel, assign a delegate obje
 
 ## Topics
 
-### Protocols
-- [CPMapPanel.Delegate](./cpmappanel/delegate-swift.protocol.md)
-  The interface you use to respond to the appearance and disappearance of the panel.
-### Initializers
+### Creating a map panel
 - [init(title: String?, sections: [CPMapPanelSection], buttonConfiguration: CPMapPanelButtonConfiguration?)](./cpmappanel/init%28title,sections,buttonconfiguration%29.md)
   Creates and configures a new map panel for display over your navigation app’s map template.
-### Instance Properties
-- [var buttonConfiguration: CPMapPanelButtonConfiguration?](./cpmappanel/buttonconfiguration.md)
-  The button information and travel estimates to display in the panel.
+### Responding to the panel’s appearance and disappearance
 - [var delegate: (any CPMapPanel.Delegate)?](./cpmappanel/delegate-swift.property.md)
   The app-specific object that the system notifies when it hides and shows the panel.
-- [var sections: [CPMapPanelSection]](./cpmappanel/sections.md)
-  The sections of content to display in the panel.
+- [CPMapPanel.Delegate](./cpmappanel/delegate-swift.protocol.md)
+  The interface you use to respond to the appearance and disappearance of the panel.
+### Getting the panel’s content
 - [var title: String?](./cpmappanel/title.md)
   The title to display at the top of the panel.
+- [var sections: [CPMapPanelSection]](./cpmappanel/sections.md)
+  The sections of content to display in the panel.
+- [var buttonConfiguration: CPMapPanelButtonConfiguration?](./cpmappanel/buttonconfiguration.md)
+  The button information and travel estimates to display in the panel.
 
 ## Relationships
 
@@ -60,6 +60,22 @@ To monitor the appearance and disappearance of the panel, assign a delegate obje
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
+
+## See Also
+
+### Maps
+- [class CPMapTemplate](./cpmaptemplate.md)
+  A template that displays a navigation overlay that your app draws on the map.
+- [class CPMapButton](./cpmapbutton.md)
+  A button that represents an action that a map template displays on the CarPlay screen.
+- [class CPMapPanelSection](./cpmappanelsection.md)
+  A single section of a map panel that you fill with a title and one or more items.
+- [class CPMapPanelItem](./cpmappanelitem.md)
+  A type that manages the waypoint, route, trip, and other information you display in a map panel.
+- [class CPMapPanelButtonConfiguration](./cpmappanelbuttonconfiguration.md)
+  A type that manages the action buttons and travel estimates in a map panel.
+- [class CPChargingStationConnection](./cpchargingstationconnection.md)
+  Details about the equipment at an electric vehicle charging station.
 
 
 ---

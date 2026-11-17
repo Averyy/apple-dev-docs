@@ -4,6 +4,8 @@
 **Kind**: var  
 **Role**: Global Variable
 
+The opacity level for a candidates window.
+
 **Availability**:
 - macOS 10.5+
 
@@ -19,15 +21,15 @@ extern const NSString * IMKCandidatesOpacityAttributeName;
 
 ## Discussion
 
-The opacity attribute for a candidates window. The associated value must be an `NSNumber` object that represents a value from 0 to 1.
+The associated value must be an `NSNumber` object that represents a value from 0 to 1.
 
 ## See Also
 
 ### Constants
-- [let IMKCandidatesSendServerKeyEventFirst: String](./imkcandidatessendserverkeyeventfirst.md)
-- [let IMKControllerClass: String](./imkcontrollerclass.md)
-- [let IMKDelegateClass: String](./imkdelegateclass.md)
-- [let IMKModeDictionary: String](./imkmodedictionary.md)
+- [typealias IMKCandidatePanelType](./imkcandidatepaneltype.md)
+  Types of candidates windows provide by the Input Method Kit.
+- [typealias IMKCandidatesLocationHint](./imkcandidateslocationhint.md)
+  Hints that suggest where to place the candidates window.
 
 
 ---

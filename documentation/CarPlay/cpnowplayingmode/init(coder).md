@@ -15,6 +15,12 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating a playing mode
+- [class var `default`: CPNowPlayingMode](./default.md)
+  The default appearance and layout for the Now Playing interface.
+
 
 ---
 

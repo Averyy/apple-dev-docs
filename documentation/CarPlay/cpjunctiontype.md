@@ -23,14 +23,14 @@ enum CPJunctionType : NSUInteger;
 
 ## Topics
 
-### Initializers
-- [init?(rawValue: UInt)](./cpjunctiontype/init%28rawvalue%29.md)
-  Creates a junction type with the provided integer value.
-### Junction types
+### Getting the junction types
 - [CPJunctionType.intersection](./cpjunctiontype/intersection.md)
   A single intersection with roads coming to a common point.
 - [CPJunctionType.roundabout](./cpjunctiontype/roundabout.md)
   Junction elements that represent roads exiting the roundabout.
+### Creating a junction type
+- [init?(rawValue: UInt)](./cpjunctiontype/init%28rawvalue%29.md)
+  Creates a junction type with the provided integer value.
 
 ## Relationships
 
@@ -44,15 +44,18 @@ enum CPJunctionType : NSUInteger;
 
 ## See Also
 
-### Routes, lanes and junctions
-- [class CPRouteInformation](./cprouteinformation.md)
-  A class that describes the characteristic elements of a route.
+### Lanes and junctions
 - [class CPLane](./cplane.md)
   A class that describes characteristics of a lane on a roadway.
 - [class CPLaneGuidance](./cplaneguidance.md)
   A class that provides information that describes the number of lanes on a roadway and navigation instruction variants.
 - [enum CPLaneStatus](./cplanestatus.md)
   Values that describe the status or preferability of a lane.
+- [enum CPTrafficSide](./cptrafficside.md)
+  Values that represent which side of the road the traffic drives on.
+- [func NSStringFromCPJunctionType(CPJunctionType) -> String!](./nsstringfromcpjunctiontype%28_%29.md)
+- [func NSStringFromCPLaneStatus(CPLaneStatus) -> String!](./nsstringfromcplanestatus%28_%29.md)
+- [func NSStringFromCPTrafficSide(CPTrafficSide) -> String!](./nsstringfromcptrafficside%28_%29.md)
 
 
 ---

@@ -15,6 +15,14 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating a thumbnail image
+- [init(image: UIImage)](./init%28image%29.md)
+  Creates a thumbnail with an image object.
+- [init(image: UIImage, imageOverlay: CPImageOverlay?, sportsOverlay: CPSportsOverlay?)](./init%28image,imageoverlay,sportsoverlay%29.md)
+  Creates a thumbnail with an image object and optional overlays.
+
 
 ---
 

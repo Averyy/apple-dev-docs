@@ -11,19 +11,19 @@ Creates a session with dynamic instructions.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
-- tvOS 27.3+ (Beta)
+- tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
 
 ## Declaration
 
-*iOS, iPadOS, Mac Catalyst, macOS, tvOS, visionOS*
+*iOS, iPadOS, Mac Catalyst, macOS, visionOS*
 
 ```swift
 convenience init(model: some LanguageModel = SystemLanguageModel.default, dynamicInstructions: sending some DynamicInstructions, history: some Collection<Transcript.Entry> = [])
 ```
 
-*watchOS*
+*tvOS, watchOS*
 
 ```swift
 convenience init(model: some LanguageModel, dynamicInstructions: sending some DynamicInstructions, history: some Collection<Transcript.Entry> = [])

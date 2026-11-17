@@ -44,6 +44,7 @@ enum CollisionCastQueryType
 - [CollisionCastHit.TriangleHit](./collisioncasthit/trianglehit-swift.struct.md)
   Information returned when ray intersects a triangle mesh.
 - [struct PixelCastHit](./pixelcasthit.md)
+  A hit result of a pixel cast that identifies the entity and surface point a ray intersects.
 
 
 ---

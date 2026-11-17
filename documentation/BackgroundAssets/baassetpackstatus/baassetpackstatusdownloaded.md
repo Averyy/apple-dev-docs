@@ -20,6 +20,14 @@ A status value that indicates that the system finished downloading the asset pac
 BAAssetPackStatusDownloaded
 ```
 
+## See Also
+
+### Tracking downloads
+- [BAAssetPackStatusDownloadAvailable](./baassetpackstatusdownloadavailable.md)
+  A status value that indicates that the asset pack is available to download.
+- [BAAssetPackStatusDownloading](./baassetpackstatusdownloading.md)
+  A status value that indicates that the system is currently downloading the asset pack.
+
 
 ---
 

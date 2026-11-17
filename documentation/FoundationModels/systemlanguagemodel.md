@@ -11,7 +11,6 @@ An on-device Apple Foundation Model capable of text generation tasks.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
-- tvOS 27.3+ (Beta)
 - visionOS 26.0+
 
 ## Declaration

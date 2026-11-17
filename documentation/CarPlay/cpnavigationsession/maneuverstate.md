@@ -27,7 +27,7 @@ Set this property with the current [`CPManeuverState`](../cpmaneuverstate.md) ba
 
 ## See Also
 
-### Managing Upcoming Maneuvers
+### Managing upcoming maneuvers
 - [var upcomingManeuvers: [CPManeuver]](./upcomingmaneuvers.md)
   The next set of maneuvers the user should perform while following the current route.
 - [var currentRoadNameVariants: [String]](./currentroadnamevariants.md)

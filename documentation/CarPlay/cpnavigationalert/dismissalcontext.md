@@ -45,7 +45,9 @@ enum CPNavigationAlertDismissalContext : NSUInteger;
 
 ## See Also
 
-### Handling Navigation Alerts
+### Handling navigation alerts
+- [func mapTemplate(CPMapTemplate, shouldShowNotificationFor: CPNavigationAlert) -> Bool](../cpmaptemplatedelegate/maptemplate%28_,shouldshownotificationfor%29-5lu8a.md)
+  Asks the delegate whether the system should display the navigation alert as a notification when the app is in the background.
 - [func mapTemplate(CPMapTemplate, willShow: CPNavigationAlert)](../cpmaptemplatedelegate/maptemplate%28_,willshow%29.md)
   Tells the delegate that the system will show the navigation alert.
 - [func mapTemplate(CPMapTemplate, didShow: CPNavigationAlert)](../cpmaptemplatedelegate/maptemplate%28_,didshow%29.md)

@@ -21,10 +21,6 @@ A possible diagnosis for limited position-tracking quality as of when the camera
 ### Handling Tracking Status
 - [trackingState](./trackingstate-9pgmq.md)
   The general quality of position tracking available when the camera captured a frame.
-- [ARTrackingState](../artrackingstate.md)
-  Possible values for position-tracking quality.
-- [ARTrackingStateReason](../artrackingstatereason.md)
-  Possible causes for limited position-tracking quality.
 
 
 ---

@@ -22,19 +22,20 @@ enum BAAssetPackStatus : NSUInteger;
 
 ## Topics
 
-### Enumeration Cases
+### Tracking downloads
 - [BAAssetPackStatusDownloadAvailable](./baassetpackstatus/baassetpackstatusdownloadavailable.md)
   A status value that indicates that the asset pack is available to download.
-- [BAAssetPackStatusDownloaded](./baassetpackstatus/baassetpackstatusdownloaded.md)
-  A status value that indicates that the system finished downloading the asset pack.
 - [BAAssetPackStatusDownloading](./baassetpackstatus/baassetpackstatusdownloading.md)
   A status value that indicates that the system is currently downloading the asset pack.
-- [BAAssetPackStatusObsolete](./baassetpackstatus/baassetpackstatusobsolete.md)
-  A status value that indicates that the asset pack is no longer available to download.
-- [BAAssetPackStatusOutOfDate](./baassetpackstatus/baassetpackstatusoutofdate.md)
-  A status value that indicates that the downloaded asset pack is out of date.
+- [BAAssetPackStatusDownloaded](./baassetpackstatus/baassetpackstatusdownloaded.md)
+  A status value that indicates that the system finished downloading the asset pack.
+### Updating assets
 - [BAAssetPackStatusUpToDate](./baassetpackstatus/baassetpackstatusuptodate.md)
   A status value that indicates that the downloaded asset pack is up to date.
+- [BAAssetPackStatusOutOfDate](./baassetpackstatus/baassetpackstatusoutofdate.md)
+  A status value that indicates that the downloaded asset pack is out of date.
+- [BAAssetPackStatusObsolete](./baassetpackstatus/baassetpackstatusobsolete.md)
+  A status value that indicates that the asset pack is no longer available to download.
 - [BAAssetPackStatusUpdateAvailable](./baassetpackstatus/baassetpackstatusupdateavailable.md)
   A status value that indicates that an update to the asset pack is available to download.
 

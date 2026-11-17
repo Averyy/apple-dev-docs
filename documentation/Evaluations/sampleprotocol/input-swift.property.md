@@ -5,7 +5,7 @@
 **Role**: Instance Property  
 **Required**: Yes
 
-The input data for this sample, shown in the “Input” DataFrame column.
+The input data for this sample, which an [`Evaluation`](../evaluation.md) displays in the “Input” [`Column`](../../TabularData/column.md).
 
 **Availability**:
 - iOS 27.0+

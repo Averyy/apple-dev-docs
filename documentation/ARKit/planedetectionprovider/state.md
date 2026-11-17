@@ -20,8 +20,6 @@ final var state: DataProviderState { get }
 ### Inspecting a plane detection provider
 - [var alignments: [PlaneAnchor.Alignment]](./alignments.md)
   The plane alignments that you configure a provider to detect.
-- [var description: String](./description.md)
-  A textual representation of this plane detection provider.
 
 
 ---

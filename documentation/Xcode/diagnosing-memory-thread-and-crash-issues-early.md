@@ -25,9 +25,10 @@ Accessing memory improperly can introduce unexpected issues into your code, and 
 
 To enable ASan from the command line, use the following flags:
 
-- `-fsanitize=address` (clang)
-- `-sanitize=address` (swiftc)
-- `-enableAddressSanitizer YES` (xcodebuild)
+- `--sanitize=address` (`swift build`, `swift run`, and `swift test`)
+- `-enableAddressSanitizer YES` (`xcodebuild`)
+- `-fsanitize=address` (`clang`)
+- `-sanitize=address` (`swiftc`)
 
 The Address Sanitizer tool replaces the `malloc(_:)` and `free(_:)` functions with custom implementations. The custom `malloc(_:)` function surrounds a requested memory block with special off-limits regions, and reports attempts to access those regions. The `free(_:)` function places a deallocated block into a special quarantine queue, and reports attempts to access that quarantined memory.
 
@@ -45,9 +46,10 @@ To detect race conditions and other thread-related issues, enable the Thread San
 
 To enable TSan from the command line, use the following flags:
 
-- `-fsanitize=thread` (clang)
-- `-sanitize=thread` (swiftc)
-- `-enableThreadSanitizer YES` (xcodebuild)
+- `--sanitize=thread` (`swift build`, `swift run`, and `swift test`)
+- `-enableThreadSanitizer YES` (`xcodebuild`)
+- `-fsanitize=thread` (`clang`)
+- `-sanitize=thread` (`swiftc`)
 
 The Thread Sanitizer tool inserts diagnostics into your code to record each memory read or write operation. These diagnostics generate a timestamp for each operation, as well as its location in memory. The tool then reports any operations that occur at the same location at approximately the same time. The tool also detects other thread-related bugs, such as uninitialized mutexes and thread leaks.
 
@@ -97,7 +99,12 @@ To enable this tool, select Undefined Behavior Sanitizer from the Diagnostics se
 
 ![A screenshot of the Scheme Editor with the Undefined Behavior Sanitizer checkbox selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-4@2x.png)
 
-To enable UBSan from the command line, add the `-fsanitize=undefined` option in clang or the `enableUndefinedBehaviorSanitizer YES` option in xcodebuild. To enable individual sanitizer checks, use the following options:
+To enable UBSan from the command line, use the following flags:
+
+- `-enableUndefinedBehaviorSanitizer YES` (`xcodebuild`)
+- `-fsanitize=undefined` (`clang`)
+
+To enable individual sanitizer checks, use the following options:
 
 | Compiler flag | UBSan check |
 | --- | --- |

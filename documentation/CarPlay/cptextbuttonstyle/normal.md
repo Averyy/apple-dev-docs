@@ -23,7 +23,7 @@ CPTextButtonStyleNormal
 
 ## See Also
 
-### Button Text Styles
+### Getting the text button style
 - [CPTextButtonStyle.confirm](./confirm.md)
   A style that indicates the button confirms an action and changes data.
 - [CPTextButtonStyle.cancel](./cancel.md)

@@ -29,6 +29,13 @@ A panel item configured with the specified grid buttons.
 
 - `gridButtons`: The grid buttons to display in the item. Specify the buttons in the order you want them to appear. Include no more than four grid buttons in the array.
 
+## See Also
+
+### Initializing the panel
+- [init(listItem: CPListItem)](./init%28listitem%29.md)
+  Initialize the item using a list item.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

@@ -15,6 +15,12 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating a dashboard button
+- [init(titleVariants: [String], subtitleVariants: [String], image: UIImage, handler: ((CPDashboardButton) -> Void)?)](./init%28titlevariants,subtitlevariants,image,handler%29.md)
+  Creates a dashboard button that displays a title, an optional subtitle, and an image.
+
 
 ---
 

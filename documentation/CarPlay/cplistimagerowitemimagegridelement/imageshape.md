@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-Shape used to draw the image of the element.
+The shape to apply to the current element’s image.
 
 **Availability**:
 - iOS 26.0+
@@ -20,6 +20,12 @@ var imageShape: CPListImageRowItemImageGridElement.Shape { get }
 ```objc
 @property (nonatomic, assign, readonly) CPListImageRowItemImageGridElementShape imageShape;
 ```
+
+## See Also
+
+### Getting the element’s shape
+- [CPListImageRowItemImageGridElement.Shape](./shape.md)
+  Shapes you can apply to an element’s image.
 
 
 ---

@@ -11,7 +11,6 @@ Returns the token count for the specified collection of transcript entries.
 - iPadOS 26.4+
 - Mac Catalyst 26.4+
 - macOS 26.4+
-- tvOS 27.3+ (Beta)
 - visionOS 26.4+
 
 ## Declaration

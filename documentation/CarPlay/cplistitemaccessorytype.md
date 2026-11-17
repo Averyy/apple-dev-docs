@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-The accessory types that a list item can display.
+The standard image types a list item can display in its accessory region.
 
 **Availability**:
 - iOS 14.0+
@@ -23,17 +23,17 @@ enum CPListItemAccessoryType : NSInteger;
 
 ## Overview
 
-Use these constants to set the value of a list item’s [`accessoryType`](./cplistitem/accessorytype.md) property. An accessory can provide additional context for a list item’s contents, or help communicate its behavior.
+Use these constants to set the value of a list item’s [`accessoryType`](./cplistitem/accessorytype.md) property. Assigning one of these values displays the specified image in the accessory region of the list item’s row. Choose an accessory type that provides relevant context about the item’s purpose. For example, display a disclosure indicator to signify that tapping the row takes the person to a new page of content.
 
 ## Topics
 
-### Accessory Types
+### Accessory types
 - [CPListItemAccessoryType.none](./cplistitemaccessorytype/none.md)
-  Don’t show an accessory.
+  A value that indicates the list item has no standard accessory type.
 - [CPListItemAccessoryType.disclosureIndicator](./cplistitemaccessorytype/disclosureindicator.md)
-  Show a chevron icon.
+  A chevron image that signifies the item displays new content.
 - [CPListItemAccessoryType.cloud](./cplistitemaccessorytype/cloud.md)
-  Show a cloud icon.
+  A cloud image that signifies the item contains cloud-based content.
 ### Initializers
 - [init?(rawValue: Int)](./cplistitemaccessorytype/init%28rawvalue%29.md)
 
@@ -49,13 +49,13 @@ Use these constants to set the value of a list item’s [`accessoryType`](./cpli
 
 ## See Also
 
-### Managing Accessories
+### Managing accessories
 - [var accessoryType: CPListItemAccessoryType](./cplistitem/accessorytype.md)
-  The accessory that the list item displays in its trailing region.
+  The standard accessory type to display on the trailing edge of the list item.
 - [var accessoryImage: UIImage?](./cplistitem/accessoryimage.md)
-  The image that the list item displays in its trailing region.
+  The custom accessory image to display on the trailing edge of the list item.
 - [func setAccessoryImage(UIImage?)](./cplistitem/setaccessoryimage%28_%29.md)
-  Updates the list item’s accessory image.
+  The custom accessory image to display on the trailing edge of the list item.
 
 
 ---

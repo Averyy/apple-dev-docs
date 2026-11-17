@@ -25,7 +25,7 @@ var failingEvaluatorTypes: Set<String>
 
 ### Counting failures
 - [var inferenceFailureCount: Int](./inferencefailurecount.md)
-  The number of samples whose subject failed to be produced.
+  The number of rows whose subject failed to be produced; a sample run more than once counts once per failed run.
 - [var evaluatorFailureCount: Int](./evaluatorfailurecount.md)
   The total number of evaluator invocations that threw.
 

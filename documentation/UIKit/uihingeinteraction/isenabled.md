@@ -25,7 +25,7 @@ var isEnabled: Bool { get set }
 
 ## Discussion
 
-While disabled, the interaction’s handler is not called for hinge updates, and any updates that occur are not queued. When re-enabled, the handler is called with the current hinge state if one is available.
+When the interaction is disabled, if the handler’s last update had a hinge, the handler is called once more with a nil `hinge`. After that, the handler isn’t called for hinge updates, and updates that occur while the interaction is disabled aren’t queued. When the interaction is re-enabled, the handler is called with the current hinge state if one is available.
 
 
 ---

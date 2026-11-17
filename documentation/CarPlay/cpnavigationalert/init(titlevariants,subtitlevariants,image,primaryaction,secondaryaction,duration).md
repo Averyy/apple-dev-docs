@@ -38,9 +38,11 @@ CarPlay doesn’t support animated images. If you provide an animated image, Car
 
 ## See Also
 
-### Creating a Navigation Alert
-- [init(titleVariants: [String], subtitleVariants: [String]?, imageSet: CPImageSet?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)](./init%28titlevariants,subtitlevariants,imageset,primaryaction,secondaryaction,duration%29.md)
-  Creates a navigation alert.
+### Creating a navigation alert
+- [init(titleVariants: [String], subtitleVariants: [String], avatarImage: UIImage?, alert: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](./init%28titlevariants,subtitlevariants,avatarimage,alert,actions,duration%29.md)
+  Initialize a @c CPNavigationAlert with a title, image, an array of actions, and duration.
+- [init(titleVariants: [String], subtitleVariants: [String], avatarImage: UIImage?, alertImage: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](./init%28titlevariants,subtitlevariants,avatarimage,alertimage,actions,duration%29.md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

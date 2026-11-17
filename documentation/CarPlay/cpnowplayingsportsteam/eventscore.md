@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The numeric score string for this team in the current event. Depending on the size of the car screen, a maximum of 3 to 5 characters may be displayed.
+The number of points or current score for the team.
 
 **Availability**:
 - iOS 18.4+
@@ -20,6 +20,16 @@ var eventScore: String { get }
 ```objc
 @property (nonatomic, copy, readonly) NSString * eventScore;
 ```
+
+## Discussion
+
+The amount of text CarPlay can show depends on the available space, but is typically no more than three to five characters.
+
+## See Also
+
+### Getting match-related details
+- [var possessionIndicator: UIImage?](./possessionindicator.md)
+  An optional image to display next to the team in possession of the ball.
 
 
 ---

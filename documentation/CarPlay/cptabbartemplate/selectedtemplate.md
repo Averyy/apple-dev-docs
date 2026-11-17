@@ -21,6 +21,12 @@ var selectedTemplate: CPTemplate? { get }
 @property (nonatomic, strong, readonly, nullable) CPTemplate * selectedTemplate;
 ```
 
+## See Also
+
+### Selecting a tab
+- [func select(CPTemplate)](./select%28_%29.md)
+- [func selectTemplate(at: Int)](./selecttemplate%28at%29.md)
+
 
 ---
 

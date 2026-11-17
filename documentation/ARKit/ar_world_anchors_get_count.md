@@ -15,6 +15,14 @@ Gets the number of world anchors in the collection.
 extern size_t ar_world_anchors_get_count(ar_world_anchors_t world_anchors);
 ```
 
+## Return Value
+
+The number of world anchors in the collection.
+
+## Parameters
+
+- `world_anchors`: The collection of world anchors.
+
 ## See Also
 
 ### World tracking
@@ -43,7 +51,7 @@ extern size_t ar_world_anchors_get_count(ar_world_anchors_t world_anchors);
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)
   Creates a world tracking provider.
 - [ar_world_tracking_provider_is_supported](./ar_world_tracking_provider_is_supported.md)

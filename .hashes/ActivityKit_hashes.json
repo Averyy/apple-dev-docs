@@ -462,11 +462,11 @@
     },
     "https://developer.apple.com/documentation/activitykit/displaying-live-data-with-live-activities": {
       "file_path": "documentation/ActivityKit/displaying-live-data-with-live-activities.md",
-      "hash": "b82deb02f3a040f6e253adf4085da029da9381414b901a978cf12a15cd2439b8"
+      "hash": "b20ea66165f568ff1dda2584f03eff2b397fb7eb9b4d86804576125e2cb02a74"
     },
     "https://developer.apple.com/documentation/activitykit/launching-your-app-from-a-live-activity": {
       "file_path": "documentation/ActivityKit/launching-your-app-from-a-live-activity.md",
-      "hash": "59cd3e4a1fc852274c4d40ba20f86cd411c47758335779460346d6a9a7ccd840"
+      "hash": "53247d3e538fa474b21284492447f49c50bcb3c05a93afddada27b02f6765d61"
     },
     "https://developer.apple.com/documentation/activitykit/pushtype": {
       "file_path": "documentation/ActivityKit/pushtype.md",
@@ -946,11 +946,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/displaying-live-data-with-live-activities.json": {
       "file_path": "documentation/ActivityKit/displaying-live-data-with-live-activities.md",
-      "hash": "b82deb02f3a040f6e253adf4085da029da9381414b901a978cf12a15cd2439b8"
+      "hash": "b20ea66165f568ff1dda2584f03eff2b397fb7eb9b4d86804576125e2cb02a74"
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/launching-your-app-from-a-live-activity.json": {
       "file_path": "documentation/ActivityKit/launching-your-app-from-a-live-activity.md",
-      "hash": "59cd3e4a1fc852274c4d40ba20f86cd411c47758335779460346d6a9a7ccd840"
+      "hash": "53247d3e538fa474b21284492447f49c50bcb3c05a93afddada27b02f6765d61"
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/pushtype.json": {
       "file_path": "documentation/ActivityKit/pushtype.md",

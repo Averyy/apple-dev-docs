@@ -4,6 +4,8 @@
 **Kind**: func  
 **Role**: Function
 
+Get the identifier of an anchor.
+
 **Availability**:
 - visionOS 2.0+
 
@@ -13,12 +15,20 @@
 extern void ar_device_anchor_get_identifier(ar_device_anchor_t anchor, uuid_t out_identifier);
 ```
 
+## Parameters
+
+- `anchor`: The anchor.
+- `out_identifier`: A pointer to a UUID to fill out with the anchor identifier. Must be non-null.
+
 ## See Also
 
 ### Device anchor functions
 - [ar_device_anchor_get_origin_from_anchor_transform](./ar_device_anchor_get_origin_from_anchor_transform.md)
+  Get the transform from an anchor to the origin coordinate system.
 - [ar_device_anchor_get_timestamp](./ar_device_anchor_get_timestamp.md)
+  Get the timestamp corresponding to an anchor.
 - [ar_device_anchor_is_tracked](./ar_device_anchor_is_tracked.md)
+  Determine whether an anchor is tracked.
 - [ar_device_anchor_get_tracking_state](./ar_device_anchor_get_tracking_state.md)
   Gets the tracking state of the device anchor.
 - [ar_device_anchor_get_origin_from_anchor_transform_with_correction](./ar_device_anchor_get_origin_from_anchor_transform_with_correction.md)

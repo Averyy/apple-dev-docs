@@ -17,7 +17,7 @@ final class ObjectTrackingProvider
 
 ## Overview
 
-Use this class to configure ARKIt to track reference objects in a person’s environment and receive a stream of updates that contains [`ObjectAnchor`](./objectanchor.md) structures that describe them.
+Use this class to configure ARKit to track reference objects in a person’s environment and receive a stream of updates that contains [`ObjectAnchor`](./objectanchor.md) structures that describe them.
 
 ## Topics
 
@@ -36,13 +36,14 @@ Use this class to configure ARKIt to track reference objects in a person’s env
   Parameters for changing object-tracking behavior.
 ### Inspecting an object-tracking provider
 - [var state: DataProviderState](./objecttrackingprovider/state.md)
-  The state of an object-tracking provider.
+  The current status of an object-tracking provider.
 - [var allAnchors: [ObjectAnchor]](./objecttrackingprovider/allanchors.md)
   An array of all the object anchors the object-tracking provider is tracking.
 - [var anchorUpdates: AnchorUpdateSequence<ObjectAnchor>](./objecttrackingprovider/anchorupdates.md)
   An asynchronous sequence of anchors the framework updates.
 - [ObjectTrackingProvider.Error](./objecttrackingprovider/error.md)
-  Values that represent an object-tracking error.
+  An error an object-tracking provider reports.
+### Instance Properties
 - [var description: String](./objecttrackingprovider/description.md)
   A textual representation of this object tracking provider.
 

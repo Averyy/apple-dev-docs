@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Returns the next element in a sequence.
+Asynchronously retrieve the next Event.
 
 **Availability**:
 - macOS 26.0+
@@ -18,7 +18,7 @@ mutating func next() async -> ARKitSession.Events.Element?
 
 ## Return Value
 
-Returns an [`ARKitSession.Events.Element`](../element.md), or `nil` if there are no more elements.
+The next Event if one has occurred since the last call to this function. Otherwise suspends the caller until a new Event has occurred. Returns `nil` (signals end of the sequence) if the session has been stopped.
 
 
 ---

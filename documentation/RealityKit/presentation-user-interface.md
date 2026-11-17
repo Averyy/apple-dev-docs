@@ -22,6 +22,15 @@ RealityKit provides controls that enable interactions specific to each platform 
   A component attaching a UI gesture to an entity.
 - [struct EntityTargetValue](./entitytargetvalue.md)
   A value containing an original gesture value along with a targeted entity.
+- [func targetedToEntity(Entity) -> some Gesture<EntityTargetValue<Self.Value>>
+](../SwiftUI/gesture/targetedtoentity%28_%29.md)
+  Requires this gesture to target an entity or a descendant of entity.
+- [func targetedToEntity(where: QueryPredicate<Entity>) -> some Gesture<EntityTargetValue<Self.Value>>
+](../SwiftUI/gesture/targetedtoentity%28where%29.md)
+  Requires this gesture to target an entity that can be found in the results of the query.
+- [func targetedToAnyEntity() -> some Gesture<EntityTargetValue<Self.Value>>
+](../SwiftUI/gesture/targetedtoanyentity%28%29.md)
+  Requires this gesture to target an entity.
 ### Accessibility
 - [Improving the Accessibility of RealityKit Apps](./improving-the-accessibility-of-realitykit-apps.md)
   Incorporate assistive technologies in your augmented reality app.
@@ -34,6 +43,7 @@ RealityKit provides controls that enable interactions specific to each platform 
 - [AccessibilityComponent.RotorType](./accessibilitycomponent/rotortype.md)
   A context-sensitive event that helps VoiceOver users find the next instance of a related element.
 - [enum AccessibilityEvents](./accessibilityevents.md)
+  Events that occur when a person uses assistive technology to act on an accessibility element.
 ### Visual adjustments
 - [struct HoverEffectComponent](./hovereffectcomponent.md)
   A component that applies a visual effect to a hierarchy of entities when a person looks at or selects an entity.

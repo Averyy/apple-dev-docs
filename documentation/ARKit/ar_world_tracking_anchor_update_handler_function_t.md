@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+Function called when there are updates to world anchors. This includes updates to persisted world anchors from previous runs of the app.
+
 **Availability**:
 - visionOS 1.0+
 
@@ -12,6 +14,17 @@
 ```c
 typedef void (*)(void *, NSObject<OS_ar_world_anchors> *, NSObject<OS_ar_world_anchors> *, NSObject<OS_ar_world_anchors> *) ar_world_tracking_anchor_update_handler_function_t;
 ```
+
+## Discussion
+
+> **Note**: This function will also be called for persisted world anchors from previous runs of the app, after the world tracking provider has been started. World anchors persist across device restarts until they are explicitly removed. Identify the anchors you want to react to using `ar_anchor_get_identifier`.
+
+## Parameters
+
+- `context`: The application-defined context.
+- `added_anchors`: The collection of world anchors that were added.
+- `updated_anchors`: The collection of world anchors that were updated.
+- `removed_anchors`: The collection of world anchors that were removed.
 
 ## See Also
 
@@ -41,7 +54,7 @@ typedef void (*)(void *, NSObject<OS_ar_world_anchors> *, NSObject<OS_ar_world_a
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

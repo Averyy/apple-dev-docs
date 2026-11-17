@@ -66,15 +66,15 @@ For more information, see [Implementing systems for entities in a scene](./imple
 
 ## See Also
 
-### System configuration
-- [Implementing systems for entities in a scene](./implementing-systems-for-entities-in-a-scene.md)
-  Apply behaviors and physical effects to the objects and characters in a RealityKit scene with the Entity Component System (ECS).
-- [Animating entity rotation with a system](./animated-rotation-with-a-system.md)
-  Rotate an entity around an axis using a Component and a System.
-- [struct SystemUpdateCondition](./systemupdatecondition.md)
-  A condition which causes a system to update.
-- [struct SceneUpdateContext](./sceneupdatecontext.md)
-  An object that contains information about the scene to update.
+### Essentials
+- [Understanding the modular architecture of RealityKit](../visionOS/understanding-the-realitykit-modular-architecture.md)
+  Learn how everything fits together in RealityKit.
+- [Building an immersive experience with RealityKit](./building-an-immersive-experience-with-realitykit.md)
+  Use systems and postprocessing effects to create a realistic underwater scene.
+- [class Entity](./entity.md)
+  An element of a RealityKit scene to which you attach components that provide appearance and behavior characteristics for the entity.
+- [protocol Component](./component.md)
+  A representation of a geometry or a behavior that you apply to an entity.
 
 
 ---

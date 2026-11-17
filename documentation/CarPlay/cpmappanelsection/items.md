@@ -25,6 +25,12 @@ var items: [CPMapPanelItem] { get set }
 
 You specify the set of items at initialization time, but can change the items at any time. If you change the value of this property while the panel is visible, the system updates your CarPlay interface to reflect the changes.
 
+## See Also
+
+### Accessing the section’s content
+- [var title: String?](./title.md)
+  The localized string to display for the section title.
+
 
 ---
 

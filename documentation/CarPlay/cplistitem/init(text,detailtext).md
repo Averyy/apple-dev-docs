@@ -27,12 +27,12 @@ A newly initialized list item.
 
 ## Parameters
 
-- `text`: The primary text to show in the list item cell.
-- `detailText`: Additional text to display below the primary text in the list item cell.
+- `text`: The primary text to show in the list item’s row.
+- `detailText`: Secondary text to display below the primary text.
 
 ## See Also
 
-### Creating a List Item
+### Creating a list item
 - [init(text: String?, detailText: String?, image: UIImage?)](./init%28text,detailtext,image%29.md)
   Creates a list item with primary text, secondary text, and an image.
 - [init(text: String?, detailText: String?, image: UIImage?, accessoryImage: UIImage?, accessoryType: CPListItemAccessoryType)](./init%28text,detailtext,image,accessoryimage,accessorytype%29.md)

@@ -61,16 +61,6 @@ enum MeshClassification
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
-## See Also
-
-### Getting mesh information
-- [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
-  The location and orientation of a mesh in world space.
-- [var geometry: MeshAnchor.Geometry](./geometry-swift.property.md)
-  The shape of a mesh anchor.
-- [MeshAnchor.Geometry](./geometry-swift.struct.md)
-  The shapes that make up a mesh anchor.
-
 
 ---
 

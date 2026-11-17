@@ -28,10 +28,10 @@ You must present action sheets modally by calling the [`presentTemplate(_:animat
 
 ## Topics
 
-### Creating an Action Sheet Template
+### Creating an action sheet template
 - [init(title: String?, message: String?, actions: [CPAlertAction])](./cpactionsheettemplate/init%28title,message,actions%29.md)
   Creates an action sheet template.
-### Getting Action Sheet Template Information
+### Getting the template content
 - [var title: String?](./cpactionsheettemplate/title.md)
   The title of the action sheet.
 - [var message: String?](./cpactionsheettemplate/message.md)
@@ -57,11 +57,31 @@ You must present action sheets modally by calling the [`presentTemplate(_:animat
 
 ## See Also
 
-### Actions and Alerts
+### Interface templates
+- [class CPTabBarTemplate](./cptabbartemplate.md)
+  A container template that displays and manages other templates, presenting them as tabs.
+- [class CPListTemplate](./cplisttemplate.md)
+  A template that displays a single-column list of items in one of several visual styles.
+- [class CPGridTemplate](./cpgridtemplate.md)
+  A template that displays and manages a grid of items.
+- [class CPMapTemplate](./cpmaptemplate.md)
+  A template that displays a navigation overlay that your app draws on the map.
+- [class CPNowPlayingTemplate](./cpnowplayingtemplate.md)
+  A shared system template that shows the currently selected audio content and offers controls to manage playback.
+- [class CPPointOfInterestTemplate](./cppointofinteresttemplate.md)
+  A template that displays a map with selectable points of interest.
+- [class CPInformationTemplate](./cpinformationtemplate.md)
+  A template that provides information for a point of interest, food order, parking location, or charging location.
+- [class CPContactTemplate](./cpcontacttemplate.md)
+  A template that displays information about a person or a business.
+- [class CPSearchTemplate](./cpsearchtemplate.md)
+  A template that provides the ability to search for a destination and see a list of search results.
+- [class CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
+  A template that displays a voice control indicator during audio input.
 - [class CPAlertTemplate](./cpalerttemplate.md)
   A template that displays a modal alert.
-- [class CPAlertAction](./cpalertaction.md)
-  An object that encapsulates an action the user can perform on an action sheet or alert.
+- [All templates and supporting types](./all-templates-and-supporting-types.md)
+  Explore the templates you use to build the interface of your CarPlay app.
 
 
 ---

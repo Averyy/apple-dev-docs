@@ -27,7 +27,7 @@ The delegate must conform to the [`CPTabBarTemplateDelegate`](../cptabbartemplat
 
 ## See Also
 
-### Managing Tab Bar Interactions
+### Responding to tab selections
 - [protocol CPTabBarTemplateDelegate](../cptabbartemplatedelegate.md)
   The methods an object implements to act as the delegate for a tab bar template.
 

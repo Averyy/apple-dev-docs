@@ -33,15 +33,15 @@ enum Symbology
 - [BarcodeAnchor.Symbology.code39FullAsciiChecksum](./symbology-swift.enum/code39fullasciichecksum.md)
   The value that represents the Code 39 full ASCII checksum barcode symbology.
 - [BarcodeAnchor.Symbology.code93](./symbology-swift.enum/code93.md)
-  The value that represents the Code 93 symbology.
+  The value that represents the Code 93 barcode symbology.
 - [BarcodeAnchor.Symbology.code93i](./symbology-swift.enum/code93i.md)
   The value that represents the Code 93i barcode symbology.
 - [BarcodeAnchor.Symbology.dataMatrix](./symbology-swift.enum/datamatrix.md)
   The value that represents the Data Matrix barcode symbology.
 - [BarcodeAnchor.Symbology.ean13](./symbology-swift.enum/ean13.md)
-  The value that represents the EAN13 barcode symbology.
+  The value that represents the EAN-13 barcode symbology.
 - [BarcodeAnchor.Symbology.ean8](./symbology-swift.enum/ean8.md)
-  The value that represents the EAN8 barcode symbology.
+  The value that represents the EAN-8 barcode symbology.
 - [BarcodeAnchor.Symbology.gs1DataBar](./symbology-swift.enum/gs1databar.md)
   The value that represents the GS1 DataBar barcode symbology.
 - [BarcodeAnchor.Symbology.gs1DataBarExpanded](./symbology-swift.enum/gs1databarexpanded.md)
@@ -51,7 +51,7 @@ enum Symbology
 - [BarcodeAnchor.Symbology.itf](./symbology-swift.enum/itf.md)
   The value that represents the ITF barcode symbology.
 - [BarcodeAnchor.Symbology.itf14](./symbology-swift.enum/itf14.md)
-  The value that represents the ITF14 barcode symbology.
+  The value that represents the ITF-14 barcode symbology.
 - [BarcodeAnchor.Symbology.itfChecksum](./symbology-swift.enum/itfchecksum.md)
   The value that represents the ITF checksum barcode symbology.
 - [BarcodeAnchor.Symbology.microPDF417](./symbology-swift.enum/micropdf417.md)
@@ -59,13 +59,13 @@ enum Symbology
 - [BarcodeAnchor.Symbology.microQR](./symbology-swift.enum/microqr.md)
   The value that represents the Micro QR barcode symbology.
 - [BarcodeAnchor.Symbology.msiPlessey](./symbology-swift.enum/msiplessey.md)
-  The value that represents the MSI Plessy barcode symbology.
+  The value that represents the MSI Plessey barcode symbology.
 - [BarcodeAnchor.Symbology.pdf417](./symbology-swift.enum/pdf417.md)
   The value that represents the PDF417 barcode symbology.
 - [BarcodeAnchor.Symbology.qr](./symbology-swift.enum/qr.md)
   The value that represents the QR barcode symbology.
 - [BarcodeAnchor.Symbology.upce](./symbology-swift.enum/upce.md)
-  The value that represents the UPCE barcode symbology.
+  The value that represents the UPC-E barcode symbology.
 ### Instance Properties
 - [var description: String](./symbology-swift.enum/description.md)
   A textual representation of BarcodeAnchor.Symbology
@@ -93,7 +93,7 @@ enum Symbology
 - [var symbology: BarcodeAnchor.Symbology](./symbology-swift.property.md)
   The symbology of the detected barcode.
 - [var id: UUID](./id.md)
-  The unique identifier of an anchor.
+  The unique identifier of this anchor.
 
 
 ---

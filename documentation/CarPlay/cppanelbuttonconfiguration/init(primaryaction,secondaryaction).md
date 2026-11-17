@@ -30,6 +30,11 @@ An initialized panel button configuration object.
 - `primaryAction`: The primary button for the panel. Use this button to specify the default or primary action someone might want to perform. The initializer makes a copy of the provided button.
 - `secondaryAction`: The secondary button for the panel. Use this to specify an additional action someone might want to perform. The initializer makes a copy of the provided button, if any.
 
+## See Also
+
+### Initializing the panel
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

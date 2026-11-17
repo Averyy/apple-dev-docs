@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-Values describing possible general orientations of a detected plane with respect to gravity.
+The possible general orientations of a detected plane with respect to gravity.
 
 **Availability**:
 - visionOS 1.0+
@@ -19,10 +19,9 @@ enum Alignment
 
 ### Alignment Values
 - [PlaneAnchor.Alignment.horizontal](./alignment-swift.enum/horizontal.md)
-  The plane is in a horizontal oriention.
+  The plane is in a horizontal orientation.
 - [PlaneAnchor.Alignment.vertical](./alignment-swift.enum/vertical.md)
   The plane is in a vertical orientation.
-### Enumeration Cases
 - [PlaneAnchor.Alignment.slanted](./alignment-swift.enum/slanted.md)
   The plane is in a slanted orientation.
 ### Instance Properties
@@ -45,12 +44,8 @@ enum Alignment
   The location and orientation of a plane in world space.
 - [var alignment: PlaneAnchor.Alignment](./alignment-swift.property.md)
   The general orientation of the detected plane with respect to gravity.
-- [var classification: PlaneAnchor.Classification](./classification-swift.property.md)
-  Get the classification of this plane.
-- [PlaneAnchor.Classification](./classification-swift.enum.md)
-  The kinds of object classification a plane anchor can have.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
+- [var surfaceClassification: SurfaceClassification](./surfaceclassification.md)
+  Get the surface classification of this plane.
 
 
 ---

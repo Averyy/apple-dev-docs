@@ -1,4 +1,4 @@
-# iOS & iPadOS 27.3 Beta Release Notes
+# iOS & iPadOS 27.3 Beta 2 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes  
 **Role**: Article
@@ -7,13 +7,29 @@ Update your apps to use new features, and test your apps against API changes.
 
 ## Overview
 
-The iOS & iPadOS 27.3 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27.3 beta. The SDK comes bundled with Xcode 27.3. For information on the compatibility requirements for Xcode 27.3, see [Xcode 27.3 Release Notes](../Xcode-Release-Notes/xcode-27_3-release-notes.md).
+The iOS & iPadOS 27.3 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27.3 beta 2. The SDK comes bundled with Xcode 27.3. For information on the compatibility requirements for Xcode 27.3, see [Xcode 27.3 Release Notes](../Xcode-Release-Notes/xcode-27_3-release-notes.md).
 
 ### App Intents
+
+#### New Features
+
+- The Video schema domain is now available for apps to integrate with Siri AI on tvOS, iOS, macOS, and visionOS. (189805051)
 
 #### Known Issues
 
 - If you define `authenticationPolicy` on an `AppEntity` or `AppEntity` property that requires unlock, Siri AI might not request an unlock before it displays these entities. (190573761)
+
+### Apple Video Podcasts in the TV App
+
+#### New Features
+
+- Apple Video Podcasts are now available in the Apple TV app. Watch full episodes of your favorite video podcasts, and pick up where you left off from Apple Podcasts. (192370477)
+
+### CoreImage
+
+#### New Features
+
+- CIRAWFilter now relies on resources that aren’t included with the operating system. To download them, use the `downloadresources` and `downloadallresources` methods of CIRAWFilter. (190766743)
 
 ### Live Caller ID Lookup
 
@@ -23,7 +39,7 @@ The iOS & iPadOS 27.3 SDK provides support to develop apps for iPhone and iPad r
 
 #### Deprecations
 
-- Live Caller ID Lookup now requires the shard count in a service’s PIR configuration to be a power of two, for example 256, 512, 1024, or 2048. The system rejects a configuration whose shard count isn’t a power of two. Configurations that already use a power-of-two shard count work with earlier releases and need no changes. (191651833)
+- Live Caller ID Lookup now requires the shard count in a service’s PIR configuration to be a power of two, for example, 256, 512, 1024, or 2048. The system rejects a configuration whose shard count isn’t a power of two. Configurations that already use a power-of-two shard count work with earlier releases and need no changes. (191651833)
 
 ### NEURLFilter
 
@@ -46,18 +62,20 @@ The iOS & iPadOS 27.3 SDK provides support to develop apps for iPhone and iPad r
 #### Resolved Issues
 
 - Fixed: If you test Ask to Buy in the Sandbox environment while signed in to an iCloud account that is a member of a Family Sharing group, you might be unable to view or approve sandbox Ask to Buy requests. (190639717)
+- Multiseat invitation and data sharing consent APIs now take the original transaction ID of a multiseat subscription instead of its subscription group ID. `AppStore.presentMultiSeatInvitationSheet(from:originalTransactionID:)`, `AppStore.presentMultiSeatDataSharingConsentSheet(from:originalTransactionID:)`, `Product.SubscriptionInfo.multiSeatDataSharingConsentEligibility(originalTransactionID:)`, and the SwiftUI `multiSeatInvitationSheet(isPresented:originalTransactionID:onCompletion:)` and `multiSeatDataSharingConsentSheet(isPresented:originalTransactionID:onCompletion:)` modifiers accept the `originalID` of the subscription’s transaction, and the `multiSeatDataSharingConsentEligibility` instance property of `Product.SubscriptionInfo` is no longer available. To avoid a missing symbol crash, recompile your app with the latest SDK. (191322945)
 
 ### StoreKit Testing in Xcode
 
 #### Resolved Issues
 
 - Fixed: Making an in-app purchase for a subscription that is a member of a subscription bundle incorrectly allows the user to unbundle instead of throwing an error. (186018916)
+- Fixed: When you launch an app that uses `SKTestSession` for the first time, some StoreKit Test API calls might hang. (186670057) (FB24651858)
 
-#### Known Issues
+### SwiftUI
 
-- When you launch an app that uses `SKTestSession` for the first time, some StoreKit Test API calls might hang. (186670057) (FB24651858)
+#### Resolved Issues
 
-  **Workaround:** Set a StoreKit configuration file in your scheme’s run options, then rerun the tests.
+- In apps built with the iOS 26 SDK, `ScrollEdgeEffectStyle.soft` renders a fully transparent edge above a `safeAreaBar(edge:)` when run on iOS 27. In iOS 27.3 and later, these apps get the iOS 27 soft edge effect. (188312290)
 
 ### SwiftUI
 

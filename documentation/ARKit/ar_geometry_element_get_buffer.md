@@ -15,6 +15,14 @@ Gets a Metal buffer that contains index data that defines the geometry of an obj
 extern id<MTLBuffer>ar_geometry_element_get_buffer(ar_geometry_element_t geometry_element);
 ```
 
+## Return Value
+
+A Metal buffer.
+
+## Parameters
+
+- `geometry_element`: The geometry element.
+
 ## See Also
 
 ### Geometry

@@ -18,11 +18,15 @@ A loader that supplies the scenarios an evaluation runs, in the order you write 
 struct SiriScenarioLoader
 ```
 
+## Mentions
+
+- [Evaluating your app’s integration with Siri](./evaluating-your-apps-integration-with-siri.md)
+
 ## Overview
 
 A *scenario loader* is the dataset of a Siri evaluation. It holds the scenarios you pass in, and the evaluation runs each one through Siri in that order. The loader’s closure accepts individual scenarios or arrays of scenarios, so you can combine scenarios you define separately with ones you build from a collection.
 
-The loader holds scenarios but doesn’t set up your app. Set up any app state in your test before the evaluation runs, and group scenarios that start from the same state in one loader. Scenarios that need a different starting state belong in their own evaluation and test because setup runs once per test, not between scenarios.
+The loader holds scenarios but doesn’t set up your app. Put your app in the state each scenario needs in your evaluation’s `subject(from:)` method, which runs once for each scenario, before you pass the scenario to [`run(scenario:)`](./siriservice/run%28scenario%29.md). Don’t set up app state in the body of the test function, because the evaluation trait runs every scenario before the test body runs.
 
 This example combines separate scenarios in a loader:
 
@@ -34,7 +38,7 @@ let quizTopicEntity = quizExampleIntents.entities["QuizTopicEntity"]
 
 // A scenario you define separately.
 let openScienceQuiz = SiriScenario {
-    UserTurn("Open the Science quiz in QuizExample") {
+    UserTurn("Open the Science quiz in QuizExample.") {
         Calls {
             openQuizIntent
                 .expect(target: quizTopicEntity.expectIdentifier("Science"))
@@ -51,7 +55,7 @@ let dataset = SiriScenarioLoader {
     // Add one scenario for each topic.
     topics.map { topic in
         SiriScenario {
-            UserTurn("In QuizExample, start a \(topic.lowercased()) quiz") {
+            UserTurn("In QuizExample, start a \(topic) quiz.") {
                 Calls {
                     startQuizIntent
                         .expect(topic: .equals(topic))

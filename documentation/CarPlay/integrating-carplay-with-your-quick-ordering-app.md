@@ -252,13 +252,9 @@ private static func createJWT() throws -> String {
 
 ## See Also
 
-### Location and Information
-- [class CPPointOfInterestTemplate](./cppointofinteresttemplate.md)
-  A template that displays a map with selectable points of interest.
-- [class CPInformationTemplate](./cpinformationtemplate.md)
-  A template that provides information for a point of interest, food order, parking location, or charging location.
-- [class CPTextButton](./cptextbutton.md)
-  A button that displays a stylized title.
+### Essentials
+- [CarPlay Quick Food Ordering App](../BundleResources/entitlements/com.apple.developer.carplay-quick-ordering.md)
+  A Boolean value that indicates whether the CarPlay app helps someone order food for pickup.
 
 
 ---

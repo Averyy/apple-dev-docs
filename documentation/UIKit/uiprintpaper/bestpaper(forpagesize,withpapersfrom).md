@@ -24,7 +24,7 @@ class func bestPaper(forPageSize contentSize: CGSize, withPapersFrom paperList: 
 
 ## Return Value
 
-An instance of `UIPrintPaper` that represents the optimal printable area and paper size for the current print job. Returns `nil` if the instance could not be created.
+An instance of `UIPrintPaper` that represents the optimal printable area and paper size for the current print job.
 
 ## Discussion
 

@@ -15,6 +15,14 @@ Gets the number of bytes that represent an index value.
 extern size_t ar_geometry_element_get_bytes_per_index(ar_geometry_element_t geometry_element);
 ```
 
+## Return Value
+
+The bytes per index value.
+
+## Parameters
+
+- `geometry_element`: The geometry element.
+
 ## See Also
 
 ### Geometry

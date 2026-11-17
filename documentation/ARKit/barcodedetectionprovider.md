@@ -17,7 +17,7 @@ final class BarcodeDetectionProvider
 
 ## Overview
 
-Use this provider to receive updates about barcodes that ARKit detect in a person’s surroundings, This provider returns the results in the form of an asynchronous sequence of [`BarcodeAnchor`](./barcodeanchor.md) structures. Your app needs to include the [`Spatial barcode and QR code scanning`](../BundleResources/entitlements/com.apple.developer.arkit.barcode-detection.allow.md) entitlement to use this capability; otherwise, it has no effect.
+Use this provider to receive updates about barcodes that ARKit detects in a person’s surroundings. This provider returns the results in the form of an asynchronous sequence of [`BarcodeAnchor`](./barcodeanchor.md) structures. Your app needs to include the [`Spatial barcode and QR code scanning`](../BundleResources/entitlements/com.apple.developer.arkit.barcode-detection.allow.md) entitlement to use this capability; otherwise, it has no effect.
 
 ## Topics
 
@@ -27,13 +27,14 @@ Use this provider to receive updates about barcodes that ARKit detect in a perso
 ### Inspecting a barcode detection provider
 - [var anchorUpdates: AnchorUpdateSequence<BarcodeAnchor>](./barcodedetectionprovider/anchorupdates.md)
   An asynchronous sequence of anchor updates that describe the anchors in a person’s surroundings.
-- [var description: String](./barcodedetectionprovider/description.md)
-  A textual representation of this barcode detection provider.
 - [var state: DataProviderState](./barcodedetectionprovider/state.md)
   The state of a barcode detection provider.
-### Type properties
+### Instance Properties
+- [var description: String](./barcodedetectionprovider/description.md)
+  A textual representation of this barcode detection provider.
+### Type Properties
 - [static var isSupported: Bool](./barcodedetectionprovider/issupported.md)
-  A Boolean value that determines whether a device supports the barcode detection provider.
+  A Boolean value that indicates whether a device supports the barcode detection provider.
 - [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./barcodedetectionprovider/requiredauthorizations.md)
   The authorization types you need to use the barcode detection provider.
 

@@ -168,9 +168,6 @@ For more information on configuring your Apple In-App Purchase metadata, see [Ma
   Sets the behavior of the Apple-owned invitation sheet that appears after a customer purchases a multi-seat subscription from a StoreKit view.
 - [struct MultiSeatInvitationBehavior](./multiseatinvitationbehavior.md)
   The behavior of the invitation sheet that the system presents after a customer buys a multiseat subscription in a StoreKit view.
-- [func multiSeatInvitationSheet(isPresented: Binding<Bool>, subscriptionGroupID: String, onCompletion: (Result<Void, any Error>) -> Void) -> some View
-](../SwiftUI/view/multiseatinvitationsheet%28ispresented,subscriptiongroupid,oncompletion%29.md)
-  Presents the Apple-owned multi-seat invitation sheet, allowing the subscriber to invite others to join their multi-seat subscription.
 ### Configuring purchase options and product descriptions
 - [func inAppPurchaseOptions(((Product) async -> Set<Product.PurchaseOption>)?) -> some View
 ](../SwiftUI/view/inapppurchaseoptions%28_%29.md)

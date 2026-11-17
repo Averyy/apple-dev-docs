@@ -23,9 +23,13 @@ var destination: MKMapItem { get }
 
 ## See Also
 
-### Getting the Trip’s Origin and Destination
+### Deprecated
+- [convenience init(origin: MKMapItem, destination: MKMapItem, routeChoices: [CPRouteChoice])](./init%28origin,destination,routechoices%29.md)
+  Creates a trip with an origin, destination, and route choices.
 - [var origin: MKMapItem](./origin.md)
   The trip’s origin.
+- [var destinationNameVariants: [String]?](./destinationnamevariants.md)
+  An array of strings that represents the names of the destination for this trip, arranged from most to least preferred.
 
 
 ---

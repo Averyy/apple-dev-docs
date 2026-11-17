@@ -5,14 +5,14 @@
 **Role**: Instance Property  
 **Required**: Yes
 
-An optional fence that you provide to synchronize your app’s untracked resources.
+An optional fence instance that you provide to synchronize your app’s untracked resources.
 
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
 - macOS 10.13+
-- tvOS 27.1+
+- tvOS 27.2+
 - visionOS 1.0+
 
 ## Declaration

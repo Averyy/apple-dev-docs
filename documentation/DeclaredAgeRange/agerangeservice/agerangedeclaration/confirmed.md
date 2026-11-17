@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-A status that indicates a person confirmed their age-range declaration using a credit card or government ID.
+A status that indicates a person confirmed their age-range declaration.
 
 **Availability**:
 - iOS 26.5+
@@ -17,6 +17,16 @@ A status that indicates a person confirmed their age-range declaration using a c
 ```swift
 case confirmed
 ```
+
+## Discussion
+
+A person can confirm their age-range declaration in one of the following ways:
+
+- Taking a selfie
+- Providing a credit card
+- Scanning a government ID
+
+For more information about selfie-based age confirmation, see [Confirm that you’re an adult with a selfie](https://support.apple.com/en-us/149095). For the other methods, see [How to confirm that you’re an adult](https://support.apple.com/en-us/125662).
 
 ## See Also
 

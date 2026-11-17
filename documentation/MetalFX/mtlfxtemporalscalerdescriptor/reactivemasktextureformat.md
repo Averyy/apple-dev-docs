@@ -11,7 +11,7 @@ The pixel format of the reactive mask input texture for a temporal scaler you cr
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
 - macOS 14.4+
-- tvOS 27.1+
+- tvOS 27.2+
 
 ## Declaration
 

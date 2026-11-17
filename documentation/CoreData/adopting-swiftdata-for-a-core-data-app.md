@@ -42,6 +42,8 @@ Each model file in this sample uses the [`Model()`](../SwiftData/model%28%29.md)
     @Attribute(.preserveValueOnDeletion)
     var name: String
     var destination: String
+
+    var location: Location?
     
     @Attribute(.preserveValueOnDeletion)
     var startDate: Date
@@ -74,15 +76,29 @@ Setting up the `ModelContainer` also creates and sets a default [`ModelContext`]
 This app creates a new instance of a trip and inserts it into the [`ModelContext`](../SwiftData/modelcontext.md) for persistence:
 
 ```swift
+let newTrip: Trip
 if newTripSegment == .personal {
-    newTrip = PersonalTrip(name: name, destination: destination, startDate: startDate, endDate: endDate, reason: reason)
+    newTrip = PersonalTrip(name: name,
+                           destination: destination,
+                           startDate: startDate,
+                           endDate: endDate,
+                           reason: reason,
+                           location: location)
 } else if newTripSegment == .business {
-    newTrip = BusinessTrip(name: name, destination: destination, startDate: startDate, endDate: endDate, perdiem: perdiem)
+    newTrip = BusinessTrip(name: name,
+                           destination: destination,
+                           startDate: startDate,
+                           endDate: endDate,
+                           perdiem: perdiem,
+                           location: location)
 } else {
-    newTrip = Trip(name: name, destination: destination, startDate: startDate, endDate: endDate)
+    newTrip = Trip(name: name, destination: destination, startDate: startDate, endDate: endDate, location: location)
 }
+newTrip.mapItemIdentifier = mapItem?.identifier
 modelContext.insert(newTrip)
 ```
+
+When creating a trip, people search for a destination with `LocationSearchView`, which is backed by MapKit. The app stores the resulting coordinates in the model’s `location` property (a `Codable` `Location` struct) and saves the chosen place using `@Attribute(.codable) var mapItemIdentifier: MKMapItem.Identifier?`, so it can later show the destination on a map.
 
 ### Persist data
 
@@ -96,11 +112,16 @@ modelContext.delete(trip)
 
 ### Fetch persisted data
 
-This sample app fetches the complete list of upcoming trips by wrapping an array of trips in a [`Query`](../SwiftData/query.md) macro, which fetches `Trip` objects from the container.
+This sample app fetches upcoming trips by declaring an array of trips with the [`Query`](../SwiftData/query.md) macro, and configuring the query in the view’s initializer with a predicate, sort order, and an optional section key path:
 
 ```swift
-@Query(sort: \Trip.startDate, order: .forward)
-var trips: [Trip]
+@Query var trips: [Trip]
+
+init(/* ... */ sectionBy: KeyPath<Trip, String>? = nil,
+     sortDescriptor: SortDescriptor<Trip> = SortDescriptor(\.startDate)) {
+    let filter = Self.buildPredicate(segment: segment.wrappedValue, searchText: searchText)
+    _trips = Query(filter: filter, sort: [sortDescriptor], sectionBy: sectionBy)
+}
 ```
 
 This sample also fetches data by calling [`fetch(_:)`](../SwiftData/modelcontext/fetch%28_%29.md) on the [`ModelContext`](../SwiftData/modelcontext.md) and passing in a [`FetchDescriptor`](../SwiftData/fetchdescriptor.md) that specifies both the entity to retrieve data from as well as a corresponding [`Predicate`](../Foundation/predicate.md) that specifies the conditions for the object to fetch.
@@ -116,7 +137,7 @@ let filteredList = try? modelContext.fetch(descriptor)
 
 ### Extend the app with inheritance
 
-The SwiftData-Inheritance version of the app extends the `Trip` class into two distinct kinds of Trips, `PersonalTrip` and `BusinessTrip`, building on the basic `Trip` model to include more specialized properties for different kinds of Trips.
+The SwiftData version of the app extends the `Trip` class into two distinct `Trip` types, `PersonalTrip` and `BusinessTrip`, building on the basic `Trip` model to include more specialized properties for different `Trip` types.
 
 ```swift
 class PersonalTrip: Trip {...}

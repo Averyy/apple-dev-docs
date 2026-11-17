@@ -15,6 +15,10 @@ The joint that’s connected to this joint and more closely connected to the bas
 var parentJoint: HandSkeleton.Joint? { get }
 ```
 
+## Discussion
+
+> **Note**: The root joint has no parent.
+
 ## See Also
 
 ### Inspecting hand joints

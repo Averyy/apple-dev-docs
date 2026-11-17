@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Siri stopped to ask the person for a missing value or to choose between candidates.
+Siri stopped to ask the person for a missing value or to choose between candidates, or the person cancelled the call when asked.
 
 **Availability**:
 - iOS 27.3+ (Beta)
@@ -20,7 +20,7 @@ case needsInput
 
 ## Discussion
 
-It has not settled what to do.
+It has not settled what to do, or the person declined.
 
 ## See Also
 
@@ -28,7 +28,7 @@ It has not settled what to do.
 - [SiriTranscript.IntentInvocation.Outcome.succeeded](./succeeded.md)
   The call ran and succeeded.
 - [SiriTranscript.IntentInvocation.Outcome.failed](./failed.md)
-  The call ran and failed, or could not find what it needed.
+  Siri called it and it failed: its tool threw, or it ended in another error. It doesn’t count as having run.
 - [SiriTranscript.IntentInvocation.Outcome.awaitingConfirmation](./awaitingconfirmation.md)
   Siri chose the call and its arguments, and asked the person to confirm before running it.
 - [SiriTranscript.IntentInvocation.Outcome.unknown](./unknown.md)

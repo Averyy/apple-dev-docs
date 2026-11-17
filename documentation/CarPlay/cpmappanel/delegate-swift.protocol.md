@@ -27,16 +27,22 @@ If you need to know when the system shows or hides the map panel, implement this
 
 ## Topics
 
-### Instance Methods
-- [func panelDidHide(CPMapPanel)](./delegate-swift.protocol/paneldidhide%28_%29.md)
-  Tells the delegate that the system hid the specified map panel.
+### Responding to panel visibility changes
 - [func panelDidShow(CPMapPanel)](./delegate-swift.protocol/paneldidshow%28_%29.md)
   Tells the delegate that the system displayed the specified map panel.
+- [func panelDidHide(CPMapPanel)](./delegate-swift.protocol/paneldidhide%28_%29.md)
+  Tells the delegate that the system hid the specified map panel.
 
 ## Relationships
 
 ### Inherits From
 - [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+
+## See Also
+
+### Responding to the panel’s appearance and disappearance
+- [var delegate: (any CPMapPanel.Delegate)?](./delegate-swift.property.md)
+  The app-specific object that the system notifies when it hides and shows the panel.
 
 
 ---

@@ -27,9 +27,11 @@ When creating a grid button, don’t provide an animated image. If you do, the b
 
 ## See Also
 
-### Obtaining Grid Button Information
+### Managing the button content
+- [func updateImage(UIImage)](./updateimage%28_%29.md)
 - [var titleVariants: [String]](./titlevariants.md)
   An array of title variants for the button.
+- [func updateTitleVariants([String])](./updatetitlevariants%28_%29.md)
 
 
 ---

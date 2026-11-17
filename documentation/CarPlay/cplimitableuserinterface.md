@@ -4,7 +4,7 @@
 **Kind**: struct  
 **Role**: Structure
 
-The types of limitable user interface elements.
+The types of interfaces to which a vehicle can limit access.
 
 **Availability**:
 - iOS 12.0+
@@ -21,16 +21,19 @@ struct CPLimitableUserInterface
 enum CPLimitableUserInterface : NSUInteger;
 ```
 
+## Overview
+
+A vehicle might limit access to specific features for safety reasons or to support vehicle constraints. For example, a vehicle might limit access to virtual keyboards when the vehicle is in motion. A [`CPSessionConfiguration`](./cpsessionconfiguration.md) object reports these limitations in its [`limitedUserInterfaces`](./cpsessionconfiguration/limiteduserinterfaces.md) property, which stores a bitmask of the available constants.
+
 ## Topics
 
-### User Interface Limits
+### Getting the user interface limits
 - [static var keyboard: CPLimitableUserInterface](./cplimitableuserinterface/keyboard.md)
-  Indicates that the car is limiting the keyboard display.
+  A type that indicates the vehicle limits the display of virtual keyboards.
 - [static var lists: CPLimitableUserInterface](./cplimitableuserinterface/lists.md)
-  Indicates that the car is limiting the display of lists.
-### Initializers
+  A type that indicates the vehicle limits the number of items you can display in lists.
+### Creating a limit value
 - [init(rawValue: UInt)](./cplimitableuserinterface/init%28rawvalue%29.md)
-  Initializes a limitable user interface element using the specified raw value.
 
 ## Relationships
 
@@ -46,9 +49,15 @@ enum CPLimitableUserInterface : NSUInteger;
 
 ## See Also
 
-### Getting the Limits
+### Getting the configuration details
+- [var contentStyle: CPContentStyle](./cpsessionconfiguration/contentstyle.md)
+  The preferred interface style for your app’s content.
 - [var limitedUserInterfaces: CPLimitableUserInterface](./cpsessionconfiguration/limiteduserinterfaces.md)
-  A bit mask value that indicates the user interface limits.
+  A bitmask of the interface restrictions that currently apply to your app.
+- [var supportsVideoPlayback: Bool](./cpsessionconfiguration/supportsvideoplayback.md)
+  A Boolean value that indicates whether CarPlay supports playing video content.
+- [struct CPContentStyle](./cpcontentstyle.md)
+  The types of content style that the vehicle allows.
 
 
 ---

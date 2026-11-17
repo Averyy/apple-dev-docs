@@ -19,7 +19,7 @@ Analyze natural language text and deduce its language-specific metadata.
 
 The Natural Language framework provides a variety of natural language processing (NLP) functionality with support for many different languages and scripts. Use this framework to segment natural language text into paragraphs, sentences, or words, and tag information about those segments, such as lexical class, lemma, script, and language.
 
-![Diagram showing the types of analysis that the Natural Language framework can](https://developer.apple.com/tutorials/images/com.apple.naturallanguage/media-3597579@2x.png)
+![Diagram of the sentence Mount Fuji is an active volcano, with its language identified as English, Mount Fuji and volcano tagged as nouns, and active tagged as an adjective.](https://developer.apple.com/tutorials/images/com.apple.naturallanguage/natural-language-processing-hero@2x.png)
 
 Use this framework to perform tasks like:
 

@@ -39,7 +39,7 @@ See [`PortalComponent`](../portalcomponent.md) for example usage.
 
 ## Topics
 
-### Initializers
+### Creating a plane
 - [init(position: SIMD3<Float>, normal: SIMD3<Float>)](./plane/init%28position,normal%29.md)
   Creates a portal plane with position and normal.
 ### Instance Properties

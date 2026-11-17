@@ -22,7 +22,7 @@ var rendersMotionBlur: Bool { get set }
 
 ## Discussion
 
-This property is enabled by default. When set, the view automatically adds motion blur to rendered content which matches the visual characteristics of the motion blur ARKit observes in the camera feed.
+This property is disabled by default. When set, the view automatically adds motion blur to rendered content which matches the visual characteristics of the motion blur ARKit observes in the camera feed.
 
 ![Screenshot showing the before and after case of virtual content rendering with motion blur.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3231009@2x.png)
 

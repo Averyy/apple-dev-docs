@@ -19,6 +19,7 @@ enum CameraType
 
 ### Camera types
 - [CameraFrameProvider.CameraType.main](./cameratype/main.md)
+  The device’s main camera.
 ### Instance Properties
 - [var description: String](./cameratype/description.md)
   A textual representation of CameraFrameProvider.CameraType.
@@ -31,12 +32,6 @@ enum CameraType
 - [Hashable](../../Swift/hashable.md)
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
-
-## See Also
-
-### Enumerations
-- [CameraFrameProvider.CameraPosition](./cameraposition.md)
-  Values that describe possible camera positions.
 
 
 ---

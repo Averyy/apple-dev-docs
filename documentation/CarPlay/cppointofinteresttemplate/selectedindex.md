@@ -27,7 +27,7 @@ The value of the property must be within the bounds of the [`pointsOfInterest`](
 
 ## See Also
 
-### Managing the Points of Interest
+### Managing the points of interest
 - [var pointsOfInterest: [CPPointOfInterest]](./pointsofinterest.md)
   The points of interest the template displays on the map and in the scrollable picker.
 - [func setPointsOfInterest([CPPointOfInterest], selectedIndex: Int)](./setpointsofinterest%28_,selectedindex%29.md)

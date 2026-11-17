@@ -12,6 +12,8 @@ This collection covers the components, shapes, and resources you use to add simu
 ## Topics
 
 ### Simulation and bodies
+- [Simulating cloth bodies, materials, and forces](./simulating-cloth-bodies-materials-and-forces.md)
+  Create realistic fabric motion with Reality Composer Pro.
 - [struct ClothSimulationComponent](./clothsimulationcomponent.md)
   A component that marks an entity as the simulation root of a localized cloth simulation.
 - [struct ClothBodyComponent](./clothbodycomponent.md)

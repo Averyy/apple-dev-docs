@@ -438,9 +438,9 @@ override func viewDidLoad() {
 - [UIViewReservedRegion](./uiviewreservedregion.md)
   A region within a view’s coordinate space that another entity reserves.
 - [- reservedRegionsOfKind:](./uiview/reservedregionsofkind_.md)
-  Returns the reserved regions of a given kind.
+  Returns the active reserved regions of a kind that overlap the view.
 - [- reservedRegionsOfKind:options:](./uiview/reservedregionsofkind_options_.md)
-  Returns the reserved regions of a given kind and options.
+  Returns the reserved regions of a kind that overlap the view.
 ### Adjusting the user interface
 - [var overrideUserInterfaceStyle: UIUserInterfaceStyle](./uiview/overrideuserinterfacestyle.md)
   The user interface style adopted by the view and all of its subviews.
@@ -707,8 +707,6 @@ override func viewDidLoad() {
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](./uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](./uiappearance.md)

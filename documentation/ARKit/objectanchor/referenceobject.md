@@ -22,8 +22,6 @@ var referenceObject: ReferenceObject { get }
   The bounding box of an anchor.
 - [ObjectAnchor.AxisAlignedBoundingBox](./axisalignedboundingbox.md)
   Values that describe an axis-aligned bounding box.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 - [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether the framework is currently tracking an object anchor.
 - [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)

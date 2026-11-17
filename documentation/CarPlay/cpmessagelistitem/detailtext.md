@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The list item’s secondary text.
+Additional text to display less prominently below the row’s main text.
 
 **Availability**:
 - iOS 14.0+
@@ -23,15 +23,17 @@ var detailText: String? { get set }
 
 ## Discussion
 
-The list item displays any secondary text below its primary text.
+Specify the detail text at initialization time.
 
 ## See Also
 
-### Managing Content
+### Getting the row content
 - [var text: String?](./text.md)
-  The list item’s primary text.
+  The primary text to display in the message list item’s row.
 - [var trailingText: String?](./trailingtext.md)
-  The list item’s supplementary text.
+  Additional text to display after the trailing configuration items.
+- [var leadingDetailTextImage: UIImage?](./leadingdetailtextimage.md)
+  An image to display before the row’s detail text.
 
 
 ---

@@ -22,9 +22,9 @@ init(_ image: CGImage, orientation: CGImagePropertyOrientation, physicalWidth: C
 
 ## Discussion
 
-To accurately recognize the position and orientation of an image in the AR environment, ARKit must know the image’s physical size. When you call this initializer, ARKit uses the `physicalWidth` measurement and `orientation` you provide together with the aspect ratio of the image itself to calculate the physical height. Use the  [`physicalSize`](./physicalsize.md) property of the created [`ARReferenceImage`](../arreferenceimage.md) object to retrieve these values.
+To accurately recognize the position and orientation of an image in the AR environment, ARKit must know the image’s physical size. When you call this initializer, ARKit uses the `physicalWidth` measurement and `orientation` you provide together with the aspect ratio of the image itself to calculate the physical height. Use the [`physicalSize`](./physicalsize.md) property of the created [`ARReferenceImage`](../arreferenceimage.md) object to retrieve these values.
 
-> ❗ **Important**: ARKit preprocesses reference images before using them for image detection. To provide reference images bundled with your app, create AR Reference Image assets in your Xcode asset catalog, and use the `referenceImageSetNamed(_:in:)` method to load them.
+> ❗ **Important**: ARKit preprocesses reference images before using them for image detection. To provide reference images bundled with your app, create AR reference image assets in your Xcode asset catalog, and use the [`referenceImages(inGroupNamed:bundle:)`](./referenceimages%28ingroupnamed,bundle%29.md) method to load them.
 
 ## Parameters
 

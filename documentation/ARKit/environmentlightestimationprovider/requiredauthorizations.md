@@ -15,12 +15,6 @@ The authorization types that an environment light estimation provider requires.
 static var requiredAuthorizations: [ARKitSession.AuthorizationType] { get }
 ```
 
-## See Also
-
-### Type properties
-- [static var isSupported: Bool](./issupported.md)
-  A Boolean value that indicates whether a device supports the environment light estimation provider.
-
 
 ---
 

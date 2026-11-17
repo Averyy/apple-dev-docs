@@ -26,6 +26,9 @@ struct PHPickerSearchText
   Creates a search text from a string.
 - [init(photoSearchSuggestion: UIPhotoSearchSuggestion)](./phpickersearchtext-swift.struct/init%28photosearchsuggestion%29.md)
   Creates a search text from a photo search suggestion.
+### Instance Properties
+- [var prefersAutomaticFocus: Bool](./phpickersearchtext-swift.struct/prefersautomaticfocus.md)
+  Whether the search field should be focused when the picker opens, or when this search text is updated via `PHPickerConfiguration.Update`. Default is `false`.
 
 ## Relationships
 

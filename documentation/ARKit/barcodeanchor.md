@@ -17,7 +17,7 @@ struct BarcodeAnchor
 
 ## Overview
 
-A `BarcodeAnchor` describes a barcode that ARKit detects in a person’s surroundings. A barcode anchor has exactly one [`BarcodeSymbology`](../Vision/barcodesymbology.md) that indicates which type of barcode the framework detects. It also includes properties, such as the barcode’s payload data,  which is a decoded string value of that data.
+A `BarcodeAnchor` describes a barcode that ARKit detects in a person’s surroundings. A barcode anchor has exactly one [`BarcodeSymbology`](../Vision/barcodesymbology.md) that indicates which type of barcode the framework detects. It also includes properties, such as the barcode’s payload data, which is a decoded string value of that data.
 
 ## Topics
 
@@ -35,7 +35,7 @@ A `BarcodeAnchor` describes a barcode that ARKit detects in a person’s surroun
 - [BarcodeAnchor.Symbology](./barcodeanchor/symbology-swift.enum.md)
   Values that describe specific kinds of barcodes.
 - [var id: UUID](./barcodeanchor/id.md)
-  The unique identifier of an anchor.
+  The unique identifier of this anchor.
 ### Instance Properties
 - [var description: String](./barcodeanchor/description.md)
   A textual representation of this anchor.

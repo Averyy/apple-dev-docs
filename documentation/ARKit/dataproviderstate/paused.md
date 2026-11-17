@@ -20,7 +20,7 @@ case paused
 
 ### Getting the state of a data provider
 - [DataProviderState.initialized](./initialized.md)
-  The data provider has been created.
+  The data provider is initialized.
 - [DataProviderState.running](./running.md)
   The data provider is running.
 - [DataProviderState.stopped](./stopped.md)

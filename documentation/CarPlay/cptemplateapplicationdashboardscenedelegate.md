@@ -44,7 +44,7 @@ You don’t create instances of your dashboard scene delegate directly. Instead,
 
 ## Topics
 
-### Responding to the Scene Life Cycle
+### Responding to the dashboard scene life cycle
 - [func templateApplicationDashboardScene(CPTemplateApplicationDashboardScene, didConnect: CPDashboardController, to: UIWindow)](./cptemplateapplicationdashboardscenedelegate/templateapplicationdashboardscene%28_,didconnect,to%29.md)
   Tells the delegate about the addition of a CarPlay Dashboard scene to your navigation app.
 - [func templateApplicationDashboardScene(CPTemplateApplicationDashboardScene, didDisconnect: CPDashboardController, from: UIWindow)](./cptemplateapplicationdashboardscenedelegate/templateapplicationdashboardscene%28_,diddisconnect,from%29.md)
@@ -58,17 +58,15 @@ You don’t create instances of your dashboard scene delegate directly. Instead,
 
 ## See Also
 
-### Navigation
-- [Integrating CarPlay with Your Navigation App](./integrating-carplay-with-your-navigation-app.md)
-  Configure your navigation app to work with CarPlay by displaying your custom map and directions.
+### Dashboard display
+- [class CPDashboardController](./cpdashboardcontroller.md)
+  A controller that provides shortcut buttons for the CarPlay Dashboard.
+- [class CPDashboardButton](./cpdashboardbutton.md)
+  A shortcut button for placement on the CarPlay Dashboard.
 - [class CPTemplateApplicationDashboardScene](./cptemplateapplicationdashboardscene.md)
   A CarPlay scene that controls your app’s dashboard navigation window.
-- [class CPMapTemplate](./cpmaptemplate.md)
-  A template that displays a navigation overlay that your app draws on the map.
-- [class CPSearchTemplate](./cpsearchtemplate.md)
-  A template that provides the ability to search for a destination and see a list of search results.
-- [class CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
-  A template that displays a voice control indicator during audio input.
+- [CPSupportsDashboardNavigationScene](../BundleResources/information-property-list/uiapplicationscenemanifest/cpsupportsdashboardnavigationscene.md)
+  A Boolean value that indicates whether your app supports displaying navigation content in the CarPlay Dashboard.
 
 
 ---

@@ -77,8 +77,6 @@ struct SheetContentView: View {
   A view that controls a sharing presentation.
 - [struct SharePreview](./sharepreview.md)
   A representation of a type to display in a share preview.
-- [struct TextFieldLink](./textfieldlink.md)
-  A control that requests text input from the user when pressed.
 
 
 ---

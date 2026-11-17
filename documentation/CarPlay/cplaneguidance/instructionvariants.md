@@ -27,7 +27,7 @@ You need to provide at least one variant. Provide the variant strings as localiz
 
 ## See Also
 
-### Properties
+### Getting the lane guidance
 - [var lanes: [CPLane]](./lanes.md)
   An array of lane objects, each describing a single lane.
 

@@ -19,7 +19,7 @@ Other frameworks extend the feature model to add their own features. The excepti
 
 For a framework-defined feature, such as notification forwarding, the system starts the session. For example, an incoming iOS system notification starts a notification-forwarding session without a call from your app.
 
-Worker features differ from framework-defined features in two ways. Your app defines the format for both sending and receiving, and your transport extension starts every session in response to an event from your accessory. Enroll a worker feature for each accessory by calling `AccessoryWorker/requestAuthorization(for:)`. When your app enrolls a feature, the enrollment takes effect immediately without prompting the person. An enrolled features stays enrolled for the life of the accessory’s pairing. Other features use the authorization flow of their owning framework.
+Worker features differ from framework-defined features in two ways. Your app defines the format for both sending and receiving, and your transport extension starts every session in response to an event from your accessory. Enroll a worker feature for each accessory by calling [`requestAuthorization(for:)`](./accessoryworker/requestauthorization%28for%29.md). When your app enrolls a feature, the enrollment takes effect immediately without prompting the person. An enrolled features stays enrolled for the life of the accessory’s pairing. Other features use the authorization flow of their owning framework.
 
 ## Declare a feature
 
@@ -42,7 +42,7 @@ To open the data provider’s feature session, call [`makeFeatureSession(_:)`](.
 
 The system calls [`sessionStarted(_:)`](./accessoryfeatureruntimesessionhandler/sessionstarted%28_%29.md) once your feature session is ready to run.
 
-Returning from [`activate()`](./accessoryfeatureruntimesession/activate%28%29.md) doesn’t mean the session started. If your app hasn’t enrolled the feature for the accessory, `activate()` returns without an error and the session stays registered, with no timeout. Check the feature’s enrollment status (for example, with `AccessoryWorker/authorizationStatus(for:)`) before opening a session, rather than relying on an error.
+Returning from [`activate()`](./accessoryfeatureruntimesession/activate%28%29.md) doesn’t mean the session started. If your app hasn’t enrolled the feature for the accessory, `activate()` returns without an error and the session stays registered, with no timeout. Check the feature’s enrollment status (for example, with [`authorizationStatus(for:)`](./accessoryworker/authorizationstatus%28for%29.md)) before opening a session, rather than relying on an error.
 
 ## Topics
 

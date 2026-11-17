@@ -30,6 +30,8 @@ struct Publisher<E> where E : Event
 ### Event publishers and subscription
 - [enum SceneEvents](../sceneevents.md)
   Events the scene invokes.
+- [func storeWhileEntityActive(Entity)](../../Combine/cancellable/storewhileentityactive%28_%29.md)
+  Retains the `Cancellable` as long as the entity is active (see `Entity.isActive`). If the entity is deactivated, the `Cancellable` is released.
 
 
 ---

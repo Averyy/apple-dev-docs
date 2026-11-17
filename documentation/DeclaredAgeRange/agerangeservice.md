@@ -119,6 +119,12 @@ The system may override your age gates based on the local regulations of the per
 - [AgeRangeService.Error](./agerangeservice/error.md)
   An error that occurs when an age range request fails.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+
 ## See Also
 
 ### Age range requests

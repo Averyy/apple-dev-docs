@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initialize a team logo with an image representation of this team. Provide an image no larger than 350x350; larger images will be resized down.
+Creates a logo object using a team-specific image.
 
 **Availability**:
 - iOS 18.4+
@@ -20,6 +20,25 @@ init(teamLogo: UIImage)
 ```objc
 - (instancetype) initWithTeamLogo:(UIImage *) teamLogo;
 ```
+
+## Return Value
+
+An initialized logo object.
+
+## Discussion
+
+If the team doesn’t have an official logo, use the [`init(teamInitials:)`](./init%28teaminitials%29.md) method to specify the team’s initials instead.
+
+## Parameters
+
+- `teamLogo`: The official logo of the team. Specify an image that is 350 by 350 points in size. This method resizes larger or smaller images to fit the expected size.
+
+## See Also
+
+### Creating a team logo
+- [init(teamInitials: String)](./init%28teaminitials%29.md)
+  Creates a logo object using the team’s initials or the official abbreviation of the team name.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Removes each template from the navigation hierarchy until the specified template becomes visible.
+Removes templates from your app’s navigation hierarchy until the specified template becomes visible.
 
 **Availability**:
 - iOS 14.0+
@@ -27,35 +27,27 @@ func pop(to targetTemplate: CPTemplate, animated: Bool) async throws -> Bool
 
 ## Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
->
-> ```swift
-> func pop(to targetTemplate: CPTemplate, animated: Bool) async throws -> Bool
-> ```
->
-> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
+Use this method to return your interface to a specific point in your navigation. Verify that the specified template is in the current array of templates before calling this method.
 
-`targetTemplate` must exist in the navigation hierarchy. You can use [`templates`](./templates.md) to access its contents.
-
-CarPlay calls `completion` after it removes the required templates. The Boolean parameter is [`true`](../../Swift/true.md) if the specified template exists in the navigation hierarchy and CarPlay removes the required templates successfully; otherwise, it’s [`false`](../../Swift/false.md) and CarPlay provides an error that describes the failure.
-
-CarPlay throws an exception if it can’t remove the required templates and you don’t provide a closure.
+> **Note**: You can call this method from synchronous code using a completion handler, or you can call it as an asynchronous method without the completion handler. For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
-- `targetTemplate`: The template to make visible.
-- `animated`: If [`true`](../../Swift/true.md), CarPlay animates the transition between templates.
-- `completion`: The closure CarPlay calls after it removes the required templates.
+- `targetTemplate`: The template to make visible. If this template doesn’t exist in the navigation hierarchy, CarPlay reports an error. Typically, you retrieve this template from the [`templates`](./templates.md) property to ensure it exists.
+- `animated`: If `true`, CarPlay animates the transition between templates.
+- `completion`: The closure to run with the results of the operation. This closure receives a Boolean value and an optional error as parameters. The Boolean value is `true` if CarPlay successfully restores the specified template to the top of the stack. If the value is `false`, CarPlay provides an error with information about what happened. If you don’t provide a closure, CarPlay throws an exception when an error occurs. CarPlay runs this closure on your app’s main thread.
 
 ## See Also
 
-### Adding and Removing Templates
+### Installing and removing templates
+- [func setRootTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./setroottemplate%28_,animated,completion%29.md)
+  Installs the root template of your app’s navigation hierarchy.
 - [func pushTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./pushtemplate%28_,animated,completion%29.md)
   Adds the specified template to the navigation hierarchy and displays it.
 - [func popTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./poptemplate%28animated,completion%29.md)
-  Removes the top-most template from the navigation hierarchy.
+  Removes the top-most template from your app’s navigation hierarchy.
 - [func popToRootTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./poptoroottemplate%28animated,completion%29.md)
-  Removes all of the templates from the navigation hierarchy except the root template.
+  Removes all of the templates from your app’s navigation hierarchy except the root template.
 
 
 ---

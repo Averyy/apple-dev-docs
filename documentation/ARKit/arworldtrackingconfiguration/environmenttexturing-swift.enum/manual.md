@@ -22,7 +22,7 @@ AREnvironmentTexturingManual
 
 ## Discussion
 
-When you use this [`environmentTexturing`](../environmenttexturing-swift.property.md) option, you must manually choose when and where to generate environment map textures:
+When you use this environment texturing option, you must manually choose when and where to generate environment map textures:
 
 1. Create an [`AREnvironmentProbeAnchor`](../../arenvironmentprobeanchor.md) object with a `transform` indicating its position in the scene.
 2. Add the probe anchor to the session with the [`add(anchor:)`](../../arsession/add%28anchor%29.md) method.

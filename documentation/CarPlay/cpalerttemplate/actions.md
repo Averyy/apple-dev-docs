@@ -27,7 +27,7 @@ The array must include at least one action.
 
 ## See Also
 
-### Getting the Alert Information
+### Getting the alert details
 - [var titleVariants: [String]](./titlevariants.md)
   The array of title variants.
 

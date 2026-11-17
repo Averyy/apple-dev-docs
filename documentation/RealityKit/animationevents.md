@@ -68,6 +68,7 @@ entitySubscription = view.scene.publisher(for:
 
 ### Physics and motion events
 - [enum CollisionEvents](./collisionevents.md)
+  Events that occur when two collidable objects begin touching, stay in contact, or separate.
 - [enum PhysicsSimulationEvents](./physicssimulationevents.md)
   Types of events that fire during physics simulations
 

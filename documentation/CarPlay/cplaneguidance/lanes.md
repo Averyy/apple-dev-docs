@@ -23,7 +23,7 @@ var lanes: [CPLane] { get set }
 
 ## See Also
 
-### Properties
+### Getting the lane guidance
 - [var instructionVariants: [String]](./instructionvariants.md)
   An array of strings that represent the instruction for this lane guidance, arranged from most- to least-preferred.
 

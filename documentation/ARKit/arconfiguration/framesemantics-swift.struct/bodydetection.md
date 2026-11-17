@@ -24,6 +24,10 @@ ARFrameSemanticBodyDetection
 
 When you set this option in your configuration’s [`frameSemantics`](../framesemantics-swift.property.md) property, ARKit describes the joint positions of a body it detects in the camera image, using normalized coordinates. See [`detectedBody`](../../arframe/detectedbody.md) for more information.
 
+> **See Also**: [`detectedBody`](../../arframe/detectedbody.md)
+
+> **See Also**: [`ARBody2D`](../../arbody2d.md)
+
 
 ---
 

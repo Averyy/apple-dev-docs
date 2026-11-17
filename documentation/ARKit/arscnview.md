@@ -12,8 +12,6 @@ A view that blends virtual 3D content from SceneKit into your augmented reality 
 - Mac Catalyst 13.1+ - Deprecated in 26.0
 - visionOS
 
-> **Deprecated**: Use [`RealityView`](../RealityKit/realityview.md) instead.
-
 ## Declaration
 
 ```swift
@@ -28,7 +26,7 @@ class ARSCNView
 
 > ❗ **Important**: SceneKit is deprecated, use [RealityKit](../RealityKit/RealityKit.md) instead. For more information, see WWDC25 session 288: [Bring your SceneKit projects to RealityKit](https://developer.apple.com/videos/play/wwdc2025/288/).
 
-The [`ARSCNView`](./arscnview.md) class provides an easy way to create augmented reality experiences that blend virtual 3D content with a device camera view of the real world. When you run the view’s provided [`ARSession`](./arsession.md) object:
+The `ARSCNView` class provides an easy way to create augmented reality experiences that blend virtual 3D content with a device camera view of the real world. When you run the view’s provided [`ARSession`](./arsession.md) object:
 
 - The view automatically renders the live video feed from the device camera as the scene background.
 - The world coordinate system of the view’s SceneKit scene directly responds to the AR world coordinate system established by the session configuration.
@@ -41,7 +39,7 @@ You don’t necessarily need to use the [`ARAnchor`](./aranchor.md) class to tra
 Because ARKit requires Metal, use only Metal features of SceneKit. For example:
 
 - This class supports only [`SCNProgram`](../SceneKit/scnprogram.md) instances with Metal Shading Language code.
-- If you set the [`preferredRenderingAPI`](../SceneKit/scnview/option/preferredrenderingapi.md) property to [`SCNRenderingAPI.openGLES2`](../SceneKit/scnrenderingapi/opengles2.md), the framework reverts the value to  [`SCNRenderingAPI.metal`](../SceneKit/scnrenderingapi/metal.md).
+- If you set the [`preferredRenderingAPI`](../SceneKit/scnview/option/preferredrenderingapi.md) property to [`SCNRenderingAPI.openGLES2`](../SceneKit/scnrenderingapi/opengles2.md), the framework reverts the value to [`SCNRenderingAPI.metal`](../SceneKit/scnrenderingapi/metal.md).
 
 ## Topics
 
@@ -69,8 +67,6 @@ Because ARKit requires Metal, use only Metal features of SceneKit. For example:
   Returns the SceneKit node associated with the specified AR anchor, if any.
 - [func unprojectPoint(CGPoint, ontoPlane: simd_float4x4) -> simd_float3?](./arscnview/unprojectpoint%28_,ontoplane%29.md)
   Returns the projection of a point from 2D view onto a plane in the 3D world space detected by ARKit.
-- [- unprojectPoint:ontoPlaneWithTransform:](./arscnview/unprojectpoint_ontoplanewithtransform_.md)
-  Returns the projection of a point from 2D view onto a plane in the 3D world space detected by ARKit.
 ### Managing Lighting
 - [var automaticallyUpdatesLighting: Bool](./arscnview/automaticallyupdateslighting.md)
   A Boolean value that specifies whether ARKit creates and updates SceneKit lights in the view’s scene.
@@ -82,6 +78,9 @@ Because ARKit requires Metal, use only Metal features of SceneKit. For example:
   Determines whether the view renders motion blur.
 - [var rendersCameraGrain: Bool](./arscnview/renderscameragrain.md)
   A flag that determines whether SceneKit applies image noise characteristics to your app’s virtual content.
+### Instance Methods
+- [- unprojectPoint:ontoPlaneWithTransform:](./arscnview/unprojectpoint_ontoplanewithtransform_.md)
+  Returns the projection of a point from 2D view onto a plane in the 3D world space detected by ARKit.
 
 ## Relationships
 

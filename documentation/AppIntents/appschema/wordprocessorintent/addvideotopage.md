@@ -21,14 +21,17 @@ var addVideoToPage: some AppSchemaIntent { get }
 
 ## Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `wordProcessor` domain and one of your app’s actions matches the `addVideoToPage` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .wordProcessor.addVideoToPage)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `wordProcessor` domain and one of your app’s actions matches the `addVideoToPage` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent(schema: .wordProcessor.addVideoToPage)` Swift macro.
 
-The following example shows an intent that conforms to the `addVideoToPage` schema:
+The following example shows an intent that conforms to the `addVideoToPage` schema. You can create a type that conforms to the schema by adding the `@AppIntent` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `wordProcessor_addVideoToPage` and select it from the code-completion suggestions:
 
 ```swift
 @AppIntent(schema: .wordProcessor.addVideoToPage)
 struct AddVideoToWordProcessorPageIntent {
+    /// Video to add.
     var video: IntentFile
+
+    /// Page to add the video to.
     var target: <#WordProcessorPageEntity#>
 
     func perform() async throws -> some IntentResult {
@@ -42,6 +45,15 @@ The schema supports the following system experiences:
 - Shortcuts
 
 For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
+
+## Parameters for the add-video-to-page intent
+
+Each parameter in the code listing above plays a specific role when your app performs this action. The following table describes what each parameter represents and any behavior to account for when you set it.
+
+| Parameter | Type | Origin | Discussion |
+| --- | --- | --- | --- |
+| `video` | `IntentFile` | App Intents | Video to add. |
+| `target` | `@AppEntity(schema: .wordProcessor.page)` | Your app | Page to add the video to. `WordProcessorPageEntity` is a placeholder name for a type that conforms to the [`page`](../wordprocessorentity/page.md) entity schema, which your app defines and implements. |
 
 ## See Also
 

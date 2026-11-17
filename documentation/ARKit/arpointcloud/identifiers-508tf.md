@@ -19,7 +19,7 @@ var identifiers: [UInt64] { get }
 
 ## Discussion
 
-Each identifier in this list corresponds to the point vector at the same index in the [`points`](./points-4vkif.md) array.
+Each identifier in this list corresponds to the point vector at the same index in the `ARPointCloud/points` array.
 
 ## See Also
 

@@ -32,6 +32,14 @@ After the closure returns, the framework validates every entry against the adjac
 
 - `body`: A closure that receives a mutable span over the buffer.
 
+## See Also
+
+### Replacing geometry data
+- [func replaceTriangleIndices<R>((inout MutableRawSpan) -> R) throws -> R](./replacetriangleindices%28_%29.md)
+  Fills the triangle index buffer using the given closure.
+- [func replaceAdjacencies<R>((inout MutableRawSpan) -> R) throws -> R](./replaceadjacencies%28_%29.md)
+  Fills the adjacency buffer using the given closure.
+
 
 ---
 

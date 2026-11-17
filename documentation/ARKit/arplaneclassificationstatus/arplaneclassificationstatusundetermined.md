@@ -28,7 +28,7 @@ This status occurs when ARKit is still in the process of plane classification. T
 - [ARPlaneClassificationStatusUnknown](./arplaneclassificationstatusunknown.md)
   ARKit has completed its classification process for the plane anchor, but the result is inconclusive.
 - [ARPlaneClassificationStatusKnown](./arplaneclassificationstatusknown.md)
-  ARKit has completed its classfication process for the plane anchor.
+  ARKit has completed its classification process for the plane anchor.
 
 
 ---

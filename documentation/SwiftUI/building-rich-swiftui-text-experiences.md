@@ -38,6 +38,8 @@ To configure the sample code project, do the following in Xcode:
   A control into which people securely enter private text.
 - [struct TextEditor](./texteditor.md)
   A view that can display and edit long-form text.
+- [struct TextFieldLink](./textfieldlink.md)
+  A control that requests text input from the user when pressed.
 
 
 ---

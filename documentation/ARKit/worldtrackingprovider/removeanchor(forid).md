@@ -15,6 +15,10 @@ Removes a world anchor from a world-tracking provider based on its ID.
 final func removeAnchor(forID id: UUID) async throws
 ```
 
+## Discussion
+
+> **Throws**: `WorldTrackingProvider.Error`
+
 ## Parameters
 
 - `id`: The unique ID of the world anchor to remove.

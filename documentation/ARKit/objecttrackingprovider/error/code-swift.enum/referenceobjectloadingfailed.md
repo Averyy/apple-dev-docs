@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Values that indicate loading a reference object model failed.
+Loading a reference object model failed.
 
 **Availability**:
 - visionOS 2.0+

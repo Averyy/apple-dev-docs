@@ -21,29 +21,33 @@ var podcastCollection: some AppSchemaEntity { get }
 
 ## Discussion
 
-To make your app’s content available to Apple Intelligence, conform your [`AppEntity`](../../appentity.md) to a schema that describes your content to the system. If your app’s functionality aligns with the `audio` domain and its content matches the `podcastCollection` schema, you can generate the properties and protocol conformance the schema requires for your app entity implementation with the `@AppEntity( .audio.podcastCollection)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s content available to Apple Intelligence, conform your [`AppEntity`](../../appentity.md) to a schema that describes your content to the system. If your app’s functionality aligns with the `audio` domain and its content matches the `podcastCollection` schema, you can generate the properties and protocol conformance the schema requires for your app entity implementation with the `@AppEntity(schema: .audio.podcastCollection)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an app entity that conforms to the `podcastCollection` schema:
+The following example shows an app entity that conforms to the `podcastCollection` schema. You can create a type that conforms to the schema by adding the `@AppEntity` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `audio_podcastCollection` and select it from the code-completion suggestions:
 
 ```swift
 @AppEntity(schema: .audio.podcastCollection)
 struct PodcastCollectionEntity {
-    // MARK: Static
+    // MARK: Default query
 
+    /// The standard lookup the system runs to find one or more podcast collection entities, unless you provide another.
     static let defaultQuery = PodcastCollectionEntityQuery()
 
-    // MARK: Properties
+    // MARK: Entity properties
 
+    /// The unique identifier for the podcast collection entity.
     let id: <#Identifiable.ID#>
 
     var title: String
 
+    /// The details the system shows to identify the podcast collection entity to a person, such as a title and image.
     var displayRepresentation: DisplayRepresentation {
         <#DisplayRepresentation#>
     }
 
-    // MARK: Query
+    // MARK: Query type
 
+    /// A type that looks up one or more podcast collection entities by their identifiers.
     struct PodcastCollectionEntityQuery: EntityQuery {
         func entities(for identifiers: [PodcastCollectionEntity.ID]) async throws -> [PodcastCollectionEntity] {
             <#code#>
@@ -58,6 +62,14 @@ The schema supports the following system experiences:
 - Shortcuts
 
 For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
+
+## Properties of the podcast-collection entity
+
+Each property in the code listing above describes a facet of the entity your app provides to the system. The following table describes what each property represents.
+
+| Property | Type | Origin | Discussion |
+| --- | --- | --- | --- |
+| `title` | `String` | Swift | Title |
 
 ## See Also
 
@@ -77,9 +89,9 @@ For more information about the App Intents framework and the experiences it supp
 - [var liveRadioStation: some AppSchemaEntity](./liveradiostation.md)
   An entity schema for a live radio station.
 - [var newsBrief: some AppSchemaEntity](./newsbrief.md)
-  An entity schema for  news brief.
+  An entity schema for news brief.
 - [var newsProvider: some AppSchemaEntity](./newsprovider.md)
-  An entity schema for  news provider.
+  An entity schema for news provider.
 - [var playlist: some AppSchemaEntity](./playlist.md)
   An entity schema for a playlist.
 - [var podcastEpisode: some AppSchemaEntity](./podcastepisode.md)

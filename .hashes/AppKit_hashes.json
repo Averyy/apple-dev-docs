@@ -26922,7 +26922,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nsmenu/didremoveitemnotification": {
       "file_path": "documentation/AppKit/nsmenu/didremoveitemnotification.md",
-      "hash": "bb15d06437246e22f1475b7d82ded0724ebc80e06cae457b65dbc0028de1d98b"
+      "hash": "6c45c93ecf2f4fe79d475623229782931080f2bffd58f3a166302eda88223ff8"
     },
     "https://developer.apple.com/documentation/appkit/nsmenu/didsendactionmessage": {
       "file_path": "documentation/AppKit/nsmenu/didsendactionmessage.md",
@@ -29682,7 +29682,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nspangesturerecognizer": {
       "file_path": "documentation/AppKit/nspangesturerecognizer.md",
-      "hash": "a59e3371f8deb0453a558be8cbc72e0287a2360678b500e0c891fcb66f781bdc"
+      "hash": "5f70cfd54094af8a127e2d4171011f8b995fbfe9d17bf0bd7e45958f7e14cd93"
     },
     "https://developer.apple.com/documentation/appkit/nspangesturerecognizer/buttonmask": {
       "file_path": "documentation/AppKit/nspangesturerecognizer/buttonmask.md",
@@ -34974,7 +34974,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nsscrollview/contentsize(forframesize:horizontalscrollerclass:verticalscrollerclass:bordertype:controlsize:scrollerstyle:)": {
       "file_path": "documentation/AppKit/nsscrollview/contentsize(forframesize,horizontalscrollerclass,verticalscrollerclass,bordertype,controlsize,scrollerstyle).md",
-      "hash": "596bcdcb44da19454e5d2a624d575a9c7be90d531e36bfb7be9985f333dde480"
+      "hash": "0ee829d03672d3cb8d8d9666b687ac1e3bcf6b9ae76af52013af204dc80dd134"
     },
     "https://developer.apple.com/documentation/appkit/nsscrollview/contentsizeforframesize:hashorizontalscroller:hasverticalscroller:bordertype:": {
       "file_path": "documentation/AppKit/nsscrollview/contentsizeforframesize_hashorizontalscroller_hasverticalscroller_bordertype_.md",
@@ -35098,7 +35098,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nsscrollview/framesize(forcontentsize:horizontalscrollerclass:verticalscrollerclass:bordertype:controlsize:scrollerstyle:)": {
       "file_path": "documentation/AppKit/nsscrollview/framesize(forcontentsize,horizontalscrollerclass,verticalscrollerclass,bordertype,controlsize,scrollerstyle).md",
-      "hash": "4e3cd7a8406d92c49d8bd31435420b5c4e7d28080b6b7bed5f20d3d984b086e9"
+      "hash": "e597a2d5d560870d169f111191ec277493d00060976de07f71c7e736a5c75a4f"
     },
     "https://developer.apple.com/documentation/appkit/nsscrollview/framesizeforcontentsize:hashorizontalscroller:hasverticalscroller:bordertype:": {
       "file_path": "documentation/AppKit/nsscrollview/framesizeforcontentsize_hashorizontalscroller_hasverticalscroller_bordertype_.md",
@@ -43486,7 +43486,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nstextfield/bordershape": {
       "file_path": "documentation/AppKit/nstextfield/bordershape.md",
-      "hash": "9961dc652d603e0625f6dae2238e6cc1d6abef7128274f714b8b909d5d153d21"
+      "hash": "05e33c32810c1b5b0283fa4de4cca348e4c7bc0cf0d756dc1a4408d820cfd21b"
     },
     "https://developer.apple.com/documentation/appkit/nstextfield/delegate": {
       "file_path": "documentation/AppKit/nstextfield/delegate.md",
@@ -43610,7 +43610,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nstextfieldcell": {
       "file_path": "documentation/AppKit/nstextfieldcell.md",
-      "hash": "821b5402f5182c2ecbc1f051dd8038e60d6f08c81c4973ef74a96ce23a09dfb3"
+      "hash": "f2ed2b7c504877db45799ae622f1b31160bfcca9607acb0509e4b683285fde58"
     },
     "https://developer.apple.com/documentation/appkit/nstextfieldcell/allowedinputsourcelocales": {
       "file_path": "documentation/AppKit/nstextfieldcell/allowedinputsourcelocales.md",
@@ -46082,7 +46082,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nstextview/handletextcheckingresults(_:forrange:types:options:orthography:wordcount:)": {
       "file_path": "documentation/AppKit/nstextview/handletextcheckingresults(_,forrange,types,options,orthography,wordcount).md",
-      "hash": "9e73d9efc979a8a1502cc24483c99b248234d9510b9eb2905ee51a44a0e01224"
+      "hash": "ad65e6b064342337fa65b48ac3ed99d754fa35e47635ad7c06660633cfc0d435"
     },
     "https://developer.apple.com/documentation/appkit/nstextview/highlight(_:)": {
       "file_path": "documentation/AppKit/nstextview/highlight(_).md",
@@ -46750,7 +46750,7 @@
     },
     "https://developer.apple.com/documentation/appkit/nstextviewdelegate/textview(_:didchecktextin:types:options:results:orthography:wordcount:)": {
       "file_path": "documentation/AppKit/nstextviewdelegate/textview(_,didchecktextin,types,options,results,orthography,wordcount).md",
-      "hash": "a27a68efe01e4e483995b349061df1cba500a3eee76cdd067c2da88d2094fc75"
+      "hash": "214342a22851b0218419454896b6a6c5f22070d808cd5f2a6a773c5fafe315ec"
     },
     "https://developer.apple.com/documentation/appkit/nstextviewdelegate/textview(_:docommandby:)": {
       "file_path": "documentation/AppKit/nstextviewdelegate/textview(_,docommandby).md",
@@ -82754,7 +82754,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsmenu/didremoveitemnotification.json": {
       "file_path": "documentation/AppKit/nsmenu/didremoveitemnotification.md",
-      "hash": "bb15d06437246e22f1475b7d82ded0724ebc80e06cae457b65dbc0028de1d98b"
+      "hash": "6c45c93ecf2f4fe79d475623229782931080f2bffd58f3a166302eda88223ff8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsmenu/didsendactionmessage.json": {
       "file_path": "documentation/AppKit/nsmenu/didsendactionmessage.md",
@@ -85514,7 +85514,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nspangesturerecognizer.json": {
       "file_path": "documentation/AppKit/nspangesturerecognizer.md",
-      "hash": "a59e3371f8deb0453a558be8cbc72e0287a2360678b500e0c891fcb66f781bdc"
+      "hash": "5f70cfd54094af8a127e2d4171011f8b995fbfe9d17bf0bd7e45958f7e14cd93"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nspangesturerecognizer/buttonmask.json": {
       "file_path": "documentation/AppKit/nspangesturerecognizer/buttonmask.md",
@@ -90802,7 +90802,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsscrollview/contentsize(forframesize:horizontalscrollerclass:verticalscrollerclass:bordertype:controlsize:scrollerstyle:).json": {
       "file_path": "documentation/AppKit/nsscrollview/contentsize(forframesize,horizontalscrollerclass,verticalscrollerclass,bordertype,controlsize,scrollerstyle).md",
-      "hash": "596bcdcb44da19454e5d2a624d575a9c7be90d531e36bfb7be9985f333dde480"
+      "hash": "0ee829d03672d3cb8d8d9666b687ac1e3bcf6b9ae76af52013af204dc80dd134"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsscrollview/contentsize.json": {
       "file_path": "documentation/AppKit/nsscrollview/contentsize.md",
@@ -90930,7 +90930,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsscrollview/framesize(forcontentsize:horizontalscrollerclass:verticalscrollerclass:bordertype:controlsize:scrollerstyle:).json": {
       "file_path": "documentation/AppKit/nsscrollview/framesize(forcontentsize,horizontalscrollerclass,verticalscrollerclass,bordertype,controlsize,scrollerstyle).md",
-      "hash": "4e3cd7a8406d92c49d8bd31435420b5c4e7d28080b6b7bed5f20d3d984b086e9"
+      "hash": "e597a2d5d560870d169f111191ec277493d00060976de07f71c7e736a5c75a4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsscrollview/framesizeforcontentsize:hashorizontalscroller:hasverticalscroller:bordertype:.json": {
       "file_path": "documentation/AppKit/nsscrollview/framesizeforcontentsize_hashorizontalscroller_hasverticalscroller_bordertype_.md",
@@ -99318,7 +99318,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nstextfield/bordershape.json": {
       "file_path": "documentation/AppKit/nstextfield/bordershape.md",
-      "hash": "9961dc652d603e0625f6dae2238e6cc1d6abef7128274f714b8b909d5d153d21"
+      "hash": "05e33c32810c1b5b0283fa4de4cca348e4c7bc0cf0d756dc1a4408d820cfd21b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nstextfield/delegate.json": {
       "file_path": "documentation/AppKit/nstextfield/delegate.md",
@@ -99442,7 +99442,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nstextfieldcell.json": {
       "file_path": "documentation/AppKit/nstextfieldcell.md",
-      "hash": "821b5402f5182c2ecbc1f051dd8038e60d6f08c81c4973ef74a96ce23a09dfb3"
+      "hash": "f2ed2b7c504877db45799ae622f1b31160bfcca9607acb0509e4b683285fde58"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nstextfieldcell/allowedinputsourcelocales.json": {
       "file_path": "documentation/AppKit/nstextfieldcell/allowedinputsourcelocales.md",
@@ -101914,7 +101914,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nstextview/handletextcheckingresults(_:forrange:types:options:orthography:wordcount:).json": {
       "file_path": "documentation/AppKit/nstextview/handletextcheckingresults(_,forrange,types,options,orthography,wordcount).md",
-      "hash": "9e73d9efc979a8a1502cc24483c99b248234d9510b9eb2905ee51a44a0e01224"
+      "hash": "ad65e6b064342337fa65b48ac3ed99d754fa35e47635ad7c06660633cfc0d435"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nstextview/highlight(_:).json": {
       "file_path": "documentation/AppKit/nstextview/highlight(_).md",
@@ -102582,7 +102582,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nstextviewdelegate/textview(_:didchecktextin:types:options:results:orthography:wordcount:).json": {
       "file_path": "documentation/AppKit/nstextviewdelegate/textview(_,didchecktextin,types,options,results,orthography,wordcount).md",
-      "hash": "a27a68efe01e4e483995b349061df1cba500a3eee76cdd067c2da88d2094fc75"
+      "hash": "214342a22851b0218419454896b6a6c5f22070d808cd5f2a6a773c5fafe315ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nstextviewdelegate/textview(_:docommandby:).json": {
       "file_path": "documentation/AppKit/nstextviewdelegate/textview(_,docommandby).md",

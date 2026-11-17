@@ -21,6 +21,11 @@ var title: String { get }
 @property (nonatomic, readonly) NSString * title;
 ```
 
+## See Also
+
+### Getting the grid title
+- [func updateTitle(String)](./updatetitle%28_%29.md)
+
 
 ---
 

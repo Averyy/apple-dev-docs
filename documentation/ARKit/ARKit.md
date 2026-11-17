@@ -49,6 +49,9 @@ Integrate hardware sensing features to produce augmented reality apps and games.
 ### Variables
 - [ARReferenceObjectArchiveExtension](./arreferenceobject/archiveextension.md)
   The standard filename extension for exported [`ARReferenceObject`](./arreferenceobject.md) instances.
+### Enumerations
+- [ARTrackingStateReason](./artrackingstatereason.md)
+  Possible causes for limited position-tracking quality.
 
 
 ---

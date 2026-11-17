@@ -23,7 +23,7 @@ var isPanningInterfaceVisible: Bool { get }
 
 ## See Also
 
-### Panning the Map
+### Displaying the panning interface
 - [func showPanningInterface(animated: Bool)](./showpanninginterface%28animated%29.md)
   Shows the panning interface on the map.
 - [func dismissPanningInterface(animated: Bool)](./dismisspanninginterface%28animated%29.md)

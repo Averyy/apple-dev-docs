@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-The list item will render a condensed list of rounded rectangle elements.
+A rounded rectangle shape for the element’s image.
 
 **Availability**:
 - iOS 26.0+

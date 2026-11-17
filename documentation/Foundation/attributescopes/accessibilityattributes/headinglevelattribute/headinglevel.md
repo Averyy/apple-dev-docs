@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-The hierarchy of a heading in relation other headings.
+The hierarchy of a heading in relation to other headings.
 
 **Availability**:
 - iOS 15.0+
@@ -23,7 +23,7 @@ enum HeadingLevel
 
 ## Overview
 
-Assistive technologies can use this to improve a users navigation through multiple headings. When users navigate through top level headings they expect the content for each heading to be unrelated.
+Assistive technologies can use this to improve a user’s navigation through multiple headings. When users navigate through top level headings they expect the content for each heading to be unrelated.
 
 ## Topics
 

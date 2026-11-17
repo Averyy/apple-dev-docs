@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The thumbnail image displayed in the header.
+The thumbnail image to display in the header.
 
 **Availability**:
 - iOS 26.4+
@@ -23,7 +23,21 @@ var thumbnail: CPThumbnailImage { get set }
 
 ## Discussion
 
-This property represents the primary visual content of the header. The thumbnail may include image overlays, playback progress indicators, or sports overlays depending on the content type.
+The image in this property represents the primary visual content of the header. You can augment the thumbnail image to include overlays or playback progress indicators. For example, you can place sports scores on top the image using a sports overlay.
+
+## See Also
+
+### Managing the header’s content
+- [var title: String?](./title.md)
+  The primary text to display in the header.
+- [var subtitle: String?](./subtitle.md)
+  The text to display in the header below the title.
+- [var bodyVariants: [NSAttributedString]](./bodyvariants.md)
+  An optional array of localized strings to display beneath the subtitle.
+- [var actionButtons: [CPButton]](./actionbuttons.md)
+  An array of action buttons to display in the header.
+- [var wantsAdaptiveBackgroundStyle: Bool](./wantsadaptivebackgroundstyle.md)
+  A Boolean value that indicates whether to apply a custom background style to the header.
 
 
 ---

@@ -24,7 +24,9 @@ var userFaceTrackingEnabled: Bool { get set }
 
 When enabled, ARKit provides you with an [`ARFaceAnchor`](../arfaceanchor.md) that represents the user’s face during your world tracking session. For example, you can share avatar expressions with multiple users in a multiplayer game, or enable the player to control a virtual object in the physical environment using facial expressions.
 
-Check whether the device supports tracking of the user’s face by using [`supportsUserFaceTracking`](./supportsuserfacetracking.md) before enabling this property.
+Check whether the device supports tracking of the user’s face by using [`supportsUserFaceTracking`](./supportsuserfacetracking.md) before enabling this property. Disabled by default. The transform of the [`ARFaceAnchor`](../arfaceanchor.md) objects will be in the world coordinate space.
+
+> **See Also**: [`ARFaceAnchor`](../arfaceanchor.md)
 
 ## See Also
 

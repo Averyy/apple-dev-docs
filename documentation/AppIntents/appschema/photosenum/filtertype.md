@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-An enum schema for a filter type parameter.
+An enum schema for a filter type.
 
 **Availability**:
 - iOS 18.0+
@@ -21,9 +21,9 @@ var filterType: some AppSchemaEnum { get }
 
 ## Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `photos` domain and a parameter type matches the `filterType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .photos.filterType)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `photos` domain and a parameter type matches the `filterType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum(schema: .photos.filterType)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
-The following example shows an app enum that conforms to the `filterType` schema:
+The following example shows an app enum that conforms to the `filterType` schema. You can create a type that conforms to the schema by adding the `@AppEnum` macro above the type’s declaration. Xcode inserts a template type into your code for you, which includes the macro, when you type the first few characters of `photos_filterType` and select it from the code-completion suggestions:
 
 ```swift
 @AppEnum(schema: .photos.filterType)
@@ -47,11 +47,11 @@ For more information about the App Intents framework and the experiences it supp
 
 ### Types for static parameters
 - [var albumType: some AppSchemaEnum](./albumtype.md)
-  An enum schema for an album type parameter.
+  An enum schema for an album type.
 - [var assetType: some AppSchemaEnum](./assettype.md)
-  An enum schema for an asset type parameter.
+  An enum schema for an asset type.
 - [var rotationDirection: some AppSchemaEnum](./rotationdirection.md)
-  An enum schema for a rotation direction parameter.
+  An enum schema for a rotation direction.
 - [AppSchema.PhotosEnum](../photosenum.md)
   Identifies enum schemas in the photos domain.
 

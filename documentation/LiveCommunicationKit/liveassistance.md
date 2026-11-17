@@ -76,6 +76,8 @@ var body: some Scene {
 ### Conversation assistance
 - [protocol LiveAssistanceExtension](./liveassistanceextension.md)
   The protocol you extend to provide live assistance services.
+- [protocol LiveAssistanceRequesterPresenceObserving](./liveassistancerequesterpresenceobserving.md)
+  A live assistance extension that wants to know when the requester leaves or rejoins the call, or when the call ends.
 - [Live assistance captioning](./liveassistancecaptioning.md)
   Use a WebSocket API to perform real-time captioning in a FaceTime call.
 

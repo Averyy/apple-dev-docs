@@ -19,9 +19,9 @@ To ensure a fast launch experience, App Clips must be small. Aim to keep your Ap
 | --- | --- |
 | iOS 15 and earlier | 10 MB |
 | iOS 16 and earlier | 15 MB |
-| iOS 17 and later | 100 MB, with additional requirements and limitations (see below) |
+| iOS 27.3 and later | 25 MB |
 
-On devices running iOS 17 and later, the uncompressed App Clip binary can be up to 100 MB in size if you meet the following conditions:
+Starting with iOS 17, your uncompressed App Clip binary can be up to 100 MB in size if you meet the following conditions:
 
 - The App Clip only supports digital invocations — for example, from your website or Spotlight search.
 - The App Clip doesn’t support physical invocations such as App Clip Codes, QR codes, or NFC tags.
@@ -50,7 +50,6 @@ Some frameworks are available to App Clips but offer only limited functionality,
 
 - **Advanced networking features and low-level networking APIs**: Advanced networking features like [Bonjour](../Foundation/bonjour.md) and low-level networking APIs like [`CFSocket`](../CoreFoundation/cfsocket.md) or POSIX functions aren’t available to App Clips. Instead, use [`URLSession`](../Foundation/urlsession.md) or the [Network](../Network/Network.md) framework.
 - **App extensions**: App Clips can’t include app extensions, but they can include a widget extension to offer Live Activities. For more information, refer to [Offering Live Activities with your App Clip](./offering-live-activities-with-your-app-clip.md).
-- **[Core Telephony](../CoreTelephony/CoreTelephony.md)**: Functionality provided by [Core Telephony](../CoreTelephony/CoreTelephony.md) is available to App Clips. However, they can’t provision cellular plan eSIMs or use functionality that carrier apps with suitable entitlements use. For example, an App Clip can’t use [`CTCellularPlanProvisioning`](../CoreTelephony/ctcellularplanprovisioning.md) and [`CTCellularPlanProvisioningRequest`](../CoreTelephony/ctcellularplanprovisioningrequest.md).
 - **[CloudKit](../CloudKit/CloudKit.md)**: [CloudKit](../CloudKit/CloudKit.md) isn’t available to App Clips in iOS 14 or 15. Starting with iOS 16, App Clips can read their public iCloud database. However, App Clips can’t write data to a public database or use private or shared containers. Additionally, they can’t use iCloud Documents or iCloud key-value storage. To learn more about using CloudKit in your App Clip, refer to the [Access your public iCloud database](./sharing-data-between-your-app-clip-and-your-full-app.md#Access-your-public-iCloud-database) section of [Sharing data between your App Clip and your full app](./sharing-data-between-your-app-clip-and-your-full-app.md).
 - **Face ID**: App Clips can’t use Face ID because the [`NSFaceIDUsageDescription`](../BundleResources/information-property-list/nsfaceidusagedescription.md) entitlement isn’t available to them. However, you can use the [Local Authentication](../LocalAuthentication/LocalAuthentication.md) framework to authenticate people with Touch ID.
 

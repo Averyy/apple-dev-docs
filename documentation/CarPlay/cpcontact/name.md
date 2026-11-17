@@ -23,7 +23,7 @@ var name: String { get set }
 
 ## See Also
 
-### Configuring the Contact’s Attributes
+### Configuring the contact’s attributes
 - [var image: UIImage](./image.md)
   The contact’s image.
 - [var subtitle: String?](./subtitle.md)

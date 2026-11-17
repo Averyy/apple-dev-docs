@@ -20,6 +20,10 @@ func drawMaskOnStencilAttachment(commandEncoder command_encoder: any MTLRenderCo
 void cp_drawable_render_context_draw_mask_on_stencil_attachment(cp_drawable_render_context_t render_context, id<MTLRenderCommandEncoder>command_encoder, uint8_t value);
 ```
 
+## Mentions
+
+- [Controlling Metal rendering immersion level](../../../controlling-metal-rendering-immersion-level.md)
+
 ## Discussion
 
 In full and mixed immersion styles, [`drawMaskOnStencilAttachment(commandEncoder:value:)`](./drawmaskonstencilattachment%28commandencoder,value%29-65i67.md) stores the full texture. The command encoder used in the render context has the following constraints:
@@ -37,6 +41,7 @@ This function modifies the depth stencil state, viewports, vertex amplification 
 
 ## Parameters
 
+- `command_encoder`: The command encoder to use to render the compositor effects and present the layer renderer drawable.
 - `value`: The value to use when updating the stencil texture in the [`MTLRenderCommandEncoder`](../../../../Metal/mtlrendercommandencoder.md).
 
 ## See Also

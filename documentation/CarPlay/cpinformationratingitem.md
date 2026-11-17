@@ -29,10 +29,10 @@ The template manages the visual styling of the rating and maximum rating.
 
 ## Topics
 
-### Creating a Rating Item
+### Creating a rating item
 - [init(rating: NSNumber?, maximumRating: NSNumber?, title: String?, detail: String?)](./cpinformationratingitem/init%28rating,maximumrating,title,detail%29.md)
   Creates a rating item with a current and a maximum rating.
-### Accessing the Item’s Attributes
+### Accessing the item’s attributes
 - [var rating: NSNumber?](./cpinformationratingitem/rating.md)
   The current rating that the template displays.
 - [var maximumRating: NSNumber?](./cpinformationratingitem/maximumrating.md)
@@ -54,7 +54,7 @@ The template manages the visual styling of the rating and maximum rating.
 
 ## See Also
 
-### Managing the Items
+### Managing the items
 - [var items: [CPInformationItem]](./cpinformationtemplate/items.md)
   The items that the template displays.
 - [class CPInformationItem](./cpinformationitem.md)

@@ -19,6 +19,7 @@ typedef NSObject<OS_ar_scene_reconstruction_provider> * ar_scene_reconstruction_
 
 ### Scene reconstruction
 - [ar_scene_reconstruction_configuration_t](./ar_scene_reconstruction_configuration_t.md)
+  Configuration for scene reconstruction.
 - [ar_scene_reconstruction_mode_t](./ar_scene_reconstruction_mode_t.md)
   The additional kinds of information you can request about a person’s surroundings.
 - [ar_scene_reconstruction_provider_create](./ar_scene_reconstruction_provider_create.md)
@@ -44,7 +45,7 @@ typedef NSObject<OS_ar_scene_reconstruction_provider> * ar_scene_reconstruction_
 - [ar_mesh_anchors_enumerate_anchors](./ar_mesh_anchors_enumerate_anchors.md)
   Enumerates a collection of mesh anchors.
 - [ar_mesh_anchors_enumerate_anchors_f](./ar_mesh_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of mesh anchors.
+  Enumerates a collection of mesh anchors using a function.
 - [ar_mesh_anchors_get_count](./ar_mesh_anchors_get_count.md)
   Gets the number of mesh anchors in the collection.
 

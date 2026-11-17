@@ -20,7 +20,7 @@ let outcome: SiriTranscript.IntentInvocation.Outcome
 
 ## Discussion
 
-Siri plans a call before it runs it, and a planned call can stop short. Only a call that ran satisfies `Calls`. `Calls(.disallowed)` fails on a call that ran, on one Siri put to the person to confirm (by then Siri has chosen the action and its arguments, and only the person’s answer stands between the request and the action), and on one with no outcome recorded.
+Siri plans a call before it runs it, and a planned call can stop short. Only a call that ran satisfies `Calls`. `Calls(.disallowed)` fails on a call that ran, on one that failed, on one Siri put to the person to confirm (by then Siri has chosen the action and its arguments, and only the person’s answer stands between the request and the action), and on one with no outcome recorded.
 
 ## See Also
 

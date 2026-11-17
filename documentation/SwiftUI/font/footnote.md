@@ -38,12 +38,12 @@ static let footnote: Font
   Create a font for third level hierarchical headings.
 - [static let headline: Font](./headline.md)
   A font with the headline text style.
-- [static let subheadline: Font](./subheadline.md)
-  A font with the subheadline text style.
 - [static let body: Font](./body.md)
   A font with the body text style.
 - [static let callout: Font](./callout.md)
   A font with the callout text style.
+- [static let subheadline: Font](./subheadline.md)
+  A font with the subheadline text style.
 - [static let caption: Font](./caption.md)
   A font with the caption text style.
 - [static let caption2: Font](./caption2.md)

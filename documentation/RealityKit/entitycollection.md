@@ -71,6 +71,11 @@ protocol EntityCollection : Collection where Self.Element == Entity, Self.Index 
   A collection of entities in a RealityView.
 - [struct RealityViewLayoutOption](./realityviewlayoutoption.md)
   Options that specify the frame sizing and content alignment option for `RealityView`.
+- [func realityViewLayoutBehavior(RealityViewLayoutOption) -> some View
+](../SwiftUI/view/realityviewlayoutbehavior%28_%29.md)
+  A view modifier that controls the frame sizing and content alignment behavior for `RealityView`
+- [var realityKitScene: Scene?](../SwiftUI/environmentvalues/realitykitscene.md)
+- [subscript(_:)](../SwiftUI/binding/subscript%28_%29.md)
 
 
 ---

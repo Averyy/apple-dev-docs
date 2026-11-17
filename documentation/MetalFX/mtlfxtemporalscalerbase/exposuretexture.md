@@ -5,14 +5,14 @@
 **Role**: Instance Property  
 **Required**: Yes
 
-The exposure texture this scaler uses.
+A texture that sets the exposure level for the color texture input.
 
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.11+
-- tvOS 27.1+
+- tvOS 27.2+
 - visionOS 1.0+
 
 ## Declaration
@@ -27,11 +27,31 @@ var exposureTexture: (any MTLTexture)? { get set }
 
 ## Discussion
 
-Create and assign a 1x1  `MTLPixelFormatR16Float`  texture to assign to this property. MetalFX reads the R channel of the texel at position `(0,0)` and uses it as the exposure value. It then uses this value to multiply the input color.
+The property is a texture (unlike [`preExposure`](./preexposure.md)) so that the GPU can directly modify the exposure level for each frame at runtime.
 
-For best performance, use the GPU to generate the exposure value and store it into this texture.
+> 💡 **Tip**: For best results, set this property to a texture with a single [`MTLPixelFormat.r16Float`](../../Metal/mtlpixelformat/r16float.md) element.
+
+The temporal scaler uses only the red component of the texture’s first value, at location (0, 0), as the exposure factor. If the property is `nil`, the default exposure factor is `1.0`.
 
 > **Note**: The temporal scaler ignores this property if you create it with a descriptor that has its [`isAutoExposureEnabled`](../mtlfxtemporalscalerdescriptor/isautoexposureenabled.md) property set to [`true`](../../Swift/true.md).
+
+## See Also
+
+### Configuring the image input
+- [var colorTextureUsage: MTLTextureUsage](./colortextureusage.md)
+  The minimal texture usage options that your app’s input color texture must set to apply the temporal scaler.
+- [var colorTexture: (any MTLTexture)?](./colortexture.md)
+  An input color texture you set for the temporal scaler that supports the correct color texture usage options.
+- [var inputContentWidth: Int](./inputcontentwidth.md)
+  The width, in pixels, of the region within the color texture the temporal scaler uses as its input.
+- [var inputContentHeight: Int](./inputcontentheight.md)
+  The height, in pixels, of the region within the color texture the temporal scaler uses as its input.
+- [var jitterOffsetX: Float](./jitteroffsetx.md)
+  The horizontal component of the subpixel sampling coordinate you use to generate the color texture input.
+- [var jitterOffsetY: Float](./jitteroffsety.md)
+  The vertical component of the subpixel sampling coordinate you use to generate the color texture input.
+- [var preExposure: Float](./preexposure.md)
+  The exposure value that you’ve already applied to your color texture input.
 
 
 ---

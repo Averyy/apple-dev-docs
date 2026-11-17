@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-The location requires user permission for geotracking.
+The location requires user permission for geo tracking.
 
 **Availability**:
 - iOS 14.0+
@@ -30,15 +30,15 @@ This reason indicates that the user has not given this app permission to access 
 - [ARGeoTrackingStatus.StateReason.none](./none.md)
   No issues reported.
 - [ARGeoTrackingStatus.StateReason.notAvailableAtLocation](./notavailableatlocation.md)
-  The location doesn’t provide geotracking.
+  The location doesn’t provide geo tracking.
 - [ARGeoTrackingStatus.StateReason.devicePointedTooLow](./devicepointedtoolow.md)
-  The position of the device is too low for geotracking.
+  The position of the device is too low for geo tracking.
 - [ARGeoTrackingStatus.StateReason.worldTrackingUnstable](./worldtrackingunstable.md)
-  The position or motion of the device makes geotracking unstable.
+  The position or motion of the device makes geo tracking unstable.
 - [ARGeoTrackingStatus.StateReason.waitingForLocation](./waitingforlocation.md)
   A state in which the framework performs a check for the user’s GPS position.
 - [ARGeoTrackingStatus.StateReason.waitingForAvailabilityCheck](./waitingforavailabilitycheck.md)
-  A state in which the framework performs a check for geotracking availability at the user’s location.
+  A state in which the framework performs a check for geo tracking availability at the user’s location.
 - [ARGeoTrackingStatus.StateReason.geoDataNotLoaded](./geodatanotloaded.md)
   A state in which the framework downloads localization imagery.
 - [ARGeoTrackingStatus.StateReason.visualLocalizationFailed](./visuallocalizationfailed.md)
@@ -46,15 +46,15 @@ This reason indicates that the user has not given this app permission to access 
 - [ARGeoTrackingStatus.StateReason.none](./none.md)
   No issues reported.
 - [ARGeoTrackingStatus.StateReason.notAvailableAtLocation](./notavailableatlocation.md)
-  The location doesn’t provide geotracking.
+  The location doesn’t provide geo tracking.
 - [ARGeoTrackingStatus.StateReason.devicePointedTooLow](./devicepointedtoolow.md)
-  The position of the device is too low for geotracking.
+  The position of the device is too low for geo tracking.
 - [ARGeoTrackingStatus.StateReason.worldTrackingUnstable](./worldtrackingunstable.md)
-  The position or motion of the device makes geotracking unstable.
+  The position or motion of the device makes geo tracking unstable.
 - [ARGeoTrackingStatus.StateReason.waitingForLocation](./waitingforlocation.md)
   A state in which the framework performs a check for the user’s GPS position.
 - [ARGeoTrackingStatus.StateReason.waitingForAvailabilityCheck](./waitingforavailabilitycheck.md)
-  A state in which the framework performs a check for geotracking availability at the user’s location.
+  A state in which the framework performs a check for geo tracking availability at the user’s location.
 - [ARGeoTrackingStatus.StateReason.geoDataNotLoaded](./geodatanotloaded.md)
   A state in which the framework downloads localization imagery.
 

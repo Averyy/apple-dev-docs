@@ -184,7 +184,7 @@ let regions = proxy.reservedRegions(
 
 ## Track a reserved region over time
 
-Each reserved region has an [`ReservedRegion.ID`](./reservedregion/id-swift.struct.md) that identifies it across queries. Use the ID to tell whether a region you saw in an earlier query is still there or is a different region. Because [`ReservedRegion`](./reservedregion.md) conforms to `Identifiable`, you can also pass regions directly to a [`ForEach`](./foreach.md) to create a view for each one.
+Each reserved region has an [`ReservedRegion.ID`](./reservedregion/id-swift.struct.md) that identifies it across queries. Use the ID to tell whether a region you saw in an earlier query is still there or is a different region. Because [`ReservedRegion`](./reservedregion.md) conforms to [`Identifiable`](../Swift/identifiable.md), you can also pass regions directly to a [`ForEach`](./foreach.md) to create a view for each one.
 
 For more information about preparing your app for a device with a folding display, see [Preparing your app for iPhone Duo](../TechnologyOverviews/preparing-your-app-for-iphone-duo.md). For design guidance, see Human Interface Guidelines > [Layout](https://developer.apple.com/design/human-interface-guidelines/layout).
 

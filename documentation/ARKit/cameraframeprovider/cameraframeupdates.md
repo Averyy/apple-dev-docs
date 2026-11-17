@@ -17,18 +17,12 @@ struct CameraFrameUpdates
 
 ## Topics
 
-### Instance properties
-- [static var isSupported: Bool](./issupported.md)
-  A Boolean value that indicates whether this device supports the camera frame provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
-  The authorization types you need to use the camera frame provider.
-### Instance methods
+### Iterating over camera updates
 - [func makeAsyncIterator() -> CameraFrameProvider.CameraFrameUpdates.Iterator](./cameraframeupdates/makeasynciterator%28%29.md)
   Creates an asynchronous iterator that produces `CameraFrame` elements on this asynchronous sequence.
-### Iterating over camera updates
 - [CameraFrameProvider.CameraFrameUpdates.Iterator](./cameraframeupdates/iterator.md)
   An asynchronous iterator that produces camera frame elements on an asynchronous sequence.
-### Type aliases
+### Type Aliases
 - [CameraFrameProvider.CameraFrameUpdates.Element](./cameraframeupdates/element.md)
   The type of element produced by this asynchronous sequence of camera frame structures.
 

@@ -21,10 +21,19 @@ A value that indicates that the argument must be present and its string value mu
 case contains(argumentName: String, substring: String)
 ```
 
+## Discussion
+
+If the argument is an array, the matcher is satisfied when any string element contains the substring. Elements that aren’t strings are ignored.
+
+```swift
+.contains(argumentName: "subject", substring: "Lunch")             // "Lunch plans" matches
+.contains(argumentName: "recipients", substring: "alice@")         // ["alice@example.com", "bob@example.com"] matches
+```
+
 ## Parameters
 
 - `argumentName`: The name of the argument to validate.
-- `substring`: The substring the argument’s string value must contain.
+- `substring`: The substring the argument’s string value, or one of its string elements if the argument is an array, must contain.
 
 ## See Also
 

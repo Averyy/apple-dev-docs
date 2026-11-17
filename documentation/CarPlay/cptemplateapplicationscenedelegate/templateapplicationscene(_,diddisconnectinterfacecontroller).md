@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Tells the delegate when CarPlay removes a scene from the app.
+Tells the delegate about the removal of a CarPlay scene from your app.
 
 **Availability**:
 - iOS 14.0+
@@ -23,24 +23,24 @@ optional func templateApplicationScene(_ templateApplicationScene: CPTemplateApp
 
 ## Discussion
 
-CarPlay calls this method after it disconnects the scene. You can use it to perform any cleanup.
+When CarPlay disconnects a scene from your app, it calls this method so you can perform any app-specific cleanup.
 
-> ❗ **Important**:  CarPlay doesn’t call this method for navigation apps. You must implement [`templateApplicationScene(_:didDisconnect:from:)`](./templateapplicationscene%28_,diddisconnect,from%29.md) instead.
+> ❗ **Important**: CarPlay calls this method for all app types except navigation apps. If you create a navigation app, implement the [`templateApplicationScene(_:didDisconnect:from:)`](./templateapplicationscene%28_,diddisconnect,from%29.md) method instead of this one.
 
 ## Parameters
 
-- `templateApplicationScene`: The scene disconnecting from the app.
-- `interfaceController`: The interface controller for managing the user interface of this scene.
+- `templateApplicationScene`: The scene that CarPlay disconnects from your app.
+- `interfaceController`: The controller you use to manage the interface for the scene.
 
 ## See Also
 
-### Responding to the Scene Life Cycle
+### Responding to scene life-cycle events
 - [func templateApplicationScene(CPTemplateApplicationScene, didConnect: CPInterfaceController)](./templateapplicationscene%28_,didconnect%29.md)
-  Tells the delegate about the addition of a CarPlay scene to the app.
+  Tells the delegate that CarPlay added a main scene to your app.
 - [func templateApplicationScene(CPTemplateApplicationScene, didConnect: CPInterfaceController, to: CPWindow)](./templateapplicationscene%28_,didconnect,to%29.md)
-  Tells the delegate about the addition of a CarPlay scene to your navigation app.
+  Tells the delegate that CarPlay added a main scene to your navigation app.
 - [func templateApplicationScene(CPTemplateApplicationScene, didDisconnect: CPInterfaceController, from: CPWindow)](./templateapplicationscene%28_,diddisconnect,from%29.md)
-  Tells the delegate when CarPlay removes a scene from your navigation app.
+  Tells the delegate about the removal of a CarPlay scene from your navigation app.
 
 
 ---

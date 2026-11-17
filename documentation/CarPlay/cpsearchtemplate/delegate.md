@@ -23,7 +23,7 @@ weak var delegate: (any CPSearchTemplateDelegate)? { get set }
 
 ## See Also
 
-### Providing a Search Template Delegate
+### Managing search behaviors
 - [protocol CPSearchTemplateDelegate](../cpsearchtemplatedelegate.md)
   The interface for an object that serves as the search template’s delegate.
 

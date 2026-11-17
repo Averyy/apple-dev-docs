@@ -27,7 +27,7 @@ The template only displays the detail card when a user selects a point of intere
 
 ## See Also
 
-### Managing the Detail Card’s Data
+### Managing the detail card
 - [var detailSubtitle: String?](./detailsubtitle.md)
   The detail card’s subtitle.
 - [var detailSummary: String?](./detailsummary.md)

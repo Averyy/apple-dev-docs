@@ -13,10 +13,10 @@ Whether you’re new to Apple platforms or you’ve been working with them for y
 
 Start your exploration with the foundational technologies you use to build your app or game, and make your interface shine by adopting Liquid Glass.
 
-- [App design and UI](./app-design-and-ui.md)
-  Choose a programming approach to build your app, create your app’s interface, and implement the fundamental behaviors that your app requires.
-- [Games](./games.md)
-  Deliver fantastic game experiences to millions of players worldwide using Apple hardware, graphics, audio, social gaming, and distribution tools.
+- [Apps and content](./apps-and-content.md)
+  Build software to run on people’s devices and deliver the content and features they use in their daily lives.
+- [Interface](./interface.md)
+  Design and build the interface for your app and other experiences.
 
 ## Discover Apple technologies
 
@@ -24,7 +24,7 @@ Explore the technologies you use to build your app’s unique experience. Whethe
 
 - [Data management](./data-management.md)
   Build your app’s data model, persist that data to disk or iCloud, and access people’s personal data.
-- [Core experiences](./core-experiences.md)
+- [Apple experiences](./apple-experiences.md)
   Embrace features that improve people’s experience with your app on Apple devices.
 - [Apple Intelligence and machine learning](./ai-machine-learning.md)
   Add intelligent features with Apple Intelligence, machine learning, and related technologies.
@@ -44,14 +44,14 @@ Consult the [Apple Developer Documentation](https://developer.apple.com/document
 ## Topics
 
 ### Get started
-- [App design and UI](./app-design-and-ui.md)
-  Choose a programming approach to build your app, create your app’s interface, and implement the fundamental behaviors that your app requires.
-- [Games](./games.md)
-  Deliver fantastic game experiences to millions of players worldwide using Apple hardware, graphics, audio, social gaming, and distribution tools.
+- [Apps and content](./apps-and-content.md)
+  Build software to run on people’s devices and deliver the content and features they use in their daily lives.
+- [Interface](./interface.md)
+  Design and build the interface for your app and other experiences.
 ### Discover Apple technologies
 - [Data management](./data-management.md)
   Build your app’s data model, persist that data to disk or iCloud, and access people’s personal data.
-- [Core experiences](./core-experiences.md)
+- [Apple experiences](./apple-experiences.md)
   Embrace features that improve people’s experience with your app on Apple devices.
 - [Apple Intelligence and machine learning](./ai-machine-learning.md)
   Add intelligent features with Apple Intelligence, machine learning, and related technologies.

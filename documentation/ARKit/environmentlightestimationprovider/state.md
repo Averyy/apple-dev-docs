@@ -20,8 +20,6 @@ final var state: DataProviderState { get }
 ### Inspecting the environment light estimation provider
 - [var anchorUpdates: AnchorUpdateSequence<EnvironmentProbeAnchor>](./anchorupdates.md)
   An asynchronous sequence of all anchor updates.
-- [var description: String](./description.md)
-  A textual representation of this environment light estimation provider.
 
 
 ---

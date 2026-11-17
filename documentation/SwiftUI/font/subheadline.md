@@ -42,12 +42,12 @@ static let subheadline: Font
   A font with the body text style.
 - [static let callout: Font](./callout.md)
   A font with the callout text style.
+- [static let footnote: Font](./footnote.md)
+  A font with the footnote text style.
 - [static let caption: Font](./caption.md)
   A font with the caption text style.
 - [static let caption2: Font](./caption2.md)
   Create a font with the alternate caption text style.
-- [static let footnote: Font](./footnote.md)
-  A font with the footnote text style.
 
 
 ---

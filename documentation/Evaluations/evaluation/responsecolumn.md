@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A typed column descriptor for the model responses in the detailed DataFrame.
+A typed column descriptor for the model responses in the detailed [`DataFrame`](../../TabularData/dataframe.md).
 
 **Availability**:
 - iOS 27.0+
@@ -33,11 +33,11 @@ var responseColumn: ResultColumn<Self.Subject> { get }
 - [struct EvaluationRunErrors](../evaluationrunerrors.md)
   A summary of the failures encountered during an evaluation run.
 - [struct ResultColumn](../resultcolumn.md)
-  A typed descriptor for a column in an evaluation result DataFrame.
+  A typed descriptor for a column in an evaluation result data frame.
 - [var inputColumn: ResultColumn<Self.Sample>](./inputcolumn.md)
-  A typed column descriptor for the input samples in the detailed DataFrame.
+  A typed column descriptor for the input samples in the detailed [`DataFrame`](../../TabularData/dataframe.md).
 - [var expectedColumn: ResultColumn<Self.Sample.ExpectedValue>](./expectedcolumn.md)
-  A typed column descriptor for the expected values in the detailed DataFrame.
+  A typed column descriptor for the expected values in the detailed [`DataFrame`](../../TabularData/dataframe.md).
 
 
 ---

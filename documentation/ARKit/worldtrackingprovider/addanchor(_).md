@@ -15,6 +15,12 @@ Adds a world anchor you supply to the set of currently tracked anchors.
 final func addAnchor(_ worldAnchor: WorldAnchor) async throws
 ```
 
+## Discussion
+
+ARKit persists this anchor across device restarts unless you explicitly remove it.
+
+> **Throws**: `WorldTrackingProvider.Error`
+
 ## Parameters
 
 - `worldAnchor`: A position and orientation in the world you want to track.

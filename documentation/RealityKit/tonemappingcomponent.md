@@ -4,6 +4,8 @@
 **Kind**: struct  
 **Role**: Structure
 
+A component that maps a scene’s brightness to display brightness using exposure and tone curve controls.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

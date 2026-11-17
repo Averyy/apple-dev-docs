@@ -34,7 +34,7 @@
     },
     "https://developer.apple.com/documentation/realitycomposerpro/configuring-how-materials-respond-to-light": {
       "file_path": "documentation/RealityComposerPro/configuring-how-materials-respond-to-light.md",
-      "hash": "851cd2fc9f85a669dbb9a5239b1ef47215884d409bdfc058952caf2b60fb64b8"
+      "hash": "b42a6a43cf4daf9e1320012313c8c855735636826443e2caf6b79e6c2dcb4282"
     },
     "https://developer.apple.com/documentation/realitycomposerpro/creating-a-procedural-shader-graph-material": {
       "file_path": "documentation/RealityComposerPro/creating-a-procedural-shader-graph-material.md",
@@ -74,7 +74,7 @@
     },
     "https://developer.apple.com/documentation/realitycomposerpro/lighting-a-scene-with-lights-and-light-layers": {
       "file_path": "documentation/RealityComposerPro/lighting-a-scene-with-lights-and-light-layers.md",
-      "hash": "f081278b47f619b1e06423e8a40cd53868d769a66f70855f42dd4a8d7dce5842"
+      "hash": "2f1a6623fc93455c234e8efec476e8b24b90b865ed9ec2c801ef9e98d852c15e"
     },
     "https://developer.apple.com/documentation/realitycomposerpro/optimizing-audio-playback": {
       "file_path": "documentation/RealityComposerPro/optimizing-audio-playback.md",
@@ -170,7 +170,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/configuring-how-materials-respond-to-light.json": {
       "file_path": "documentation/RealityComposerPro/configuring-how-materials-respond-to-light.md",
-      "hash": "851cd2fc9f85a669dbb9a5239b1ef47215884d409bdfc058952caf2b60fb64b8"
+      "hash": "b42a6a43cf4daf9e1320012313c8c855735636826443e2caf6b79e6c2dcb4282"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/creating-a-procedural-shader-graph-material.json": {
       "file_path": "documentation/RealityComposerPro/creating-a-procedural-shader-graph-material.md",
@@ -210,7 +210,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/lighting-a-scene-with-lights-and-light-layers.json": {
       "file_path": "documentation/RealityComposerPro/lighting-a-scene-with-lights-and-light-layers.md",
-      "hash": "f081278b47f619b1e06423e8a40cd53868d769a66f70855f42dd4a8d7dce5842"
+      "hash": "2f1a6623fc93455c234e8efec476e8b24b90b865ed9ec2c801ef9e98d852c15e"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/optimizing-audio-playback.json": {
       "file_path": "documentation/RealityComposerPro/optimizing-audio-playback.md",

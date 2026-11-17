@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+A combined charging system 2 (CCS2) connector.
+
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
@@ -18,6 +20,10 @@ case ccs2
 ```c
 CPChargingStationConnectionConnectorCCS2
 ```
+
+## Discussion
+
+This type of connector combines slow AC charging and fast DC charging into a single connector and is common in Europe, Australia, the Asia-Pacific region, and the Middle East.
 
 
 ---

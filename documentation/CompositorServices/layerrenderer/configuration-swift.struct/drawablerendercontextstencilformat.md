@@ -16,6 +16,10 @@ The metal pixel format matching that of the stencil texture used in the layer re
 var drawableRenderContextStencilFormat: MTLPixelFormat { get set }
 ```
 
+## Mentions
+
+- [Controlling Metal rendering immersion level](../../controlling-metal-rendering-immersion-level.md)
+
 ## Discussion
 
 This value corresponds to the pixel format of the stencil texture you attach to your Metal pipeline.

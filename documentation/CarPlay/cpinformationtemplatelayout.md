@@ -23,7 +23,7 @@ enum CPInformationTemplateLayout : NSInteger;
 
 ## Topics
 
-### Template Layout Styles
+### Getting the template layout style
 - [CPInformationTemplateLayout.leading](./cpinformationtemplatelayout/leading.md)
   A layout that displays a template’s items aligned to its leading edge.
 - [CPInformationTemplateLayout.twoColumn](./cpinformationtemplatelayout/twocolumn.md)
@@ -43,7 +43,7 @@ enum CPInformationTemplateLayout : NSInteger;
 
 ## See Also
 
-### Accessing the Layout
+### Accessing the layout
 - [var layout: CPInformationTemplateLayout](./cpinformationtemplate/layout.md)
   The layout that the template uses to arrange its items.
 

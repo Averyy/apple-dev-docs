@@ -4,7 +4,7 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
-An authorization result.
+Result of an authorization request.
 
 **Availability**:
 - visionOS 1.0+
@@ -29,7 +29,7 @@ typedef NSObject<OS_ar_authorization_result> * ar_authorization_result_t;
 - [ar_authorization_results_enumerate_results](./ar_authorization_results_enumerate_results.md)
   Enumerates a collection of authorization results.
 - [ar_authorization_results_enumerate_results_f](./ar_authorization_results_enumerate_results_f.md)
-  Enumerates a collection of authorization results.
+  Enumerates a collection of authorization results using a function.
 - [ar_authorization_results_get_count](./ar_authorization_results_get_count.md)
   Gets the number of authorization results in a collection.
 - [ar_authorization_status_allowed](./ar_authorization_status_t/ar_authorization_status_allowed.md)
@@ -47,6 +47,7 @@ typedef NSObject<OS_ar_authorization_result> * ar_authorization_result_t;
 - [ar_authorization_update_handler_t](./ar_authorization_update_handler_t.md)
   A handler for receiving updates in authorization status for a specific authorization type.
 - [ar_authorization_results_handler_function_t](./ar_authorization_results_handler_function_t.md)
+  Function to be called upon completion of an authorization request.
 
 
 ---

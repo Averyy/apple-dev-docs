@@ -31,6 +31,8 @@ typedef NSUInteger IMKCandidatePanelType;
 ### Constants
 - [typealias IMKCandidatesLocationHint](./imkcandidateslocationhint.md)
   Hints that suggest where to place the candidates window.
+- [let IMKCandidatesOpacityAttributeName: String](./imkcandidatesopacityattributename.md)
+  The opacity level for a candidates window.
 
 
 ---

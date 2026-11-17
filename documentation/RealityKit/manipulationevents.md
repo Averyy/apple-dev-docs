@@ -48,6 +48,7 @@ _ = content.subscribe(to: ManipulationEvents.WillEnd.self)  { event in
 
 ### Input and interaction events
 - [enum AccessibilityEvents](./accessibilityevents.md)
+  Events that occur when a person uses assistive technology to act on an accessibility element.
 
 
 ---

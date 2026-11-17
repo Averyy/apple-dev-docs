@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+A CHAdeMO connector with direct current.
+
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
@@ -18,6 +20,10 @@ case chaDeMo
 ```c
 CPChargingStationConnectionConnectorCHAdeMO
 ```
+
+## Discussion
+
+The “CHAarge de MOve” connector supports DC charging and is common in Japan. Some older vehicles in North America and Europe also support this connector type.
 
 
 ---

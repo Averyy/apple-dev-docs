@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Instance Method
 
-Show a template as an overlay over the current template hierarchy. Only one overlay template may be shown at a time.
+Displays a voice-control template as an overlay on top of your app’s current content.
 
 **Availability**:
 - iOS 27.0+
@@ -27,11 +27,21 @@ func showOverlayTemplate(_ templateToShow: CPTemplate, animated: Bool) async thr
 
 ## Discussion
 
-> **Note**: Supported template types: @c CPVoiceControlTemplate
+You can present only one overlay template at a time from your app. To hide the overlay, call the [`hideOverlayTemplate(animated:completion:)`](./hideoverlaytemplate%28animated,completion%29.md) method.
 
-The completion block will be called after the template has been shown. If the template was shown successfully, the boolean parameter will be YES. Otherwise, the boolean parameter will be NO and an @c NSError will be provided describing the failure.
+> **Note**: You can call this method from synchronous code using a completion handler, or you can call it as an asynchronous method without the completion handler. For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
-> **Note**: If the template is not successfully shown AND no completion block is specified, an exception will be thrown.
+## Parameters
+
+- `templateToShow`: A template of type [`CPVoiceControlTemplate`](../cpvoicecontroltemplate.md). All other template types generate an error.
+- `animated`: If `true`, CarPlay animates the presentation of the template.
+- `completion`: The closure to run with the results of the operation. This closure receives a Boolean value and an optional error as parameters. The Boolean value is `true` if CarPlay successfully displays the template using an overlay. If the value is `false`, CarPlay provides an error with information about what happened. If you don’t provide a closure, CarPlay throws an exception when an error occurs. CarPlay runs this closure on your app’s main thread.
+
+## See Also
+
+### Showing a template as an overlay
+- [func hideOverlayTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./hideoverlaytemplate%28animated,completion%29.md)
+  Dismisses the template previously displayed as an overlay.
 
 
 ---

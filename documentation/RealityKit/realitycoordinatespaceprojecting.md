@@ -52,6 +52,9 @@ protocol RealityCoordinateSpaceProjecting
   The coordinate space that represents the scene’s active camera.
 - [protocol RealityCoordinateSpace](./realitycoordinatespace.md)
   A 3D coordinate space that exists within a RealityKit hierarchy.
+- [init(BoundingBox)](../Spatial/rect3d/init%28_%29-b16k.md)
+- [init(Transform)](../Spatial/affinetransform3d/init%28_%29-e2xx.md)
+  Creates an affine transform from the specified transform.
 
 
 ---

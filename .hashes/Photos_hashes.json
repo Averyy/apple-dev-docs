@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/photos": {
       "file_path": "documentation/Photos/Photos.md",
-      "hash": "3fd93ffe9005d7fcfc2526e3e997a04fa113dc8ac8abd887fdaab73403347ffb"
+      "hash": "61d8ff56df77e3b2991619ffb5b16a8fcbd74e7fb48122997b8db5ef906e646b"
     },
     "https://developer.apple.com/documentation/photos/phaccesslevel": {
       "file_path": "documentation/Photos/phaccesslevel.md",
@@ -42,7 +42,7 @@
     },
     "https://developer.apple.com/documentation/photos/phasset": {
       "file_path": "documentation/Photos/phasset.md",
-      "hash": "41cfb73bca2bf73adc567570b774f85840d27d842de8e7fdaa493391230f1b30"
+      "hash": "8db3f815bd94cf022ed486f9f26a8ffb7320dadfe2f354556056a3a36974890c"
     },
     "https://developer.apple.com/documentation/photos/phasset/addeddate": {
       "file_path": "documentation/Photos/phasset/addeddate.md",
@@ -250,31 +250,31 @@
     },
     "https://developer.apple.com/documentation/photos/phasset/playbackvariation-swift.enum": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum.md",
-      "hash": "e6891f8eb3aff4a567a2affab8cf2eefa742ea1cf0296278cc40a5f094ef7f86"
+      "hash": "755a4126e2e539d3a85bd69c14cf68fc628be44c9a7255ad7661888d1bf92a57"
     },
     "https://developer.apple.com/documentation/photos/phasset/playbackvariation-swift.enum/autoloop": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum/autoloop.md",
-      "hash": "15ea58d8bb534bca98073664691d3c421af47d03ca38e3fd9bb9d403b05c76d4"
+      "hash": "49be7d6583ffce70a1fcaab48bfc690d1cea39b3761433eeffcb28da3ff6acda"
     },
     "https://developer.apple.com/documentation/photos/phasset/playbackvariation-swift.enum/init(rawvalue:)": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum/init(rawvalue).md",
-      "hash": "71f17aeab0702a2d0c056eecf55203f9b89f313f463fbc883365d765ed5fca74"
+      "hash": "a491296a5f91c844a5b618e92521fe08c96de4e6d228f557fb8c2ab0419cdfbc"
     },
     "https://developer.apple.com/documentation/photos/phasset/playbackvariation-swift.enum/longexposure": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum/longexposure.md",
-      "hash": "0ef244fd066d47637a06b2162b02d877be0554b9017ba15169d5e5856701f22a"
+      "hash": "d8df0d83737aae1a19af1c550ae1ef65248db0b82ae9112341936638c0694171"
     },
     "https://developer.apple.com/documentation/photos/phasset/playbackvariation-swift.enum/mirror": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum/mirror.md",
-      "hash": "ae36b5d87df7e73647be1c890c723076b90a745082db64a0e1434de6c0ce4fec"
+      "hash": "75c1058eba089b810eb4aa2ab6f434b81e57aa569bf87263e9d7df457260dada"
     },
     "https://developer.apple.com/documentation/photos/phasset/playbackvariation-swift.enum/none": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum/none.md",
-      "hash": "765ae641690f135f13ae527f9f6e7179be0b380019fa9f8b7b90e95e8b42766f"
+      "hash": "a4255ef816838bebf7372bf272f610bd113d85b3cb01aa09a10acc042ce93e5a"
     },
     "https://developer.apple.com/documentation/photos/phasset/playbackvariation-swift.property": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.property.md",
-      "hash": "ef7acfd98cc4875b43824f6232f057fe9fdae2cbb4363750f97a229c74d31612"
+      "hash": "5b484e2c692a1314142a3589f3e8025cb1fad41a0894d980a4158e132158bce0"
     },
     "https://developer.apple.com/documentation/photos/phasset/rating-swift.enum": {
       "file_path": "documentation/Photos/phasset/rating-swift.enum.md",
@@ -358,7 +358,7 @@
     },
     "https://developer.apple.com/documentation/photos/phassetchangerequest": {
       "file_path": "documentation/Photos/phassetchangerequest.md",
-      "hash": "2eb19070bea1f7a7162b1044b22fffca949d5be6e2fe4c11e85396436fbd6d2f"
+      "hash": "4645dbe77deca8227fcde12b766a07de01ef90d97d914bf55a32df77d2d9e70b"
     },
     "https://developer.apple.com/documentation/photos/phassetchangerequest/addkeyword(_:)": {
       "file_path": "documentation/Photos/phassetchangerequest/addkeyword(_).md",
@@ -435,6 +435,10 @@
     "https://developer.apple.com/documentation/photos/phassetchangerequest/setlivephotovideoplaybackenabled(_:)": {
       "file_path": "documentation/Photos/phassetchangerequest/setlivephotovideoplaybackenabled(_).md",
       "hash": "8faa193617c8310e8f0b791a29a0290a8fdcc3aaec098733f1a786042067f1c2"
+    },
+    "https://developer.apple.com/documentation/photos/phassetchangerequest/timezone": {
+      "file_path": "documentation/Photos/phassetchangerequest/timezone.md",
+      "hash": "445713abb4ae7a0516c3521fd022ecc8969115deead2eaef1749d5b838dd04b8"
     },
     "https://developer.apple.com/documentation/photos/phassetcollection": {
       "file_path": "documentation/Photos/phassetcollection.md",
@@ -754,7 +758,7 @@
     },
     "https://developer.apple.com/documentation/photos/phassetextendedmetadata": {
       "file_path": "documentation/Photos/phassetextendedmetadata.md",
-      "hash": "30c85b76bf941a9ea098ee1cae9034b2012586a92449796b64c4f349b96f36c4"
+      "hash": "b7007b69d38715277f9b81522d6b2ed5362dbf4ffa8993cd54618ffec03310b6"
     },
     "https://developer.apple.com/documentation/photos/phassetextendedmetadata/caption": {
       "file_path": "documentation/Photos/phassetextendedmetadata/caption.md",
@@ -767,6 +771,10 @@
     "https://developer.apple.com/documentation/photos/phassetextendedmetadata/originalfilename": {
       "file_path": "documentation/Photos/phassetextendedmetadata/originalfilename.md",
       "hash": "b9ee269b36d77be995e04b7b4cdb334a2e34d6c72496b7d9978fa7f9e2bef106"
+    },
+    "https://developer.apple.com/documentation/photos/phassetextendedmetadata/timezone": {
+      "file_path": "documentation/Photos/phassetextendedmetadata/timezone.md",
+      "hash": "51f87454a9349f9821ff459842b6bb67aef2177ac79e059dbb8cfd32fa690478"
     },
     "https://developer.apple.com/documentation/photos/phassetimageprogresshandler": {
       "file_path": "documentation/Photos/phassetimageprogresshandler.md",
@@ -2002,7 +2010,7 @@
     },
     "https://developer.apple.com/documentation/photos/phimagerequestoptions/targethdrheadroom": {
       "file_path": "documentation/Photos/phimagerequestoptions/targethdrheadroom.md",
-      "hash": "e331d3e2d0fa39ac9e8b2f899b269ab700baa1cf6e5ff7664bf65c63a8dabfd4"
+      "hash": "b6261b904d9b30472fdffb3e3feab4cce88c2e15604bf7cb4ed2cb93473ddab1"
     },
     "https://developer.apple.com/documentation/photos/phimagerequestoptions/version": {
       "file_path": "documentation/Photos/phimagerequestoptions/version.md",
@@ -2194,7 +2202,7 @@
     },
     "https://developer.apple.com/documentation/photos/phlivephotoframe/renderscale": {
       "file_path": "documentation/Photos/phlivephotoframe/renderscale.md",
-      "hash": "c609f248df46e47cd545d0ca96775b13d49a835686198a67f9d400f0c98bb95d"
+      "hash": "223afc64feea6157ec2382e027db1fe792c22d66f7bf8d7531d3dac49c43e496"
     },
     "https://developer.apple.com/documentation/photos/phlivephotoframe/time": {
       "file_path": "documentation/Photos/phlivephotoframe/time.md",
@@ -2890,7 +2898,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/photos.json": {
       "file_path": "documentation/Photos/Photos.md",
-      "hash": "3fd93ffe9005d7fcfc2526e3e997a04fa113dc8ac8abd887fdaab73403347ffb"
+      "hash": "61d8ff56df77e3b2991619ffb5b16a8fcbd74e7fb48122997b8db5ef906e646b"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phaccesslevel.json": {
       "file_path": "documentation/Photos/phaccesslevel.md",
@@ -2930,7 +2938,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phasset.json": {
       "file_path": "documentation/Photos/phasset.md",
-      "hash": "41cfb73bca2bf73adc567570b774f85840d27d842de8e7fdaa493391230f1b30"
+      "hash": "8db3f815bd94cf022ed486f9f26a8ffb7320dadfe2f354556056a3a36974890c"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phasset/addeddate.json": {
       "file_path": "documentation/Photos/phasset/addeddate.md",
@@ -3138,31 +3146,31 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phasset/playbackvariation-swift.enum.json": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum.md",
-      "hash": "e6891f8eb3aff4a567a2affab8cf2eefa742ea1cf0296278cc40a5f094ef7f86"
+      "hash": "755a4126e2e539d3a85bd69c14cf68fc628be44c9a7255ad7661888d1bf92a57"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phasset/playbackvariation-swift.enum/autoloop.json": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum/autoloop.md",
-      "hash": "15ea58d8bb534bca98073664691d3c421af47d03ca38e3fd9bb9d403b05c76d4"
+      "hash": "49be7d6583ffce70a1fcaab48bfc690d1cea39b3761433eeffcb28da3ff6acda"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phasset/playbackvariation-swift.enum/init(rawvalue:).json": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum/init(rawvalue).md",
-      "hash": "71f17aeab0702a2d0c056eecf55203f9b89f313f463fbc883365d765ed5fca74"
+      "hash": "a491296a5f91c844a5b618e92521fe08c96de4e6d228f557fb8c2ab0419cdfbc"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phasset/playbackvariation-swift.enum/longexposure.json": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum/longexposure.md",
-      "hash": "0ef244fd066d47637a06b2162b02d877be0554b9017ba15169d5e5856701f22a"
+      "hash": "d8df0d83737aae1a19af1c550ae1ef65248db0b82ae9112341936638c0694171"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phasset/playbackvariation-swift.enum/mirror.json": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum/mirror.md",
-      "hash": "ae36b5d87df7e73647be1c890c723076b90a745082db64a0e1434de6c0ce4fec"
+      "hash": "75c1058eba089b810eb4aa2ab6f434b81e57aa569bf87263e9d7df457260dada"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phasset/playbackvariation-swift.enum/none.json": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.enum/none.md",
-      "hash": "765ae641690f135f13ae527f9f6e7179be0b380019fa9f8b7b90e95e8b42766f"
+      "hash": "a4255ef816838bebf7372bf272f610bd113d85b3cb01aa09a10acc042ce93e5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phasset/playbackvariation-swift.property.json": {
       "file_path": "documentation/Photos/phasset/playbackvariation-swift.property.md",
-      "hash": "ef7acfd98cc4875b43824f6232f057fe9fdae2cbb4363750f97a229c74d31612"
+      "hash": "5b484e2c692a1314142a3589f3e8025cb1fad41a0894d980a4158e132158bce0"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phasset/rating-swift.enum.json": {
       "file_path": "documentation/Photos/phasset/rating-swift.enum.md",
@@ -3246,7 +3254,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phassetchangerequest.json": {
       "file_path": "documentation/Photos/phassetchangerequest.md",
-      "hash": "2eb19070bea1f7a7162b1044b22fffca949d5be6e2fe4c11e85396436fbd6d2f"
+      "hash": "4645dbe77deca8227fcde12b766a07de01ef90d97d914bf55a32df77d2d9e70b"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phassetchangerequest/addkeyword(_:).json": {
       "file_path": "documentation/Photos/phassetchangerequest/addkeyword(_).md",
@@ -3323,6 +3331,10 @@
     "https://developer.apple.com/tutorials/data/documentation/photos/phassetchangerequest/setlivephotovideoplaybackenabled(_:).json": {
       "file_path": "documentation/Photos/phassetchangerequest/setlivephotovideoplaybackenabled(_).md",
       "hash": "8faa193617c8310e8f0b791a29a0290a8fdcc3aaec098733f1a786042067f1c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photos/phassetchangerequest/timezone.json": {
+      "file_path": "documentation/Photos/phassetchangerequest/timezone.md",
+      "hash": "445713abb4ae7a0516c3521fd022ecc8969115deead2eaef1749d5b838dd04b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phassetcollection.json": {
       "file_path": "documentation/Photos/phassetcollection.md",
@@ -3642,7 +3654,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phassetextendedmetadata.json": {
       "file_path": "documentation/Photos/phassetextendedmetadata.md",
-      "hash": "30c85b76bf941a9ea098ee1cae9034b2012586a92449796b64c4f349b96f36c4"
+      "hash": "b7007b69d38715277f9b81522d6b2ed5362dbf4ffa8993cd54618ffec03310b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phassetextendedmetadata/caption.json": {
       "file_path": "documentation/Photos/phassetextendedmetadata/caption.md",
@@ -3655,6 +3667,10 @@
     "https://developer.apple.com/tutorials/data/documentation/photos/phassetextendedmetadata/originalfilename.json": {
       "file_path": "documentation/Photos/phassetextendedmetadata/originalfilename.md",
       "hash": "b9ee269b36d77be995e04b7b4cdb334a2e34d6c72496b7d9978fa7f9e2bef106"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photos/phassetextendedmetadata/timezone.json": {
+      "file_path": "documentation/Photos/phassetextendedmetadata/timezone.md",
+      "hash": "51f87454a9349f9821ff459842b6bb67aef2177ac79e059dbb8cfd32fa690478"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phassetimageprogresshandler.json": {
       "file_path": "documentation/Photos/phassetimageprogresshandler.md",
@@ -4890,7 +4906,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phimagerequestoptions/targethdrheadroom.json": {
       "file_path": "documentation/Photos/phimagerequestoptions/targethdrheadroom.md",
-      "hash": "e331d3e2d0fa39ac9e8b2f899b269ab700baa1cf6e5ff7664bf65c63a8dabfd4"
+      "hash": "b6261b904d9b30472fdffb3e3feab4cce88c2e15604bf7cb4ed2cb93473ddab1"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phimagerequestoptions/version.json": {
       "file_path": "documentation/Photos/phimagerequestoptions/version.md",
@@ -5082,7 +5098,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phlivephotoframe/renderscale.json": {
       "file_path": "documentation/Photos/phlivephotoframe/renderscale.md",
-      "hash": "c609f248df46e47cd545d0ca96775b13d49a835686198a67f9d400f0c98bb95d"
+      "hash": "223afc64feea6157ec2382e027db1fe792c22d66f7bf8d7531d3dac49c43e496"
     },
     "https://developer.apple.com/tutorials/data/documentation/photos/phlivephotoframe/time.json": {
       "file_path": "documentation/Photos/phlivephotoframe/time.md",
@@ -5789,6 +5805,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 1444
+    "total_pages": 1448
   }
 }

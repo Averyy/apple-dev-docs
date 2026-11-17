@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A string value the represents the name of the resource group the framework loads an image from.
+The name of the resource group the framework loads an image from.
 
 **Availability**:
 - visionOS 2.0+
@@ -26,8 +26,6 @@ The property contains a value only if the framework loads a reference image from
   The size, in meters, of a reference image in the real world.
 - [var name: String?](./name.md)
   The name of a reference image.
-- [var description: String](./description.md)
-  A textual representation of this reference image.
 
 
 ---

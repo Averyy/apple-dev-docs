@@ -4,6 +4,8 @@
 **Kind**: struct  
 **Role**: Structure
 
+An iterator over a sequence of updated anchors.
+
 **Availability**:
 - visionOS 1.0+
 

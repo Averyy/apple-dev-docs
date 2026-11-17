@@ -23,7 +23,7 @@ associatedtype Body : EntitySnippetContent where Self == Self.Body.Entity
 ## See Also
 
 ### Configuring the snippet
-- [static var snippet: Self.Body](./snippet.md)
+- [static var snippet: Self.Body](./snippet-swift.type.property.md)
   The snippet that contains the view to display.
 
 

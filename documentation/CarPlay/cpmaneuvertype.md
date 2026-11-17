@@ -23,10 +23,7 @@ enum CPManeuverType : NSUInteger;
 
 ## Topics
 
-### Initializers
-- [init?(rawValue: UInt)](./cpmaneuvertype/init%28rawvalue%29.md)
-  Creates a new maneuver type with the provided value.
-### Maneuver types
+### Getting the maneuver type
 - [CPManeuverType.arriveAtDestination](./cpmaneuvertype/arriveatdestination.md)
 - [CPManeuverType.arriveAtDestinationLeft](./cpmaneuvertype/arriveatdestinationleft.md)
 - [CPManeuverType.arriveAtDestinationRight](./cpmaneuvertype/arriveatdestinationright.md)
@@ -81,6 +78,9 @@ enum CPManeuverType : NSUInteger;
 - [CPManeuverType.uTurn](./cpmaneuvertype/uturn.md)
 - [CPManeuverType.uTurnAtRoundabout](./cpmaneuvertype/uturnatroundabout.md)
 - [CPManeuverType.uTurnWhenPossible](./cpmaneuvertype/uturnwhenpossible.md)
+### Creating a maneuver type
+- [init?(rawValue: UInt)](./cpmaneuvertype/init%28rawvalue%29.md)
+  Creates a new maneuver type with the provided value.
 
 ## Relationships
 
@@ -99,6 +99,13 @@ enum CPManeuverType : NSUInteger;
   An object that describes a single navigation instruction.
 - [enum CPManeuverState](./cpmaneuverstate.md)
   Values that describe the state of a maneuver.
+- [class CPTravelEstimates](./cptravelestimates.md)
+  An object that describes the time and distance remaining for a maneuver in a navigation session.
+- [class CPTripPreviewTextConfiguration](./cptrippreviewtextconfiguration.md)
+  A configuration object for changing the button titles on a trip preview.
+- [func NSStringFromCPManeuverType(CPManeuverType) -> String!](./nsstringfromcpmaneuvertype%28_%29.md)
+- [struct CPLocationCoordinate3D](./cplocationcoordinate3d.md)
+  CPLocationCoordinate3D represents a three-dimensional coordinate with latitude, longitude, and altitude components.
 
 
 ---

@@ -41,15 +41,15 @@ RealityKit uses a [`SceneUpdateContext`](./sceneupdatecontext.md) to pass inform
 
 ## See Also
 
-### System configuration
-- [Implementing systems for entities in a scene](./implementing-systems-for-entities-in-a-scene.md)
-  Apply behaviors and physical effects to the objects and characters in a RealityKit scene with the Entity Component System (ECS).
-- [Animating entity rotation with a system](./animated-rotation-with-a-system.md)
-  Rotate an entity around an axis using a Component and a System.
-- [protocol System](./system.md)
-  An object that affects multiple entities in every update of a RealityKit scene.
-- [struct SystemUpdateCondition](./systemupdatecondition.md)
-  A condition which causes a system to update.
+### Implementing system logic
+- [func update(context: SceneUpdateContext)](./system/update%28context%29.md)
+  Updates entities up to once every scene update.
+- [struct EntityQuery](./entityquery.md)
+  An object that retrieves entities from a scene.
+- [struct QueryPredicate](./querypredicate.md)
+  An object that defines the criteria for an entity query.
+- [struct QueryResult](./queryresult.md)
+  An object that returns the results of an entity query.
 
 
 ---

@@ -102,12 +102,6 @@ If you’re unfamiliar with the specialized terminology regarding the manipulati
 ### Structures
 - [struct AudioStreamPacketDependencyDescription](./audiostreampacketdependencydescription.md)
 ### Variables
-- [var kAudioChannelLayoutTag_Ogg_3_0: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_3_0.md)
-- [var kAudioChannelLayoutTag_Ogg_4_0: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_4_0.md)
-- [var kAudioChannelLayoutTag_Ogg_5_0: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_5_0.md)
-- [var kAudioChannelLayoutTag_Ogg_5_1: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_5_1.md)
-- [var kAudioChannelLayoutTag_Ogg_6_1: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_6_1.md)
-- [var kAudioChannelLayoutTag_Ogg_7_1: AudioChannelLayoutTag](./kaudiochannellayouttag_ogg_7_1.md)
 - [var kAudioFormatAPAC: AudioFormatID](./kaudioformatapac.md)
 - [var kAudio_BadFilePathError: OSStatus](./kaudio_badfilepatherror.md)
 - [var kAudio_FilePermissionError: OSStatus](./kaudio_filepermissionerror.md)

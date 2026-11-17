@@ -4,6 +4,8 @@
 **Kind**: enum  
 **Role**: Enumeration
 
+Playback variation describes the Live Photo presentation effect applied to an asset (for example, Long Exposure).
+
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+

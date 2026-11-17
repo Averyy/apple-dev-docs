@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The center point of the world map’s space-mapping data, relative to the world coordinate origin of the session the map was recorded in.
+The center point of the world map’s space-mapping data, in meters, relative to the world coordinate origin of the session the map was recorded in.
 
 **Availability**:
 - iOS 12.0+
@@ -30,7 +30,7 @@ The [`extent`](./extent.md) and [`center`](./center.md) properties together defi
 - [var anchors: [ARAnchor]](./anchors.md)
   The set of anchors recorded in the world map.
 - [var extent: simd_float3](./extent.md)
-  The size of the world map’s space-mapping data, relative to the world coordinate origin of the session the map was recorded in.
+  The size of the world map’s space-mapping data, in meters, relative to the world coordinate origin of the session the map was recorded in.
 
 
 ---

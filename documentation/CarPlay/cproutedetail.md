@@ -87,6 +87,20 @@ Use route information to differentiate between routing options and provide trans
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
 - [Sendable](../Swift/sendable.md)
 
+## See Also
+
+### Route details
+- [class CPRouteChoice](./cproutechoice.md)
+  A possible route for a trip.
+- [class CPRouteInformation](./cprouteinformation.md)
+  A class that describes the characteristic elements of a route.
+- [class CPRouteSegment](./cproutesegment.md)
+  CPRouteSegment describes information pertaining to a segment of a route.
+- [enum CPRerouteReason](./cpreroutereason.md)
+  Values that represent reasons for navigation rerouting.
+- [enum CPRouteSource](./cproutesource.md)
+- [func NSStringFromCPRerouteReason(CPRerouteReason) -> String!](./nsstringfromcpreroutereason%28_%29.md)
+
 
 ---
 

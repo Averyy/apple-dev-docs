@@ -25,7 +25,7 @@ struct AxisAlignedBoundingBox
 - [var max: SIMD3<Float>](./axisalignedboundingbox/max.md)
   The maximum coordinates for the bounding box.
 - [var min: SIMD3<Float>](./axisalignedboundingbox/min.md)
-  Minimum coordinates for the bounding box.
+  The minimum coordinates for the bounding box.
 ### Operators
 - [static func == (ObjectAnchor.AxisAlignedBoundingBox, ObjectAnchor.AxisAlignedBoundingBox) -> Bool](./axisalignedboundingbox/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two axis-aligned bounding boxes are equal.
@@ -42,8 +42,6 @@ struct AxisAlignedBoundingBox
 ### Inspecting an object anchor
 - [var boundingBox: ObjectAnchor.AxisAlignedBoundingBox](./boundingbox.md)
   The bounding box of an anchor.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 - [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether the framework is currently tracking an object anchor.
 - [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)

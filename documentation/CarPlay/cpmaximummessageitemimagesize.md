@@ -4,7 +4,7 @@
 **Kind**: var  
 **Role**: Global Variable
 
-The maximum size of a message list item’s image.
+The maximum size for images in the leading and trailing regions of a message list item.
 
 **Availability**:
 - iOS 12.0+
@@ -23,13 +23,19 @@ extern const CGSize CPMaximumMessageItemImageSize;
 
 ## Discussion
 
-At runtime, use this value to determine the maximum size of an image that a message list item can display in its leading and trailing regions.
+This constant contains the maximum size for custom images you use with the [`CPMessageListItemLeadingConfiguration`](./cpmessagelistitemleadingconfiguration.md) and [`CPMessageListItemTrailingConfiguration`](./cpmessagelistitemtrailingconfiguration.md) types. The size values are in points. To get the pixel values, multiply this constant by the scale factor in the current traits collection for the vehicle, which you can get from the current [`CPInterfaceController`](./cpinterfacecontroller.md) object.
 
 ## See Also
 
-### Creating a Configuration
-- [init(leadingItem: CPMessageLeadingItem, leadingImage: UIImage?, unread: Bool)](./cpmessagelistitemleadingconfiguration/init%28leadingitem,leadingimage,unread%29.md)
-  Creates a leading configuration that contains an item and an image.
+### List items
+- [class CPMessageListItem](./cpmessagelistitem.md)
+  A list template row that manages a text message thread or contact.
+- [class CPMessageListItemLeadingConfiguration](./cpmessagelistitemleadingconfiguration.md)
+  A type that defines the content at the leading edge of a message list item’s row.
+- [class CPMessageListItemTrailingConfiguration](./cpmessagelistitemtrailingconfiguration.md)
+  A type that defines the content at the trailing edge of a message list item’s row.
+- [let CPMaximumMessageItemLeadingDetailTextImageSize: CGSize](./cpmaximummessageitemleadingdetailtextimagesize.md)
+  The maximum size for images in the detail text image of a message list item.
 
 
 ---

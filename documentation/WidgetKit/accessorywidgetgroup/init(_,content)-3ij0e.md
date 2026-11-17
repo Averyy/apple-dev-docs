@@ -20,7 +20,7 @@ Available when `Label` is `Text` and `Content` conforms to `View`.
 
 ## Discussion
 
-This initializer creates a `Text` view on your behalf, and treats the label similar to `Text/init(_:)-9d1g4`. See `Text` for more information about localizing strings.
+This initializer creates a `SwiftUI/Text` view on your behalf, and treats the label similar to `SwiftUI/Text/init(_:)-9d1g4`. See `SwiftUI/Text` for more information about localizing strings.
 
 ## Parameters
 

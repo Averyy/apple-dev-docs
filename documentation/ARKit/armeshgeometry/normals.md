@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-Rays that define which direction is outside for each face.
+Rays that define which direction is outside for each vertex.
 
 **Availability**:
 - iOS 13.4+

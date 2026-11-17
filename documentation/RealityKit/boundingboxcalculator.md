@@ -35,6 +35,22 @@ struct BoundingBoxCalculator
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Deformers
+- [struct MeshDeformerComponent](./meshdeformercomponent.md)
+  The component that applies mesh deformations to an `Entity`.
+- [protocol MeshDeformer](./meshdeformer.md)
+  An interface for all deformation types in a deformation definition, both built-in and custom. The users overrides all functions to implement a custom `MeshDeformer`, and can in general ignore all but the constructors for built-in deformers.
+- [struct SkinningDeformer](./skinningdeformer.md)
+  A deformation that binds a 3D mesh to an underlying skeleton.
+- [struct BlendShapeDeformer](./blendshapedeformer.md)
+  A blend-shape deformation that interpolates between N meshes according to a weighted sum. Consumes information from the `BlendShapeWeightsComponent`
+- [struct SubdivisionSurfaceDeformer](./subdivisionsurfacedeformer.md)
+  OpenSubdiv surface deformation
+- [struct RenormalizingDeformer](./renormalizingdeformer.md)
+  Recalculates tangent frame based on current state of positions
+
 
 ---
 

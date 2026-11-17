@@ -30,7 +30,7 @@ Set this property to `nil` if there’s no current lane guidance.
 
 ## See Also
 
-### Managing Upcoming Maneuvers
+### Managing upcoming maneuvers
 - [var upcomingManeuvers: [CPManeuver]](./upcomingmaneuvers.md)
   The next set of maneuvers the user should perform while following the current route.
 - [var maneuverState: CPManeuverState](./maneuverstate.md)

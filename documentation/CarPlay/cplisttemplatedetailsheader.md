@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-A header for list templates that displays rich media content with action buttons.
+A header section that displays rich media content and action buttons above a list of items.
 
 **Availability**:
 - iOS 26.4+
@@ -24,42 +24,35 @@ class CPListTemplateDetailsHeader
 
 ## Overview
 
-CPListTemplateDetailsHeader provides a prominent header section for list templates that includes a thumbnail image, title, subtitle, and configurable action buttons. This component is ideal for displaying media items, content details, or featured items at the top of a list template in CarPlay applications.
+A `CPListTemplateDetailsHeader` object stores header content to display at the top of a list interface. You create this type and specify the title and subtitle text, thumbnail image, and optional action buttons you want to display in the header section of your list. CarPlay takes the content you provide and displays it for you, adapting the content automatically to different screen sizes and interface styles.
 
-The header supports:
-
-- A thumbnail image with overlay and progress indicators
-- Primary title and subtitle text
-- Up to a maximum number of action buttons for user interaction
-- Automatic layout and styling appropriate for CarPlay interfaces
-
-This class is designed specifically for CarPlay templates and follows CarPlay design guidelines for typography, spacing, and interaction patterns. The header automatically adapts to different screen sizes and orientations while maintaining optimal readability and touch target sizes.
+To add a header to your list interface, create a `CPListTemplateDetailsHeader` and assign it to your [`CPListTemplate`](./cplisttemplate.md) object. After creating the list template object, assign your header to the template’s [`listHeader`](./cplisttemplate/listheader.md) property. If you assign a header to your list template after the template is visible on the vehicle’s display, CarPlay updates the list interface to display the header.
 
 ## Topics
 
-### Initializers
-- [init?(coder: NSCoder)](./cplisttemplatedetailsheader/init%28coder%29.md)
+### Creating a details header
 - [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, actionButtons: [CPButton])](./cplisttemplatedetailsheader/init%28thumbnail,title,subtitle,actionbuttons%29.md)
-  Creates a new details header with the specified content and action buttons.
+  Creates a details header with a thumbnail image, optional text, and action buttons.
 - [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, bodyVariants: [NSAttributedString], actionButtons: [CPButton])](./cplisttemplatedetailsheader/init%28thumbnail,title,subtitle,bodyvariants,actionbuttons%29.md)
-  Creates a new details header with the specified content and action buttons.
-### Instance Properties
-- [var actionButtons: [CPButton]](./cplisttemplatedetailsheader/actionbuttons.md)
-  An array of action buttons displayed in the header.
-- [var bodyVariants: [NSAttributedString]](./cplisttemplatedetailsheader/bodyvariants.md)
-  An optional array of strings, ordered from most to least preferred.
-- [var subtitle: String?](./cplisttemplatedetailsheader/subtitle.md)
-  The secondary subtitle text displayed below the title.
-- [var thumbnail: CPThumbnailImage](./cplisttemplatedetailsheader/thumbnail.md)
-  The thumbnail image displayed in the header.
-- [var title: String?](./cplisttemplatedetailsheader/title.md)
-  The primary title text displayed in the header.
-- [var wantsAdaptiveBackgroundStyle: Bool](./cplisttemplatedetailsheader/wantsadaptivebackgroundstyle.md)
-  A Boolean value that determines whether to use a custom background style.
-### Type Properties
+  Creates a details header with a thumbnail image, optional text, and action buttons.
+- [init?(coder: NSCoder)](./cplisttemplatedetailsheader/init%28coder%29.md)
 - [class var maximumActionButtonCount: Int](./cplisttemplatedetailsheader/maximumactionbuttoncount.md)
-  The maximum number of action buttons that can be displayed in the header.
+  The maximum number of action buttons the header can display.
 - [class var maximumActionButtonSize: CGSize](./cplisttemplatedetailsheader/maximumactionbuttonsize.md)
+  The maximum size of the images you use to create action buttons.
+### Managing the header’s content
+- [var thumbnail: CPThumbnailImage](./cplisttemplatedetailsheader/thumbnail.md)
+  The thumbnail image to display in the header.
+- [var title: String?](./cplisttemplatedetailsheader/title.md)
+  The primary text to display in the header.
+- [var subtitle: String?](./cplisttemplatedetailsheader/subtitle.md)
+  The text to display in the header below the title.
+- [var bodyVariants: [NSAttributedString]](./cplisttemplatedetailsheader/bodyvariants.md)
+  An optional array of localized strings to display beneath the subtitle.
+- [var actionButtons: [CPButton]](./cplisttemplatedetailsheader/actionbuttons.md)
+  An array of action buttons to display in the header.
+- [var wantsAdaptiveBackgroundStyle: Bool](./cplisttemplatedetailsheader/wantsadaptivebackgroundstyle.md)
+  A Boolean value that indicates whether to apply a custom background style to the header.
 
 ## Relationships
 
@@ -76,6 +69,12 @@ This class is designed specifically for CarPlay templates and follows CarPlay de
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
 - [Sendable](../Swift/sendable.md)
+
+## See Also
+
+### Headers and special cells
+- [class CPAssistantCellConfiguration](./cpassistantcellconfiguration.md)
+  A type that configures a special row in for performing app-related actions using Siri.
 
 
 ---

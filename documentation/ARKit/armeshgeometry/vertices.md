@@ -27,7 +27,7 @@ The [`count`](../argeometrysource/count.md) equals the total number of vertices.
 The following code demonstrates retrieving a vertex at a particular index.
 
 ```swift
-extension ARMeshGeometry { 
+extension ARMeshGeometry {
     func vertex(at index: UInt32) -> SIMD3<Float> {
         assert(vertices.format == MTLVertexFormat.float3, "Expected three floats (twelve bytes) per vertex.")
         let vertexPointer = vertices.buffer.contents().advanced(by: vertices.offset + (vertices.stride * Int(index)))

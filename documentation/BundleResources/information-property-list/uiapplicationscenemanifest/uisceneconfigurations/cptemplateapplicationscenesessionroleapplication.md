@@ -19,7 +19,7 @@ Configurations for scenes that you use to display template content on a CarPlay-
 
 Use this key to specify the scene configuration you use when displaying content on a CarPlay-enabled vehicle screen.
 
-For more information, see [Displaying Content in CarPlay](../../../../CarPlay/displaying-content-in-carplay.md).
+For more information, see [Building your app’s initial CarPlay interface](../../../../CarPlay/building-your-apps-initial-carplay-interface.md).
 
 ## Topics
 

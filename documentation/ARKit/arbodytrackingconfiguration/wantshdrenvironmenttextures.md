@@ -24,9 +24,11 @@ var wantsHDREnvironmentTextures: Bool { get set }
 
 The default value is [`true`](../../Swift/true.md). If your renderer supports HDR environment textures, this feature effects more realistic reflections.
 
-![Screenshot showing low and high dynamic range environment textures in a side by side comparison.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3281347@2x.png)
-
 RealityKit and SceneKit both support HDR environment textures. For more information, see [Adding realistic reflections to an AR experience](../adding-realistic-reflections-to-an-ar-experience.md).
+
+## Discussion
+
+![Screenshot showing low and high dynamic range environment textures in a side by side comparison.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3281347@2x.png)
 
 ## See Also
 

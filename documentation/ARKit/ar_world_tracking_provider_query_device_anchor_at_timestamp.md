@@ -15,6 +15,30 @@ Queries the predicted pose of the current device at a given time.
 extern ar_device_anchor_query_status_t ar_world_tracking_provider_query_device_anchor_at_timestamp(ar_world_tracking_provider_t world_tracking_provider, CFTimeInterval timestamp, ar_device_anchor_t device_anchor);
 ```
 
+## Return Value
+
+An `ar_device_anchor_query_status_t` value indicating whether the device anchor was successfully retrieved at the given timestamp or not.
+
+## Discussion
+
+The origin is a right-handed coordinate system and is defined such that X points to the right, Y points up, and Z points backward.
+
+Example usage:
+
+```
+auto timing_info = cp_drawable_get_frame_timing(drawable);
+auto time = cp_time_to_cf_time_interval(cp_frame_timing_get_presentation_time(timing_info));
+const ar_device_anchor_query_status_t status = ar_world_tracking_provider_query_device_anchor_at_timestamp(_provider, time, &device_anchor);
+```
+
+> **Note**: This API is not thread safe.
+
+## Parameters
+
+- `world_tracking_provider`: The world tracking provider.
+- `timestamp`: The timestamp to get the device anchor at. The timestamp should be provided as mach absolute time in seconds.
+- `device_anchor`: The output device anchor.
+
 ## See Also
 
 ### World tracking
@@ -43,7 +67,7 @@ extern ar_device_anchor_query_status_t ar_world_tracking_provider_query_device_a
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-Types of shape used to draw a condensed row element.
+Shapes you can apply to an element’s image.
 
 **Availability**:
 - iOS 26.0+
@@ -21,13 +21,17 @@ enum Shape
 enum CPListImageRowItemCondensedElementShape : NSInteger;
 ```
 
+## Overview
+
+When creating a condensed row element, use the constants in this type to specify the shape to apply to the image in each element.
+
 ## Topics
 
 ### Enumeration Cases
 - [CPListImageRowItemCondensedElement.Shape.circular](./shape/circular.md)
-  The list item will render an element with a circular image.
+  A circular shape for the element’s image.
 - [CPListImageRowItemCondensedElement.Shape.roundedRectangle](./shape/roundedrectangle.md)
-  The list item will render an element with a rounded rectangle image.
+  A rounded rectangle shape for the element’s image.
 ### Initializers
 - [init?(rawValue: Int)](./shape/init%28rawvalue%29.md)
 
@@ -40,6 +44,12 @@ enum CPListImageRowItemCondensedElementShape : NSInteger;
 - [RawRepresentable](../../Swift/rawrepresentable.md)
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
+
+## See Also
+
+### Getting the element’s shape
+- [var imageShape: CPListImageRowItemCondensedElement.Shape](./imageshape.md)
+  The shape to apply to the current element’s image.
 
 
 ---

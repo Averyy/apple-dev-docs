@@ -37,6 +37,12 @@ struct RealityViewCamera
 
 ### Camera mode settings
 - [struct CameraControls](./cameracontrols.md)
+  Options that determine how people use gestures to pan, orbit, tilt, or dolly a virtual camera.
+- [func realityViewCameraControls(CameraControls) -> some View
+](../SwiftUI/view/realityviewcameracontrols%28_%29.md)
+  Adds gestures that control the position and direction of a virtual camera.
+- [var realityViewCameraControls: CameraControls](../SwiftUI/environmentvalues/realityviewcameracontrols.md)
+  The camera controls for the reality view.
 - [ARView.CameraMode](./arview/cameramode-swift.enum.md)
   The available camera modes.
 

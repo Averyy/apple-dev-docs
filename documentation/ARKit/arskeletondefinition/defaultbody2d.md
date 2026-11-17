@@ -20,6 +20,10 @@ class var defaultBody2D: ARSkeletonDefinition { get }
 @property (class, nonatomic, readonly) ARSkeletonDefinition * defaultBody2DSkeletonDefinition;
 ```
 
+## Discussion
+
+> **See Also**: [`ARBody2D`](../arbody2d.md)
+
 
 ---
 

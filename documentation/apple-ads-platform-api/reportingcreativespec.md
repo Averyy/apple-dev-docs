@@ -61,8 +61,8 @@ The `ReportingCreativeSpec` captures the locale language of a creative as record
   Cost metrics breakdown by attribution type.
 - [object RateMetrics](./ratemetrics.md)
   Rate metrics breakdown by attribution type.
-- [type ReportingAdChannelType](./reportingadchanneltype.md)
-  The ad channel that served a report row’s metrics.
+- [type ReportingBillingEvent](./reportingbillingevent.md)
+  The billing event of the campaign a report row belongs to.
 
 
 ---

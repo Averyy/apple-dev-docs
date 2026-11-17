@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initialize a description of the playable media content that is represented by template items.
+Creates a playback configuration object with the specified presentation style, playback action, and media details.
 
 **Availability**:
 - iOS 26.4+
@@ -21,16 +21,16 @@ init(preferredPresentation: CPPlaybackConfiguration.Presentation, playbackAction
 - (instancetype) initWithPreferredPresentation:(CPPlaybackPresentation) preferredPresentation playbackAction:(CPPlaybackAction) playbackAction elapsedTime:(CMTime) elapsedTime duration:(CMTime) duration;
 ```
 
-## Discussion
+## Return Value
 
-> **Note**: Video presentation may be unsupported for this session  (see `-[CPSessionConfiguration videoPlaybackSupported]`) or may be unavailable due to playback policy.
+An initialized configuration object.
 
 ## Parameters
 
-- `preferredPresentation`: The preferred style of media presentation shown after selecting the item.
-- `playbackAction`: The playback action to perform on this item, such as play, pause, or replay.
-- `elapsedTime`: The elapsed playback time as a CMTime value.
-- `duration`: The total duration of the media content as a CMTime value. Provide 0 if the duration of the content is unknown or unavailable, for example in live-streaming content.
+- `preferredPresentation`: The preferred way to present the media when someone selects it. The system can configure a playback interface automatically, or you can present the interface yourself.
+- `playbackAction`: The action to take when someone selects the item.
+- `elapsedTime`: The elapsed playback time for the media. This parameter indicates at which point to start playing the media.
+- `duration`: The duration of the media content in seconds. Specify `0` if the duration is unknown or unavailable. For example, you might specify `0` for live-streaming content.
 
 
 ---

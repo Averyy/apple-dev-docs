@@ -32,7 +32,7 @@ func setPointsOfInterest(_ pointsOfInterest: [CPPointOfInterest], selectedIndex:
 
 ## See Also
 
-### Managing the Points of Interest
+### Managing the points of interest
 - [var pointsOfInterest: [CPPointOfInterest]](./pointsofinterest.md)
   The points of interest the template displays on the map and in the scrollable picker.
 - [var selectedIndex: Int](./selectedindex.md)

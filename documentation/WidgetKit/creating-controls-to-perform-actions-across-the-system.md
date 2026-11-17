@@ -11,7 +11,7 @@ A control allows your app to execute an action, launch your app to a specific vi
 
 Controls can be buttons or toggles: buttons perform an action, and toggles perform an action and switch between two states. Configure a control using SwiftUI views and modifiers that define strings and icons that the system uses to display the control. Anticipate people using controls from different places throughout the system, and provide appropriate configuration details for the best experience. For added privacy, require device authentication before a control performs its action, as well as redact the text in a control when the device is locked.
 
-Create your control’s icon using a symbol image, such as one from [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols). Using symbols allows the system to dynamically apply tint color, weight, scale, and other stylistic traits. While Apple platforms include thousands of symbols, you can also build custom symbols. To learn more, read [Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md).
+Create your control’s icon using a symbol image, such as one from [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols). Using symbols allows the system to dynamically apply tint color, weight, scale, and other stylistic traits. While Apple platforms include thousands of symbols, you can also build custom symbols. To learn more, read [Creating custom SF Symbols](../TechnologyOverviews/creating-custom-sf-symbols.md).
 
 Make controls configurable to allow someone to choose what it does. This ability is helpful in cases where a control can be configured with a list of options, such as which light to turn on or off.
 

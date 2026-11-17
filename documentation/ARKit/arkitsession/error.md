@@ -49,7 +49,7 @@ struct Error
 
 ### Starting and stopping a session
 - [convenience init()](./init%28%29.md)
-  Creates a new session.
+  Creates a session.
 - [func run([any DataProvider]) async throws](./run%28_%29.md)
   Runs a session with the data providers you supply.
 - [func stop()](./stop%28%29.md)

@@ -26,8 +26,6 @@ var name: String { get }
   The input file the framework uses for loading a reference object.
 - [var usdzFile: URL?](./usdzfile.md)
   The trained USDZ file, if the reference object includes one.
-- [var description: String](./description.md)
-  A textual representation of this reference object.
 
 
 ---

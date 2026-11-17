@@ -10886,7 +10886,7 @@
     },
     "https://developer.apple.com/documentation/swift/copyable": {
       "file_path": "documentation/Swift/copyable.md",
-      "hash": "313a124bcbc42638c7ba75f1fb64e0513ab29d9aedda30d838808c4c9c858866"
+      "hash": "96629ceb48f1b47bf259859adb8a006fe4ff6443fbee5af709307e56c20c28f4"
     },
     "https://developer.apple.com/documentation/swift/countableclosedrange": {
       "file_path": "documentation/Swift/countableclosedrange.md",
@@ -14666,7 +14666,7 @@
     },
     "https://developer.apple.com/documentation/swift/duration": {
       "file_path": "documentation/Swift/duration.md",
-      "hash": "22d896e9e643da649ee45f586c51edd9d84a6294a6b2c5f9f6234c7eb15a2a2d"
+      "hash": "d44831c271dfb25822f0275e29ff4163762c64c49b29f331886016b63c4909e7"
     },
     "https://developer.apple.com/documentation/swift/duration/!=(_:_:)": {
       "file_path": "documentation/Swift/duration/noteq(_,_).md",
@@ -14874,39 +14874,39 @@
     },
     "https://developer.apple.com/documentation/swift/duration/init(secondscomponent:attosecondscomponent:)": {
       "file_path": "documentation/Swift/duration/init(secondscomponent,attosecondscomponent).md",
-      "hash": "a2f0185d14f7fea9477644491e8541f4ee561a9c4e46ca3c1fba33bf0b76c07f"
+      "hash": "65cd3a61202f7d79311a0351bfc7c70f3fc8b1b155013382eb6ab358c1ce9c59"
     },
     "https://developer.apple.com/documentation/swift/duration/microseconds(_:)-1zzcc": {
       "file_path": "documentation/Swift/duration/microseconds(_)-1zzcc.md",
-      "hash": "2ceb2314a4c06290dcdacbdfffb0d9c16d8d4f5c06a83c79a8765fc186b93de2"
+      "hash": "8191886cc1037c01883819418b3ffb414acff15b2d2b4d25d23648d06cf7641e"
     },
     "https://developer.apple.com/documentation/swift/duration/microseconds(_:)-2majo": {
       "file_path": "documentation/Swift/duration/microseconds(_)-2majo.md",
-      "hash": "10ad5f8ce1d398da2125b7695bde8e3a1ca29db38cf49f823647e386caf3d49a"
+      "hash": "9ef58188ceae76b3e9761334479acdfc12a8caa9acc7a6ae0239cdecf5ded97e"
     },
     "https://developer.apple.com/documentation/swift/duration/milliseconds(_:)-1w328": {
       "file_path": "documentation/Swift/duration/milliseconds(_)-1w328.md",
-      "hash": "0735f09660143549873c41f6b7f6f9b44c604cc6a779e35888db9883055c07a8"
+      "hash": "3ad4a6fa31e22ae9e05448026918965ca41f71220469b69e28dc163b5b084c7b"
     },
     "https://developer.apple.com/documentation/swift/duration/milliseconds(_:)-7ledy": {
       "file_path": "documentation/Swift/duration/milliseconds(_)-7ledy.md",
-      "hash": "4c305e40be63720eed31203f0bc6b9b733e3f7933b567088b5bf81d345fcaaef"
+      "hash": "0e78d1f14f1cc88cb5dbf71bb7ae56aa47a938f67ca5fb5e57d3bd6f1c4a1bc5"
     },
     "https://developer.apple.com/documentation/swift/duration/nanoseconds(_:)-1cg32": {
       "file_path": "documentation/Swift/duration/nanoseconds(_)-1cg32.md",
-      "hash": "18402334e4ca69a6b500f7c36df537381bdef44b12c6a27972b8881218261567"
+      "hash": "69cefff0405c1429f860a82fc25154dc8b66d812557b3de0ccc84233d6cb465d"
     },
     "https://developer.apple.com/documentation/swift/duration/nanoseconds(_:)-8nsaz": {
       "file_path": "documentation/Swift/duration/nanoseconds(_)-8nsaz.md",
-      "hash": "09220bdc780087fc9cdea9f6a9aac6e3fa54f09f7c167657ab8049e3ba0c87d6"
+      "hash": "15aa66a8e74a183a609f7aa480714a75df7ce60c121cb71b30687423d8abc9ad"
     },
     "https://developer.apple.com/documentation/swift/duration/seconds(_:)-311cx": {
       "file_path": "documentation/Swift/duration/seconds(_)-311cx.md",
-      "hash": "384a253e6e0ca53754e7d89903b2db97bb0b2257cb51aded6f95ff1cdb83be03"
+      "hash": "b0a070d47b20f05382470f05a47ce068ee3bfa886df201cf1a3d1e99be7cf8b0"
     },
     "https://developer.apple.com/documentation/swift/duration/seconds(_:)-5ifzr": {
       "file_path": "documentation/Swift/duration/seconds(_)-5ifzr.md",
-      "hash": "7350a13b742e48b0805b148e082963672e1f5df4202ee9a99d646e392e6f6845"
+      "hash": "9f3367c0a6293766bb9d6f934158541daf290bc2446170a94ebfb71ff42a1ba9"
     },
     "https://developer.apple.com/documentation/swift/duration/specification": {
       "file_path": "documentation/Swift/duration/specification.md",
@@ -84582,7 +84582,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/copyable.json": {
       "file_path": "documentation/Swift/copyable.md",
-      "hash": "313a124bcbc42638c7ba75f1fb64e0513ab29d9aedda30d838808c4c9c858866"
+      "hash": "96629ceb48f1b47bf259859adb8a006fe4ff6443fbee5af709307e56c20c28f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/countableclosedrange.json": {
       "file_path": "documentation/Swift/countableclosedrange.md",
@@ -88390,7 +88390,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration.json": {
       "file_path": "documentation/Swift/duration.md",
-      "hash": "22d896e9e643da649ee45f586c51edd9d84a6294a6b2c5f9f6234c7eb15a2a2d"
+      "hash": "d44831c271dfb25822f0275e29ff4163762c64c49b29f331886016b63c4909e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration/!=(_:_:).json": {
       "file_path": "documentation/Swift/duration/noteq(_,_).md",
@@ -88598,39 +88598,39 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration/init(secondscomponent:attosecondscomponent:).json": {
       "file_path": "documentation/Swift/duration/init(secondscomponent,attosecondscomponent).md",
-      "hash": "a2f0185d14f7fea9477644491e8541f4ee561a9c4e46ca3c1fba33bf0b76c07f"
+      "hash": "65cd3a61202f7d79311a0351bfc7c70f3fc8b1b155013382eb6ab358c1ce9c59"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration/microseconds(_:)-1zzcc.json": {
       "file_path": "documentation/Swift/duration/microseconds(_)-1zzcc.md",
-      "hash": "2ceb2314a4c06290dcdacbdfffb0d9c16d8d4f5c06a83c79a8765fc186b93de2"
+      "hash": "8191886cc1037c01883819418b3ffb414acff15b2d2b4d25d23648d06cf7641e"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration/microseconds(_:)-2majo.json": {
       "file_path": "documentation/Swift/duration/microseconds(_)-2majo.md",
-      "hash": "10ad5f8ce1d398da2125b7695bde8e3a1ca29db38cf49f823647e386caf3d49a"
+      "hash": "9ef58188ceae76b3e9761334479acdfc12a8caa9acc7a6ae0239cdecf5ded97e"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration/milliseconds(_:)-1w328.json": {
       "file_path": "documentation/Swift/duration/milliseconds(_)-1w328.md",
-      "hash": "0735f09660143549873c41f6b7f6f9b44c604cc6a779e35888db9883055c07a8"
+      "hash": "3ad4a6fa31e22ae9e05448026918965ca41f71220469b69e28dc163b5b084c7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration/milliseconds(_:)-7ledy.json": {
       "file_path": "documentation/Swift/duration/milliseconds(_)-7ledy.md",
-      "hash": "4c305e40be63720eed31203f0bc6b9b733e3f7933b567088b5bf81d345fcaaef"
+      "hash": "0e78d1f14f1cc88cb5dbf71bb7ae56aa47a938f67ca5fb5e57d3bd6f1c4a1bc5"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration/nanoseconds(_:)-1cg32.json": {
       "file_path": "documentation/Swift/duration/nanoseconds(_)-1cg32.md",
-      "hash": "18402334e4ca69a6b500f7c36df537381bdef44b12c6a27972b8881218261567"
+      "hash": "69cefff0405c1429f860a82fc25154dc8b66d812557b3de0ccc84233d6cb465d"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration/nanoseconds(_:)-8nsaz.json": {
       "file_path": "documentation/Swift/duration/nanoseconds(_)-8nsaz.md",
-      "hash": "09220bdc780087fc9cdea9f6a9aac6e3fa54f09f7c167657ab8049e3ba0c87d6"
+      "hash": "15aa66a8e74a183a609f7aa480714a75df7ce60c121cb71b30687423d8abc9ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration/seconds(_:)-311cx.json": {
       "file_path": "documentation/Swift/duration/seconds(_)-311cx.md",
-      "hash": "384a253e6e0ca53754e7d89903b2db97bb0b2257cb51aded6f95ff1cdb83be03"
+      "hash": "b0a070d47b20f05382470f05a47ce068ee3bfa886df201cf1a3d1e99be7cf8b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration/seconds(_:)-5ifzr.json": {
       "file_path": "documentation/Swift/duration/seconds(_)-5ifzr.md",
-      "hash": "7350a13b742e48b0805b148e082963672e1f5df4202ee9a99d646e392e6f6845"
+      "hash": "9f3367c0a6293766bb9d6f934158541daf290bc2446170a94ebfb71ff42a1ba9"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/duration/specification.json": {
       "file_path": "documentation/Swift/duration/specification.md",

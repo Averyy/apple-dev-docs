@@ -21,6 +21,18 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, didUpdateRouteSharingEna
 - (void) mapTemplate:(CPMapTemplate *) mapTemplate didUpdateRouteSharingEnabled:(BOOL) enabled;
 ```
 
+## See Also
+
+### Sharing routes and destinations
+- [func mapTemplateShouldProvideRouteSharing(CPMapTemplate) -> Bool](./maptemplateshouldprovideroutesharing%28_%29.md)
+  Determines if the template should provide route sharing information to the vehicle. Apps that participate in route sharing will donate navigation information to the vehicle including the current route, a list of waypoints, and other metadata that allows the vehicle to track the user’s preferred route to their destination.
+- [func mapTemplate(CPMapTemplate, willShareDestinationFor: CPTrip)](./maptemplate%28_,willsharedestinationfor%29.md)
+  Called when a trip’s destination is about to be shared to the vehicle
+- [func mapTemplate(CPMapTemplate, didShareDestinationFor: CPTrip)](./maptemplate%28_,didsharedestinationfor%29.md)
+  Called when a vehicle successfully handled a shared trip’s destination
+- [func mapTemplate(CPMapTemplate, didFailToShareDestinationFor: CPTrip, error: any Error)](./maptemplate%28_,didfailtosharedestinationfor,error%29.md)
+  Called when a vehicle failed to handle a shared trip’s destination
+
 
 ---
 

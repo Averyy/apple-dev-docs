@@ -80,7 +80,6 @@ The `promotedObjectType` field is always `BUSINESS_BRAND` for Maps-based campaig
       "currency": "USD"
     }
   },
-  "adChannelType": "SEARCH",
   "deviceClass": "IPHONE",
   "locationId": "123456789",
   "supplyPlacement": "MAPS_SEARCH_RESULTS"
@@ -90,8 +89,6 @@ The `promotedObjectType` field is always `BUSINESS_BRAND` for Maps-based campaig
 ## Topics
 
 ### Type Aliases
-- [type BrandsReportingCampaign.AdChannelType](./brandsreportingcampaign/adchanneltype-data.typealias.md)
-  The advertising channel type of the campaign at report time.
 - [type BrandsReportingCampaign.BillingEvent](./brandsreportingcampaign/billingevent-data.typealias.md)
   The billing event of the campaign at report time.
 - [type BrandsReportingCampaign.Status](./brandsreportingcampaign/status-data.typealias.md)
@@ -126,7 +123,6 @@ The `promotedObjectType` field is always `BUSINESS_BRAND` for Maps-based campaig
 - `endTime` (date-time): Campaign end time.
 - `lifetimeBudget` (ReportingMoney): Lifetime budget for the campaign. See [`ReportingMoney`](./reportingmoney.md) for details.
 - `bidStrategy` (ReportingBidStrategy): See [`ReportingBidStrategy`](./reportingbidstrategy.md) for details.
-- `adChannelType` (BrandsReportingCampaign.AdChannelType): The advertising channel type for this campaign. Possible values: `SEARCH`, `DISPLAY`.
 - `deviceClass` (string): Device class groupBy dimension value.
 
   **Allowed Values**: `IPHONE`, `IPAD`

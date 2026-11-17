@@ -27,7 +27,7 @@ For the animated images, the system enforces a minimum cycle duration of 0.3 sec
 
 ## See Also
 
-### Getting State Information
+### Getting the state information
 - [var identifier: String](./identifier.md)
   The string that your app uses to identify the voice control state.
 - [var titleVariants: [String]?](./titlevariants.md)

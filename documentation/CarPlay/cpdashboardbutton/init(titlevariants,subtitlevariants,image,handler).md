@@ -38,6 +38,11 @@ The maximum supported image size is 30 x 30 points.
 - `image`: The image to display on the button.
 - `handler`: The block that CarPlay invokes when the user taps the button.
 
+## See Also
+
+### Creating a dashboard button
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+
 
 ---
 

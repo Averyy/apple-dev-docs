@@ -6,7 +6,7 @@
     },
     "https://developer.apple.com/documentation/apple-silicon/about-the-rosetta-translation-environment": {
       "file_path": "documentation/apple-silicon/about-the-rosetta-translation-environment.md",
-      "hash": "32cac2557cc14003592483a5a018bd8a4f153f41479e64034e8f4162281c96fd"
+      "hash": "f31804af78b55660cce856e9b88ef6c6496f84833b27b02637dafc8f44bfbda5"
     },
     "https://developer.apple.com/documentation/apple-silicon/adapting-ios-code-to-run-in-the-macos-environment": {
       "file_path": "documentation/apple-silicon/adapting-ios-code-to-run-in-the-macos-environment.md",
@@ -38,19 +38,19 @@
     },
     "https://developer.apple.com/documentation/apple-silicon/porting-just-in-time-compilers-to-apple-silicon": {
       "file_path": "documentation/apple-silicon/porting-just-in-time-compilers-to-apple-silicon.md",
-      "hash": "4e2f0b520675e7def3bfe36c2e710da45feaa70bf699ddd3e36f92b054b53a84"
+      "hash": "c731df3964f5089132fb6d9e47e358f6f1af79409994fbd4c01528793099f164"
     },
     "https://developer.apple.com/documentation/apple-silicon/porting-your-audio-code-to-apple-silicon": {
       "file_path": "documentation/apple-silicon/porting-your-audio-code-to-apple-silicon.md",
-      "hash": "881f7235c405a663a610d3ae9227da8922934a32cca765dd12565ed933b8278d"
+      "hash": "895644773de2cc40dac1236854ecff18c793ed67b841077b03fed69bd9b348b2"
     },
     "https://developer.apple.com/documentation/apple-silicon/porting-your-macos-apps-to-apple-silicon": {
       "file_path": "documentation/apple-silicon/porting-your-macos-apps-to-apple-silicon.md",
-      "hash": "cb88413dd87dceb97aeef243d5a3c7c713bcfd96e4a6f327be9ecbbd9807dcf4"
+      "hash": "59126a58642b5878f176d91465fcf146fbba78e2fb981b5f4016f99f8c7dfd3a"
     },
     "https://developer.apple.com/documentation/apple-silicon/porting-your-metal-code-to-apple-silicon": {
       "file_path": "documentation/apple-silicon/porting-your-metal-code-to-apple-silicon.md",
-      "hash": "1716fb983d29f6e5c2c93a101bcf6cb34b24156b0b01ce45a2ea44fe8e507913"
+      "hash": "da26a3ba5565694e768a8dd1318564f16a2f5d8a92647d7e6199ccbd2fdc13fa"
     },
     "https://developer.apple.com/documentation/apple-silicon/providing-an-edge-to-edge-full-screen-experience-in-your-ipad-app-running-on-a-mac": {
       "file_path": "documentation/apple-silicon/providing-an-edge-to-edge-full-screen-experience-in-your-ipad-app-running-on-a-mac.md",
@@ -62,11 +62,11 @@
     },
     "https://developer.apple.com/documentation/apple-silicon/running-your-ios-apps-in-macos": {
       "file_path": "documentation/apple-silicon/running-your-ios-apps-in-macos.md",
-      "hash": "ebfc0cf961dc9161a286d81b60c6d2f763371563e249bb2dcf684acdb448529b"
+      "hash": "7737e76240ca1f5e0b925f977957ad202afafe74a3654cab99382b4bfe55c295"
     },
     "https://developer.apple.com/documentation/apple-silicon/tuning-your-code-s-performance-for-apple-silicon": {
       "file_path": "documentation/apple-silicon/tuning-your-code-s-performance-for-apple-silicon.md",
-      "hash": "daf58e5f9731f7c2164b40c920677aa85eccbf702caddb6fabca91dc8f59ac08"
+      "hash": "4272b1b3aa2031247cfe729a13791c11708e2a245ce4f4dec3c65b57bfa593b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon.json": {
       "file_path": "documentation/apple-silicon/apple-silicon.md",
@@ -74,7 +74,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/about-the-rosetta-translation-environment.json": {
       "file_path": "documentation/apple-silicon/about-the-rosetta-translation-environment.md",
-      "hash": "32cac2557cc14003592483a5a018bd8a4f153f41479e64034e8f4162281c96fd"
+      "hash": "f31804af78b55660cce856e9b88ef6c6496f84833b27b02637dafc8f44bfbda5"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/adapting-ios-code-to-run-in-the-macos-environment.json": {
       "file_path": "documentation/apple-silicon/adapting-ios-code-to-run-in-the-macos-environment.md",
@@ -106,19 +106,19 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/porting-just-in-time-compilers-to-apple-silicon.json": {
       "file_path": "documentation/apple-silicon/porting-just-in-time-compilers-to-apple-silicon.md",
-      "hash": "4e2f0b520675e7def3bfe36c2e710da45feaa70bf699ddd3e36f92b054b53a84"
+      "hash": "c731df3964f5089132fb6d9e47e358f6f1af79409994fbd4c01528793099f164"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/porting-your-audio-code-to-apple-silicon.json": {
       "file_path": "documentation/apple-silicon/porting-your-audio-code-to-apple-silicon.md",
-      "hash": "881f7235c405a663a610d3ae9227da8922934a32cca765dd12565ed933b8278d"
+      "hash": "895644773de2cc40dac1236854ecff18c793ed67b841077b03fed69bd9b348b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/porting-your-macos-apps-to-apple-silicon.json": {
       "file_path": "documentation/apple-silicon/porting-your-macos-apps-to-apple-silicon.md",
-      "hash": "cb88413dd87dceb97aeef243d5a3c7c713bcfd96e4a6f327be9ecbbd9807dcf4"
+      "hash": "59126a58642b5878f176d91465fcf146fbba78e2fb981b5f4016f99f8c7dfd3a"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/porting-your-metal-code-to-apple-silicon.json": {
       "file_path": "documentation/apple-silicon/porting-your-metal-code-to-apple-silicon.md",
-      "hash": "1716fb983d29f6e5c2c93a101bcf6cb34b24156b0b01ce45a2ea44fe8e507913"
+      "hash": "da26a3ba5565694e768a8dd1318564f16a2f5d8a92647d7e6199ccbd2fdc13fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/providing-an-edge-to-edge-full-screen-experience-in-your-ipad-app-running-on-a-mac.json": {
       "file_path": "documentation/apple-silicon/providing-an-edge-to-edge-full-screen-experience-in-your-ipad-app-running-on-a-mac.md",
@@ -130,11 +130,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/running-your-ios-apps-in-macos.json": {
       "file_path": "documentation/apple-silicon/running-your-ios-apps-in-macos.md",
-      "hash": "ebfc0cf961dc9161a286d81b60c6d2f763371563e249bb2dcf684acdb448529b"
+      "hash": "7737e76240ca1f5e0b925f977957ad202afafe74a3654cab99382b4bfe55c295"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/tuning-your-code-s-performance-for-apple-silicon.json": {
       "file_path": "documentation/apple-silicon/tuning-your-code-s-performance-for-apple-silicon.md",
-      "hash": "daf58e5f9731f7c2164b40c920677aa85eccbf702caddb6fabca91dc8f59ac08"
+      "hash": "4272b1b3aa2031247cfe729a13791c11708e2a245ce4f4dec3c65b57bfa593b2"
     }
   },
   "metadata": {

@@ -23,7 +23,7 @@ struct DeviceHingeContext
 
 ## Overview
 
-You use this type with the `View/onHingeChange(_:)` view modifier.
+You use this type with the [`onHingeChange(isEnabled:_:)`](./view/onhingechange%28isenabled,_%29.md) view modifier.
 
 ## Topics
 

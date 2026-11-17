@@ -133,6 +133,9 @@ Tasks to different hosts can reuse the same transport connection, just like how 
   Creates a transaction metrics instance.
 - [class func new() -> Self](./urlsessiontasktransactionmetrics/new%28%29.md)
   Creates a new transaction metrics instance.
+### Instance Properties
+- [var earlyDataStatus: URLSessionTaskMetrics.EarlyDataStatus](./urlsessiontasktransactionmetrics/earlydatastatus.md)
+  Whether the request was sent in TLS early data, and whether the server accepted it.
 
 ## Relationships
 

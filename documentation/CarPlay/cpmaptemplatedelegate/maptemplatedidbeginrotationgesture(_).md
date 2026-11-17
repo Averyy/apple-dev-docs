@@ -25,6 +25,14 @@ optional func mapTemplateDidBeginRotationGesture(_ mapTemplate: CPMapTemplate)
 
 - `mapTemplate`: The [`CPMapTemplate`](../cpmaptemplate.md) the gesture applies to.
 
+## See Also
+
+### Rotating the map
+- [func mapTemplate(CPMapTemplate, didRotateWithCenter: CGPoint, rotation: CGFloat, velocity: CGFloat)](./maptemplate%28_,didrotatewithcenter,rotation,velocity%29.md)
+  Tells the delegate that a person is rotating the map.
+- [func mapTemplate(CPMapTemplate, rotationDidEndWithVelocity: CGFloat)](./maptemplate%28_,rotationdidendwithvelocity%29.md)
+  Tells the delegate that a person stopped rotating the map.
+
 
 ---
 

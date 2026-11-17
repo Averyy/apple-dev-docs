@@ -20,6 +20,10 @@ var height: Float { get }
 @property (nonatomic, readonly) float height;
 ```
 
+## Discussion
+
+This corresponds to the length of the plane along the z-axis, prior to applying `rotationOnYAxis`.
+
 ## See Also
 
 ### Inspecting Plane Size

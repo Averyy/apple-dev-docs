@@ -69,7 +69,7 @@ let result = metric.passing(rationale: "Exact match")
   The name [`skillsLoadedAllPass`](./metric/skillsloadedallpass.md) shipped with.
 ### Inspecting a result
 - [let name: String](./metric/name.md)
-  The name of the metric, used as the DataFrame column name.
+  The name of the metric, which an [`Evaluation`](./evaluation.md) uses as the [`Column`](../TabularData/column.md) name in its results.
 - [let value: Metric.Value](./metric/value-swift.property.md)
   The result value of this metric.
 - [var doubleValue: Double?](./metric/doublevalue.md)

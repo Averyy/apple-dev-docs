@@ -60,10 +60,24 @@ An object that contains information about how to configure a picker view control
 - [PHPickerUpdateConfiguration](./phpickerupdateconfiguration.md)
   An object that defines the aspects of a photo picker’s appearance that can change while it’s presented.
 ### Instance Properties
+- [aspectRatio](./phpickerconfiguration-c.class/aspectratio.md)
+  The aspect ratio of items in the picker. Default is \c nil.
+- [containerIdentifier](./phpickerconfiguration-c.class/containeridentifier.md)
+  The collection of items that can be shown. Default is \c nil.
 - [metadataOptions](./phpickerconfiguration-c.class/metadataoptions.md)
   Metadata options for the picker. Default is \c PHPickerMetadataOptionsNone.
+- [minimumSelectionLimit](./phpickerconfiguration-c.class/minimumselectionlimit.md)
+  The minimum number of items that should be selected. Default is \c NSNotFound.
+- [primaryButtonType](./phpickerconfiguration-c.class/primarybuttontype.md)
+  The primary button type. Default is \c PHPickerPrimaryButtonTypeAutomatic.
+- [prompt](./phpickerconfiguration-c.class/prompt.md)
+  The localized string to be shown when the picker is presented. Default is \c nil.
 - [searchText](./phpickerconfiguration-c.class/searchtext.md)
   The search text for the picker. Default is \c nil.
+- [secondaryButtonType](./phpickerconfiguration-c.class/secondarybuttontype.md)
+  The secondary button type. Default is \c PHPickerSecondaryButtonTypeAutomatic.
+- [title](./phpickerconfiguration-c.class/title.md)
+  The localized title to override the default title when the picker is presented. Default is \c nil.
 
 ## Relationships
 

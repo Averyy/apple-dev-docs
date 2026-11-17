@@ -5,14 +5,14 @@
 **Role**: Instance Property  
 **Required**: Yes
 
-The vertical scale factor the scaler applies to the input motion texture.
+The vertical scale factor the temporal scaler applies to the input motion texture.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 27.1+
+- tvOS 27.2+
 - visionOS 1.0+
 
 ## Declaration
@@ -27,9 +27,17 @@ var motionVectorScaleY: Float { get set }
 
 ## Discussion
 
-The scaler converts the horizontal component of each value in [`motionTexture`](./motiontexture.md) into fragment (pixel) coordinates by multiplying it by this property’s value.
+The scaler converts the vertical component of each value in [`motionTexture`](./motiontexture.md) into fragment (pixel) coordinates by multiplying it by this property’s value.
 
-If you set this property’s value to `1.0`, this temporal scaler expects that each pixel’s motion vector points to that pixel’s location in the [`colorTexture`](./colortexture.md) at the time of the last call to encode this scaler’s work. For example, in Metal’s standard device coordinates, where `(0,0)` represents the upper-left corner of the framebuffer, the motion vectors for an object that moves down and to the right in the [`colorTexture`](./colortexture.md) by `10` pixels would be `(-10,-10)`.
+## See Also
+
+### Configuring the motion input
+- [var motionTextureUsage: MTLTextureUsage](./motiontextureusage.md)
+  The minimal texture usage options that your app’s input motion texture must set to apply the temporal scaler.
+- [var motionTexture: (any MTLTexture)?](./motiontexture.md)
+  An input motion texture you set for the temporal scaler that supports the correct motion texture usage options.
+- [var motionVectorScaleX: Float](./motionvectorscalex.md)
+  The horizontal scale factor the temporal scaler applies to the input motion texture.
 
 
 ---

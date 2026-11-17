@@ -50,6 +50,7 @@ GKRule *rule = [GKRule ruleWithPredicate:healthTest assertingFact:@"player_weak"
 
 ## Parameters
 
+- `predicate`: A predicate to be tested when the rule is evaluated.
 - `fact`: An object representing a fact to assert when the rule’s predicate is satisfied. (For details on facts in rule systems, see the [`facts`](../gkrulesystem/facts.md) property in [`GKRuleSystem`](../gkrulesystem.md).)
 - `grade`: An amount by which to increase the fact’s membership grade if the rule’s predicate is satisfied.
 

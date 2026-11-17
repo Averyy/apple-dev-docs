@@ -21,6 +21,15 @@ var timeZone: TimeZone? { get }
 @property (nonatomic, readonly, nullable) NSTimeZone * timeZone;
 ```
 
+## See Also
+
+### Getting the waypoint location
+- [var centerPoint: CPLocationCoordinate3D](./centerpoint.md)
+  centerPoint is a CPLocationCoordinate3D representing the primary coordinate location of the waypoint.
+- [var entryPoints: [CPLocationCoordinate3D]](./entrypoints-obhb.md)
+- [var locationThreshold: Measurement<UnitLength>?](./locationthreshold.md)
+  locationThreshold is the maximum distance in meters from the centerPoint used to determine if a destination is valid.
+
 
 ---
 

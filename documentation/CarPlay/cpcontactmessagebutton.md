@@ -27,10 +27,10 @@ class CPContactMessageButton
 
 ## Topics
 
-### Creating a Contact Message Button
+### Creating a contact message button
 - [init(phoneOrEmail: String)](./cpcontactmessagebutton/init%28phoneoremail%29.md)
   Creates a contact message button with the provided contact information.
-### Getting the Contact Information
+### Getting the contact information
 - [var phoneOrEmail: String](./cpcontactmessagebutton/phoneoremail.md)
   The contact’s phone number or email address.
 
@@ -48,9 +48,11 @@ class CPContactMessageButton
 
 ## See Also
 
-### Managing Interactions with the Contact
-- [var actions: [CPButton]?](./cpcontact/actions.md)
-  The actions that the template displays for this contact.
+### Contacts
+- [class CPContactTemplate](./cpcontacttemplate.md)
+  A template that displays information about a person or a business.
+- [class CPContact](./cpcontact.md)
+  A data object that contains information about a contact.
 - [class CPContactCallButton](./cpcontactcallbutton.md)
   A button for calling the contact.
 - [class CPContactDirectionsButton](./cpcontactdirectionsbutton.md)

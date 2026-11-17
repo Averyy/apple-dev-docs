@@ -27,7 +27,7 @@ The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-### Controlling the Button
+### Configuring the button
 - [var isEnabled: Bool](./isenabled.md)
   A Boolean value that enables and disables the map button.
 

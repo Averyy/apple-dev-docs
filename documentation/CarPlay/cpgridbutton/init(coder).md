@@ -15,6 +15,14 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating a grid button
+- [convenience init(titleVariants: [String], image: UIImage, handler: ((CPGridButton) -> Void)?)](./init%28titlevariants,image,handler%29.md)
+  Creates a grid button with the specified title variants, image, and action handler.
+- [init(titleVariants: [String], image: UIImage, messageConfiguration: CPMessageGridItemConfiguration?, handler: ((CPGridButton) -> Void)?)](./init%28titlevariants,image,messageconfiguration,handler%29.md)
+  Initialize a button with a title, image, and message configuration.
+
 
 ---
 

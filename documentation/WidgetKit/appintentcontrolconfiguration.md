@@ -50,7 +50,7 @@ Every control has a unique `kind`, a string that you choose. You use this string
 
 The value provider is an object that determines a value to use to render your template. This provider receives an intent containing user-editable parameters.
 
-The content closure defines the template that WidgetKit needs to render the control. If you create the configuration using a value provider, when WidgetKit invokes the content closure, it passes a value created by the provider’s `AppIntentControlValueProvider/previewValue` property or `AppIntentControlValueProvider/currentValue()` function.
+The content closure defines the template that WidgetKit needs to render the control. If you create the configuration using a value provider, when WidgetKit invokes the content closure, it passes a value created by the provider’s [`previewValue(configuration:)`](./appintentcontrolvalueprovider/previewvalue%28configuration%29.md) method or [`currentValue(configuration:)`](./appintentcontrolvalueprovider/currentvalue%28configuration%29.md) method.
 
 ## Topics
 

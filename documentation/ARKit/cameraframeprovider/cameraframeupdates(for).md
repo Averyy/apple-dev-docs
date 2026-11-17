@@ -17,7 +17,11 @@ final func cameraFrameUpdates(for cameraVideoFormat: CameraVideoFormat) -> Camer
 
 ## Return Value
 
-The sequence of camera frame updates. Returns `nil` if the provider wasn’t initialized with this format.
+The sequence of camera frame updates, or `nil` if the video format isn’t supported.
+
+## Discussion
+
+This provider requires an enterprise license or the [`Main camera access`](../../BundleResources/entitlements/com.apple.developer.arkit.main-camera-access.allow.md) entitlement to receive camera frames; otherwise, it has no effect.
 
 ## Parameters
 

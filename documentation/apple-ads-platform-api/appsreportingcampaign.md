@@ -74,7 +74,6 @@ The `groupBy` dimensions specified in the report request determine the values of
       "currency": "USD"
     }
   },
-  "adChannelType": "SEARCH",
   "countryOrRegion": "US",
   "deviceClass": "IPHONE",
   "gender": "F",
@@ -88,8 +87,6 @@ The `groupBy` dimensions specified in the report request determine the values of
 ## Topics
 
 ### Type Aliases
-- [type AppsReportingCampaign.AdChannelType](./appsreportingcampaign/adchanneltype-data.typealias.md)
-  The advertising channel type of the campaign at report time.
 - [type AppsReportingCampaign.BillingEvent](./appsreportingcampaign/billingevent-data.typealias.md)
   The billing event of the campaign at report time.
 - [type AppsReportingCampaign.Status](./appsreportingcampaign/status-data.typealias.md)
@@ -124,7 +121,6 @@ The `groupBy` dimensions specified in the report request determine the values of
 - `endTime` (date-time): Campaign end time.
 - `lifetimeBudget` (ReportingMoney): Lifetime budget for the campaign. See [`ReportingMoney`](./reportingmoney.md) for details.
 - `bidStrategy` (ReportingBidStrategy): See [`ReportingBidStrategy`](./reportingbidstrategy.md) for details.
-- `adChannelType` (AppsReportingCampaign.AdChannelType): The advertising channel type for this campaign. Possible values: `SEARCH`, `DISPLAY`.
 - `countryOrRegion` (string): Country or region groupBy dimension value.
 - `deviceClass` (string): Device class groupBy dimension value.
 

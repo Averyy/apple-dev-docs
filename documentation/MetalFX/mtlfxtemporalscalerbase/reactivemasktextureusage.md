@@ -12,7 +12,7 @@ The minimal texture usage options that your app’s reactive mask texture needs 
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
-- tvOS 27.1+
+- tvOS 27.2+
 
 ## Declaration
 

@@ -40,6 +40,14 @@ CarPlay doesn’t support animated images. If you provide an animated image, Car
 - `detailSummary`: A brief summary that the detail card displays.
 - `pinImage`: A custom image that the map annotation displays.
 
+## See Also
+
+### Creating a point of interest
+- [init(location: MKMapItem, title: String, subtitle: String?, summary: String?, detailTitle: String?, detailSubtitle: String?, detailSummary: String?, pinImage: UIImage?, selectedPinImage: UIImage?)](./init%28location,title,subtitle,summary,detailtitle,detailsubtitle,detailsummary,pinimage,selectedpinimage%29.md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+- [class var pinImageSize: CGSize](./pinimagesize.md)
+- [class var selectedPinImageSize: CGSize](./selectedpinimagesize.md)
+
 
 ---
 

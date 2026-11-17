@@ -18,7 +18,7 @@ The invitation model of the multiseat subscription, either Apple-hosted or devel
 ## Declaration
 
 ```swift
-let invitationManagement: Transaction.MultiSeatInfo.InvitationManagement
+let invitationManagement: Transaction.MultiSeatInfo.InvitationManagement?
 ```
 
 ## Mentions

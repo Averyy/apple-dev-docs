@@ -38,7 +38,7 @@ The visionOS 27.2 SDK provides support to develop apps for Apple Vision Pro devi
 ## See Also
 
 ### visionOS 27
-- [visionOS 27.3 Beta Release Notes](./visionos-27_3-release-notes.md)
+- [visionOS 27.3 Beta 2 Release Notes](./visionos-27_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [visionOS 27 Release Notes](./visionos-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

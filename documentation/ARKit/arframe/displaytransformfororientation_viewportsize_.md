@@ -16,6 +16,10 @@ Returns an affine transform for converting between normalized image coordinates 
 - (CGAffineTransform) displayTransformForOrientation:(UIInterfaceOrientation) orientation viewportSize:(CGSize) viewportSize;
 ```
 
+## Mentions
+
+- [Displaying an AR Experience with Metal](../displaying-an-ar-experience-with-metal.md)
+
 ## Return Value
 
 A transform matrix that converts from normalized image coordinates in the captured image to normalized image coordinates that account for the specified parameters.
@@ -32,6 +36,22 @@ The [`capturedImage`](./capturedimage.md) pixel buffer is the original image cap
 
 - `orientation`: The orientation intended for presenting the view.
 - `viewportSize`: The size, in points, of the view intended for rendering the camera image.
+
+## See Also
+
+### Accessing scene data
+- [var lightEstimate: ARLightEstimate?](./lightestimate.md)
+  An estimate of lighting conditions based on the camera image.
+- [var rawFeaturePoints: ARPointCloud?](./rawfeaturepoints.md)
+  The current intermediate results of the scene analysis ARKit uses to perform world tracking.
+- [var capturedDepthData: AVDepthData?](./captureddepthdata.md)
+  Depth data captured in front-camera experiences.
+- [var capturedDepthDataTimestamp: TimeInterval](./captureddepthdatatimestamp.md)
+  The time at which depth data for the frame (if any) was captured.
+- [var sceneDepth: ARDepthData?](./scenedepth.md)
+  Data on the distance between a device’s rear camera and real-world objects in an AR experience.
+- [var smoothedSceneDepth: ARDepthData?](./smoothedscenedepth.md)
+  An average of distance measurements between a device’s rear camera and real-world objects that creates smoother visuals in an AR experience.
 
 
 ---

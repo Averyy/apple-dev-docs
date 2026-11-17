@@ -4,7 +4,7 @@
 **Kind**: struct  
 **Role**: Structure
 
-A typed descriptor for a column in an evaluation result DataFrame.
+A typed descriptor for a column in an evaluation result data frame.
 
 **Availability**:
 - iOS 27.0+
@@ -31,7 +31,7 @@ let column = myEvaluation.inputColumn
 
 ### Instance Properties
 - [let name: String](./resultcolumn/name.md)
-  The column name in the DataFrame.
+  The column name in the [`DataFrame`](../TabularData/dataframe.md).
 
 ## Relationships
 
@@ -47,11 +47,11 @@ let column = myEvaluation.inputColumn
 - [struct EvaluationRunErrors](./evaluationrunerrors.md)
   A summary of the failures encountered during an evaluation run.
 - [var inputColumn: ResultColumn<Self.Sample>](./evaluation/inputcolumn.md)
-  A typed column descriptor for the input samples in the detailed DataFrame.
+  A typed column descriptor for the input samples in the detailed [`DataFrame`](../TabularData/dataframe.md).
 - [var responseColumn: ResultColumn<Self.Subject>](./evaluation/responsecolumn.md)
-  A typed column descriptor for the model responses in the detailed DataFrame.
+  A typed column descriptor for the model responses in the detailed [`DataFrame`](../TabularData/dataframe.md).
 - [var expectedColumn: ResultColumn<Self.Sample.ExpectedValue>](./evaluation/expectedcolumn.md)
-  A typed column descriptor for the expected values in the detailed DataFrame.
+  A typed column descriptor for the expected values in the detailed [`DataFrame`](../TabularData/dataframe.md).
 
 
 ---

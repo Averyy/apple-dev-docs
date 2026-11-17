@@ -10,7 +10,7 @@ Access the hardware for a device using system frameworks, which insulate you fro
 
 ## Device sensors
 
-[Read about device sensors](./games-technologies.md)
+[Read about device sensors](./device-sensors.md)
 
 Sensor hardware provides information about the physical state of a device or its surrounding environment. Use sensor-related data as direct input to your app, or as additional context for your app to use when generating content. For example:
 
@@ -50,6 +50,7 @@ Developers occasionally need to work more closely with Apple silicon or the unde
 
 ## Topics
 
+### Hardware access
 - [Device sensors](./device-sensors.md)
   Adjust your app’s behavior using contextual data you receive from a device’s built-in sensors.
 - [Networking and communication](./networking-and-communication.md)

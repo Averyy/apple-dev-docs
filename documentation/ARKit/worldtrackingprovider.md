@@ -44,9 +44,9 @@ final class WorldTrackingProvider
 ### Inspecting a world-tracking provider
 - [var state: DataProviderState](./worldtrackingprovider/state.md)
   The current status of data coming from a provider.
+### Instance Properties
 - [var description: String](./worldtrackingprovider/description.md)
   A textual description of a world-tracking provider.
-### Instance Properties
 - [var worldAnchorSharingAvailability: some AsyncSequence<WorldTrackingProvider.WorldAnchorSharingAvailability, Never>](./worldtrackingprovider/worldanchorsharingavailability-swift.property.md)
   A sequence of world anchor sharing availability changes.
 ### Instance Methods

@@ -4,7 +4,7 @@
 **Kind**: class  
 **Role**: Class
 
-An object that describes the appearance of a message list item’s leading region.
+A type that defines the content at the leading edge of a message list item’s row.
 
 **Availability**:
 - iOS 14.0+
@@ -23,27 +23,25 @@ class CPMessageListItemLeadingConfiguration
 
 ## Overview
 
-Use a leading configuration to describe the visual elements that a message list item’s leading region contains. The region can show a [`CPMessageLeadingItem`](./cpmessageleadingitem.md), an image, and an unread indicator.
+A `CPMessageListItemLeadingConfiguration` object contains the content to display at the leading edge of the row for a [`CPMessageListItem`](./cpmessagelistitem.md). Use this type to specify standard visual elements such as a symbol that indicates something is unread, or a star symbol for a favorite item. You can also specify a custom image to display before the rest of the message information. CarPlay places this content before the portion of the row that shows the conversation name, contact name, and other primary text.
 
-Configurations are immutable. To modify the list item’s leading configuration, update its [`leadingConfiguration`](./cpmessagelistitem/leadingconfiguration.md) property with a new configuration. CarPlay detects the change and redraws the message list item.
+Create an instance of this type and configure it with the information you want to display for the current message list item. Initialize your [`CPMessageListItem`](./cpmessagelistitem.md) object with the instance you create. You can also change the leading information later by assigning a new instance of this class to the [`leadingConfiguration`](./cpmessagelistitem/leadingconfiguration.md) property of the item.
 
 ## Topics
 
-### Creating a Configuration
+### Creating a configuration
 - [init(leadingItem: CPMessageLeadingItem, leadingImage: UIImage?, unread: Bool)](./cpmessagelistitemleadingconfiguration/init%28leadingitem,leadingimage,unread%29.md)
-  Creates a leading configuration that contains an item and an image.
-- [let CPMaximumMessageItemImageSize: CGSize](./cpmaximummessageitemimagesize.md)
-  The maximum size of a message list item’s image.
-### Getting the Leading Item
+  Creates the configuration object with the items to display at the leading edge of the row.
+### Getting the leading item
 - [var leadingItem: CPMessageLeadingItem](./cpmessagelistitemleadingconfiguration/leadingitem.md)
-  The configuration’s item.
+  The standard system symbol to display in the row’s leading region.
 - [enum CPMessageLeadingItem](./cpmessageleadingitem.md)
-  The accessories that a message list item can display in its leading region.
-### Getting the Configuration’s State
+  Constants that indicate the type of symbol to display at the leading edge of a message list row.
+### Getting the configuration’s state
 - [var leadingImage: UIImage?](./cpmessagelistitemleadingconfiguration/leadingimage.md)
-  The configuration’s image.
+  The custom image to display in the row’s leading region.
 - [var isUnread: Bool](./cpmessagelistitemleadingconfiguration/isunread.md)
-  A Boolean value that determines whether the message list item displays an unread indicator.
+  A Boolean value that indicates the unread status of the conversation.
 
 ## Relationships
 
@@ -59,13 +57,15 @@ Configurations are immutable. To modify the list item’s leading configuration,
 
 ## See Also
 
-### Managing Leading and Trailing Configurations
-- [var leadingConfiguration: CPMessageListItemLeadingConfiguration](./cpmessagelistitem/leadingconfiguration.md)
-  The configuration of the list item’s leading region.
-- [var trailingConfiguration: CPMessageListItemTrailingConfiguration?](./cpmessagelistitem/trailingconfiguration.md)
-  The configuration of the list item’s trailing region.
+### List items
+- [class CPMessageListItem](./cpmessagelistitem.md)
+  A list template row that manages a text message thread or contact.
 - [class CPMessageListItemTrailingConfiguration](./cpmessagelistitemtrailingconfiguration.md)
-  An object that describes the appearance of a message list item’s trailing region.
+  A type that defines the content at the trailing edge of a message list item’s row.
+- [let CPMaximumMessageItemImageSize: CGSize](./cpmaximummessageitemimagesize.md)
+  The maximum size for images in the leading and trailing regions of a message list item.
+- [let CPMaximumMessageItemLeadingDetailTextImageSize: CGSize](./cpmaximummessageitemleadingdetailtextimagesize.md)
+  The maximum size for images in the detail text image of a message list item.
 
 
 ---

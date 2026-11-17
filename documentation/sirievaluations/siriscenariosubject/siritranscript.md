@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-Every observation captured during the run.
+Every observation captured during the run. A reference Siri found or a call returned carries only the properties the scenario checks that were read for it.
 
 **Availability**:
 - iOS 27.3+ (Beta)

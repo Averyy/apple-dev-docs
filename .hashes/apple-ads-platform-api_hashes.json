@@ -22,7 +22,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/actionmetrics": {
       "file_path": "documentation/apple-ads-platform-api/actionmetrics.md",
-      "hash": "fa139f64b207faab71547655caef6e05b2ccb1f5a96fce878dfc48225b2e79c8"
+      "hash": "0d3958663a31feae7ff9bbf1256cc89d020066fe6cb36898dafe1609d7725a4f"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/activitydetail": {
       "file_path": "documentation/apple-ads-platform-api/activitydetail.md",
@@ -554,11 +554,11 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/appscampaignreportresponse": {
       "file_path": "documentation/apple-ads-platform-api/appscampaignreportresponse.md",
-      "hash": "7d5dc3ce9eadada1ea435329809cce400eefa6ae72f9014bf8fabc9ff65fc63f"
+      "hash": "3c99f5888fd8aa1cbda210dc77e390c9a847b81d158a78800f57b58767834495"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/appscampaignreportrow": {
       "file_path": "documentation/apple-ads-platform-api/appscampaignreportrow.md",
-      "hash": "98b02d66874c0ddfe63e8ce385bac5bcb6580c5508fe0cf7c568555a1e17961c"
+      "hash": "268d82aef72d7b30e1f604b577aab795eccb93bec54152b479e853bcf3e4fc2a"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/appscampaignreportsummary": {
       "file_path": "documentation/apple-ads-platform-api/appscampaignreportsummary.md",
@@ -622,11 +622,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/appsreportingcampaign": {
       "file_path": "documentation/apple-ads-platform-api/appsreportingcampaign.md",
-      "hash": "de900803f39c12ad896a5d9e4dc8673616b2e166c7fd837601eee8e2baab8334"
-    },
-    "https://developer.apple.com/documentation/apple-ads-platform-api/appsreportingcampaign/adchanneltype-data.typealias": {
-      "file_path": "documentation/apple-ads-platform-api/appsreportingcampaign/adchanneltype-data.typealias.md",
-      "hash": "d043ff02f197c6e79452baefd4df9ae6da1ca6e30ab9320d6d77fa6072783f21"
+      "hash": "60c15c5976dc6a3abc22fd8945a20abfca609f95609441c21ceafcb0aaef05c4"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/appsreportingcampaign/billingevent-data.typealias": {
       "file_path": "documentation/apple-ads-platform-api/appsreportingcampaign/billingevent-data.typealias.md",
@@ -990,11 +986,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/brandsreportingcampaign": {
       "file_path": "documentation/apple-ads-platform-api/brandsreportingcampaign.md",
-      "hash": "9fdf2d4335288e935087201a4dcc2d862a5598099de720040a2d85fac08f49f3"
-    },
-    "https://developer.apple.com/documentation/apple-ads-platform-api/brandsreportingcampaign/adchanneltype-data.typealias": {
-      "file_path": "documentation/apple-ads-platform-api/brandsreportingcampaign/adchanneltype-data.typealias.md",
-      "hash": "4a2eda0e99c232a078cb80ee3a8f297db919fea1a2b3f7d1a166074ce0d9e470"
+      "hash": "68ab738d10b7934345b6d177ae8ccda40ef167024e444b460ad5f9d9391c64d0"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/brandsreportingcampaign/billingevent-data.typealias": {
       "file_path": "documentation/apple-ads-platform-api/brandsreportingcampaign/billingevent-data.typealias.md",
@@ -1414,7 +1406,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/costmetrics": {
       "file_path": "documentation/apple-ads-platform-api/costmetrics.md",
-      "hash": "d7098a37262e2312e4f56852f98891bc16ab6ac3f81bad44db7b90fcb33ee240"
+      "hash": "7712207c6419af8e65554e9f26733f622a7943458ba5ee687884727a2e09c02e"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/cpagoal": {
       "file_path": "documentation/apple-ads-platform-api/cpagoal.md",
@@ -1714,7 +1706,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/filter": {
       "file_path": "documentation/apple-ads-platform-api/filter.md",
-      "hash": "e4da46d8f2e2963072376b1c2698829567148589a3609174c45d7a053169558d"
+      "hash": "89732b9fdc5168d17c7d72d12deef629f32dd32c34add0b68012ef86fce2df97"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/filter/value-data.dictionary": {
       "file_path": "documentation/apple-ads-platform-api/filter/value-data.dictionary.md",
@@ -2494,7 +2486,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-audit-summary-_-grouped-by-transaction": {
       "file_path": "documentation/apple-ads-platform-api/query-audit-summary-_-grouped-by-transaction.md",
-      "hash": "dec1c2468c5855b67a26f8bfe03f2182766553a01a0c66d08fdbd89474f8fab9"
+      "hash": "c98aea03e076e83a57a63cc3f319fe2df6a8e5777378357ae651c7886ec770d9"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-brands": {
       "file_path": "documentation/apple-ads-platform-api/query-brands.md",
@@ -2602,7 +2594,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/ratemetrics": {
       "file_path": "documentation/apple-ads-platform-api/ratemetrics.md",
-      "hash": "588b86285314af9a7318d1855c686f4d22695e7bfb1948ff59f062d5aa9ab9c6"
+      "hash": "2d16f8a4370a7bc9697cef77a86c9aa6ce2f214108ce1d3ea32edc5ed023da68"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/recommendationapplydailybudgetresponse": {
       "file_path": "documentation/apple-ads-platform-api/recommendationapplydailybudgetresponse.md",
@@ -2772,17 +2764,13 @@
       "file_path": "documentation/apple-ads-platform-api/rejectionreasonresponse.md",
       "hash": "d0925fccffd7277ef0b19d74efe04802db9ce287982621f1c53549e502a3f5f6"
     },
-    "https://developer.apple.com/documentation/apple-ads-platform-api/reportingadchanneltype": {
-      "file_path": "documentation/apple-ads-platform-api/reportingadchanneltype.md",
-      "hash": "d5d131afec17110de9bc75d43bc8ea8526d1e03e9a76da9ed5dd5d7bde338222"
-    },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingadgroupmin": {
       "file_path": "documentation/apple-ads-platform-api/reportingadgroupmin.md",
-      "hash": "62e1ed65acd8e3e8885a1834dd9df3344fc2fd71afa3603a75048e8e06acaac2"
+      "hash": "9e4a004d64857dc396e8b343b4663e584d335543641054e7489c94faf9570b4b"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingbidstrategy": {
       "file_path": "documentation/apple-ads-platform-api/reportingbidstrategy.md",
-      "hash": "dbfee2941a969628f20fc9891f1348b9c8d8c8d76e2f062b7dae4ac71f6736b3"
+      "hash": "7351e1005013e72b6148a1d9bd37f842cd6887bcb5efebf4eb50cb49d1694873"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingbidstrategy/bidstrategytype-data.typealias": {
       "file_path": "documentation/apple-ads-platform-api/reportingbidstrategy/bidstrategytype-data.typealias.md",
@@ -2794,15 +2782,15 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingcampaignmin": {
       "file_path": "documentation/apple-ads-platform-api/reportingcampaignmin.md",
-      "hash": "63ecdad4560f725371cd16abb8ac4220bf739bd840817d6b29cd6e277f24de9a"
+      "hash": "908ddec8918e92666ab49963190cfb04785e5d82395c78cec09060d65cdb7e39"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingcreativespec": {
       "file_path": "documentation/apple-ads-platform-api/reportingcreativespec.md",
-      "hash": "398253cd03c308d0b1f9a3a2346cef1fe3cea7a9efa04e572ca6fef4536d548d"
+      "hash": "6fce01131f5b0efc5809a7d9c283c13dfb3b5de5ceb42225f816fd9e4ff0fce9"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingdestination": {
       "file_path": "documentation/apple-ads-platform-api/reportingdestination.md",
-      "hash": "ef2f885c9078863a561da4dc5b7b07a1b4e490f2f2f02e0a9f349c7cb23829c3"
+      "hash": "73c72a0a2bba07eb304567a292fc7ff216e88611d9381d1f1c4dbe3f252b6274"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingdestination/parameters-data.dictionary": {
       "file_path": "documentation/apple-ads-platform-api/reportingdestination/parameters-data.dictionary.md",
@@ -2810,7 +2798,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingkeyword": {
       "file_path": "documentation/apple-ads-platform-api/reportingkeyword.md",
-      "hash": "b8c05b7da7f2d419c39314c692f7aa1364fe5bd524d5afb98f6606341ff954d9"
+      "hash": "69340254959565e97ed0bdcc5205a16c67cca402a988a8e27796e9b72836a750"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingkeywordbidrecommendation": {
       "file_path": "documentation/apple-ads-platform-api/reportingkeywordbidrecommendation.md",
@@ -2818,7 +2806,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingmoney": {
       "file_path": "documentation/apple-ads-platform-api/reportingmoney.md",
-      "hash": "c9ecf0031bee547fcd7372380d823751cdc655a505c2e489b568aaae1a611ba0"
+      "hash": "34f355771ec13e4ac24afd306450b69811b560f2fb17f4aaf5bc3c9e48b79f1d"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingpricingmodel": {
       "file_path": "documentation/apple-ads-platform-api/reportingpricingmodel.md",
@@ -2826,7 +2814,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reportingsearchterm": {
       "file_path": "documentation/apple-ads-platform-api/reportingsearchterm.md",
-      "hash": "dda479ecf5e18deece7f0a09c144467e1e65b3e6e884e1133698c60de943f4ef"
+      "hash": "4d367f2edf4b117892ae87d51d646549ca1d58944bf6d10161eb2a7a4fa6f17e"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reports": {
       "file_path": "documentation/apple-ads-platform-api/reports.md",
@@ -2834,11 +2822,11 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/reports-shared-objects": {
       "file_path": "documentation/apple-ads-platform-api/reports-shared-objects.md",
-      "hash": "e2711bd03a61ce63d6972679a122c80f8b4cd5c4c908b229f8101fa7164ecd88"
+      "hash": "92cd8547009d8b7fb44a60c905a75d3104945185dd0339958eca92fb9372cc3c"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/requestpagination": {
       "file_path": "documentation/apple-ads-platform-api/requestpagination.md",
-      "hash": "4cef55cacb01e32cb072b2e38d8d51536e274d84e9de77e5ad0c48fc72345a9c"
+      "hash": "a3c37ded1c83195b4ebdaa224eb6c6ee460060c27b5042234f48f22d3f9dfc2f"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/response": {
       "file_path": "documentation/apple-ads-platform-api/response.md",
@@ -2962,7 +2950,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/sorting": {
       "file_path": "documentation/apple-ads-platform-api/sorting.md",
-      "hash": "8a712a19c4d93f348511dde5d6a0cd1201a409726224e807d2955d770258e3a8"
+      "hash": "fde1ba8a9337ed75a683e8fbd1699d7258e005a5496b74163ea874978f59bd87"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/suggestions-data-objects": {
       "file_path": "documentation/apple-ads-platform-api/suggestions-data-objects.md",
@@ -2998,7 +2986,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/timerange": {
       "file_path": "documentation/apple-ads-platform-api/timerange.md",
-      "hash": "e2db877f235bcea58746d676b8652b63f3a1d6c74e15ce364296c674c2bb2e98"
+      "hash": "ab498ad3ff15f62f6d16940401373c9878d6ee4985948ee933432fe5101b265e"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/update-location-group": {
       "file_path": "documentation/apple-ads-platform-api/update-location-group.md",
@@ -3042,7 +3030,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/actionmetrics.json": {
       "file_path": "documentation/apple-ads-platform-api/actionmetrics.md",
-      "hash": "fa139f64b207faab71547655caef6e05b2ccb1f5a96fce878dfc48225b2e79c8"
+      "hash": "0d3958663a31feae7ff9bbf1256cc89d020066fe6cb36898dafe1609d7725a4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/activitydetail.json": {
       "file_path": "documentation/apple-ads-platform-api/activitydetail.md",
@@ -3574,11 +3562,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/appscampaignreportresponse.json": {
       "file_path": "documentation/apple-ads-platform-api/appscampaignreportresponse.md",
-      "hash": "7d5dc3ce9eadada1ea435329809cce400eefa6ae72f9014bf8fabc9ff65fc63f"
+      "hash": "3c99f5888fd8aa1cbda210dc77e390c9a847b81d158a78800f57b58767834495"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/appscampaignreportrow.json": {
       "file_path": "documentation/apple-ads-platform-api/appscampaignreportrow.md",
-      "hash": "98b02d66874c0ddfe63e8ce385bac5bcb6580c5508fe0cf7c568555a1e17961c"
+      "hash": "268d82aef72d7b30e1f604b577aab795eccb93bec54152b479e853bcf3e4fc2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/appscampaignreportsummary.json": {
       "file_path": "documentation/apple-ads-platform-api/appscampaignreportsummary.md",
@@ -3642,11 +3630,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/appsreportingcampaign.json": {
       "file_path": "documentation/apple-ads-platform-api/appsreportingcampaign.md",
-      "hash": "de900803f39c12ad896a5d9e4dc8673616b2e166c7fd837601eee8e2baab8334"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/appsreportingcampaign/adchanneltype-data.typealias.json": {
-      "file_path": "documentation/apple-ads-platform-api/appsreportingcampaign/adchanneltype-data.typealias.md",
-      "hash": "d043ff02f197c6e79452baefd4df9ae6da1ca6e30ab9320d6d77fa6072783f21"
+      "hash": "60c15c5976dc6a3abc22fd8945a20abfca609f95609441c21ceafcb0aaef05c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/appsreportingcampaign/billingevent-data.typealias.json": {
       "file_path": "documentation/apple-ads-platform-api/appsreportingcampaign/billingevent-data.typealias.md",
@@ -4010,11 +3994,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/brandsreportingcampaign.json": {
       "file_path": "documentation/apple-ads-platform-api/brandsreportingcampaign.md",
-      "hash": "9fdf2d4335288e935087201a4dcc2d862a5598099de720040a2d85fac08f49f3"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/brandsreportingcampaign/adchanneltype-data.typealias.json": {
-      "file_path": "documentation/apple-ads-platform-api/brandsreportingcampaign/adchanneltype-data.typealias.md",
-      "hash": "4a2eda0e99c232a078cb80ee3a8f297db919fea1a2b3f7d1a166074ce0d9e470"
+      "hash": "68ab738d10b7934345b6d177ae8ccda40ef167024e444b460ad5f9d9391c64d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/brandsreportingcampaign/billingevent-data.typealias.json": {
       "file_path": "documentation/apple-ads-platform-api/brandsreportingcampaign/billingevent-data.typealias.md",
@@ -4434,7 +4414,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/costmetrics.json": {
       "file_path": "documentation/apple-ads-platform-api/costmetrics.md",
-      "hash": "d7098a37262e2312e4f56852f98891bc16ab6ac3f81bad44db7b90fcb33ee240"
+      "hash": "7712207c6419af8e65554e9f26733f622a7943458ba5ee687884727a2e09c02e"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/cpagoal.json": {
       "file_path": "documentation/apple-ads-platform-api/cpagoal.md",
@@ -4734,7 +4714,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/filter.json": {
       "file_path": "documentation/apple-ads-platform-api/filter.md",
-      "hash": "e4da46d8f2e2963072376b1c2698829567148589a3609174c45d7a053169558d"
+      "hash": "89732b9fdc5168d17c7d72d12deef629f32dd32c34add0b68012ef86fce2df97"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/filter/value-data.dictionary.json": {
       "file_path": "documentation/apple-ads-platform-api/filter/value-data.dictionary.md",
@@ -5514,7 +5494,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-audit-summary-_-grouped-by-transaction.json": {
       "file_path": "documentation/apple-ads-platform-api/query-audit-summary-_-grouped-by-transaction.md",
-      "hash": "dec1c2468c5855b67a26f8bfe03f2182766553a01a0c66d08fdbd89474f8fab9"
+      "hash": "c98aea03e076e83a57a63cc3f319fe2df6a8e5777378357ae651c7886ec770d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-brands.json": {
       "file_path": "documentation/apple-ads-platform-api/query-brands.md",
@@ -5622,7 +5602,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/ratemetrics.json": {
       "file_path": "documentation/apple-ads-platform-api/ratemetrics.md",
-      "hash": "588b86285314af9a7318d1855c686f4d22695e7bfb1948ff59f062d5aa9ab9c6"
+      "hash": "2d16f8a4370a7bc9697cef77a86c9aa6ce2f214108ce1d3ea32edc5ed023da68"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/recommendationapplydailybudgetresponse.json": {
       "file_path": "documentation/apple-ads-platform-api/recommendationapplydailybudgetresponse.md",
@@ -5792,17 +5772,13 @@
       "file_path": "documentation/apple-ads-platform-api/rejectionreasonresponse.md",
       "hash": "d0925fccffd7277ef0b19d74efe04802db9ce287982621f1c53549e502a3f5f6"
     },
-    "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingadchanneltype.json": {
-      "file_path": "documentation/apple-ads-platform-api/reportingadchanneltype.md",
-      "hash": "d5d131afec17110de9bc75d43bc8ea8526d1e03e9a76da9ed5dd5d7bde338222"
-    },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingadgroupmin.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingadgroupmin.md",
-      "hash": "62e1ed65acd8e3e8885a1834dd9df3344fc2fd71afa3603a75048e8e06acaac2"
+      "hash": "9e4a004d64857dc396e8b343b4663e584d335543641054e7489c94faf9570b4b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingbidstrategy.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingbidstrategy.md",
-      "hash": "dbfee2941a969628f20fc9891f1348b9c8d8c8d76e2f062b7dae4ac71f6736b3"
+      "hash": "7351e1005013e72b6148a1d9bd37f842cd6887bcb5efebf4eb50cb49d1694873"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingbidstrategy/bidstrategytype-data.typealias.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingbidstrategy/bidstrategytype-data.typealias.md",
@@ -5814,15 +5790,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingcampaignmin.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingcampaignmin.md",
-      "hash": "63ecdad4560f725371cd16abb8ac4220bf739bd840817d6b29cd6e277f24de9a"
+      "hash": "908ddec8918e92666ab49963190cfb04785e5d82395c78cec09060d65cdb7e39"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingcreativespec.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingcreativespec.md",
-      "hash": "398253cd03c308d0b1f9a3a2346cef1fe3cea7a9efa04e572ca6fef4536d548d"
+      "hash": "6fce01131f5b0efc5809a7d9c283c13dfb3b5de5ceb42225f816fd9e4ff0fce9"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingdestination.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingdestination.md",
-      "hash": "ef2f885c9078863a561da4dc5b7b07a1b4e490f2f2f02e0a9f349c7cb23829c3"
+      "hash": "73c72a0a2bba07eb304567a292fc7ff216e88611d9381d1f1c4dbe3f252b6274"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingdestination/parameters-data.dictionary.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingdestination/parameters-data.dictionary.md",
@@ -5830,7 +5806,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingkeyword.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingkeyword.md",
-      "hash": "b8c05b7da7f2d419c39314c692f7aa1364fe5bd524d5afb98f6606341ff954d9"
+      "hash": "69340254959565e97ed0bdcc5205a16c67cca402a988a8e27796e9b72836a750"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingkeywordbidrecommendation.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingkeywordbidrecommendation.md",
@@ -5838,7 +5814,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingmoney.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingmoney.md",
-      "hash": "c9ecf0031bee547fcd7372380d823751cdc655a505c2e489b568aaae1a611ba0"
+      "hash": "34f355771ec13e4ac24afd306450b69811b560f2fb17f4aaf5bc3c9e48b79f1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingpricingmodel.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingpricingmodel.md",
@@ -5846,11 +5822,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reportingsearchterm.json": {
       "file_path": "documentation/apple-ads-platform-api/reportingsearchterm.md",
-      "hash": "dda479ecf5e18deece7f0a09c144467e1e65b3e6e884e1133698c60de943f4ef"
+      "hash": "4d367f2edf4b117892ae87d51d646549ca1d58944bf6d10161eb2a7a4fa6f17e"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reports-shared-objects.json": {
       "file_path": "documentation/apple-ads-platform-api/reports-shared-objects.md",
-      "hash": "e2711bd03a61ce63d6972679a122c80f8b4cd5c4c908b229f8101fa7164ecd88"
+      "hash": "92cd8547009d8b7fb44a60c905a75d3104945185dd0339958eca92fb9372cc3c"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/reports.json": {
       "file_path": "documentation/apple-ads-platform-api/reports.md",
@@ -5858,7 +5834,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/requestpagination.json": {
       "file_path": "documentation/apple-ads-platform-api/requestpagination.md",
-      "hash": "4cef55cacb01e32cb072b2e38d8d51536e274d84e9de77e5ad0c48fc72345a9c"
+      "hash": "a3c37ded1c83195b4ebdaa224eb6c6ee460060c27b5042234f48f22d3f9dfc2f"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/response.json": {
       "file_path": "documentation/apple-ads-platform-api/response.md",
@@ -5982,7 +5958,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/sorting.json": {
       "file_path": "documentation/apple-ads-platform-api/sorting.md",
-      "hash": "8a712a19c4d93f348511dde5d6a0cd1201a409726224e807d2955d770258e3a8"
+      "hash": "fde1ba8a9337ed75a683e8fbd1699d7258e005a5496b74163ea874978f59bd87"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/suggestions-data-objects.json": {
       "file_path": "documentation/apple-ads-platform-api/suggestions-data-objects.md",
@@ -6018,7 +5994,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/timerange.json": {
       "file_path": "documentation/apple-ads-platform-api/timerange.md",
-      "hash": "e2db877f235bcea58746d676b8652b63f3a1d6c74e15ce364296c674c2bb2e98"
+      "hash": "ab498ad3ff15f62f6d16940401373c9878d6ee4985948ee933432fe5101b265e"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/update-location-group.json": {
       "file_path": "documentation/apple-ads-platform-api/update-location-group.md",
@@ -6045,6 +6021,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 1510
+    "total_pages": 1504
   }
 }

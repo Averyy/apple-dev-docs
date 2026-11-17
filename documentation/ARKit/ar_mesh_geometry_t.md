@@ -15,6 +15,10 @@ The shapes that make up a mesh anchor.
 typedef NSObject<OS_ar_mesh_geometry> * ar_mesh_geometry_t;
 ```
 
+## Discussion
+
+Describes the geometry of a mesh including vertices, normals, and faces.
+
 ## See Also
 
 ### Geometry

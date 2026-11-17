@@ -26,7 +26,11 @@ ARKit generates the contents of this buffer by processing the camera feed.
 
 If you implement a custom renderer, you apply this property by using alpha and depth mattes provided with [`ARMatteGenerator`](../armattegenerator.md).
 
-Apps using one of the standard renderers don’t need this this property to occlude virtual content with people. The standard renderers ([`ARView`](../../RealityKit/arview.md), [`ARSCNView`](../arscnview.md), and [`ARSKView`](../arskview.md)) enable people occlusion when you add [`personSegmentation`](../arconfiguration/framesemantics-swift.struct/personsegmentation.md) or [`personSegmentationWithDepth`](../arconfiguration/framesemantics-swift.struct/personsegmentationwithdepth.md) to your configuration’s [`frameSemantics`](../arconfiguration/framesemantics-swift.property.md).
+Apps using one of the standard renderers don’t need this property to occlude virtual content with people. The standard renderers ([`ARView`](../../RealityKit/arview.md), [`ARSCNView`](../arscnview.md), and [`ARSKView`](../arskview.md)) enable people occlusion when you add [`personSegmentation`](../arconfiguration/framesemantics-swift.struct/personsegmentation.md) or [`personSegmentationWithDepth`](../arconfiguration/framesemantics-swift.struct/personsegmentationwithdepth.md) to your configuration’s [`frameSemantics`](../arconfiguration/framesemantics-swift.property.md).
+
+> **See Also**: [`ARFrame.SegmentationClass`](./segmentationclass.md)
+
+> **See Also**: [`frameSemantics`](../arconfiguration/framesemantics-swift.property.md)
 
 ## See Also
 

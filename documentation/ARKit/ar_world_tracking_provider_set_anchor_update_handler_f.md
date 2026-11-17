@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Sets the handler for receiving world tracking updates.
+Set the function for receiving world tracking anchor updates.
 
 **Availability**:
 - visionOS 1.0+
@@ -14,6 +14,17 @@ Sets the handler for receiving world tracking updates.
 ```c
 extern void ar_world_tracking_provider_set_anchor_update_handler_f(ar_world_tracking_provider_t world_tracking_provider, dispatch_queue_t world_tracking_updates_queue, void *context, ar_world_tracking_anchor_update_handler_function_t world_tracking_anchor_update_handler_function);
 ```
+
+## Discussion
+
+> **Note**: Setting this function will override the handler set using `ar_world_tracking_provider_set_anchor_update_handler`.
+
+## Parameters
+
+- `world_tracking_provider`: The world tracking provider.
+- `world_tracking_updates_queue`: The queue on which the function will be called. Passing `NULL` will default to the main queue.
+- `context`: The application-defined context parameter to pass to the function.
+- `world_tracking_anchor_update_handler_function`: The function to be called when new world anchor data arrives.
 
 ## See Also
 
@@ -43,7 +54,7 @@ extern void ar_world_tracking_provider_set_anchor_update_handler_f(ar_world_trac
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

@@ -19,7 +19,7 @@ var triangleIndices: [Int16] { get }
 
 ## Discussion
 
-Each 16-bit integer value in this array represents an index into the [`vertices`](./vertices-43kle.md) and [`textureCoordinates`](./texturecoordinates-p801.md) arrays. Each set of three indices identifies the vertices that form a single triangle in the mesh. You can use array as an index buffer for a triangle mesh in GPU-based rendering or to create 3D model asset files.
+Each 16-bit integer value in this array represents an index into the [`vertices`](./vertices-43kle.md) and [`textureCoordinates`](./texturecoordinates-p801.md) arrays. Each set of three indices identifies the vertices that form a single triangle in the mesh. You can use this array as an index buffer for a triangle mesh in GPU-based rendering or to create 3D model asset files.
 
 Each set of three indices forms a triangle, so the number of indices in the [`triangleIndices`](./triangleindices-64epx.md) array is three times the [`triangleCount`](./trianglecount.md) value.
 

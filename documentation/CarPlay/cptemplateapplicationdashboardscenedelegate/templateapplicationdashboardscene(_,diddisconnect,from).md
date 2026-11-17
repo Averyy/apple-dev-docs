@@ -33,7 +33,7 @@ CarPlay calls this method after it disconnects your dashboard scene. You can use
 
 ## See Also
 
-### Responding to the Scene Life Cycle
+### Responding to the dashboard scene life cycle
 - [func templateApplicationDashboardScene(CPTemplateApplicationDashboardScene, didConnect: CPDashboardController, to: UIWindow)](./templateapplicationdashboardscene%28_,didconnect,to%29.md)
   Tells the delegate about the addition of a CarPlay Dashboard scene to your navigation app.
 

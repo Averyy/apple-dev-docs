@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The application scene that contains the window.
+The scene associated with the window.
 
 **Availability**:
 - iOS 12.0+
@@ -20,6 +20,10 @@ weak var templateApplicationScene: CPTemplateApplicationScene? { get set }
 ```objc
 @property (nonatomic, weak, nullable) CPTemplateApplicationScene * templateApplicationScene;
 ```
+
+## Discussion
+
+While the window’s associated scene is active, you can access it from this property.
 
 
 ---

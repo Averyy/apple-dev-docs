@@ -23,7 +23,7 @@ enum CPManeuverDisplayStyle : NSInteger;
 
 ## Topics
 
-### Display Styles
+### Getting the display styles
 - [static var leadingSymbol: CPManeuverDisplayStyle](./cpmaneuverdisplaystyle/leadingsymbol.md)
   The symbol appears before the instructions for the maneuver.
 - [static var trailingSymbol: CPManeuverDisplayStyle](./cpmaneuverdisplaystyle/trailingsymbol.md)
@@ -34,7 +34,7 @@ enum CPManeuverDisplayStyle : NSInteger;
   Only the symbol appears for the maneuver.
 - [CPManeuverDisplayStyleDefault](./cpmaneuverdisplaystyle/cpmaneuverdisplaystyledefault.md)
   The default display style for the maneuver.
-### Initializers
+### Creating a display style
 - [init(rawValue: Int)](./cpmaneuverdisplaystyle/init%28rawvalue%29.md)
   Initializes a maneuver display style using the specified raw value.
 
@@ -52,7 +52,7 @@ enum CPManeuverDisplayStyle : NSInteger;
 
 ## See Also
 
-### Setting the Display Style
+### Configuring the map’s appearance
 - [func mapTemplate(CPMapTemplate, displayStyleFor: CPManeuver) -> CPManeuverDisplayStyle](./cpmaptemplatedelegate/maptemplate%28_,displaystylefor%29.md)
   Asks the delegate for the maneuver’s display style.
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-A UIColor used to tint the element. When @c showsImageFullHeight is true, the tint color is applied behind the labels at the bottom of the card. Otherwise, this color is part of the gradient color at the bottom of the card.
+The color to use for the card’s background.
 
 **Availability**:
 - iOS 26.0+
@@ -24,7 +24,17 @@ var tintColor: UIColor? { get set }
 
 ## Discussion
 
-If this value is nil, iOS will use secondarySystemBackground color.
+When the value in the `showsImageFullHeight` property is `false`, CarPlay fills the card shape with this color before layering the image and text on top of the card. When the value in `showsImageFullHeight` is `true`, CarPlay applies the tint color behind the labels at the bottom of the card.
+
+If the value in this property is `nil`, CarPlay uses the [`secondarySystemBackground`](../../UIKit/uicolor/secondarysystembackground.md) color.
+
+## See Also
+
+### Getting the element’s content
+- [var title: String](./title.md)
+  The primary text for the element.
+- [var subtitle: String?](./subtitle.md)
+  The secondary text for the element.
 
 
 ---

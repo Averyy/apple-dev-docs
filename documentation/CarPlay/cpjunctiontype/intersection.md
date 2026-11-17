@@ -23,7 +23,7 @@ CPJunctionTypeIntersection
 
 ## See Also
 
-### Junction types
+### Getting the junction types
 - [CPJunctionType.roundabout](./roundabout.md)
   Junction elements that represent roads exiting the roundabout.
 

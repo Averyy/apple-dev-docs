@@ -17,7 +17,9 @@ final var latestAnchors: (leftHand: HandAnchor?, rightHand: HandAnchor?) { get }
 
 ## Discussion
 
-Accessing this tuple consumes its values and sets them to `nil` until the next anchor update. Both elements of this tuple are `nil` when the associated [`HandTrackingProvider`](../handtrackingprovider.md) isn’t running.
+Both elements of this tuple are `nil` when the associated [`HandTrackingProvider`](../handtrackingprovider.md) isn’t running.
+
+> **Note**: For apps compiled against the visionOS 1.0 SDK, accessing this tuple consumes its values and sets them to `nil` until the next anchor update.
 
 ## See Also
 

@@ -16,6 +16,16 @@ The authorization for access to accessory tracking data.
 case accessoryTracking
 ```
 
+## See Also
+
+### Requesting authorization
+- [ARKitSession.AuthorizationType.handTracking](./handtracking.md)
+  The authorization for access to detailed hand-tracking data.
+- [ARKitSession.AuthorizationType.worldSensing](./worldsensing.md)
+  The authorization for access to plane detection, scene reconstruction, and image tracking.
+- [ARKitSession.AuthorizationType.cameraAccess](./cameraaccess.md)
+  The authorization for camera access.
+
 
 ---
 

@@ -27,6 +27,14 @@ You specify this information initially when you create the panel, but can also u
 
 The system pins the information in this type to the bottom of the map panel, keeping it visible at all times.
 
+## See Also
+
+### Getting the panel’s content
+- [var title: String?](./title.md)
+  The title to display at the top of the panel.
+- [var sections: [CPMapPanelSection]](./sections.md)
+  The sections of content to display in the panel.
+
 
 ---
 

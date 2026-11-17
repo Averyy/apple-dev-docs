@@ -62,7 +62,7 @@ let image = NSImage(named: "ImageName")
 ## See Also
 
 ### Images
-- [Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md)
+- [Creating custom SF Symbols](../TechnologyOverviews/creating-custom-sf-symbols.md)
   Design a symbol image with the same behavior as system-provided symbols.
 
 

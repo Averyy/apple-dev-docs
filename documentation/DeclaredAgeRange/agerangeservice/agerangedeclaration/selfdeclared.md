@@ -24,7 +24,7 @@ case selfDeclared
 - [AgeRangeService.AgeRangeDeclaration.guardianDeclared](./guardiandeclared.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range.
 - [AgeRangeService.AgeRangeDeclaration.confirmed](./confirmed.md)
-  A status that indicates a person confirmed their age-range declaration using a credit card or government ID.
+  A status that indicates a person confirmed their age-range declaration.
 
 
 ---

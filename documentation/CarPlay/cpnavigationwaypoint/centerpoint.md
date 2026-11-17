@@ -21,6 +21,15 @@ var centerPoint: CPLocationCoordinate3D { get }
 @property (nonatomic, readonly) CPLocationCoordinate3D centerPoint;
 ```
 
+## See Also
+
+### Getting the waypoint location
+- [var entryPoints: [CPLocationCoordinate3D]](./entrypoints-obhb.md)
+- [var locationThreshold: Measurement<UnitLength>?](./locationthreshold.md)
+  locationThreshold is the maximum distance in meters from the centerPoint used to determine if a destination is valid.
+- [var timeZone: TimeZone?](./timezone.md)
+  The timezone for the waypoint.
+
 
 ---
 

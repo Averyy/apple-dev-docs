@@ -4,6 +4,8 @@
 **Kind**: typealias  
 **Role**: Type Alias
 
+Function to be called when there are updates to hand tracking.
+
 **Availability**:
 - visionOS 1.0+
 
@@ -12,6 +14,12 @@
 ```c
 typedef void (*)(void *, NSObject<OS_ar_hand_anchor> *, NSObject<OS_ar_hand_anchor> *) ar_hand_tracking_update_handler_function_t;
 ```
+
+## Parameters
+
+- `context`: The application-defined context.
+- `hand_anchor_left`: The latest left hand anchor.
+- `hand_anchor_right`: The latest right hand anchor.
 
 ## See Also
 
@@ -27,8 +35,9 @@ typedef void (*)(void *, NSObject<OS_ar_hand_anchor> *, NSObject<OS_ar_hand_anch
 - [ar_hand_anchor_get_origin_from_anchor_transform_with_correction](./ar_hand_anchor_get_origin_from_anchor_transform_with_correction.md)
   Get the transform from an anchor to the origin coordinate system.
 - [ar_hand_tracking_configuration_t](./ar_hand_tracking_configuration_t.md)
+  Configuration for hand tracking.
 - [ar_hand_tracking_provider_create](./ar_hand_tracking_provider_create.md)
-  A source of live data about the position of a person’s hands and hand joints.
+  Creates a hand tracking provider.
 - [ar_hand_tracking_provider_is_supported](./ar_hand_tracking_provider_is_supported.md)
   Returns a Boolean value that indicates whether the current runtime environment supports hand tracking providers.
 - [ar_hand_tracking_provider_get_latest_anchors](./ar_hand_tracking_provider_get_latest_anchors.md)
@@ -36,12 +45,15 @@ typedef void (*)(void *, NSObject<OS_ar_hand_anchor> *, NSObject<OS_ar_hand_anch
 - [ar_hand_tracking_provider_get_required_authorization_type](./ar_hand_tracking_provider_get_required_authorization_type.md)
   Gets the types of authorizations required to track hands.
 - [ar_hand_tracking_configuration_create](./ar_hand_tracking_configuration_create.md)
+  Create a hand tracking configuration.
 - [ar_hand_tracking_provider_set_update_handler](./ar_hand_tracking_provider_set_update_handler.md)
   Sets the handler for receiving hand tracking updates.
 - [ar_hand_tracking_provider_set_update_handler_f](./ar_hand_tracking_provider_set_update_handler_f.md)
-  Sets the handler for receiving hand tracking updates.
+  Sets the function for receiving hand tracking updates.
 - [ar_hand_skeleton_joint_name_forearm_arm](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_forearm_arm.md)
+  Joint names in the hand skeleton.
 - [ar_hand_skeleton_joint_name_forearm_wrist](./ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_forearm_wrist.md)
+  Joint names in the hand skeleton.
 
 
 ---

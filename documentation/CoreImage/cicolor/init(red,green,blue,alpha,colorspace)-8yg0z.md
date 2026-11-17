@@ -39,6 +39,19 @@ This will return null if the `CGColorSpace` is not `kCGColorSpaceModelRGB`. The 
 - `alpha`: The color’s alpha (opacity) value between 0 and 1.
 - `colorSpace`: The color’s `CGColorSpace` which must have `kCGColorSpaceModelRGB`.
 
+## See Also
+
+### Initializing Color Objects
+- [init(cgColor: CGColor)](./init%28cgcolor%29-1hzk4.md)
+  Create a Core Image color object with a Core Graphics color object.
+- [convenience init(color: UIColor)](./init%28color%29.md)
+- [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28red,green,blue,alpha%29.md)
+  Initialize a Core Image color object in the sRGB color space with the specified red, green, blue, and alpha component values.
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](./init%28red,green,blue,colorspace%29-6d8o.md)
+  Initialize a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
+- [- initWithRed:green:blue:](./initwithred_green_blue_.md)
+  Initialize a Core Image color object in the sRGB color space with the specified red, green, and blue component values.
+
 
 ---
 

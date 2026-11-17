@@ -28,6 +28,8 @@ To minimize the difference in LiDAR readings across frames, ARKit processes the 
 
 ARKit supports scene depth only on LiDAR-capable devices, so call [`supportsFrameSemantics(_:)`](../supportsframesemantics%28_%29.md) to ensure device support before attempting to enable scene depth.
 
+> **See Also**: [`smoothedSceneDepth`](../../arframe/smoothedscenedepth.md)
+
 ## See Also
 
 ### Accessing Depth

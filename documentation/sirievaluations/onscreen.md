@@ -18,9 +18,13 @@ An expectation that specific app entities are onscreen.
 struct OnScreen
 ```
 
+## Mentions
+
+- [Evaluating your app’s integration with Siri](./evaluating-your-apps-integration-with-siri.md)
+
 ## Overview
 
-Use `OnScreen` to check that an entity is in the onscreen context Siri captures for a turn. `OnScreen` doesn’t show the entity itself, so before the evaluation runs, make sure your app is displaying it. For example, run an App Intent that opens the screen that shows the entity and then run the evaluation.
+Use `OnScreen` to check that an entity is in the onscreen context Siri captures for a turn. Siri reads onscreen entities from the views that identify them, so identify the entity in the view that shows it, using a view modifier such as [`appEntityIdentifier(_:)`](../SwiftUI/view/appentityidentifier%28_%29.md). `OnScreen` doesn’t show the entity itself, so make sure your app is displaying it before Siri runs the scenario. For example, in your evaluation’s `subject(from:)` method, run an App Intent that opens the screen that shows the entity, wait until the entity definition’s `viewAnnotations()` includes the entity, and then call [`run(scenario:)`](./siriservice/run%28scenario%29.md).
 
 Unlike [`Finds`](./finds.md), `OnScreen` matches by identity only and doesn’t use property constraints like `.expect(title:)`. Write an empty entity definition to match any entity of that type, or call [`expectIdentifier(_:)`](../AppIntentsTesting/appentitydefinition/expectidentifier%28_%29.md) to name a specific one.
 

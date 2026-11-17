@@ -23,6 +23,8 @@ case cameraAccess
   The authorization for access to detailed hand-tracking data.
 - [ARKitSession.AuthorizationType.worldSensing](./worldsensing.md)
   The authorization for access to plane detection, scene reconstruction, and image tracking.
+- [ARKitSession.AuthorizationType.accessoryTracking](./accessorytracking.md)
+  The authorization for access to accessory tracking data.
 
 
 ---

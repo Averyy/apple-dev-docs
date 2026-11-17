@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The list item’s supplementary text.
+Additional text to display after the trailing configuration items.
 
 **Availability**:
 - iOS 14.0+
@@ -23,15 +23,17 @@ var trailingText: String? { get set }
 
 ## Discussion
 
-The list item displays any supplementaty text in its trailing region.
+Specify the trailing text at initialization time. CarPlay places the text after any content from the [`trailingConfiguration`](./trailingconfiguration.md) property.
 
 ## See Also
 
-### Managing Content
+### Getting the row content
 - [var text: String?](./text.md)
-  The list item’s primary text.
+  The primary text to display in the message list item’s row.
 - [var detailText: String?](./detailtext.md)
-  The list item’s secondary text.
+  Additional text to display less prominently below the row’s main text.
+- [var leadingDetailTextImage: UIImage?](./leadingdetailtextimage.md)
+  An image to display before the row’s detail text.
 
 
 ---

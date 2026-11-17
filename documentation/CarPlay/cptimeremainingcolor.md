@@ -27,7 +27,7 @@ The system determines the shade of each color based on the [`tripEstimateStyle`]
 
 ## Topics
 
-### Colors
+### Getting the color
 - [CPTimeRemainingColor.default](./cptimeremainingcolor/default.md)
   The system default color.
 - [CPTimeRemainingColor.green](./cptimeremainingcolor/green.md)
@@ -51,7 +51,7 @@ The system determines the shade of each color based on the [`tripEstimateStyle`]
 
 ## See Also
 
-### Providing Trip Estimates
+### Providing trip estimates
 - [func updateEstimates(CPTravelEstimates, for: CPTrip)](./cpmaptemplate/updateestimates%28_,for%29.md)
   Updates travel estimates, such as arrival time and the remaining time and distance for a trip.
 - [func update(CPTravelEstimates, for: CPTrip, with: CPTimeRemainingColor)](./cpmaptemplate/update%28_,for,with%29.md)

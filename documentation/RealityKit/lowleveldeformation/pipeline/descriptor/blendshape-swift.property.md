@@ -18,6 +18,12 @@ Blend-shape parameters, or `nil` to omit blend-shape deformation.
 var blendShape: LowLevelDeformation.Pipeline.Descriptor.BlendShape?
 ```
 
+## See Also
+
+### Configuring blend shapes
+- [LowLevelDeformation.Pipeline.Descriptor.BlendShape](./blendshape-swift.struct.md)
+  The blend-shape configuration for a deformation pipeline.
+
 
 ---
 

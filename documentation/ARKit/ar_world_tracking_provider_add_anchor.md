@@ -15,6 +15,16 @@ Adds a world anchor you supply to the set of currently tracked anchors.
 extern void ar_world_tracking_provider_add_anchor(ar_world_tracking_provider_t world_tracking_provider, ar_world_anchor_t world_anchor, ar_world_tracking_add_anchor_completion_handler_t add_anchor_completion_handler);
 ```
 
+## Discussion
+
+This anchor will be persisted across device restarts unless explicitly removed.
+
+## Parameters
+
+- `world_tracking_provider`: The world tracking provider.
+- `world_anchor`: The world anchor to add.
+- `add_anchor_completion_handler`: The handler to be called after the request to add the world anchor to the world tracking provider completes.
+
 ## See Also
 
 ### World tracking
@@ -43,7 +53,7 @@ extern void ar_world_tracking_provider_add_anchor(ar_world_tracking_provider_t w
 - [ar_world_anchors_enumerate_anchors](./ar_world_anchors_enumerate_anchors.md)
   Enumerates a collection of world anchors.
 - [ar_world_anchors_enumerate_anchors_f](./ar_world_anchors_enumerate_anchors_f.md)
-  Enumerates a collection of world anchors.
+  Enumerates a collection of world anchors using a function.
 - [ar_world_anchors_get_count](./ar_world_anchors_get_count.md)
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](./ar_world_tracking_provider_create.md)

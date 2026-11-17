@@ -11,7 +11,7 @@ A Boolean value that indicates whether the frame interpolator requires the clien
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
-- tvOS 27.1+
+- tvOS 27.2+
 
 ## Declaration
 

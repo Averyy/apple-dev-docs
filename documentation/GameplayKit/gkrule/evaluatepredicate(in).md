@@ -34,6 +34,10 @@ A rule system calls this method when evaluating its rules.
 
 If the rule was created with the [`init(predicate:assertingFact:grade:)`](./init%28predicate,assertingfact,grade%29.md) or [`init(predicate:retractingFact:grade:)`](./init%28predicate,retractingfact,grade%29.md), calling this method returns the result of testing the predicate against the provided rule system. If the rule was created with the [`init(blockPredicate:action:)`](./init%28blockpredicate,action%29.md) method, calling this method calls the predicate block and returns the result. Otherwise, this method always returns [`false`](../../Swift/false.md)—subclasses should override this method to implement their own predicate tests.
 
+## Parameters
+
+- `system`: The rule system against which to evaluate the rule.
+
 ## See Also
 
 ### Evaluating a Rule

@@ -31,10 +31,11 @@ You create a device anchor by starting an [`ARKitSession`](./arkitsession.md) wi
   Values that describe the tracking state of a device anchor.
 - [var isTracked: Bool](./deviceanchor/istracked.md)
   A Boolean value that indicates whether ARKit is tracking the device.
-- [var description: String](./deviceanchor/description.md)
-  A textual representation of this anchor.
 - [var id: UUID](./deviceanchor/id.md)
   The unique identifier of this anchor.
+### Instance Properties
+- [var description: String](./deviceanchor/description.md)
+  A textual representation of this anchor.
 ### Default Implementations
 - [ARKitCoordinateSpaceProviding Implementations](./deviceanchor/arkitcoordinatespaceproviding-implementations.md)
 

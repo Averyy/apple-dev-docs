@@ -21,8 +21,9 @@ func updateTitle(_ title: String)
 
 ## See Also
 
-### Instance Methods
-- [func updateGridButtons([CPGridButton])](./updategridbuttons%28_%29.md)
+### Getting the grid title
+- [var title: String](./title.md)
+  The title shown in the grid template’s navigation bar.
 
 
 ---

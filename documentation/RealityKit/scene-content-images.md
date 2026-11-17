@@ -21,6 +21,15 @@ Present images and spatial scenes in your RealityKit experiences.
 ### SwiftUI image presentation
 - [Presenting images in RealityKit](./presenting-images-in-realitykit.md)
   Create and display spatial scenes in RealityKit
+### Gaussian splats
+- [struct GaussianSplatComponent](./gaussiansplatcomponent.md)
+  A component that renders 3D Gaussian splat data.
+- [class GaussianSplatResource](./gaussiansplatresource.md)
+  A container for the splat data and rendering options that a Gaussian splat component displays.
+- [enum GaussianSplatEvents](./gaussiansplatevents.md)
+  A namespace for events about Gaussian splat rendering.
+- [Gaussian Splat Rendering Guidelines](./gaussian-splat-rendering-guidelines.md)
+  Improving performance and watching thermal state when rendering Gaussian splats
 
 ## See Also
 

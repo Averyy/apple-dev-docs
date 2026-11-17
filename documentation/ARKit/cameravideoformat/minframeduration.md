@@ -22,6 +22,8 @@ var minFrameDuration: Float { get }
   The camera positions for this video format.
 - [var cameraType: CameraFrameProvider.CameraType](./cameratype.md)
   The camera type for this video format.
+- [var cameraRectification: CameraFrameProvider.CameraRectification](./camerarectification.md)
+  The camera rectification for this video format.
 - [var frameSize: CGSize](./framesize.md)
   The frame size for this video format.
 - [var pixelFormat: OSType](./pixelformat.md)
@@ -30,8 +32,6 @@ var minFrameDuration: Float { get }
   The maximum frame duration for this video format, in seconds.
 - [static func supportedVideoFormats(for: CameraFrameProvider.CameraType, cameraPositions: [CameraFrameProvider.CameraPosition]) -> [CameraVideoFormat]](./supportedvideoformats%28for,camerapositions%29.md)
   Returns the video formats the provided camera type and camera position supports.
-- [var description: String](./description.md)
-  A textual representation of this camera video format.
 
 
 ---

@@ -4,6 +4,8 @@
 **Kind**: var  
 **Role**: Global Variable
 
+The input method mode dictionary key.
+
 **Availability**:
 - macOS 10.5+
 
@@ -24,10 +26,10 @@ The key used to obtain an input method mode dictionary from the input method bun
 ## See Also
 
 ### Constants
-- [let IMKCandidatesOpacityAttributeName: String](./imkcandidatesopacityattributename.md)
-- [let IMKCandidatesSendServerKeyEventFirst: String](./imkcandidatessendserverkeyeventfirst.md)
 - [let IMKControllerClass: String](./imkcontrollerclass.md)
+  The input method controller class key.
 - [let IMKDelegateClass: String](./imkdelegateclass.md)
+  The input method delegate class key.
 
 
 ---

@@ -28,7 +28,7 @@ struct ScoreDimension
 
 ## Overview
 
-Each dimension defines a name (used as the DataFrame column), an optional description, and a [`ScoringScale`](./scoringscale.md) that defines what each score means.
+Each dimension defines a name, an optional description, and a [`ScoringScale`](./scoringscale.md) that defines what each score means. An [`Evaluation`](./evaluation.md) uses the name as the [`Column`](../TabularData/column.md) name in its results.
 
 ```swift
 ScoreDimension("Grammar", scale: .numeric([
@@ -61,7 +61,7 @@ let _ = ScoreDimension("Safety", scale: .custom(SafetyLevel.self))
   Creates a scoring dimension.
 ### Inspecting a dimension
 - [let name: String](./scoredimension/name.md)
-  The name of the dimension, used as the DataFrame column name.
+  The name of the dimension, which an [`Evaluation`](./evaluation.md) uses as the [`Column`](../TabularData/column.md) name in its results.
 - [var metric: Metric](./scoredimension/metric.md)
   A metric identifier that uses this dimension’s name.
 - [let scale: ScoringScale](./scoredimension/scale.md)

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Type Property
 
-The maximum number of action buttons that can be displayed in the header.
+The maximum number of action buttons the header can display.
 
 **Availability**:
 - iOS 26.4+
@@ -21,13 +21,20 @@ class var maximumActionButtonCount: Int { get }
 @property (class, nonatomic, readonly) NSInteger maximumActionButtonCount;
 ```
 
-## Return Value
-
-The maximum number of action buttons supported by this header type.
-
 ## Discussion
 
-This class property defines the upper limit for action buttons to ensure proper layout and usability within the CarPlay interface constraints. Any buttons beyond this limit in the actionButtons array will be ignored.
+When configuring a header, use this class property to determine how many [`CPButton`](../cpbutton.md) types you can include in the header. CarPlay limits the total number of buttons to ensure usability and a readable layout. If you configure the header with more than the maximum number of buttons, CarPlay ignores any extra buttons.
+
+## See Also
+
+### Creating a details header
+- [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, actionButtons: [CPButton])](./init%28thumbnail,title,subtitle,actionbuttons%29.md)
+  Creates a details header with a thumbnail image, optional text, and action buttons.
+- [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, bodyVariants: [NSAttributedString], actionButtons: [CPButton])](./init%28thumbnail,title,subtitle,bodyvariants,actionbuttons%29.md)
+  Creates a details header with a thumbnail image, optional text, and action buttons.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+- [class var maximumActionButtonSize: CGSize](./maximumactionbuttonsize.md)
+  The maximum size of the images you use to create action buttons.
 
 
 ---

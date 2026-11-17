@@ -27,7 +27,7 @@ The minimum duration is in effect when [`duration`](./cpnavigationalert/duration
 
 ## See Also
 
-### Getting the Alert Duration
+### Getting the alert duration
 - [var duration: TimeInterval](./cpnavigationalert/duration.md)
   The amount of time, in seconds, that the alert is visible.
 

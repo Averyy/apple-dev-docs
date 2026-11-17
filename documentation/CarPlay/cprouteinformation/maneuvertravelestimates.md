@@ -28,7 +28,7 @@ This is the first maneuver in the current list of maneuvers.
 
 ## See Also
 
-### Properties
+### Getting route details
 - [var currentLaneGuidance: CPLaneGuidance](./currentlaneguidance.md)
   A lane guidance object that describes the current lane guidance.
 - [var currentManeuvers: [CPManeuver]](./currentmaneuvers.md)

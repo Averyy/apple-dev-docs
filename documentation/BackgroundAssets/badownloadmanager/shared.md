@@ -26,7 +26,7 @@ class var shared: BADownloadManager { get }
 
 ## Discussion
 
-Because the download manager is a shared resource, use the `BADownloadManager/withExclusiveControl(_:)` or [`withExclusiveControl(beforeDate:perform:)`](./withexclusivecontrol%28beforedate,perform%29.md) methods to acquire exclusive control of the manager before you use it to access, schedule, or cancel downloads.
+Because the download manager is a shared resource, use the [`withExclusiveControl(_:)`](./withexclusivecontrol%28_%29-2ang9.md) or [`withExclusiveControl(beforeDate:perform:)`](./withexclusivecontrol%28beforedate,perform%29.md) methods to acquire exclusive control of the manager before you use it to access, schedule, or cancel downloads.
 
 
 ---

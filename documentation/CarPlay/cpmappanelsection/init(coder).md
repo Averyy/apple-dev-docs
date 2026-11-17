@@ -15,6 +15,12 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating a map panel section
+- [init(title: String?, items: [CPMapPanelItem])](./init%28title,items%29.md)
+  Initializes the section with the specified title and items.
+
 
 ---
 

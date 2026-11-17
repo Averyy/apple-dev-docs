@@ -99,8 +99,6 @@ The system may reuse a single preview representation for multiple previews, and 
   A control for navigating to a URL.
 - [struct ShareLink](./sharelink.md)
   A view that controls a sharing presentation.
-- [struct TextFieldLink](./textfieldlink.md)
-  A control that requests text input from the user when pressed.
 - [struct HelpLink](./helplink.md)
   A button with a standard appearance that opens app-specific help documentation.
 

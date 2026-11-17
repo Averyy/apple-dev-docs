@@ -27,7 +27,7 @@ You must call the [`setPointsOfInterest(_:selectedIndex:)`](./setpointsofinteres
 
 ## See Also
 
-### Managing the Points of Interest
+### Managing the points of interest
 - [func setPointsOfInterest([CPPointOfInterest], selectedIndex: Int)](./setpointsofinterest%28_,selectedindex%29.md)
   Updates the points of interest and the current selection.
 - [var selectedIndex: Int](./selectedindex.md)

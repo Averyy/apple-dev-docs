@@ -15,6 +15,11 @@ Runs a session with the data providers you supply.
 extern void ar_session_run(ar_session_t session, ar_data_providers_t data_providers);
 ```
 
+## Parameters
+
+- `session`: The session.
+- `data_providers`: The collection of data providers to run.
+
 ## See Also
 
 ### Sessions

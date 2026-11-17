@@ -50,6 +50,10 @@ When the sound event plays or errors out, the framework invokes `completionHandl
 
 > ❗ **Important**:  To play the same sound asset again, create another sound event object. After the first [`start(completion:)`](./start%28completion%29.md) call on a particular `PHASESoundEvent` instance, subsequent calls have no effect.
 
+## Parameters
+
+- `handler`: Code the framework runs when the sound event plays or errors out.
+
 ## See Also
 
 ### Starting Playback

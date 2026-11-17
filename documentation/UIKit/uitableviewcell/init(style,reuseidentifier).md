@@ -44,7 +44,7 @@ If you want a table cell that has a configuration different that those defined b
 - [UITableViewCell.CellStyle](./cellstyle.md)
   An enumeration for the various styles of cells.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
-  Creates a table view from data in an unarchiver.
+  Creates a table view cell from data in an unarchiver.
 
 
 ---

@@ -19,6 +19,10 @@ static let horizontalText: PointerStyle
 
 This pointer style is sometimes referred to as the I-beam pointer. You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 
+The following image shows the horizontal text pointer:
+
+![An I-beam pointer with a vertical bar and a short crossbar at each](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/PointerStyle-horizontalText@2x.png)
+
 ## See Also
 
 ### Getting built-in pointer styles

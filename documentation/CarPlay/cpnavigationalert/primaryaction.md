@@ -27,9 +27,13 @@ Each navigation alert must have a primary action.
 
 ## See Also
 
-### Getting the Actions
+### Getting the actions
+- [var actions: [CPAlertAction]](./actions.md)
+  The array of actions associated with this navigation alert.
 - [var secondaryAction: CPAlertAction?](./secondaryaction.md)
   An optional secondary action, and button, for the navigation alert.
+- [class var maximumActionsCount: Int](./maximumactionscount.md)
+  The maximum number of actions that a @c CPNavigationAlert can display.
 
 
 ---

@@ -59,10 +59,6 @@ For more information about how to draw your app’s content using Metal, see [Me
   The domain for errors that occur during layer configuration.
 - [cp_layer_renderer_configuration_error_code](./cp_layer_renderer_configuration_error_code.md)
   Errors that can occur during layer configuration.
-### Articles
-- [Controlling Metal rendering immersion level](./controlling-metal-rendering-immersion-level.md)
-  Enable flexible immersive rendering by supporting progressive immersion when rendering your Metal content.
-- [CompositorServices Functions](./compositorservices-functions.md)
 ### Structures
 - [struct TextureTopology](./texturetopology.md)
   A type that specifies the organization of one of the drawable’s textures.
@@ -89,6 +85,8 @@ For more information about how to draw your app’s content using Metal, see [Me
   An object that can render any effects associated with a drawable This is required for applications that want to render using the Progressive Immersion Style
 - [cp_tracking_area_t](./cp_tracking_area_t.md)
   An opaque type that describes a region of a view that interacts with the gaze/cursor.
+### Articles
+- [CompositorServices Functions](./compositorservices-functions.md)
 ### Functions
 - [cp_tracking_area_get_identifier](./layerrenderer/drawable/trackingarea/identifier-swift.property.md)
   Returns the identifier for the tracking area.

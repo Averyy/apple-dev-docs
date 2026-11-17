@@ -68,9 +68,9 @@ A *use-case group* is a set of related schemas that share a single purpose. The 
   Identifies entity schemas in the clock domain.
 ### Types for static parameters
 - [var alarmTriggerState: some AppSchemaEnum](./appschema/clockenum/alarmtriggerstate.md)
-  An enum schema for an alarm trigger state parameter.
+  An enum schema for an alarm trigger state.
 - [var timerState: some AppSchemaEnum](./appschema/clockenum/timerstate.md)
-  An enum schema for a timer state parameter.
+  An enum schema for a timer state.
 - [AppSchema.ClockEnum](./appschema/clockenum.md)
   Identifies enum schemas in the clock domain.
 

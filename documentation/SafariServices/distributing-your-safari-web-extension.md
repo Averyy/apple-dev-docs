@@ -19,7 +19,7 @@ To distribute your web extension, first join the Apple Developer Program. The Ap
 
 ### Distribute your extension for beta testing in visionOS or iOS
 
-For beta testing in visionOS or iOS, you can send beta testers a signed, ad-hoc distribution copy of the app containing your extension, and then instruct them how to install it. For more information, see [Distributing your app to registered devices](../Xcode/distributing-your-app-to-registered-devices.md).
+For beta testing in visionOS or iOS, you can send beta testers a signed, ad-hoc distribution copy of the app containing your extension, and then instruct them how to install it. For more information, see [Distributing apps to your development devices](../Xcode/distributing-apps-to-your-development-devices.md).
 
 Alternatively, you can distribute your extension to a wider group of beta testers using TestFlight. For more information, see [Distributing your app for beta testing and releases](../Xcode/distributing-your-app-for-beta-testing-and-releases.md).
 

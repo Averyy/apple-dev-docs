@@ -34,7 +34,7 @@ In the Finder sidebar, it looks like this:
 
 ![A screenshot of Finder, showing the flame.fill SF Symbol in the sidebar.](https://developer.apple.com/tutorials/images/com.apple.bundleresources/media-3922503@2x.png)
 
-To create a custom symbol for your app, see [Creating custom symbols](../../../../TechnologyOverviews/custom-sf-symbols.md).
+To create a custom symbol for your app, see [Creating custom SF Symbols](../../../../TechnologyOverviews/creating-custom-sf-symbols.md).
 
 
 ---

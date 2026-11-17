@@ -20,8 +20,6 @@ var isTracked: Bool { get }
 ### Inspecting a world anchor
 - [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The position and orientation of a world anchor.
-- [var description: String](./description.md)
-  A textual representation of this anchor.
 
 
 ---

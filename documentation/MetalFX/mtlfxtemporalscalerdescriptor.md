@@ -11,7 +11,7 @@ A set of properties that configure a temporal scaling effect, and a factory meth
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 27.1+
+- tvOS 27.2+
 
 ## Declaration
 

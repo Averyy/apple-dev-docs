@@ -27,7 +27,7 @@ typedef void (^)(CPAlertAction *) CPAlertActionHandler;
 
 ## See Also
 
-### Getting the Action Handler
+### Getting the handler
 - [var handler: CPAlertActionHandler](./cpalertaction/handler.md)
   The closure that CarPlay invokes after the user taps the action button.
 

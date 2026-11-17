@@ -40,6 +40,21 @@ typedef struct { ... } CPLocationCoordinate3D;
 - [BitwiseCopyable](../Swift/bitwisecopyable.md)
 - [Sendable](../Swift/sendable.md)
 
+## See Also
+
+### Maneuvers
+- [class CPManeuver](./cpmaneuver.md)
+  An object that describes a single navigation instruction.
+- [enum CPManeuverState](./cpmaneuverstate.md)
+  Values that describe the state of a maneuver.
+- [enum CPManeuverType](./cpmaneuvertype.md)
+  Values that describe types of navigation maneuvers.
+- [class CPTravelEstimates](./cptravelestimates.md)
+  An object that describes the time and distance remaining for a maneuver in a navigation session.
+- [class CPTripPreviewTextConfiguration](./cptrippreviewtextconfiguration.md)
+  A configuration object for changing the button titles on a trip preview.
+- [func NSStringFromCPManeuverType(CPManeuverType) -> String!](./nsstringfromcpmaneuvertype%28_%29.md)
+
 
 ---
 

@@ -32,6 +32,10 @@ func evaluatePredicate(in system: GKRuleSystem) -> Bool
 
 The [`GKNSPredicateRule`](../gknspredicaterule.md) class overrides this method to use its [`predicate`](./predicate.md) property for testing the rule. Subclasses of [`GKNSPredicateRule`](../gknspredicaterule.md) do not need to override this method.
 
+## Parameters
+
+- `system`: The rule system against which to evaluate the rule.
+
 ## See Also
 
 ### Evaluating a Rule

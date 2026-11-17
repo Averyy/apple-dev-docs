@@ -93,7 +93,7 @@ The size of a SIMD group varies between different GPUs, particularly Mac GPUs. D
 
 ### Synchronize Memory Operations in Shaders
 
-GPUs execute memory accesses on different threads in an unpredictable order. If a shader reads and writes the same memory locations, and you need the GPU to execute those actions in a specific order, you must include barriers between the memory operations. Metal requires barriers even in cases where the threadgroup size is the same as SIMD group size. Apple GPUs aggressively optimize memory operations to improve performance; if you don’t have proper synchronization in your shaders, you may corrupt memory or get incorrect results.
+GPUs run memory accesses on different threads in an unpredictable order. If a shader reads and writes the same memory locations, and you need the GPU to run those actions in a specific order, you must include barriers between the memory operations. Metal requires barriers even in cases where the threadgroup size is the same as SIMD group size. Apple GPUs aggressively optimize memory operations to improve performance; if you don’t have proper synchronization in your shaders, you may corrupt memory or get incorrect results.
 
 Call the `threadgroup_barrier` function in your shader to force all threads in a threadgroup to reach that function call before allowing any threads to continue past it. Specify a flag parameter to determine how the GPU synchronizes memory operations that your shader previously submitted. For example, the following call prevents threads in a threadgroup from moving past the barrier until all device memory accesses from the threadgroup have completed.
 
@@ -107,7 +107,7 @@ For more information, see section 6.8.1 of [Metal Shading Language Specification
 
 ### Synchronize Concurrent Compute Dispatches
 
-If you configure a [`MTLComputeCommandEncoder`](../Metal/mtlcomputecommandencoder.md) for concurrent dispatch, Metal doesn’t perform any automatic synchronization between commands that the encoder encodes. Apple family GPUs can aggressively execute commands at the same time, so if you aren’t correctly synchronizing commands, the GPU may run commands in the wrong order, which can corrupt memory or cause a fault.
+If you configure a [`MTLComputeCommandEncoder`](../Metal/mtlcomputecommandencoder.md) for concurrent dispatch, Metal doesn’t perform any automatic synchronization between commands that the encoder encodes. Apple family GPUs can aggressively run commands at the same time, so if you aren’t correctly synchronizing commands, the GPU may run commands in the wrong order, which can corrupt memory or cause a fault.
 
 For more information on how to synchronize concurrent commands, see `memoryBarrier(_:)`.
 

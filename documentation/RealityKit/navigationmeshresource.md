@@ -128,19 +128,9 @@ Build a navigation mesh from a model’s geometry or from raw vertex and polygon
 
 ## See Also
 
-### Game development
-- [Gaming sample code projects](./game-development-sample-code.md)
-  Explore a collection of projects relating to game development.
-- [Entity animations](./game-development-entity-animations.md)
-  Dynamically move, rotate, and scale entities at runtime.
-- [Character control, skeletons, and inverse kinematics](./game-development-character-skeletons.md)
-  Direct the movements and animation of models.
-- [struct NavigationComponent](./navigationcomponent.md)
-  A component that defines which areas of a navigation mesh an entity can move through.
+### Navigation meshes
 - [struct NavigationMeshComponent](./navigationmeshcomponent.md)
   A component that provides the navigation meshes an entity uses to find paths through a scene.
-- [struct NavigationController](./navigationcontroller.md)
-  An interface for finding paths for an entity moving across a scene’s navigation mesh.
 
 
 ---

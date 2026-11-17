@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-If no team logo image is available, initialize a team logo with an abbreviation or initialism for this team.
+Creates a logo object using the team’s initials or the official abbreviation of the team name.
 
 **Availability**:
 - iOS 18.4+
@@ -21,9 +21,24 @@ init(teamInitials: String)
 - (instancetype) initWithTeamInitials:(NSString *) teamInitials;
 ```
 
+## Return Value
+
+An initialized logo object.
+
 ## Discussion
 
-A maximum of 3 characters may be displayed for the team initials.
+Use this initializer when you don’t have relevant artwork to display for the team’s logo.
+
+## Parameters
+
+- `teamInitials`: An abbreviation of the team name. If the team name has an official abbreviation in the league, specify that abbreviation. Otherwise, specify the team’s initials. Specify no more than three characters in this string. If your string contains more than three characters, this method uses only the first three.
+
+## See Also
+
+### Creating a team logo
+- [init(teamLogo: UIImage)](./init%28teamlogo%29.md)
+  Creates a logo object using a team-specific image.
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

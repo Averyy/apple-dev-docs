@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Enumerates a collection of mesh anchors.
+Enumerates a collection of mesh anchors using a function.
 
 **Availability**:
 - visionOS 1.0+
@@ -15,10 +15,17 @@ Enumerates a collection of mesh anchors.
 extern void ar_mesh_anchors_enumerate_anchors_f(ar_mesh_anchors_t mesh_anchors, void *context, ar_mesh_anchors_enumerator_function_t mesh_anchors_enumerator_function);
 ```
 
+## Parameters
+
+- `mesh_anchors`: The collection of mesh anchors.
+- `context`: The application-defined context parameter to pass to the function.
+- `mesh_anchors_enumerator_function`: The enumerator function.
+
 ## See Also
 
 ### Scene reconstruction
 - [ar_scene_reconstruction_configuration_t](./ar_scene_reconstruction_configuration_t.md)
+  Configuration for scene reconstruction.
 - [ar_scene_reconstruction_mode_t](./ar_scene_reconstruction_mode_t.md)
   The additional kinds of information you can request about a person’s surroundings.
 - [ar_scene_reconstruction_provider_create](./ar_scene_reconstruction_provider_create.md)

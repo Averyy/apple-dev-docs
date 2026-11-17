@@ -20,6 +20,10 @@ struct RunOptions
 enum ARSessionRunOptions : NSUInteger;
 ```
 
+## Overview
+
+If you provide no options, the session uses its default behavior: it resumes tracking from the last known position and keeps all existing anchors.
+
 ## Topics
 
 ### Creating Run Options

@@ -54,12 +54,16 @@ If the extension process crashes mid-invocation, the request fails immediately. 
 
 ### Inherits From
 - [AppExtension](../ExtensionFoundation/appextension.md)
+### Inherited By
+- [LiveAssistanceRequesterPresenceObserving](./liveassistancerequesterpresenceobserving.md)
 
 ## See Also
 
 ### Conversation assistance
 - [enum LiveAssistance](./liveassistance.md)
   A namespace to collect APIs for use by container apps that provide live assistance services.
+- [protocol LiveAssistanceRequesterPresenceObserving](./liveassistancerequesterpresenceobserving.md)
+  A live assistance extension that wants to know when the requester leaves or rejoins the call, or when the call ends.
 - [Live assistance captioning](./liveassistancecaptioning.md)
   Use a WebSocket API to perform real-time captioning in a FaceTime call.
 

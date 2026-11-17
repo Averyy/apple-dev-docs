@@ -47,8 +47,6 @@ The following example presents the menu from a gesture recognizer and provides t
 ## See Also
 
 ### Managing edit menu interactions
-- [var delegate: (any UIEditMenuInteractionDelegate)?](./delegate.md)
-  An object that customizes presentation of the menu and actions to display for an edit menu interaction.
 - [func reloadVisibleMenu()](./reloadvisiblemenu%28%29.md)
   Updates the actions an edit menu displays.
 - [func updateVisibleMenuPosition(animated: Bool)](./updatevisiblemenuposition%28animated%29.md)

@@ -27,7 +27,7 @@ After allowing both progressive and full immersion styles, your app can switch b
 
 ## Configure the compositor layer
 
-After your app supports progressive immersion, configure the compositor layer. Check that the layer capabilities support your preferred stencil format with `drawableRenderContextSupportedStencilformats`. Set the `drawableRenderContextStencilFormat` property for the stencil format to the layer configuration. Configure the `drawableRenderContextRasterSampleCount` with the appropriate sample count depending on your app’s use of multisample antialiasing:
+After your app supports progressive immersion, configure the compositor layer. Check that the layer capabilities support your preferred stencil format with [`drawableRenderContextSupportedStencilFormats`](./layerrenderer/capabilities/drawablerendercontextsupportedstencilformats.md). Set the [`drawableRenderContextStencilFormat`](./layerrenderer/configuration-swift.struct/drawablerendercontextstencilformat.md) property for the stencil format to the layer configuration. Configure the [`drawableRenderContextRasterSampleCount`](./layerrenderer/configuration-swift.struct/drawablerendercontextrastersamplecount.md) with the appropriate sample count depending on your app’s use of multisample antialiasing:
 
 ```swift
     MyConfiguration: CompositorLayerConfiguration {
@@ -51,7 +51,7 @@ After your app supports progressive immersion, configure the compositor layer. C
 
 ## Apply a stencil mask
 
-Apply the portal stencil mask to the layer render drawable by adding a render context to your command buffer with `addRenderContext(commandBuffer:)`. This step is a requirement for the system to efficiently draw the faded edges of the portal over your rendered 3D content. Use the same command buffer for your subsequent drawing commands. Draw your mask on the stencil with `drawMaskOnStencilAttachment(commandEncoder:value:)` to prevent invisible pixels from rendering and then select an available stencil value. After rendering the scene, use `endEncoding(commandEncoder:)` to cease rendering, rather than directly ending the command encoder. This allows the portal effect to apply efficiently over your content.
+Apply the portal stencil mask to the layer render drawable by adding a render context to your command buffer with [`addRenderContext(commandBuffer:)`](./layerrenderer/drawable/addrendercontext%28commandbuffer%29.md). This step is a requirement for the system to efficiently draw the faded edges of the portal over your rendered 3D content. Use the same command buffer for your subsequent drawing commands. Draw your mask on the stencil with [`drawMaskOnStencilAttachment(commandEncoder:value:)`](./layerrenderer/drawable/rendercontext/drawmaskonstencilattachment%28commandencoder,value%29-65i67.md) to prevent invisible pixels from rendering and then select an available stencil value. After rendering the scene, use [`endEncoding(commandEncoder:)`](./layerrenderer/drawable/rendercontext/endencoding%28commandencoder%29-4hx0m.md) to cease rendering, rather than directly ending the command encoder. This allows the portal effect to apply efficiently over your content.
 
 ```swift
 struct Renderer {
@@ -69,6 +69,16 @@ struct Renderer {
     }
 }
 ```
+
+## See Also
+
+### Adding a render context
+- [LayerRenderer.Drawable.RenderContext](./layerrenderer/drawable/rendercontext.md)
+  An object the compositer uses for rendering all effects associated with a layer renderer drawable.
+- [func addRenderContext(commandBuffer: any MTLCommandBuffer) -> LayerRenderer.Drawable.RenderContext](./layerrenderer/drawable/addrendercontext%28commandbuffer%29.md)
+  Adds and returns a render context to a `LayerRenderer.Drawable` providing a metal command buffer.
+- [func addRenderContext() -> LayerRenderer.Drawable.RenderContext](./layerrenderer/drawable/addrendercontext%28%29.md)
+  Adds and returns a render context to a `LayerRenderer.Drawable` that draws any content required by the compositor.
 
 
 ---

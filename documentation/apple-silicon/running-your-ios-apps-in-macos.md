@@ -78,7 +78,7 @@ App Store features for iOS continue to work when your app runs in macOS, includi
 
 When you use [app thinning](https://help.apple.com/xcode/mac/current/#/devbbdc5ce4f) to optimize your app for different devices and operating systems, the App Store selects the resources and content that offer the best fit for a Mac. It then removes any other resources to create a streamlined installation of your app. When you export your app from Xcode 12 or later, you can test the thinning support using the Mac virtual thinning target.
 
-Use [TestFlight](https://testflight.apple.com) to distribute your app to your testers, or create an archive and export it using the ad-hoc or development distribution method. During the export process, Xcode creates an appropriately signed app for you to distribute to your testers. For more information, see [Distributing your app to registered devices](../Xcode/distributing-your-app-to-registered-devices.md).
+Use [TestFlight](https://testflight.apple.com) to distribute your app to your testers, or create an archive and export it using the ad-hoc or development distribution method. During the export process, Xcode creates an appropriately signed app for you to distribute to your testers. For more information, see [Distributing apps to your development devices](../Xcode/distributing-apps-to-your-development-devices.md).
 
 ### Choose whether to include your iOS app in the Mac App Store
 

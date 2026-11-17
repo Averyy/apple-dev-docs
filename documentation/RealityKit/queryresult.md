@@ -50,7 +50,11 @@ scene.performQuery(query).forEach { entity in
 
 ## See Also
 
-### Entity queries
+### Implementing system logic
+- [func update(context: SceneUpdateContext)](./system/update%28context%29.md)
+  Updates entities up to once every scene update.
+- [struct SceneUpdateContext](./sceneupdatecontext.md)
+  An object that contains information about the scene to update.
 - [struct EntityQuery](./entityquery.md)
   An object that retrieves entities from a scene.
 - [struct QueryPredicate](./querypredicate.md)

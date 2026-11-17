@@ -21,6 +21,11 @@ var gridButtons: [CPGridButton] { get }
 @property (nonatomic, readonly) NSArray<CPGridButton *> * gridButtons;
 ```
 
+## See Also
+
+### Getting the grid buttons
+- [func updateGridButtons([CPGridButton])](./updategridbuttons%28_%29.md)
+
 
 ---
 

@@ -20,6 +20,16 @@ A status value that indicates that an update to the asset pack is available to d
 BAAssetPackStatusUpdateAvailable
 ```
 
+## See Also
+
+### Updating assets
+- [BAAssetPackStatusUpToDate](./baassetpackstatusuptodate.md)
+  A status value that indicates that the downloaded asset pack is up to date.
+- [BAAssetPackStatusOutOfDate](./baassetpackstatusoutofdate.md)
+  A status value that indicates that the downloaded asset pack is out of date.
+- [BAAssetPackStatusObsolete](./baassetpackstatusobsolete.md)
+  A status value that indicates that the asset pack is no longer available to download.
+
 
 ---
 

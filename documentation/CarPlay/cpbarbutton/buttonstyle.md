@@ -4,7 +4,7 @@
 **Kind**: property  
 **Role**: Instance Property
 
-The style to use when displaying the button.
+The style to apply to the button.
 
 **Availability**:
 - iOS 14.0+
@@ -21,11 +21,13 @@ var buttonStyle: CPBarButtonStyle { get set }
 @property (nonatomic, assign) CPBarButtonStyle buttonStyle;
 ```
 
+## Discussion
+
+The default value of this property is [`CPBarButtonStyle.none`](../cpbarbuttonstyle/none.md).
+
 ## See Also
 
-### Getting the Button Style
-- [var buttonType: CPBarButton.Type](./buttontype.md)
-  The display type for the bar button.
+### Getting the display style
 - [enum CPBarButtonStyle](../cpbarbuttonstyle.md)
   The display style of a bar button.
 

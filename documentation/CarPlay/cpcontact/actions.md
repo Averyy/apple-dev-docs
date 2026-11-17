@@ -29,7 +29,7 @@ Contact actions are optional, and the default value is [`nil`](../../ObjectiveC/
 
 ## See Also
 
-### Managing Interactions with the Contact
+### Managing interactions with the contact
 - [class CPContactCallButton](../cpcontactcallbutton.md)
   A button for calling the contact.
 - [class CPContactDirectionsButton](../cpcontactdirectionsbutton.md)

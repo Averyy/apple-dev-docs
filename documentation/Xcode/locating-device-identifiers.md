@@ -9,7 +9,7 @@ Get the unique identifier for a device before registering it in your developer a
 
 To register one or more devices using your developer account, you first collect the device identifiers. Typically, you register multiple devices using your developer account to test your app internally before uploading builds to App Store Connect. Later, you can use TestFlight to distribute beta builds to testers without needing to register their devices.
 
-For more information on distributing your app to a limited set of people on known devices, see [Distributing your app to registered devices](./distributing-your-app-to-registered-devices.md).
+For more information on distributing your app to a limited set of people on known devices, see [Distributing apps to your development devices](./distributing-apps-to-your-development-devices.md).
 
 ## Locate device identifiers using Device Hub
 

@@ -52,7 +52,7 @@ As you enter code in the source editor, Xcode checks the syntax and offers fixes
 
 Xcode highlights issues with a red or yellow underline and presents an issue summary and icon. Clicking the icon displays more information about the issue and, in many cases, provides a fix that you can apply.
 
-![An Xcode screenshot showing the Issues navigator on the left and the source editor on the right with more information about three issues.](https://developer.apple.com/tutorials/images/com.apple.Xcode/fix-it-correction@2x.png)
+![An Xcode screenshot showing the Issues navigator on the left and the source editor on the right with more information about multiple issues.](https://developer.apple.com/tutorials/images/com.apple.Xcode/fix-it-correction@2x.png)
 
 To apply a fix for an issue:
 
@@ -61,9 +61,9 @@ To apply a fix for an issue:
 
 If the popover contains multiple issues, navigate between them using the Up Arrow and Down Arrow keys (or Navigate > Jump to Next Issue and Navigate > Jump to Previous Issue). To dismiss the popover, press the Escape key or click anywhere else.
 
-You can configure the appearance and behavior of issues that appear in the source editor in Xcode > Settings > General under Issues. For example, to turn off fix suggestions, toggle the “Show live issues” setting off.
+You can configure the appearance and behavior of issues that appear in the source editor in Xcode > Settings > General under Issues. For example, to turn off fix suggestions, toggle the “Predictive issues” setting off.
 
-If you set up coding intelligence, you can click the Generate button that appears at the bottom of the popover to fix the issues. See [Writing code with intelligence in Xcode](./writing-code-with-intelligence-in-xcode.md).
+If you set up coding intelligence, you can click the Generate button that appears at the bottom of the popover to fix the issues. For more information, see [Using coding intelligence in the source editor](./using-coding-intelligence-in-the-source-editor.md).
 
 
 ---

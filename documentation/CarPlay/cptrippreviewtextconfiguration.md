@@ -23,10 +23,10 @@ class CPTripPreviewTextConfiguration
 
 ## Topics
 
-### Creating a Text Configuration Object
+### Creating a text configuration object
 - [init(startButtonTitle: String?, additionalRoutesButtonTitle: String?, overviewButtonTitle: String?)](./cptrippreviewtextconfiguration/init%28startbuttontitle,additionalroutesbuttontitle,overviewbuttontitle%29.md)
   Creates a trip preview text configuration object.
-### Setting Button Titles
+### Accessing button titles
 - [var startButtonTitle: String?](./cptrippreviewtextconfiguration/startbuttontitle.md)
   The title displayed on the start button.
 - [var additionalRoutesButtonTitle: String?](./cptrippreviewtextconfiguration/additionalroutesbuttontitle.md)
@@ -52,7 +52,7 @@ class CPTripPreviewTextConfiguration
 
 ## See Also
 
-### Displaying Trip Previews
+### Displaying trip previews
 - [func showTripPreviews([CPTrip], textConfiguration: CPTripPreviewTextConfiguration?)](./cpmaptemplate/showtrippreviews%28_,textconfiguration%29.md)
   Displays the preview for one or more trips, and allows route selection.
 - [func showTripPreviews([CPTrip], selectedTrip: CPTrip?, textConfiguration: CPTripPreviewTextConfiguration?)](./cpmaptemplate/showtrippreviews%28_,selectedtrip,textconfiguration%29.md)

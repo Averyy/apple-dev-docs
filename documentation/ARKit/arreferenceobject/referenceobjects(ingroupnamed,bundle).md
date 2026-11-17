@@ -4,7 +4,7 @@
 **Kind**: method  
 **Role**: Type Method
 
-Loads all reference objects in the specified AR Resource Group in your Xcode project’s asset catalog.
+Returns the set of ARReferenceObjects in the specified resource group and bundle.
 
 **Availability**:
 - iOS 12.0+ - Deprecated in 27.0
@@ -24,7 +24,7 @@ class func referenceObjects(inGroupNamed name: String, bundle: Bundle?) -> Set<A
 
 ## Return Value
 
-A set of all unique reference objects in the specified group.
+A set of all unique reference objects in the specified group, or `nil` on error.
 
 ## Discussion
 

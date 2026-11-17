@@ -15,9 +15,11 @@ iOS, iPadOS, macOS, tvOS, visionOS, and watchOS support app extensions for speci
 | Extension point | Description | iOS/iPadOS | macOS | tvOS | visionOS | watchOS |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Accessory Setup Extension](../DeviceDiscoveryExtension/DeviceDiscoveryExtension.md) | Configure third-party media receivers that your app uses to stream audio and video content. | ✅ |  |  |  |  |
+| [Accessory Transport](../AccessoryTransportExtension/AccessoryTransportExtension.md) | Transfer information securely to an accessory that you develop. | ✅ |  |  |  |  |
 | [Account Authentication](../AuthenticationServices/upgrading-account-security-with-an-account-authentication-modification-extension.md) | Automatically upgrade user passwords to strong passwords, or convert accounts to use Sign in with Apple. | ✅ |  |  |  |  |
 | [Action Extension](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Action.html#//apple_ref/doc/uid/TP40014214-CH13-SW1) | Add custom actions to the share sheet to invoke your app’s functionality from any app. | ✅ | ✅ |  |  |  |
 | [App Intents Extension](../AppIntents/app-intents.md) | Perform tasks associated with your app’s declared app intents. | ✅ | ✅ |  | ✅ | ✅ |
+| [App Migration Extension](../AppMigrationKit/AppMigrationKit.md) | Transfer your app’s data between Apple and non-Apple devices. | ✅ |  |  |  |  |
 | [Audio Unit Extension](../AudioToolbox/AudioToolbox.md) | Create and modify audio in any app that uses sound, including music production apps such as GarageBand or Logic Pro X. | ✅ | ✅ |  | ✅ |  |
 | [Authentication Services](https://developer.apple.com/videos/play/tech-talks/301/) | Streamline authentication for users by enabling single sign-on. | ✅ | ✅ |  | ✅ |  |
 | [AutoFill Credential Provider](../AuthenticationServices/ascredentialproviderviewcontroller.md) | Surface credentials from your app in Password Autofill and pull your app’s password data into the Password AutoFill workflow. | ✅ | ✅ |  | ✅ |  |
@@ -31,6 +33,7 @@ iOS, iPadOS, macOS, tvOS, visionOS, and watchOS support app extensions for speci
 | [Contact Provider Extension](../ContactProvider/contactproviderextension.md) | Provide contact items to the system-wide Contacts ecosystem. | ✅ |  |  |  |  |
 | [Content Blocker Extension](../SafariServices/creating-a-content-blocker.md) | Provide rules for hiding elements, blocking loads, and stripping cookies from Safari requests. | ✅ | ✅ |  | ✅ |  |
 | [Core Spotlight Delegate](../CoreSpotlight/regenerating-your-app-s-indexes-on-demand.md) | Regenerate your app’s search indexes in response to system-initiated maintenance requests. | ✅ | ✅ |  | ✅ |  |
+| [Crash Reporter Extension](../CrashReportExtension/CrashReportExtension.md) | Generate a report of your app’s activity when it crashes. | ✅ |  |  |  |  |
 | [Custom Keyboard Extension](../UIKit/creating-a-custom-keyboard.md) | Provide systemwide customized text input for unique input methods or specific languages. | ✅ |  |  |  |  |
 | [Device Activity Monitor Extension](../DeviceActivity/deviceactivitymonitor.md) | Detect and warn about excessive time spent on app and website activities. | ✅ |  |  |  |  |
 | [Device Activity Report Extension](../UIKit/creating-a-custom-keyboard.md) | Receive and display device-activity information in a privacy-friendly way. | ✅ |  |  |  |  |
@@ -48,11 +51,11 @@ iOS, iPadOS, macOS, tvOS, visionOS, and watchOS support app extensions for speci
 | [Location Push Service Extension](../CoreLocation/creating-a-location-push-service-extension.md) | Enable a location sharing app – with a user’s authorization – to query a user’s location in response to a push from Apple Push Notification service (APNs). | ✅ |  |  |  |  |
 | [Mail](../MailKit/meextension.md) | Enhance Mail by adding custom actions, blocking content, signing and encoding messages, and more. |  | ✅ |  |  |  |
 | [Matter Extension](../MatterSupport/adding-matter-support-to-your-ecosystem.md) | Perform required configuration of a newly added Matter device. | ✅ | ✅ |  | ✅ |  |
-| [Media Device Discovery](../DeviceDiscoveryExtension/dddiscoveryextension.md) | Discover third-party media receivers that your app can use to stream audio and video content. | ✅ |  |  | ✅ |  |
+| [Media Device Discovery](../DeviceDiscoveryExtension/dddiscoveryextension.md) | Discover third-party media receivers that your app can use to stream audio and video content. | ✅ | ✅ |  |  |  |
 | [Media Extension](../MediaExtension/MediaExtension.md) | Support media assets that the system doesn’t support natively. |  | ✅ |  |  |  |
 | [Message Filter Extension](../IdentityLookup/IdentityLookup.md) | Identify and filter unwanted SMS and MMS messages. | ✅ |  |  | ✅ |  |
 | [Network Extension](../NetworkExtension/NetworkExtension.md) | Provide system-level networking services such as VPN, proxies, or content filtering. | ✅ | ✅ | ✅ | ✅ |  |
-| [Notification Content Extension](../UserNotificationsUI/customizing-the-appearance-of-notifications.md) | Customize the appearance of your app’s notification alerts. | ✅ | ✅ |  | ✅ |  |
+| [Notification Content Extension](../UserNotificationsUI/customizing-the-appearance-of-notifications.md) | Customize the appearance of your app’s notification alerts. | ✅ | ✅ |  |  |  |
 | [Notification Service Extension](../UserNotifications/modifying-content-in-newly-delivered-notifications.md) | Modify the payload of a remote notification before it’s displayed on the user’s device. | ✅ | ✅ |  | ✅ | ✅ |
 | [Persistent Token Extension](../CryptoTokenKit/authenticating-users-with-a-cryptographic-token.md) | Grant access to user accounts and the keychain using a token. | ✅ | ✅ |  | ✅ |  |
 | [Photo Editing Extension](../PhotoKit/creating-photo-editing-extensions.md) | Allow your app to edit assets directly within the Photos app. | ✅ | ✅ |  |  |  |
@@ -63,13 +66,13 @@ iOS, iPadOS, macOS, tvOS, visionOS, and watchOS support app extensions for speci
 | [Share Extension](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html#//apple_ref/doc/uid/TP40014214-CH12-SW1) | Let users post to your social-network service from any app. | ✅ | ✅ |  |  |  |
 | [Shield Action Extension](../ManagedSettings/shieldactiondelegate.md) | Manage the system’s response to shield actions, which hide the content of apps and websites. | ✅ |  |  |  |  |
 | [Shield Configuration](../ManagedSettingsUI/ManagedSettingsUI.md) | Customize the appearance of shields to match the style of your app. | ✅ |  |  |  |  |
-| [Smart Card Token Extension](../CryptoTokenKit/authenticating-users-with-a-cryptographic-token.md) | Grant access to user accounts and the keychain using a hardware-based token. |  | ✅ |  |  |  |
+| [Smart Card Token Extension](../CryptoTokenKit/authenticating-users-with-a-cryptographic-token.md) | Grant access to user accounts and the keychain using a hardware-based token. | ✅ | ✅ |  | ✅ |  |
 | [Spotlight Import Extension](../CoreSpotlight/csimportextension.md) | Make content in your app searchable in Spotlight, Safari, Siri, and more. | ✅ | ✅ |  | ✅ |  |
 | [Sticker Pack Extension](../Messages/Messages.md) | Add custom stickers to Messages. | ✅ |  |  |  |  |
 | [Thumbnail Extension](../QuickLookThumbnailing/providing-thumbnails-of-your-custom-file-types.md) | Display thumbnails of your custom document types in all apps. | ✅ | ✅ |  | ✅ |  |
 | [TV Top Shelf](../TVServices/TVServices.md) | Help users discover your app by providing Top Shelf content and a description of your tvOS app. |  |  | ✅ |  |  |
 | [Unwanted Communication](../IdentityLookup/sms-and-call-spam-reporting.md) | Block incoming phone calls using your app’s custom unsolicited caller database. | ✅ |  |  | ✅ |  |
-| [URL Filter Network](../NetworkExtension/neurlfiltercontrolprovider.md) | Filter URLs using an on-device data set or an off-device server. | ✅ |  |  |  |  |
+| [URL Filter Network](../NetworkExtension/neurlfiltercontrolprovider.md) | Filter URLs using an on-device data set or an off-device server. | ✅ | ✅ |  |  |  |
 | [Virtual Conference](../EventKit/ekvirtualconferenceprovider.md) | Integrate your video conferencing service directly into events on user’s calendars. | ✅ | ✅ |  | ✅ |  |
 | [Widget Extension](../WidgetKit/creating-a-widget-extension.md) | Show relevant, glanceable content from your app on the iOS Home Screen and Lock Screen, macOS Notification Center, and as complications in watchOS. | ✅ | ✅ |  | ✅ | ✅ |
 | [Xcode Source Editor](../XcodeKit/creating-a-source-editor-extension.md) | Provide custom editing features directly inside Xcode’s source editor. |  | ✅ |  |  |  |

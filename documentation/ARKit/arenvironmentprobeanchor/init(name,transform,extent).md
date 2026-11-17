@@ -30,7 +30,7 @@ Use the [`add(anchor:)`](../arsession/add%28anchor%29.md) method to begin tracki
 - `transform`: A matrix that encodes the position, orientation, and scale of the anchor, relative to the world coordinate space of the AR session in which you place the anchor.
 
   World coordinate space in ARKit always follows a right-handed convention, but is oriented based on the session configuration. For details, see [Understanding World Tracking](../understanding-world-tracking.md).
-- `extent`: The area around the anchor’s position that contains the textrure.
+- `extent`: The area around the anchor’s position that contains the texture.
 
   An environment probe anchor may have an infinite extent, which indicates that its texture is a global lighting environment, or a finite extent, which indicates that its texture represents the local lighting conditions in a specific area of the scene.
 

@@ -15,6 +15,12 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+### Creating an assistant cell configuration
+- [init(position: CPListItem.AssistantCellPosition, visibility: CPListItem.AssistantCellVisibility, assistantAction: CPAssistantCellActionType)](./init%28position,visibility,assistantaction%29.md)
+  Creates a configuration object with the specified position, visibility, and action.
+
 
 ---
 

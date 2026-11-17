@@ -29,6 +29,16 @@ The buffer must contain `targetCount` Float values, one per blend-shape target.
 - `buffer`: The Metal buffer containing the blend weights.
 - `offset`: The byte offset into `buffer` where the data begins.
 
+## See Also
+
+### Setting blend data
+- [func setPositionOffsets(any MTLBuffer, offset: Int) throws](./setpositionoffsets%28_,offset%29.md)
+  Sets the buffer containing blend-shape position offsets.
+- [func setNormalOffsets(any MTLBuffer, offset: Int) throws](./setnormaloffsets%28_,offset%29.md)
+  Sets the buffer containing blend-shape normal offsets.
+- [func setTangentOffsets(any MTLBuffer, offset: Int) throws](./settangentoffsets%28_,offset%29.md)
+  Sets the buffer containing blend-shape tangent offsets.
+
 
 ---
 

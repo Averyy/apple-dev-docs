@@ -47,6 +47,12 @@ After you add a cross-project reference, you can refer to the other project’s 
 
 > **Note**: It’s good practice to use a workspace to manage multiple projects. However, you can’t create explicit dependencies between two projects in the same workspace.
 
+## See Also
+
+### Files and workspaces
+- [Managing files and folders in your Xcode project](./managing-files-and-folders-in-your-xcode-project.md)
+  Add new or existing files to your project, and use groups to organize the files and folders in the Project navigator.
+
 
 ---
 

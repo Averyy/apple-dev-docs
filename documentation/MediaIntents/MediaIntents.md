@@ -28,6 +28,9 @@ The Media Intents framework gives your app the [`AudioSearch`](./audiosearch.md)
   Provide results for audio playback requests that people make by using Siri.
 - [struct AudioSearch](./audiosearch.md)
   Results and metadata for a person’s audio search and playback request with Siri.
+### Structures
+- [struct VideoSearch](./videosearch.md)
+  Results and metadata for a person’s video search and playback request with Siri.
 
 
 ---

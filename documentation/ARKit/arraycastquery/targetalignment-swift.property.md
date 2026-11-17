@@ -32,7 +32,7 @@ The available options are horizontal, vertical, or any.
 - [ARRaycastQuery.Target](./target-swift.enum.md)
   The types of surface you allow a raycast to intersect with.
 - [ARRaycastQuery.TargetAlignment](./targetalignment-swift.enum.md)
-  A specification that indicates a target’s alignment with respect to gravity
+  A specification that indicates a target’s alignment with respect to gravity.
 
 
 ---

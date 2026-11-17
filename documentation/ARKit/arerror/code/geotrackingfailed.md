@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-An error that indicates when localization imagery fails to match the device’s camera captures.
+An error that indicates localization imagery fails to match the device’s camera captures.
 
 **Availability**:
 - iOS 14.0+
@@ -22,7 +22,7 @@ ARErrorCodeGeoTrackingFailed
 
 ## Discussion
 
-ARKit will raise an error with this error code when visual localization is taking too long. This situation indicates that the app has met all requirements for geo tracking except for visual localization. To try again, the app needs to ask the user pan the device around the physical environment to acquire different camera-feed imagery. For more information, see [Assisting the User with Visual Localization](../../argeotrackingstatus/state-swift.enum/localizing.md#Assisting-the-User-with-Visual-Localization).
+ARKit returns this error code when visual localization is taking too long. This situation indicates that the app has met all requirements for geo tracking except for visual localization. To try again, the app needs to ask the user pan the device around the physical environment to acquire different camera-feed imagery. For more information, see [Assisting the User with Visual Localization](../../argeotrackingstatus/state-swift.enum/localizing.md#Assisting-the-User-with-Visual-Localization).
 
 ## See Also
 
@@ -56,7 +56,7 @@ ARKit will raise an error with this error code when visual localization is takin
 - [ARError.Code.unsupportedConfiguration](./unsupportedconfiguration.md)
   An error that indicates the device lacks support for the session’s configuration.
 - [ARError.Code.worldTrackingFailed](./worldtrackingfailed.md)
-  An error that indicates when world tracking experiences an unrecoverable problem.
+  An error that indicates world tracking experienced an unrecoverable problem.
 
 
 ---

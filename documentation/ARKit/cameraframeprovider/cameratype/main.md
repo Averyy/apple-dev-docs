@@ -4,6 +4,8 @@
 **Kind**: case  
 **Role**: Case
 
+The device’s main camera.
+
 **Availability**:
 - visionOS 2.0+
 

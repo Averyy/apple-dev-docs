@@ -4,7 +4,7 @@
 **Kind**: enum  
 **Role**: Enumeration
 
-The states in the process of decoding an App Clip code URL.
+The states in the process of decoding an App Clip Code URL.
 
 **Availability**:
 - iOS 14.3+
@@ -19,10 +19,6 @@ enum URLDecodingState
 ```c
 enum ARAppClipCodeURLDecodingState : NSInteger;
 ```
-
-## Overview
-
-The possible states of decoding the [`url`](./url.md) of an App Clip Code.
 
 ## Topics
 

@@ -19,7 +19,7 @@ Configurations for scenes that you use to display navigation content on a CarPla
 
 After setting [`CPSupportsDashboardNavigationScene`](../cpsupportsdashboardnavigationscene.md) to `YES`, use this key to specify the scene configuration when displaying navigation content in the CarPlay Dashboard.
 
-For more information, see [Displaying Content in CarPlay](../../../../CarPlay/displaying-content-in-carplay.md).
+For more information, see [Building your app’s initial CarPlay interface](../../../../CarPlay/building-your-apps-initial-carplay-interface.md).
 
 ## Topics
 
