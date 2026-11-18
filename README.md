@@ -172,6 +172,7 @@ cd ../mcp-server && python3 apple_docs_mcp.py
 | `MEILI_TIMEOUT` | No | Meilisearch connection timeout in seconds (default: 10) |
 | `MEILI_MAX_RETRIES` | No | Max retries for transient errors (default: 2) |
 | `RATE_LIMIT_REQUESTS` | No | Requests per minute per IP (default: 60) |
+| `PLATFORM_RATE_LIMIT` | No | Requests per minute per address of Claude's and ChatGPT's published connector ranges, which all their users share (default: 1000) |
 | `MIN_EXPECTED_DOCS` | No | Minimum docs for "healthy" status (default: 363000) |
 | `EXPECTED_FULL_INDEX_SIZE` | No | Expected full index size for progress calc (default: 404000) |
 
@@ -236,6 +237,10 @@ cd scripts && python3 index_to_meilisearch.py
 - 1.5GB RAM (4GB+ recommended for indexing)
 - ~13GB disk space: the Docker image (~2.5GB, the 1.4GB documentation included) and the Meilisearch index (~5GB on disk for the full corpus, which `/stats` reports as ~3GB), which a rebuild needs room for twice: the new index is built beside the live one until the swap. With less, the indexer doesn't start the rebuild and keeps updating the live index (see Re-indexing)
 
+## Privacy
+
+The hosted server at xdocs.dev is read-only and has no accounts, cookies or analytics. It uses tool arguments only to answer the call, and logs them only when a call fails or is rejected as invalid. IP addresses are held in memory for rate limiting and logged only when a request is refused by the rate limit; the HTTPS proxy in front of the server can log requests (IP address, path, headers), never their content. It never sees conversations, chat history, memory or files. Full policy, with retention and the providers involved: [xdocs.dev/privacy.html](https://xdocs.dev/privacy.html). Self-hosted copies are run by whoever hosts them.
+
 ## License
 
 **Code**: MIT License
@@ -245,4 +250,5 @@ cd scripts && python3 index_to_meilisearch.py
 
 - **Website**: [xdocs.dev](https://xdocs.dev)
 - **GitHub**: [github.com/Averyy/apple-dev-docs](https://github.com/Averyy/apple-dev-docs)
+- **Privacy**: [xdocs.dev/privacy.html](https://xdocs.dev/privacy.html)
 - **Contact**: info@xdocs.dev

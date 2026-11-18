@@ -5,7 +5,7 @@ import re
 import os
 import json
 import hashlib
-import yaml
+import yaml  # type: ignore[import-untyped]  # PyYAML ships no type stubs
 from pathlib import Path
 from typing import Dict, List, Optional, Any, Set, Tuple
 import argparse
@@ -35,7 +35,7 @@ TYPE_KINDS = frozenset({"class", "struct", "enum", "protocol", "actor", "typeali
 class MetadataExtractor:
     """Extract structured metadata from Apple documentation markdown files."""
 
-    def __init__(self):
+    def __init__(self) -> None:
         # Common platform mappings
         self.platform_mappings = {
             "ios": "iOS",
@@ -161,7 +161,7 @@ class MetadataExtractor:
         # Pre-compile regex patterns for performance (called 334K+ times during indexing)
         self._compile_patterns()
 
-    def _compile_patterns(self):
+    def _compile_patterns(self) -> None:
         """Pre-compile all regex patterns used during extraction."""
         # YAML frontmatter
         self._yaml_end_pattern = re.compile(r'\n---\s*\n')
@@ -799,7 +799,7 @@ class MetadataExtractor:
         url_path = "/".join(url_parts).lower()
         return f"https://developer.apple.com/documentation/{url_path}"
 
-def main():
+def main() -> int:
     """CLI for testing metadata extraction."""
     parser = argparse.ArgumentParser(description="Extract metadata from Apple documentation")
     parser.add_argument("file_path", help="Path to markdown file")

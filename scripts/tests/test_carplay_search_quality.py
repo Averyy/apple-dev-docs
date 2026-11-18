@@ -1,16 +1,38 @@
 #!/usr/bin/env python3
 """
-Test search quality for CarPlay-related queries
+Test search quality for CarPlay-related queries, against a running Meilisearch with a built
+index: MEILI_HTTP_ADDR (default http://localhost:7700) and MEILI_SEARCH_KEY or
+MEILI_MASTER_KEY (default local_test_key). Without one the test is skipped. Run as a script,
+it also saves its report to carplay_search_quality_results.json.
 """
 
-import meilisearch
+import os
 import json
 from datetime import datetime
+from typing import Any, Dict, Optional
 
-def test_carplay_searches():
-    """Test various CarPlay implementation searches"""
-    client = meilisearch.Client('http://localhost:7700', 'local_test_key')
-    index = client.index('apple-docs')
+import meilisearch
+import pytest
+from meilisearch.errors import MeilisearchApiError, MeilisearchCommunicationError
+
+MEILI_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
+MEILI_KEY = os.getenv("MEILI_SEARCH_KEY") or os.getenv("MEILI_MASTER_KEY") or "local_test_key"
+
+
+def test_carplay_searches() -> None:
+    """Every CarPlay query finds results (keyword relevance is reported, not asserted)."""
+    index = meilisearch.Client(MEILI_URL, MEILI_KEY).index('apple-docs')
+    try:
+        index.search("", {"limit": 0})  # a search key may not read the index's stats
+    except (MeilisearchCommunicationError, MeilisearchApiError) as e:
+        pytest.skip(f"needs a Meilisearch with the apple-docs index at {MEILI_URL}: {e}")
+    results = run_carplay_searches(index)
+    empty = [q["query"] for q in results["queries"] if q["total_hits"] == 0]
+    assert not empty, f"CarPlay queries with no results: {empty}"
+
+
+def run_carplay_searches(index: Any, save_path: Optional[str] = None) -> Dict[str, Any]:
+    """Run the CarPlay queries on index; save the report to save_path if given"""
     
     # Real-world CarPlay implementation queries
     test_queries = [
@@ -70,7 +92,7 @@ def test_carplay_searches():
         }
     ]
     
-    results = {
+    results: Dict[str, Any] = {
         "test_date": datetime.now().isoformat(),
         "total_queries": len(test_queries),
         "queries": []
@@ -153,13 +175,13 @@ def test_carplay_searches():
     print(f"   Success Rate: {results['summary']['success_rate']:.1f}%")
     print(f"   Queries with Results: {queries_with_results}/{len(test_queries)}")
     
-    # Save results
-    with open('carplay_search_quality_results.json', 'w') as f:
-        json.dump(results, f, indent=2)
-    
-    print("\n✅ Results saved to carplay_search_quality_results.json")
-    
+    if save_path:
+        with open(save_path, 'w') as f:
+            json.dump(results, f, indent=2)
+        print(f"\n✅ Results saved to {save_path}")
+
     return results
 
 if __name__ == "__main__":
-    test_carplay_searches()
+    run_carplay_searches(meilisearch.Client(MEILI_URL, MEILI_KEY).index('apple-docs'),
+                         'carplay_search_quality_results.json')

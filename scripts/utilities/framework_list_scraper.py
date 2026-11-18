@@ -16,7 +16,7 @@ class AppleFrameworkListScraper:
     # Apple's official framework list endpoint
     TECHNOLOGIES_URL = "https://developer.apple.com/tutorials/data/documentation/technologies.json"
     
-    def __init__(self):
+    def __init__(self) -> None:
         self.client = httpx.AsyncClient(
             timeout=30.0,
             headers={
@@ -181,7 +181,7 @@ class AppleFrameworkListScraper:
             "sample_api_frameworks": api_titles[:10]
         }
 
-async def main():
+async def main() -> None:
     """Main function to fetch and save the complete Apple framework list"""
     
     print("🍎 Apple Framework List Scraper - DEDICATED FRAMEWORK DISCOVERY")

@@ -2,7 +2,7 @@
 # All-in-one container with Meilisearch search engine and MCP server
 
 # Server version - update this when releasing new versions
-ARG SERVER_VERSION=3.5.2
+ARG SERVER_VERSION=3.5.3
 # Build timestamps (set by CI/CD)
 ARG BUILD_TIME=unknown
 ARG DOCS_UPDATED=unknown
@@ -32,7 +32,7 @@ RUN pip install --user --no-cache-dir -r mcp-requirements.txt && \
 FROM python:3.11-slim
 
 # Re-declare ARGs after FROM to make them available in this stage
-ARG SERVER_VERSION=3.5.2
+ARG SERVER_VERSION=3.5.3
 ARG BUILD_TIME=unknown
 ARG DOCS_UPDATED=unknown
 ARG DOC_FILE_COUNT
@@ -117,8 +117,10 @@ ENV LOG_PATH=/data/logs
 # Meilisearch configuration
 ENV MEILI_HTTP_ADDR=http://localhost:7700
 ENV MEILI_DB_PATH=/data/meilisearch
-# Rate limiting (requests per minute)
+# Rate limiting (requests per minute): per address, and per address of the AI platforms'
+# published connector ranges (Claude, ChatGPT), which carry all their users' traffic
 ENV RATE_LIMIT_REQUESTS=60
+ENV PLATFORM_RATE_LIMIT=1000
 # Public hostnames accepted by fastmcp's Host header guard (localhost always allowed)
 ENV ALLOWED_HOSTS=xdocs.dev,www.xdocs.dev
 # Default timezone to US Eastern (EST/EDT)

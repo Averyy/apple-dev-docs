@@ -40,8 +40,10 @@ from collections import defaultdict
 # Add parent directory to path to import local modules
 sys.path.append(str(Path(__file__).parent.parent))
 
-from scripts.metadata_extractor import MetadataExtractor
-from scripts.document_processor import DocumentProcessor
+# Plain names, as document_processor and the tests import them: the script's own directory is
+# on sys.path whenever it runs, and one module name keeps each module loaded once
+from metadata_extractor import MetadataExtractor
+from document_processor import DocumentProcessor
 from scripts.utilities.hash_utils import compute_file_hash, write_text_atomic
 
 # Load environment variables

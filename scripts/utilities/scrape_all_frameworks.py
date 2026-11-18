@@ -497,7 +497,7 @@ async def scrape_frameworks(
                   for host in {site_host(site) for site in sites}
                   if (cap := host_max_jobs(sites, host))}
 
-    async def scrape_with_semaphore(fw, index):
+    async def scrape_with_semaphore(fw: Dict[str, str], index: int) -> Tuple[Dict[str, str], FrameworkOutcome]:
         site = site_of_job[fw.get('site', APPLE.name)]
         host_slot = host_slots.get(site_host(site))
         if host_slot is None:
@@ -588,7 +588,8 @@ async def scrape_frameworks(
         'errors': run_errors,
     }
 
-async def scrape_single_framework(scraper, framework, current, total, cleanup_orphans=False):
+async def scrape_single_framework(scraper: AppleJSONDocumentationScraper, framework: Dict[str, str], current: int,
+                                  total: int, cleanup_orphans: bool = False) -> FrameworkOutcome:
     """Scrape a single framework and return its FrameworkOutcome
 
     With cleanup_orphans, the outcome also carries the framework's orphan

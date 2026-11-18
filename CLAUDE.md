@@ -27,7 +27,7 @@ curl -X POST https://xdocs.dev/mcp \
 **Server details:**
 - URL: `https://xdocs.dev/mcp`
 - Transport: Streamable HTTP (native MCP)
-- Rate Limit: 60 req/min per IP (bypassed with API key)
+- Rate Limit: 60 req/min per IP; 1000 req/min per address of Claude's and ChatGPT's published connector ranges (`PLATFORM_RATE_LIMIT`); bypassed with API key
 - Host allow-list: `ALLOWED_HOSTS` env, default `xdocs.dev,www.xdocs.dev` (localhost always allowed; any other Host header gets 421 from fastmcp's guard)
 
 **VPS layout:**
@@ -88,6 +88,8 @@ Each MCP tool call generates ~4 HTTP requests (protocol overhead). Claude Deskto
 If issues persist, consider:
 - Increasing to 100-120 req/min
 - Using API key for unlimited access (set `MCP_API_KEY` env var)
+
+**Platform addresses:** Claude.ai, the Claude apps and ChatGPT call connectors from their own servers, so every one of their users shares a pool of published addresses. Each address in those pools gets `PLATFORM_RATE_LIMIT` (1000/min, about half of what the server sustains: it only protects the server). The pools are Anthropic's `PLATFORM_CIDRS` (default `160.79.104.0/21,153.61.208.0/20`, from platform.claude.com/docs/en/api/ip-addresses) and OpenAI's `mcp-server/chatgpt-connectors.json`, which CI re-downloads from `https://openai.com/chatgpt-connectors.json` on every image build (the committed copy is the fallback when the download fails). `X-Forwarded-For` counts only from a private peer (Caddy): a caller reaching the server's published port directly is limited by its own address, so it can't pose as a platform address or rotate buckets. That's why `docker-compose.yml` publishes the port on IPv4 only (`0.0.0.0:8001:8000`): over IPv6, docker-proxy would hand the container a private gateway address. Keep it so.
 
 ## Project Overview
 
@@ -223,10 +225,10 @@ docker stop apple-docs-mcp && docker rm apple-docs-mcp
 
 The landing page and health API show slightly different document counts - this is expected:
 
-- **Landing page** (`find` count): Number of markdown files on disk (~403.2K)
-- **Health API** (Meilisearch count): Number of indexed documents (~403.7K)
+- **Landing page** (`find` count): Number of markdown files on disk (~405.5K)
+- **Health API** (Meilisearch count): Number of indexed documents (~406.0K)
 
-The difference (~490) is because `DocumentProcessor` chunks large files (>50KB) into multiple Meilisearch documents, each with its own id (`<sha1 of file_path>_chunk_<n>`; an unchunked file's id is the bare sha1): on 2026-10-26 the 98 files over 50KB gave 592 documents, 403,243 files 403,737. One markdown file can produce multiple indexed documents. This is intentional for search performance.
+The difference (~490) is because `DocumentProcessor` chunks large files (>50KB) into multiple Meilisearch documents, each with its own id (`<sha1 of file_path>_chunk_<n>`; an unchunked file's id is the bare sha1): on 2026-10-30 the 90 files over 50KB gave 581 documents, 405,502 files 405,993. One markdown file can produce multiple indexed documents. This is intentional for search performance.
 
 ## Local Testing
 
@@ -275,6 +277,8 @@ docker compose -f docker-compose.local.yml down -v  # -v removes volumes
 - MCP tools use **fully qualified names**: `apple-docs:search_apple_docs`
 - Don't include stateful tools that don't persist over HTTP
 
+**`landing/privacy.html` is the privacy policy** (`https://xdocs.dev/privacy.html`, linked from the footer, the sitemap and the README's Privacy section; the Claude Connectors Directory listing points at it). It describes what the code does, so update it, with its "Effective" date, whenever a change alters what is logged (any `logger` line holding a tool argument or IP address), the rate limiter, a cache, the log rotation, a provider (hosting, Cloudflare), or what the landing page loads from third parties (Google Fonts). Tool descriptions and the server `instructions` say only what the tools do: no instructions to the model ("always call X first"), as the directory requires.
+
 ## Project Structure
 
 ```
@@ -300,5 +304,6 @@ apple-dev-docs/
 │   └── Dockerfile
 └── landing/
     ├── index.html                # xdocs.dev landing page
+    ├── privacy.html              # Privacy policy (xdocs.dev/privacy.html)
     └── SKILL.md                  # Claude Code skill file (the only copy; index.html loads it)
 ```

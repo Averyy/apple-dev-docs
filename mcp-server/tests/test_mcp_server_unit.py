@@ -2,6 +2,8 @@
 """Unit tests for MCP server functions."""
 
 import asyncio
+import ipaddress
+import json
 import re
 import shutil
 import sys
@@ -20,7 +22,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import apple_docs_mcp
 from apple_docs_mcp import (
     EXPAND_FIELDS, EXPAND_TOKEN_CAP, FILE_CHUNKS_LIMIT, cut_text, escape_filter_value,
-    estimate_tokens, expand_result, get_file_chunks, search_apple_docs, RateLimitMiddleware,
+    estimate_tokens, expand_result, get_file_chunks, search_apple_docs, RateLimitMiddleware, load_platform_networks,
 )
 
 
@@ -234,12 +236,107 @@ class TestRateLimitMiddleware(unittest.TestCase):
         self.assertEqual(result, "192.168.1.1")
 
     def test_get_client_ip_forwarded(self):
-        """Test X-Forwarded-For uses the rightmost token (the one Caddy appends)."""
+        """From our proxy (a private address), X-Forwarded-For's rightmost token, the one
+        Caddy appends."""
         request = MagicMock()
-        request.headers = {"x-forwarded-for": "10.0.0.1, 192.168.1.1"}
+        request.headers = {"x-forwarded-for": "10.0.0.1, 203.0.113.7"}
+        request.client.host = "172.18.0.3"
 
         result = self.middleware._get_client_ip(request)
-        self.assertEqual(result, "192.168.1.1")
+        self.assertEqual(result, "203.0.113.7")
+
+    def test_get_client_ip_forwarded_from_public_peer_ignored(self):
+        """A caller reaching the server's port directly can't choose its address (or pose
+        as a platform's) with X-Forwarded-For: its own address counts."""
+        request = MagicMock()
+        request.headers = {"x-forwarded-for": "160.79.104.9"}
+        request.client.host = "8.8.8.8"  # routable (Python counts the documentation ranges private)
+
+        result = self.middleware._get_client_ip(request)
+        self.assertEqual(result, "8.8.8.8")
+
+    def test_get_client_ip_forwarded_not_an_address(self):
+        """A forwarded token that isn't an address (it would key a bucket and the log line)
+        counts as the proxy's own address; a valid one is normalized."""
+        request = MagicMock()
+        request.client.host = "172.18.0.3"
+        request.headers = {"x-forwarded-for": "8.8.8.8, \nRate limit forged-line"}
+        self.assertEqual(self.middleware._get_client_ip(request), "172.18.0.3")
+        request.headers = {"x-forwarded-for": "10.0.0.1, 2001:DB8::0001 "}
+        self.assertEqual(self.middleware._get_client_ip(request), "2001:db8::1")
+
+    def test_limits_memoized_and_cleared(self):
+        """An address's limit is looked up once, and forgotten with the stale entries."""
+        middleware = RateLimitMiddleware(
+            self.app, requests_per_minute=60, platform_requests_per_minute=1000,
+            platform_networks=(ipaddress.ip_network("160.79.104.0/21"),),
+        )
+        self.assertEqual(middleware._limit_for("160.79.104.9"), 1000)
+        self.assertEqual(middleware._limits, {"160.79.104.9": 1000})
+        middleware._cleanup_stale_entries(time.time(), time.time() - 60)
+        self.assertEqual(middleware._limits, {})
+
+    def test_platform_addresses_get_platform_limit(self):
+        """An address in a platform's published ranges gets the platform limit; any other
+        address, and one that isn't an address, the ordinary one."""
+        middleware = RateLimitMiddleware(
+            self.app, requests_per_minute=60, platform_requests_per_minute=1000,
+            platform_networks=tuple(load_platform_networks("160.79.104.0/21", "/nonexistent.json")),
+        )
+        now = time.time()
+        middleware.request_counts["160.79.104.9"] = [now] * 60
+        self.assertFalse(middleware._check_rate_limit("160.79.104.9"))
+        middleware.request_counts["160.79.104.9"] = [now] * 1000
+        self.assertTrue(middleware._check_rate_limit("160.79.104.9"))
+        middleware.request_counts["198.51.100.20"] = [now] * 60
+        self.assertTrue(middleware._check_rate_limit("198.51.100.20"))
+        self.assertEqual(middleware._limit_for("unknown"), 60)
+
+    def test_platform_limit_defaults_to_ordinary_limit(self):
+        """Without a platform limit, platform addresses get the ordinary one."""
+        middleware = RateLimitMiddleware(self.app, requests_per_minute=60,
+                                         platform_networks=(ipaddress.ip_network("160.79.104.0/21"),))
+        self.assertEqual(middleware._limit_for("160.79.104.9"), 60)
+
+
+class TestLoadPlatformNetworks(unittest.TestCase):
+    """The platforms' published address ranges."""
+
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmp)
+
+    def write(self, text: str) -> str:
+        path = str(Path(self.tmp) / "ranges.json")
+        Path(path).write_text(text, encoding="utf-8")
+        return path
+
+    def test_cidrs_and_file_prefixes(self):
+        """Both lists load; entries that don't parse are skipped."""
+        path = self.write('{"creationTime": "2026-11-06", "prefixes": [{"ipv4Prefix": "13.65.138.112/28"}, '
+                          '{"ipv6Prefix": "2603:1030::/32"}, {"ipv4Prefix": "not-a-net"}, {"other": 1}, "x"]}')
+        networks = load_platform_networks("160.79.104.0/21, bogus,153.61.208.0/20", path)
+        self.assertEqual([str(n) for n in networks],
+                         ["160.79.104.0/21", "153.61.208.0/20", "13.65.138.112/28", "2603:1030::/32"])
+
+    def test_missing_or_malformed_file_keeps_cidrs(self):
+        """A file that's missing, isn't JSON, has no prefixes or prefixes that aren't a list
+        adds nothing (and never raises: the server would fail to start)."""
+        for text in ("<html>blocked</html>", '{"x": 1}', '{"prefixes": null}', '{"prefixes": 5}',
+                     '{"prefixes": "10.0.0.0/8"}', "[1, 2]"):
+            self.assertEqual([str(n) for n in load_platform_networks("160.79.104.0/21", self.write(text))],
+                             ["160.79.104.0/21"], text)
+        for path in ("/nonexistent/ranges.json",):
+            self.assertEqual([str(n) for n in load_platform_networks("160.79.104.0/21", path)],
+                             ["160.79.104.0/21"])
+
+    def test_committed_openai_ranges_load(self):
+        """The committed chatgpt-connectors.json (the image's fallback) parses whole."""
+        path = str(Path(apple_docs_mcp.__file__).parent / "chatgpt-connectors.json")
+        networks = load_platform_networks("", path)
+        with open(path, encoding="utf-8") as f:
+            self.assertEqual(len(networks), len(json.load(f)["prefixes"]))
+        self.assertGreater(len(networks), 0)
 
 
 _FILTER_RE = re.compile(r'(\w+) = "((?:[^"\\]|\\.)*)"')

@@ -341,7 +341,7 @@ class DocumentProcessor:
         
         return documents
 
-def main():
+def main() -> int:
     """CLI for testing document processing."""
     import argparse
     

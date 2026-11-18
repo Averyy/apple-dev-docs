@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.5.2 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.5.3 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -52,6 +52,12 @@ docker-compose up -d
 ```
 
 ## Changelog
+
+### v3.5.3
+- The server instructions and tool descriptions say what the server and its tools do, and nothing about how to use them, as the Claude Connectors Directory requires: `search_apple_docs` no longer says "IMPORTANT: Use summary_mode=true for initial exploration, then expand_result…" (it says what `summary_mode` returns), and the instructions no longer offer an API key; they say what the index holds, that it is read-only, and the rate limit (`RATE_LIMIT_REQUESTS`, no longer a hardcoded 60)
+- A higher per-address rate limit for the AI platforms' published connector addresses (`PLATFORM_RATE_LIMIT`, 1000/min): Claude.ai, the Claude apps and ChatGPT call connectors from their own servers, so every user of a listing shares a few of those addresses, and 60/min each would throttle them all. Anthropic's ranges are `PLATFORM_CIDRS` (default `160.79.104.0/21,153.61.208.0/20`); OpenAI's are `chatgpt-connectors.json`, re-downloaded from openai.com by CI on every image build, with the committed copy as the fallback (`load_platform_networks` skips what doesn't parse, and a missing file adds nothing)
+- `X-Forwarded-For` counts only when the connection comes from a private address (our proxy): the server's port is published, and a caller reaching it directly could write any address there, rotating rate-limit buckets or posing as a platform's. Such a caller is now limited by its own address. A forwarded token that isn't an address counts as the proxy's own (it would key a bucket and the log line), and `docker-compose.yml` publishes the port on IPv4 only (`0.0.0.0:8001:8000`): an IPv6 connection reaches the container through docker-proxy from a private gateway address, whose header would be trusted
+- Each address's limit is looked up once (scanning ~300 networks takes ~0.2 ms) and forgotten with the stale entries; a ranges file whose `prefixes` isn't a list adds nothing instead of stopping the server; the middleware, `/health` and `main` are typed (mypy with the repo's config reports none of its 8 earlier errors)
 
 ### v3.5.2
 - `expand_result`'s `sections` read only the current DocC layout (render version 4, live since the 2026-10-28 scrape re-rendered every DocC page): a section holds every deeper heading. The older layout's rule (a level-2 section also ending at a `####` heading) is gone; no page of the corpus has that layout any more (`pushed_down_headings` matched 0 of its files)

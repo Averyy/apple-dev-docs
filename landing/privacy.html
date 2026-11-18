@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - xdocs</title>
+    <meta name="description" content="What the xdocs MCP server and website collect, why, who sees it and how long it is kept.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://xdocs.dev/privacy.html">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#f15932">
+    <!-- System fonts only: this page loads nothing from third parties -->
+    <style>
+        :root {
+            --bg: #000000;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #f5f5f7;
+            --text-secondary: #a1a1a6;
+            --text-tertiary: #6e6e73;
+            --accent: #F05138;
+            --code-bg: #1a1a1a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+        header { border-bottom: 1px solid var(--border); padding: 18px 0; }
+        header a { color: var(--text); text-decoration: none; display: inline-flex; align-items: center; gap: 10px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 600; }
+        main { padding: 48px 0 64px; }
+        h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 8px; }
+        .updated { color: var(--text-tertiary); font-size: 0.875rem; margin-bottom: 32px; }
+        h2 { font-size: 1.25rem; margin: 40px 0 12px; }
+        h3 { font-size: 1rem; margin: 24px 0 8px; }
+        p, li { color: var(--text-secondary); }
+        p { margin-bottom: 12px; }
+        ul { margin: 0 0 12px 22px; }
+        li { margin-bottom: 6px; }
+        strong { color: var(--text); font-weight: 600; }
+        a { color: var(--accent); }
+        code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.85em; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; color: var(--text); }
+        .summary { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; }
+        .summary ul { margin-bottom: 0; }
+        .table-wrap { overflow-x: auto; margin: 12px 0 16px; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+        th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+        th { color: var(--text); font-weight: 600; }
+        td { color: var(--text-secondary); }
+        footer { border-top: 1px solid var(--border); padding: 24px 0; font-size: 0.8125rem; color: var(--text-tertiary); }
+        footer a { color: var(--text-secondary); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" aria-label="xdocs home">
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <rect x="2" y="2" width="28" height="28" rx="6" fill="#F05138"/>
+                    <text x="16" y="15" text-anchor="middle" dominant-baseline="central" fill="white" font-family="monospace" font-size="14" font-weight="bold" letter-spacing="1">}{</text>
+                </svg>
+                xdocs
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Effective November 18, 2026</p>
+
+        <div class="summary">
+            <ul>
+                <li>xdocs is a free, read-only search service over public developer documentation. It has no accounts, cookies, analytics or ads.</li>
+                <li>To answer a request, the server reads the tool arguments your AI client sends: search text, a page path or symbol name, and filters. It keeps none of them, except in its log when a call fails or is rejected as invalid.</li>
+                <li>Every request passes through our HTTPS proxy, which can log your IP address with the request's path and headers, but never its content. The MCP server itself holds your IP address in memory for rate limiting, usually for a few minutes, and logs it only if you go over the limit.</li>
+                <li>We never see your conversations, chat history, memory or files. We don't sell or share data, and we don't use it to train AI models.</li>
+                <li>The home page loads its fonts from Google Fonts, so Google sees your IP address when you open it.</li>
+            </ul>
+        </div>
+
+        <h2>Scope</h2>
+        <p>This policy covers the hosted service at xdocs.dev: the MCP server at <code>https://xdocs.dev/mcp</code>, its <code>/health</code> endpoint, and the website at <code>https://xdocs.dev</code>. The code is open source. If you run your own copy, you operate it and this policy doesn't apply to it.</p>
+        <p>Your AI client (Claude, Cursor, VS Code or another) and its provider handle your conversations under their own privacy policies.</p>
+
+        <h2>Who we are</h2>
+        <p>xdocs is an independent project run by one developer ("we"). Contact: <a href="mailto:info@xdocs.dev">info@xdocs.dev</a>. xdocs is not affiliated with, endorsed by or sponsored by Apple Inc. or Anthropic.</p>
+
+        <h2>What we collect and why</h2>
+
+        <h3>Tool arguments</h3>
+        <p>When your AI client calls a tool, the server receives the tool's arguments: search text, framework and platform filters, a page path or symbol name, and paging options. It uses them to search its own copy of the documentation, which runs on the same server, and returns the result. No query or reply is cached or stored once the reply is sent.</p>
+        <p>The server's log records arguments only when something goes wrong:</p>
+        <ul>
+            <li><strong>A call, or one of its steps, fails with an internal error</strong> (for example, while the search engine restarts). The log line holds the search text, page path or symbol name, so we can find and fix the failure.</li>
+            <li><strong>A call or MCP message is rejected as invalid</strong> (for example, search text over 256 characters, or a word where a number is expected). The log line holds the rejected value; for a missing argument, the call's other arguments; for a malformed MCP message, its parameters.</li>
+        </ul>
+        <p>The search engine doesn't record search text either. Its log has one line per request the server makes to it (time, method, path and status), never the search text or your IP address, and its usage telemetry is turned off.</p>
+
+        <h3>IP addresses</h3>
+        <ul>
+            <li><strong>Rate limiting.</strong> Each IP address may make 60 requests a minute; each of the published addresses that Claude and ChatGPT call connectors from, which all their users share, may make 1,000. To enforce this, the server keeps in memory the times of each address's requests from the last minute. Times older than a minute are dropped, and an address with no recent requests is removed at the next cleanup, which runs at most every 5 minutes while requests keep arriving (so usually within about 6 minutes; with no traffic at all, at the next request). All of them are cleared whenever the server restarts.</li>
+            <li><strong>Going over the limit.</strong> For each request it refuses because the limit was reached, the server logs a line with the address and its request count.</li>
+            <li><strong>Request log.</strong> For each request, the server logs the method, path (with any query string), HTTP version and status, and the address that connected to it: for requests made through <code>https://xdocs.dev</code>, that is our proxy's address, not yours. Each MCP request also gets a timestamped line naming its type (such as a tool call), without its arguments.</li>
+            <li><strong>Our HTTPS proxy.</strong> Every request to xdocs.dev passes through our web server (Caddy), which handles HTTPS. Its log can record a request's time, your IP address, the path and the request headers, such as User-Agent; it always records a request it fails to pass on, for example during a redeploy of 10 to 20 seconds. By default it hides authorization headers and cookies. It never records the request body, which is where tool arguments travel.</li>
+        </ul>
+        <p>If you use xdocs as a connector in Claude.ai, the Claude apps or ChatGPT, the requests come from Anthropic's or OpenAI's servers, so the IP address we see is theirs, not yours. From Claude Code, Cursor, VS Code or another client on your computer, it is the address of your network.</p>
+
+        <h3>Client name and User-Agent</h3>
+        <p>MCP clients send their name and version when they connect, and HTTP requests carry a User-Agent header. The server doesn't log or store either, except within a malformed MCP message (see Tool arguments) and in our proxy's log (above). Nothing about callers is ever shown publicly.</p>
+
+        <h3>API keys</h3>
+        <p>If we have given you an API key to lift the rate limit, the server checks it in memory and never logs it.</p>
+
+        <h3>Email</h3>
+        <p>If you email <a href="mailto:info@xdocs.dev">info@xdocs.dev</a>, Cloudflare Email Routing forwards your message to the maintainer's mailbox. We keep it as long as we need it to answer you, and delete it if you ask.</p>
+
+        <h3>Usage statistics</h3>
+        <p>None. The server counts nothing per user, client or IP address beyond the one-minute rate-limit window, keeps no usage statistics and runs no analytics. The <code>/health</code> endpoint reports only facts about the index: its status, document and framework counts, and when it was last updated.</p>
+
+        <h2>What we don't collect</h2>
+        <ul>
+            <li>No accounts or sign-in, and no names or email addresses unless you email us.</li>
+            <li>No conversations, chat history, memory or files. An MCP server receives only the tool arguments your client sends it.</li>
+            <li>No cookies, tracking pixels, fingerprinting or analytics, on the server or the website.</li>
+            <li>No selling or sharing of data, no advertising, and no use of your data to train AI models.</li>
+        </ul>
+
+        <h2>The website</h2>
+        <p>xdocs.dev sets no cookies, uses no local storage and runs no analytics. The home page loads its fonts from Google Fonts (<code>fonts.googleapis.com</code> and <code>fonts.gstatic.com</code>), so your browser sends Google your IP address, browser details and the page's address; <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a> covers that. This privacy page loads nothing from third parties. The home page loads its skill text and its live status (<code>/health</code>) from xdocs.dev itself; those requests appear in our request log like any other. Links to GitHub, Buy Me a Coffee, Apple and Anthropic take you to those sites, under their own policies.</p>
+
+        <h2>Who we share data with</h2>
+        <p>We don't sell, rent or share personal data. These providers handle data for us:</p>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Provider</th><th>What it does for us</th><th>What it handles</th></tr></thead>
+                <tbody>
+                    <tr><td>Leaseweb Canada (Montreal, Canada)</td><td>Hosts our server</td><td>The server and its logs are stored on its hardware</td></tr>
+                    <tr><td>Cloudflare</td><td>DNS for xdocs.dev, and Email Routing for info@xdocs.dev</td><td>Emails you send us. Web and MCP traffic doesn't pass through Cloudflare</td></tr>
+                    <tr><td>Google</td><td>Fonts for the home page</td><td>Your IP address and browser details when you open the home page</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>The tools never call Apple or any other site while answering you: every result comes from our own copy of the documentation, which a separate job refreshes twice a week. Results link to the original pages on developer.apple.com, docs.swift.org, swift.org, swiftpackageindex.com, github.com, ml-explore.github.io and apple.github.io, and the pages themselves link to other sites. If you or your AI client open a link, that site's privacy policy applies.</p>
+        <p>We disclose data to authorities only when the law requires it.</p>
+
+        <h2>How long we keep data</h2>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Data</th><th>Where</th><th>How long</th></tr></thead>
+                <tbody>
+                    <tr><td>Tool arguments</td><td>Server memory</td><td>Until the reply is sent</td></tr>
+                    <tr><td>Arguments of failed or invalid calls</td><td>Server log</td><td>Until the log rotates them out. It rotates at 10 MB and keeps the last 5 old files, so there is no fixed time limit: with little traffic, a line can stay for months</td></tr>
+                    <tr><td>IP addresses for rate limiting</td><td>Server memory</td><td>Usually up to about 6 minutes after your last request; all cleared on every restart</td></tr>
+                    <tr><td>IP address of each request refused by the rate limit</td><td>Server log</td><td>As above: until rotated out</td></tr>
+                    <tr><td>Request log (method, path, status; for requests through xdocs.dev, the proxy's address, not yours)</td><td>Server log</td><td>As above: until rotated out</td></tr>
+                    <tr><td>Requests at the proxy (time, IP address, path, headers)</td><td>Proxy log</td><td>Until the proxy's log rotates them out or its container is recreated; no fixed time limit</td></tr>
+                    <tr><td>Search engine and indexer logs</td><td>Server</td><td>No search text or IP addresses (one line per internal request); rotate at 10 MB, last 5 old files kept</td></tr>
+                    <tr><td>Container log</td><td>Server</td><td>Only startup and process status messages, no request data; 10 MB, last 3 files kept, deleted at each redeploy</td></tr>
+                    <tr><td>Framework list</td><td>Server memory</td><td>Refreshed every 5 minutes; holds no request data</td></tr>
+                    <tr><td>Your emails to us</td><td>Our mailbox</td><td>Until we no longer need them, or you ask us to delete them</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>The server's logs are kept on a storage volume that survives redeploys, so redeploying doesn't delete them.</p>
+
+        <h2>Security</h2>
+        <ul>
+            <li>xdocs.dev is served over HTTPS; plain-HTTP requests are redirected to HTTPS.</li>
+            <li>Logs stay on our server, which only the maintainer can access, and are never uploaded or shared.</li>
+            <li>The search index holds only public documentation, nothing about users.</li>
+        </ul>
+
+        <h2>Your rights</h2>
+        <p>Depending on where you live (for example under the EU or UK GDPR, Canada's PIPEDA or California's CCPA), you can ask what personal data we hold about you, and ask us to correct or delete it or to stop using it. Since there are no accounts, we can find log lines only if you tell us your IP address and roughly when you used xdocs. Email <a href="mailto:info@xdocs.dev">info@xdocs.dev</a> and we'll reply within 30 days.</p>
+        <p>Under the GDPR, we rely on our legitimate interests: running the service, protecting it from abuse (the rate limit) and fixing failures (the error logs). We don't sell or share personal information as the CCPA defines those terms, and we don't collect sensitive personal information. You can also complain to your data-protection authority; in Canada, that is the Office of the Privacy Commissioner.</p>
+
+        <h2>Children</h2>
+        <p>xdocs is a tool for software developers and isn't directed at children under 13 (under 16 in the EU). We don't knowingly collect children's personal data.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>We post every change on this page and update the date at the top. If a change is material, such as new data collected or a new provider, we also announce it on the home page and in the project's README. The page's full history is public in the <a href="https://github.com/Averyy/apple-dev-docs/commits/main/landing/privacy.html" rel="noopener">GitHub repository</a>.</p>
+
+        <h2>Contact</h2>
+        <p>For privacy questions, data requests or security reports, email <a href="mailto:info@xdocs.dev">info@xdocs.dev</a>.</p>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="/">xdocs.dev</a> · <a href="https://github.com/Averyy/apple-dev-docs" rel="noopener">GitHub</a> · <a href="mailto:info@xdocs.dev">info@xdocs.dev</a>
+        </div>
+    </footer>
+</body>
+</html>

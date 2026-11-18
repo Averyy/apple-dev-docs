@@ -824,7 +824,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             self.outcome.block("exception", url)
             return False
     
-    async def _discover_and_scrape_iterative(self, initial_json_urls) -> None:
+    async def _discover_and_scrape_iterative(self, initial_json_urls: Union[str, List[str]]) -> None:
         """Iterative version of discovery to avoid recursion depth issues.
 
         Each URL goes to its sink (_route), and a sink's page is processed
@@ -4144,7 +4144,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         
         summary_path = self.output_dir / "_cross_framework_refs.json"
         self.output_dir.mkdir(parents=True, exist_ok=True)
-        summary_data = {
+        summary_data: Dict[str, Any] = {
             "source_framework": self.framework_id,
             "total_external_refs": sum(len(refs) for refs in self.cross_framework_refs.values()),
             "referenced_frameworks": list(self.cross_framework_refs.keys()),

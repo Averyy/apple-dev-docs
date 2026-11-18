@@ -80,6 +80,20 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # OpenAI changes ChatGPT's connector ranges over time and asks that the list be fetched
+      # regularly: every build bakes in the current one for the platform rate limit. If the
+      # download fails or isn't a valid list, the committed copy stays, so a deploy never
+      # waits on openai.com (an address missing from a stale list just gets the ordinary limit)
+      - name: Refresh OpenAI connector ranges
+        run: |
+          if curl -fsSL --max-time 30 https://openai.com/chatgpt-connectors.json -o /tmp/chatgpt-connectors.json \
+             && python3 -c "import ipaddress, json, sys; p = json.load(open(sys.argv[1]))['prefixes']; assert p; [ipaddress.ip_network(x.get('ipv4Prefix') or x['ipv6Prefix'], strict=False) for x in p]" /tmp/chatgpt-connectors.json; then
+            cp /tmp/chatgpt-connectors.json mcp-server/chatgpt-connectors.json
+            python3 -c "import json; d = json.load(open('mcp-server/chatgpt-connectors.json')); print(len(d['prefixes']), 'prefixes, created', d.get('creationTime'))"
+          else
+            echo "::warning::Could not refresh chatgpt-connectors.json from openai.com; building with the committed copy"
+          fi
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:

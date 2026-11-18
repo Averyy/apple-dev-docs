@@ -4,7 +4,10 @@ import sys
 from pathlib import Path
 from typing import Any, Optional
 
+import logging
+
 import structlog
+from structlog.typing import Processor
 from rich.console import Console
 from rich.logging import RichHandler
 
@@ -24,7 +27,7 @@ def setup_logging(
     # Configure structlog processors
     timestamper = structlog.processors.TimeStamper(fmt="iso")
     
-    shared_processors = [
+    shared_processors: list[Processor] = [
         structlog.stdlib.add_log_level,
         structlog.stdlib.add_logger_name,
         structlog.processors.add_log_level,
@@ -34,6 +37,7 @@ def setup_logging(
         structlog.processors.UnicodeDecoder(),
     ]
     
+    renderer: Processor
     if log_format == "json":
         renderer = structlog.processors.JSONRenderer()
     else:
@@ -48,9 +52,7 @@ def setup_logging(
     )
     
     # Configure standard logging
-    import logging
-    
-    handlers = []
+    handlers: list[logging.Handler] = []
     
     # Console handler with rich
     console_handler = RichHandler(

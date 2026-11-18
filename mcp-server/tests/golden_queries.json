@@ -35,7 +35,7 @@
   {
     "query": "carplay entitlements",
     "expected_top3": [
-      "https://developer.apple.com/documentation/carplay/requesting-carplay-entitlements"
+      "https://developer.apple.com/documentation/carplay/preparing-your-ios-app-for-carplay-development"
     ]
   },
   {

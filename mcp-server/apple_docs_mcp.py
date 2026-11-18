@@ -16,6 +16,8 @@ import sys
 import re
 import difflib
 import fnmatch
+import ipaddress
+import json
 import posixpath
 import secrets
 import time
@@ -59,7 +61,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.5.2"
+SERVER_VERSION = "3.5.3"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -77,6 +79,19 @@ if not ALLOWED_HOSTS:
 MCP_API_KEY = os.getenv("MCP_API_KEY", "")
 # Increased from 30 to 60 - Claude Desktop makes rapid tool calls
 RATE_LIMIT_REQUESTS = int(os.getenv("RATE_LIMIT_REQUESTS", "60"))
+
+# Claude.ai and ChatGPT call connectors from their own servers, so every one of their users
+# reaches us from a shared pool of published addresses, never their own. An address in
+# those pools gets this per-minute limit instead: it only protects the server (about half
+# of what it sustains), since no single user could reach it
+PLATFORM_RATE_LIMIT = int(os.getenv("PLATFORM_RATE_LIMIT", "1000"))
+# Anthropic's outbound ranges (platform.claude.com/docs/en/api/ip-addresses: they don't
+# change without notice), comma-separated
+PLATFORM_CIDRS = os.getenv("PLATFORM_CIDRS", "160.79.104.0/21,153.61.208.0/20")
+# OpenAI's ChatGPT connector ranges, which OpenAI changes over time: CI downloads the current
+# https://openai.com/chatgpt-connectors.json into the image on every build, and the copy
+# committed beside this file is the fallback
+OPENAI_RANGES_FILE = os.getenv("OPENAI_RANGES_FILE", str(Path(__file__).parent / "chatgpt-connectors.json"))
 
 # Token optimization settings
 MAX_TOKEN_BUDGET = 25000
@@ -1586,9 +1601,10 @@ def part_label(hit: Dict[str, Any]) -> str:
 mcp = FastMCP(
     name="apple-docs",
     version=SERVER_VERSION,  # serverInfo.version (defaults to the fastmcp version)
-    instructions="""Apple Developer Documentation search server.
-No authentication required. Rate limit: 60 requests/minute.
-For unlimited access, contact info@xdocs.dev for an API key.""",
+    instructions=f"""Read-only search over a copy of Apple's developer documentation, the Human Interface
+Guidelines, the Swift docs and other Apple open-source documentation, refreshed twice a week.
+No authentication. Rate limit: {RATE_LIMIT_REQUESTS} requests per minute per IP address ({PLATFORM_RATE_LIMIT} for
+the published addresses Claude and ChatGPT call connectors from).""",
     # Unexpected exceptions reach clients as a generic isError result; the
     # details stay in the server log. ToolError messages are sent as written.
     mask_error_details=True,
@@ -1621,8 +1637,8 @@ def search_apple_docs(
 ) -> str:
     """Search Apple Developer Documentation.
 
-    IMPORTANT: Use summary_mode=true for initial exploration, then expand_result for specific docs.
-    Only increase token_budget when comprehensive coverage is needed.
+    With summary_mode=true each result is its title, framework, path, link and a short
+    summary instead of its content; expand_result returns a page's full text.
 
     Returns one result per page. A result from a long page shows which part of it matched
     (e.g. 'Part 3 of 6'): expand_result with that part reads the page from there.
@@ -2229,31 +2245,110 @@ def get_version() -> str:
 # RATE LIMITING MIDDLEWARE
 # =============================================================================
 
-from starlette.middleware.base import BaseHTTPMiddleware
-from starlette.responses import JSONResponse as StarletteJSONResponse
+from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
+from starlette.requests import Request
+from starlette.responses import JSONResponse as StarletteJSONResponse, Response
+from starlette.types import ASGIApp
+
+
+Network = ipaddress.IPv4Network | ipaddress.IPv6Network
+
+
+def load_platform_networks(cidrs: str, ranges_file: str) -> List[Network]:
+    """The AI platforms' published connector addresses: the comma-separated cidrs (Anthropic's)
+    and the prefixes of ranges_file, OpenAI's chatgpt-connectors.json ({"prefixes":
+    [{"ipv4Prefix": ...} or {"ipv6Prefix": ...}]}). An entry that doesn't parse is skipped,
+    and a missing or malformed file adds nothing (each with a warning): their addresses then
+    get the ordinary limit, which never stops the server."""
+    networks: List[Network] = []
+    for cidr in (c.strip() for c in cidrs.split(",")):
+        if cidr:
+            try:
+                networks.append(ipaddress.ip_network(cidr, strict=False))
+            except ValueError:
+                logger.warning(f"PLATFORM_CIDRS: skipping {cidr!r}, not a network")
+    try:
+        with open(ranges_file, encoding="utf-8") as f:
+            data = json.load(f)
+        prefixes = data["prefixes"]
+        dated = data.get("creationTime", "undated")
+    except (OSError, ValueError, KeyError, TypeError) as e:
+        logger.warning(f"OpenAI connector ranges not loaded from {ranges_file}: {e}")
+        return networks
+    if not isinstance(prefixes, list):
+        logger.warning(f"OpenAI connector ranges not loaded from {ranges_file}: 'prefixes' is not a list")
+        return networks
+    loaded = 0
+    for prefix in prefixes:
+        value = (prefix.get("ipv4Prefix") or prefix.get("ipv6Prefix")) if isinstance(prefix, dict) else None
+        try:
+            networks.append(ipaddress.ip_network(str(value), strict=False))
+            loaded += 1
+        except ValueError:
+            logger.warning(f"{ranges_file}: skipping prefix {prefix!r}")
+    logger.info(f"OpenAI connector ranges: {loaded} prefixes from {ranges_file} ({dated})")
+    return networks
+
+
+def is_private_address(host: str) -> bool:
+    """A private or loopback address: our own proxy's (Caddy reaches the server over Docker's
+    network), never a caller's from the internet."""
+    try:
+        return ipaddress.ip_address(host).is_private
+    except ValueError:
+        return False
 
 
 class RateLimitMiddleware(BaseHTTPMiddleware):
-    """Rate limiting with API key bypass."""
+    """Rate limiting per client address, with API key bypass and a separate (higher) limit
+    for the AI platforms' published connector addresses."""
 
-    def __init__(self, app, requests_per_minute: int = 30, api_key: str = ""):
+    def __init__(self, app: ASGIApp, requests_per_minute: int = 30, api_key: str = "",
+                 platform_requests_per_minute: int = 0, platform_networks: Tuple[Network, ...] = ()):
         super().__init__(app)
         self.requests_per_minute = requests_per_minute
+        self.platform_requests_per_minute = platform_requests_per_minute or requests_per_minute
+        self.platform_networks = tuple(platform_networks)
         self.api_key = api_key
         self.request_counts: Dict[str, List[float]] = defaultdict(list)
+        # Each address's limit, once looked up (scanning ~300 networks takes ~0.2 ms); cleared
+        # with the stale entries, so it holds only addresses seen in the last few minutes
+        self._limits: Dict[str, int] = {}
         self._last_cleanup = time.time()
         self._cleanup_interval = 300  # Clean up all stale entries every 5 minutes
 
-    def _get_client_ip(self, request) -> str:
-        # Use the RIGHTMOST X-Forwarded-For token: Caddy appends the real
-        # client IP as the last value, while leftmost tokens are
-        # client-supplied and would let attackers rotate rate-limit buckets.
+    def _get_client_ip(self, request: Request) -> str:
+        # X-Forwarded-For is trusted only from our proxy, a private address: from anyone
+        # else (a caller reaching the server's port directly) it's whatever they wrote, and
+        # would let them rotate rate-limit buckets or pose as a platform address. From the
+        # proxy, the RIGHTMOST token: Caddy appends the real client IP as the last value,
+        # while leftmost tokens are client-supplied. A token that isn't an address (it keys
+        # the buckets and the log line) counts as the proxy's own
+        peer = request.client.host if request.client else "unknown"
         forwarded = request.headers.get("x-forwarded-for")
-        if forwarded:
-            return forwarded.split(",")[-1].strip()
-        return request.client.host if request.client else "unknown"
+        if forwarded and is_private_address(peer):
+            try:
+                return str(ipaddress.ip_address(forwarded.split(",")[-1].strip()))
+            except ValueError:
+                return peer
+        return peer
 
-    def _is_authenticated(self, request) -> bool:
+    def _limit_for(self, client_ip: str) -> int:
+        """The per-minute limit of client_ip: the platforms' for their published addresses."""
+        limit = self._limits.get(client_ip)
+        if limit is None:
+            limit = self.requests_per_minute
+            if self.platform_networks:
+                try:
+                    address = ipaddress.ip_address(client_ip)
+                    if any(address in network for network in self.platform_networks):
+                        limit = self.platform_requests_per_minute
+                except ValueError:
+                    pass
+            self._limits[client_ip] = limit
+        return limit
+
+    def _is_authenticated(self, request: Request) -> bool:
         if not self.api_key:
             return False
         auth = request.headers.get("authorization", "")
@@ -2273,6 +2368,7 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         # Remove empty entries
         for ip in stale_ips:
             del self.request_counts[ip]
+        self._limits.clear()
         self._last_cleanup = now
 
     def _check_rate_limit(self, client_ip: str) -> bool:
@@ -2288,13 +2384,13 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
             t for t in self.request_counts[client_ip] if t > window_start
         ]
 
-        if len(self.request_counts[client_ip]) >= self.requests_per_minute:
+        if len(self.request_counts[client_ip]) >= self._limit_for(client_ip):
             return True
 
         self.request_counts[client_ip].append(now)
         return False
 
-    async def dispatch(self, request, call_next):
+    async def dispatch(self, request: Request, call_next: RequestResponseEndpoint) -> Response:
         # Skip for health checks
         if request.url.path == "/health":
             return await call_next(request)
@@ -2311,7 +2407,7 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
                 status_code=429,
                 content={
                     "error": "Rate limit exceeded",
-                    "message": f"Limit: {self.requests_per_minute}/minute. Use API key to bypass.",
+                    "message": f"Limit: {self._limit_for(client_ip)}/minute. Use API key to bypass.",
                     "retry_after": 60
                 },
                 headers={"Retry-After": "60"}
@@ -2325,7 +2421,7 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
 # =============================================================================
 
 @mcp.custom_route("/health", methods=["GET"])
-async def health_check(request):
+async def health_check(request: Request) -> Response:
     """Health check endpoint with stats and indexing progress."""
     from starlette.responses import JSONResponse
 
@@ -2438,7 +2534,7 @@ async def health_check(request):
 # MAIN ENTRY POINT
 # =============================================================================
 
-def main():
+def main() -> None:
     """Main entry point."""
     import argparse
     import uvicorn
@@ -2456,7 +2552,9 @@ def main():
         logger.error("Meilisearch connection failed")
 
     logger.info(f"HTTP mode: http://0.0.0.0:{args.port}/mcp")
-    logger.info(f"Rate limit: {RATE_LIMIT_REQUESTS}/min (bypass with API key)")
+    platform_networks = load_platform_networks(PLATFORM_CIDRS, OPENAI_RANGES_FILE)
+    logger.info(f"Rate limit: {RATE_LIMIT_REQUESTS}/min per address, {PLATFORM_RATE_LIMIT}/min for "
+                f"{len(platform_networks)} platform networks (bypass with API key)")
 
     # Create middleware list with rate limiting
     middleware = [
@@ -2464,6 +2562,8 @@ def main():
             RateLimitMiddleware,
             requests_per_minute=RATE_LIMIT_REQUESTS,
             api_key=MCP_API_KEY,
+            platform_requests_per_minute=PLATFORM_RATE_LIMIT,
+            platform_networks=tuple(platform_networks),
         )
     ]
 
