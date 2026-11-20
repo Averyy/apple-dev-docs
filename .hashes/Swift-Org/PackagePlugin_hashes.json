@@ -2,7 +2,7 @@
   "hashes": {
     "https://docs.swift.org/latest/data/documentation/packageplugin.json": {
       "file_path": "documentation/Swift-Org/PackagePlugin/PackagePlugin.md",
-      "hash": "ffd7bfa78c5ea1941fa33c79a6329e3bc81c7cf26d7d692ec159837196edd1ff"
+      "hash": "85695514d4555c38c2d8b6b263c121ab68b27d08c9b3afa9bef00dc9e66254b4"
     },
     "https://docs.swift.org/latest/data/documentation/packageplugin/argumentextractor.json": {
       "file_path": "documentation/Swift-Org/PackagePlugin/argumentextractor.md",
@@ -1958,7 +1958,7 @@
     },
     "https://docs.swift.org/latest/documentation/packageplugin": {
       "file_path": "documentation/Swift-Org/PackagePlugin/PackagePlugin.md",
-      "hash": "ffd7bfa78c5ea1941fa33c79a6329e3bc81c7cf26d7d692ec159837196edd1ff"
+      "hash": "85695514d4555c38c2d8b6b263c121ab68b27d08c9b3afa9bef00dc9e66254b4"
     },
     "https://docs.swift.org/latest/documentation/packageplugin/argumentextractor": {
       "file_path": "documentation/Swift-Org/PackagePlugin/argumentextractor.md",

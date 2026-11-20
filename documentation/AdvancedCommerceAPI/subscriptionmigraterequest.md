@@ -7,7 +7,7 @@
 The subscription details you provide to migrate a subscription from Apple In-App Purchase to the Advanced Commerce API, such as descriptors, items, storefront, and more.
 
 **Availability**:
-- Advanced Commerce API 1.1+
+- Advanced Commerce API 1.3+
 
 ## Declaration
 
@@ -17,9 +17,10 @@ object SubscriptionMigrateRequest
 
 ## Properties
 
-- `descriptors` (SubscriptionMigrateDescriptors) *(required)*
+- `description` (description): **Maximum Length**: `45`
+- `displayName` (displayName): **Maximum Length**: `30`
 - `items` ([SubscriptionMigrateItem]) *(required)*: An array of one or more SKUs, along with descriptions and display names, that are included in the subscription.
-- `renewalItems` ([SubscriptionMigrateRenewalItem]): An optional array of subscription items that represents the items that renew at the next renewal period, if they differ from `items`. Supply this array if the customer has a pending subscription downgrade or cross-grade, which applies at the next renewal period.
+- `renewalItems` ([SubscriptionMigrateItem]): An optional array of subscription items that represents the items that renew at the next renewal period, if they differ from `items`. Supply this array if the customer has a pending subscription downgrade or cross-grade, which applies at the next renewal period.
 - `requestInfo` (RequestInfo) *(required)*
 - `storefront` (storefront)
 - `targetProductId` (targetProductId) *(required)*: Your generic product ID for an auto-renewable subscription. You configure this product ID in App Store Connect during setup. For more information, see [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md).
@@ -34,10 +35,13 @@ object SubscriptionMigrateRequest
   A response that contains signed renewal and transaction information after a subscription successfully migrates to the Advanced Commerce API.
 - [object SubscriptionMigrateItem](./subscriptionmigrateitem.md)
   The SKU, description, and display name to use for a migrated subscription item.
+- [object MigrateBundleItem](./migratebundleitem.md)
 - [object SubscriptionMigrateRenewalItem](./subscriptionmigraterenewalitem.md)
   The item information that replaces a migrated subscription item when the subscription renews.
 - [object SubscriptionMigrateDescriptors](./subscriptionmigratedescriptors.md)
   The description and display name of the subscription to migrate to that you manage.
+- [object SubscriptionMigrateRequestV1](./subscriptionmigraterequestv1.md)
+- [object SubscriptionMigrateItemV1](./subscriptionmigrateitemv1.md)
 
 
 ---

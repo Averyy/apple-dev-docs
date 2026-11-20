@@ -31,6 +31,7 @@ For example, if a customer downgrades a subscription, the subscription continues
 - `displayName` (displayName) *(required)*: The display name of the renewing SKU.
 
   **Maximum Length**: `30`
+- `partners` ([Partner])
 
 ## See Also
 
@@ -43,8 +44,11 @@ For example, if a customer downgrades a subscription, the subscription continues
   A response that contains signed renewal and transaction information after a subscription successfully migrates to the Advanced Commerce API.
 - [object SubscriptionMigrateItem](./subscriptionmigrateitem.md)
   The SKU, description, and display name to use for a migrated subscription item.
+- [object MigrateBundleItem](./migratebundleitem.md)
 - [object SubscriptionMigrateDescriptors](./subscriptionmigratedescriptors.md)
   The description and display name of the subscription to migrate to that you manage.
+- [object SubscriptionMigrateRequestV1](./subscriptionmigraterequestv1.md)
+- [object SubscriptionMigrateItemV1](./subscriptionmigrateitemv1.md)
 
 
 ---

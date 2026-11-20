@@ -42,7 +42,7 @@
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/addingdependencies.json": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/addingdependencies.md",
-      "hash": "e58ddb004956fcaf3f8ce741396d65bf7b35bed453fb612e3c2713edcb393307"
+      "hash": "f82816d6e267ba0945b6dcc110ecfbdd5cbcd86ec7400b4c57589e60c2a4a92e"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/addingsystemlibrarydependency.json": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/addingsystemlibrarydependency.md",
@@ -90,11 +90,11 @@
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/gettingstarted.json": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/gettingstarted.md",
-      "hash": "b4bc2dfe7cec85569d5baea0c29448f5e105836dd271a34251931e88fa55982c"
+      "hash": "a6e895378e722e714995636c5ca6ec6e60df818fe4c4af2650c68cbc1b1ae850"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/introducingpackages.json": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/introducingpackages.md",
-      "hash": "a5c73824535a80cbfae1f0e7fc945d79bc26d175650763671e8ff64221d68c7e"
+      "hash": "db30c40992764f9d50925ff3b3657510ac7ff3ec0b38d02eac826ec47ee3a921"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/modulealiasing.json": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/modulealiasing.md",
@@ -282,7 +282,7 @@
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagetraits.json": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagetraits.md",
-      "hash": "c91477e232a1258c91cc75f3e845ee75a7498615155a032d1e767a42ba33c23f"
+      "hash": "2562775ef0079c2e63579c661b7ff04791d3a4edb256c604f6984fe975475e62"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageunedit.json": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageunedit.md",
@@ -450,7 +450,7 @@
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/addingdependencies": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/addingdependencies.md",
-      "hash": "e58ddb004956fcaf3f8ce741396d65bf7b35bed453fb612e3c2713edcb393307"
+      "hash": "f82816d6e267ba0945b6dcc110ecfbdd5cbcd86ec7400b4c57589e60c2a4a92e"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/addingsystemlibrarydependency": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/addingsystemlibrarydependency.md",
@@ -498,11 +498,11 @@
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/gettingstarted": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/gettingstarted.md",
-      "hash": "b4bc2dfe7cec85569d5baea0c29448f5e105836dd271a34251931e88fa55982c"
+      "hash": "a6e895378e722e714995636c5ca6ec6e60df818fe4c4af2650c68cbc1b1ae850"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/introducingpackages": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/introducingpackages.md",
-      "hash": "a5c73824535a80cbfae1f0e7fc945d79bc26d175650763671e8ff64221d68c7e"
+      "hash": "db30c40992764f9d50925ff3b3657510ac7ff3ec0b38d02eac826ec47ee3a921"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/modulealiasing": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/modulealiasing.md",
@@ -690,7 +690,7 @@
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagetraits": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagetraits.md",
-      "hash": "c91477e232a1258c91cc75f3e845ee75a7498615155a032d1e767a42ba33c23f"
+      "hash": "2562775ef0079c2e63579c661b7ff04791d3a4edb256c604f6984fe975475e62"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageunedit": {
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageunedit.md",

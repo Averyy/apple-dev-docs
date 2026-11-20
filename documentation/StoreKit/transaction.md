@@ -34,6 +34,7 @@ struct Transaction
 - [Choosing a receipt validation technique](./choosing-a-receipt-validation-technique.md)
 - [Choosing a StoreKit API for Apple In-App Purchases](./choosing-a-storekit-api-for-in-app-purchases.md)
 - [Implementing offer codes in your app](./implementing-offer-codes-in-your-app.md)
+- [Testing Ask to Buy in the sandbox environment](./testing-ask-to-buy-in-the-sandbox-environment.md)
 - [Validating receipts with the App Store](./validating-receipts-with-the-app-store.md)
 
 ## Overview

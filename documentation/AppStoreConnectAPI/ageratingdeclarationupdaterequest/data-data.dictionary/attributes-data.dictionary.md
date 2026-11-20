@@ -59,6 +59,8 @@ For more information about app ratings, see [App ratings](https://help.apple.com
   **Allowed Values**: `NONE`, `INFREQUENT_OR_MILD`, `FREQUENT_OR_INTENSE`, `INFREQUENT`, `FREQUENT`
 - `socialMedia` (boolean): A Boolean value that indicates whether the app includes social media features.
 - `socialMediaAgeRestricted` (boolean): A Boolean value that indicates whether the app’s social media features are age restricted.
+- `sharedLocation` (boolean): A Boolean value that indicates whether the app enables people to share their real-world location with other people or groups.
+- `datingAndRelationships` (boolean): A Boolean value that indicates whether the app enables dating or relationship connections between people.
 - `horrorOrFearThemes` (string): Declaration for horror or fear themed content.
 
   **Allowed Values**: `NONE`, `INFREQUENT_OR_MILD`, `FREQUENT_OR_INTENSE`, `INFREQUENT`, `FREQUENT`

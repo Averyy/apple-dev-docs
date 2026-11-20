@@ -21,12 +21,15 @@ object SubscriptionPriceCreateRequest.Data.Relationships
 - [object SubscriptionPriceCreateRequest.Data.Relationships.Subscription](./relationships-data.dictionary/subscription-data.dictionary.md)
 - [object SubscriptionPriceCreateRequest.Data.Relationships.SubscriptionPricePoint](./relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
 - [object SubscriptionPriceCreateRequest.Data.Relationships.Territory](./relationships-data.dictionary/territory-data.dictionary.md)
+- [object SubscriptionPriceCreateRequest.Data.Relationships.AdditionalPriceTiers](./relationships-data.dictionary/additionalpricetiers-data.dictionary.md)
+  The additional volume pricing tiers to create with the price.
 
 ## Properties
 
 - `subscription` (SubscriptionPriceCreateRequest.Data.Relationships.Subscription) *(required)*
 - `subscriptionPricePoint` (SubscriptionPriceCreateRequest.Data.Relationships.SubscriptionPricePoint) *(required)*
 - `territory` (SubscriptionPriceCreateRequest.Data.Relationships.Territory)
+- `additionalPriceTiers` (SubscriptionPriceCreateRequest.Data.Relationships.AdditionalPriceTiers): The additional volume pricing tiers to create with the price.
 
 ## See Also
 

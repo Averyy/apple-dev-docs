@@ -24,7 +24,7 @@ struct DocumentRequest
 - [init(documentType: String, namespaces: [String : [String : ISO18013MobileDocumentRequest.ElementInfo]])](./documentrequest/init%28documenttype,namespaces%29.md)
   Initializes a document request.
 - [init(documentType: String, namespaces: [String : [String : ISO18013MobileDocumentRequest.ElementInfo]], issuerKeyIdentifiers: [Data])](./documentrequest/init%28documenttype,namespaces,issuerkeyidentifiers%29.md)
-  Initialize a document request.
+  Initializes a document request.
 ### Instance Properties
 - [var documentType: String](./documentrequest/documenttype.md)
   The document type requested.

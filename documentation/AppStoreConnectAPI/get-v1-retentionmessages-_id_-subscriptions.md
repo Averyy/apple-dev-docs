@@ -52,7 +52,7 @@ Get a list of the auto-renewable subscriptions that use a specific retention mes
   **Allowed Values**: `name`, `customerEligibilities`, `offerEligibility`, `duration`, `offerMode`, `numberOfPeriods`, `totalNumberOfCodes`, `productionCodeCount`, `sandboxCodeCount`, `active`, `autoRenewEnabled`, `targetSubscriptionPlanType`, `subscription`, `oneTimeUseCodes`, `customCodes`, `prices`
 - `fields[subscriptionPrices]` ([string]): Additional fields to include for each subscription price resource returned by the response.
 
-  **Allowed Values**: `startDate`, `preserved`, `planType`, `territory`, `subscriptionPricePoint`
+  **Allowed Values**: `startDate`, `preserved`, `planType`, `territory`, `subscriptionPricePoint`, `additionalPriceTiers`
 - `fields[promotedPurchases]` ([string]): Additional fields to include for each promoted purchase resource returned by the response.
 
   **Allowed Values**: `visibleForAllUsers`, `enabled`, `state`, `inAppPurchaseV2`, `subscription`

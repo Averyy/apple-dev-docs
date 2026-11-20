@@ -53,6 +53,12 @@ The iOS & iPadOS 27.3 SDK provides support to develop apps for iPhone and iPad r
 - NEURLFilter now limits a service’s PIR configuration to at most 65,536 shards and requires the shard count to be a power of two, for example, 256, 512, 1024, or 2048. The system rejects a configuration that exceeds the limit or whose shard count isn’t a power of two. Configurations that already meet both constraints work with earlier releases and need no changes. (191651462)
 - Your NEURLFilter service URL and Privacy Pass issuer URL must now be declared statically in your app’s Info.plist, and providing them only at runtime is deprecated. Add an `NSPIRConfiguration` dictionary to your app’s Info.plist (not the URL filter extension’s) with a `PIRServerURL` key and a `PrivacyPassIssuerURL` key. `PIRServerURL` corresponds to `pirServerURL`, and `PrivacyPassIssuerURL` corresponds to `pirPrivacyPassIssuerURL` and defaults to `PIRServerURL` when absent. Each value should contain only the host name of your server. If you also set these values at runtime, they must match the Info.plist values exactly, or the system fails to start the filter with an invalid configuration error. (191651632)
 
+### Siri
+
+#### Known Issues
+
+- Siri AI on HomeView might not be set up properly when paired with an iPhone or iPad running the iOS or iPadOS 27.3 beta. (192952891)
+
 ### StoreKit
 
 #### New Features

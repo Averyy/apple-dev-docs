@@ -11,7 +11,9 @@ Delete a scheduled price change for an auto-renewable subscription.
 
 ## Mentions
 
+- [Unpreserving prices after volume pricing takes effect](./removing-price-preservation-after-volume-pricing-takes-effect.md)
 - [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
+- [Configuring volume pricing for multiseat subscriptions](./configuring-volume-pricing-for-multi-seat-subscriptions.md)
 
 ## Discussion
 

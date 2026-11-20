@@ -2,11 +2,11 @@
   "hashes": {
     "https://developer.apple.com/documentation/technologies": {
       "file_path": "documentation/technologies/technologies.md",
-      "hash": "d6c58bcabf2164c94a900b3dbcacbeffb78e4846ddecb423e25df217d29eefc0"
+      "hash": "09705471bfa513c18b6471292f2f55140713504f1662b0bd1bada8557f52d3a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologies.json": {
       "file_path": "documentation/technologies/technologies.md",
-      "hash": "d6c58bcabf2164c94a900b3dbcacbeffb78e4846ddecb423e25df217d29eefc0"
+      "hash": "09705471bfa513c18b6471292f2f55140713504f1662b0bd1bada8557f52d3a1"
     }
   },
   "metadata": {

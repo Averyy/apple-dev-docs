@@ -17,6 +17,7 @@ object Aside
 
 ## Mentions
 
+- [Apple News Format Best Practices and Guidelines](../AppleNews/apple-news-format-best-practices-and-guidelines.md)
 - [Displaying Components Side By Side](../AppleNews/displaying-components-side-by-side.md)
 - [Nesting Components in an Article](../AppleNews/nesting-components-in-an-article.md)
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)

@@ -12,6 +12,8 @@ Update a specific auto-renewable subscription.
 ## Mentions
 
 - [Configuring multiseat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
+- [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
+- [Configuring volume pricing for multiseat subscriptions](./configuring-volume-pricing-for-multi-seat-subscriptions.md)
 
 ## Discussion
 

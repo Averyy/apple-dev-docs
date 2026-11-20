@@ -4,7 +4,7 @@
 **Kind**: init  
 **Role**: Initializer
 
-Initialize a document request.
+Initializes a document request.
 
 **Availability**:
 - iOS 27.0+

@@ -17,6 +17,10 @@ Register a document with the system.
 func addRegistration(_ registration: some IdentityDocumentRegistration) async throws
 ```
 
+## Mentions
+
+- [Implementing as an identity document provider](../implementing-as-an-identity-document-provider.md)
+
 ## Discussion
 
 If the provided registration contains a `documentIdentifier` that is already registered, the system replaces the existing registration with the provided registration.

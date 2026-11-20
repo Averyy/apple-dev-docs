@@ -1158,7 +1158,7 @@
     },
     "https://developer.apple.com/documentation/storekit/product/purchase(options:)": {
       "file_path": "documentation/StoreKit/product/purchase(options).md",
-      "hash": "32b511163c36ead752a1f83ab05f6dd4c1791bcb80992133e4f29d04590513e2"
+      "hash": "40cd485fe36c652554e47623eeb6756ddacd8431b87c220bc7febe4dbcfcfa9d"
     },
     "https://developer.apple.com/documentation/storekit/product/purchaseerror": {
       "file_path": "documentation/StoreKit/product/purchaseerror.md",
@@ -1210,7 +1210,7 @@
     },
     "https://developer.apple.com/documentation/storekit/product/purchaseoption": {
       "file_path": "documentation/StoreKit/product/purchaseoption.md",
-      "hash": "651e3df0c685d55721397ab1c3c1825465cfc1eb1d1b231dcc29166ea8a76f75"
+      "hash": "4a0a06f5410ca6574965bd8d62ef185a70f640651d182a6492c94634d257b74c"
     },
     "https://developer.apple.com/documentation/storekit/product/purchaseoption/appaccounttoken(_:)": {
       "file_path": "documentation/StoreKit/product/purchaseoption/appaccounttoken(_).md",
@@ -1282,7 +1282,7 @@
     },
     "https://developer.apple.com/documentation/storekit/product/purchaseoption/simulatesasktobuyinsandbox(_:)": {
       "file_path": "documentation/StoreKit/product/purchaseoption/simulatesasktobuyinsandbox(_).md",
-      "hash": "f8c34fdee6579a94167ab2587ac70aa1ff879e89f94e5b2143a4c9199a287706"
+      "hash": "0402c7d07c1cd380d0bd65a50b97f66f75a6fd6968f0c50d444e1bbf49976a56"
     },
     "https://developer.apple.com/documentation/storekit/product/purchaseoption/subscriptionrenewalbehavior": {
       "file_path": "documentation/StoreKit/product/purchaseoption/subscriptionrenewalbehavior.md",
@@ -1306,7 +1306,7 @@
     },
     "https://developer.apple.com/documentation/storekit/product/purchaseresult/pending": {
       "file_path": "documentation/StoreKit/product/purchaseresult/pending.md",
-      "hash": "5fbafe50ec40956ca60b849c58bae9b000347ced18653fa7c9b793b6e1cd33d3"
+      "hash": "5e5f435fdfa95fea230b1187c42e4d4d5a026b4ab50f83d7ba002e104abbc3b6"
     },
     "https://developer.apple.com/documentation/storekit/product/purchaseresult/success(_:)": {
       "file_path": "documentation/StoreKit/product/purchaseresult/success(_).md",
@@ -5078,7 +5078,7 @@
     },
     "https://developer.apple.com/documentation/storekit/testing-a-payment-request": {
       "file_path": "documentation/StoreKit/testing-a-payment-request.md",
-      "hash": "fb70fa56509a73c57e5993f40f819908cd411a875ee55368fb720806a9d0b7b1"
+      "hash": "f1f9ca0316a7d73f30ddf846fc105a025a4a87c0c5912547679e63efad189309"
     },
     "https://developer.apple.com/documentation/storekit/testing-a-product-request": {
       "file_path": "documentation/StoreKit/testing-a-product-request.md",
@@ -5102,19 +5102,23 @@
     },
     "https://developer.apple.com/documentation/storekit/testing-an-interrupted-purchase": {
       "file_path": "documentation/StoreKit/testing-an-interrupted-purchase.md",
-      "hash": "60efe007506e03767909715065d1c98f28ecfdd70d14eb65bc7f736d67963b22"
+      "hash": "58c5e5dfc3e3a844c45713cc22f941423e2597eb8faf07dd353fa5acf12eb2e6"
     },
     "https://developer.apple.com/documentation/storekit/testing-app-store-server-notifications": {
       "file_path": "documentation/StoreKit/testing-app-store-server-notifications.md",
       "hash": "6e74679ba560566c330ac02462f9886af40588707e272843ce8fbb9628416fc1"
     },
+    "https://developer.apple.com/documentation/storekit/testing-ask-to-buy-in-the-sandbox-environment": {
+      "file_path": "documentation/StoreKit/testing-ask-to-buy-in-the-sandbox-environment.md",
+      "hash": "74b399a38adeca10098b24154f9585fb97e22e7ba14641b8b08eebf1f716e7ed"
+    },
     "https://developer.apple.com/documentation/storekit/testing-ask-to-buy-in-xcode": {
       "file_path": "documentation/StoreKit/testing-ask-to-buy-in-xcode.md",
-      "hash": "d076670cdbda465d042347bb53b051fc067d8e05008be12cd06ed5559479c1df"
+      "hash": "b8ee5d65587c1fb78c86c213d7547ef04e143a3d0c1e2aec799411f4d31f8c16"
     },
     "https://developer.apple.com/documentation/storekit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox": {
       "file_path": "documentation/StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md",
-      "hash": "708b28518d82e681e960a8d0d329e0bc552e743be7850bd3064ef0708472328e"
+      "hash": "b8bf3172a4ee08e30cd9b00e6d2aa7bb6a147944e5be223bb110ebbb30cb54aa"
     },
     "https://developer.apple.com/documentation/storekit/testing-complete-transactions": {
       "file_path": "documentation/StoreKit/testing-complete-transactions.md",
@@ -5126,7 +5130,7 @@
     },
     "https://developer.apple.com/documentation/storekit/testing-failing-subscription-renewals-and-in-app-purchases": {
       "file_path": "documentation/StoreKit/testing-failing-subscription-renewals-and-in-app-purchases.md",
-      "hash": "b1568fd7a3e041f33ee554d8ea1bb19f460d5ed603355bf8edd23882837f1b8e"
+      "hash": "90e6faa2f46bcbbf98fdb487f4506f360a597b19bc140a504da3fd2fa3470f36"
     },
     "https://developer.apple.com/documentation/storekit/testing-family-sharing": {
       "file_path": "documentation/StoreKit/testing-family-sharing.md",
@@ -5142,7 +5146,7 @@
     },
     "https://developer.apple.com/documentation/storekit/testing-in-app-purchases-with-sandbox": {
       "file_path": "documentation/StoreKit/testing-in-app-purchases-with-sandbox.md",
-      "hash": "c5a0fa32a97df3ed3df1ebbb40b9f23b785e5c19cc55f09eb9ad9fc353e457bb"
+      "hash": "05272e06bcf2394d3837484c242ad92c03d87cafbda3cce3b03d53e55f050fa3"
     },
     "https://developer.apple.com/documentation/storekit/testing-introductory-offers": {
       "file_path": "documentation/StoreKit/testing-introductory-offers.md",
@@ -5162,7 +5166,7 @@
     },
     "https://developer.apple.com/documentation/storekit/testing-purchases-made-outside-your-app": {
       "file_path": "documentation/StoreKit/testing-purchases-made-outside-your-app.md",
-      "hash": "a9c18c7fedfbed354882db5629f62a204abc7b8e2e5116e7d9f46d86cf131329"
+      "hash": "7ff437073d3dd90096e477ba3c16d4ae3789dec4218685efa47fe86c355bbb5d"
     },
     "https://developer.apple.com/documentation/storekit/testing-refund-requests": {
       "file_path": "documentation/StoreKit/testing-refund-requests.md",
@@ -5182,7 +5186,7 @@
     },
     "https://developer.apple.com/documentation/storekit/testing-win-back-offers-in-the-sandbox-environment": {
       "file_path": "documentation/StoreKit/testing-win-back-offers-in-the-sandbox-environment.md",
-      "hash": "e464ab242ab2fafc1156764d1cf80769cc7482e3c5aa797c85a6e07b9045d1fe"
+      "hash": "52a613747ee2e9fdd097f945551d55612d95969ae7380d350a8defbebe1bdc22"
     },
     "https://developer.apple.com/documentation/storekit/testing-win-back-offers-in-xcode": {
       "file_path": "documentation/StoreKit/testing-win-back-offers-in-xcode.md",
@@ -5190,7 +5194,7 @@
     },
     "https://developer.apple.com/documentation/storekit/transaction": {
       "file_path": "documentation/StoreKit/transaction.md",
-      "hash": "9357432c683551d8be3ed9846c0385048624606e22b5179458d79091988f330e"
+      "hash": "30ca588210f23c79bbdead928f852e63e75219dfb3e0abc5f454522cede21ff1"
     },
     "https://developer.apple.com/documentation/storekit/transaction-properties": {
       "file_path": "documentation/StoreKit/transaction-properties.md",
@@ -5394,7 +5398,7 @@
     },
     "https://developer.apple.com/documentation/storekit/transaction/advancedcommerceinfo-swift.struct/refund/revokedseatquantity": {
       "file_path": "documentation/StoreKit/transaction/advancedcommerceinfo-swift.struct/refund/revokedseatquantity.md",
-      "hash": "712a91c32cd88c5ab603207bb850d5f6909140c95526843ad44a0eb2307e51f0"
+      "hash": "544d2ec1b7110e8dcec85c1e895fdf2300e54abb07bf703b6d9d3c6feae78ea1"
     },
     "https://developer.apple.com/documentation/storekit/transaction/advancedcommerceinfo-swift.struct/refund/type": {
       "file_path": "documentation/StoreKit/transaction/advancedcommerceinfo-swift.struct/refund/type.md",
@@ -5550,7 +5554,7 @@
     },
     "https://developer.apple.com/documentation/storekit/transaction/finish()": {
       "file_path": "documentation/StoreKit/transaction/finish().md",
-      "hash": "ab32c9488e5daea40d86b9d87d47b9f7a003d32455461dbe31f59ac836e40c75"
+      "hash": "324ae1811f9d04bec9de332b0f7617b351037f2801055fbf31127d0295bb84b3"
     },
     "https://developer.apple.com/documentation/storekit/transaction/id": {
       "file_path": "documentation/StoreKit/transaction/id.md",
@@ -5894,7 +5898,7 @@
     },
     "https://developer.apple.com/documentation/storekit/transaction/updates": {
       "file_path": "documentation/StoreKit/transaction/updates.md",
-      "hash": "670fd496aa52cdf1ab261b4dcbb02be470670ee284184e08675cc9b46b1ab75e"
+      "hash": "2a53dde5e48e4e783049da83cf789254b01c93005f6d76bcab2de18553f70458"
     },
     "https://developer.apple.com/documentation/storekit/transaction/weborderlineitemid": {
       "file_path": "documentation/StoreKit/transaction/weborderlineitemid.md",
@@ -7238,7 +7242,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/purchase(options:).json": {
       "file_path": "documentation/StoreKit/product/purchase(options).md",
-      "hash": "32b511163c36ead752a1f83ab05f6dd4c1791bcb80992133e4f29d04590513e2"
+      "hash": "40cd485fe36c652554e47623eeb6756ddacd8431b87c220bc7febe4dbcfcfa9d"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/purchaseerror.json": {
       "file_path": "documentation/StoreKit/product/purchaseerror.md",
@@ -7290,7 +7294,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/purchaseoption.json": {
       "file_path": "documentation/StoreKit/product/purchaseoption.md",
-      "hash": "651e3df0c685d55721397ab1c3c1825465cfc1eb1d1b231dcc29166ea8a76f75"
+      "hash": "4a0a06f5410ca6574965bd8d62ef185a70f640651d182a6492c94634d257b74c"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/purchaseoption/appaccounttoken(_:).json": {
       "file_path": "documentation/StoreKit/product/purchaseoption/appaccounttoken(_).md",
@@ -7362,7 +7366,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/purchaseoption/simulatesasktobuyinsandbox(_:).json": {
       "file_path": "documentation/StoreKit/product/purchaseoption/simulatesasktobuyinsandbox(_).md",
-      "hash": "f8c34fdee6579a94167ab2587ac70aa1ff879e89f94e5b2143a4c9199a287706"
+      "hash": "0402c7d07c1cd380d0bd65a50b97f66f75a6fd6968f0c50d444e1bbf49976a56"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/purchaseoption/subscriptionrenewalbehavior.json": {
       "file_path": "documentation/StoreKit/product/purchaseoption/subscriptionrenewalbehavior.md",
@@ -7386,7 +7390,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/purchaseresult/pending.json": {
       "file_path": "documentation/StoreKit/product/purchaseresult/pending.md",
-      "hash": "5fbafe50ec40956ca60b849c58bae9b000347ced18653fa7c9b793b6e1cd33d3"
+      "hash": "5e5f435fdfa95fea230b1187c42e4d4d5a026b4ab50f83d7ba002e104abbc3b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/product/purchaseresult/success(_:).json": {
       "file_path": "documentation/StoreKit/product/purchaseresult/success(_).md",
@@ -11158,7 +11162,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-a-payment-request.json": {
       "file_path": "documentation/StoreKit/testing-a-payment-request.md",
-      "hash": "fb70fa56509a73c57e5993f40f819908cd411a875ee55368fb720806a9d0b7b1"
+      "hash": "f1f9ca0316a7d73f30ddf846fc105a025a4a87c0c5912547679e63efad189309"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-a-product-request.json": {
       "file_path": "documentation/StoreKit/testing-a-product-request.md",
@@ -11182,19 +11186,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-an-interrupted-purchase.json": {
       "file_path": "documentation/StoreKit/testing-an-interrupted-purchase.md",
-      "hash": "60efe007506e03767909715065d1c98f28ecfdd70d14eb65bc7f736d67963b22"
+      "hash": "58c5e5dfc3e3a844c45713cc22f941423e2597eb8faf07dd353fa5acf12eb2e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-app-store-server-notifications.json": {
       "file_path": "documentation/StoreKit/testing-app-store-server-notifications.md",
       "hash": "6e74679ba560566c330ac02462f9886af40588707e272843ce8fbb9628416fc1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/testing-ask-to-buy-in-the-sandbox-environment.json": {
+      "file_path": "documentation/StoreKit/testing-ask-to-buy-in-the-sandbox-environment.md",
+      "hash": "74b399a38adeca10098b24154f9585fb97e22e7ba14641b8b08eebf1f716e7ed"
+    },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-ask-to-buy-in-xcode.json": {
       "file_path": "documentation/StoreKit/testing-ask-to-buy-in-xcode.md",
-      "hash": "d076670cdbda465d042347bb53b051fc067d8e05008be12cd06ed5559479c1df"
+      "hash": "b8ee5d65587c1fb78c86c213d7547ef04e143a3d0c1e2aec799411f4d31f8c16"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox.json": {
       "file_path": "documentation/StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md",
-      "hash": "708b28518d82e681e960a8d0d329e0bc552e743be7850bd3064ef0708472328e"
+      "hash": "b8bf3172a4ee08e30cd9b00e6d2aa7bb6a147944e5be223bb110ebbb30cb54aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-complete-transactions.json": {
       "file_path": "documentation/StoreKit/testing-complete-transactions.md",
@@ -11206,7 +11214,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-failing-subscription-renewals-and-in-app-purchases.json": {
       "file_path": "documentation/StoreKit/testing-failing-subscription-renewals-and-in-app-purchases.md",
-      "hash": "b1568fd7a3e041f33ee554d8ea1bb19f460d5ed603355bf8edd23882837f1b8e"
+      "hash": "90e6faa2f46bcbbf98fdb487f4506f360a597b19bc140a504da3fd2fa3470f36"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-family-sharing.json": {
       "file_path": "documentation/StoreKit/testing-family-sharing.md",
@@ -11222,7 +11230,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-in-app-purchases-with-sandbox.json": {
       "file_path": "documentation/StoreKit/testing-in-app-purchases-with-sandbox.md",
-      "hash": "c5a0fa32a97df3ed3df1ebbb40b9f23b785e5c19cc55f09eb9ad9fc353e457bb"
+      "hash": "05272e06bcf2394d3837484c242ad92c03d87cafbda3cce3b03d53e55f050fa3"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-introductory-offers.json": {
       "file_path": "documentation/StoreKit/testing-introductory-offers.md",
@@ -11242,7 +11250,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-purchases-made-outside-your-app.json": {
       "file_path": "documentation/StoreKit/testing-purchases-made-outside-your-app.md",
-      "hash": "a9c18c7fedfbed354882db5629f62a204abc7b8e2e5116e7d9f46d86cf131329"
+      "hash": "7ff437073d3dd90096e477ba3c16d4ae3789dec4218685efa47fe86c355bbb5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-refund-requests.json": {
       "file_path": "documentation/StoreKit/testing-refund-requests.md",
@@ -11262,7 +11270,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-win-back-offers-in-the-sandbox-environment.json": {
       "file_path": "documentation/StoreKit/testing-win-back-offers-in-the-sandbox-environment.md",
-      "hash": "e464ab242ab2fafc1156764d1cf80769cc7482e3c5aa797c85a6e07b9045d1fe"
+      "hash": "52a613747ee2e9fdd097f945551d55612d95969ae7380d350a8defbebe1bdc22"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-win-back-offers-in-xcode.json": {
       "file_path": "documentation/StoreKit/testing-win-back-offers-in-xcode.md",
@@ -11274,7 +11282,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction.json": {
       "file_path": "documentation/StoreKit/transaction.md",
-      "hash": "9357432c683551d8be3ed9846c0385048624606e22b5179458d79091988f330e"
+      "hash": "30ca588210f23c79bbdead928f852e63e75219dfb3e0abc5f454522cede21ff1"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction/additionaltransactionreason-swift.property.json": {
       "file_path": "documentation/StoreKit/transaction/additionaltransactionreason-swift.property.md",
@@ -11474,7 +11482,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction/advancedcommerceinfo-swift.struct/refund/revokedseatquantity.json": {
       "file_path": "documentation/StoreKit/transaction/advancedcommerceinfo-swift.struct/refund/revokedseatquantity.md",
-      "hash": "712a91c32cd88c5ab603207bb850d5f6909140c95526843ad44a0eb2307e51f0"
+      "hash": "544d2ec1b7110e8dcec85c1e895fdf2300e54abb07bf703b6d9d3c6feae78ea1"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction/advancedcommerceinfo-swift.struct/refund/type.json": {
       "file_path": "documentation/StoreKit/transaction/advancedcommerceinfo-swift.struct/refund/type.md",
@@ -11630,7 +11638,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction/finish().json": {
       "file_path": "documentation/StoreKit/transaction/finish().md",
-      "hash": "ab32c9488e5daea40d86b9d87d47b9f7a003d32455461dbe31f59ac836e40c75"
+      "hash": "324ae1811f9d04bec9de332b0f7617b351037f2801055fbf31127d0295bb84b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction/id.json": {
       "file_path": "documentation/StoreKit/transaction/id.md",
@@ -11974,7 +11982,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction/updates.json": {
       "file_path": "documentation/StoreKit/transaction/updates.md",
-      "hash": "670fd496aa52cdf1ab261b4dcbb02be470670ee284184e08675cc9b46b1ab75e"
+      "hash": "2a53dde5e48e4e783049da83cf789254b01c93005f6d76bcab2de18553f70458"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/transaction/weborderlineitemid.json": {
       "file_path": "documentation/StoreKit/transaction/weborderlineitemid.md",
@@ -12165,6 +12173,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 3040
+    "total_pages": 3042
   }
 }

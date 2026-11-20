@@ -28,6 +28,8 @@ With Apple News Format, you only have to author your content once. News automati
   Understand basic JSON concepts and become familiar with the structure of an Apple News Format article.
 - [Creating an Article: Main Steps](../AppleNews/creating-an-article-main-steps.md)
   Plan the design for your article and create it in Apple News Format.
+- [Apple News Format Best Practices and Guidelines](../AppleNews/apple-news-format-best-practices-and-guidelines.md)
+  Create and design engaging Apple News Format articles using these guidelines and best practices.
 - [object ArticleDocument](./articledocument.md)
   The root object of an Apple News article, that contains required properties, metadata, content, layout, and styles.
 ### Article Display

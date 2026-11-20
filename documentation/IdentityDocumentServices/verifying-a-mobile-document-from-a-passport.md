@@ -12,7 +12,7 @@ Beginning in iOS 26.1 and watchOS 26.1, people can add passports in the form of 
 A Digital ID is a way for people to securely create an ID in Wallet using information from their U.S. passport and present their ID with an iPhone or Apple Watch. You can verify the authenticity, integrity, and validity of a Digital ID response in following scenarios:
 
 - Your iOS app accepts mdocs using the Verify with Wallet API. For more information, see [Requesting identity data from a Wallet pass](../PassKit/requesting-identity-data-from-a-wallet-pass.md).
-- Your website accepts Verify with Wallet on the Web. For more information, see [Requesting a mobile document on the web](./requesting-a-mobile-document-on-the-web.md) and [Implementing as an identity document provider](./implenting-as-an-identity-document-provider.md).
+- Your website accepts Verify with Wallet on the Web. For more information, see [Requesting a mobile document on the web](./requesting-a-mobile-document-on-the-web.md) and [Implementing as an identity document provider](./implementing-as-an-identity-document-provider.md).
 - Your iOS app reads the mdoc’s response using [ProximityReader](../ProximityReader/ProximityReader.md)’s  [`MobilePhotoIDRawDataRequest`](../ProximityReader/mobilephotoidrawdatarequest.md).
 - Your ISO 18013-5 capable terminal wants to accept mdoc responses.
 
@@ -147,7 +147,7 @@ You can see a complete list for verifying the device signature in Section 9.1.2 
 ### Essentials
 - [Requesting a mobile document on the web](./requesting-a-mobile-document-on-the-web.md)
   Send a request for mobile document information for apps installed on a device.
-- [Implementing as an identity document provider](./implenting-as-an-identity-document-provider.md)
+- [Implementing as an identity document provider](./implementing-as-an-identity-document-provider.md)
   Add your app as an option for mobile document web presentment.
 
 

@@ -37,8 +37,6 @@ The `IdentityDocumentServicesUI` framework contains user-interface objects that 
 - [struct OpenID4VPRawRequestContext](./openid4vprawrequestcontext.md)
   A context that contains an incoming OpenID4VP request.
 ### Implementing the web presentment flow into your browser
-- [Implementing as an identity document provider](../IdentityDocumentServices/implenting-as-an-identity-document-provider.md)
-  Add your app as an option for mobile document web presentment.
 - [class IdentityDocumentWebPresentmentController](./identitydocumentwebpresentmentcontroller.md)
   A controller that performs identity document requests originating from the web.
 - [protocol IdentityDocumentWebPresentmentControllerDelegate](./identitydocumentwebpresentmentcontrollerdelegate.md)

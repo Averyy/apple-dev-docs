@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/IdentityDocumentServices": {
       "file_path": "documentation/IdentityDocumentServices/IdentityDocumentServices.md",
-      "hash": "2bcca1a7f6c55b4e729dd52e36dc586f9f19b31ff7aa6ce3bab97a7c2b589f71"
+      "hash": "41707c0d7c92079f0eb78b45473191a1305e89d17445a66a26cf5564080ee8b3"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/digitalcredentialsquery": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery.md",
@@ -274,11 +274,11 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/identitydocumentproviderregistrationstore": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore.md",
-      "hash": "3f0e3920a62657e8fb0a38b73f6017644e50720ffb068a564196d399a396fc13"
+      "hash": "cfc88fef517bd13dd904ee3331ee0a87076f9bc6e0b6b75ffbbb40b40d58f0f9"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/addregistration(_:)": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/addregistration(_).md",
-      "hash": "bd6835ca03a16c8c7cd991f9e713c0ec16e05712f407323b07eee305b7c53745"
+      "hash": "b13619d140100c2d6a7c25f1db4fc4e4fca828dd95b089eecd43828cee31569b"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/init()": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/init().md",
@@ -358,7 +358,7 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum.md",
-      "hash": "86376ca6b5f26816022cf4655549fa303cfe6d119d1d4c5f780f7600fa29217c"
+      "hash": "19d6199ca422098a64ca4bee60b01bb945e6bac7aef8138058ebd5870c10c6b9"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/iso18013mobiledocument": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/iso18013mobiledocument.md",
@@ -366,7 +366,7 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/openid4vp(_:)": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/openid4vp(_).md",
-      "hash": "b9742293901cf1bcb280370afceb8c4ac4a655f2664491f3465509809a4f98f1"
+      "hash": "f9339a7291fca5e90527bfe48d45d089380e4b767fc2e9c18d3f3b231665644d"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requesttype-swift.property": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requesttype-swift.property.md",
@@ -396,17 +396,17 @@
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentresponse.md",
       "hash": "000095d25eeb23ca874441a5a8664a6e25059b9dd98a72afd35658e6d9e39098"
     },
-    "https://developer.apple.com/documentation/identitydocumentservices/implenting-as-an-identity-document-provider": {
-      "file_path": "documentation/IdentityDocumentServices/implenting-as-an-identity-document-provider.md",
-      "hash": "fc15f241ec704098339b011d539343e67df847ae51fa87ddd146307b705a874d"
+    "https://developer.apple.com/documentation/identitydocumentservices/implementing-as-an-identity-document-provider": {
+      "file_path": "documentation/IdentityDocumentServices/implementing-as-an-identity-document-provider.md",
+      "hash": "37dce25841873db02bd768d2c8c72ac56d5f8719113593beffb982e610441d5c"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/iso18013mobiledocumentrequest": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest.md",
-      "hash": "fb555adcdae4b2f9fbef08e3006e12380bf73cd7a4cd471aef807050f764e4f0"
+      "hash": "2f88b957fcc742470f21e6cae6a6ef68ae8154531d0892ddc6668f11e27a3d3c"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest.md",
-      "hash": "d18b6c44f7941f516ac94b83a2f9f472abc939a50cc652c02160437459e51959"
+      "hash": "75ac06c8064446e64223688e711194fff2a0790115e65279aa5685fed7ec138a"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/documenttype": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/documenttype.md",
@@ -418,11 +418,11 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/init(documenttype:namespaces:issuerkeyidentifiers:)": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/init(documenttype,namespaces,issuerkeyidentifiers).md",
-      "hash": "60f761264c551d08b0552c77dd891337d12ec9b109dee9e0a5b026c21136f0e9"
+      "hash": "f197db98acd23df309fb151cbe4107b78015fcc1b646c452f0a24cd77837545d"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/issuerkeyidentifiers": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/issuerkeyidentifiers.md",
-      "hash": "d5741a1f4bb8ff77685cafed841899a324111da50f2ee989f3bd6402a41d4529"
+      "hash": "25653412fe7741ff1ec31a2cf23a9c4622f36c0040ea9e217387eb43708c72a3"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/namespaces": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/namespaces.md",
@@ -506,7 +506,7 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/mobiledocumentregistration": {
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration.md",
-      "hash": "7e48fc8cca45f4d3bce87e9e653c470c0055376ae41ca688b59b3033889eeb14"
+      "hash": "4d119ce2d0f3aa1e3731572b1655a821f2b6c5ce43e688281fb1bdaff187b7f7"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/mobiledocumentregistration/init(mobiledocumenttype:supportedauthoritykeyidentifiers:documentidentifier:invalidationdate:)": {
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/init(mobiledocumenttype,supportedauthoritykeyidentifiers,documentidentifier,invalidationdate).md",
@@ -514,7 +514,7 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/mobiledocumentregistration/init(mobiledocumenttype:supportedissuerkeyidentifiers:supportedauthoritykeyidentifiers:documentidentifier:invalidationdate:)": {
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/init(mobiledocumenttype,supportedissuerkeyidentifiers,supportedauthoritykeyidentifiers,documentidentifier,invalidationdate).md",
-      "hash": "97e7eba7f65fa1cccf21b2eafcd7042b85416a40f98058f4d473db067941355a"
+      "hash": "84ad2158600eecc5a2ac5b24113412023242a6202816a0c53494a880f7d22a83"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/mobiledocumentregistration/invalidationdate": {
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/invalidationdate.md",
@@ -530,23 +530,23 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/mobiledocumentregistration/supportedissuerkeyidentifiers": {
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/supportedissuerkeyidentifiers.md",
-      "hash": "8c68b4805dda996287a714609cf8d51733539edc0c3fa22e8fb45fb99b35503a"
+      "hash": "96ba45d063ef62a84b6301ea3feebc249d2d8f43cec477fb346cff980b8aee5a"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/openid4vpexchangeprotocolidentifier": {
       "file_path": "documentation/IdentityDocumentServices/openid4vpexchangeprotocolidentifier.md",
-      "hash": "c71cfa3648d66514fcee556488f4b4ef869ab698476ce16473eb68ef70ff1ac0"
+      "hash": "2e8b145115700419c25f33e3163bb84b2ea3d3ea695d9046c33ece87c765ff98"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/openid4vpexchangeprotocolidentifier/multisignedv1": {
       "file_path": "documentation/IdentityDocumentServices/openid4vpexchangeprotocolidentifier/multisignedv1.md",
-      "hash": "f0999ceff4b8273818da54a3deb8d3bd483dd3cbe7f831bc3c1120ace629aece"
+      "hash": "8921d2e8ea3a32edc3db1ce289c1570e2d2c35148c83242143805a938b954133"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/openid4vpexchangeprotocolidentifier/signedv1": {
       "file_path": "documentation/IdentityDocumentServices/openid4vpexchangeprotocolidentifier/signedv1.md",
-      "hash": "81473fc7a9fd16f627f38caa264b6a637f21a583accfa7d296fc8b20a3fe230d"
+      "hash": "39ff8a22eead774152a457010142c3d7a82d9564785c62ff12bd7f0e92e0733c"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/openid4vpexchangeprotocolidentifier/unsignedv1": {
       "file_path": "documentation/IdentityDocumentServices/openid4vpexchangeprotocolidentifier/unsignedv1.md",
-      "hash": "041a83bd035a00849cd57503c5ea2d4c504b6ee45f09a935f4fe3052772a4c8f"
+      "hash": "ba2f1d210020bfd87f1712cc0abe75a73c14727c41f25248c0455dfae463282e"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/openid4vprequest": {
       "file_path": "documentation/IdentityDocumentServices/openid4vprequest.md",
@@ -642,7 +642,7 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/requesting-a-mobile-document-on-the-web": {
       "file_path": "documentation/IdentityDocumentServices/requesting-a-mobile-document-on-the-web.md",
-      "hash": "162a5a2ad0c757a24ba02c9f30d553217b541520b418d5e1ee097417ec346638"
+      "hash": "116af0bc87a0522a8329e82e63e1f3747b276ab0ee5d1587f7ecfde26cea3ae1"
     },
     "https://developer.apple.com/documentation/identitydocumentservices/verifiablecredentialregistration": {
       "file_path": "documentation/IdentityDocumentServices/verifiablecredentialregistration.md",
@@ -674,11 +674,11 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservices/verifying-a-mobile-document-from-a-passport": {
       "file_path": "documentation/IdentityDocumentServices/verifying-a-mobile-document-from-a-passport.md",
-      "hash": "8ae66af76536c40da39b695fc0bd364b052c57c2e0fd766688729b474f05b110"
+      "hash": "cdb65219d00ec7fa8e2d9a6b21d517d45e2b71f5121080289d689bda6b1f6a32"
     },
     "https://developer.apple.com/tutorials/data/documentation/IdentityDocumentServices.json": {
       "file_path": "documentation/IdentityDocumentServices/IdentityDocumentServices.md",
-      "hash": "2bcca1a7f6c55b4e729dd52e36dc586f9f19b31ff7aa6ce3bab97a7c2b589f71"
+      "hash": "41707c0d7c92079f0eb78b45473191a1305e89d17445a66a26cf5564080ee8b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/digitalcredentialsquery.json": {
       "file_path": "documentation/IdentityDocumentServices/digitalcredentialsquery.md",
@@ -950,11 +950,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore.json": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore.md",
-      "hash": "3f0e3920a62657e8fb0a38b73f6017644e50720ffb068a564196d399a396fc13"
+      "hash": "cfc88fef517bd13dd904ee3331ee0a87076f9bc6e0b6b75ffbbb40b40d58f0f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/addregistration(_:).json": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/addregistration(_).md",
-      "hash": "bd6835ca03a16c8c7cd991f9e713c0ec16e05712f407323b07eee305b7c53745"
+      "hash": "b13619d140100c2d6a7c25f1db4fc4e4fca828dd95b089eecd43828cee31569b"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/init().json": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/init().md",
@@ -1034,7 +1034,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum.json": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum.md",
-      "hash": "86376ca6b5f26816022cf4655549fa303cfe6d119d1d4c5f780f7600fa29217c"
+      "hash": "19d6199ca422098a64ca4bee60b01bb945e6bac7aef8138058ebd5870c10c6b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/iso18013mobiledocument.json": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/iso18013mobiledocument.md",
@@ -1042,7 +1042,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/openid4vp(_:).json": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/openid4vp(_).md",
-      "hash": "b9742293901cf1bcb280370afceb8c4ac4a655f2664491f3465509809a4f98f1"
+      "hash": "f9339a7291fca5e90527bfe48d45d089380e4b767fc2e9c18d3f3b231665644d"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requesttype-swift.property.json": {
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requesttype-swift.property.md",
@@ -1072,17 +1072,17 @@
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentresponse.md",
       "hash": "000095d25eeb23ca874441a5a8664a6e25059b9dd98a72afd35658e6d9e39098"
     },
-    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/implenting-as-an-identity-document-provider.json": {
-      "file_path": "documentation/IdentityDocumentServices/implenting-as-an-identity-document-provider.md",
-      "hash": "fc15f241ec704098339b011d539343e67df847ae51fa87ddd146307b705a874d"
+    "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/implementing-as-an-identity-document-provider.json": {
+      "file_path": "documentation/IdentityDocumentServices/implementing-as-an-identity-document-provider.md",
+      "hash": "37dce25841873db02bd768d2c8c72ac56d5f8719113593beffb982e610441d5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest.json": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest.md",
-      "hash": "fb555adcdae4b2f9fbef08e3006e12380bf73cd7a4cd471aef807050f764e4f0"
+      "hash": "2f88b957fcc742470f21e6cae6a6ef68ae8154531d0892ddc6668f11e27a3d3c"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest.json": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest.md",
-      "hash": "d18b6c44f7941f516ac94b83a2f9f472abc939a50cc652c02160437459e51959"
+      "hash": "75ac06c8064446e64223688e711194fff2a0790115e65279aa5685fed7ec138a"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/documenttype.json": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/documenttype.md",
@@ -1094,11 +1094,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/init(documenttype:namespaces:issuerkeyidentifiers:).json": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/init(documenttype,namespaces,issuerkeyidentifiers).md",
-      "hash": "60f761264c551d08b0552c77dd891337d12ec9b109dee9e0a5b026c21136f0e9"
+      "hash": "f197db98acd23df309fb151cbe4107b78015fcc1b646c452f0a24cd77837545d"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/issuerkeyidentifiers.json": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/issuerkeyidentifiers.md",
-      "hash": "d5741a1f4bb8ff77685cafed841899a324111da50f2ee989f3bd6402a41d4529"
+      "hash": "25653412fe7741ff1ec31a2cf23a9c4622f36c0040ea9e217387eb43708c72a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/namespaces.json": {
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/namespaces.md",
@@ -1182,7 +1182,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration.json": {
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration.md",
-      "hash": "7e48fc8cca45f4d3bce87e9e653c470c0055376ae41ca688b59b3033889eeb14"
+      "hash": "4d119ce2d0f3aa1e3731572b1655a821f2b6c5ce43e688281fb1bdaff187b7f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration/init(mobiledocumenttype:supportedauthoritykeyidentifiers:documentidentifier:invalidationdate:).json": {
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/init(mobiledocumenttype,supportedauthoritykeyidentifiers,documentidentifier,invalidationdate).md",
@@ -1190,7 +1190,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration/init(mobiledocumenttype:supportedissuerkeyidentifiers:supportedauthoritykeyidentifiers:documentidentifier:invalidationdate:).json": {
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/init(mobiledocumenttype,supportedissuerkeyidentifiers,supportedauthoritykeyidentifiers,documentidentifier,invalidationdate).md",
-      "hash": "97e7eba7f65fa1cccf21b2eafcd7042b85416a40f98058f4d473db067941355a"
+      "hash": "84ad2158600eecc5a2ac5b24113412023242a6202816a0c53494a880f7d22a83"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration/invalidationdate.json": {
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/invalidationdate.md",
@@ -1206,23 +1206,23 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration/supportedissuerkeyidentifiers.json": {
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/supportedissuerkeyidentifiers.md",
-      "hash": "8c68b4805dda996287a714609cf8d51733539edc0c3fa22e8fb45fb99b35503a"
+      "hash": "96ba45d063ef62a84b6301ea3feebc249d2d8f43cec477fb346cff980b8aee5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/openid4vpexchangeprotocolidentifier.json": {
       "file_path": "documentation/IdentityDocumentServices/openid4vpexchangeprotocolidentifier.md",
-      "hash": "c71cfa3648d66514fcee556488f4b4ef869ab698476ce16473eb68ef70ff1ac0"
+      "hash": "2e8b145115700419c25f33e3163bb84b2ea3d3ea695d9046c33ece87c765ff98"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/openid4vpexchangeprotocolidentifier/multisignedv1.json": {
       "file_path": "documentation/IdentityDocumentServices/openid4vpexchangeprotocolidentifier/multisignedv1.md",
-      "hash": "f0999ceff4b8273818da54a3deb8d3bd483dd3cbe7f831bc3c1120ace629aece"
+      "hash": "8921d2e8ea3a32edc3db1ce289c1570e2d2c35148c83242143805a938b954133"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/openid4vpexchangeprotocolidentifier/signedv1.json": {
       "file_path": "documentation/IdentityDocumentServices/openid4vpexchangeprotocolidentifier/signedv1.md",
-      "hash": "81473fc7a9fd16f627f38caa264b6a637f21a583accfa7d296fc8b20a3fe230d"
+      "hash": "39ff8a22eead774152a457010142c3d7a82d9564785c62ff12bd7f0e92e0733c"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/openid4vpexchangeprotocolidentifier/unsignedv1.json": {
       "file_path": "documentation/IdentityDocumentServices/openid4vpexchangeprotocolidentifier/unsignedv1.md",
-      "hash": "041a83bd035a00849cd57503c5ea2d4c504b6ee45f09a935f4fe3052772a4c8f"
+      "hash": "ba2f1d210020bfd87f1712cc0abe75a73c14727c41f25248c0455dfae463282e"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/openid4vprequest.json": {
       "file_path": "documentation/IdentityDocumentServices/openid4vprequest.md",
@@ -1318,7 +1318,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/requesting-a-mobile-document-on-the-web.json": {
       "file_path": "documentation/IdentityDocumentServices/requesting-a-mobile-document-on-the-web.md",
-      "hash": "162a5a2ad0c757a24ba02c9f30d553217b541520b418d5e1ee097417ec346638"
+      "hash": "116af0bc87a0522a8329e82e63e1f3747b276ab0ee5d1587f7ecfde26cea3ae1"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/verifiablecredentialregistration.json": {
       "file_path": "documentation/IdentityDocumentServices/verifiablecredentialregistration.md",
@@ -1350,7 +1350,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/verifying-a-mobile-document-from-a-passport.json": {
       "file_path": "documentation/IdentityDocumentServices/verifying-a-mobile-document-from-a-passport.md",
-      "hash": "8ae66af76536c40da39b695fc0bd364b052c57c2e0fd766688729b474f05b110"
+      "hash": "cdb65219d00ec7fa8e2d9a6b21d517d45e2b71f5121080289d689bda6b1f6a32"
     }
   },
   "metadata": {

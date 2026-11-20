@@ -23,6 +23,7 @@ This is the response body for the [`Cancel a Subscription`](./cancel-a-subscript
 
 - `signedRenewalInfo` (JWSRenewalInfo) *(required)*: Subscription renewal information signed by the App Store, in JSON Web Signature (JWS) format.
 - `signedTransactionInfo` (JWSTransaction) *(required)*: Transaction information signed by the App Store, in JWS Compact Serialization format.
+- `transactions` ([BundleTransaction])
 
 ## See Also
 

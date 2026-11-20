@@ -28,9 +28,11 @@ This is the response body for the [`Change Subscription Price`](./change-subscri
 
 ### Subscription price change from the server
 - [Change Subscription Price](./change-subscription-price.md)
-  Increase or decrease the price of an auto-renewable subscription, a bundle, or individual items within a subscription at the next renewal.
+  Increase or decrease the price of an auto-renewable subscription at the next renewal.
 - [object SubscriptionPriceChangeRequest](./subscriptionpricechangerequest.md)
   The request body you use to change the price of an auto-renewable subscription.
+- [object SubscriptionPriceChangeRequestV1](./subscriptionpricechangerequestv1.md)
+- [object SubscriptionPriceChangeItemV1](./subscriptionpricechangeitemv1.md)
 
 
 ---

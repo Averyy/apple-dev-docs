@@ -23,6 +23,7 @@ case pending
 
 ## Mentions
 
+- [Testing Ask to Buy in the sandbox environment](../../testing-ask-to-buy-in-the-sandbox-environment.md)
 - [Testing Ask to Buy in Xcode](../../testing-ask-to-buy-in-xcode.md)
 
 ## Discussion

@@ -51,7 +51,7 @@ Constrain the version of a remote dependency when you declare the dependency. Th
 
 > **Note**: Tags for package versions should include all three components of a semantic version: major, minor, and patch. Tags that only include one or two of those components are not interpreted as semantic versions.
 
-Use the version requirement when you declare the dependency to limit what the package manager can choose. The version requirement can be a range of possible semantic versions, a specific semantic version, a branch name, or a commit hash. The API reference documentation for [Package.Dependency](https://docs.swift.org/swiftpm/documentation/packagedescription/package/dependency) defines the methods to use.
+Use the version requirement when you declare the dependency to limit what the package manager can choose. The version requirement can be a range of possible semantic versions, a specific semantic version, a branch name, or a commit hash. The API reference documentation for [Package.Dependency](https://docs.swift.org/latest/documentation/packagedescription/package/dependency) defines the methods to use.
 
 ### Packages with Traits
 

@@ -29,11 +29,15 @@ object advancedCommerceTransactionInfo
 ### Objects
 - [object advancedCommerceDescriptors](./advancedcommercedescriptors.md)
 - [object advancedCommerceOffer](./advancedcommerceoffer.md)
+- [object advancedCommercePartner](./advancedcommercepartner.md)
 - [object advancedCommercePriceIncreaseInfo](./advancedcommercepriceincreaseinfo.md)
 - [object advancedCommerceRefund](./advancedcommercerefund.md)
 - [object advancedCommerceRenewalInfo](./advancedcommercerenewalinfo.md)
 - [object advancedCommerceRenewalItem](./advancedcommercerenewalitem.md)
+- [object advancedCommerceSeatPriceTier](./advancedcommerceseatpricetier.md)
+  A price tier that your app provides for the seats of an Advanced Commerce subscription item.
 - [object advancedCommerceTransactionItem](./advancedcommercetransactionitem.md)
+- [object advancedCommerceBundleItem](./advancedcommercebundleitem.md)
 
 
 ---

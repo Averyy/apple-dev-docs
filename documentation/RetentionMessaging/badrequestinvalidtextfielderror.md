@@ -7,7 +7,7 @@
 An error that indicates a text field in the request is invalid.
 
 **Availability**:
-- Retention Messaging API 1.5+
+- Retention Messaging API 1.6+
 
 ## Declaration
 

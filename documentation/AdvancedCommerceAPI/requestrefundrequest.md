@@ -7,7 +7,7 @@
 The request body for requesting a refund for a transaction.
 
 **Availability**:
-- Advanced Commerce API 1.1+
+- Advanced Commerce API 1.3+
 
 ## Declaration
 
@@ -22,8 +22,8 @@ This is the request body for the [`Request Transaction Refund`](./request-transa
 ## Properties
 
 - `currency` (currency): The currency of the transaction.
-- `items` ([RequestRefundItem]) *(required)*
-- `refundRiskingPreference` (refundRiskingPreference) *(required)*
+- `refundItem` (RefundItem) *(required)*
+- `refundRiskingPreference` (refundRiskingPreference)
 - `requestInfo` (RequestInfo) *(required)*
 - `storefront` (storefront)
 
@@ -36,6 +36,9 @@ This is the request body for the [`Request Transaction Refund`](./request-transa
   The response body for a transaction refund request.
 - [object RequestRefundItem](./requestrefunditem.md)
   Information about the refund request for an item, such as its SKU, the refund amount, reason, and type.
+- [object RefundItem](./refunditem.md)
+  Information about the item to refund, such as its SKU, the type of refund, and whether to revoke entitlement.
+- [object RequestRefundRequestV1](./requestrefundrequestv1.md)
 
 
 ---

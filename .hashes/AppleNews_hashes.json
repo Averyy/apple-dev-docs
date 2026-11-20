@@ -104,6 +104,10 @@
       "file_path": "documentation/AppleNews/apple-news-api-tutorial.md",
       "hash": "5034f8417b3d3301fef707cc659491e1a82847120b10968d3158a28b69b05020"
     },
+    "https://developer.apple.com/documentation/applenews/apple-news-format-best-practices-and-guidelines": {
+      "file_path": "documentation/AppleNews/apple-news-format-best-practices-and-guidelines.md",
+      "hash": "9c53f982af8b8724b4530c15e5bb4eec9b52935dcf5b542996fcadbf905f674d"
+    },
     "https://developer.apple.com/documentation/applenews/apple-news-format-release-notes": {
       "file_path": "documentation/AppleNews/apple-news-format-release-notes.md",
       "hash": "e98b9191cbdac39a615981c7b7d5650e20c7bf93a3820ba300162556a01b7c9a"
@@ -162,7 +166,7 @@
     },
     "https://developer.apple.com/documentation/applenews/creating-an-article-main-steps": {
       "file_path": "documentation/AppleNews/creating-an-article-main-steps.md",
-      "hash": "b47332c0c3ece2a1fad78eb04c4dc69c85d4f33544bde941f6fcc7f1e4878fc2"
+      "hash": "379dbfbdf34edbea1240b0314450a86e1962faaf525cd073aebba6eb34f7b8bd"
     },
     "https://developer.apple.com/documentation/applenews/creating-an-inset-photo": {
       "file_path": "documentation/AppleNews/creating-an-inset-photo.md",
@@ -218,7 +222,7 @@
     },
     "https://developer.apple.com/documentation/applenews/json-concepts-and-article-structure": {
       "file_path": "documentation/AppleNews/json-concepts-and-article-structure.md",
-      "hash": "cbfcdd23d93f7437193b718f604c6b0cd6e09b5ada395e3fb373624f9e2c85ba"
+      "hash": "5862a01a6d2013e3da24e45a8e6244bc034aca6d73d90a331991ab9f15e0f7ff"
     },
     "https://developer.apple.com/documentation/applenews/making-an-http-request-to-the-apple-news-api": {
       "file_path": "documentation/AppleNews/making-an-http-request-to-the-apple-news-api.md",
@@ -416,6 +420,10 @@
       "file_path": "documentation/AppleNews/apple-news-api-tutorial.md",
       "hash": "5034f8417b3d3301fef707cc659491e1a82847120b10968d3158a28b69b05020"
     },
+    "https://developer.apple.com/tutorials/data/documentation/applenews/apple-news-format-best-practices-and-guidelines.json": {
+      "file_path": "documentation/AppleNews/apple-news-format-best-practices-and-guidelines.md",
+      "hash": "9c53f982af8b8724b4530c15e5bb4eec9b52935dcf5b542996fcadbf905f674d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/applenews/apple-news-format-release-notes.json": {
       "file_path": "documentation/AppleNews/apple-news-format-release-notes.md",
       "hash": "e98b9191cbdac39a615981c7b7d5650e20c7bf93a3820ba300162556a01b7c9a"
@@ -474,7 +482,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/creating-an-article-main-steps.json": {
       "file_path": "documentation/AppleNews/creating-an-article-main-steps.md",
-      "hash": "b47332c0c3ece2a1fad78eb04c4dc69c85d4f33544bde941f6fcc7f1e4878fc2"
+      "hash": "379dbfbdf34edbea1240b0314450a86e1962faaf525cd073aebba6eb34f7b8bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/creating-an-inset-photo.json": {
       "file_path": "documentation/AppleNews/creating-an-inset-photo.md",
@@ -530,7 +538,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/json-concepts-and-article-structure.json": {
       "file_path": "documentation/AppleNews/json-concepts-and-article-structure.md",
-      "hash": "cbfcdd23d93f7437193b718f604c6b0cd6e09b5ada395e3fb373624f9e2c85ba"
+      "hash": "5862a01a6d2013e3da24e45a8e6244bc034aca6d73d90a331991ab9f15e0f7ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/making-an-http-request-to-the-apple-news-api.json": {
       "file_path": "documentation/AppleNews/making-an-http-request-to-the-apple-news-api.md",
@@ -633,6 +641,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 156
+    "total_pages": 158
   }
 }

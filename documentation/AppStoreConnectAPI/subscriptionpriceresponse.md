@@ -18,7 +18,7 @@ object SubscriptionPriceResponse
 ## Properties
 
 - `data` (SubscriptionPrice) *(required)*
-- `included` ([*]): **Allowed Types**: `SubscriptionPricePoint`, `Territory`
+- `included` ([*]): **Allowed Types**: `SubscriptionPricePoint`, `SubscriptionPriceTier`, `Territory`
 - `links` (DocumentLinks) *(required)*
 
 ## See Also

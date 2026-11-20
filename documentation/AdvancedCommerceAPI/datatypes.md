@@ -12,8 +12,13 @@ Objects and data types for the Advanced Commerce API.
   The display name and description of a subscription product.
 - [object Offer](./offer.md)
   A discount offer for an auto-renewable subscription.
+- [object OfferV1](./offerv1.md)
+- [object Partner](./partner.md)
+  The identifier and name of a mini app partner associated with a purchase.
 - [object RequestInfo](./requestinfo.md)
   The metadata to include in server requests.
+- [object SeatPriceTier](./seatpricetier.md)
+  A volume price tier for a subscription item that a customer buys as a multiseat purchase.
 - [object SubscriptionModifyAddItem](./subscriptionmodifyadditem.md)
   The data your app provides to add items when it makes changes to an auto-renewable subscription.
 - [object SubscriptionModifyChangeItem](./subscriptionmodifychangeitem.md)
@@ -37,6 +42,8 @@ Objects and data types for the Advanced Commerce API.
   A string with a product name that you can localize and is suitable for display to customers.
 - [type effective](./effective.md)
   A string value that indicates when a requested change to an auto-renewable subscription goes into effect.
+- [type finalQuantity](./finalquantity.md)
+  The total number of seats for a subscription item that a customer buys as a multiseat purchase.
 - [type period](./period.md)
   The duration of a single cycle of an auto-renewable subscription.
 - [type price](./price.md)
@@ -45,6 +52,8 @@ Objects and data types for the Advanced Commerce API.
   A prorated price, in milliunits of a currency, for an Advanced Commerce API SKU.
 - [type retainBillingCycle](./retainbillingcycle.md)
   A Boolean value that determines whether to keep the existing billing cycle with the change you request.
+- [type revokeSeatQuantity](./revokeseatquantity.md)
+  The number of unclaimed seats to revoke from a subscription that a customer buys as a multiseat purchase.
 - [type refundAmount](./refundamount.md)
   A refund amount, in milliunits of the currency.
 - [type refundReason](./refundreason.md)
@@ -62,6 +71,8 @@ Objects and data types for the Advanced Commerce API.
 - [type transactionId](./transactionid.md)
   A unique identifier that the App Store generates for a transaction.
 - [type version](./version.md)
+  A number that represents the version of the data structure or Advanced Commerce API.
+- [type versionV1](./versionv1.md)
   A number that represents the version of the data structure or Advanced Commerce API.
 
 

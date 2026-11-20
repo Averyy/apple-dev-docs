@@ -21,6 +21,10 @@ A smaller amount of detail, for contexts with little room, such as Apple Watch.
 static var compact: CardSnippetFamily { get }
 ```
 
+## Mentions
+
+- [Presenting an entity as a card snippet](../presenting-an-entity-as-a-card-snippet.md)
+
 ## Discussion
 
 The system renders a card with the compact family when the rendering context has little space available.

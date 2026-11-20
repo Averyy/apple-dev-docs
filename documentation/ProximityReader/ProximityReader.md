@@ -18,7 +18,7 @@ The ProximityReader framework supports *Tap to Pay on iPhone*, which allows a pe
 
 The use of this framework requires you to coordinate with a participating payment service provider that is Level 3 certified. Contact your payment provider and work with them to set up a workflow for handling payments. When you’re ready, contact Apple and request the entitlement you need to integrate Tap to Pay on iPhone support into your app. For information on requesting this entitlement, see [Setting up Tap to Pay on iPhone](./setting-up-the-entitlement-for-tap-to-pay-on-iphone.md).
 
-> **Note**: Tap to Pay on iPhone follows the PCI CPoC Standard, which uses Level 2 certified payment kernels and a user interface for reading contactless payment cards.
+> **Note**: Tap to Pay on iPhone follows the PCI MPoC Standard, which uses Level 2 certified payment kernels and a user interface for reading contactless payment cards. For more information about the security implementation, see [Tap to Pay on iPhone security](https://support.apple.com/guide/security-pdf/sec72cb155f4/web).
 
 ## Topics
 

@@ -18,11 +18,15 @@ A list of X.509 authority key identifiers corresponding to the issuer certificat
 var issuerKeyIdentifiers: [Data]
 ```
 
+## Mentions
+
+- [Implementing as an identity document provider](../../implementing-as-an-identity-document-provider.md)
+
 ## Discussion
 
 An empty list means any document signer certificate is acceptable.
 
-> ⚠️ **Warning**: The number of issuer key identifiers must not exceed 1,000 and the size of each identifier must not exceed 64 bytes.
+> **Note**: The number of issuer key identifiers can’t exceed 1,000, and the size of each identifier can’t exceed 64 bytes.
 
 
 ---

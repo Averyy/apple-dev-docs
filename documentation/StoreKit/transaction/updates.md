@@ -27,6 +27,7 @@ static var updates: Transaction.Transactions { get }
 - [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
 - [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
 - [Testing win-back offers in the sandbox environment](../testing-win-back-offers-in-the-sandbox-environment.md)
+- [Testing Ask to Buy in the sandbox environment](../testing-ask-to-buy-in-the-sandbox-environment.md)
 - [Testing purchases made outside your app](../testing-purchases-made-outside-your-app.md)
 - [Getting started with Apple In-App Purchase using StoreKit views](../getting-started-with-in-app-purchases-using-storekit-views.md)
 - [Managing the life cycle of multiseat subscriptions](../managing-the-life-cycle-of-multiseat-subscriptions.md)
@@ -103,6 +104,8 @@ The [`updates`](./updates.md) listener receives unfinished transactions just onc
 ### Related Documentation
 - [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
   Enable customers to redeem offer codes through the App Store or within your app.
+- [Testing Ask to Buy in the sandbox environment](../testing-ask-to-buy-in-the-sandbox-environment.md)
+  Verify that your app handles Ask to Buy purchases, including those made outside your app.
 ### Transaction history and entitlements
 - [struct Transaction](../transaction.md)
   Information that represents the customer’s purchase of a product in your app.

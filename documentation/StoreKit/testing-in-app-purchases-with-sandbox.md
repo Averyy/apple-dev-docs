@@ -14,7 +14,7 @@ Apps in the development and beta-testing stages of your product cycle use the sa
 - Development-signed apps you build and run from Xcode
 - Apps you download from TestFlight
 
-When you sign in to a Sandbox Apple Account on your device, you gain access to sandbox settings that control the test environment. Use these settings to change the subscription renewal rate, clear purchase history, simulate win-back offers, and more.
+When you sign in to a Sandbox Apple Account on your device, you gain access to sandbox settings that control the test environment. Use these settings to change the subscription renewal rate, clear purchase history, simulate win-back offers, turn on Ask to Buy, and more.
 
 ### Prepare for sandbox testing
 
@@ -81,6 +81,8 @@ Sandbox settings enable you to control the testing environment to set up your te
 | Clear purchase history for a Sandbox Apple Account | Yes | Yes |
 | Change sharing status for a Sandbox Test Family member | Yes | Yes |
 | Select whether to display win-back offer sheets in the app | No | Yes |
+| Turn on Ask to Buy for a Sandbox Apple Account | No | Yes |
+| Approve or decline Ask to Buy requests | No | Yes |
 
 To access the Account Settings in iOS, follow these steps:
 
@@ -140,6 +142,8 @@ Clearing the purchase history for Sandbox Apple Accounts with a high number of p
 ### Payment transactions
 - [Testing purchases made outside your app](./testing-purchases-made-outside-your-app.md)
   Verify that your app receives and handles transactions that occur outside your app, such as subscription purchases, renewals, and offer and promo code redemptions.
+- [Testing Ask to Buy in the sandbox environment](./testing-ask-to-buy-in-the-sandbox-environment.md)
+  Verify that your app handles Ask to Buy purchases, including those made outside your app.
 - [Testing win-back offers in the sandbox environment](./testing-win-back-offers-in-the-sandbox-environment.md)
   Verify that your app receives and handles win-back offer transactions, including those made outside your app.
 - [Testing an interrupted purchase](./testing-an-interrupted-purchase.md)

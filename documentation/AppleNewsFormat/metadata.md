@@ -17,11 +17,12 @@ object Metadata
 
 ## Mentions
 
+- [Apple News Format Best Practices and Guidelines](../AppleNews/apple-news-format-best-practices-and-guidelines.md)
 - [Changing the Appearance of Your Article Tile in Feeds](../AppleNews/changing-the-appearance-of-your-article-tile-in-feeds.md)
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
-- [Creating an Article: Main Steps](../AppleNews/creating-an-article-main-steps.md)
 - [Apple News Format Release Notes](../AppleNews/apple-news-format-release-notes.md)
 - [Apple News API Release Notes](../AppleNews/apple-news-api-release-notes.md)
+- [Creating an Article: Main Steps](../AppleNews/creating-an-article-main-steps.md)
 
 ## Discussion
 

@@ -7,7 +7,7 @@
 The request body you use to change the price of an auto-renewable subscription.
 
 **Availability**:
-- Advanced Commerce API 1.0+
+- Advanced Commerce API 1.3+
 
 ## Declaration
 
@@ -32,9 +32,11 @@ The items array contains [`SubscriptionPriceChangeItem`](./subscriptionpricechan
 
 ### Subscription price change from the server
 - [Change Subscription Price](./change-subscription-price.md)
-  Increase or decrease the price of an auto-renewable subscription, a bundle, or individual items within a subscription at the next renewal.
+  Increase or decrease the price of an auto-renewable subscription at the next renewal.
 - [object SubscriptionPriceChangeResponse](./subscriptionpricechangeresponse.md)
   A response that contains signed JWS renewal and JWS transaction information after a subscription price change request.
+- [object SubscriptionPriceChangeRequestV1](./subscriptionpricechangerequestv1.md)
+- [object SubscriptionPriceChangeItemV1](./subscriptionpricechangeitemv1.md)
 
 
 ---

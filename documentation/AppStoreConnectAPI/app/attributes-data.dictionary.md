@@ -35,6 +35,9 @@ object App.Attributes
 - `subscriptionStatusUrlVersionForSandbox` (SubscriptionStatusUrlVersion)
 - `accessibilityUrl` (uri)
 - `streamlinedPurchasingEnabled` (boolean): The default value is `true`.
+- `groupPurchaseInvitationMode` (string): Who hosts the seat invitations for multiseat subscription purchases that customers make in your app on the App Store. Use APPLE_HOSTED for Apple to send invitations and manage how members accept them, or DEVELOPER_HOSTED for your app to host its own invitation and seat acceptance flow. The default is APPLE_HOSTED.
+
+  **Allowed Values**: `APPLE_HOSTED`, `DEVELOPER_HOSTED`
 
 ## See Also
 

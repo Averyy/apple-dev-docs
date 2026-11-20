@@ -21,7 +21,7 @@ var supportedIssuerKeyIdentifiers: [Data]
 
 An issuer key identifier is an authority key identifier from the document signer certificate chain.
 
-> ⚠️ **Warning**: The number of issuer key identifiers must not exceed 1,000 and the size of each identifier must not exceed 64 bytes.
+> **Note**: The number of issuer key identifiers can’t exceed 1,000, and the size of each identifier can’t exceed 64 bytes.
 
 
 ---

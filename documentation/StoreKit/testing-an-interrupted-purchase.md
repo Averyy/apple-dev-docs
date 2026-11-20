@@ -45,6 +45,8 @@ The Sandbox Apple Account continues to experience interrupted purchases until yo
 ### Payment transactions
 - [Testing purchases made outside your app](./testing-purchases-made-outside-your-app.md)
   Verify that your app receives and handles transactions that occur outside your app, such as subscription purchases, renewals, and offer and promo code redemptions.
+- [Testing Ask to Buy in the sandbox environment](./testing-ask-to-buy-in-the-sandbox-environment.md)
+  Verify that your app handles Ask to Buy purchases, including those made outside your app.
 - [Testing win-back offers in the sandbox environment](./testing-win-back-offers-in-the-sandbox-environment.md)
   Verify that your app receives and handles win-back offer transactions, including those made outside your app.
 - [Testing failing subscription renewals and Apple In-App Purchases](./testing-failing-subscription-renewals-and-in-app-purchases.md)

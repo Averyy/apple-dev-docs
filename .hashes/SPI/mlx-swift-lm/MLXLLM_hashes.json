@@ -22154,6 +22154,9 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/LLMModelFactory.swift"
+    ],
     "render": {
       "version": 4
     },

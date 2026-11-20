@@ -28,8 +28,6 @@ protocol IdentityDocumentWebPresentmentControllerDelegate : AnyObject
 ## See Also
 
 ### Implementing the web presentment flow into your browser
-- [Implementing as an identity document provider](../IdentityDocumentServices/implenting-as-an-identity-document-provider.md)
-  Add your app as an option for mobile document web presentment.
 - [class IdentityDocumentWebPresentmentController](./identitydocumentwebpresentmentcontroller.md)
   A controller that performs identity document requests originating from the web.
 - [protocol IdentityDocumentPresentmentControllerPresentationContextProviding](./identitydocumentpresentmentcontrollerpresentationcontextproviding.md)

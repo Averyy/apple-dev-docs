@@ -11,6 +11,15 @@ App Store Server Notifications has two versions of notifications. Version 1 noti
 
 To set up your server to receive notifications, see [Enabling App Store Server Notifications](./enabling-app-store-server-notifications.md). Use this changelog to learn about feature updates, version information, deprecations, and removals for App Store Server Notifications.
 
+### November 17, 2026
+
+**New features**
+
+- Added the [`advancedCommerceSeatPriceTiers`](./advancedcommerceseatpricetiers.md) array, which contains [`advancedCommerceSeatPriceTier`](./advancedcommerceseatpricetier.md) objects, to [`advancedCommerceTransactionItem`](./advancedcommercetransactionitem.md) and [`advancedCommerceRenewalItem`](./advancedcommercerenewalitem.md) to support multiseat subscriptions in the [Advanced Commerce API](../AdvancedCommerceAPI/AdvancedCommerceAPI.md). Each tier includes the [`advancedCommerceMaximumSeatQuantity`](./advancedcommercemaximumseatquantity.md) and [`advancedCommerceTierPrice`](./advancedcommercetierprice.md) fields.
+- Added the [`advancedCommerceRevokedSeatQuantity`](./advancedcommercerevokedseatquantity.md) field to [`advancedCommerceRefund`](./advancedcommercerefund.md).
+- Added the [`advancedCommercePartners`](./advancedcommercepartners.md) array, which contains [`advancedCommercePartner`](./advancedcommercepartner.md) objects, to [`advancedCommerceTransactionItem`](./advancedcommercetransactionitem.md) and [`advancedCommerceRenewalItem`](./advancedcommercerenewalitem.md) to provide partner attribution for an item. Each partner includes the [`advancedCommercePartnerId`](./advancedcommercepartnerid.md) and [`advancedCommercePartnerName`](./advancedcommercepartnername.md) fields.
+- Added the [`advancedCommerceBundleItem`](./advancedcommercebundleitem.md) object to [`advancedCommerceTransactionItem`](./advancedcommercetransactionitem.md) and [`advancedCommerceRenewalItem`](./advancedcommercerenewalitem.md) to describe the individual item in a bundle subscription.
+
 ### November 4, 2026
 
 **New features**

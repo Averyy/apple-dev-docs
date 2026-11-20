@@ -18,6 +18,10 @@ A value that identifies which OpenID4VP exchange protocol a request or response 
 enum OpenID4VPExchangeProtocolIdentifier
 ```
 
+## Mentions
+
+- [Implementing as an identity document provider](./implementing-as-an-identity-document-provider.md)
+
 ## Topics
 
 ### Enumeration Cases

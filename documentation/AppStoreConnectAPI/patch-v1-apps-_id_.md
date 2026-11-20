@@ -12,6 +12,8 @@ Update app information, including bundle ID, primary locale, price schedule, and
 ## Mentions
 
 - [App Store Connect API 4.0 release notes](./app-store-connect-api-4-0-release-notes.md)
+- [App Store Connect API 4.6.1 release notes](./app-store-connect-api-4-6-1-release-notes.md)
+- [Configuring multiseat subscriptions for organizations](./configuring-multi-seat-subscriptions-for-organizations.md)
 
 ## Discussion
 

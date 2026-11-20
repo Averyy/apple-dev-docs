@@ -28,6 +28,7 @@ protocol OpenIntent : SystemIntent
 - [Directing app intents to your app’s scenes](./directing-app-intents-to-your-apps-scenes.md)
 - [Getting started with the App Intents framework](./getting-started-with-the-app-intents-framework.md)
 - [Making app entities available in Spotlight](./making-app-entities-available-in-spotlight.md)
+- [Presenting an entity as a card snippet](./presenting-an-entity-as-a-card-snippet.md)
 
 ## Overview
 

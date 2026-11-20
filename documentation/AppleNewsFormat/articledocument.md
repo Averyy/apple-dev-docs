@@ -19,6 +19,7 @@ object ArticleDocument
 
 - [Changing the Appearance of Your Article Tile in Feeds](../AppleNews/changing-the-appearance-of-your-article-tile-in-feeds.md)
 - [Adding Components](../AppleNews/adding-components.md)
+- [Apple News Format Best Practices and Guidelines](../AppleNews/apple-news-format-best-practices-and-guidelines.md)
 - [Creating an Article: Main Steps](../AppleNews/creating-an-article-main-steps.md)
 - [Enhancing Your Articles with Styles](../AppleNews/enhancing-your-articles-with-styles.md)
 - [JSON Concepts and Article Structure](../AppleNews/json-concepts-and-article-structure.md)
@@ -158,6 +159,8 @@ To view this example in News Preview, copy the example code to a file named `art
   Understand basic JSON concepts and become familiar with the structure of an Apple News Format article.
 - [Creating an Article: Main Steps](../AppleNews/creating-an-article-main-steps.md)
   Plan the design for your article and create it in Apple News Format.
+- [Apple News Format Best Practices and Guidelines](../AppleNews/apple-news-format-best-practices-and-guidelines.md)
+  Create and design engaging Apple News Format articles using these guidelines and best practices.
 
 
 ---

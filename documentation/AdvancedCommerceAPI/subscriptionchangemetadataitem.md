@@ -7,7 +7,7 @@
 The metadata to change for an item, specifically its SKU, description, and display name.
 
 **Availability**:
-- Advanced Commerce API 1.1+
+- Advanced Commerce API 1.3+
 
 ## Declaration
 
@@ -20,6 +20,7 @@ object SubscriptionChangeMetadataItem
 - `SKU` (SKU): The new SKU of the item.
 
   **Maximum Length**: `128`
+- `bundleItems` ([ChangeMetadataBundleItem])
 - `currentSKU` (SKU) *(required)*: The original SKU of the item.
 
   **Maximum Length**: `128`
@@ -29,7 +30,8 @@ object SubscriptionChangeMetadataItem
 - `displayName` (displayName): The new display name for the item.
 
   **Maximum Length**: `30`
-- `effective` (effective) *(required)*: The string that determines when the metadata change goes into effect.
+- `partners` ([Partner])
+- `taxCode` (taxCode)
 
 ## See Also
 
@@ -42,6 +44,9 @@ object SubscriptionChangeMetadataItem
   The response body for a successful subscription metadata change.
 - [object SubscriptionChangeMetadataDescriptors](./subscriptionchangemetadatadescriptors.md)
   The subscription metadata to change, specifically the description and display name.
+- [object ChangeMetadataBundleItem](./changemetadatabundleitem.md)
+- [object SubscriptionChangeMetadataRequestV1](./subscriptionchangemetadatarequestv1.md)
+- [object SubscriptionChangeMetadataItemV1](./subscriptionchangemetadataitemv1.md)
 
 
 ---

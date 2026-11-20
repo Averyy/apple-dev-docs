@@ -27,6 +27,8 @@ object SubscriptionPrice.Relationships.SubscriptionPricePoint
 
 ### Objects
 - [object SubscriptionPrice.Relationships.Territory](./territory-data.dictionary.md)
+- [object SubscriptionPrice.Relationships.AdditionalPriceTiers](./additionalpricetiers-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
 
 
 ---

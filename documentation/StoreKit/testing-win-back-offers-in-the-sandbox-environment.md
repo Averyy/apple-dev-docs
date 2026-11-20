@@ -96,6 +96,8 @@ To repeat a test and redeem the same win-back offer, cancel the subscription and
 ### Payment transactions
 - [Testing purchases made outside your app](./testing-purchases-made-outside-your-app.md)
   Verify that your app receives and handles transactions that occur outside your app, such as subscription purchases, renewals, and offer and promo code redemptions.
+- [Testing Ask to Buy in the sandbox environment](./testing-ask-to-buy-in-the-sandbox-environment.md)
+  Verify that your app handles Ask to Buy purchases, including those made outside your app.
 - [Testing an interrupted purchase](./testing-an-interrupted-purchase.md)
   Verify that your app handles an interrupted purchase by inspecting and invoking payment transactions.
 - [Testing failing subscription renewals and Apple In-App Purchases](./testing-failing-subscription-renewals-and-in-app-purchases.md)

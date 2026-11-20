@@ -19,6 +19,10 @@ An intent schema that opens an item in the application.
 var open: some AppSchemaIntent { get }
 ```
 
+## Mentions
+
+- [Presenting an entity as a card snippet](../../presenting-an-entity-as-a-card-snippet.md)
+
 ## Discussion
 
 To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `system` domain and one of your app’s actions matches the `open` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent(schema: .system.open)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).

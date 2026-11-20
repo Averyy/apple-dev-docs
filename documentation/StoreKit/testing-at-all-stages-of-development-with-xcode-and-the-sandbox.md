@@ -77,7 +77,7 @@ Depending on the Apple In-App Purchases your app offers, you may need to test sc
 | Test scenario | Sandbox | StoreKit Testing in Xcode |
 | --- | --- | --- |
 | Initiate an Ask to Buy transaction that results in a deferred state | Yes | Yes |
-| Resolve an Ask to Buy transaction by approving or rejecting it | No | Yes |
+| Resolve an Ask to Buy transaction by approving or rejecting it | Yes | Yes |
 | Redeem an introductory offer for an auto-renewable subscription | Yes | Yes |
 | Redeem a promotional offer for an auto-renewable subscription | Yes | Yes |
 | Process a subscription renewal | Yes | Yes |
@@ -89,7 +89,7 @@ Depending on the Apple In-App Purchases your app offers, you may need to test sc
 | Test a price increase for an auto-renewable subscription | No | Yes |
 | Test billing retry and billing grace period | Yes | Yes |
 
-For more information, see [Approve what kids buy with Ask to Buy](https://support.apple.com/en-us/HT201089) and [Testing introductory offers](./testing-introductory-offers.md).
+For more information, see [Approve what kids buy with Ask to Buy](https://support.apple.com/en-us/HT201089), [Testing Ask to Buy in the sandbox environment](./testing-ask-to-buy-in-the-sandbox-environment.md), and [Testing introductory offers](./testing-introductory-offers.md).
 
 ## See Also
 

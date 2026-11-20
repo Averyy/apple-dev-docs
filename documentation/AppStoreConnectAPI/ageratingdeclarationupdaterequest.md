@@ -18,6 +18,7 @@ object AgeRatingDeclarationUpdateRequest
 ## Mentions
 
 - [App Store Connect API 4.4.1 release notes](./app-store-connect-api-4-4-1-release-notes.md)
+- [App Store Connect API 4.6.1 release notes](./app-store-connect-api-4-6-1-release-notes.md)
 
 ## Topics
 

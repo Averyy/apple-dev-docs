@@ -17,7 +17,7 @@ object LinkedArticle
 
 ## Mentions
 
-- [Creating an Article: Main Steps](../AppleNews/creating-an-article-main-steps.md)
+- [Apple News Format Best Practices and Guidelines](../AppleNews/apple-news-format-best-practices-and-guidelines.md)
 
 ## Discussion
 

@@ -35,8 +35,11 @@ object SubscriptionMigrateDescriptors
   A response that contains signed renewal and transaction information after a subscription successfully migrates to the Advanced Commerce API.
 - [object SubscriptionMigrateItem](./subscriptionmigrateitem.md)
   The SKU, description, and display name to use for a migrated subscription item.
+- [object MigrateBundleItem](./migratebundleitem.md)
 - [object SubscriptionMigrateRenewalItem](./subscriptionmigraterenewalitem.md)
   The item information that replaces a migrated subscription item when the subscription renews.
+- [object SubscriptionMigrateRequestV1](./subscriptionmigraterequestv1.md)
+- [object SubscriptionMigrateItemV1](./subscriptionmigrateitemv1.md)
 
 
 ---

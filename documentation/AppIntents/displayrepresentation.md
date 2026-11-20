@@ -24,6 +24,7 @@ struct DisplayRepresentation
 ## Mentions
 
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
+- [Presenting an entity as a card snippet](./presenting-an-entity-as-a-card-snippet.md)
 
 ## Topics
 

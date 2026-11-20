@@ -25,7 +25,8 @@ A view that contains content that displays on a map at a specific position, and 
 ## Topics
 
 ### Managing feature selection
-- [func mapFeatureSelectionContent(content: (MapFeature) -> some MapContent) -> some View\n](../SwiftUI/view/mapfeatureselectioncontent%28content%29.md)
+- [func mapFeatureSelectionContent(content: (MapFeature) -> some MapContent) -> some View
+](../SwiftUI/view/mapfeatureselectioncontent%28content%29.md)
   Specifies a custom presentation for the currently selected feature.
 - [func mapFeatureSelectionDisabled((MapFeature) -> Bool) -> some View
 ](../SwiftUI/view/mapfeatureselectiondisabled%28_%29.md)
@@ -46,7 +47,8 @@ A view that contains content that displays on a map at a specific position, and 
 - [func mapCameraKeyframeAnimator(trigger: some Equatable, keyframes: (MapCamera) -> some Keyframes<MapCamera>) -> some View
 ](../SwiftUI/view/mapcamerakeyframeanimator%28trigger,keyframes%29.md)
   Uses the given keyframes to animate the camera of a `Map` when the given trigger value changes.
-- [func onMapCameraChange(frequency: MapCameraUpdateFrequency, (MapCameraUpdateContext) -> Void) -> some View\n](../SwiftUI/view/onmapcamerachange%28frequency,_%29-2pcga.md)
+- [func onMapCameraChange(frequency: MapCameraUpdateFrequency, (MapCameraUpdateContext) -> Void) -> some View
+](../SwiftUI/view/onmapcamerachange%28frequency,_%29-2pcga.md)
   Performs an action when Map camera framing changes
 - [func onMapCameraChange(frequency:_:)](../SwiftUI/view/onmapcamerachange%28frequency,_%29.md)
   Performs an action when Map camera framing changes
@@ -60,7 +62,8 @@ A view that contains content that displays on a map at a specific position, and 
 ](../SwiftUI/view/mapscope%28_%29.md)
   Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
 ### Setting the map style
-- [func mapStyle(MapStyle) -> some View\n](../SwiftUI/view/mapstyle%28_%29.md)
+- [func mapStyle(MapStyle) -> some View
+](../SwiftUI/view/mapstyle%28_%29.md)
   Specifies the map style to be used.
 
 ## Relationships

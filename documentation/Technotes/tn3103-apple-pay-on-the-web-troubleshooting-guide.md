@@ -300,7 +300,7 @@ If token decryption fails or produces unparsable data rather than JSON, verify t
 - The private key used for decryption must match that public key. If you recently renewed or regenerated your Payment Processing Certificate, confirm that your payment processor updated their system with the new private key.
 - To verify key consistency, extract the public key from the private key file and compute its SHA-256 hash. Compare this hash against the public key extracted from your Payment Processing Certificate. If the hashes differ, the private key does not match the certificate.
 
-For detailed token schema definitions and cryptographic specifications, see [Payment Token Format Reference](https://developer.apple.com/library/archive/documentation/PassKit/Reference/PaymentTokenJSON/PaymentTokenJSON.html). To learn more about Payment Processing Certificates, see doc://tn3206-updating-apple-pay-certificates#Payment-processing-certificates.
+For detailed token schema definitions and cryptographic specifications, see [Payment Token Format Reference](https://developer.apple.com/library/archive/documentation/PassKit/Reference/PaymentTokenJSON/PaymentTokenJSON.html). To learn more about Payment Processing Certificates, see [Payment processing certificates](./tn3206-updating-apple-pay-certificates.md#Payment-processing-certificates).
 
 ## Revision History
 

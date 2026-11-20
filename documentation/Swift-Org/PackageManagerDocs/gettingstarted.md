@@ -32,7 +32,7 @@ cd DeckOfPlayingCards
 swift package init
 ```
 
-The default template that Package Manager creates is a library, which you can control with the `--type` parameter. The name of the package defaults to the name of the directory you created, and can be overridden with the `--name` parameter to the `swift package init` command. For the complete details on options for this command, see the [swift package init documentation](https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/packageinit).
+The default template that Package Manager creates is a library, which you can control with the `--type` parameter. The name of the package defaults to the name of the directory you created, and can be overridden with the `--name` parameter to the `swift package init` command. For the complete details on options for this command, see the [swift package init documentation](./packageinit.md).
 
 The template generates a structure of files in the directory that follow the defaults for a Swift package:
 
@@ -307,7 +307,7 @@ Test Suite 'All tests' passed at 2025-10-09 13:16:44.052.
 
 You can use this package from other Swift packages locally, or share the package through a git hosting provider. When you want to release your own package, create a git tag that matches the major, minor, and patch versions of a semantic version and push the tag to your git hosting provider. For example, to tag the package with the semantic version `0.1`, which indicates that it’s an initial minor release, use the tag `0.1.0`.
 
-For more information about sharing packages, see [Releasing and publishing a Swift package](https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/releasingpublishingapackage).
+For more information about sharing packages, see [Releasing and publishing a Swift package](./releasingpublishingapackage.md).
 
 ### Resolving transitive dependencies
 

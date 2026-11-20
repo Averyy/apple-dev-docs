@@ -17,6 +17,10 @@ The metadata provider.
 var metadataProvider: Logger.MetadataProvider? { get set }
 ```
 
+## Discussion
+
+Setting this property sets the provider on all underlying handlers and replaces the provider passed to [`init(_:metadataProvider:)`](./init%28_,metadataprovider%29.md).
+
 ## See Also
 
 ### Inspecting a log handler

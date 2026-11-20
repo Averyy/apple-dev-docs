@@ -21,6 +21,10 @@ A family that supports a standard amount of space.
 static var standard: CardSnippetFamily { get }
 ```
 
+## Mentions
+
+- [Presenting an entity as a card snippet](../presenting-an-entity-as-a-card-snippet.md)
+
 ## Discussion
 
 The system chooses this family for contexts such as iPhone, where the display has adequate space to display your entity’s content.

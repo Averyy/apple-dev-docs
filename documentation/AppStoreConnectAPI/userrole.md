@@ -39,6 +39,7 @@ string UserRole
 - [App Store Connect API 4.3 release notes](./app-store-connect-api-4-3-release-notes.md)
 - [App Store Connect API 4.4 release notes](./app-store-connect-api-4-4-release-notes.md)
 - [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
+- [Configuring volume pricing for multiseat subscriptions](./configuring-volume-pricing-for-multi-seat-subscriptions.md)
 - [Creating auto-renewable subscription groups](./creating-auto-renewable-subscription-groups.md)
 - [Managing In-App Purchases](./managing-in-app-purchases.md)
 

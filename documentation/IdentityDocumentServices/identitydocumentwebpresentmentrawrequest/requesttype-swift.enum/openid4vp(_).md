@@ -4,7 +4,7 @@
 **Kind**: case  
 **Role**: Case
 
-Corresponds to a request format defined in OpenID for Verifiable Presentations, carrying the exchange protocol the request arrived as.
+A value that corresponds to a request format defined in OpenID for Verifiable Presentations, with the exchange protocol that the request uses.
 
 **Availability**:
 - iOS 27.3+ (Beta)

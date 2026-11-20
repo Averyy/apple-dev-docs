@@ -46,6 +46,8 @@ You don’t conform to this protocol directly. Instead, you build an entity’s 
 ## See Also
 
 ### Card snippets
+- [Presenting an entity as a card snippet](./presenting-an-entity-as-a-card-snippet.md)
+  Show a custom view of your app’s content in system experiences such as Siri responses and conversation transcripts.
 - [protocol SnippetRepresentableEntity](./snippetrepresentableentity.md)
   An app entity that provides a visual representation for its content.
 - [struct CardSnippet](./cardsnippet.md)

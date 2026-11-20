@@ -31,7 +31,7 @@ Purchase options enable you to provide additional information for the purchase, 
 
 ### Use purchase options during testing
 
-In the sandbox testing environment, use [`simulatesAskToBuyInSandbox(_:)`](./purchaseoption/simulatesasktobuyinsandbox%28_%29.md) to test Ask To Buy scenarios.
+In the sandbox testing environment, use [`simulatesAskToBuyInSandbox(_:)`](./purchaseoption/simulatesasktobuyinsandbox%28_%29.md) to test Ask to Buy scenarios. For more information, see [Testing Ask to Buy in the sandbox environment](../testing-ask-to-buy-in-the-sandbox-environment.md).
 
 In the Xcode testing environment with [StoreKit Test](../../StoreKitTest/StoreKitTest.md), use the following testing-specific purchase options when you call [`buyProduct(identifier:options:)`](../../StoreKitTest/sktestsession/buyproduct%28identifier,options%29.md):
 

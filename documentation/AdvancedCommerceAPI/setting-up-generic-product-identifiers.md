@@ -81,6 +81,7 @@ On the details page, configure the following settings:
 
 - **Subscription Duration**: 1 month
 - **Family Sharing**: Don’t enable.
+- **Purchase Options**: To let customers buy the subscription through Group Purchases, turn on multiseat purchasing. Multiseat purchasing isn’t turned on by default for generic product IDs. Editing purchase options requires the Account Holder, Admin, or App Manager role. For more information, see [Manage purchase options for an auto-renewable subscription](https://developer.apple.com/help/app-store-connect/manage-subscriptions/manage-purchase-options-for-auto-renewable-subscriptions) and [Creating multiseat purchases](./creating-multiseat-purchases.md).
 - **Set Availability**: Select the App Store countries or regions your app supports. For more information, see [Set availability for an auto-renewable subscription](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-availability-for-an-auto-renewable-subscription).
 - **Add Subscription Price**: Choose your base country or region and select the lowest available price.
 - **Add Localization**:
@@ -103,6 +104,8 @@ To offer subscriptions within the Mini Apps Partner Program, follow the same pro
 ### Generic product IDs and SKUs
 - [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md)
   Define and manage one-time charges, subscriptions, and bundled subscriptions within your app.
+- [Creating multiseat purchases](./creating-multiseat-purchases.md)
+  Sell subscriptions that a customer buys for a group through Group Purchases, with per-seat or volume discount pricing.
 - [Creating SKUs for the Mini Apps Partner Program](./creating-skus-for-the-mini-app-partner-program.md)
   Define display names and SKUs for one-time charges and subscriptions in the Mini Apps Partner Program.
 

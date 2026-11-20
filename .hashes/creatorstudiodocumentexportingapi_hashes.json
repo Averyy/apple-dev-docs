@@ -1,0 +1,26 @@
+{
+  "hashes": {
+    "https://developer.apple.com/documentation/creatorstudiodocumentexportingapi": {
+      "file_path": "documentation/creatorstudiodocumentexportingapi/creatorstudiodocumentexportingapi.md",
+      "hash": "eba386c3317ec04b6ee34f4077b92e3ba63991913af5b834b1db392fceda1f2e"
+    },
+    "https://developer.apple.com/documentation/creatorstudiodocumentexportingapi/create-an-export-job-(v2)": {
+      "file_path": "documentation/creatorstudiodocumentexportingapi/create-an-export-job-(v2).md",
+      "hash": "9ef8e796734f3826f39b93c8eaee9d6319c72b645706a292e1a0d04330efe757"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/creatorstudiodocumentexportingapi.json": {
+      "file_path": "documentation/creatorstudiodocumentexportingapi/creatorstudiodocumentexportingapi.md",
+      "hash": "eba386c3317ec04b6ee34f4077b92e3ba63991913af5b834b1db392fceda1f2e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/creatorstudiodocumentexportingapi/create-an-export-job-(v2).json": {
+      "file_path": "documentation/creatorstudiodocumentexportingapi/create-an-export-job-(v2).md",
+      "hash": "9ef8e796734f3826f39b93c8eaee9d6319c72b645706a292e1a0d04330efe757"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 4
+    },
+    "total_pages": 4
+  }
+}

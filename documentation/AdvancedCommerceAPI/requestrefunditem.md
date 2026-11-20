@@ -36,6 +36,9 @@ object RequestRefundItem
   The request body for requesting a refund for a transaction.
 - [object RequestRefundResponse](./requestrefundresponse.md)
   The response body for a transaction refund request.
+- [object RefundItem](./refunditem.md)
+  Information about the item to refund, such as its SKU, the type of refund, and whether to revoke entitlement.
+- [object RequestRefundRequestV1](./requestrefundrequestv1.md)
 
 
 ---

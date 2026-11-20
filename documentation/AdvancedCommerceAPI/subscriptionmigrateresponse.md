@@ -33,10 +33,13 @@ This is the response body for the [`Migrate a Subscription to Advanced Commerce 
   The subscription details you provide to migrate a subscription from Apple In-App Purchase to the Advanced Commerce API, such as descriptors, items, storefront, and more.
 - [object SubscriptionMigrateItem](./subscriptionmigrateitem.md)
   The SKU, description, and display name to use for a migrated subscription item.
+- [object MigrateBundleItem](./migratebundleitem.md)
 - [object SubscriptionMigrateRenewalItem](./subscriptionmigraterenewalitem.md)
   The item information that replaces a migrated subscription item when the subscription renews.
 - [object SubscriptionMigrateDescriptors](./subscriptionmigratedescriptors.md)
   The description and display name of the subscription to migrate to that you manage.
+- [object SubscriptionMigrateRequestV1](./subscriptionmigraterequestv1.md)
+- [object SubscriptionMigrateItemV1](./subscriptionmigrateitemv1.md)
 
 
 ---

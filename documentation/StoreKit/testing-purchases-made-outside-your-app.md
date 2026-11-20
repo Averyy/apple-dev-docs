@@ -16,6 +16,7 @@ Several types of events result in a purchase transaction that occurs outside you
 - **Redeeming offer codes**: Customers can redeem offer codes on the Redeem Gift Card or Code page in their App Store account settings, by using a redemption URL, and when your app calls a redemption API like [`presentOfferCodeRedeemSheet(in:)`](./appstore/presentoffercoderedeemsheet%28in%29.md). For more information, see [Set up offer codes](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes).
 - **Redeeming a promo code for an Apple In-App Purchase**: Customers can redeem promo codes in the App Store. For more information, see [Request and manage promo codes](https://developer.apple.com/help/app-store-connect/offer-promo-codes/request-and-manage-promo-codes).
 - **Redeeming a win-back offer**: Eligible customers can redeem a win-back offer that you merchandise on the App Store or with a direct URL. For specific test cases, see [Testing win-back offers in the sandbox environment](./testing-win-back-offers-in-the-sandbox-environment.md).
+- **Approving an Ask to Buy request**: A parent or guardian’s response to a child’s purchase request, which can happen outside your app, on a different device, or while your app isn’t running. For more information, see [Testing Ask to Buy in the sandbox environment](./testing-ask-to-buy-in-the-sandbox-environment.md).
 - **Renewing an auto-renewable subscription**: Apple bills customers when an auto-renewable subscription renews, and the renewal transaction occurs outside your app.
 - **Resubscribing from the Apple Subscriptions page**: Customers can resubscribe to expired subscriptions from their Account > Subscriptions page in the App Store.
 
@@ -63,6 +64,8 @@ Restart your app. The purchase history for the Sandbox Apple Account is empty an
 ## See Also
 
 ### Payment transactions
+- [Testing Ask to Buy in the sandbox environment](./testing-ask-to-buy-in-the-sandbox-environment.md)
+  Verify that your app handles Ask to Buy purchases, including those made outside your app.
 - [Testing win-back offers in the sandbox environment](./testing-win-back-offers-in-the-sandbox-environment.md)
   Verify that your app receives and handles win-back offer transactions, including those made outside your app.
 - [Testing an interrupted purchase](./testing-an-interrupted-purchase.md)

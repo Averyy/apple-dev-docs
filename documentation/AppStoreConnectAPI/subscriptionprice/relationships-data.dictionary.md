@@ -20,11 +20,14 @@ object SubscriptionPrice.Relationships
 ### Objects
 - [object SubscriptionPrice.Relationships.SubscriptionPricePoint](./relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
 - [object SubscriptionPrice.Relationships.Territory](./relationships-data.dictionary/territory-data.dictionary.md)
+- [object SubscriptionPrice.Relationships.AdditionalPriceTiers](./relationships-data.dictionary/additionalpricetiers-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
 
 ## Properties
 
 - `subscriptionPricePoint` (SubscriptionPrice.Relationships.SubscriptionPricePoint)
 - `territory` (SubscriptionPrice.Relationships.Territory)
+- `additionalPriceTiers` (SubscriptionPrice.Relationships.AdditionalPriceTiers): The additional volume pricing tiers for the price.
 
 ## See Also
 

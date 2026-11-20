@@ -32,17 +32,18 @@ string advancedCommerceOfferPeriod
 - [type advancedCommerceDescription](./advancedcommercedescription.md)
 - [type advancedCommerceDisplayName](./advancedcommercedisplayname.md)
 - [type advancedCommerceEstimatedTax](./advancedcommerceestimatedtax.md)
+- [type advancedCommerceMaximumSeatQuantity](./advancedcommercemaximumseatquantity.md)
+  The number of seats in a price tier of an Advanced Commerce subscription item.
 - [type advancedCommerceOfferPrice](./advancedcommerceofferprice.md)
+- [type advancedCommercePartnerId](./advancedcommercepartnerid.md)
+- [type advancedCommercePartnerName](./advancedcommercepartnername.md)
+- [type advancedCommercePartners](./advancedcommercepartners.md)
 - [type advancedCommercePeriod](./advancedcommerceperiod.md)
 - [type advancedCommercePeriodCount](./advancedcommerceperiodcount.md)
 - [type advancedCommercePrice](./advancedcommerceprice.md)
 - [type advancedCommercePriceIncreaseInfoDependentSKU](./advancedcommercepriceincreaseinfodependentsku.md)
 - [type advancedCommercePriceIncreaseInfoPrice](./advancedcommercepriceincreaseinfoprice.md)
 - [type advancedCommercePriceIncreaseInfoStatus](./advancedcommercepriceincreaseinfostatus.md)
-- [type advancedCommerceReason](./advancedcommercereason.md)
-- [type advancedCommerceRefundAmount](./advancedcommercerefundamount.md)
-- [type advancedCommerceRefundDate](./advancedcommercerefunddate.md)
-- [type advancedCommerceRefundReason](./advancedcommercerefundreason.md)
 
 
 ---

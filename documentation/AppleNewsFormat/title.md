@@ -17,7 +17,7 @@ object Title
 
 ## Mentions
 
-- [Creating an Article: Main Steps](../AppleNews/creating-an-article-main-steps.md)
+- [Apple News Format Best Practices and Guidelines](../AppleNews/apple-news-format-best-practices-and-guidelines.md)
 - [Defining and Applying Text Styles](../AppleNews/defining-and-applying-text-styles.md)
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)

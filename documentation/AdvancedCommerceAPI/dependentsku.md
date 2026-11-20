@@ -36,6 +36,8 @@ The dependentSKU value is a string with a maximum length of 128 characters.
   A string with a product name that you can localize and is suitable for display to customers.
 - [type effective](./effective.md)
   A string value that indicates when a requested change to an auto-renewable subscription goes into effect.
+- [type finalQuantity](./finalquantity.md)
+  The total number of seats for a subscription item that a customer buys as a multiseat purchase.
 - [type period](./period.md)
   The duration of a single cycle of an auto-renewable subscription.
 - [type price](./price.md)
@@ -44,6 +46,8 @@ The dependentSKU value is a string with a maximum length of 128 characters.
   A prorated price, in milliunits of a currency, for an Advanced Commerce API SKU.
 - [type retainBillingCycle](./retainbillingcycle.md)
   A Boolean value that determines whether to keep the existing billing cycle with the change you request.
+- [type revokeSeatQuantity](./revokeseatquantity.md)
+  The number of unclaimed seats to revoke from a subscription that a customer buys as a multiseat purchase.
 - [type refundAmount](./refundamount.md)
   A refund amount, in milliunits of the currency.
 - [type refundReason](./refundreason.md)
@@ -54,10 +58,6 @@ The dependentSKU value is a string with a maximum length of 128 characters.
   The product identifier of an Apple In-App Purchase product you manage in your own system.
 - [type storefront](./storefront.md)
   A three-letter code that represents the country or region associated with the App Store storefront.
-- [type taxCode](./taxcode.md)
-  A tax code that applies to a SKU.
-- [type targetProductId](./targetproductid.md)
-  A generic product identifier that represents all Advanced Commerce API products to App Store Connect, which you use when you migrate a product.
 
 
 ---

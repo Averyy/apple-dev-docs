@@ -2138,7 +2138,7 @@
     },
     "https://developer.apple.com/documentation/appintents/appschema/systemintent/open": {
       "file_path": "documentation/AppIntents/appschema/systemintent/open.md",
-      "hash": "d216cc8259792921aa0ca9605b35c9c3bf2a624a0a122e19ac056b104ababe2e"
+      "hash": "1098286278ad83da0eefe8a47c8c49193c71cfcdc9d8273fcac41f541d6a23f0"
     },
     "https://developer.apple.com/documentation/appintents/appschema/systemintent/search": {
       "file_path": "documentation/AppIntents/appschema/systemintent/search.md",
@@ -4098,7 +4098,7 @@
     },
     "https://developer.apple.com/documentation/appintents/cardsnippet": {
       "file_path": "documentation/AppIntents/cardsnippet.md",
-      "hash": "aefc815321fd8217a9bbc2e46a60a9471f198888f8d28d9b81da913dfec50f4a"
+      "hash": "e366486ee3ce0949eb8bbdfa0da73b087cb1848c852106d19eac68a1bda03705"
     },
     "https://developer.apple.com/documentation/appintents/cardsnippet/init(supportedfamilies:content:)": {
       "file_path": "documentation/AppIntents/cardsnippet/init(supportedfamilies,content).md",
@@ -4106,7 +4106,7 @@
     },
     "https://developer.apple.com/documentation/appintents/cardsnippetcontext": {
       "file_path": "documentation/AppIntents/cardsnippetcontext.md",
-      "hash": "af9400adefb50bd646b1173e876818436b3aa9a7fe7124f5a5ccacfa14859465"
+      "hash": "d62f8d45b11b521937ddf633b53ac6db998a029fe665e16d52724c9e740185a5"
     },
     "https://developer.apple.com/documentation/appintents/cardsnippetcontext/family": {
       "file_path": "documentation/AppIntents/cardsnippetcontext/family.md",
@@ -4114,15 +4114,15 @@
     },
     "https://developer.apple.com/documentation/appintents/cardsnippetfamily": {
       "file_path": "documentation/AppIntents/cardsnippetfamily.md",
-      "hash": "91efe68533fc8f55fcc0d8b92826099eb59a709238d580ad62191aa6e880e695"
+      "hash": "44de7f13c9b23395a3187c1780e9d00fca92e2d6839adeee4d631b835b88e107"
     },
     "https://developer.apple.com/documentation/appintents/cardsnippetfamily/compact": {
       "file_path": "documentation/AppIntents/cardsnippetfamily/compact.md",
-      "hash": "d89dd489c82c06a0ad03d25ff42f353d0dab571d4e9ddb5428990fc61c6156e3"
+      "hash": "76ebd191aaa95e60b3607bc0074c8d5392156aa0c8f5c5d3be15ec83d8f87e9e"
     },
     "https://developer.apple.com/documentation/appintents/cardsnippetfamily/standard": {
       "file_path": "documentation/AppIntents/cardsnippetfamily/standard.md",
-      "hash": "d4d6843a9b1f1ea3ba61be2f60faf072629af92e9aa1dd4e2e1fe40bb0ae861a"
+      "hash": "6ee5bd934988fbb3862985565aea43d5ff1ca43f19f10c05b026371b34d4f2a8"
     },
     "https://developer.apple.com/documentation/appintents/casedisplayrepresentable": {
       "file_path": "documentation/AppIntents/casedisplayrepresentable.md",
@@ -4558,7 +4558,7 @@
     },
     "https://developer.apple.com/documentation/appintents/displayrepresentation": {
       "file_path": "documentation/AppIntents/displayrepresentation.md",
-      "hash": "440d4e42cf739506530f7324732d42e5949d168f69b5a066fb4299553d3560c0"
+      "hash": "a5dcec23f80d737ec130407ec48acc37e96e9f519a6113addd823eb61a2b11af"
     },
     "https://developer.apple.com/documentation/appintents/displayrepresentation/image-swift.property": {
       "file_path": "documentation/AppIntents/displayrepresentation/image-swift.property.md",
@@ -10534,7 +10534,7 @@
     },
     "https://developer.apple.com/documentation/appintents/entitysnippetcontent": {
       "file_path": "documentation/AppIntents/entitysnippetcontent.md",
-      "hash": "63f0d6cfa3ba42cebb849335b353b685825296761089ec7611a40f70f564af87"
+      "hash": "f509e884aa3ed9fae1474b4cfd1c62e1db3513c7517ab7b03a6ebf71b04c1c92"
     },
     "https://developer.apple.com/documentation/appintents/entitysnippetcontent/contentmarginsdisabled(_:)": {
       "file_path": "documentation/AppIntents/entitysnippetcontent/contentmarginsdisabled(_).md",
@@ -10554,7 +10554,7 @@
     },
     "https://developer.apple.com/documentation/appintents/entitysnippetcontentbuilder": {
       "file_path": "documentation/AppIntents/entitysnippetcontentbuilder.md",
-      "hash": "5df451df984baa02145b8281fa4ab248b0052249c5e70467072a5e0cbeb1a08d"
+      "hash": "e1aeda50393c0f14c851a8f0b2058d138b681438c8f3476a95c03d6bde6a5072"
     },
     "https://developer.apple.com/documentation/appintents/entitysnippetcontentbuilder/buildblock(_:)": {
       "file_path": "documentation/AppIntents/entitysnippetcontentbuilder/buildblock(_).md",
@@ -10886,7 +10886,7 @@
     },
     "https://developer.apple.com/documentation/appintents/integrating-your-messaging-app-with-apple-intelligence": {
       "file_path": "documentation/AppIntents/integrating-your-messaging-app-with-apple-intelligence.md",
-      "hash": "a16c5d7f76212317f73e7754ece1b08e88573f3b2600f4d6a33faad89815041a"
+      "hash": "4c9ea391fe07aabcc9e00ad4201c35fcd648eba08b4feec6bd56835998db127e"
     },
     "https://developer.apple.com/documentation/appintents/integrating-your-music-app-with-apple-intelligence": {
       "file_path": "documentation/AppIntents/integrating-your-music-app-with-apple-intelligence.md",
@@ -16806,7 +16806,7 @@
     },
     "https://developer.apple.com/documentation/appintents/openintent": {
       "file_path": "documentation/AppIntents/openintent.md",
-      "hash": "b4342fd7d531d9ce52d2f9b05e1ee2d6a36de719658ca5f009643f123f326ac5"
+      "hash": "6465d5586b4121d8c6c655bde3b7411421f062e280d3297f6a695e4e7b89c51c"
     },
     "https://developer.apple.com/documentation/appintents/openintent/target": {
       "file_path": "documentation/AppIntents/openintent/target.md",
@@ -17131,6 +17131,10 @@
     "https://developer.apple.com/documentation/appintents/predictableintent/predictionconfiguration": {
       "file_path": "documentation/AppIntents/predictableintent/predictionconfiguration.md",
       "hash": "f610b2e4b2c8ffc26f4f94d8dd4153e7b831fd9726690473702c34ac3d4ac5b2"
+    },
+    "https://developer.apple.com/documentation/appintents/presenting-an-entity-as-a-card-snippet": {
+      "file_path": "documentation/AppIntents/presenting-an-entity-as-a-card-snippet.md",
+      "hash": "b28a68cfd486396875029159ad2e627b9ee243483e661acf9d2fc61e3d6ebfbd"
     },
     "https://developer.apple.com/documentation/appintents/progressreportingintent": {
       "file_path": "documentation/AppIntents/progressreportingintent.md",
@@ -17674,7 +17678,7 @@
     },
     "https://developer.apple.com/documentation/appintents/snippetrepresentableentity": {
       "file_path": "documentation/AppIntents/snippetrepresentableentity.md",
-      "hash": "3b5ab56ee1d62ac2cbebaf234886f6be3ab2ff54491c56d7005cf13d5972fd26"
+      "hash": "3f2540496639a37bdcfb6a381c14b9a40c452de4df75070594bf631ff49de94a"
     },
     "https://developer.apple.com/documentation/appintents/snippetrepresentableentity/body": {
       "file_path": "documentation/AppIntents/snippetrepresentableentity/body.md",
@@ -17682,7 +17686,7 @@
     },
     "https://developer.apple.com/documentation/appintents/snippetrepresentableentity/snippet-swift.type.property": {
       "file_path": "documentation/AppIntents/snippetrepresentableentity/snippet-swift.type.property.md",
-      "hash": "34a1e6c02cc3ec44b996fc01046cfcc1a5d335976033b1aa026cdffcd0b2e1af"
+      "hash": "c2a51cce48ad327fd5e46b9a2f6ddb483751b3129d65625cf6f8abef980113b4"
     },
     "https://developer.apple.com/documentation/appintents/snippetrepresentableentity/snippet-swift.typealias": {
       "file_path": "documentation/AppIntents/snippetrepresentableentity/snippet-swift.typealias.md",
@@ -18162,7 +18166,7 @@
     },
     "https://developer.apple.com/documentation/appintents/visual-presentation": {
       "file_path": "documentation/AppIntents/visual-presentation.md",
-      "hash": "06ded915d236c8e232e58ef2f0aec21d2bf83af97c6bd1c7e72e65e83fb4e034"
+      "hash": "17fb5fcd20891ffec3ac0562eba0b18264566954da35cee164287bb1b6750cc3"
     },
     "https://developer.apple.com/documentation/appintents/widgetconfigurationintent": {
       "file_path": "documentation/AppIntents/widgetconfigurationintent.md",
@@ -20314,7 +20318,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/appschema/systemintent/open.json": {
       "file_path": "documentation/AppIntents/appschema/systemintent/open.md",
-      "hash": "d216cc8259792921aa0ca9605b35c9c3bf2a624a0a122e19ac056b104ababe2e"
+      "hash": "1098286278ad83da0eefe8a47c8c49193c71cfcdc9d8273fcac41f541d6a23f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/appschema/systemintent/search.json": {
       "file_path": "documentation/AppIntents/appschema/systemintent/search.md",
@@ -22274,7 +22278,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/cardsnippet.json": {
       "file_path": "documentation/AppIntents/cardsnippet.md",
-      "hash": "aefc815321fd8217a9bbc2e46a60a9471f198888f8d28d9b81da913dfec50f4a"
+      "hash": "e366486ee3ce0949eb8bbdfa0da73b087cb1848c852106d19eac68a1bda03705"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/cardsnippet/init(supportedfamilies:content:).json": {
       "file_path": "documentation/AppIntents/cardsnippet/init(supportedfamilies,content).md",
@@ -22282,7 +22286,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/cardsnippetcontext.json": {
       "file_path": "documentation/AppIntents/cardsnippetcontext.md",
-      "hash": "af9400adefb50bd646b1173e876818436b3aa9a7fe7124f5a5ccacfa14859465"
+      "hash": "d62f8d45b11b521937ddf633b53ac6db998a029fe665e16d52724c9e740185a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/cardsnippetcontext/family.json": {
       "file_path": "documentation/AppIntents/cardsnippetcontext/family.md",
@@ -22290,15 +22294,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/cardsnippetfamily.json": {
       "file_path": "documentation/AppIntents/cardsnippetfamily.md",
-      "hash": "91efe68533fc8f55fcc0d8b92826099eb59a709238d580ad62191aa6e880e695"
+      "hash": "44de7f13c9b23395a3187c1780e9d00fca92e2d6839adeee4d631b835b88e107"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/cardsnippetfamily/compact.json": {
       "file_path": "documentation/AppIntents/cardsnippetfamily/compact.md",
-      "hash": "d89dd489c82c06a0ad03d25ff42f353d0dab571d4e9ddb5428990fc61c6156e3"
+      "hash": "76ebd191aaa95e60b3607bc0074c8d5392156aa0c8f5c5d3be15ec83d8f87e9e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/cardsnippetfamily/standard.json": {
       "file_path": "documentation/AppIntents/cardsnippetfamily/standard.md",
-      "hash": "d4d6843a9b1f1ea3ba61be2f60faf072629af92e9aa1dd4e2e1fe40bb0ae861a"
+      "hash": "6ee5bd934988fbb3862985565aea43d5ff1ca43f19f10c05b026371b34d4f2a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/casedisplayrepresentable.json": {
       "file_path": "documentation/AppIntents/casedisplayrepresentable.md",
@@ -22734,7 +22738,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/displayrepresentation.json": {
       "file_path": "documentation/AppIntents/displayrepresentation.md",
-      "hash": "440d4e42cf739506530f7324732d42e5949d168f69b5a066fb4299553d3560c0"
+      "hash": "a5dcec23f80d737ec130407ec48acc37e96e9f519a6113addd823eb61a2b11af"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/displayrepresentation/image-swift.property.json": {
       "file_path": "documentation/AppIntents/displayrepresentation/image-swift.property.md",
@@ -28710,7 +28714,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/entitysnippetcontent.json": {
       "file_path": "documentation/AppIntents/entitysnippetcontent.md",
-      "hash": "63f0d6cfa3ba42cebb849335b353b685825296761089ec7611a40f70f564af87"
+      "hash": "f509e884aa3ed9fae1474b4cfd1c62e1db3513c7517ab7b03a6ebf71b04c1c92"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/entitysnippetcontent/contentmarginsdisabled(_:).json": {
       "file_path": "documentation/AppIntents/entitysnippetcontent/contentmarginsdisabled(_).md",
@@ -28730,7 +28734,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/entitysnippetcontentbuilder.json": {
       "file_path": "documentation/AppIntents/entitysnippetcontentbuilder.md",
-      "hash": "5df451df984baa02145b8281fa4ab248b0052249c5e70467072a5e0cbeb1a08d"
+      "hash": "e1aeda50393c0f14c851a8f0b2058d138b681438c8f3476a95c03d6bde6a5072"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/entitysnippetcontentbuilder/buildblock(_:).json": {
       "file_path": "documentation/AppIntents/entitysnippetcontentbuilder/buildblock(_).md",
@@ -29062,7 +29066,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/integrating-your-messaging-app-with-apple-intelligence.json": {
       "file_path": "documentation/AppIntents/integrating-your-messaging-app-with-apple-intelligence.md",
-      "hash": "a16c5d7f76212317f73e7754ece1b08e88573f3b2600f4d6a33faad89815041a"
+      "hash": "4c9ea391fe07aabcc9e00ad4201c35fcd648eba08b4feec6bd56835998db127e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/integrating-your-music-app-with-apple-intelligence.json": {
       "file_path": "documentation/AppIntents/integrating-your-music-app-with-apple-intelligence.md",
@@ -34982,7 +34986,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/openintent.json": {
       "file_path": "documentation/AppIntents/openintent.md",
-      "hash": "b4342fd7d531d9ce52d2f9b05e1ee2d6a36de719658ca5f009643f123f326ac5"
+      "hash": "6465d5586b4121d8c6c655bde3b7411421f062e280d3297f6a695e4e7b89c51c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/openintent/target.json": {
       "file_path": "documentation/AppIntents/openintent/target.md",
@@ -35307,6 +35311,10 @@
     "https://developer.apple.com/tutorials/data/documentation/appintents/predictableintent/predictionconfiguration.json": {
       "file_path": "documentation/AppIntents/predictableintent/predictionconfiguration.md",
       "hash": "f610b2e4b2c8ffc26f4f94d8dd4153e7b831fd9726690473702c34ac3d4ac5b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appintents/presenting-an-entity-as-a-card-snippet.json": {
+      "file_path": "documentation/AppIntents/presenting-an-entity-as-a-card-snippet.md",
+      "hash": "b28a68cfd486396875029159ad2e627b9ee243483e661acf9d2fc61e3d6ebfbd"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/progressreportingintent.json": {
       "file_path": "documentation/AppIntents/progressreportingintent.md",
@@ -35850,7 +35858,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/snippetrepresentableentity.json": {
       "file_path": "documentation/AppIntents/snippetrepresentableentity.md",
-      "hash": "3b5ab56ee1d62ac2cbebaf234886f6be3ab2ff54491c56d7005cf13d5972fd26"
+      "hash": "3f2540496639a37bdcfb6a381c14b9a40c452de4df75070594bf631ff49de94a"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/snippetrepresentableentity/body.json": {
       "file_path": "documentation/AppIntents/snippetrepresentableentity/body.md",
@@ -35858,7 +35866,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/snippetrepresentableentity/snippet-swift.type.property.json": {
       "file_path": "documentation/AppIntents/snippetrepresentableentity/snippet-swift.type.property.md",
-      "hash": "34a1e6c02cc3ec44b996fc01046cfcc1a5d335976033b1aa026cdffcd0b2e1af"
+      "hash": "c2a51cce48ad327fd5e46b9a2f6ddb483751b3129d65625cf6f8abef980113b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/snippetrepresentableentity/snippet-swift.typealias.json": {
       "file_path": "documentation/AppIntents/snippetrepresentableentity/snippet-swift.typealias.md",
@@ -36338,7 +36346,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/visual-presentation.json": {
       "file_path": "documentation/AppIntents/visual-presentation.md",
-      "hash": "06ded915d236c8e232e58ef2f0aec21d2bf83af97c6bd1c7e72e65e83fb4e034"
+      "hash": "17fb5fcd20891ffec3ac0562eba0b18264566954da35cee164287bb1b6750cc3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/widgetconfigurationintent.json": {
       "file_path": "documentation/AppIntents/widgetconfigurationintent.md",
@@ -36357,6 +36365,6 @@
     "render": {
       "version": 4
     },
-    "total_pages": 9088
+    "total_pages": 9090
   }
 }

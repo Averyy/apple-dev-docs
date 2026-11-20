@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/Updates": {
       "file_path": "documentation/Updates/Updates.md",
-      "hash": "deb25d144535566a592bb6e8a787c166877a3d0d08740dcd8e5b841a1806df73"
+      "hash": "14b9feff6eaa7d5409e7a0c5f3975e3e275d9c3868a81fca9c67ac036cbbe759"
     },
     "https://developer.apple.com/documentation/updates/accelerate": {
       "file_path": "documentation/Updates/accelerate.md",
@@ -10,7 +10,7 @@
     },
     "https://developer.apple.com/documentation/updates/accessibility": {
       "file_path": "documentation/Updates/accessibility.md",
-      "hash": "08ebd7c0c9fa1577260d362fe8674f2fb2c51b38dc5a46ea8818394770759dbe"
+      "hash": "e7074cfac748949d8211eaffaf91cde6ca32d8d76471637bd6b5f866ad72138a"
     },
     "https://developer.apple.com/documentation/updates/activitykit": {
       "file_path": "documentation/Updates/activitykit.md",
@@ -258,7 +258,7 @@
     },
     "https://developer.apple.com/documentation/updates/storekit": {
       "file_path": "documentation/Updates/storekit.md",
-      "hash": "2b86cd2a1ca6d06a4ff18a09bc3e1965cce62e829f7df6ebdfe2aa581f6e3a06"
+      "hash": "8f16949ec872c6991d879177aa0be7b7a2a0046414f01877d21408b0f0790a2c"
     },
     "https://developer.apple.com/documentation/updates/swift": {
       "file_path": "documentation/Updates/swift.md",
@@ -274,7 +274,7 @@
     },
     "https://developer.apple.com/documentation/updates/swiftui": {
       "file_path": "documentation/Updates/swiftui.md",
-      "hash": "abaae4f22783271627407992edd5c194821a0d00d326118055237c58653ef294"
+      "hash": "e66a05078a90613b51fa4051bbe1bf18799d18d32f3759ef1b667c0c00818e36"
     },
     "https://developer.apple.com/documentation/updates/symbols": {
       "file_path": "documentation/Updates/symbols.md",
@@ -314,7 +314,7 @@
     },
     "https://developer.apple.com/documentation/updates/watchos": {
       "file_path": "documentation/Updates/watchos.md",
-      "hash": "1d5e382e39aed6bbeb239c0cd7c4835f11ecabc4946ce706740ce029dbb06a80"
+      "hash": "7d2744a8a236976af315f0dfb12e389a72415cb5dde194ed2c24075785604967"
     },
     "https://developer.apple.com/documentation/updates/weatherkit": {
       "file_path": "documentation/Updates/weatherkit.md",
@@ -322,15 +322,15 @@
     },
     "https://developer.apple.com/documentation/updates/widgetkit": {
       "file_path": "documentation/Updates/widgetkit.md",
-      "hash": "1d7df9a1915c75451b7f93152e0fa1f33b095fa7d39de5d21746a0e167d4e69a"
+      "hash": "f4c57db0200a31b6eb7f51be4853f2da12ddde3d7e9624204b908f74afd0ad1a"
     },
     "https://developer.apple.com/documentation/updates/workoutkit": {
       "file_path": "documentation/Updates/workoutkit.md",
-      "hash": "85c2318979f4a9fe0c1eacce3c8f878b8478dd5a4fd98bb7704c2f3543ec8f59"
+      "hash": "f565f08c56a8c9b932ca1d91ef7d0943128050405db625bc1b3538d98eb2243f"
     },
     "https://developer.apple.com/documentation/updates/wwdc2021": {
       "file_path": "documentation/Updates/wwdc2021.md",
-      "hash": "7ce149409c3d48f454dbf017d9ddf1d53888580ab46a8d8aad1893ea9ca833aa"
+      "hash": "4b40eff61420a5e13d323ad0e1fe951b29f8db8036d02690cea69048a4111ec7"
     },
     "https://developer.apple.com/documentation/updates/wwdc2022": {
       "file_path": "documentation/Updates/wwdc2022.md",
@@ -346,7 +346,7 @@
     },
     "https://developer.apple.com/documentation/updates/wwdc2025": {
       "file_path": "documentation/Updates/wwdc2025.md",
-      "hash": "df427c9faf8b662ef639e2963483807a2a7773b16304dce2d06bda9b57cca397"
+      "hash": "3f66409678a4ed20d63da8d42daebff64fbfa8b2c34a1979487557de0dc0e788"
     },
     "https://developer.apple.com/documentation/updates/xcode": {
       "file_path": "documentation/Updates/xcode.md",
@@ -362,7 +362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/Updates.json": {
       "file_path": "documentation/Updates/Updates.md",
-      "hash": "deb25d144535566a592bb6e8a787c166877a3d0d08740dcd8e5b841a1806df73"
+      "hash": "14b9feff6eaa7d5409e7a0c5f3975e3e275d9c3868a81fca9c67ac036cbbe759"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/accelerate.json": {
       "file_path": "documentation/Updates/accelerate.md",
@@ -370,7 +370,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/accessibility.json": {
       "file_path": "documentation/Updates/accessibility.md",
-      "hash": "08ebd7c0c9fa1577260d362fe8674f2fb2c51b38dc5a46ea8818394770759dbe"
+      "hash": "e7074cfac748949d8211eaffaf91cde6ca32d8d76471637bd6b5f866ad72138a"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/activitykit.json": {
       "file_path": "documentation/Updates/activitykit.md",
@@ -618,7 +618,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/storekit.json": {
       "file_path": "documentation/Updates/storekit.md",
-      "hash": "2b86cd2a1ca6d06a4ff18a09bc3e1965cce62e829f7df6ebdfe2aa581f6e3a06"
+      "hash": "8f16949ec872c6991d879177aa0be7b7a2a0046414f01877d21408b0f0790a2c"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/swift.json": {
       "file_path": "documentation/Updates/swift.md",
@@ -634,7 +634,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/swiftui.json": {
       "file_path": "documentation/Updates/swiftui.md",
-      "hash": "abaae4f22783271627407992edd5c194821a0d00d326118055237c58653ef294"
+      "hash": "e66a05078a90613b51fa4051bbe1bf18799d18d32f3759ef1b667c0c00818e36"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/symbols.json": {
       "file_path": "documentation/Updates/symbols.md",
@@ -674,7 +674,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/watchos.json": {
       "file_path": "documentation/Updates/watchos.md",
-      "hash": "1d5e382e39aed6bbeb239c0cd7c4835f11ecabc4946ce706740ce029dbb06a80"
+      "hash": "7d2744a8a236976af315f0dfb12e389a72415cb5dde194ed2c24075785604967"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/weatherkit.json": {
       "file_path": "documentation/Updates/weatherkit.md",
@@ -682,15 +682,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/widgetkit.json": {
       "file_path": "documentation/Updates/widgetkit.md",
-      "hash": "1d7df9a1915c75451b7f93152e0fa1f33b095fa7d39de5d21746a0e167d4e69a"
+      "hash": "f4c57db0200a31b6eb7f51be4853f2da12ddde3d7e9624204b908f74afd0ad1a"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/workoutkit.json": {
       "file_path": "documentation/Updates/workoutkit.md",
-      "hash": "85c2318979f4a9fe0c1eacce3c8f878b8478dd5a4fd98bb7704c2f3543ec8f59"
+      "hash": "f565f08c56a8c9b932ca1d91ef7d0943128050405db625bc1b3538d98eb2243f"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/wwdc2021.json": {
       "file_path": "documentation/Updates/wwdc2021.md",
-      "hash": "7ce149409c3d48f454dbf017d9ddf1d53888580ab46a8d8aad1893ea9ca833aa"
+      "hash": "4b40eff61420a5e13d323ad0e1fe951b29f8db8036d02690cea69048a4111ec7"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/wwdc2022.json": {
       "file_path": "documentation/Updates/wwdc2022.md",
@@ -706,7 +706,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/wwdc2025.json": {
       "file_path": "documentation/Updates/wwdc2025.md",
-      "hash": "df427c9faf8b662ef639e2963483807a2a7773b16304dce2d06bda9b57cca397"
+      "hash": "3f66409678a4ed20d63da8d42daebff64fbfa8b2c34a1979487557de0dc0e788"
     },
     "https://developer.apple.com/tutorials/data/documentation/updates/xcode.json": {
       "file_path": "documentation/Updates/xcode.md",

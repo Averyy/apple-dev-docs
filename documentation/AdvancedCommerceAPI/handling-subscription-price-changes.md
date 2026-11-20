@@ -9,8 +9,6 @@ Initiate a price change and manage communications with your subscribers through 
 
 The Advanced Commerce API provides a standard UI to facilitate price increases for subscriptions and manage the subscriber consent process.
 
-> **Note**: The AppStore doesn’t currently support the Advanced Commerce price increase mechanism in India.
-
 ## Implement the Advanced Commerce Subscription price change API
 
 Use the [`Change Subscription Price`](./change-subscription-price.md) endpoint in the Advanced Commerce API (ACA) to initiate a price change for an individual subscription item. The UI the framework provides manages all of the necessary interactions and communication with a person using your app, including:
@@ -70,7 +68,7 @@ Several conditions may affect your ability to change or update a subscription, i
   - Add an item
   - Remove an item
   - Change an item
-  - Resubscribe using the [Subscription Modification API](./AdvancedCommerceAPI.md#Subscription-modification-in-the-app)  or the Subscription Reactivation API
+  - Resubscribe using the [Subscription Modification API](./AdvancedCommerceAPI.md#Subscription-modification-in-the-app)  or the [Subscription Reactivation API](./com.apple.documentation/documentation/advancedcommerceapi.md#Subscription-reactivation-in-the-app)
 - If the subscription status is auto-renew = `false` or if the subscription is in a grace period or billing retry state, you can’t call the [`Change Subscription Price`](./change-subscription-price.md) endpoint.
 - If the `SubscriptionPriceChangeItem` is currently in the offer period, you can’t call [`Change Subscription Price`](./change-subscription-price.md).
 

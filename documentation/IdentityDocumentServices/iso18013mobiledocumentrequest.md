@@ -18,6 +18,10 @@ A type that represents an incoming ISO 18013-5 mobile document request.
 struct ISO18013MobileDocumentRequest
 ```
 
+## Mentions
+
+- [Implementing as an identity document provider](./implementing-as-an-identity-document-provider.md)
+
 ## Topics
 
 ### Structures

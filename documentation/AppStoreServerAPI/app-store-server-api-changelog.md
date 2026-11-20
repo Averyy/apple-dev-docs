@@ -9,6 +9,15 @@ Learn about new features and updates in the App Store Server API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the App Store Server API.
 
+### 1.25 - 2026/11/17
+
+**New features**
+
+- Added the [`advancedCommerceBundleItem`](./advancedcommercebundleitem.md) object, and the `bundleItem` field to the [`advancedCommerceTransactionItem`](./advancedcommercetransactionitem.md) and [`advancedCommerceRenewalItem`](./advancedcommercerenewalitem.md) objects, to describe the individual item in a bundle subscription.
+- Added the [`advancedCommerceSeatPriceTiers`](./advancedcommerceseatpricetiers.md) and [`advancedCommerceSeatPriceTier`](./advancedcommerceseatpricetier.md) data types, and the [`advancedCommerceMaximumSeatQuantity`](./advancedcommercemaximumseatquantity.md) and [`advancedCommerceTierPrice`](./advancedcommercetierprice.md) fields, to support multiseat subscriptions. The [`advancedCommerceTransactionItem`](./advancedcommercetransactionitem.md) includes these as `seatPriceTiers`, and the [`advancedCommerceRenewalItem`](./advancedcommercerenewalitem.md) includes them as `seatRenewalPriceTiers`.
+- Added the [`advancedCommerceRevokedSeatQuantity`](./advancedcommercerevokedseatquantity.md) field to the [`advancedCommerceRefund`](./advancedcommercerefund.md) object.
+- Added the [`advancedCommercePartners`](./advancedcommercepartners.md) and [`advancedCommercePartner`](./advancedcommercepartner.md) data types, and the [`advancedCommercePartnerId`](./advancedcommercepartnerid.md) and [`advancedCommercePartnerName`](./advancedcommercepartnername.md) fields, to the [`advancedCommerceTransactionItem`](./advancedcommercetransactionitem.md) and [`advancedCommerceRenewalItem`](./advancedcommercerenewalitem.md) objects to identify the partner or creator for an item.
+
 ### 1.24 - 2026/11/04
 
 **New features**

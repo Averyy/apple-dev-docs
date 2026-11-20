@@ -17,7 +17,9 @@ string PublisherArticleIdentifier
 
 ## Discussion
 
-You can create links to articles using the publisher’s article identifier. See `identifier` in [`ArticleDocument`](./articledocument.md). The publisher’s article identifier maps to `articleId` for all articles.
+You can create links to articles using the publisher’s article identifier in an [`ArticleLink`](./articlelink.md)  object.
+
+The publisher’s article identifier maps to `articleId` for all articles. See `identifier` in [`ArticleDocument`](./articledocument.md).
 
 If the current article and the linked article belong to the same channel, use `publisher-article://<article id>`.
 

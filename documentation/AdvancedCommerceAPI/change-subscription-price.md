@@ -4,16 +4,17 @@
 **Kind**: httpRequest  
 **Role**: Web Service Endpoint
 
-Increase or decrease the price of an auto-renewable subscription, a bundle, or individual items within a subscription at the next renewal.
+Increase or decrease the price of an auto-renewable subscription at the next renewal.
 
 **Availability**:
-- Advanced Commerce API 1.0+
+- Advanced Commerce API 1.3+
 
 ## Mentions
 
+- [Advanced Commerce API changelog](./changelog.md)
 - [Handling subscription price changes](./handling-subscription-price-changes.md)
 - [Authorizing API requests from your server](./authorizing-server-calls.md)
-- [Advanced Commerce API changelog](./changelog.md)
+- [Creating multiseat purchases](./creating-multiseat-purchases.md)
 - [Identifying rate limits for Advanced Commerce APIs](./ratelimits.md)
 
 ## Discussion
@@ -28,11 +29,10 @@ For information about providing prices, see [Specifying prices for Advanced Comm
 
 In the following request:
 
-- The subscription includes multiple items, and only one item has a price increase to USD 12.99.
+- The subscription includes one item that has a price increase to USD 12.99.
 - The price increase takes effect at the next subscription renewal.
 - The decoded signed transaction shows price in the current period, before the increase.
 - The decoded signed renewal information shows the increased price, which takes effect at the next renewal period if consented to.
-- The item has a dependent SKU, which will be cancelled if the price increase is not agreed to.
 - In this example, the price increase has been communicated, so the status is marked as pending.
 
 **Request**:
@@ -45,10 +45,9 @@ In the following request:
     "currency": "USD",
     "storefront": "USA",
     "items": [
-        { 
-            "SKU": "AD_FREE_1M",
-            "price": 12990,
-            "dependentSKUs": ["ADVANCED_FEATURES_1M"]
+        {  
+            "SKU": "ANNES_GOLD_TIER_1M",
+            "price": 12990
         } 
     ]
 }
@@ -84,28 +83,12 @@ In the following request:
         "taxRate": "0",
         "taxCode": "C003-00-1",
         "taxExclusivePrice": 12980,
-        "descriptors": {
-            "displayName": "Ad-free and advanced feature package",
-            "description": "Remove ads and unlock advanced features."
-        },
         "items": [
             {
-                "SKU": "AD_FREE_1M",
-                "displayName": "Ad-free monthly plan",                        
-                "description": "Remove ads for the service.",
+                "SKU": "ANNES_GOLD_TIER_1M",
+                "displayName": "Gold Tier",                        
+                "description": "Access to Anne's Game Stream",
                 "price": 9990
-            },
-            {
-                "SKU": "ADVANCED_FEATURES_1M",
-                "displayName": "Advanced feature monthly plan",
-                "description": "Unlock advanced features for the month.",
-                "price": 3990,
-                "offer": {
-                    "price": 2990, 
-                    "period": "P1M",
-                    "periodCount": 3,
-                    "reason": "ACQUISITION"
-                }
             }
         ],
         "requestReferenceId": "932c6903-0ab8-4469-9f21-015f6fab013c",
@@ -128,32 +111,15 @@ In the following request:
     "renewalDate": 1738396800000,
     "advancedCommerceInfo": {
         "taxCode": "C003-00-1",
-        "descriptors": {
-            "displayName": "Ad-free and advanced feature package",
-            "description": "Remove ads and unlock advanced features."
-        },
         "items": [
             {
-                "SKU": "AD_FREE_1M",
-                "displayName": "Ad-free monthly plan",                        
-                "description": "Remove ads for the service.",
+                "SKU": "ANNES_GOLD_TIER_1M",
+                "displayName": "Gold Tier",                        
+                "description": "Access to Anne's Game Stream",
                 "price": 12990,
                 "priceIncreaseInfo": {
                     "status": "PENDING",
-                    "price": 12990,
-                    "dependentSKUs": ["ADVANCED_FEATURES_1M"]
-                }
-            },
-            {
-                "SKU": "ADVANCED_FEATURES_1M",
-                "displayName": "Advanced feature monthly plan",
-                "description": "Unlock advanced features for the month.",
-                "price": 3990,
-                "offer": {
-                    "price": 2990, 
-                    "period": "P1M",
-                    "periodCount": 2,
-                    "reason": "ACQUISITION"
+                    "price": 12990
                 }
             }
         ],
@@ -166,9 +132,140 @@ In the following request:
 }
 ```
 
+### Example: Change the price tiers of a group subscription
+
+> ❗ **Important**: Multiseat purchases are only available in the sandbox environment.
+
+In the following request:
+
+- The group subscription has 8 seats and uses volume discount pricing.
+- The request lowers the price per seat of the second and last tiers. The price of the first tier doesn’t change.
+- The item includes the complete `seatPriceTiers` array and no `price`. A price change doesn’t change the number of seats.
+- The price change takes effect at the next subscription renewal.
+- The decoded signed transaction shows the tiers that apply in the current period, before the change.
+- The decoded signed renewal information shows the tiers that apply at the next renewal. The total price for the group purchaser’s seats is lower, so the change isn’t a price increase.
+- The example doesn’t include the tax fields in `advancedCommerceInfo`.
+
+**Request**:
+
+```json
+{
+    "requestInfo": {
+        "requestReferenceId": "4b6e9d1f-2a7c-4e3b-8f5a-6c1d0e9b2a47"
+    },
+    "currency": "USD",
+    "storefront": "USA",
+    "items": [
+        {
+            "SKU": "GROUP_PRO_1M",
+            "seatPriceTiers": [
+                { "maximumSeatQuantity": 5, "price": 9990 },
+                { "maximumSeatQuantity": 5, "price": 6990 },
+                { "price": 4990 }
+            ]
+        }
+    ]
+}
+```
+
+**Response (decoded signed transaction)**:
+
+```json
+{
+    "transactionId": "12345",
+    "originalTransactionId": "12345",
+    "webOrderLineItemId": "23456",
+    "bundleId": "com.example",
+    "productId": "com.example.base",
+    "subscriptionGroupIdentifier": "34567",
+    "purchaseDate": 1735718400000,
+    "originalPurchaseDate": 1735718400000,
+    "expiresDate": 1738396800000,
+    "quantity": 8,
+    "type": "Auto-Renewable Subscription",
+    "inAppOwnershipType": "PURCHASED",
+    "signedDate": 1735718400000,
+    "environment": "Production",
+    "transactionReason": "PURCHASE",
+    "storefront": "USA",
+    "storefrontId": "143441",
+    "price": 9240,
+    "currency": "USD",
+    "appTransactionId": "45678",
+    "multiSeatInfo": {
+        "invitationManagement": "APPLE",
+        "priceTiers": [
+            { "price": 9990, "quantity": 5 },
+            { "price": 7990, "quantity": 3 }
+        ]
+    },
+    "advancedCommerceInfo": {
+        "taxCode": "C003-00-1",
+        "items": [
+            {
+                "SKU": "GROUP_PRO_1M",
+                "displayName": "Group Pro",
+                "description": "Shared access for your group",
+                "price": 9240,
+                "seatPriceTiers": [
+                    { "maximumSeatQuantity": 5, "price": 9990 },
+                    { "maximumSeatQuantity": 5, "price": 7990 },
+                    { "price": 5990 }
+                ]
+            }
+        ],
+        "requestReferenceId": "9a4d7e2b-1c3f-4e8a-b5d6-0f2e7c9a1b34",
+        "period": "P1M"
+    }
+}
+```
+
+**Response (decoded signed renewal information)**:
+
+```json
+{
+    "originalTransactionId": "12345",
+    "autoRenewProductId": "com.example.base",
+    "productId": "com.example.base",
+    "autoRenewStatus": 1,
+    "signedDate": 1737014400000,
+    "environment": "Production",
+    "recentSubscriptionStartDate": 1735718400000,
+    "renewalDate": 1738396800000,
+    "currency": "USD",
+    "renewalPrice": 8865,
+    "renewalQuantity": 8,
+    "multiSeatInfo": {
+        "renewalPriceTiers": [
+            { "price": 9990, "quantity": 5 },
+            { "price": 6990, "quantity": 3 }
+        ]
+    },
+    "advancedCommerceInfo": {
+        "taxCode": "C003-00-1",
+        "items": [
+            {
+                "SKU": "GROUP_PRO_1M",
+                "displayName": "Group Pro",
+                "description": "Shared access for your group",
+                "seatRenewalPriceTiers": [
+                    { "maximumSeatQuantity": 5, "price": 9990 },
+                    { "maximumSeatQuantity": 5, "price": 6990 },
+                    { "price": 4990 }
+                ]
+            }
+        ],
+        "requestReferenceId": "4b6e9d1f-2a7c-4e3b-8f5a-6c1d0e9b2a47",
+        "consistencyToken": "1.12345.4b6e9d1f-2a7c-4e3b-8f5a-6c1d0e9b2a47",
+        "period": "P1M"
+    },
+    "appTransactionId": "45678"
+}
+```
+
 ## Endpoint
 
-`POST https://api.storekit-sandbox.apple.com/advancedCommerce/v1/subscription/changePrice/{transactionId}`
+`POST https://api.storekit-sandbox.apple.com/advancedCommerce/v2/subscription/changePrice/{transactionId}`
 
 ## Parameters
 
@@ -185,11 +282,11 @@ The request body that contains the details of the price change.
 
 ## Responses
 
-- `200` OK (`SubscriptionPriceChangeResponse`, `application/json`): Success
-- `400` Bad Request (`(NullRequestInfoError | NullItemsError | NullSKUError | InvalidAppAccountTokenError | NullRequestReferenceIDError | InvalidRequestReferenceIDError | InvalidConsistencyTokenError | InvalidStorefrontError | InvalidCurrencyError | NegativePriceError | SKULengthExceededError | DescriptionLengthExceededError | DisplayNameLengthExceededError | InvalidProductError | InvalidSKUError | MismatchedStorefrontError | MissingPricingConfigForStorefrontError | OperationNotAllowedError | MalformedPayloadError | DependentSKUsCannotBeSharedError | DependentSKUsCannotBeChainedError | ItemCannotBeSpecifiedMultipleTimesError | PriceChangeCannotBeIssuedWhenAlreadyCommunicatedError | InvalidSKUProvidedMustBeCurrentSKUSetToRenewError)`, `application/json`)
-- `401` Unauthorized
-- `403` Forbidden (`(SubscriptionDoesNotExistError | SubscriptionNotEligibleError)`, `application/json`)
-- `404` Not Found (`TransactionIdNotFoundError`, `application/json`)
+- `200` OK (`TransactionsResponse`, `application/json`): Success
+- `400` Bad Request (`(FamilyTransactionNotSupportedError | InvalidTransactionIdError | NullRequestInfoError | NullItemsError | NullSKUError | InvalidAppAccountTokenError | NullRequestReferenceIDError | InvalidRequestReferenceIDError | InvalidConsistencyTokenError | InvalidStorefrontError | InvalidCurrencyError | NegativePriceError | SKULengthExceededError | InvalidProductError | InvalidSKUError | MismatchedStorefrontError | MissingPricingConfigForStorefrontError | OperationNotAllowedError | ItemCannotBeSpecifiedMultipleTimesError | PriceChangeCannotBeIssuedWhenAlreadyCommunicatedError | InvalidSKUProvidedMustBeCurrentSKUSetToRenewError | ACAPriceIncreaseIsNotCurrentlySupportedInIndiaError | NullPriceError | InvalidOperationError | TooManySeatPriceTiersError | InvalidMaximumSeatQuantityError | SeatPriceTiersNotDecreasingError | SeatPriceTiersNotAllowedForBundleError | PriceNotAllowedWithSeatPriceTiersError | SeatPriceTiersRequiredError | RepeatedRequestReferenceIdError | NullItemError | ProductAlreadyExistsError | InvalidAmountError | ChangeItemNotFoundError | NullAdvancedCommerceDataError | OfferPreventsItemMidCycleChangeError | ItemLimitExceededError)`, `application/json`)
+- `401` Unauthorized (`UnauthorizedError`, `application/json`)
+- `403` Forbidden (`(ForbiddenError | SubscriptionDoesNotExistError | SubscriptionNotEligibleError | ChangePriceOfBundleItemNotAllowedError)`, `application/json`)
+- `404` Not Found (`(NotFoundError | TransactionIdNotFoundError)`, `application/json`)
 - `429` (`RateLimitExceededError`, `application/json`)
 - `500` Internal Server Error (`(GeneralInternalError | GeneralInternalRetryableError)`, `application/json`)
 
@@ -200,6 +297,8 @@ The request body that contains the details of the price change.
   The request body you use to change the price of an auto-renewable subscription.
 - [object SubscriptionPriceChangeResponse](./subscriptionpricechangeresponse.md)
   A response that contains signed JWS renewal and JWS transaction information after a subscription price change request.
+- [object SubscriptionPriceChangeRequestV1](./subscriptionpricechangerequestv1.md)
+- [object SubscriptionPriceChangeItemV1](./subscriptionpricechangeitemv1.md)
 
 
 ---

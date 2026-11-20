@@ -149,6 +149,8 @@ Apple News Format supports both ASCII and Unicode character sets. You can includ
 ### Essentials
 - [Creating an Article: Main Steps](./creating-an-article-main-steps.md)
   Plan the design for your article and create it in Apple News Format.
+- [Apple News Format Best Practices and Guidelines](./apple-news-format-best-practices-and-guidelines.md)
+  Create and design engaging Apple News Format articles using these guidelines and best practices.
 - [object ArticleDocument](../AppleNewsFormat/articledocument.md)
   The root object of an Apple News article, that contains required properties, metadata, content, layout, and styles.
 

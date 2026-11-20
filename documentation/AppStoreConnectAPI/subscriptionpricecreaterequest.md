@@ -24,6 +24,7 @@ object SubscriptionPriceCreateRequest
 ## Properties
 
 - `data` (SubscriptionPriceCreateRequest.Data) *(required)*
+- `included` ([SubscriptionPriceTierInlineCreate]): The volume pricing tiers that you define inline and reference in the `additionalPriceTiers` relationship.
 
 ## See Also
 

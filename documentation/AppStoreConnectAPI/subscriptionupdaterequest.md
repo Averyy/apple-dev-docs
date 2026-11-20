@@ -24,7 +24,7 @@ object SubscriptionUpdateRequest
 ## Properties
 
 - `data` (SubscriptionUpdateRequest.Data) *(required)*
-- `included` ([*]): **Allowed Types**: `SubscriptionPromotionalOfferInlineCreate`, `SubscriptionPriceInlineCreate`, `SubscriptionIntroductoryOfferInlineCreate`
+- `included` ([*]): **Allowed Types**: `SubscriptionPriceTierInlineCreate`, `SubscriptionPromotionalOfferInlineCreate`, `SubscriptionPriceInlineCreate`, `SubscriptionIntroductoryOfferInlineCreate`
 
 ## See Also
 

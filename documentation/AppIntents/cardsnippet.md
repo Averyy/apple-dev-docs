@@ -21,6 +21,10 @@ A type that presents the SwiftUI view for an app entity as a card.
 struct CardSnippet<Entity, Content> where Entity : AppEntity, Content : View
 ```
 
+## Mentions
+
+- [Presenting an entity as a card snippet](./presenting-an-entity-as-a-card-snippet.md)
+
 ## Overview
 
 A `CardSnippet` type generates a card-style presentation that includes the contents of a SwiftUI view you provide. The system delivers cards in various contexts, including Siri responses and conversation transcripts. When your entity adopts the [`SnippetRepresentableEntity`](./snippetrepresentableentity.md) protocol, you create this type and return it from your entity’s [`snippet`](./snippetrepresentableentity/snippet-swift.type.property.md) property.
@@ -58,6 +62,8 @@ When you build the content for your snippet, create views with primarily static 
 ## See Also
 
 ### Card snippets
+- [Presenting an entity as a card snippet](./presenting-an-entity-as-a-card-snippet.md)
+  Show a custom view of your app’s content in system experiences such as Siri responses and conversation transcripts.
 - [protocol SnippetRepresentableEntity](./snippetrepresentableentity.md)
   An app entity that provides a visual representation for its content.
 - [struct CardSnippetContext](./cardsnippetcontext.md)

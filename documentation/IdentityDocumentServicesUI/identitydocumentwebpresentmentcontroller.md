@@ -43,8 +43,6 @@ final class IdentityDocumentWebPresentmentController
 ## See Also
 
 ### Implementing the web presentment flow into your browser
-- [Implementing as an identity document provider](../IdentityDocumentServices/implenting-as-an-identity-document-provider.md)
-  Add your app as an option for mobile document web presentment.
 - [protocol IdentityDocumentWebPresentmentControllerDelegate](./identitydocumentwebpresentmentcontrollerdelegate.md)
   Defines a delegate that the system uses in conjunction with a web presentment controller.
 - [protocol IdentityDocumentPresentmentControllerPresentationContextProviding](./identitydocumentpresentmentcontrollerpresentationcontextproviding.md)

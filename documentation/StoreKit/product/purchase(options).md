@@ -23,6 +23,7 @@ func purchase(options: Set<Product.PurchaseOption> = []) async throws -> Product
 
 ## Mentions
 
+- [Testing Ask to Buy in the sandbox environment](../testing-ask-to-buy-in-the-sandbox-environment.md)
 - [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md)
 - [Managing the life cycle of multiseat subscriptions](../managing-the-life-cycle-of-multiseat-subscriptions.md)
 - [Merchandising win-back offers in your app](../merchandising-win-back-offers-in-your-app.md)
@@ -64,7 +65,7 @@ let purchaseResult = try await product.purchase(options: [
 ])
 ```
 
-If you’re testing your app in the sandbox environment, test an Ask to Buy scenario by setting the [`simulatesAskToBuyInSandbox(_:)`](./purchaseoption/simulatesasktobuyinsandbox%28_%29.md) purchase option to `true`. For more information about Ask to Buy, see [Approve what kids buy with Ask to Buy](https://support.apple.com/en-us/HT201089).
+If you’re testing your app in the sandbox environment, test an Ask to Buy scenario by turning on Ask to Buy for your Sandbox Apple Account, or by setting the [`simulatesAskToBuyInSandbox(_:)`](./purchaseoption/simulatesasktobuyinsandbox%28_%29.md) purchase option to `true`. For information about testing Ask to Buy in the sandbox, see [Testing Ask to Buy in the sandbox environment](../testing-ask-to-buy-in-the-sandbox-environment.md). For more information about Ask to Buy, see [Approve what kids buy with Ask to Buy](https://support.apple.com/en-us/HT201089).
 
 This method may throw a [`Product.PurchaseError`](./purchaseerror.md) or [`StoreKitError`](../storekiterror.md).
 

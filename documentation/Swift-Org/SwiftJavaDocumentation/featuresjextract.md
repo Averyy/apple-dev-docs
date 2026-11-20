@@ -1506,6 +1506,120 @@ try (var arena = AllocatingSwiftArena.ofConfined()) {
 }
 ```
 
+### Operators
+
+Swift operators are imported as static Java methods named after the operator components; For example `+` becomes `plus`, and `++` becomes `plusPlus`. Some methods have special names, and as such `==` becomes `isEqual`. Prefix and Postfix operators are supported as well.
+
+**Swift**:
+
+```symlink
+extension OperatorScore {
+  public static func + (left: OperatorScore, right: OperatorScore) -> OperatorScore {
+    OperatorScore(value: left.value + right.value)
+  }
+
+  public static func +-==* (left: OperatorScore, right: OperatorScore) -> String {
+    "Called +-==* in Java successfully with left: \(left.value) and right: \(right.value)"
+  }
+}
+
+public func * (left: Int64, right: OperatorScore) -> OperatorScore {
+  OperatorScore(value: left * right.value)
+}
+```
+
+**Java (JNI)**:
+
+```java
+try (var arena = SwiftArena.ofConfined()) {
+    var left = OperatorScore.init(40, arena);
+    var right = OperatorScore.init(2, arena);
+
+    // left + right
+    var sum = OperatorScore.plus(left, right, arena);
+    assertEquals(42, sum.getValue());
+
+    // left +-==* right
+    var result = OperatorScore.plusMinusIsEqualTimes(left, right);
+    assertEquals("Called +-==* in Java successfully with left: 40 and right: 2", result);
+
+    // 2 * left, declared at file scope
+    var doubled = MySwiftLibrary.times(2, left, arena);
+    assertEquals(80, doubled.getValue());
+}
+```
+
+**Java (FFM)**:
+
+```java
+try (var arena = AllocatingSwiftArena.ofConfined()) {
+    var left = OperatorScore.init(40, arena);
+    var right = OperatorScore.init(2, arena);
+
+    // left + right
+    var sum = OperatorScore.plus(left, right, arena);
+    assertEquals(42, sum.getValue());
+
+    // left +-==* right
+    var result = OperatorScore.plusMinusIsEqualTimes(left, right);
+    assertEquals("Called +-==* in Java successfully with left: 40 and right: 2", result);
+
+    // 2 * left, declared at file scope
+    var doubled = MySwiftLibrary.times(2, left, arena);
+    assertEquals(80, doubled.getValue());
+}
+```
+
+#### Prefix and postfix operators
+
+**Swift**:
+
+```symlink
+extension OperatorScore {
+  public static prefix func - (value: OperatorScore) -> OperatorScore {
+    OperatorScore(value: -value.value)
+  }
+
+  public static postfix func ++ (value: OperatorScore) -> OperatorScore {
+    OperatorScore(value: value.value + 1)
+  }
+}
+```
+
+**Java (JNI)**:
+
+```java
+try (var arena = SwiftArena.ofConfined()) {
+    var score = OperatorScore.init(42, arena);
+
+    // -score
+    var negated = OperatorScore.minus(score, arena);
+    assertEquals(-42, negated.getValue());
+
+    // score++
+    var incremented = OperatorScore.plusPlus(score, arena);
+    assertEquals(43, incremented.getValue());
+}
+```
+
+**Java (FFM)**:
+
+```java
+try (var arena = AllocatingSwiftArena.ofConfined()) {
+    var score = OperatorScore.init(42, arena);
+
+    // -score
+    var negated = OperatorScore.minus(score, arena);
+    assertEquals(-42, negated.getValue());
+
+    // score++
+    var incremented = OperatorScore.plusPlus(score, arena);
+    assertEquals(43, incremented.getValue());
+}
+```
+
+If a type declares both a prefix and a postfix form of the same operator, like `prefix func ...` and `postfix func ...`, the Java methods get a `Prefix` or `Postfix` suffix: `dotDotDotPrefix` and `dotDotDotPostfix`.
+
 ### Closures
 
 Swift closure parameters become Java functional interfaces that can be implemented with a lambda expression.

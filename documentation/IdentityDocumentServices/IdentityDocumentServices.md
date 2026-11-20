@@ -26,7 +26,7 @@ This framework also enables web browsers to implement the presentment flow for t
 ### Essentials
 - [Requesting a mobile document on the web](./requesting-a-mobile-document-on-the-web.md)
   Send a request for mobile document information for apps installed on a device.
-- [Implementing as an identity document provider](./implenting-as-an-identity-document-provider.md)
+- [Implementing as an identity document provider](./implementing-as-an-identity-document-provider.md)
   Add your app as an option for mobile document web presentment.
 - [Verifying a mobile document from a passport](./verifying-a-mobile-document-from-a-passport.md)
   Validate a response from mobile document information derived from a passport.

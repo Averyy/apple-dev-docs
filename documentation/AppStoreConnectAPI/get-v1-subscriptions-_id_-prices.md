@@ -11,7 +11,9 @@ Get a list of prices for an auto-renewable subscription, by territory.
 
 ## Mentions
 
+- [Unpreserving prices after volume pricing takes effect](./removing-price-preservation-after-volume-pricing-takes-effect.md)
 - [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
+- [Configuring volume pricing for multiseat subscriptions](./configuring-volume-pricing-for-multi-seat-subscriptions.md)
 
 ### Example Request and Response
 
@@ -90,13 +92,15 @@ GET https://api.appstoreconnect.apple.com/v1/subscriptions/6470878936/prices?fil
 ### Query Parameters
 
 - `fields[subscriptionPricePoints]` ([string]): **Allowed Values**: `customerPrice`, `proceeds`, `proceedsYear2`, `territory`, `equalizations`, `adjustedEqualizations`
-- `fields[subscriptionPrices]` ([string]): **Allowed Values**: `startDate`, `preserved`, `planType`, `territory`, `subscriptionPricePoint`
+- `fields[subscriptionPrices]` ([string]): **Allowed Values**: `startDate`, `preserved`, `planType`, `territory`, `subscriptionPricePoint`, `additionalPriceTiers`
 - `fields[territories]` ([string]): **Allowed Values**: `currency`
 - `filter[subscriptionPricePoint]` ([string])
 - `filter[territory]` ([string])
-- `include` ([string]): **Allowed Values**: `territory`, `subscriptionPricePoint`
+- `include` ([string]): **Allowed Values**: `territory`, `subscriptionPricePoint`, `additionalPriceTiers`
 - `limit` (integer): **Maximum**: `200`
+- `fields[subscriptionPriceTiers]` ([string]): **Allowed Values**: `minQuantity`, `subscriptionPricePoint`
 - `filter[planType]` ([string]): **Allowed Values**: `MONTHLY`, `UPFRONT`
+- `limit[additionalPriceTiers]` (integer): **Maximum**: `50`
 
 ## Responses
 

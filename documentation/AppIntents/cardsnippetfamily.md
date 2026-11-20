@@ -21,6 +21,10 @@ A type that defines the supported rendering environments for card snippets.
 struct CardSnippetFamily
 ```
 
+## Mentions
+
+- [Presenting an entity as a card snippet](./presenting-an-entity-as-a-card-snippet.md)
+
 ## Overview
 
 Each instance of the `CardSnippetFamily` type reflects the amount of space available for your custom content, and indicates how the system intends to display that content. When defining a [`CardSnippet`](./cardsnippet.md) type for one of your entities, you specify which families you support. In the closure you use to create your view, the system provides a [`CardSnippetContext`](./cardsnippetcontext.md) object with the family it expects you to use to configure your views.
@@ -47,6 +51,8 @@ The system defines families broadly so that it can reuse your snippets in multip
 ## See Also
 
 ### Card snippets
+- [Presenting an entity as a card snippet](./presenting-an-entity-as-a-card-snippet.md)
+  Show a custom view of your app’s content in system experiences such as Siri responses and conversation transcripts.
 - [protocol SnippetRepresentableEntity](./snippetrepresentableentity.md)
   An app entity that provides a visual representation for its content.
 - [struct CardSnippet](./cardsnippet.md)

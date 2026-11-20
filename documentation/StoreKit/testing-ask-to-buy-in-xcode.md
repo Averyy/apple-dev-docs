@@ -9,7 +9,7 @@ Validate your app’s handling of Ask To Buy in the testing environment.
 
 With Ask to Buy, when a child wants to make an eligible purchase or download, the system sends the purchase request to the parent or guardian. For more information, see [Approve what kids buy with Ask to Buy](https://support.apple.com/105055).
 
-You can test approving and declining Ask to Buy purchases in the Xcode testing environment. Use the StoreKit configuration file to set up and control the test case.
+You can test approving and declining Ask to Buy purchases in the Xcode testing environment. Use the StoreKit configuration file to set up and control the test case. You can also test Ask to Buy in the sandbox environment. For more information, see [Testing Ask to Buy in the sandbox environment](./testing-ask-to-buy-in-the-sandbox-environment.md).
 
 ### Perform basic setup
 

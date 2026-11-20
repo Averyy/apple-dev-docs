@@ -30,6 +30,7 @@ This object is part of the [`SubscriptionReactivateInAppRequest`](./subscription
 ### Subscription reactivation in the app
 - [object SubscriptionReactivateInAppRequest](./subscriptionreactivateinapprequest.md)
   The request your app provides to reactivate a subscription that has automatic renewal turned off.
+- [object SubscriptionReactivateInAppRequestV1](./subscriptionreactivateinapprequestv1.md)
 
 
 ---

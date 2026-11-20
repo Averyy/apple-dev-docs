@@ -73,22 +73,10 @@ Refer to the Advanced Commerce API Addendum to learn the use cases for the `Canc
         },
         "items": [
             {
-                "SKU": "AD_FREE_1M",
-                "displayName": "Ad-free monthly plan",                        
-                "description": "Remove ads for the service.",
+                "SKU": "ANNES_GOLD_TIER_1M",
+                "displayName": "Gold Tier",                        
+                "description": "Access to Anne's Game Stream",
                 "price": 9990
-            },
-            {
-                "SKU": "ADVANCED_FEATURES_1M",
-                "displayName": "Advanced feature monthly plan",
-                "description": "Unlock advanced features for the month.",
-                "price": 3990,
-                "offer": {
-                    "price": 2990, 
-                    "period": "P1M",
-                    "periodCount": 3,
-                    "reason": "ACQUISITION"
-                }
             }
         ],
         "requestReferenceId": "932c6903-0ab8-4469-9f21-015f6fab013c",
@@ -117,22 +105,10 @@ Refer to the Advanced Commerce API Addendum to learn the use cases for the `Canc
         },
         "items": [
             {
-                "SKU": "AD_FREE_1M",
-                "displayName": "Ad-free monthly plan",                        
-                "description": "Remove ads for the service.",
+                "SKU": "ANNES_GOLD_TIER_1M",
+                "displayName": "Gold Tier",                        
+                "description": "Access to Anne's Game Stream",
                 "price": 9990
-            },
-            {
-                "SKU": "ADVANCED_FEATURES_1M",
-                "displayName": "Advanced feature monthly plan",
-                "description": "Unlock advanced features for the month.",
-                "price": 3990,
-                "offer": {
-                    "price": 2990, 
-                    "period": "P1M",
-                    "periodCount": 2,
-                    "reason": "ACQUISITION"
-                }
             }
         ],
         "requestReferenceId": "932c6903-0ab8-4469-9f21-015f6fab013c",
@@ -164,10 +140,10 @@ The request body that includes information about the subscription to cancel.
 ## Responses
 
 - `200` OK (`SubscriptionCancelResponse`, `application/json`): Success
-- `400` Bad Request (`(NullRequestInfoError | InvalidAppAccountTokenError | NullRequestReferenceIDError | InvalidRequestReferenceIDError | InvalidConsistencyTokenError | InvalidStorefrontError | MismatchedStorefrontError | OperationNotAllowedError | MalformedPayloadError)`, `application/json`)
-- `401` Unauthorized
-- `403` Forbidden (`(SubscriptionDoesNotExistError | SubscriptionNotEligibleError | ProductNotOwnedError)`, `application/json`)
-- `404` Not Found (`TransactionIdNotFoundError`, `application/json`)
+- `400` Bad Request (`(NullRequestInfoError | InvalidAppAccountTokenError | NullRequestReferenceIDError | InvalidRequestReferenceIDError | InvalidConsistencyTokenError | InvalidStorefrontError | MismatchedStorefrontError | OperationNotAllowedError | MalformedPayloadError | FamilyTransactionNotSupportedError | InvalidTransactionIdError | RepeatedRequestReferenceIdError | InvalidOperationError)`, `application/json`)
+- `401` Unauthorized (`UnauthorizedError`, `application/json`)
+- `403` Forbidden (`(SubscriptionDoesNotExistError | SubscriptionNotEligibleError | ProductNotOwnedError | ForbiddenError | CancelOfBundleItemNotAllowedError | SubscriptionAlreadyCancelledError | InactiveACASubError)`, `application/json`)
+- `404` Not Found (`(TransactionIdNotFoundError | NotFoundError)`, `application/json`)
 - `429` (`RateLimitExceededError`, `application/json`)
 - `500` Internal Server Error (`(GeneralInternalError | GeneralInternalRetryableError)`, `application/json`)
 

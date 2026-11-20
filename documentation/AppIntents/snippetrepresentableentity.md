@@ -21,6 +21,10 @@ An app entity that provides a visual representation for its content.
 protocol SnippetRepresentableEntity : AppEntity
 ```
 
+## Mentions
+
+- [Presenting an entity as a card snippet](./presenting-an-entity-as-a-card-snippet.md)
+
 ## Overview
 
 Adopt the `SnippetRepresentableEntity` protocol in your app entity when you want to provide a visual representation of its content. This protocol conforms to the base [`AppEntity`](./appentity.md) protocol and adds a [`snippet`](./snippetrepresentableentity/snippet-swift.type.property.md) property for delivering a snippet type to display your entity’s content. When the system needs to show information about your entity, it displays the contents of your snippet. For example, Siri might show the snippet during a conversation to confirm a choice or display details about a requested item.
@@ -68,6 +72,8 @@ To include interactive controls in your view, add a SwiftUI control that runs an
 ## See Also
 
 ### Card snippets
+- [Presenting an entity as a card snippet](./presenting-an-entity-as-a-card-snippet.md)
+  Show a custom view of your app’s content in system experiences such as Siri responses and conversation transcripts.
 - [struct CardSnippet](./cardsnippet.md)
   A type that presents the SwiftUI view for an app entity as a card.
 - [struct CardSnippetContext](./cardsnippetcontext.md)

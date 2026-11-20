@@ -28,8 +28,11 @@ object SubscriptionModifyRemoveItem
   The data your app provides to add items when it makes changes to an auto-renewable subscription.
 - [object SubscriptionModifyChangeItem](./subscriptionmodifychangeitem.md)
   The data your app provides to change an item of an auto-renewable subscription.
+- [object ModifyBundleItem](./modifybundleitem.md)
 - [object SubscriptionModifyPeriodChange](./subscriptionmodifyperiodchange.md)
   The data your app provides to change the period of an auto-renewable subscription.
+- [object SubscriptionModifyInAppRequestV1](./subscriptionmodifyinapprequestv1.md)
+- [object SubscriptionModifyChangeItemV1](./subscriptionmodifychangeitemv1.md)
 
 
 ---

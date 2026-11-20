@@ -28,6 +28,8 @@ object SubscriptionPriceInlineCreate.Relationships.SubscriptionPricePoint
 ### Objects
 - [object SubscriptionPriceInlineCreate.Relationships.Subscription](./subscription-data.dictionary.md)
 - [object SubscriptionPriceInlineCreate.Relationships.Territory](./territory-data.dictionary.md)
+- [object SubscriptionPriceInlineCreate.Relationships.AdditionalPriceTiers](./additionalpricetiers-data.dictionary.md)
+  The additional volume pricing tiers to create with the price.
 
 
 ---

@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/AppStoreServerAPI": {
       "file_path": "documentation/AppStoreServerAPI/AppStoreServerAPI.md",
-      "hash": "12675126af171726b6913d8ca8debec6d3e92817e3e697d01ee2da589a030491"
+      "hash": "eeda6f5dec74128c11d58a130e5e5a5bd9fc0bfce0dbfd4b5ebe95bc941f8088"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/accountnotfounderror": {
       "file_path": "documentation/AppStoreServerAPI/accountnotfounderror.md",
@@ -22,139 +22,179 @@
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommerce-datatypes": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerce-datatypes.md",
-      "hash": "b7e16ca2a4f790d4fec71eddf9b18eebac57f304582f0f7533f9aaf5265f89fb"
+      "hash": "d062fbc3ff2a6f74a5a0f51010447f87ad241d87720ae0cd36ad2d84aed70153"
+    },
+    "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercebundleitem": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercebundleitem.md",
+      "hash": "29f238fd322daa44221ac75a56aa1b870572ffb8630c37f6b03291daa915e533"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceconsistencytoken": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceconsistencytoken.md",
-      "hash": "f6a0745e174d6058fa1a5e55ef8b6e0b06773c3bd7f1eb730fb5cd6a606079cc"
+      "hash": "2ca79beff01e411d61bc2498e4448a95f72545e2fe104d7f11500f83787185d5"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercedescription": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercedescription.md",
-      "hash": "22450e152bd08bfa26fa6ac14184ad3c2a813b258ac7a76ccd36e6c4db481666"
+      "hash": "acfec06cd7826bee507eddc750df1d0d83e109ebfb38080bc453a9dd8de4c30d"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercedescriptors": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercedescriptors.md",
-      "hash": "fd55c13cc019f2bc1ac62fe854ebea36fe2a524fa45bb04b7d95dc37ce4e0b91"
+      "hash": "1e9be0e2f91882593ae6f97713a9e71d9a26d525fe5abbd70ceb8f458e6be56e"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercedisplayname": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercedisplayname.md",
-      "hash": "cd3e5534d5c79d6335c3196f42ff1cc21bc157c59060f473b95a4de6a80386d3"
+      "hash": "98a5a2eb3b60cdc84db46628c9e25ffa2dde0c1f46c63bbc10c69d0410a3d5f8"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceestimatedtax": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceestimatedtax.md",
-      "hash": "d2723ec89b52e8d7889921b2a6852ae4884417b15484dc4cde5d2c627d75db83"
+      "hash": "03d83ec85d46a38fb7010b3085351d2cc5c3c3e2a26b89e9b51a438982c5f7c8"
+    },
+    "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercemaximumseatquantity": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercemaximumseatquantity.md",
+      "hash": "3403b919f8b67ff2375268d350d0bd5362a8287e6b2937d0c4fcde4f22a183ed"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceoffer": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceoffer.md",
-      "hash": "4ecb8b12aa7293e28a51c2ade89467d3ca65f9ccce64c9026eac5acf329a8428"
+      "hash": "3f9a4ab28232874023a9001c03c3c1a2ee6d774eda19c940bef380cad057dee1"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceofferperiod": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceofferperiod.md",
-      "hash": "408d7920e2925dc5ddf6902219d82b4796e68365edf598031ff76fc94afc9133"
+      "hash": "25905dd15db766311642c00f00cb02e29421ca7263bf5dd2738f27f100a79957"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceofferprice": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceofferprice.md",
-      "hash": "80fd71bb1ba6969ca57b1f7a94406fcaa676429d72bf8a4c39d0aee00b412828"
+      "hash": "8ddf9bcad7e66d6c8e33321a2d1b6c6aa93b641ded5a6ec5e845d3bd66880072"
+    },
+    "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercepartner": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercepartner.md",
+      "hash": "7caadd03544b60ae4ee6d1ea63b7b14e8b2d4eba84466b947b47b589ba5e752d"
+    },
+    "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercepartnerid": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercepartnerid.md",
+      "hash": "adab82a76e05bff63b2aaebc9012e59376a66151bafb83d52beb64f9dbacf6fe"
+    },
+    "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercepartnername": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercepartnername.md",
+      "hash": "d7823e0eb85b1f88465bbe9771fb5d1728a09ff31cd3aa862b55e43e1b3dc453"
+    },
+    "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercepartners": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercepartners.md",
+      "hash": "bfe48da7b1640b2a051acfc6d06478d8abf2d93dcf142c8d5a3704b549d63df4"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceperiod": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceperiod.md",
-      "hash": "7693a5353983033a8f819f15b4b7f13d84722f96b2271dd2b3c6522624a9fcea"
+      "hash": "720dbce9a97b7b953c287e4e1df35f3f3fae4b661da96df532cbe6c9423874e5"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceperiodcount": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceperiodcount.md",
-      "hash": "f9a16e66281806505a74c4b3df25baecdaaa89c8d2d05c8e44999982e44a78bc"
+      "hash": "5bbda0b5af22440a61394750a215453c19c356f1af494dbc8fed08cab79782a9"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceprice": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceprice.md",
-      "hash": "6ac7f41246c7b18e584cf0d53cc89484f00beeb375873c434302f6610b199519"
+      "hash": "b66e20547dd23adda020d27dea74a40716fac81266629131915cb2a90256357e"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercepriceincreaseinfo": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfo.md",
-      "hash": "e45d65568b1f1ccb788cad06e4344d32c5e458a86c717a91317f9f2cc3a86985"
+      "hash": "20c899ef08ab1d4471431e903baf89058aec4c2b02208aa9c2b684c8e654bc1d"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercepriceincreaseinfodependentsku": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfodependentsku.md",
-      "hash": "fa6ebbb0cda06c818165c9e986223382928eaa55ab18ec94c8fe0ce7345d08ae"
+      "hash": "5323fbde05d1f7b83335d8e20e418d62c3fe0c6defd17a8609268919ae26013a"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercepriceincreaseinfoprice": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfoprice.md",
-      "hash": "5f8d84042bc841f8994e41535fc358582ed0d80ea424c23bc82b7f7cf722522f"
+      "hash": "69f594578a33d7c51b735d87257408c4b40725f2184bd36a4325c6dda3462f00"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercepriceincreaseinfostatus": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfostatus.md",
-      "hash": "7718bb08bb51795ad58dcfdcd4a60097448bb80043f7a2a09c1c6b93de24d7b4"
+      "hash": "f35dd49d0c8a36a839d33d75040171336afe5131db5d32f65da76ff7d0ecb76d"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercereason": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercereason.md",
-      "hash": "8cbe6d1fa2cc5689af47cedcd1ca45c50a72555acff8a0bd4fae1d4ee0b0a944"
+      "hash": "a1afad747b43308985e09fe157843cdf37c0008e0163380c8b3f3b4d42714fe2"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerefund": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefund.md",
-      "hash": "c8e64489b634c714244c1c48672b57d5bb75678cb1e8622ecaab95734eb4c4e4"
+      "hash": "8e803a6ad5db0c635f641ec67acda2791dcb1f4c424c27b94d0899c4c327c2a5"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerefundamount": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefundamount.md",
-      "hash": "d40494b63e7a162516dfc22c2abb281049c3a0f7bfeb5995eac3efa6b3f62e3d"
+      "hash": "1f9af36620fe972ad2bb25e9cd427187ef14d3aa645d4c8994f4c0640110cbfc"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerefunddate": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefunddate.md",
-      "hash": "69e1ead0a268e9540dda4b3d89933bcca57f7f41f5509460d873155e84d48571"
+      "hash": "3cab47ef389825a3c39353c6a41882cad0a6ebc6e424b99f57b98b1c7c0983a6"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerefundreason": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefundreason.md",
-      "hash": "3431d7be3897f34a9d4aca54afed106e8daf4edf56f20627e26e23402dbae51e"
+      "hash": "8fa9b603ad50e6756e56cf16b9d8e6a9a9adc65ea42390c3a614f3057befd415"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerefunds": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefunds.md",
-      "hash": "0479876d9f2349fbc060ad0028d77f528e003b502403129233fc85344e48a66a"
+      "hash": "b18ddfb0423b73b7159a1ee9e35d1adc304566bcb7c0098b72404f4e1f9f7f8b"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerefundtype": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefundtype.md",
-      "hash": "695244439578ed6923b20561c50bb32ca9e8af1903fb922643cfb0bbab4f65aa"
+      "hash": "120dfeea1b61921f42e962fbb6b95dfc91e0b3873bf67f1a12e88e4cc59e9788"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerenewalinfo": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerenewalinfo.md",
-      "hash": "a063e2850cc0ff45d9d6ce8ad57cfa4d23870a1b350382abeb8542d55e7fea9e"
+      "hash": "91e4086fb92d794f381b8304a024597441d1d9da1c32a316769a0183ee8d7a03"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerenewalitem": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerenewalitem.md",
-      "hash": "2228ea1ea25152992f9883b9c844e6f1977dcbc3650fc033ad8dedd360d6db41"
+      "hash": "a63e8b9f16bec3df567a79eb403a280b95e72d3a33773ddc7ef218c7825c8366"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerenewalitems": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerenewalitems.md",
-      "hash": "b4848af1d7a332b1b1d0b2b91d65577d599da030f8d9551c46bee8bc7f544af6"
+      "hash": "c6ba1c97bf726ddd945e605d3269318c3c7beb610cb25e26334498ac7fdf430a"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerequestreferenceid": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerequestreferenceid.md",
-      "hash": "fb58e516cb64a53a2a4106c665a68b5599485b43a4d4833d0d502256a9b151b2"
+      "hash": "0d0be2ea1a7e3a00a93864255de18f2df97ecd76b4af9b832d75748cc806fd18"
+    },
+    "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerevokedseatquantity": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercerevokedseatquantity.md",
+      "hash": "282f5c815d2881895f430747b71b0d3a48cae02fd1b1b2a207b15cf09abe7c31"
+    },
+    "https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceseatpricetier": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommerceseatpricetier.md",
+      "hash": "ea043cd9d6e9f46f21ec4fe3ea71b9fc6f99b732efd5ffe15a365f7a480956b2"
+    },
+    "https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceseatpricetiers": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommerceseatpricetiers.md",
+      "hash": "9ef5adb228d09c1ee4505f3c1f9232549beeb0ef5dc0edee074dcccd2098a00e"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercesku": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercesku.md",
-      "hash": "d1a0dfc74a372170835bf0d8d2f85804f12bd885e3833ac371a32927d48ce704"
+      "hash": "282b9738a4f29533dfa92b0a044c2d163f3d65388bde2cfd74cdab5344195bb9"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercetaxcode": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetaxcode.md",
-      "hash": "dcec2ead14a1cf1af2c167c702491638de7036a3db4edfaa018734e80428edf6"
+      "hash": "e1d9656bdab8c22fcf9016b3347c4b5aaaa1d53524816655461522987a03b718"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercetaxexclusiveprice": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetaxexclusiveprice.md",
-      "hash": "7dd3b05c005f41c0c091a2cfc243d09991094494fa683082dfa36ca466943911"
+      "hash": "9ef044a48c089e375cb2474d86a7a42fc0ef0725f33ed30feeaa507ca9591415"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercetaxrate": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetaxrate.md",
-      "hash": "39f062ae7baafe4851d24ab61cf65d81d5e73c72e0d58385963ea38ec581bb30"
+      "hash": "17dcb6b6f2f9cdd98ec300821f9e0feb809503f0c869e247bdc9b9f4388a976e"
+    },
+    "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercetierprice": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercetierprice.md",
+      "hash": "76c7034a09164d299f941b61eb798413f3da1f556c08bb56ec050b252ece91d6"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercetransactioninfo": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactioninfo.md",
-      "hash": "fed5fea76c5842edddcb524a95b0dba44edc6c5aebfd2e53b366e9c521f4d065"
+      "hash": "d2058e083a938caa97bc9c03553a93ac25cc3567ac27486576cc84375a24a371"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercetransactionitem": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactionitem.md",
-      "hash": "4ed5cd3caf53342af6fab6dea306b474344e1454af7970e0cc03777ce4422754"
+      "hash": "960079e2491011b095237c1862d1d7215a3e594479a373d579e8bf488a69d6bd"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercetransactionitems": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactionitems.md",
-      "hash": "c8a9f504e30106b1b005abe922682b73feea2d6480232a98624152ea3f0d15f1"
+      "hash": "97eca7180b6c0af969c614150d0859e77d1e605786f405204077c5485718c8d5"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/advancedcommercetransactionnotsupportederror": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactionnotsupportederror.md",
@@ -170,7 +210,7 @@
     },
     "https://developer.apple.com/documentation/appstoreserverapi/app-store-server-api-changelog": {
       "file_path": "documentation/AppStoreServerAPI/app-store-server-api-changelog.md",
-      "hash": "f02c7919d1b59dcf61a80cc4895b8635f24fa3cb19bf334575cda40d70e6046f"
+      "hash": "0d4c6bc142cd99b3af72191d48443111a3d985293748d51d78db47872aa04cd3"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/appaccounttoken": {
       "file_path": "documentation/AppStoreServerAPI/appaccounttoken.md",
@@ -1210,7 +1250,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/AppStoreServerAPI.json": {
       "file_path": "documentation/AppStoreServerAPI/AppStoreServerAPI.md",
-      "hash": "12675126af171726b6913d8ca8debec6d3e92817e3e697d01ee2da589a030491"
+      "hash": "eeda6f5dec74128c11d58a130e5e5a5bd9fc0bfce0dbfd4b5ebe95bc941f8088"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/accountnotfounderror.json": {
       "file_path": "documentation/AppStoreServerAPI/accountnotfounderror.md",
@@ -1230,139 +1270,179 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerce-datatypes.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerce-datatypes.md",
-      "hash": "b7e16ca2a4f790d4fec71eddf9b18eebac57f304582f0f7533f9aaf5265f89fb"
+      "hash": "d062fbc3ff2a6f74a5a0f51010447f87ad241d87720ae0cd36ad2d84aed70153"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercebundleitem.json": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercebundleitem.md",
+      "hash": "29f238fd322daa44221ac75a56aa1b870572ffb8630c37f6b03291daa915e533"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceconsistencytoken.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceconsistencytoken.md",
-      "hash": "f6a0745e174d6058fa1a5e55ef8b6e0b06773c3bd7f1eb730fb5cd6a606079cc"
+      "hash": "2ca79beff01e411d61bc2498e4448a95f72545e2fe104d7f11500f83787185d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercedescription.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercedescription.md",
-      "hash": "22450e152bd08bfa26fa6ac14184ad3c2a813b258ac7a76ccd36e6c4db481666"
+      "hash": "acfec06cd7826bee507eddc750df1d0d83e109ebfb38080bc453a9dd8de4c30d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercedescriptors.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercedescriptors.md",
-      "hash": "fd55c13cc019f2bc1ac62fe854ebea36fe2a524fa45bb04b7d95dc37ce4e0b91"
+      "hash": "1e9be0e2f91882593ae6f97713a9e71d9a26d525fe5abbd70ceb8f458e6be56e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercedisplayname.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercedisplayname.md",
-      "hash": "cd3e5534d5c79d6335c3196f42ff1cc21bc157c59060f473b95a4de6a80386d3"
+      "hash": "98a5a2eb3b60cdc84db46628c9e25ffa2dde0c1f46c63bbc10c69d0410a3d5f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceestimatedtax.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceestimatedtax.md",
-      "hash": "d2723ec89b52e8d7889921b2a6852ae4884417b15484dc4cde5d2c627d75db83"
+      "hash": "03d83ec85d46a38fb7010b3085351d2cc5c3c3e2a26b89e9b51a438982c5f7c8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercemaximumseatquantity.json": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercemaximumseatquantity.md",
+      "hash": "3403b919f8b67ff2375268d350d0bd5362a8287e6b2937d0c4fcde4f22a183ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceoffer.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceoffer.md",
-      "hash": "4ecb8b12aa7293e28a51c2ade89467d3ca65f9ccce64c9026eac5acf329a8428"
+      "hash": "3f9a4ab28232874023a9001c03c3c1a2ee6d774eda19c940bef380cad057dee1"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceofferperiod.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceofferperiod.md",
-      "hash": "408d7920e2925dc5ddf6902219d82b4796e68365edf598031ff76fc94afc9133"
+      "hash": "25905dd15db766311642c00f00cb02e29421ca7263bf5dd2738f27f100a79957"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceofferprice.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceofferprice.md",
-      "hash": "80fd71bb1ba6969ca57b1f7a94406fcaa676429d72bf8a4c39d0aee00b412828"
+      "hash": "8ddf9bcad7e66d6c8e33321a2d1b6c6aa93b641ded5a6ec5e845d3bd66880072"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepartner.json": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercepartner.md",
+      "hash": "7caadd03544b60ae4ee6d1ea63b7b14e8b2d4eba84466b947b47b589ba5e752d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepartnerid.json": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercepartnerid.md",
+      "hash": "adab82a76e05bff63b2aaebc9012e59376a66151bafb83d52beb64f9dbacf6fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepartnername.json": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercepartnername.md",
+      "hash": "d7823e0eb85b1f88465bbe9771fb5d1728a09ff31cd3aa862b55e43e1b3dc453"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepartners.json": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercepartners.md",
+      "hash": "bfe48da7b1640b2a051acfc6d06478d8abf2d93dcf142c8d5a3704b549d63df4"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceperiod.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceperiod.md",
-      "hash": "7693a5353983033a8f819f15b4b7f13d84722f96b2271dd2b3c6522624a9fcea"
+      "hash": "720dbce9a97b7b953c287e4e1df35f3f3fae4b661da96df532cbe6c9423874e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceperiodcount.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceperiodcount.md",
-      "hash": "f9a16e66281806505a74c4b3df25baecdaaa89c8d2d05c8e44999982e44a78bc"
+      "hash": "5bbda0b5af22440a61394750a215453c19c356f1af494dbc8fed08cab79782a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceprice.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceprice.md",
-      "hash": "6ac7f41246c7b18e584cf0d53cc89484f00beeb375873c434302f6610b199519"
+      "hash": "b66e20547dd23adda020d27dea74a40716fac81266629131915cb2a90256357e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepriceincreaseinfo.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfo.md",
-      "hash": "e45d65568b1f1ccb788cad06e4344d32c5e458a86c717a91317f9f2cc3a86985"
+      "hash": "20c899ef08ab1d4471431e903baf89058aec4c2b02208aa9c2b684c8e654bc1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepriceincreaseinfodependentsku.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfodependentsku.md",
-      "hash": "fa6ebbb0cda06c818165c9e986223382928eaa55ab18ec94c8fe0ce7345d08ae"
+      "hash": "5323fbde05d1f7b83335d8e20e418d62c3fe0c6defd17a8609268919ae26013a"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepriceincreaseinfoprice.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfoprice.md",
-      "hash": "5f8d84042bc841f8994e41535fc358582ed0d80ea424c23bc82b7f7cf722522f"
+      "hash": "69f594578a33d7c51b735d87257408c4b40725f2184bd36a4325c6dda3462f00"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepriceincreaseinfostatus.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfostatus.md",
-      "hash": "7718bb08bb51795ad58dcfdcd4a60097448bb80043f7a2a09c1c6b93de24d7b4"
+      "hash": "f35dd49d0c8a36a839d33d75040171336afe5131db5d32f65da76ff7d0ecb76d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercereason.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercereason.md",
-      "hash": "8cbe6d1fa2cc5689af47cedcd1ca45c50a72555acff8a0bd4fae1d4ee0b0a944"
+      "hash": "a1afad747b43308985e09fe157843cdf37c0008e0163380c8b3f3b4d42714fe2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefund.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefund.md",
-      "hash": "c8e64489b634c714244c1c48672b57d5bb75678cb1e8622ecaab95734eb4c4e4"
+      "hash": "8e803a6ad5db0c635f641ec67acda2791dcb1f4c424c27b94d0899c4c327c2a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefundamount.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefundamount.md",
-      "hash": "d40494b63e7a162516dfc22c2abb281049c3a0f7bfeb5995eac3efa6b3f62e3d"
+      "hash": "1f9af36620fe972ad2bb25e9cd427187ef14d3aa645d4c8994f4c0640110cbfc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefunddate.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefunddate.md",
-      "hash": "69e1ead0a268e9540dda4b3d89933bcca57f7f41f5509460d873155e84d48571"
+      "hash": "3cab47ef389825a3c39353c6a41882cad0a6ebc6e424b99f57b98b1c7c0983a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefundreason.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefundreason.md",
-      "hash": "3431d7be3897f34a9d4aca54afed106e8daf4edf56f20627e26e23402dbae51e"
+      "hash": "8fa9b603ad50e6756e56cf16b9d8e6a9a9adc65ea42390c3a614f3057befd415"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefunds.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefunds.md",
-      "hash": "0479876d9f2349fbc060ad0028d77f528e003b502403129233fc85344e48a66a"
+      "hash": "b18ddfb0423b73b7159a1ee9e35d1adc304566bcb7c0098b72404f4e1f9f7f8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefundtype.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefundtype.md",
-      "hash": "695244439578ed6923b20561c50bb32ca9e8af1903fb922643cfb0bbab4f65aa"
+      "hash": "120dfeea1b61921f42e962fbb6b95dfc91e0b3873bf67f1a12e88e4cc59e9788"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerenewalinfo.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerenewalinfo.md",
-      "hash": "a063e2850cc0ff45d9d6ce8ad57cfa4d23870a1b350382abeb8542d55e7fea9e"
+      "hash": "91e4086fb92d794f381b8304a024597441d1d9da1c32a316769a0183ee8d7a03"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerenewalitem.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerenewalitem.md",
-      "hash": "2228ea1ea25152992f9883b9c844e6f1977dcbc3650fc033ad8dedd360d6db41"
+      "hash": "a63e8b9f16bec3df567a79eb403a280b95e72d3a33773ddc7ef218c7825c8366"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerenewalitems.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerenewalitems.md",
-      "hash": "b4848af1d7a332b1b1d0b2b91d65577d599da030f8d9551c46bee8bc7f544af6"
+      "hash": "c6ba1c97bf726ddd945e605d3269318c3c7beb610cb25e26334498ac7fdf430a"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerequestreferenceid.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerequestreferenceid.md",
-      "hash": "fb58e516cb64a53a2a4106c665a68b5599485b43a4d4833d0d502256a9b151b2"
+      "hash": "0d0be2ea1a7e3a00a93864255de18f2df97ecd76b4af9b832d75748cc806fd18"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerevokedseatquantity.json": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercerevokedseatquantity.md",
+      "hash": "282f5c815d2881895f430747b71b0d3a48cae02fd1b1b2a207b15cf09abe7c31"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceseatpricetier.json": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommerceseatpricetier.md",
+      "hash": "ea043cd9d6e9f46f21ec4fe3ea71b9fc6f99b732efd5ffe15a365f7a480956b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceseatpricetiers.json": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommerceseatpricetiers.md",
+      "hash": "9ef5adb228d09c1ee4505f3c1f9232549beeb0ef5dc0edee074dcccd2098a00e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercesku.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercesku.md",
-      "hash": "d1a0dfc74a372170835bf0d8d2f85804f12bd885e3833ac371a32927d48ce704"
+      "hash": "282b9738a4f29533dfa92b0a044c2d163f3d65388bde2cfd74cdab5344195bb9"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetaxcode.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetaxcode.md",
-      "hash": "dcec2ead14a1cf1af2c167c702491638de7036a3db4edfaa018734e80428edf6"
+      "hash": "e1d9656bdab8c22fcf9016b3347c4b5aaaa1d53524816655461522987a03b718"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetaxexclusiveprice.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetaxexclusiveprice.md",
-      "hash": "7dd3b05c005f41c0c091a2cfc243d09991094494fa683082dfa36ca466943911"
+      "hash": "9ef044a48c089e375cb2474d86a7a42fc0ef0725f33ed30feeaa507ca9591415"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetaxrate.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetaxrate.md",
-      "hash": "39f062ae7baafe4851d24ab61cf65d81d5e73c72e0d58385963ea38ec581bb30"
+      "hash": "17dcb6b6f2f9cdd98ec300821f9e0feb809503f0c869e247bdc9b9f4388a976e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetierprice.json": {
+      "file_path": "documentation/AppStoreServerAPI/advancedcommercetierprice.md",
+      "hash": "76c7034a09164d299f941b61eb798413f3da1f556c08bb56ec050b252ece91d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetransactioninfo.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactioninfo.md",
-      "hash": "fed5fea76c5842edddcb524a95b0dba44edc6c5aebfd2e53b366e9c521f4d065"
+      "hash": "d2058e083a938caa97bc9c03553a93ac25cc3567ac27486576cc84375a24a371"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetransactionitem.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactionitem.md",
-      "hash": "4ed5cd3caf53342af6fab6dea306b474344e1454af7970e0cc03777ce4422754"
+      "hash": "960079e2491011b095237c1862d1d7215a3e594479a373d579e8bf488a69d6bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetransactionitems.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactionitems.md",
-      "hash": "c8a9f504e30106b1b005abe922682b73feea2d6480232a98624152ea3f0d15f1"
+      "hash": "97eca7180b6c0af969c614150d0859e77d1e605786f405204077c5485718c8d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetransactionnotsupportederror.json": {
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactionnotsupportederror.md",
@@ -1378,7 +1458,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/app-store-server-api-changelog.json": {
       "file_path": "documentation/AppStoreServerAPI/app-store-server-api-changelog.md",
-      "hash": "f02c7919d1b59dcf61a80cc4895b8635f24fa3cb19bf334575cda40d70e6046f"
+      "hash": "0d4c6bc142cd99b3af72191d48443111a3d985293748d51d78db47872aa04cd3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/appaccounttoken.json": {
       "file_path": "documentation/AppStoreServerAPI/appaccounttoken.md",
@@ -2603,6 +2683,6 @@
         "https://developer.apple.com/documentation/appstoreserverapi/transactionmultiseatinfo/revokedseatquantity"
       ]
     },
-    "total_pages": 631
+    "total_pages": 651
   }
 }

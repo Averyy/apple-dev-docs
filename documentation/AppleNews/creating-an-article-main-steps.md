@@ -9,23 +9,6 @@ Plan the design for your article and create it in Apple News Format.
 
 When you create an article in Apple News Format, you start by creating a JSON document file. The file contains code that specifies the layout for your article, provides the content, and customizes the look. The system processes the JSON file and renders it as an article in Apple News.
 
-Your article in Apple News must contain the following:
-
-- A headline for the article. Use the [`Title`](../AppleNewsFormat/title.md) component.
-- An author for the article. Use the [`Author`](../AppleNewsFormat/author.md) component to include the name of one of the authors of the article. Alternatively, you can use the [`Byline`](../AppleNewsFormat/byline.md) component for adding contributors to your article.
-- The publication date of the article. Use either the [`Metadata`](../AppleNewsFormat/metadata.md), `datePublished` property or the [`Byline`](../AppleNewsFormat/byline.md) component.
-- The complete text of the article, as it appears in either print or on the publisher’s website. Use the [`Body`](../AppleNewsFormat/body.md) component. Don’t truncate articles or require people to leave the Apple News app to read the full story.
-
-You can also include a thumbnail URL to use in the article tile. See the [`Metadata`](../AppleNewsFormat/metadata.md), `thumbnailURL` property.
-
-Avoid using generic banners or branding messages at the top of articles, because the system automatically brands articles with channel names. Redundant branding pushes down the article’s content, forcing people to scroll to view it.
-
-You can include in-article modules to promote and support your publication, like channel follow buttons, newsletter sign-up calls, donations, and other campaigns, but they must not appear until after the first screen.
-
-You can include in-article recirculation units, but these must not exceed 50 percent of the [viewport height](./specifying-measurements-for-components.md). They must look distinct from the Apple News end-of-article recirculation units and must appear after the first screen or before the last screen. You can also consider [promoting articles](https://support.apple.com/en-gb/guide/news-publisher/apd678c01b8c/icloud) or using the  [`LinkedArticle`](../AppleNewsFormat/linkedarticle.md) object.
-
-Modules that promote other products and services, advertising, or commercial content are prohibited.
-
 The following figure shows the basic tasks associated with creating an article.
 
 ![Flow diagram showing the steps to publish an article to Apple News. ](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3975561@2x.png)
@@ -48,6 +31,8 @@ Once your article is finished, you can publish it to Apple News. See [`Create an
 ### Essentials
 - [JSON Concepts and Article Structure](./json-concepts-and-article-structure.md)
   Understand basic JSON concepts and become familiar with the structure of an Apple News Format article.
+- [Apple News Format Best Practices and Guidelines](./apple-news-format-best-practices-and-guidelines.md)
+  Create and design engaging Apple News Format articles using these guidelines and best practices.
 - [object ArticleDocument](../AppleNewsFormat/articledocument.md)
   The root object of an Apple News article, that contains required properties, metadata, content, layout, and styles.
 

@@ -18,6 +18,10 @@ A value that corresponds to an OpenID4VP signed exchange protocol.
 case signedV1
 ```
 
+## Mentions
+
+- [Implementing as an identity document provider](../implementing-as-an-identity-document-provider.md)
+
 
 ---
 

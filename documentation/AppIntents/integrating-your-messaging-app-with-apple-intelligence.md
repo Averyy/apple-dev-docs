@@ -2,16 +2,16 @@
 
 **Framework**: App Intents  
 **Role**: Sample Code  
-**Download**: [IntegratingYourMessagingAppWithAppleIntelligence.zip](https://docs-assets.developer.apple.com/published/ebf7c10f9546/IntegratingYourMessagingAppWithAppleIntelligence.zip)
+**Download**: [IntegratingYourMessagingAppWithAppleIntelligence.zip](https://docs-assets.developer.apple.com/published/af6af53d8202/IntegratingYourMessagingAppWithAppleIntelligence.zip)
 
 Adopt message schemas so people can send messages and manage conversations with Siri.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
-- macOS 27.0+
-- Xcode 27.0+
+- iOS 27.3+ (Beta)
+- iPadOS 27.3+ (Beta)
+- Mac Catalyst 27.3+ (Beta)
+- macOS 27.3+ (Beta)
+- Xcode 27.3+ (Beta)
 
 ## Overview
 
@@ -344,6 +344,96 @@ func sendMessage(
 ```
 
 For more information about donating actions and content to the system, see [Donations and discovery](./donations-and-discovery.md).
+
+## Present a message as a card snippet
+
+By default, Apple Intelligence and system experiences such as Siri represent a message with its [`DisplayRepresentation`](./displayrepresentation.md), which pairs a title and a subtitle with an image. To show a message with its own layout and an inline action, the app gives `MessageEntity` a *card snippet*, a custom SwiftUI view that the system renders for the entity. The app conforms `MessageEntity` to the [`SnippetRepresentableEntity`](./snippetrepresentableentity.md) protocol and returns a [`CardSnippet`](./cardsnippet.md) from the type’s [`snippet`](./snippetrepresentableentity/snippet-swift.type.property.md) property:
+
+```swift
+extension MessageEntity: SnippetRepresentableEntity {
+    static var snippet: some Snippet {
+        CardSnippet(supportedFamilies: [.compact, .standard]) { message, context in
+            MessageSnippetCard(message: message, family: context.family)
+        }
+    }
+}
+```
+
+The `supportedFamilies` parameter is an array of [`CardSnippetFamily`](./cardsnippetfamily.md) options the card snippet can adapt to by returning:
+
+- A full-size card that fits most contexts for the [`standard`](./cardsnippetfamily/standard.md) option
+- A smaller card that fits contexts with less space for the [`compact`](./cardsnippetfamily/compact.md) option
+
+The card adapts the layout to the available space based on the [`family`](./cardsnippetcontext/family.md) property’s value, which the app gets from the builder’s [`CardSnippetContext`](./cardsnippetcontext.md) instance.
+
+The card presents a control that marks the message as read or unread:
+
+```swift
+private struct MessageSnippetCard: View {
+    let message: MessageEntity
+    let family: CardSnippetFamily
+
+    private var isCompact: Bool { family == .compact }
+
+    private var toggleReadStatusIntent: SetMessageReadStatusIntent {
+        let intent = SetMessageReadStatusIntent()
+        intent.message = message
+        intent.isRead = !message.isRead
+        return intent
+    }
+
+    var body: some View {
+        HStack(alignment: .firstTextBaseline) {
+            Button(intent: toggleReadStatusIntent) {
+                Label(
+                    message.isRead ? "Mark as Unread" : "Mark as Read",
+                    systemImage: message.isRead ? "largecircle.fill.circle" : "circle"
+                )
+                .labelStyle(.iconOnly)
+                .imageScale(.large)
+                .foregroundStyle(message.isRead ? Color.accentColor : Color.secondary)
+                .contentTransition(.symbolEffect(.replace))
+                .contentShape(Rectangle().inset(by: -12))
+            }
+            .buttonStyle(.plain)
+
+            // The message content, shown next.
+        }
+    }
+}
+```
+
+The button runs the app’s `SetMessageReadStatusIntent`, so a person can act on the card without opening the app. When a person taps the button, the system runs `SetMessageReadStatusIntent`, which updates the message’s read state and returns an entity that reflects the new state. The system renders the card again, and the [`contentTransition(_:)`](../SwiftUI/view/contenttransition%28_%29.md) modifier animates the change between the two symbols.
+
+The rest of the card shows the sender, the time, and the message body, based on the card’s family. In the compact family, it hides the timestamp and limits the body to a few lines:
+
+```swift
+VStack(alignment: .leading) {
+    HStack(alignment: .firstTextBaseline) {
+        Text(message.author.person.displayName)
+            .bold()
+            .foregroundStyle(message.isRead ? .secondary : .primary)
+            .lineLimit(1)
+        Spacer()
+        if !isCompact {
+            Text(message.date, style: .time)
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+        }
+    }
+
+    Text(message.body ?? "")
+        .font(isCompact ? .footnote : .body)
+        .foregroundStyle(.secondary)
+        .lineLimit(isCompact ? 5 : nil)
+}
+```
+
+The view shows the values of the message entity’s sender and body as they exist when the system captures the card as a snapshot.
+
+> **Note**: A card snippet doesn’t display content values that change after the system captures a snapshot.
+
+For more information about presenting an entity with a custom view in system experiences, see [Presenting an entity as a card snippet](./presenting-an-entity-as-a-card-snippet.md).
 
 ## See Also
 

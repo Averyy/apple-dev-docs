@@ -11,8 +11,12 @@ Schedule a subscription price change for a specific territory.
 
 ## Mentions
 
+- [App Store Connect API 4.6.1 release notes](./app-store-connect-api-4-6-1-release-notes.md)
 - [Managing auto-renewable subscriptions](./managing-auto-renewable-subscriptions.md)
+- [Unpreserving prices after volume pricing takes effect](./removing-price-preservation-after-volume-pricing-takes-effect.md)
 - [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
+- [Configuring volume pricing for multiseat subscriptions](./configuring-volume-pricing-for-multi-seat-subscriptions.md)
+- [Understanding subscription price increase notice and consent](./understanding-price-increase-notice-and-consent.md)
 
 ## Discussion
 

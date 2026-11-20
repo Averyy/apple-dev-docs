@@ -19,7 +19,7 @@ actor IdentityDocumentProviderRegistrationStore
 
 ## Mentions
 
-- [Implementing as an identity document provider](./implenting-as-an-identity-document-provider.md)
+- [Implementing as an identity document provider](./implementing-as-an-identity-document-provider.md)
 
 ## Discussion
 

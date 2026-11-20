@@ -35,6 +35,9 @@ This is the response body for the [`Change Subscription Metadata`](./change-subs
   The subscription metadata to change, specifically the description and display name.
 - [object SubscriptionChangeMetadataItem](./subscriptionchangemetadataitem.md)
   The metadata to change for an item, specifically its SKU, description, and display name.
+- [object ChangeMetadataBundleItem](./changemetadatabundleitem.md)
+- [object SubscriptionChangeMetadataRequestV1](./subscriptionchangemetadatarequestv1.md)
+- [object SubscriptionChangeMetadataItemV1](./subscriptionchangemetadataitemv1.md)
 
 
 ---

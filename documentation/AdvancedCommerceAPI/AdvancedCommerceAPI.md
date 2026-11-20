@@ -13,13 +13,15 @@ Support Apple In-App Purchases through the App Store for exceptionally large cat
 
 Use this framework to offer an exceptionally large catalog of one-time purchases, subscriptions, and subscriptions with optional add-ons while using the App Store commerce system. Apps that use this API host and manage their own catalog of Apple In-App Purchases, or SKUs. The App Store commerce system handles the end-to-end payment processing, global distribution, tax support, and customer service.
 
+> **Note**: To learn more about eligibility and apply for access to the Advanced Commerce API, see [Advanced Commerce API](https://developer.apple.com/in-app-purchase/advanced-commerce-api/). For more about eligibility and to apply for access to the Mini Apps Partner Program, see [Mini Apps Partner Program](https://developer.apple.com/programs/mini-apps-partner/).
+
 You can use the Advanced Commerce API and the StoreKit [Apple In-App Purchase](../StoreKit/in-app-purchase.md) API in the same app. Both APIs use the App Store commerce system, including the same signed JWS transactions and JWS renewal info. For products that you offer using the Apple In-App Purchase API, you set up product identifiers in App Store Connect. For products that you offer using the Advanced Commerce API, you host and manage your own catalog of SKUs and add product details dynamically at runtime. For complete setup information, see [Setting up your project for Advanced Commerce API](./setting-up-your-project-for-advanced-commerce.md).
 
 Advanced Commerce API features are available through requests you make using StoreKit in your app and endpoint requests from your server. To authorize these requests, you generate JSON Web Tokens (JWTs). The App Store Server Library provides a client that makes it easier to create JWTs to authorize calls. For more information about the library, see [Simplifying your implementation by using the App Store Server Library](../AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library.md). For more information about authorizing calls, see  [Authorizing API requests from your server](./authorizing-server-calls.md).
 
 Your server must support the Transport Layer Security (TLS) protocol 1.2 or later to call the Advanced Commerce API.
 
-> ❗ **Important**: To learn more about eligibility and apply for access to the Advanced Commerce API, see [Advanced Commerce API](https://developer.apple.com/in-app-purchase/advanced-commerce-api/). For more about eligibility and to apply for access to the Mini Apps Partner Program, see [Mini Apps Partner Program](https://developer.apple.com/programs/mini-apps-partner/).
+> **Note**: To use V2 requests for subscriptions created using a V1 request, use the Advanced Commerce API Access form on the [Advanced Commerce API](https://developer.apple.com/in-app-purchase/advanced-commerce-api/) and select “Configure or Update”. For more information on which requests have a V2, see [Advanced Commerce API changelog](./changelog.md).
 
 ## Topics
 
@@ -40,6 +42,8 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
   Configure the generic product IDs in App Store Connect that the Advanced Commerce API requires.
 - [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md)
   Define and manage one-time charges, subscriptions, and bundled subscriptions within your app.
+- [Creating multiseat purchases](./creating-multiseat-purchases.md)
+  Sell subscriptions that a customer buys for a group through Group Purchases, with per-seat or volume discount pricing.
 - [Creating SKUs for the Mini Apps Partner Program](./creating-skus-for-the-mini-app-partner-program.md)
   Define display names and SKUs for one-time charges and subscriptions in the Mini Apps Partner Program.
 ### Tax codes and pricing
@@ -59,11 +63,16 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
   The request data your app provides when a customer purchases a one-time-charge product.
 - [object OneTimeChargeItem](./onetimechargeitem.md)
   The details of a one-time charge product, including its display name, price, SKU, and metadata.
+- [object OneTimeChargeCreateRequestV1](./onetimechargecreaterequestv1.md)
+- [object OneTimeChargeItemV1](./onetimechargeitemv1.md)
 ### Subscription creation in the app
 - [object SubscriptionCreateRequest](./subscriptioncreaterequest.md)
   The request data your app provides when a customer purchases an auto-renewable subscription.
 - [object SubscriptionCreateItem](./subscriptioncreateitem.md)
   The data that describes a subscription item.
+- [object BundleItem](./bundleitem.md)
+- [object SubscriptionCreateRequestV1](./subscriptioncreaterequestv1.md)
+- [object SubscriptionCreateItemV1](./subscriptioncreateitemv1.md)
 ### Subscription modification in the app
 - [object SubscriptionModifyInAppRequest](./subscriptionmodifyinapprequest.md)
   The request data your app provides to make changes to an auto-renewable subscription.
@@ -71,22 +80,28 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
   The data your app provides to add items when it makes changes to an auto-renewable subscription.
 - [object SubscriptionModifyChangeItem](./subscriptionmodifychangeitem.md)
   The data your app provides to change an item of an auto-renewable subscription.
+- [object ModifyBundleItem](./modifybundleitem.md)
 - [object SubscriptionModifyRemoveItem](./subscriptionmodifyremoveitem.md)
   The data your app provides to remove an item from an auto-renewable subscription.
 - [object SubscriptionModifyPeriodChange](./subscriptionmodifyperiodchange.md)
   The data your app provides to change the period of an auto-renewable subscription.
+- [object SubscriptionModifyInAppRequestV1](./subscriptionmodifyinapprequestv1.md)
+- [object SubscriptionModifyChangeItemV1](./subscriptionmodifychangeitemv1.md)
 ### Subscription reactivation in the app
 - [object SubscriptionReactivateInAppRequest](./subscriptionreactivateinapprequest.md)
   The request your app provides to reactivate a subscription that has automatic renewal turned off.
 - [object SubscriptionReactivateItem](./subscriptionreactivateitem.md)
   An item in a subscription to reactivate.
+- [object SubscriptionReactivateInAppRequestV1](./subscriptionreactivateinapprequestv1.md)
 ### Subscription price change from the server
 - [Change Subscription Price](./change-subscription-price.md)
-  Increase or decrease the price of an auto-renewable subscription, a bundle, or individual items within a subscription at the next renewal.
+  Increase or decrease the price of an auto-renewable subscription at the next renewal.
 - [object SubscriptionPriceChangeRequest](./subscriptionpricechangerequest.md)
   The request body you use to change the price of an auto-renewable subscription.
 - [object SubscriptionPriceChangeResponse](./subscriptionpricechangeresponse.md)
   A response that contains signed JWS renewal and JWS transaction information after a subscription price change request.
+- [object SubscriptionPriceChangeRequestV1](./subscriptionpricechangerequestv1.md)
+- [object SubscriptionPriceChangeItemV1](./subscriptionpricechangeitemv1.md)
 ### Subscription cancellation from the server
 - [Cancel a Subscription](./cancel-a-subscription.md)
   Turn off automatic renewal to cancel a customer’s auto-renewable subscription.
@@ -96,9 +111,9 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
   The response body for a successful subscription cancellation.
 ### Subscription revocation from the server
 - [Revoke Subscription](./revoke-subscription.md)
-  Immediately cancel a customer’s subscription and all the items that are included in the subscription, and request a full or prorated refund.
+  Immediately cancel a subscription and all its items, or revoke unclaimed seats of a multiseat purchase, and request a full or prorated refund.
 - [object SubscriptionRevokeRequest](./subscriptionrevokerequest.md)
-  The request body you provide to terminate a subscription and all its items immediately.
+  The request body you provide to terminate a subscription and all its items immediately, or to revoke unclaimed seats from a multiseat purchase.
 - [object SubscriptionRevokeResponse](./subscriptionrevokeresponse.md)
   The response body for a successful revoke-subscription request.
 ### Refund request from the server
@@ -110,6 +125,9 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
   The response body for a transaction refund request.
 - [object RequestRefundItem](./requestrefunditem.md)
   Information about the refund request for an item, such as its SKU, the refund amount, reason, and type.
+- [object RefundItem](./refunditem.md)
+  Information about the item to refund, such as its SKU, the type of refund, and whether to revoke entitlement.
+- [object RequestRefundRequestV1](./requestrefundrequestv1.md)
 ### Subscription metadata changes from the server
 - [Change Subscription Metadata](./change-subscription-metadata.md)
   Update the SKU, display name, and description associated with a subscription, without affecting the subscription’s billing or its service.
@@ -121,6 +139,9 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
   The subscription metadata to change, specifically the description and display name.
 - [object SubscriptionChangeMetadataItem](./subscriptionchangemetadataitem.md)
   The metadata to change for an item, specifically its SKU, description, and display name.
+- [object ChangeMetadataBundleItem](./changemetadatabundleitem.md)
+- [object SubscriptionChangeMetadataRequestV1](./subscriptionchangemetadatarequestv1.md)
+- [object SubscriptionChangeMetadataItemV1](./subscriptionchangemetadataitemv1.md)
 ### Migration from the server
 - [Migrate a Subscription to Advanced Commerce API](./migrate-subscription-to-advanced-commerce-api.md)
   Migrate a subscription that a customer purchased through Apple In-App Purchase to a subscription you manage using the Advanced Commerce API.
@@ -130,10 +151,22 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
   A response that contains signed renewal and transaction information after a subscription successfully migrates to the Advanced Commerce API.
 - [object SubscriptionMigrateItem](./subscriptionmigrateitem.md)
   The SKU, description, and display name to use for a migrated subscription item.
+- [object MigrateBundleItem](./migratebundleitem.md)
 - [object SubscriptionMigrateRenewalItem](./subscriptionmigraterenewalitem.md)
   The item information that replaces a migrated subscription item when the subscription renews.
 - [object SubscriptionMigrateDescriptors](./subscriptionmigratedescriptors.md)
   The description and display name of the subscription to migrate to that you manage.
+- [object SubscriptionMigrateRequestV1](./subscriptionmigraterequestv1.md)
+- [object SubscriptionMigrateItemV1](./subscriptionmigrateitemv1.md)
+### Bundle items details from the server
+- [Bundle Items Details](./bundle-items-details.md)
+- [object BundleItemsDetailsResponse](./bundleitemsdetailsresponse.md)
+- [object BundleItemsDetailsItem](./bundleitemsdetailsitem.md)
+- [object BundleItemsDetailsBundleItem](./bundleitemsdetailsbundleitem.md)
+### Transaction responses
+- [object TransactionsResponse](./transactionsresponse.md)
+- [object Transaction](./transaction.md)
+- [object BundleTransaction](./bundletransaction.md)
 ### Objects and types
 - [Data types](./datatypes.md)
   Objects and data types for the Advanced Commerce API.
@@ -145,6 +178,11 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
 ### Error handling
 - [Error messages and codes](./errorcodes.md)
   Error messages and codes for the Advanced Commerce API.
+### Endpoints
+- [Change Subscription Metadata V1](./change-subscription-metadata-v1.md)
+- [Change Subscription Price V1](./change-subscription-price-v1.md)
+- [Migrate Subscription to Advanced Commerce API V1](./migrate-subscription-to-advanced-commerce-api-v1.md)
+- [Request Transaction Refund V1](./request-transaction-refund-v1.md)
 
 
 ---

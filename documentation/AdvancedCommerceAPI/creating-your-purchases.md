@@ -68,11 +68,17 @@ The following details appear in the App Store payment sheet, email communication
 
 ![A diagram of two iOS screens in portrait orientation. The first screen shows a payment sheet for a generic in-app purchase for a bundle of subscription items, with callouts showing where the subscription plan name and app icon appear on the sheet, along with the bundle item names, currencies, prices, and billing frequencies. The second screen shows the subscription management page in Apple Account Subscriptions, with callouts indicating the subscription plan name and the link back to the related app.](https://developer.apple.com/tutorials/images/com.apple.advancedcommerceapi/subscription-bundle-text-field-mapping@2x.png)
 
+## Create group subscriptions
+
+To sell a subscription that a customer buys for a group through Group Purchases, provide the number of seats and their price tiers in the [`SubscriptionCreateRequest`](./subscriptioncreaterequest.md) instead of a price. For more information, see [Creating multiseat purchases](./creating-multiseat-purchases.md).
+
 ## See Also
 
 ### Generic product IDs and SKUs
 - [Setting up generic product identifiers](./setting-up-generic-product-identifiers.md)
   Configure the generic product IDs in App Store Connect that the Advanced Commerce API requires.
+- [Creating multiseat purchases](./creating-multiseat-purchases.md)
+  Sell subscriptions that a customer buys for a group through Group Purchases, with per-seat or volume discount pricing.
 - [Creating SKUs for the Mini Apps Partner Program](./creating-skus-for-the-mini-app-partner-program.md)
   Define display names and SKUs for one-time charges and subscriptions in the Mini Apps Partner Program.
 

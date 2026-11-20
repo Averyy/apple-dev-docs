@@ -19,6 +19,7 @@ object TextStyle
 
 - [Defining and Applying Text Styles](../AppleNews/defining-and-applying-text-styles.md)
 - [Enhancing Your Articles with Styles](../AppleNews/enhancing-your-articles-with-styles.md)
+- [Apple News Format Best Practices and Guidelines](../AppleNews/apple-news-format-best-practices-and-guidelines.md)
 - [Applying Apple News Format Fonts](../AppleNews/applying-apple-news-format-fonts.md)
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)
 

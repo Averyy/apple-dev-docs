@@ -7,7 +7,7 @@
 A discount offer for an auto-renewable subscription.
 
 **Availability**:
-- Advanced Commerce API 1.0+
+- Advanced Commerce API 1.3+
 
 ## Declaration
 
@@ -24,17 +24,19 @@ object Offer
 
   **Minimum**: `1`; **Maximum**: `12`
 - `price` (price) *(required)*: The offer price, in milliunits.
-- `reason` (string) *(required)*: The reason for the offer.
-
-  **Allowed Values**: `ACQUISITION`, `WIN_BACK`, `RETENTION`
 
 ## See Also
 
 ### Objects
 - [object Descriptors](./descriptors.md)
   The display name and description of a subscription product.
+- [object OfferV1](./offerv1.md)
+- [object Partner](./partner.md)
+  The identifier and name of a mini app partner associated with a purchase.
 - [object RequestInfo](./requestinfo.md)
   The metadata to include in server requests.
+- [object SeatPriceTier](./seatpricetier.md)
+  A volume price tier for a subscription item that a customer buys as a multiseat purchase.
 - [object SubscriptionModifyAddItem](./subscriptionmodifyadditem.md)
   The data your app provides to add items when it makes changes to an auto-renewable subscription.
 - [object SubscriptionModifyChangeItem](./subscriptionmodifychangeitem.md)

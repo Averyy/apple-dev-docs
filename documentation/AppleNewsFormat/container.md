@@ -18,6 +18,7 @@ object Container
 ## Mentions
 
 - [Adding Components](../AppleNews/adding-components.md)
+- [Apple News Format Best Practices and Guidelines](../AppleNews/apple-news-format-best-practices-and-guidelines.md)
 - [Displaying Components Side By Side](../AppleNews/displaying-components-side-by-side.md)
 - [Nesting Components in an Article](../AppleNews/nesting-components-in-an-article.md)
 

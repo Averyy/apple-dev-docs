@@ -2,15 +2,15 @@
   "hashes": {
     "https://developer.apple.com/documentation/IdentityDocumentServicesUI": {
       "file_path": "documentation/IdentityDocumentServicesUI/IdentityDocumentServicesUI.md",
-      "hash": "2fd97e4b9498eefb4de6f8364213f049cd3495f95491e3dfe63c7a5fe64ed5d0"
+      "hash": "a10b5c5fb4c146e01b3ee7bdb2ac4d992d7ebd31990ac3ca4cd3c16e8489ce31"
     },
     "https://developer.apple.com/documentation/identitydocumentservicesui/identitydocumentpresentationanchor": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentpresentationanchor.md",
-      "hash": "08353bab8c973b3fe7a5408270e86b25716909a2fea59729616c0b9cdc72871a"
+      "hash": "e52aff188cf18d36bb07f9003f823f71c75a8aea441aed983d1bcc13dcb4d2bb"
     },
     "https://developer.apple.com/documentation/identitydocumentservicesui/identitydocumentpresentmentcontrollerpresentationcontextproviding": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentpresentmentcontrollerpresentationcontextproviding.md",
-      "hash": "9845db77a06c9b947e6ee6f2f052b81ef686a17b9e4bc72f455189d4bcab6a8d"
+      "hash": "bd6fc8a55a109c78fff29b9dd97132ffb09066793e5fb9fe550afb0107956e8a"
     },
     "https://developer.apple.com/documentation/identitydocumentservicesui/identitydocumentpresentmentcontrollerpresentationcontextproviding/presentationanchorforpresentmentcontroller(_:)-26ohw": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentpresentmentcontrollerpresentationcontextproviding/presentationanchorforpresentmentcontroller(_)-26ohw.md",
@@ -22,7 +22,7 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservicesui/identitydocumentpresentmentcontrolling": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentpresentmentcontrolling.md",
-      "hash": "0dbf4076a54b8eaaaf96e5ef85aed0311ec57ee71b2914afadbdb18219a39ae5"
+      "hash": "f843c4903e917764aad2ca7e539997b4465885f7b6c17b8819814b1227a74f59"
     },
     "https://developer.apple.com/documentation/identitydocumentservicesui/identitydocumentprovider": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentprovider.md",
@@ -70,7 +70,7 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservicesui/identitydocumentwebpresentmentcontroller": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentwebpresentmentcontroller.md",
-      "hash": "f2c152ab3c896104a7960b725c33179ee7b30a29d3c089068653f41d9130f876"
+      "hash": "3995ebca127f7232046d3bee6fbf3eaa9ab1a80767addf7a5bbcbec078a57cd6"
     },
     "https://developer.apple.com/documentation/identitydocumentservicesui/identitydocumentwebpresentmentcontroller/delegate": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentwebpresentmentcontroller/delegate.md",
@@ -90,7 +90,7 @@
     },
     "https://developer.apple.com/documentation/identitydocumentservicesui/identitydocumentwebpresentmentcontrollerdelegate": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentwebpresentmentcontrollerdelegate.md",
-      "hash": "b9962c4094fa8ca715e8a0776254b588cba5698374a69e37baa9ab2c50b1e31f"
+      "hash": "0a17f4f7745e4ab9b7a9e34985f617d44e2ba6503305cf5e306b8ca2beab6bf8"
     },
     "https://developer.apple.com/documentation/identitydocumentservicesui/identitydocumentwebpresentmentcontrollerdelegate/rawrequestsforwebpresentmentcontroller(_:)": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentwebpresentmentcontrollerdelegate/rawrequestsforwebpresentmentcontroller(_).md",
@@ -198,15 +198,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/IdentityDocumentServicesUI.json": {
       "file_path": "documentation/IdentityDocumentServicesUI/IdentityDocumentServicesUI.md",
-      "hash": "2fd97e4b9498eefb4de6f8364213f049cd3495f95491e3dfe63c7a5fe64ed5d0"
+      "hash": "a10b5c5fb4c146e01b3ee7bdb2ac4d992d7ebd31990ac3ca4cd3c16e8489ce31"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservicesui/identitydocumentpresentationanchor.json": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentpresentationanchor.md",
-      "hash": "08353bab8c973b3fe7a5408270e86b25716909a2fea59729616c0b9cdc72871a"
+      "hash": "e52aff188cf18d36bb07f9003f823f71c75a8aea441aed983d1bcc13dcb4d2bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservicesui/identitydocumentpresentmentcontrollerpresentationcontextproviding.json": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentpresentmentcontrollerpresentationcontextproviding.md",
-      "hash": "9845db77a06c9b947e6ee6f2f052b81ef686a17b9e4bc72f455189d4bcab6a8d"
+      "hash": "bd6fc8a55a109c78fff29b9dd97132ffb09066793e5fb9fe550afb0107956e8a"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservicesui/identitydocumentpresentmentcontrollerpresentationcontextproviding/presentationanchorforpresentmentcontroller(_:)-26ohw.json": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentpresentmentcontrollerpresentationcontextproviding/presentationanchorforpresentmentcontroller(_)-26ohw.md",
@@ -218,7 +218,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservicesui/identitydocumentpresentmentcontrolling.json": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentpresentmentcontrolling.md",
-      "hash": "0dbf4076a54b8eaaaf96e5ef85aed0311ec57ee71b2914afadbdb18219a39ae5"
+      "hash": "f843c4903e917764aad2ca7e539997b4465885f7b6c17b8819814b1227a74f59"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservicesui/identitydocumentprovider.json": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentprovider.md",
@@ -266,7 +266,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservicesui/identitydocumentwebpresentmentcontroller.json": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentwebpresentmentcontroller.md",
-      "hash": "f2c152ab3c896104a7960b725c33179ee7b30a29d3c089068653f41d9130f876"
+      "hash": "3995ebca127f7232046d3bee6fbf3eaa9ab1a80767addf7a5bbcbec078a57cd6"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservicesui/identitydocumentwebpresentmentcontroller/delegate.json": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentwebpresentmentcontroller/delegate.md",
@@ -286,7 +286,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservicesui/identitydocumentwebpresentmentcontrollerdelegate.json": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentwebpresentmentcontrollerdelegate.md",
-      "hash": "b9962c4094fa8ca715e8a0776254b588cba5698374a69e37baa9ab2c50b1e31f"
+      "hash": "0a17f4f7745e4ab9b7a9e34985f617d44e2ba6503305cf5e306b8ca2beab6bf8"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservicesui/identitydocumentwebpresentmentcontrollerdelegate/rawrequestsforwebpresentmentcontroller(_:).json": {
       "file_path": "documentation/IdentityDocumentServicesUI/identitydocumentwebpresentmentcontrollerdelegate/rawrequestsforwebpresentmentcontroller(_).md",

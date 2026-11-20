@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/ProximityReader": {
       "file_path": "documentation/ProximityReader/ProximityReader.md",
-      "hash": "62087695a4d83468438932075d8861928ea2663d5db3e772f81b0be807d3a29a"
+      "hash": "bcf048e6c1ffefa283a38a4f3ef060e484f33ea2948ece2586b562eac9159aeb"
     },
     "https://developer.apple.com/documentation/proximityreader/accepting-loyalty-passes-from-wallet": {
       "file_path": "documentation/ProximityReader/accepting-loyalty-passes-from-wallet.md",
@@ -3426,7 +3426,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ProximityReader.json": {
       "file_path": "documentation/ProximityReader/ProximityReader.md",
-      "hash": "62087695a4d83468438932075d8861928ea2663d5db3e772f81b0be807d3a29a"
+      "hash": "bcf048e6c1ffefa283a38a4f3ef060e484f33ea2948ece2586b562eac9159aeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/accepting-loyalty-passes-from-wallet.json": {
       "file_path": "documentation/ProximityReader/accepting-loyalty-passes-from-wallet.md",

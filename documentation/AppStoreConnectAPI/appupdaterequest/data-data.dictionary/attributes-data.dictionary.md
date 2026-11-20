@@ -21,15 +21,18 @@ object AppUpdateRequest.Data.Attributes
 
 ## Properties
 
-- `accessibilityUrl` (uri)
 - `bundleId` (string)
 - `contentRightsDeclaration` (string): **Allowed Values**: `DOES_NOT_USE_THIRD_PARTY_CONTENT`, `USES_THIRD_PARTY_CONTENT`
 - `primaryLocale` (string)
-- `streamlinedPurchasingEnabled` (boolean)
 - `subscriptionStatusUrl` (uri)
 - `subscriptionStatusUrlForSandbox` (uri)
 - `subscriptionStatusUrlVersion` (SubscriptionStatusUrlVersion)
 - `subscriptionStatusUrlVersionForSandbox` (SubscriptionStatusUrlVersion)
+- `groupPurchaseInvitationMode` (string): Who hosts the seat invitations for multiseat subscription purchases that customers make in your app on the App Store. Use APPLE_HOSTED for Apple to send invitations and manage how members accept them, or DEVELOPER_HOSTED for your app to host its own invitation and seat acceptance flow. The default is APPLE_HOSTED.
+
+  **Allowed Values**: `APPLE_HOSTED`, `DEVELOPER_HOSTED`
+- `accessibilityUrl` (uri)
+- `streamlinedPurchasingEnabled` (boolean)
 
 
 ---

@@ -24,7 +24,7 @@ enum RequestType
 - [IdentityDocumentWebPresentmentRawRequest.RequestType.iso18013MobileDocument](./requesttype-swift.enum/iso18013mobiledocument.md)
   A case that corresponds to the request format defined in ISO 18013-7.
 - [IdentityDocumentWebPresentmentRawRequest.RequestType.openID4VP(_:)](./requesttype-swift.enum/openid4vp%28_%29.md)
-  Corresponds to a request format defined in OpenID for Verifiable Presentations, carrying the exchange protocol the request arrived as.
+  A value that corresponds to a request format defined in OpenID for Verifiable Presentations, with the exchange protocol that the request uses.
 
 ## Relationships
 

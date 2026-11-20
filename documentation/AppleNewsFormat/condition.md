@@ -17,6 +17,7 @@ object Condition
 
 ## Mentions
 
+- [Apple News Format Best Practices and Guidelines](../AppleNews/apple-news-format-best-practices-and-guidelines.md)
 - [Apple News Format Release Notes](../AppleNews/apple-news-format-release-notes.md)
 - [Giving the Article a Dark Color Scheme](../AppleNews/giving-the-article-a-dark-color-scheme.md)
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)

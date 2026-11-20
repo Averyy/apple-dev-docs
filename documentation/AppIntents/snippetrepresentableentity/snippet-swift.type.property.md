@@ -23,6 +23,10 @@ The snippet that contains the view to display.
 <Self> static var snippet: Self.Body { get }
 ```
 
+## Mentions
+
+- [Presenting an entity as a card snippet](../presenting-an-entity-as-a-card-snippet.md)
+
 ## Discussion
 
 Set the value of this property to a result builder that returns a [`CardSnippet`](../cardsnippet.md) type. Initialize the type with the SwiftUI view that displays the content from the provided entity. The following example shows an implementation of this property for an app entity that manages one of the app’s photos. The `PhotoCardView` is a custom SwiftUI view from the app that displays the provided entity and other relevant information.

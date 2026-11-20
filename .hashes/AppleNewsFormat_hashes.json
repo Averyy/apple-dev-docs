@@ -2,7 +2,7 @@
   "hashes": {
     "https://developer.apple.com/documentation/applenewsformat": {
       "file_path": "documentation/AppleNewsFormat/AppleNewsFormat.md",
-      "hash": "67ab7519c762ba5356f2c4a4d28703e16cb6fda96cf5e28d50b514d0a9752e79"
+      "hash": "3d66218e900ee5a4e7de764180b36b1ce28a5857acf4282aba6b5c306872f214"
     },
     "https://developer.apple.com/documentation/applenewsformat/addition": {
       "file_path": "documentation/AppleNewsFormat/addition.md",
@@ -34,7 +34,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/articledocument": {
       "file_path": "documentation/AppleNewsFormat/articledocument.md",
-      "hash": "ff76ffbebd10ef8e2d701b08d9ef0da36ab2f9824f321d27e4163bf48685361b"
+      "hash": "d1a273a55ce882f844d08e31d739f277e1beb818df7e4dad302f707bb499e37a"
     },
     "https://developer.apple.com/documentation/applenewsformat/articledocument/colorscheme-data.dictionary": {
       "file_path": "documentation/AppleNewsFormat/articledocument/colorscheme-data.dictionary.md",
@@ -70,7 +70,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/aside": {
       "file_path": "documentation/AppleNewsFormat/aside.md",
-      "hash": "504d78c66c9bf85befe0c919faa5a52e7d4f1a0d67966340efbe08d6899b372e"
+      "hash": "93eac6a77ed37b881cbf36bb298fde54ff955b19a2bf4503834e488b47c8af97"
     },
     "https://developer.apple.com/documentation/applenewsformat/audio": {
       "file_path": "documentation/AppleNewsFormat/audio.md",
@@ -78,7 +78,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/author": {
       "file_path": "documentation/AppleNewsFormat/author.md",
-      "hash": "15a7147ef5e4196c940066d46ccb3e8fdcaa599fbf2c5cc3475d5952645bb6df"
+      "hash": "66afa7e56bc19618e9f06a9ef662b5e4541daf9df5d366bb9124f40a0e9d490b"
     },
     "https://developer.apple.com/documentation/applenewsformat/autoplacement": {
       "file_path": "documentation/AppleNewsFormat/autoplacement.md",
@@ -106,7 +106,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/body": {
       "file_path": "documentation/AppleNewsFormat/body.md",
-      "hash": "322e2a2017e6ec948f76f2c50bb753f9951d44c703f09e878feff265507c1716"
+      "hash": "f4a294b7ce2fdd3babbaa1696bfe0c1ad010235cdd03de70e3fda3f81eb0af65"
     },
     "https://developer.apple.com/documentation/applenewsformat/border": {
       "file_path": "documentation/AppleNewsFormat/border.md",
@@ -114,7 +114,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/byline": {
       "file_path": "documentation/AppleNewsFormat/byline.md",
-      "hash": "952b20aa943fa9e365ff4e3d875b137911403faa1b2c62d90d95ebeaac6f0fcd"
+      "hash": "0315814e7effcb40e354e541af7fa948c16bb3ade79eb5918aaf52e593c97cb0"
     },
     "https://developer.apple.com/documentation/applenewsformat/caption": {
       "file_path": "documentation/AppleNewsFormat/caption.md",
@@ -178,7 +178,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/condition": {
       "file_path": "documentation/AppleNewsFormat/condition.md",
-      "hash": "8da35efcf24988cead20178e013372468f60ded0c00c4356339c44a60e3cda23"
+      "hash": "c99f641f47efb5278d6091876beac79f3accc85e8decb61bff934470fd352836"
     },
     "https://developer.apple.com/documentation/applenewsformat/conditionalautoplacement": {
       "file_path": "documentation/AppleNewsFormat/conditionalautoplacement.md",
@@ -242,7 +242,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/container": {
       "file_path": "documentation/AppleNewsFormat/container.md",
-      "hash": "f1297437ebf0adf8283dd1a5ffcb89be54d03b38365da0b3c86ac427293e865c"
+      "hash": "c45824582384755750e261c7b07e9d0c92ba241543b391b1edf138aca6b113fe"
     },
     "https://developer.apple.com/documentation/applenewsformat/cornermask": {
       "file_path": "documentation/AppleNewsFormat/cornermask.md",
@@ -390,7 +390,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/linkedarticle": {
       "file_path": "documentation/AppleNewsFormat/linkedarticle.md",
-      "hash": "b6839be4dfbcac5dbaf318302b53a46511e75b704ad34197ce67584a578add11"
+      "hash": "9e3eb90133cb5a4b027f6c13d8c88ce0fccc65e5a62d4271b52eab3f569d74a8"
     },
     "https://developer.apple.com/documentation/applenewsformat/listitemstyle": {
       "file_path": "documentation/AppleNewsFormat/listitemstyle.md",
@@ -422,7 +422,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/metadata": {
       "file_path": "documentation/AppleNewsFormat/metadata.md",
-      "hash": "2b1ff51524182178bf8b4cf7569f4f70c371e69895a6c80ebd8db3c4e55e2dfb"
+      "hash": "76f9bb5c51ddbd076faf67ff5a65684e6b8858c5bdcee443861bf83ea2541456"
     },
     "https://developer.apple.com/documentation/applenewsformat/metadata/campaigndata-data.dictionary": {
       "file_path": "documentation/AppleNewsFormat/metadata/campaigndata-data.dictionary.md",
@@ -478,7 +478,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/publisherarticleidentifier": {
       "file_path": "documentation/AppleNewsFormat/publisherarticleidentifier.md",
-      "hash": "91ef4cca5b74ace08075d5dc0f0399d312511c317668af047d4f42eb2cd8ecf0"
+      "hash": "36b7cfc56c13354040b67b66aa198aee104b5bf3757b15d796548c47c2f313b5"
     },
     "https://developer.apple.com/documentation/applenewsformat/pullquote": {
       "file_path": "documentation/AppleNewsFormat/pullquote.md",
@@ -598,7 +598,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/textstyle": {
       "file_path": "documentation/AppleNewsFormat/textstyle.md",
-      "hash": "de00578c44ffd367a83be09720e6b84b9d6f623570fa84f7e7d508100d88eecd"
+      "hash": "22df16012e536e838efb2b25d2449fd01c61bf31754d41928d8385140840be35"
     },
     "https://developer.apple.com/documentation/applenewsformat/tiktok": {
       "file_path": "documentation/AppleNewsFormat/tiktok.md",
@@ -606,7 +606,7 @@
     },
     "https://developer.apple.com/documentation/applenewsformat/title": {
       "file_path": "documentation/AppleNewsFormat/title.md",
-      "hash": "a2d1e64b0bccc06b886144fa2d527605ab45c59efb27fb5e9b98b7ad4fca99db"
+      "hash": "0303db593710f586b0e973af7c045cd4866dfbdbf510444d640590593fd9b663"
     },
     "https://developer.apple.com/documentation/applenewsformat/tweet": {
       "file_path": "documentation/AppleNewsFormat/tweet.md",
@@ -622,7 +622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat.json": {
       "file_path": "documentation/AppleNewsFormat/AppleNewsFormat.md",
-      "hash": "67ab7519c762ba5356f2c4a4d28703e16cb6fda96cf5e28d50b514d0a9752e79"
+      "hash": "3d66218e900ee5a4e7de764180b36b1ce28a5857acf4282aba6b5c306872f214"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/addition.json": {
       "file_path": "documentation/AppleNewsFormat/addition.md",
@@ -654,7 +654,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/articledocument.json": {
       "file_path": "documentation/AppleNewsFormat/articledocument.md",
-      "hash": "ff76ffbebd10ef8e2d701b08d9ef0da36ab2f9824f321d27e4163bf48685361b"
+      "hash": "d1a273a55ce882f844d08e31d739f277e1beb818df7e4dad302f707bb499e37a"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/articledocument/colorscheme-data.dictionary.json": {
       "file_path": "documentation/AppleNewsFormat/articledocument/colorscheme-data.dictionary.md",
@@ -690,7 +690,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/aside.json": {
       "file_path": "documentation/AppleNewsFormat/aside.md",
-      "hash": "504d78c66c9bf85befe0c919faa5a52e7d4f1a0d67966340efbe08d6899b372e"
+      "hash": "93eac6a77ed37b881cbf36bb298fde54ff955b19a2bf4503834e488b47c8af97"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/audio.json": {
       "file_path": "documentation/AppleNewsFormat/audio.md",
@@ -698,7 +698,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/author.json": {
       "file_path": "documentation/AppleNewsFormat/author.md",
-      "hash": "15a7147ef5e4196c940066d46ccb3e8fdcaa599fbf2c5cc3475d5952645bb6df"
+      "hash": "66afa7e56bc19618e9f06a9ef662b5e4541daf9df5d366bb9124f40a0e9d490b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/autoplacement.json": {
       "file_path": "documentation/AppleNewsFormat/autoplacement.md",
@@ -726,7 +726,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/body.json": {
       "file_path": "documentation/AppleNewsFormat/body.md",
-      "hash": "322e2a2017e6ec948f76f2c50bb753f9951d44c703f09e878feff265507c1716"
+      "hash": "f4a294b7ce2fdd3babbaa1696bfe0c1ad010235cdd03de70e3fda3f81eb0af65"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/border.json": {
       "file_path": "documentation/AppleNewsFormat/border.md",
@@ -734,7 +734,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/byline.json": {
       "file_path": "documentation/AppleNewsFormat/byline.md",
-      "hash": "952b20aa943fa9e365ff4e3d875b137911403faa1b2c62d90d95ebeaac6f0fcd"
+      "hash": "0315814e7effcb40e354e541af7fa948c16bb3ade79eb5918aaf52e593c97cb0"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/caption.json": {
       "file_path": "documentation/AppleNewsFormat/caption.md",
@@ -798,7 +798,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/condition.json": {
       "file_path": "documentation/AppleNewsFormat/condition.md",
-      "hash": "8da35efcf24988cead20178e013372468f60ded0c00c4356339c44a60e3cda23"
+      "hash": "c99f641f47efb5278d6091876beac79f3accc85e8decb61bff934470fd352836"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/conditionalautoplacement.json": {
       "file_path": "documentation/AppleNewsFormat/conditionalautoplacement.md",
@@ -862,7 +862,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/container.json": {
       "file_path": "documentation/AppleNewsFormat/container.md",
-      "hash": "f1297437ebf0adf8283dd1a5ffcb89be54d03b38365da0b3c86ac427293e865c"
+      "hash": "c45824582384755750e261c7b07e9d0c92ba241543b391b1edf138aca6b113fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/cornermask.json": {
       "file_path": "documentation/AppleNewsFormat/cornermask.md",
@@ -1010,7 +1010,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/linkedarticle.json": {
       "file_path": "documentation/AppleNewsFormat/linkedarticle.md",
-      "hash": "b6839be4dfbcac5dbaf318302b53a46511e75b704ad34197ce67584a578add11"
+      "hash": "9e3eb90133cb5a4b027f6c13d8c88ce0fccc65e5a62d4271b52eab3f569d74a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/listitemstyle.json": {
       "file_path": "documentation/AppleNewsFormat/listitemstyle.md",
@@ -1042,7 +1042,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/metadata.json": {
       "file_path": "documentation/AppleNewsFormat/metadata.md",
-      "hash": "2b1ff51524182178bf8b4cf7569f4f70c371e69895a6c80ebd8db3c4e55e2dfb"
+      "hash": "76f9bb5c51ddbd076faf67ff5a65684e6b8858c5bdcee443861bf83ea2541456"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/metadata/campaigndata-data.dictionary.json": {
       "file_path": "documentation/AppleNewsFormat/metadata/campaigndata-data.dictionary.md",
@@ -1098,7 +1098,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/publisherarticleidentifier.json": {
       "file_path": "documentation/AppleNewsFormat/publisherarticleidentifier.md",
-      "hash": "91ef4cca5b74ace08075d5dc0f0399d312511c317668af047d4f42eb2cd8ecf0"
+      "hash": "36b7cfc56c13354040b67b66aa198aee104b5bf3757b15d796548c47c2f313b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/pullquote.json": {
       "file_path": "documentation/AppleNewsFormat/pullquote.md",
@@ -1218,7 +1218,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/textstyle.json": {
       "file_path": "documentation/AppleNewsFormat/textstyle.md",
-      "hash": "de00578c44ffd367a83be09720e6b84b9d6f623570fa84f7e7d508100d88eecd"
+      "hash": "22df16012e536e838efb2b25d2449fd01c61bf31754d41928d8385140840be35"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/tiktok.json": {
       "file_path": "documentation/AppleNewsFormat/tiktok.md",
@@ -1226,7 +1226,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/title.json": {
       "file_path": "documentation/AppleNewsFormat/title.md",
-      "hash": "a2d1e64b0bccc06b886144fa2d527605ab45c59efb27fb5e9b98b7ad4fca99db"
+      "hash": "0303db593710f586b0e973af7c045cd4866dfbdbf510444d640590593fd9b663"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsformat/tweet.json": {
       "file_path": "documentation/AppleNewsFormat/tweet.md",

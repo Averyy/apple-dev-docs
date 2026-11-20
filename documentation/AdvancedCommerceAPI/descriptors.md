@@ -29,8 +29,13 @@ object Descriptors
 ### Objects
 - [object Offer](./offer.md)
   A discount offer for an auto-renewable subscription.
+- [object OfferV1](./offerv1.md)
+- [object Partner](./partner.md)
+  The identifier and name of a mini app partner associated with a purchase.
 - [object RequestInfo](./requestinfo.md)
   The metadata to include in server requests.
+- [object SeatPriceTier](./seatpricetier.md)
+  A volume price tier for a subscription item that a customer buys as a multiseat purchase.
 - [object SubscriptionModifyAddItem](./subscriptionmodifyadditem.md)
   The data your app provides to add items when it makes changes to an auto-renewable subscription.
 - [object SubscriptionModifyChangeItem](./subscriptionmodifychangeitem.md)

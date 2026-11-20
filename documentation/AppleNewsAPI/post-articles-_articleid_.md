@@ -371,6 +371,7 @@ The article’s Apple News Format JSON document and other assets, like PDFs, ima
   - `ONLY_PREVIEW_ALLOWED`. This channel is currently allowed to publish preview articles only, but `isPreview` is `false`. Key path: None.
   - `PUBLISHING_NOT_ALLOWED`. This channel is currently not allowed to publish articles. Key path: None.
   - `REQUEST_BODY_TOO_LARGE`. The article bundle size is larger than the allowable size limit. An article bundle exceeding 450 MB generates this error. Key path: None.
+  - `TITLE_TOO_LONG`. The article title is longer than the allowable character limit. A title exceeding 200 characters generates this error. Key path: None.
   - `UNSUPPORTED_ENCODING`. The encoding specified in `Content-Type` or `Content-Transfer-Encoding` isn’t supported. Key path: None.
   - `WRONG_REVISION.` The revision specified doesn’t match the current revision, most likely because another call updated the article. Key path: `data.revision`.
 - `401` Unauthorized (`Error`, `application/json`): You didn’t include the `Authorization` header. Key path: None.

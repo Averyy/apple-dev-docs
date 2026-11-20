@@ -7,7 +7,7 @@
 The SKU, description, and display name to use for a migrated subscription item.
 
 **Availability**:
-- Advanced Commerce API 1.1+
+- Advanced Commerce API 1.3+
 
 ## Declaration
 
@@ -20,12 +20,14 @@ object SubscriptionMigrateItem
 - `SKU` (SKU) *(required)*: The SKU to use for the migrated item.
 
   **Maximum Length**: `128`
+- `bundleItems` ([MigrateBundleItem])
 - `description` (description) *(required)*: The description of the SKU.
 
   **Maximum Length**: `45`
 - `displayName` (displayName) *(required)*: The display name of the SKU.
 
   **Maximum Length**: `30`
+- `partners` ([Partner])
 
 ## See Also
 
@@ -36,10 +38,13 @@ object SubscriptionMigrateItem
   The subscription details you provide to migrate a subscription from Apple In-App Purchase to the Advanced Commerce API, such as descriptors, items, storefront, and more.
 - [object SubscriptionMigrateResponse](./subscriptionmigrateresponse.md)
   A response that contains signed renewal and transaction information after a subscription successfully migrates to the Advanced Commerce API.
+- [object MigrateBundleItem](./migratebundleitem.md)
 - [object SubscriptionMigrateRenewalItem](./subscriptionmigraterenewalitem.md)
   The item information that replaces a migrated subscription item when the subscription renews.
 - [object SubscriptionMigrateDescriptors](./subscriptionmigratedescriptors.md)
   The description and display name of the subscription to migrate to that you manage.
+- [object SubscriptionMigrateRequestV1](./subscriptionmigraterequestv1.md)
+- [object SubscriptionMigrateItemV1](./subscriptionmigrateitemv1.md)
 
 
 ---

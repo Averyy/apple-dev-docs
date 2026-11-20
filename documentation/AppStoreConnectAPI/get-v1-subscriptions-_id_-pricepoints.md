@@ -14,6 +14,7 @@ Get a list of price points for an auto-renewable subscription by territory.
 - [App Store Connect API 2.4 release notes](./app-store-connect-api-2-4-release-notes.md)
 - [App Store Connect API 3.6 release notes](./app-store-connect-api-3-6-release-notes.md)
 - [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
+- [Configuring volume pricing for multiseat subscriptions](./configuring-volume-pricing-for-multi-seat-subscriptions.md)
 - [Managing auto-renewable subscriptions](./managing-auto-renewable-subscriptions.md)
 - [Setting up retention messaging for auto-renewable subscriptions](./setting-up-retention-messaging.md)
 

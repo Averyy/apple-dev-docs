@@ -27,7 +27,7 @@ Mobile documents, or “mdocs”, are a document format defined in ISO 18013-5.
 - [init(mobileDocumentType: String, supportedAuthorityKeyIdentifiers: [Data], documentIdentifier: String, invalidationDate: Date?)](./mobiledocumentregistration/init%28mobiledocumenttype,supportedauthoritykeyidentifiers,documentidentifier,invalidationdate%29.md)
   Initializes a mobile document registration.
 - [init(mobileDocumentType: String, supportedIssuerKeyIdentifiers: [Data], supportedAuthorityKeyIdentifiers: [Data], documentIdentifier: String, invalidationDate: Date?)](./mobiledocumentregistration/init%28mobiledocumenttype,supportedissuerkeyidentifiers,supportedauthoritykeyidentifiers,documentidentifier,invalidationdate%29.md)
-  Initialize a mobile document registration with issuer key identifiers.
+  Initializes a mobile document registration with issuer key identifiers.
 ### Instance Properties
 - [var invalidationDate: Date?](./mobiledocumentregistration/invalidationdate.md)
   A date that indicates when the system needs to invalidate this registration.

@@ -23,7 +23,9 @@ The following table lists the identifiers that make up mini app display names an
 | `[Mini App Partner ID]` | The unique identifier you set for the mini app partner | `WC123` |
 | `[Mini App SKU Identifier]` | The unique identifier you set for the Mini App Product | `boost_pack_id, pro_monthly_id` |
 
-You determine the names and concatenate them to create the display names and SKUs, as specified in the one-time or subscription purchase instructions below, when you use the Advanced Commerce APIs to initiate purchases.
+> ❗ **Important**: V1 and V2 endpoints in Advanced Commerce API support the [`Partner`](./partner.md) object.
+
+To learn more about eligibility and apply for access to the Advanced Commerce API, see [Advanced Commerce API](https://developer.apple.com/in-app-purchase/advanced-commerce-api/). For more about eligibility and to apply for access to the Mini Apps Partner Program, see [Mini Apps Partner Program](https://developer.apple.com/programs/mini-apps-partner/).
 
 ## Initiate a one-time charge purchase
 
@@ -32,22 +34,57 @@ To initiate a one-time charge for a mini app product, use the [`OneTimeChargeCre
 Create the mini app display name using the format `[Mini App Name] - [Mini App Product Name]`. Using the sample values from the table above, `item.displayName` would look like the following example:
 
 ```
-item.displayName = "Anne’s Game - Boost Pack"
+items.displayName = "Anne’s Game - Boost Pack"
 ```
 
 - The display name can use a maximum of 30 characters.
-- The two elements are separated by the ‘-’ character, with a single space on either side of the ‘-’ character.
 
-Create the `item.SKU` using the format `[Mini App SKU Identifier]|[Mini App Partner Name]|[Mini App Partner ID]`
+Create the `items.SKU` using the `[Mini App SKU Identifier]` value.
 
 Using the sample values from the table above, the `items.SKU` would look like the following example:
 
 ```
-item.SKU = "boost_pack_id |Apple_Seed|WC123"
+items.SKU = "boost_pack_id"
 ```
 
 - The SKU value needs to be unique within your app and can use a maximum of 128 characters.
-- All three elements are separated by the ‘|’ character and all three elements must be present.
+
+Provide `[Mini App Partner Name]` and `[Mini App Partner ID]` for the purchase associated with the Mini App.
+
+```
+partners.id = "WC123"
+```
+
+```
+partners.name = "Apple Seed"
+```
+
+### Example: Create a one-time charge
+
+```json
+{
+    "operation": "CREATE_ONE_TIME_CHARGE",
+    "version": "2",
+    "requestInfo": {
+        "requestReferenceId": "f55df048-4cd8-4261-b404-b6f813ff70e5"
+    },
+    "currency": "USD",
+    "taxCode": "C003-00-2",
+    "storefront": "USA",
+    "items":[{
+        "SKU": "boost_pack_id",
+        "displayName": "Anne’s Game - Boost Pack",
+        "description": "Boost Pack for Anne's Game",
+        "price": 4990,
+        "partners": [
+            {
+                "id": "WC123",
+                "name": "Apple Seed"
+            }
+        ]
+    }]
+}
+```
 
 ## Initiate a subscription purchase
 
@@ -67,13 +104,50 @@ The product display name can use a maximum of 30 characters and follow this form
 items.displayName = "Pro Monthly"
 ```
 
-The SKU value needs to be unique within your app and can use a maximum of 128 characters and follows this format: items.SKU = `[Mini App SKU Identifier]|[Mini App Partner Name]|[Mini App Partner ID]`, for example
+The SKU value needs to be unique within your app, can use a maximum of 128 characters, and follows this format: `items.SKU` = `[Mini App SKU Identifier]`; for example:
 
 ```
-items.SKU = "pro_monthly_id|Apple_Seed|WC123"
+items.SKU = "pro_monthly_id"
 ```
 
-All three elements are separated by the ‘|’ character and all three elements must be present.
+Provide `[Mini App Partner Name]` and `[Mini App Partner ID]` for the purchase associated with the Mini App.
+
+```
+partners.id = "WC123"
+```
+
+```
+partners.name = "Apple Seed"
+```
+
+### Example: Request a subscription purchase
+
+```json
+{
+    "operation": "CREATE_SUBSCRIPTION", 
+    "version": "2",
+    "requestInfo": {
+        "requestReferenceId": "f55df048-4cd8-4261-b404-b6f813ff70e5"
+    },
+    "storefront": "USA",
+    "currency": "USD",
+    "taxCode": "C003-00-1",
+    "displayName": "Anne's Game",
+    "period": "P1M",
+    "items": [
+        {
+            "SKU": "pro_monthly_id",
+            "displayName": "Pro Monthly",
+            "description": "Subscription for Anne's Game",
+            "price": 6990,
+            "partners": [{
+                "id": "WC123",
+                "name": "Apple Seed"
+            }]
+        }
+    ]
+}
+```
 
 ## See Also
 
@@ -82,6 +156,8 @@ All three elements are separated by the ‘|’ character and all three elements
   Configure the generic product IDs in App Store Connect that the Advanced Commerce API requires.
 - [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md)
   Define and manage one-time charges, subscriptions, and bundled subscriptions within your app.
+- [Creating multiseat purchases](./creating-multiseat-purchases.md)
+  Sell subscriptions that a customer buys for a group through Group Purchases, with per-seat or volume discount pricing.
 
 
 ---
