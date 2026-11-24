@@ -13,6 +13,8 @@ An `AsyncSequence` that iterates over every non-nil element from the original `A
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -30,7 +32,7 @@ struct AsyncCompactedSequence<Base, Element> where Base : AsyncSequence, Base.El
 - [AsyncCompactedSequence.Iterator](./asynccompactedsequence/iterator.md)
   The iterator for an `AsyncCompactedSequence` instance.
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncCompactedSequence<Base, Element>.Iterator](./asynccompactedsequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asynccompactedsequence/makeasynciterator%28%29.md)
 ### Default Implementations
 - [AsyncSequence Implementations](./asynccompactedsequence/asyncsequence-implementations.md)
 - [AsyncSequence Implementations](./asynccompactedsequence/asyncsequence-implementations.md)

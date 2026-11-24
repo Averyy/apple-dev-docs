@@ -45,7 +45,7 @@ let apiVersions = try await config.fetchIntArray(forKey: ["api", "versions"], as
 - `key`: The config key to look up.
 - `type`: The element type to convert each integer value to.
 - `isSecret`: Whether the value should be treated as secret for logging and debugging purposes.
-- `defaultValue`: The fallback array returned when the config value is missing or invalid.
+- `defaultValue`: The fallback array returned when the config value is missing.
 - `fileID`: The file ID where this call originates. Used for access reporting.
 - `line`: The line number where this call originates. Used for access reporting.
 

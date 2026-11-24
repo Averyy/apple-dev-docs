@@ -13,6 +13,8 @@ Inherited from `AsyncSequence.makeAsyncIterator()`.
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Inherited from `AsyncSequence.makeAsyncIterator()`.
 ## Declaration
 
 ```swift
-func makeAsyncIterator() -> AsyncCombineLatest3Sequence<Base1, Base2, Base3>.AsyncIterator
+func makeAsyncIterator() -> AsyncIterator
 ```
 
 

@@ -13,6 +13,8 @@ A type that indicates the result of sending elements to the source.
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -30,7 +32,7 @@ enum SendResult
 - [MultiProducerSingleConsumerAsyncChannel.Source.SendResult.CallbackHandle](./sendresult/callbackhandle.md)
   A handle that is returned when the channel’s backpressure strategy indicated that production should be suspended. Use this handle to enqueue a callback by  calling the [`enqueueCallback(onProduceMore:)`](./sendresult/callbackhandle/enqueuecallback%28onproducemore%29.md) method.
 ### Enumeration Cases
-- [case enqueueCallback(MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.SendResult.CallbackHandle)](./sendresult/enqueuecallback%28_%29.md)
+- [MultiProducerSingleConsumerAsyncChannel.Source.SendResult.enqueueCallback(_:)](./sendresult/enqueuecallback%28_%29.md)
   Indicates that a callback should be enqueued.
 - [MultiProducerSingleConsumerAsyncChannel.Source.SendResult.produceMore](./sendresult/producemore.md)
   Indicates that more elements should be produced and send to the source.

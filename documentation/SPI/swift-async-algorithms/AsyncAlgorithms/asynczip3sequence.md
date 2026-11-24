@@ -13,6 +13,8 @@ An asynchronous sequence that concurrently awaits values from three `AsyncSequen
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -28,7 +30,7 @@ struct AsyncZip3Sequence<Base1, Base2, Base3> where Base1 : Sendable, Base1 : As
 ### Structures
 - [AsyncZip3Sequence.Iterator](./asynczip3sequence/iterator.md)
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncZip3Sequence<Base1, Base2, Base3>.AsyncIterator](./asynczip3sequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> AsyncIterator](./asynczip3sequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncZip3Sequence.AsyncIterator](./asynczip3sequence/asynciterator.md)
 - [AsyncZip3Sequence.Element](./asynczip3sequence/element.md)

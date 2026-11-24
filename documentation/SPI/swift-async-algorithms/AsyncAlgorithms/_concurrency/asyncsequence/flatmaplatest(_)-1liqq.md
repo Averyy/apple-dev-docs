@@ -11,6 +11,8 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -19,7 +21,7 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 ## Declaration
 
 ```swift
-func flatMapLatest<T>(_ transform: @escaping @Sendable (Self.Element) -> T) -> some Sendable & AsyncSequence<T.Element, Self.Failure> where T : Sendable, T : AsyncSequence, Self.Element : Sendable, T.Element : Sendable, T.Failure == Never
+func flatMapLatest<T>(_ transform: @escaping @Sendable (Element) -> T) -> some AsyncSequence<T.Element, Failure> & Sendable where T : Sendable, T : AsyncSequence, Self.Element : Sendable, T.Element : Sendable, T.Failure == Never
 ```
 
 Available when `Self` conforms to `Sendable`.

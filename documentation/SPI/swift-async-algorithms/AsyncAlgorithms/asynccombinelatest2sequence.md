@@ -13,6 +13,8 @@ An `AsyncSequence` that combines the latest values produced from two asynchronou
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -28,7 +30,7 @@ struct AsyncCombineLatest2Sequence<Base1, Base2> where Base1 : Sendable, Base1 :
 ### Structures
 - [AsyncCombineLatest2Sequence.Iterator](./asynccombinelatest2sequence/iterator.md)
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncCombineLatest2Sequence<Base1, Base2>.AsyncIterator](./asynccombinelatest2sequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> AsyncIterator](./asynccombinelatest2sequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncCombineLatest2Sequence.AsyncIterator](./asynccombinelatest2sequence/asynciterator.md)
 - [AsyncCombineLatest2Sequence.Element](./asynccombinelatest2sequence/element.md)

@@ -13,6 +13,8 @@ An error-throwing channel for sending elements from on task to another with back
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -34,11 +36,11 @@ The `AsyncThrowingChannel` class is intended to be used as a communication types
 ### Initializers
 - [init()](./asyncthrowingchannel/init%28%29.md)
 ### Instance Methods
-- [func fail(any Error)](./asyncthrowingchannel/fail%28_%29.md)
+- [func fail(Error)](./asyncthrowingchannel/fail%28_%29.md)
   Sends an error to all awaiting iterations. All subsequent calls to `next(_:)` will resume immediately.
 - [func finish()](./asyncthrowingchannel/finish%28%29.md)
   Immediately resumes all the suspended operations. All subsequent calls to `next(_:)` will resume immediately.
-- [func makeAsyncIterator() -> AsyncThrowingChannel<Element, Failure>.Iterator](./asyncthrowingchannel/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asyncthrowingchannel/makeasynciterator%28%29.md)
 - [func send(Element) async](./asyncthrowingchannel/send%28_%29.md)
   Sends an element to an awaiting iteration. This function will resume when the next call to `next()` is made or when a call to `finish()` or `fail` is made from another task. If the channel is already finished then this returns immediately. If the task is cancelled, this function will resume without sending the element. Other sending operations from other tasks will remain active.
 ### Type Aliases

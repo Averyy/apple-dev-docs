@@ -13,6 +13,8 @@ Converts the channel to an asynchronous sequence for consumption.
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,7 +23,7 @@ Converts the channel to an asynchronous sequence for consumption.
 ## Declaration
 
 ```swift
-consuming func elements() -> some Sendable & AsyncSequence<Element, Failure>
+consuming func elements() -> some (AsyncSequence<Element, Failure> & Sendable)
 ```
 
 Available when `Failure` conforms to `Error`.

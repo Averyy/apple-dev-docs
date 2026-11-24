@@ -13,6 +13,8 @@ An `AsyncSequence` that iterates over the adjacent pairs of the original `AsyncS
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -30,7 +32,7 @@ struct AsyncAdjacentPairsSequence<Base> where Base : AsyncSequence
 - [AsyncAdjacentPairsSequence.Iterator](./asyncadjacentpairssequence/iterator.md)
   The iterator for an `AsyncAdjacentPairsSequence` instance.
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncAdjacentPairsSequence<Base>.Iterator](./asyncadjacentpairssequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asyncadjacentpairssequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncAdjacentPairsSequence.Element](./asyncadjacentpairssequence/element.md)
 ### Default Implementations

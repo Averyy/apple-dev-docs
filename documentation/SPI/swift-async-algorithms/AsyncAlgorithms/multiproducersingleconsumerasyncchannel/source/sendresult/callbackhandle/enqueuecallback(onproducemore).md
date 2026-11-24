@@ -13,6 +13,8 @@ Enqueues a callback that will be invoked once more elements should be produced.
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,7 +23,7 @@ Enqueues a callback that will be invoked once more elements should be produced.
 ## Declaration
 
 ```swift
-mutating func enqueueCallback(onProduceMore: sending @escaping (Result<Void, any Error>) -> Void)
+mutating func enqueueCallback(onProduceMore: sending @escaping (Result<Void, Error>) -> Void)
 ```
 
 ## Discussion

@@ -13,6 +13,8 @@ Creates an asynchronous buffered byte iterator with a specified capacity and rea
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Creates an asynchronous buffered byte iterator with a specified capacity and rea
 ## Declaration
 
 ```swift
-init(capacity: Int, readFunction: @escaping @Sendable (UnsafeMutableRawBufferPointer) async throws -> Int)
+init(capacity: Int, readFunction: @Sendable @escaping (UnsafeMutableRawBufferPointer) async throws -> Int)
 ```
 
 ## Parameters

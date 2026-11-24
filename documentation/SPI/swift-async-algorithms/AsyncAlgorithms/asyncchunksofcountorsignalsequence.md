@@ -13,6 +13,8 @@ An `AsyncSequence` that chunks elements into collected `RangeReplaceableCollecti
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -29,7 +31,7 @@ struct AsyncChunksOfCountOrSignalSequence<Base, Collected, Signal> where Base : 
 - [AsyncChunksOfCountOrSignalSequence.Iterator](./asyncchunksofcountorsignalsequence/iterator.md)
   The iterator for a `AsyncChunksOfCountOrSignalSequence` instance.
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncChunksOfCountOrSignalSequence<Base, Collected, Signal>.Iterator](./asyncchunksofcountorsignalsequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asyncchunksofcountorsignalsequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncChunksOfCountOrSignalSequence.Element](./asyncchunksofcountorsignalsequence/element.md)
 ### Default Implementations

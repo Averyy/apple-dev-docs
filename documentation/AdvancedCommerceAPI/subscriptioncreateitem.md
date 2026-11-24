@@ -27,7 +27,7 @@ object SubscriptionCreateItem
 
 > ❗ **Important**: Multiseat purchases are only available in the sandbox environment.
 
-To sell a subscription item as a multiseat purchase, provide one to five [`SeatPriceTier`](./seatpricetier.md) objects in `seatPriceTiers`, and the number of seats in [`finalQuantity`](./subscriptioncreateitem/finalquantity.md), instead of a `price`. A multiseat subscription contains a single item; the item can’t include `bundleItems`, so you can’t sell a bundle or a suite as a multiseat purchase. For more information, see [Creating multiseat purchases](./creating-multiseat-purchases.md).
+To sell a subscription item as a multiseat purchase, provide one to five [`SeatPriceTier`](./seatpricetier.md) objects in `seatPriceTiers`, and the number of seats in `finalQuantity`, instead of a `price`. A multiseat subscription contains a single item; the item can’t include `bundleItems`, so you can’t sell a bundle or a suite as a multiseat purchase. For more information, see [Creating multiseat purchases](./creating-multiseat-purchases.md).
 
 ## Properties
 

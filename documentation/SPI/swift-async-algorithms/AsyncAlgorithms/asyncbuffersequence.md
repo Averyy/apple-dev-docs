@@ -13,6 +13,8 @@ An `AsyncSequence` that buffers elements in regard to a policy.
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -28,7 +30,7 @@ struct AsyncBufferSequence<Base> where Base : Sendable, Base : AsyncSequence
 ### Structures
 - [AsyncBufferSequence.Iterator](./asyncbuffersequence/iterator.md)
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncBufferSequence<Base>.Iterator](./asyncbuffersequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asyncbuffersequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncBufferSequence.AsyncIterator](./asyncbuffersequence/asynciterator.md)
 - [AsyncBufferSequence.Element](./asyncbuffersequence/element.md)

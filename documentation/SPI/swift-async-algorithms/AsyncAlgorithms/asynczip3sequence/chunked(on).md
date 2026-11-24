@@ -13,6 +13,8 @@ Creates an asynchronous sequence that creates chunks on the uniqueness of a give
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Creates an asynchronous sequence that creates chunks on the uniqueness of a give
 ## Declaration
 
 ```swift
-func chunked<Subject>(on projection: @escaping @Sendable (Self.Element) -> Subject) -> AsyncChunkedOnProjectionSequence<Self, Subject, [Self.Element]> where Subject : Equatable
+func chunked<Subject>(on projection: @escaping @Sendable (Element) -> Subject) -> AsyncChunkedOnProjectionSequence<Self, Subject, [Element]> where Subject : Equatable
 ```
 
 

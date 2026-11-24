@@ -13,6 +13,8 @@ An `AsyncSequence` that chunks on a subject when it differs from the last elemen
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -29,7 +31,7 @@ struct AsyncChunkedOnProjectionSequence<Base, Subject, Collected> where Base : A
 - [AsyncChunkedOnProjectionSequence.Iterator](./asyncchunkedonprojectionsequence/iterator.md)
   The iterator for a `AsyncChunkedOnProjectionSequence` instance.
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncChunkedOnProjectionSequence<Base, Subject, Collected>.Iterator](./asyncchunkedonprojectionsequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asyncchunkedonprojectionsequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncChunkedOnProjectionSequence.Element](./asyncchunkedonprojectionsequence/element.md)
 ### Default Implementations

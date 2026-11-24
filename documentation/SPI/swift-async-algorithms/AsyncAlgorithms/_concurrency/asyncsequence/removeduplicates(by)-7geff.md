@@ -13,6 +13,8 @@ Creates an asynchronous sequence that omits repeated elements by testing them wi
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Creates an asynchronous sequence that omits repeated elements by testing them wi
 ## Declaration
 
 ```swift
-func removeDuplicates(by predicate: @escaping @Sendable (Self.Element, Self.Element) async -> Bool) -> AsyncRemoveDuplicatesSequence<Self>
+func removeDuplicates(by predicate: @escaping @Sendable (Element, Element) async -> Bool) -> AsyncRemoveDuplicatesSequence<Self>
 ```
 
 

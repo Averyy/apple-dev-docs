@@ -13,6 +13,8 @@ Creates an asynchronous sequence that creates chunks by testing if elements belo
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Creates an asynchronous sequence that creates chunks by testing if elements belo
 ## Declaration
 
 ```swift
-func chunked(by belongInSameGroup: @escaping @Sendable (Self.Element, Self.Element) -> Bool) -> AsyncChunkedByGroupSequence<Self, [Self.Element]>
+func chunked(by belongInSameGroup: @escaping @Sendable (Element, Element) -> Bool) -> AsyncChunkedByGroupSequence<Self, [Element]>
 ```
 
 

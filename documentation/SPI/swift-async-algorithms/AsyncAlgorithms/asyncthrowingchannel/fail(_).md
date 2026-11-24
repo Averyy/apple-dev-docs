@@ -13,6 +13,8 @@ Sends an error to all awaiting iterations. All subsequent calls to `next(_:)` wi
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Sends an error to all awaiting iterations. All subsequent calls to `next(_:)` wi
 ## Declaration
 
 ```swift
-func fail(_ error: any Error) where Failure == any Error
+func fail(_ error: Error) where Failure == any Error
 ```
 
 

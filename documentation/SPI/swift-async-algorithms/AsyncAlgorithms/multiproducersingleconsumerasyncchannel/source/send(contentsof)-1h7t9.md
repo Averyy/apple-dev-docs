@@ -13,6 +13,8 @@ Send new elements to the channel.
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -22,7 +24,7 @@ Send new elements to the channel.
 
 ```swift
 nonisolated(nonsending)
-mutating func send<S>(contentsOf sequence: consuming sending S) async throws where Element == S.Element, S : Sequence
+mutating func send<S>(contentsOf sequence: sending consuming S) async throws where Element == S.Element, S : Sequence
 ```
 
 ## Discussion

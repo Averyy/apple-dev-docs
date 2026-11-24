@@ -13,6 +13,8 @@ An `AsyncSequence` that concatenates `AsyncSequence` elements with a separator.
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -29,7 +31,7 @@ struct AsyncJoinedBySeparatorSequence<Base, Separator> where Base : AsyncSequenc
 - [AsyncJoinedBySeparatorSequence.Iterator](./asyncjoinedbyseparatorsequence/iterator.md)
   The iterator for an `AsyncJoinedBySeparatorSequence` instance.
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncJoinedBySeparatorSequence<Base, Separator>.Iterator](./asyncjoinedbyseparatorsequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asyncjoinedbyseparatorsequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncJoinedBySeparatorSequence.AsyncIterator](./asyncjoinedbyseparatorsequence/asynciterator.md)
 - [AsyncJoinedBySeparatorSequence.Element](./asyncjoinedbyseparatorsequence/element.md)

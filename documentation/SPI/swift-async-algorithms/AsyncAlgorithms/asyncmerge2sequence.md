@@ -13,6 +13,8 @@ An `AsyncSequence` that takes two upstream `AsyncSequence`s and combines their e
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+

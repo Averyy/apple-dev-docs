@@ -13,6 +13,8 @@ Creates a shared async sequence that allows multiple concurrent iterations over 
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,7 +23,7 @@ Creates a shared async sequence that allows multiple concurrent iterations over 
 ## Declaration
 
 ```swift
-func share(bufferingPolicy: AsyncBufferSequencePolicy = .bounded(1)) -> some Sendable & AsyncSequence<Self.Element, Self.Failure>
+func share(bufferingPolicy: AsyncBufferSequencePolicy = .bounded(1)) -> some AsyncSequence<Element, Failure> & Sendable
 ```
 
 Available when `Self` conforms to `SendableMetatype`, `AsyncIterator` conforms to `SendableMetatype`, and `Element` conforms to `Sendable`.

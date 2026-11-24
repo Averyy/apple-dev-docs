@@ -24,7 +24,7 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 - [func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>](./flatmap%28_%29-336xw.md)
 - [func flatMap<SegmentOfResult>((Self.Element) async throws -> SegmentOfResult) -> AsyncThrowingFlatMapSequence<Self, SegmentOfResult>](./flatmap%28_%29-511jm.md)
 - [func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>](./flatmap%28_%29-5jv4a.md)
-- [func makeAsyncIterator() -> AsyncChain2Sequence<Base1, Base2>.Iterator](./makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./makeasynciterator%28%29.md)
 - [func map<Transformed>((Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>](./map%28_%29-7nk1f.md)
 - [func map<Transformed>((Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>](./map%28_%29-900ww.md)
 - [func max() async rethrows -> Self.Element?](./max%28%29.md)

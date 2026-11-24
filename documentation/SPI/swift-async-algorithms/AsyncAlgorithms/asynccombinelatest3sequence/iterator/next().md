@@ -13,6 +13,8 @@ Inherited from `AsyncIteratorProtocol.next()`.
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Inherited from `AsyncIteratorProtocol.next()`.
 ## Declaration
 
 ```swift
-mutating func next() async rethrows -> AsyncCombineLatest3Sequence<Base1, Base2, Base3>.Element?
+mutating func next() async rethrows -> Element?
 ```
 
 

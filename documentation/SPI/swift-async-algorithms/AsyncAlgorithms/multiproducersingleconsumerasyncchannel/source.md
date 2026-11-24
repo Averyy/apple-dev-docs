@@ -13,6 +13,8 @@ A struct to send values to the channel.
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -38,23 +40,23 @@ Use this source to provide elements to the channel by calling one of the `send` 
 ### Instance Methods
 - [func finish(throwing: Failure?)](./source/finish%28throwing%29.md)
   Indicates that the production terminated.
-- [func makeAdditionalSource() -> sending MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source](./source/makeadditionalsource%28%29.md)
+- [func makeAdditionalSource() -> sending `Self`](./source/makeadditionalsource%28%29.md)
   Creates a new source which can be used to send elements to the channel concurrently.
-- [func send(consuming sending Element) async throws](./source/send%28_%29-5rwh7.md)
+- [func send(sending consuming Element) async throws](./source/send%28_%29-5rwh7.md)
   Send new element to the channel.
-- [func send(consuming sending Element) throws -> MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.SendResult](./source/send%28_%29-8ar29.md)
+- [func send(sending consuming Element) throws -> SendResult](./source/send%28_%29-8ar29.md)
   Send the element to the channel.
-- [func send(consuming sending Element, onProduceMore: (Result<Void, any Error>) -> Void)](./source/send%28_,onproducemore%29.md)
+- [func send(sending consuming Element, onProduceMore: @Sendable (Result<Void, Error>) -> Void)](./source/send%28_,onproducemore%29.md)
   Sends the element to the channel.
-- [func send<S>(contentsOf: consuming sending S) async throws](./source/send%28contentsof%29-1h7t9.md)
+- [func send<S>(contentsOf: sending consuming S) async throws](./source/send%28contentsof%29-1h7t9.md)
   Send new elements to the channel.
-- [func send<S>(contentsOf: consuming sending S) throws -> MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.SendResult](./source/send%28contentsof%29-3baoz.md)
+- [func send<S>(contentsOf: sending consuming S) throws -> SendResult](./source/send%28contentsof%29-3baoz.md)
   Sends new elements to the channel.
-- [func send<S>(contentsOf: consuming sending S) async throws](./source/send%28contentsof%29-8cw3l.md)
+- [func send<S>(contentsOf: sending consuming S) async throws](./source/send%28contentsof%29-8cw3l.md)
   Send the elements of the asynchronous sequence to the channel.
-- [func send<S>(contentsOf: consuming sending S, onProduceMore: (Result<Void, any Error>) -> Void)](./source/send%28contentsof,onproducemore%29.md)
+- [func send<S>(contentsOf: sending consuming S, onProduceMore: @Sendable (Result<Void, Error>) -> Void)](./source/send%28contentsof,onproducemore%29.md)
   Send new elements to the channel and provide a callback which will be invoked once more elements should be produced.
-- [func setOnTerminationCallback((() -> Void)?)](./source/setonterminationcallback%28_%29.md)
+- [func setOnTerminationCallback((@Sendable () -> Void)?)](./source/setonterminationcallback%28_%29.md)
   Sets a callback to invoke when the channel terminated.
 ### Enumerations
 - [MultiProducerSingleConsumerAsyncChannel.Source.SendResult](./source/sendresult.md)

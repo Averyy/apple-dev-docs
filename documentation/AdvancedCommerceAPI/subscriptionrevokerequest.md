@@ -27,7 +27,7 @@ The `refundType` of a revoke request is `FULL` or `PRORATED`.
 
 > ❗ **Important**: Multiseat purchases are only available in the sandbox environment.
 
-For a subscription that a customer buys as a multiseat purchase, provide a [`revokeSeatQuantity`](./subscriptionrevokerequest/revokeseatquantity.md) to revoke only some of its unclaimed seats. The subscription’s transaction remains valid for its remaining seats, and its automatic renewal status doesn’t change. For more information, see [Creating multiseat purchases](./creating-multiseat-purchases.md).
+For a subscription that a customer buys as a multiseat purchase, provide a `revokeSeatQuantity` to revoke only some of its unclaimed seats. The subscription’s transaction remains valid for its remaining seats, and its automatic renewal status doesn’t change. For more information, see [Creating multiseat purchases](./creating-multiseat-purchases.md).
 
 ## Properties
 

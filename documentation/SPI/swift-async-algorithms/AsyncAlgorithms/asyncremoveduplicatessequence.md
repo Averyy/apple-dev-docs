@@ -13,6 +13,8 @@ An asynchronous sequence that omits repeated elements by testing them with a pre
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -29,7 +31,7 @@ struct AsyncRemoveDuplicatesSequence<Base> where Base : AsyncSequence
 - [AsyncRemoveDuplicatesSequence.Iterator](./asyncremoveduplicatessequence/iterator.md)
   The iterator for an `AsyncRemoveDuplicatesSequence` instance.
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncRemoveDuplicatesSequence<Base>.Iterator](./asyncremoveduplicatessequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asyncremoveduplicatessequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncRemoveDuplicatesSequence.Element](./asyncremoveduplicatessequence/element.md)
 ### Default Implementations

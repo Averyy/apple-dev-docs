@@ -13,6 +13,8 @@ A backpressure strategy using a high and low watermark to suspend and resume pro
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,7 +23,7 @@ A backpressure strategy using a high and low watermark to suspend and resume pro
 ## Declaration
 
 ```swift
-static func watermark(low: Int, high: Int, waterLevelForElement: @escaping @Sendable (borrowing Element) -> Int) -> MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.BackpressureStrategy
+static func watermark(low: Int, high: Int, waterLevelForElement: @escaping @Sendable (borrowing Element) -> Int) -> BackpressureStrategy
 ```
 
 ## Discussion

@@ -13,6 +13,8 @@ A struct containing the initialized channel and source.
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -41,10 +43,10 @@ var source = consume channelAndSource.source
 ## Topics
 
 ### Instance Properties
-- [var source: MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source](./channelandstream/source.md)
+- [var source: Source](./channelandstream/source.md)
   The source.
 ### Instance Methods
-- [func takeChannel() -> sending MultiProducerSingleConsumerAsyncChannel<Element, Failure>](./channelandstream/takechannel%28%29.md)
+- [func takeChannel() -> sending MultiProducerSingleConsumerAsyncChannel](./channelandstream/takechannel%28%29.md)
   Takes and returns the channel.
 
 

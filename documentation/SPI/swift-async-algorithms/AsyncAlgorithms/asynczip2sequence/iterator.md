@@ -11,6 +11,8 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -24,7 +26,7 @@ struct Iterator
 ## Topics
 
 ### Instance Methods
-- [func next() async rethrows -> AsyncZip2Sequence<Base1, Base2>.Element?](./iterator/next%28%29.md)
+- [func next() async rethrows -> Element?](./iterator/next%28%29.md)
 ### Default Implementations
 - [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 

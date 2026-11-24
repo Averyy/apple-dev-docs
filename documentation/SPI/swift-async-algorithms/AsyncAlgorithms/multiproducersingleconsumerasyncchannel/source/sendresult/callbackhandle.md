@@ -13,6 +13,8 @@ A handle that is returned when the channel’s backpressure strategy indicated t
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -31,11 +33,11 @@ struct CallbackHandle
 ## Topics
 
 ### Operators
-- [static func == (MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.SendResult.CallbackHandle, MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.SendResult.CallbackHandle) -> Bool](./callbackhandle/eqeq%28_,_%29.md)
+- [static func == (`Self`, `Self`) -> Bool](./callbackhandle/eqeq%28_,_%29.md)
 ### Instance Methods
 - [func cancelCallback()](./callbackhandle/cancelcallback%28%29.md)
   Cancel an enqueued callback.
-- [func enqueueCallback(onProduceMore: sending (Result<Void, any Error>) -> Void)](./callbackhandle/enqueuecallback%28onproducemore%29.md)
+- [func enqueueCallback(onProduceMore: sending (Result<Void, Error>) -> Void)](./callbackhandle/enqueuecallback%28onproducemore%29.md)
   Enqueues a callback that will be invoked once more elements should be produced.
 - [func hash(into: inout Hasher)](./callbackhandle/hash%28into%29.md)
 ### Default Implementations

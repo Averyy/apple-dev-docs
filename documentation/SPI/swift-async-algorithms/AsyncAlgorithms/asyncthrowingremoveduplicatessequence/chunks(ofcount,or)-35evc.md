@@ -13,6 +13,8 @@ Creates an asynchronous sequence that creates chunks of a given count or when an
 
 **Availability**:
 - iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - watchOS 9.0+
@@ -20,7 +22,7 @@ Creates an asynchronous sequence that creates chunks of a given count or when an
 ## Declaration
 
 ```swift
-func chunks<C>(ofCount count: Int, or timer: AsyncTimerSequence<C>) -> AsyncChunksOfCountOrSignalSequence<Self, [Self.Element], AsyncTimerSequence<C>> where Self : Sendable, C : Clock, Self.Element : Sendable
+func chunks<C>(ofCount count: Int, or timer: AsyncTimerSequence<C>) -> AsyncChunksOfCountOrSignalSequence<Self, [Element], AsyncTimerSequence<C>> where Self : Sendable, C : Clock, Self.Element : Sendable
 ```
 
 

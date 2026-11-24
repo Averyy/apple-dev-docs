@@ -14,7 +14,7 @@ Inherited from `Equatable.!=(_:_:)`.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func != (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
 

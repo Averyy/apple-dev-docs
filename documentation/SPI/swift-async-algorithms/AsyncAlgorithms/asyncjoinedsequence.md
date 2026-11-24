@@ -13,6 +13,8 @@ An `AsyncSequence` that concatenates`AsyncSequence` elements
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -30,7 +32,7 @@ struct AsyncJoinedSequence<Base> where Base : AsyncSequence, Base.Element : Asyn
 - [AsyncJoinedSequence.Iterator](./asyncjoinedsequence/iterator.md)
   The iterator for an `AsyncJoinedSequence` instance.
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncJoinedSequence<Base>.Iterator](./asyncjoinedsequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asyncjoinedsequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncJoinedSequence.AsyncIterator](./asyncjoinedsequence/asynciterator.md)
 - [AsyncJoinedSequence.Element](./asyncjoinedsequence/element.md)

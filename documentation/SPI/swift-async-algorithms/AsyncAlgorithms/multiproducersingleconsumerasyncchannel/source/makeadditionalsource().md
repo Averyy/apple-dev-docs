@@ -13,6 +13,8 @@ Creates a new source which can be used to send elements to the channel concurren
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,7 +23,7 @@ Creates a new source which can be used to send elements to the channel concurren
 ## Declaration
 
 ```swift
-mutating func makeAdditionalSource() -> sending MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source
+mutating func makeAdditionalSource() -> sending `Self`
 ```
 
 ## Return Value

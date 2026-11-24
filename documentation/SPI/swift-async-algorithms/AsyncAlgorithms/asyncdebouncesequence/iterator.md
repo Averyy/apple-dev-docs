@@ -11,6 +11,8 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 
 **Availability**:
 - iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - watchOS 9.0+
@@ -26,7 +28,7 @@ Available when `Base` conforms to `Sendable`, `Base` conforms to `AsyncSequence`
 ## Topics
 
 ### Instance Methods
-- [func next() async rethrows -> AsyncDebounceSequence<Base, C>.Element?](./iterator/next%28%29.md)
+- [func next() async rethrows -> Element?](./iterator/next%28%29.md)
 ### Default Implementations
 - [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 

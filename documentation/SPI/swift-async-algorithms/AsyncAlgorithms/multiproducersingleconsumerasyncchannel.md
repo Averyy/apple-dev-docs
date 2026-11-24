@@ -13,6 +13,8 @@ A multi-producer single-consumer channel.
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -117,13 +119,13 @@ When the consumer stops consumption by either deiniting the channel or the task 
 - [MultiProducerSingleConsumerAsyncChannel.Source](./multiproducersingleconsumerasyncchannel/source.md)
   A struct to send values to the channel.
 ### Instance Methods
-- [func elements() -> some Sendable & AsyncSequence<Element, Failure>
+- [func elements() -> some (AsyncSequence<Element, Failure> & Sendable)
 ](./multiproducersingleconsumerasyncchannel/elements%28%29.md)
   Converts the channel to an asynchronous sequence for consumption.
 - [func next(isolation: isolated (any Actor)?) async throws(Failure) -> Element?](./multiproducersingleconsumerasyncchannel/next%28isolation%29.md)
   Returns the next element.
 ### Type Methods
-- [static func makeChannel(of: Element.Type, throwing: Failure.Type, backpressureStrategy: MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.BackpressureStrategy) -> sending MultiProducerSingleConsumerAsyncChannel<Element, Failure>.ChannelAndStream](./multiproducersingleconsumerasyncchannel/makechannel%28of,throwing,backpressurestrategy%29.md)
+- [static func makeChannel(of: Element.Type, throwing: Failure.Type, backpressureStrategy: Source.BackpressureStrategy) -> sending ChannelAndStream](./multiproducersingleconsumerasyncchannel/makechannel%28of,throwing,backpressurestrategy%29.md)
   Initializes a new [`MultiProducerSingleConsumerAsyncChannel`](./multiproducersingleconsumerasyncchannel.md) and an [`MultiProducerSingleConsumerAsyncChannel.Source`](./multiproducersingleconsumerasyncchannel/source.md).
 
 

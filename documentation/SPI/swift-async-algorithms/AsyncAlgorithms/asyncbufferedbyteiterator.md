@@ -13,6 +13,8 @@ An `AsyncIterator` that provides a convenient and high-performance implementatio
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -50,7 +52,7 @@ struct AsyncBytes: AsyncSequence {
 ## Topics
 
 ### Initializers
-- [init(capacity: Int, readFunction: (UnsafeMutableRawBufferPointer) async throws -> Int)](./asyncbufferedbyteiterator/init%28capacity,readfunction%29.md)
+- [init(capacity: Int, readFunction: @Sendable (UnsafeMutableRawBufferPointer) async throws -> Int)](./asyncbufferedbyteiterator/init%28capacity,readfunction%29.md)
   Creates an asynchronous buffered byte iterator with a specified capacity and read function.
 ### Instance Methods
 - [func next() async throws -> UInt8?](./asyncbufferedbyteiterator/next%28%29.md)

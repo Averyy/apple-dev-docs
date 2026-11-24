@@ -13,6 +13,8 @@ Inherited from `AsyncSequence.makeAsyncIterator()`.
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Inherited from `AsyncSequence.makeAsyncIterator()`.
 ## Declaration
 
 ```swift
-func makeAsyncIterator() -> AsyncMerge2Sequence<Base1, Base2>.Iterator
+func makeAsyncIterator() -> Iterator
 ```
 
 Available when `Base1` conforms to `Sendable`, `Base1` conforms to `AsyncSequence`, `Base2` conforms to `Sendable`, `Base2` conforms to `AsyncSequence`, `Base1.Element` conforms to `Sendable`, and `Base1.Element` is `Base2.Element`.

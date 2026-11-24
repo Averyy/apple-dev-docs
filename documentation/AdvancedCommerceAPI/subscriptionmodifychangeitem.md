@@ -30,7 +30,7 @@ To add seats to a subscription item that a customer buys as a multiseat purchase
 
 - The request’s [`effective`](./effective.md) value is `IMMEDIATELY`, because seats you add take effect immediately.
 - The change item identifies the item by its `currentSKU`, omits `SKU`, and re-declares the item’s current values, including its `seatPriceTiers` and `period`.
-- The change item’s [`finalQuantity`](./subscriptionmodifychangeitem/finalquantity.md) contains the total number of seats after the addition, which needs to be higher than the item’s current number of seats.
+- The change item’s `finalQuantity` contains the total number of seats after the addition, which needs to be higher than the item’s current number of seats.
 
 Make adding seats the only change in the request, and submit other changes, such as a new SKU or period, in a separate request.
 

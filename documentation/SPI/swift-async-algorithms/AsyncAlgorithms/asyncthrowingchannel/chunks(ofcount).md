@@ -13,6 +13,8 @@ Creates an asynchronous sequence that creates chunks of a given count.
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Creates an asynchronous sequence that creates chunks of a given count.
 ## Declaration
 
 ```swift
-func chunks(ofCount count: Int) -> AsyncChunksOfCountSequence<Self, [Self.Element]>
+func chunks(ofCount count: Int) -> AsyncChunksOfCountSequence<Self, [Element]>
 ```
 
 

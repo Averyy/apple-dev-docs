@@ -13,6 +13,8 @@ An asynchronous sequence that omits repeated elements by testing them with an er
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -29,7 +31,7 @@ struct AsyncThrowingRemoveDuplicatesSequence<Base> where Base : AsyncSequence
 - [AsyncThrowingRemoveDuplicatesSequence.Iterator](./asyncthrowingremoveduplicatessequence/iterator.md)
   The iterator for an `AsyncThrowingRemoveDuplicatesSequence` instance.
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncThrowingRemoveDuplicatesSequence<Base>.Iterator](./asyncthrowingremoveduplicatessequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asyncthrowingremoveduplicatessequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncThrowingRemoveDuplicatesSequence.Element](./asyncthrowingremoveduplicatessequence/element.md)
 ### Default Implementations

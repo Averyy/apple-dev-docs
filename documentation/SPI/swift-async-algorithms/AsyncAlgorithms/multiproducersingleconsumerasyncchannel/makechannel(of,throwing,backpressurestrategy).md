@@ -13,6 +13,8 @@ Initializes a new [`MultiProducerSingleConsumerAsyncChannel`](../multiproducersi
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,7 +23,7 @@ Initializes a new [`MultiProducerSingleConsumerAsyncChannel`](../multiproducersi
 ## Declaration
 
 ```swift
-static func makeChannel(of elementType: Element.Type = Element.self, throwing failureType: Failure.Type = Never.self, backpressureStrategy: MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.BackpressureStrategy) -> sending MultiProducerSingleConsumerAsyncChannel<Element, Failure>.ChannelAndStream
+static func makeChannel(of elementType: Element.Type = Element.self, throwing failureType: Failure.Type = Never.self, backpressureStrategy: Source.BackpressureStrategy) -> sending ChannelAndStream
 ```
 
 ## Return Value

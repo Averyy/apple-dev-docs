@@ -13,6 +13,8 @@ Creates an asynchronous sequence that creates chunks of a given `RangeReplaceabl
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Creates an asynchronous sequence that creates chunks of a given `RangeReplaceabl
 ## Declaration
 
 ```swift
-func chunked<Collected>(into: Collected.Type, by belongInSameGroup: @escaping @Sendable (Self.Element, Self.Element) -> Bool) -> AsyncChunkedByGroupSequence<Self, Collected> where Collected : RangeReplaceableCollection, Self.Element == Collected.Element
+func chunked<Collected>(into: Collected.Type, by belongInSameGroup: @escaping @Sendable (Element, Element) -> Bool) -> AsyncChunkedByGroupSequence<Self, Collected> where Collected : RangeReplaceableCollection, Self.Element == Collected.Element
 ```
 
 

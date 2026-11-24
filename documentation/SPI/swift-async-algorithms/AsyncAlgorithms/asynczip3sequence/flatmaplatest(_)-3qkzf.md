@@ -13,6 +13,8 @@ Inherited from `AsyncSequence.flatMapLatest(_:)`.
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,7 +23,7 @@ Inherited from `AsyncSequence.flatMapLatest(_:)`.
 ## Declaration
 
 ```swift
-func flatMapLatest<T>(_ transform: @escaping @Sendable (Self.Element) -> T) -> some Sendable & AsyncSequence<T.Element, T.Failure> where T : Sendable, T : AsyncSequence, Self.Element : Sendable, Self.Failure == Never, T.Element : Sendable
+func flatMapLatest<T>(_ transform: @escaping @Sendable (Element) -> T) -> some AsyncSequence<T.Element, T.Failure> & Sendable where T : Sendable, T : AsyncSequence, Self.Element : Sendable, Self.Failure == Never, T.Element : Sendable
 ```
 
 Available when `Self` conforms to `Sendable`.

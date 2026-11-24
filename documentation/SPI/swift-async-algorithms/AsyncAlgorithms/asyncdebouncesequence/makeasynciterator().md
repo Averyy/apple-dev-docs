@@ -13,6 +13,8 @@ Inherited from `AsyncSequence.makeAsyncIterator()`.
 
 **Availability**:
 - iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - watchOS 9.0+
@@ -20,7 +22,7 @@ Inherited from `AsyncSequence.makeAsyncIterator()`.
 ## Declaration
 
 ```swift
-func makeAsyncIterator() -> AsyncDebounceSequence<Base, C>.Iterator
+func makeAsyncIterator() -> Iterator
 ```
 
 Available when `Base` conforms to `Sendable`, `Base` conforms to `AsyncSequence`, `C` conforms to `Clock`, and `Base.Element` conforms to `Sendable`.

@@ -42,7 +42,7 @@ let maxRetries = try await config.fetchBoolArray(forKey: ["network", "maxRetries
 
 - `key`: The config key to look up.
 - `isSecret`: Whether the value should be treated as secret for logging and debugging purposes.
-- `defaultValue`: The fallback value returned when the config value is missing or invalid.
+- `defaultValue`: The fallback value returned when the config value is missing.
 - `fileID`: The file ID where this call originates. Used for access reporting.
 - `line`: The line number where this call originates. Used for access reporting.
 

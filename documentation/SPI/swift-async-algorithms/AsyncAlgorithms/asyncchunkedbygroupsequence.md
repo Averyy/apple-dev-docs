@@ -13,6 +13,8 @@ An `AsyncSequence` that chunks by testing if two elements belong to the same gro
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -45,7 +47,7 @@ Group chunks are determined by passing two consecutive elements to a closure wh
 - [AsyncChunkedByGroupSequence.Iterator](./asyncchunkedbygroupsequence/iterator.md)
   The iterator for a `AsyncChunkedByGroupSequence` instance.
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncChunkedByGroupSequence<Base, Collected>.Iterator](./asyncchunkedbygroupsequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asyncchunkedbygroupsequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncChunkedByGroupSequence.Element](./asyncchunkedbygroupsequence/element.md)
 ### Default Implementations

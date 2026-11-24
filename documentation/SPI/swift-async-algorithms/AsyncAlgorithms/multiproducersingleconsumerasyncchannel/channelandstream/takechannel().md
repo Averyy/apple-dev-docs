@@ -13,6 +13,8 @@ Takes and returns the channel.
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,7 +23,7 @@ Takes and returns the channel.
 ## Declaration
 
 ```swift
-mutating func takeChannel() -> sending MultiProducerSingleConsumerAsyncChannel<Element, Failure>
+mutating func takeChannel() -> sending MultiProducerSingleConsumerAsyncChannel
 ```
 
 ## Discussion

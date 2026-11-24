@@ -13,6 +13,8 @@ Inherited from `Equatable.==(_:_:)`.
 
 **Availability**:
 - iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,7 +23,7 @@ Inherited from `Equatable.==(_:_:)`.
 ## Declaration
 
 ```swift
-static func == (lhs: MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.SendResult.CallbackHandle, rhs: MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.SendResult.CallbackHandle) -> Bool
+static func == (lhs: `Self`, rhs: `Self`) -> Bool
 ```
 
 

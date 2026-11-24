@@ -13,6 +13,8 @@ A policy dictating the buffering behaviour of an [`AsyncBufferSequence`](./async
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -26,7 +28,7 @@ struct AsyncBufferSequencePolicy
 ## Topics
 
 ### Type Properties
-- [static var unbounded: AsyncBufferSequencePolicy](./asyncbuffersequencepolicy/unbounded.md)
+- [static var unbounded: `Self`](./asyncbuffersequencepolicy/unbounded.md)
   A policy for buffering elements without limit.
 ### Type Methods
 - [static func bounded(Int) -> AsyncBufferSequencePolicy](./asyncbuffersequencepolicy/bounded%28_%29.md)

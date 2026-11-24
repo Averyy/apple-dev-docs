@@ -13,6 +13,8 @@ Returns a new asynchronous sequence containing the elements of this asynchronous
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Returns a new asynchronous sequence containing the elements of this asynchronous
 ## Declaration
 
 ```swift
-func interspersed(every: Int = 1, with separator: @escaping @Sendable () async throws -> Self.Element) -> AsyncThrowingInterspersedSequence<Self>
+func interspersed(every: Int = 1, with separator: @Sendable @escaping () async throws -> Element) -> AsyncThrowingInterspersedSequence<Self>
 ```
 
 ## Return Value

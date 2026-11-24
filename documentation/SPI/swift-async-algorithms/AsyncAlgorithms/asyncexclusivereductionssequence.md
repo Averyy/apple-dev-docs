@@ -13,6 +13,8 @@ An asynchronous sequence of applying a transform to the element of an asynchrono
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+

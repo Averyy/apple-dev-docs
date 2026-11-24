@@ -13,6 +13,8 @@ An asynchronous sequence composed from a synchronous sequence.
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -35,7 +37,7 @@ This functions similarly to `LazySequence` by accessing elements sequentially in
 ### Structures
 - [AsyncSyncSequence.Iterator](./asyncsyncsequence/iterator.md)
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncSyncSequence<Base>.Iterator](./asyncsyncsequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asyncsyncsequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncSyncSequence.Element](./asyncsyncsequence/element.md)
 ### Default Implementations

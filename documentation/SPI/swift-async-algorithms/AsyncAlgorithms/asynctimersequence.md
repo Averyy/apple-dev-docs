@@ -13,6 +13,8 @@ An `AsyncSequence` that produces elements at regular intervals.
 
 **Availability**:
 - iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - watchOS 9.0+
@@ -32,7 +34,7 @@ struct AsyncTimerSequence<C> where C : Clock
 - [init(interval: C.Instant.Duration, tolerance: C.Instant.Duration?, clock: C)](./asynctimersequence/init%28interval,tolerance,clock%29.md)
   Create an `AsyncTimerSequence` with a given repeating interval.
 ### Instance Methods
-- [func makeAsyncIterator() -> AsyncTimerSequence<C>.Iterator](./asynctimersequence/makeasynciterator%28%29.md)
+- [func makeAsyncIterator() -> Iterator](./asynctimersequence/makeasynciterator%28%29.md)
 ### Type Aliases
 - [AsyncTimerSequence.Element](./asynctimersequence/element.md)
 ### Type Methods

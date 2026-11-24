@@ -13,6 +13,8 @@ Returns an asynchronous sequence containing the accumulated results of combining
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
@@ -20,7 +22,7 @@ Returns an asynchronous sequence containing the accumulated results of combining
 ## Declaration
 
 ```swift
-func reductions<Result>(into initial: Result, _ transform: @escaping @Sendable (inout Result, Self.Element) async -> Void) -> AsyncExclusiveReductionsSequence<Self, Result>
+func reductions<Result>(into initial: Result, _ transform: @Sendable @escaping (inout Result, Element) async -> Void) -> AsyncExclusiveReductionsSequence<Self, Result>
 ```
 
 ## Return Value

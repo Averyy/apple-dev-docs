@@ -13,6 +13,8 @@ Creates an asynchronous sequence that creates chunks when an `AsyncTimerSequence
 
 **Availability**:
 - iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - watchOS 9.0+
@@ -20,7 +22,7 @@ Creates an asynchronous sequence that creates chunks when an `AsyncTimerSequence
 ## Declaration
 
 ```swift
-func chunked<C>(by timer: AsyncTimerSequence<C>) -> AsyncChunksOfCountOrSignalSequence<Self, [Self.Element], AsyncTimerSequence<C>> where Self : Sendable, C : Clock, Self.Element : Sendable
+func chunked<C>(by timer: AsyncTimerSequence<C>) -> AsyncChunksOfCountOrSignalSequence<Self, [Element], AsyncTimerSequence<C>> where Self : Sendable, C : Clock, Self.Element : Sendable
 ```
 
 
