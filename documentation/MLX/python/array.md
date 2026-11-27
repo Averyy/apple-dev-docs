@@ -60,5 +60,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/array.html
 | [array.swapaxes](_autosummary/mlx.core.array.swapaxes.md#mlx.core.array.swapaxes)(self, axis1, axis2, *[, stream]) | See [swapaxes()](_autosummary/mlx.core.swapaxes.md#mlx.core.swapaxes). |
 | [array.transpose](_autosummary/mlx.core.array.transpose.md#mlx.core.array.transpose)(self, *axes[, stream]) | Equivalent to [transpose()](_autosummary/mlx.core.transpose.md#mlx.core.transpose) but the axes can be passed either as a tuple or as separate arguments. |
 | [array.T](_autosummary/mlx.core.array.T.md#mlx.core.array.T) | Equivalent to calling `self.transpose()` with no arguments. |
+| [array.mT](_autosummary/mlx.core.array.mT.md#mlx.core.array.mT) | Equivalent to calling `self.transpose()` with the last two axes swapped. |
 | [array.var](_autosummary/mlx.core.array.var.md#mlx.core.array.var)(self[, axis, keepdims, ddof, ...]) | See [var()](_autosummary/mlx.core.var.md#mlx.core.var). |
 | [array.view](_autosummary/mlx.core.array.view.md#mlx.core.array.view)(self, dtype, *[, stream]) | See [view()](_autosummary/mlx.core.view.md#mlx.core.view). |

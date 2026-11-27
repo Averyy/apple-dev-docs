@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.no
 # mlx.core.not_equal
 
 ```python
-not_equal(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+not_equal(a: scalar | array, b: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise not equal.

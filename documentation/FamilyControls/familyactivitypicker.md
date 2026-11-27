@@ -79,7 +79,8 @@ Your app passes the selected values to the appropriate instances and methods fro
   Creates a new activity picker.
 - [init(headerText: String?, footerText: String?, selection: Binding<FamilyActivitySelection>)](./familyactivitypicker/init%28headertext,footertext,selection%29.md)
   Creates a new activity picker with optional header and footer text.
-- [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View\n](../SwiftUI/view/familyactivitypicker%28title,headertext,footertext,ispresented,selection%29.md)
+- [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View
+](../SwiftUI/view/familyactivitypicker%28title,headertext,footertext,ispresented,selection%29.md)
   Present an activity picker sheet for selecting apps and websites to manage.
 ### Accessing the content
 - [var body: some View](./familyactivitypicker/body.md)

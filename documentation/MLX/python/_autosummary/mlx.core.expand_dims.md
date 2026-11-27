@@ -15,7 +15,7 @@ Add a size one dimension at the given axis.
 **Parameters:**
 
 - **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-- **axes** ([int](https://docs.python.org/3/builtins/functions.html#int) *or* [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int))) – The index of the inserted dimensions.
+- **axis** ([int](https://docs.python.org/3/builtins/functions.html#int) *or* [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int))) – The index of the inserted dimensions.
 
 **Returns:**
 : The array with inserted dimensions.

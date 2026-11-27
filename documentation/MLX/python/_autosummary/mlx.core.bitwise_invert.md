@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.bi
 # mlx.core.bitwise_invert
 
 ```python
-bitwise_invert(a: scalar | array, stream: StreamOrDevice = None) → array
+bitwise_invert(a: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise bitwise inverse.

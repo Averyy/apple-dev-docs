@@ -86,7 +86,7 @@
     },
     "https://developer.apple.com/documentation/familycontrols/familyactivitypicker": {
       "file_path": "documentation/FamilyControls/familyactivitypicker.md",
-      "hash": "f6dd3240fe0c4184702b3854d1df39f1ca04e6b983ea1fdadb500d971f81c8c9"
+      "hash": "b615b08f58c0b7e252a522688c6e2099114e28c4ede3b3401afd3117d825e194"
     },
     "https://developer.apple.com/documentation/familycontrols/familyactivitypicker-view-modifiers": {
       "file_path": "documentation/FamilyControls/familyactivitypicker-view-modifiers.md",
@@ -98,11 +98,11 @@
     },
     "https://developer.apple.com/documentation/familycontrols/familyactivitypicker/init(headertext:footertext:selection:)": {
       "file_path": "documentation/FamilyControls/familyactivitypicker/init(headertext,footertext,selection).md",
-      "hash": "3757f2fa7551a6b91c723c1806619236daf0ace8b1a1d3828e8db09134c4bc09"
+      "hash": "ed09e4d9a15a7c520dd85c60966449b87fab7a79881b1bad827916481dc65ff2"
     },
     "https://developer.apple.com/documentation/familycontrols/familyactivitypicker/init(selection:)": {
       "file_path": "documentation/FamilyControls/familyactivitypicker/init(selection).md",
-      "hash": "e0ba4facceb9f122ece42190b754fedace7666899926648afd6205330b18ff29"
+      "hash": "55f950d226d0a8047e708acc29a997ea7921869a19c8533b359260c03a14b48d"
     },
     "https://developer.apple.com/documentation/familycontrols/familyactivityselection": {
       "file_path": "documentation/FamilyControls/familyactivityselection.md",
@@ -302,7 +302,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitypicker.json": {
       "file_path": "documentation/FamilyControls/familyactivitypicker.md",
-      "hash": "f6dd3240fe0c4184702b3854d1df39f1ca04e6b983ea1fdadb500d971f81c8c9"
+      "hash": "b615b08f58c0b7e252a522688c6e2099114e28c4ede3b3401afd3117d825e194"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitypicker/body.json": {
       "file_path": "documentation/FamilyControls/familyactivitypicker/body.md",
@@ -310,11 +310,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitypicker/init(headertext:footertext:selection:).json": {
       "file_path": "documentation/FamilyControls/familyactivitypicker/init(headertext,footertext,selection).md",
-      "hash": "3757f2fa7551a6b91c723c1806619236daf0ace8b1a1d3828e8db09134c4bc09"
+      "hash": "ed09e4d9a15a7c520dd85c60966449b87fab7a79881b1bad827916481dc65ff2"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitypicker/init(selection:).json": {
       "file_path": "documentation/FamilyControls/familyactivitypicker/init(selection).md",
-      "hash": "e0ba4facceb9f122ece42190b754fedace7666899926648afd6205330b18ff29"
+      "hash": "55f950d226d0a8047e708acc29a997ea7921869a19c8533b359260c03a14b48d"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection.json": {
       "file_path": "documentation/FamilyControls/familyactivityselection.md",

@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.re
 # mlx.core.remainder
 
 ```python
-remainder(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+remainder(a: scalar | array, b: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise remainder of division.

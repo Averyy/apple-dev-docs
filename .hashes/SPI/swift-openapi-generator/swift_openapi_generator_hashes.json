@@ -2,747 +2,747 @@
   "hashes": {
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/swift_openapi_generator.md",
-      "hash": "10cb22db99b3b241e95f047123766990fea6e36cdb0a46c0528700d1c5c7a4f9"
+      "hash": "a3daae0ba323ec696df2fe9c9195e8ed0c9b229474b2415a48a376cb8a29f507"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore.md",
-      "hash": "2ae69e5b4689b33a518ca698406feef54ced721c8c08a0868389697d07a7cd6d"
+      "hash": "ecaa755923efa880003e694dbfb93382c818f2ce2a86d6b6116bf5d05d54622e"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/_userconfig.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/_userconfig.md",
-      "hash": "7c80f523c6e260a95f19b9258be90b5c81e7d82e63b17af2eff25184bc3f1497"
+      "hash": "f2c254305918db99556b8e0aeb71cdd7222ca1f211576abaaf97fd0d9a2c21b5"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/_userconfig/customstringconvertible-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/_userconfig/customstringconvertible-implementations.md",
-      "hash": "ce7623bf91dcc00231e52810d978f98278d50daabd7c56b0e824cd72dbcbf906"
+      "hash": "01df12543e789bb45979cf0ef1005f859e9ce460e90518bcd7bb14925e22d91a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/_userconfig/description.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/_userconfig/description.md",
-      "hash": "44b0ac54795de616ff36e7f55cfc5e84f0a0996ef4707fc50ace305b03a8b1e2"
+      "hash": "a29b1b8fc75ed59705ed0c5465c145b232843bd64147971ae4eae28cdcc74ec1"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/_userconfig/sample.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/_userconfig/sample.md",
-      "hash": "cc687e0c82d32d54bc2442f4f2cfb1963e68bfb18b4b0b0eb602da181052f2e5"
+      "hash": "330cf61d2912c8bcb1d78d85890fa7e7be5c61328b0667619b5bef8848f3fb78"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/_userconfig/yamlstring.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/_userconfig/yamlstring.md",
-      "hash": "606c3223f0cad83f32cd3ee7e4af7eb74547882d3f2b99e968d70d7c7f07ee77"
+      "hash": "de77ed3e1064d32c4fab3cf080c1515cff9d953383b03f2bd742683232991b72"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier.md",
-      "hash": "865296e1529975e08d46940dea22b6cf5ad9f3bc6c1565eefc9ecb4bdf6950b8"
+      "hash": "320e26ecd99d2b307c4ef78c021e3c38ff4b44ad2fae2065865d0f73f4d7af50"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluedescriptions-19sb9.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluedescriptions-19sb9.md",
-      "hash": "085252ccd2b7fe3f522fa95a650412ff20a6bb476cc60ecb9edcaf2e7f462d21"
+      "hash": "7729953916bbca5068ef5a8028f861b25747da1c74df387251fe40c9cf7c4bab"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluedescriptions-5fb6k.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluedescriptions-5fb6k.md",
-      "hash": "31ed654cff39a19edfa0bd7e4d87f5e286fd95b139ad58f3bc48fbc960449966"
+      "hash": "ae49f58c56a3ba8f4a8333731d1789e20233c615a8dac0b9f2b6dd69f1af2865"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-3yhws.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-3yhws.md",
-      "hash": "4e0b5878e7aa94b509e505d2b4341f80dde8af10614c8dcba2652780c2f41060"
+      "hash": "ece14481401c0049ed8bf5e8b0fc88abf7208e8eb76838f49585c49d3228b679"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-5d1v6.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-5d1v6.md",
-      "hash": "b969c47014bda0f314dc122ce56abdf45d779e4dfbb5efe5b85be1d31e74d3a1"
+      "hash": "1f3582abba49e04c8a1ceb8ccb190fea33e0c86a36d78d751bcad2c868ace86e"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-94bwi.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-94bwi.md",
-      "hash": "b9b0b146ccb6a1aaf2f5d527c08babc42333cb5fa261aaa97a8f6a516e0856ae"
+      "hash": "7a89c42f55bf70b7838c1e7fa6a3ce490fc7980ad50912b8aa7f6cb810678afb"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings.md",
-      "hash": "0b8e4f768cecd348648cebc7d5382d57aa82b9610cb7c66c10bc9377087feee1"
+      "hash": "568bb817c28853aa8527d68f4f2693b6e7498adc8867164389cf6055e72c9659"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultcompletionkind-82hlq.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultcompletionkind-82hlq.md",
-      "hash": "f776fff1fa5dd5cad5bcffdd97281baad11d5d942a2654b9db41dd7a31aa9df9"
+      "hash": "3917f8da4ffb7ddc01bb64bc929c257a7eb834d730e770a370b3c246c6436f35"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultcompletionkind-9ksdf.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultcompletionkind-9ksdf.md",
-      "hash": "2f96d9f4644ca7f07d2b5c72592f3438cb4b801cfa97d40a778153b578c67a11"
+      "hash": "a353b02455eaafff19ad56a5757f7d405c59f0d5a5d968f9cbf7d1cb75ebc032"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultvaluedescription.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultvaluedescription.md",
-      "hash": "20b7b8423cc8e864cadcd39506ed381da9e5949cd5eb8e2a453e6b45b7358876"
+      "hash": "9a19c6ccdad9242a1a6d3bbab293e5fd5732901c0f440a78371b5cb23d41e663"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/expressiblebyargument-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/expressiblebyargument-implementations.md",
-      "hash": "d6a53ed84e943229995d0dfd3e937bc242e43f50d3163514a056a5f35c5d460a"
+      "hash": "5ad5a8fa3fd66cb31e8dde22597ad14f788f81e2c155dba64d1df71e17c80fd4"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag.md",
-      "hash": "e1febbedae803844f18002eae79654786ccb0f66707a22483b0b6b6f5607a283"
+      "hash": "4994bb466f270165604f2dcbe0e4956ad9cc44c2db887fc66f254783508a1ea1"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluedescriptions-18p6w.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluedescriptions-18p6w.md",
-      "hash": "3a535fa75adb9842b7533b81ebda8fa52270a0e00e2543a95de7ead75587849b"
+      "hash": "dfde3d1bf52821521e9644ebbafb51568863246fcc04bfff77afafb7cbf89527"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluedescriptions-1xjpl.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluedescriptions-1xjpl.md",
-      "hash": "1941fd2fc952b95e188b22e10719d260f7a8388fccf52601f4c4d1e5a2caa175"
+      "hash": "beac8e41cf1301adc3cffe7df0d0be1a3c4b51121ccd90eab35b138d5c804f15"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-68q1u.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-68q1u.md",
-      "hash": "6ea4a44eacf9a0bc527f5baa1f9b4fc757ad5029ae18a9adbeb89d73fa5c9b01"
+      "hash": "b445b5fa7f5de0ac680c574b9f96afe93985578e41f9800cb84d7e881bb3aac1"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-8ooe7.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-8ooe7.md",
-      "hash": "c260b872783088285f4a839e03c6e3174ac7b4c5ea7b871fe4d3c6a4f5c9a181"
+      "hash": "1bcd75c947767dd7692988bc6f779926ecf144767e6add55c8591fcf3dae4eb4"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-khud.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-khud.md",
-      "hash": "f8c1a700f0b1031d1dfb699c2480a8da8b5c44f30a438c0f16372b45952c0c08"
+      "hash": "619d483907ab87ec260a210e4461b7a449a366b4eafb6fa3e1c3af71078cb3c9"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultcompletionkind-765mb.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultcompletionkind-765mb.md",
-      "hash": "02f980ac1e8d0efab596bcf82bc54f9e54d64715ca953d2779104a580779dd48"
+      "hash": "f6c7fc93b3fa4b22f5f926439982271bb45f0b523ced279e7fa794b222f34959"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultcompletionkind-9g6q1.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultcompletionkind-9g6q1.md",
-      "hash": "1a22cd469e5e6f343b0ebc2b6067f520631d02a7f221e141f9a0c188c8af690a"
+      "hash": "90885be47bbfda654ed95e7047f58f4e755dbb1cff927c5a5a4246c8e3479635"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultvaluedescription.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultvaluedescription.md",
-      "hash": "4c81c0fb5fbd8d7c1d42a00e2fb198dd46cae3e7e4e6a03a11f67ce1bc3b8156"
+      "hash": "6b2c8f132bb999fffd0a2e427bf43d16295e01a4227b6a9374109733bb1a98e5"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/expressiblebyargument-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/expressiblebyargument-implementations.md",
-      "hash": "ba59419407e163a47271c7d07420d527505eb4d9cc45fe34116094944da378a9"
+      "hash": "7173a46a9f0ff56b2f8c6ac996b3540e39f9f6e7aac91e9bd13a11bc00ccb4ea"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode.md",
-      "hash": "e23510426de9a54978874a23efaa688d5bf5c3c4f4ce49ee1287a4ac0f4cf7a7"
+      "hash": "97d15bbe695d01d25e3118de9bd5f29e6c7be2fa4fdcd821a9ae5ed1ca660fae"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluedescriptions-1yv5n.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluedescriptions-1yv5n.md",
-      "hash": "3cd6ada3f40a9eadf8580cdbfec877f03f51ff0f4300f2a85c8443ec4cd28814"
+      "hash": "ca08dfe4c5f44066ffac067503e66c16db6b6c73644dfc00cac9054db79cbe71"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluedescriptions-5eo82.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluedescriptions-5eo82.md",
-      "hash": "121729ec10777a8559b7d2bb32ebcdc37af839eeec098055b79bc4fd4634ef0d"
+      "hash": "35fa13648b37dd2903a0247143ebe9df426ba68f4a7e571b6df0dd941a64f408"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-2su2x.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-2su2x.md",
-      "hash": "78045decc314f04086e4e2fbe6807e3997b45ff4ac0cb85297ed00333e452f00"
+      "hash": "1b7c3a4df339403a0dd347738305c46ee8dbfa1e318f773a2ca267b9837c6353"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-5gz8u.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-5gz8u.md",
-      "hash": "fc7fa8723eb83cd3d4eda054f74985412254e33c5a10c77af553981878164cf6"
+      "hash": "ee482245ac4560ca7f651c8822fff58faae49a3cd6674e8408f18c4d999ab415"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-5osy3.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-5osy3.md",
-      "hash": "d843388f6fe1f8fa51858e7670e0d0fdcb6fe909d05e21abecae8aaab480cfc2"
+      "hash": "a641c71e8c18a408c20e708a8dce49052759cb1acdcef88302d804c8e24bd5c1"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultcompletionkind-2waty.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultcompletionkind-2waty.md",
-      "hash": "d8ed4f4da17be3afd6fb555e4c111f375c6b2d357fa66f5bb97e917aa400c7d3"
+      "hash": "4779b2e200a9a3f4b0dbf07281a2260d257cfec9c1a03f77282b42733640b312"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultcompletionkind-7cvxy.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultcompletionkind-7cvxy.md",
-      "hash": "1260a3f5665ab5fafcb5cb6be539a6777b79272e2c97c28404c056e07736a8f6"
+      "hash": "ea4d9eafb15d3d446d75af7b99a78643ef2dde4384ec43f706c7626224ac2d2a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultvaluedescription.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultvaluedescription.md",
-      "hash": "7bf780cd96c36183703409cb91b3cbc7c90d9d70cb5fc34e5465539a91ba0c93"
+      "hash": "9fb07bc70bc64b20b2e5bb339c7722e5f271364d6144ce88db8541f6b3e910aa"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/expressiblebyargument-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/expressiblebyargument-implementations.md",
-      "hash": "f14b21c2b54f100c863080c0290cc4b58b1b1bfdee7570d4edc874072df1bfc7"
+      "hash": "b8bba831fb603085ed02fa69e2c0e16807e2feb5365a5a50116f7a54db5e9cd8"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy.md",
-      "hash": "8a164c784f097c3c237377f444a98724de7ddeb2b90df7596bfff8481be6439a"
+      "hash": "521333ea917712c2f408c36eeb9399a7e7e17956824bf00e1a4258bbd96bf169"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluedescriptions-4307o.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluedescriptions-4307o.md",
-      "hash": "93d69ea0c71c8aa5caeaf98de70979ed5a2478f7a69f59c083e9fae9788b2708"
+      "hash": "98e8da99d939a270b2c0ed309b6775687a09691ab154b10a6d5a2354c5227982"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluedescriptions-4yga5.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluedescriptions-4yga5.md",
-      "hash": "537c708569f9dd3d61855346639889d9fb4dbac72e84659a5627bd113a593fe9"
+      "hash": "71a0a2c7ccfa78ace8b9f6032caf7e3b4a47950b70335416a404d7f7af7f5ba6"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-594ka.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-594ka.md",
-      "hash": "9f9c3655ed7f6ae11521d059eb3d198f5c8f9863c373d850c05f0a8fa94e6815"
+      "hash": "38b911bcdd6f90ed2aad55c8fc0c8d9f3546269882149472e607fd0f871d85e7"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-7ml76.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-7ml76.md",
-      "hash": "65914ca240a73db7a48ff00c72a849241d48fedd001cc7773940723864c32e93"
+      "hash": "1f6110fe22c23b49efb57d357323d09f7ef87a0257a64e1d3192d3da75bb1b04"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-fd45.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-fd45.md",
-      "hash": "34324adf50b9f283e7875a748df4f222022a24b3f58a36eb3da76de697dfb938"
+      "hash": "699df32374e257727b0b864d32af5601f6f3dca0cd8981c5e5026b1b7dd72f3f"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultcompletionkind-2gcf0.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultcompletionkind-2gcf0.md",
-      "hash": "beef7fae544ad1dd532e09414980f911ea1eecfe47ab0adde6ebc32067a5d863"
+      "hash": "0b4df5bfab66dc3bf8336ffbb24435f5d8ae0520a3657aeca677d3bc710fed46"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultcompletionkind-5yp36.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultcompletionkind-5yp36.md",
-      "hash": "75a251a73d242559a08cf8d73548401dffd08c3deb66057b9c76de905f37ad20"
+      "hash": "65874d6a8607b11d708264f6f0d47b3998f832d4e811107dcd72b31151ec4afc"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultvaluedescription.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultvaluedescription.md",
-      "hash": "c2766464b2cc84f806f650896fe5f08a20e51ad25e0177a42459a88ef384e037"
+      "hash": "b68bda27ceefda0ba913d1aa0f9a0777886bd392dbcaaa85d014e5ec479a8eef"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/expressiblebyargument-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/expressiblebyargument-implementations.md",
-      "hash": "c4c04997593880d6dbdfbe7641fa94bc1606f63dd3952f4fd05993927d88981a"
+      "hash": "b5167fa39e234eaa6aa36c62068da67a7b248dee822a6af2b68551e2e998601a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/foundation.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation.md",
-      "hash": "14beba4d28fbb8e232f604e3db6c975d9bb1368aab4991e4b317ea7239d1dc97"
+      "hash": "6d017de7d46748407e7825cabf1b00393708a6cd2118258eb6745bad206fa5e5"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/foundation/url.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url.md",
-      "hash": "10826e7037f584c1a7cd8e11eb5fce3f7a90b2c7e47b831145233c9cd00872ec"
+      "hash": "ca66296bbd9903be0215108b71816cf4aa5581d86ff38e3db2f216b764984e21"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/foundation/url/allvaluedescriptions.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/allvaluedescriptions.md",
-      "hash": "0ba8a1f62055ce71bc77b354973a24c953e5487c4068f4ed28009c7fadc2b2e0"
+      "hash": "57d22f115e40eb4d60b96dbad41d9efb9bf8fbb5cfab10246f8bd177629c98bc"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/foundation/url/allvaluestrings.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/allvaluestrings.md",
-      "hash": "ddfa8ef88402a140b3bb7b389eb6c83c065528ebca113ebeb1309be43d7b60b3"
+      "hash": "7ee6dad26c000148150877c28ad8af9e9323eafea07bd4b7765d1eadb5db5528"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/foundation/url/defaultcompletionkind.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/defaultcompletionkind.md",
-      "hash": "68fe75479a4beade91dd78ca7f39a80ddd1bcffd1d66efb3f7af1c552546452c"
+      "hash": "60248b65cb5be0166f9dbcd93aa75a79fb1ce86f5e60ec027e71136ed3ee1e86"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/foundation/url/defaultvaluedescription.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/defaultvaluedescription.md",
-      "hash": "0605954a43e1022d6394f207ce0d0423ec3420a9f0e643738bd8d2a85000cacc"
+      "hash": "13a38b2706273bea3bf2f8f57a0091530abe28ede194b41225073a2cf1fa4d3a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/foundation/url/expressiblebyargument-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/expressiblebyargument-implementations.md",
-      "hash": "efd7f411c224e33028de79cc9600c2a20c4fed1dc112f62694df20489ea9c585"
+      "hash": "73220bb1859f780813a7d8d85e4177e7c59cf364c83d54b7eaee34a045da36bb"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/foundation/url/init(argument:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/init(argument).md",
-      "hash": "fdffa606232a8443e5d065ce9f14f078df65e68c4ebdb15b978db6c954b30069"
+      "hash": "413cd8a6d62a44713f20eeeef02b09229d189a0ae233059b997bc883772f5f6d"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/foundation/url/path().json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/path().md",
-      "hash": "e45eb299656bef70f64e2db30310c28c133c5d9ee366fd4592fa33af3a19be6d"
+      "hash": "b269d94eb71651bffa0394cbeebee80704569af80aa2ab5b6cbd857e03676929"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/handlefileoperation(at:filedescription:operation:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/handlefileoperation(at,filedescription,operation).md",
-      "hash": "3ba0a49916ffde27cb6209b82b8771ee8c67302536ea1d146be77f2de6fe4f2f"
+      "hash": "27bf7a5ac0ae700aca6297fb0ed7bf99cf4004043c56729c9597541d9c6f2153"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat.md",
-      "hash": "8711c94234bde7fc4e00364e3171116302341559cd7130ed1c0894ab24bb18f9"
+      "hash": "3091f22aab1e4e3824b32832cccb6eebd5eef0e3e5232d42d58de6195b5ae00d"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/!=(_:_:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/noteq(_,_).md",
-      "hash": "b8958b2c9065d075f6ca9ac35914c92ef3603f9cc53770b70390bb4538512374"
+      "hash": "941b5b1ece212f70106b7ab3db00225252c2564aa9e9b69a5abf5791d41a1dc4"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/allvaluedescriptions.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/allvaluedescriptions.md",
-      "hash": "9ead0a503351902abef04497190705fb3a5f2dfa0d39a6460d4b7244301fc109"
+      "hash": "aa4c6d8f6053b18aeaf4babeb94e00ca06f6d2c3f6fd2243a9b3604947ced779"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/allvaluestrings.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/allvaluestrings.md",
-      "hash": "086d26846240e200b7b920ac8a408c0568c9c16158526271ac9c1c977c1e384b"
+      "hash": "de6cd1054ebf1b95251257392a859db30320cee73137717ed171d64b8c67f26e"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/defaultcompletionkind.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/defaultcompletionkind.md",
-      "hash": "b1f7e2cc50d4a69d66c46af4a8781aa9f600192b38b52d626b1898d30b99b74a"
+      "hash": "ba119cde0e23c39f73089cbe29040638edc0afd1d1ab1e9f40046b248a491483"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/defaultvaluedescription.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/defaultvaluedescription.md",
-      "hash": "4e79080b000a65c1de9d10b7c3cabf3a93f448daae8b7081778d9ac179c1153a"
+      "hash": "42e720e3d05f6fe86d580f753a8fa484c7ae727b2feb71ea1a202a1cb90f1e74"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/equatable-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/equatable-implementations.md",
-      "hash": "4005ab0d886056fd14478f00857394c5eb7b376e678fbb3efa3a31f0818f677f"
+      "hash": "e17b69c1e897ad073800b59c87aed883e0b361ba7b9f29a83d433d9e54a11a24"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/expressiblebyargument-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/expressiblebyargument-implementations.md",
-      "hash": "22d38ec384f4c5195ec36bd34788ff71109dd098eaac191a720ff1a7615dd053"
+      "hash": "7fe084d8ecd4b4e4de5191c461f95eff919cadd60d0a43dff3cea9a9dcd32a32"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/hash(into:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/hash(into).md",
-      "hash": "1cb3412ed5827ba6545436bd90356b115b4a55fdaf2310b68154239c5f9c9186"
+      "hash": "68fcbec3ea516dec4f5aa5894c00e469bc2afce1c242bbbf491e6ec56d76c1ea"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/hashvalue.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/hashvalue.md",
-      "hash": "5baec091b91dc2122a6d271c3c45c3e77b396ce8899024537532c023dac00eb3"
+      "hash": "54ac4f295275f96c3d90b23c7dc75bee2b1c7098ad68c4abf0f333a0ef1f37cc"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/init(argument:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/init(argument).md",
-      "hash": "2e85b687a618e14a4921e3c9dddff3bf2432834130adb5e58baf58a1a6cea092"
+      "hash": "535109c6702d6f0fbf2d57cac449694f76faf6645c2e0d08043a66776c04e724"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/init(rawvalue:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/init(rawvalue).md",
-      "hash": "5e2eb6234fda23901dc620eacb4c2e62c1ee03d825fc73edb42fdeb9a31932ed"
+      "hash": "4cd5a2a56c4d6c7d8d8620b894c8dd31680b812a4879a42f5c95ed013c89a65b"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/json.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/json.md",
-      "hash": "83641dfc854ef8984ad91cf2aab3a219cbe819d12a0e7f6051e2fff68115a01f"
+      "hash": "449b73813521e28cc3ab76aeb7b09a9afed69afc8579031951988bf29e6b872c"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/rawrepresentable-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/rawrepresentable-implementations.md",
-      "hash": "ffa607351e9eccffc93f246eb435d09a057d192de3cfc34202530f9323ac7f8e"
+      "hash": "c53d321f3c84f38f4b7578eae6a31e6e73c89e8caa1ab416b0077bb8e09540a1"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/outputformat/yaml.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/yaml.md",
-      "hash": "f71e05068e3550ce701c5be8135ec8e271c3d25508c9e3578621616c19f67d4c"
+      "hash": "839a71063dbdef7c597fc5d9fbe49dada5a838ee9648a7404205c6c62107b99a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource.md",
-      "hash": "9511eaed2e01aa71f68668414eb265fcacd13d3cc37593fa295270bbfad6394e"
+      "hash": "81796d1ee4daffbeb54dfe376bd69b728ca1907aea8d9727c82c49c360bcad5b"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/!=(_:_:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/noteq(_,_).md",
-      "hash": "98d62ec82cf00e94232f7122470f793385a49aa9a40e543349525b2c828676cf"
+      "hash": "40e908aca00b76d751b5320ec5c4f50b1fddac57979310bf9052a9e42c6dd2c2"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/allvaluedescriptions.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/allvaluedescriptions.md",
-      "hash": "2f29404cf01a75277855b3828dad9a9bb7525a408df32d63ca6b38dc14e50544"
+      "hash": "9baeeae2a8c59b8f3d725d7a3910837a9091eadd26b1a93e6b91948a1a2467fd"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/allvaluestrings.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/allvaluestrings.md",
-      "hash": "e6ce38e9b3064b9c772c958c15f5c38e1e89e8dfeff0bcd03c56f82ed6067eae"
+      "hash": "fcf5de137dd16f9e3c647f58dd9b44fdd3f1a261fa09c65a95290b08c17e02d7"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/build.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/build.md",
-      "hash": "f30a229e9444e2f9e0a122a9241929b95cb12d905b57adcaaa0cb1527fed8229"
+      "hash": "7498d398c99958602827aa3536df6322fbf98bc51581619d72d7fb704e2215a7"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/command.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/command.md",
-      "hash": "6c2128013a518c8d0559b28b36a0dfb4edf848df5cfa522b22ff9944d6f889cc"
+      "hash": "3fcf91759e6ada514b674878af242214eef42105a04819adbc2a9d21ab9bb183"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/defaultcompletionkind.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/defaultcompletionkind.md",
-      "hash": "da5a043342caf5f90cb00f616b7e521024309a5c7460f3bd1672df829c55e62c"
+      "hash": "4fe94b3f45206a33a6e6977b23666ca5a70ad0da23cc3ec87d9ed21a87a989b6"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/defaultvaluedescription.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/defaultvaluedescription.md",
-      "hash": "f91051e70db77de9f88d9185b59a1c3dd593f929b16bfa160741f7fb0f9abf4f"
+      "hash": "ef931ec3db35d33c8036543022ff2b71eacf9a289423de54c35c9112e4eb38de"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/encode(to:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/encode(to).md",
-      "hash": "58db9e416ddc278edf4e791b2338882b7814ca9a29e6f74b7ea22c2ddf7ac6e0"
+      "hash": "4bb487f528831a2d7676c612f502cd2b31eff040c641a70a5dfd2259a659b170"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/equatable-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/equatable-implementations.md",
-      "hash": "f169ae4ac918e416292f061124039f913c8710c946ef10992e01e083868a3e9f"
+      "hash": "beffa1ae86fd82bd1cf8c94231566bfc7b79e9ac74df4f55ce400e14f8c04b5a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/expressiblebyargument-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/expressiblebyargument-implementations.md",
-      "hash": "028fe59be7063f9a64a76f0f53c26265fe801f9257f7d753fb35776df569762a"
+      "hash": "a102a87f39415f40e974b0037f914e4fb72d314126356ee4bdb3b898081a854e"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/hash(into:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/hash(into).md",
-      "hash": "6dfd9c837b73d9977960abbf1869694157c7698dd6d3a34292fd61deb9b5b586"
+      "hash": "77895444a80124204e2fa0634e31d32936f5b4eec4e688bd2a95d0fe3834e2d3"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/hashvalue.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/hashvalue.md",
-      "hash": "d0881f3fc7ae3bdd4e0181c1da14fb526529160b5d83b0e493bc8988b370e133"
+      "hash": "1817459fd880491bb22a36b400a271c2b1e884fce4a4b48e626af211512f0911"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/init(argument:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/init(argument).md",
-      "hash": "8b42d84ba25e771bf3f583835102c9e52b2ba5855dbb80852d6d30d961aab6fb"
+      "hash": "95e92d7df9a81f914df446942cc5adeaa915ba29804dd442b3d819f17cf1352d"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/init(from:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/init(from).md",
-      "hash": "ec6c2f362a648e07657861965a3d990fa9332c41a3b2a51168045b7726048057"
+      "hash": "c365adbb274d273faf6f81759e9d7c1c7ff6d572daf09eade2035b2fbe94e693"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/init(rawvalue:).json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/init(rawvalue).md",
-      "hash": "24e7f349f83257ad25d0722d4275ca3fec0b604a985bb8004d7b8152919929f7"
+      "hash": "ef4efe7267c152e794bb1db078233aede2663b0d5b44042ecd64e9084e96c462"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/pluginsource/rawrepresentable-implementations.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/rawrepresentable-implementations.md",
-      "hash": "45e25200f59cd5c55737d6f9447f352a1cfb351fbf61dbff6656899d80080023"
+      "hash": "2234b99a0eed32cb04948c15dcf524a212d0fe5bc1f2a0e7ce70a66c3e05d9d5"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/swift.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/swift.md",
-      "hash": "1a19b1cf5cb0aa7ed88f47149249dd3ade8245906fa7b0953ae2f60e7d5f1ea0"
+      "hash": "49845a252780344d18d76f6fbe9a0cc53912968c44e2eb7e91dccf3c8296bfff"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/swift/caseiterable.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/swift/caseiterable.md",
-      "hash": "8173c11ba044a581c60cccdc603655fc0bd75e2ab9d6f84b5ac7e8e089768fd7"
+      "hash": "bf8cc6cfd5092efac35321b0b497807f99d945f09883763140186f7721d4ccb4"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/data/documentation/swift_openapi_generator/swift/caseiterable/prettylisting.json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/swift/caseiterable/prettylisting.md",
-      "hash": "6098f21ff12a2ee2c98a26ecdb1603ea377123def12e7506187b69d48557e4ce"
+      "hash": "4e3528db47ef09b324acd13c6ad4c501d87e78607a0a130265ed9446a6b2ce4e"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/swift_openapi_generator.md",
-      "hash": "10cb22db99b3b241e95f047123766990fea6e36cdb0a46c0528700d1c5c7a4f9"
+      "hash": "a3daae0ba323ec696df2fe9c9195e8ed0c9b229474b2415a48a376cb8a29f507"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore.md",
-      "hash": "2ae69e5b4689b33a518ca698406feef54ced721c8c08a0868389697d07a7cd6d"
+      "hash": "ecaa755923efa880003e694dbfb93382c818f2ce2a86d6b6116bf5d05d54622e"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/_userconfig": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/_userconfig.md",
-      "hash": "7c80f523c6e260a95f19b9258be90b5c81e7d82e63b17af2eff25184bc3f1497"
+      "hash": "f2c254305918db99556b8e0aeb71cdd7222ca1f211576abaaf97fd0d9a2c21b5"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/_userconfig/customstringconvertible-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/_userconfig/customstringconvertible-implementations.md",
-      "hash": "ce7623bf91dcc00231e52810d978f98278d50daabd7c56b0e824cd72dbcbf906"
+      "hash": "01df12543e789bb45979cf0ef1005f859e9ce460e90518bcd7bb14925e22d91a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/_userconfig/description": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/_userconfig/description.md",
-      "hash": "44b0ac54795de616ff36e7f55cfc5e84f0a0996ef4707fc50ace305b03a8b1e2"
+      "hash": "a29b1b8fc75ed59705ed0c5465c145b232843bd64147971ae4eae28cdcc74ec1"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/_userconfig/sample": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/_userconfig/sample.md",
-      "hash": "cc687e0c82d32d54bc2442f4f2cfb1963e68bfb18b4b0b0eb602da181052f2e5"
+      "hash": "330cf61d2912c8bcb1d78d85890fa7e7be5c61328b0667619b5bef8848f3fb78"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/_userconfig/yamlstring": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/_userconfig/yamlstring.md",
-      "hash": "606c3223f0cad83f32cd3ee7e4af7eb74547882d3f2b99e968d70d7c7f07ee77"
+      "hash": "de77ed3e1064d32c4fab3cf080c1515cff9d953383b03f2bd742683232991b72"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier.md",
-      "hash": "865296e1529975e08d46940dea22b6cf5ad9f3bc6c1565eefc9ecb4bdf6950b8"
+      "hash": "320e26ecd99d2b307c4ef78c021e3c38ff4b44ad2fae2065865d0f73f4d7af50"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluedescriptions-19sb9": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluedescriptions-19sb9.md",
-      "hash": "085252ccd2b7fe3f522fa95a650412ff20a6bb476cc60ecb9edcaf2e7f462d21"
+      "hash": "7729953916bbca5068ef5a8028f861b25747da1c74df387251fe40c9cf7c4bab"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluedescriptions-5fb6k": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluedescriptions-5fb6k.md",
-      "hash": "31ed654cff39a19edfa0bd7e4d87f5e286fd95b139ad58f3bc48fbc960449966"
+      "hash": "ae49f58c56a3ba8f4a8333731d1789e20233c615a8dac0b9f2b6dd69f1af2865"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings.md",
-      "hash": "0b8e4f768cecd348648cebc7d5382d57aa82b9610cb7c66c10bc9377087feee1"
+      "hash": "568bb817c28853aa8527d68f4f2693b6e7498adc8867164389cf6055e72c9659"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-3yhws": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-3yhws.md",
-      "hash": "4e0b5878e7aa94b509e505d2b4341f80dde8af10614c8dcba2652780c2f41060"
+      "hash": "ece14481401c0049ed8bf5e8b0fc88abf7208e8eb76838f49585c49d3228b679"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-5d1v6": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-5d1v6.md",
-      "hash": "b969c47014bda0f314dc122ce56abdf45d779e4dfbb5efe5b85be1d31e74d3a1"
+      "hash": "1f3582abba49e04c8a1ceb8ccb190fea33e0c86a36d78d751bcad2c868ace86e"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-94bwi": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/allvaluestrings-94bwi.md",
-      "hash": "b9b0b146ccb6a1aaf2f5d527c08babc42333cb5fa261aaa97a8f6a516e0856ae"
+      "hash": "7a89c42f55bf70b7838c1e7fa6a3ce490fc7980ad50912b8aa7f6cb810678afb"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultcompletionkind-82hlq": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultcompletionkind-82hlq.md",
-      "hash": "f776fff1fa5dd5cad5bcffdd97281baad11d5d942a2654b9db41dd7a31aa9df9"
+      "hash": "3917f8da4ffb7ddc01bb64bc929c257a7eb834d730e770a370b3c246c6436f35"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultcompletionkind-9ksdf": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultcompletionkind-9ksdf.md",
-      "hash": "2f96d9f4644ca7f07d2b5c72592f3438cb4b801cfa97d40a778153b578c67a11"
+      "hash": "a353b02455eaafff19ad56a5757f7d405c59f0d5a5d968f9cbf7d1cb75ebc032"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultvaluedescription": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/defaultvaluedescription.md",
-      "hash": "20b7b8423cc8e864cadcd39506ed381da9e5949cd5eb8e2a453e6b45b7358876"
+      "hash": "9a19c6ccdad9242a1a6d3bbab293e5fd5732901c0f440a78371b5cb23d41e663"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/accessmodifier/expressiblebyargument-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/accessmodifier/expressiblebyargument-implementations.md",
-      "hash": "d6a53ed84e943229995d0dfd3e937bc242e43f50d3163514a056a5f35c5d460a"
+      "hash": "5ad5a8fa3fd66cb31e8dde22597ad14f788f81e2c155dba64d1df71e17c80fd4"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag.md",
-      "hash": "e1febbedae803844f18002eae79654786ccb0f66707a22483b0b6b6f5607a283"
+      "hash": "4994bb466f270165604f2dcbe0e4956ad9cc44c2db887fc66f254783508a1ea1"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluedescriptions-18p6w": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluedescriptions-18p6w.md",
-      "hash": "3a535fa75adb9842b7533b81ebda8fa52270a0e00e2543a95de7ead75587849b"
+      "hash": "dfde3d1bf52821521e9644ebbafb51568863246fcc04bfff77afafb7cbf89527"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluedescriptions-1xjpl": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluedescriptions-1xjpl.md",
-      "hash": "1941fd2fc952b95e188b22e10719d260f7a8388fccf52601f4c4d1e5a2caa175"
+      "hash": "beac8e41cf1301adc3cffe7df0d0be1a3c4b51121ccd90eab35b138d5c804f15"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-68q1u": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-68q1u.md",
-      "hash": "6ea4a44eacf9a0bc527f5baa1f9b4fc757ad5029ae18a9adbeb89d73fa5c9b01"
+      "hash": "b445b5fa7f5de0ac680c574b9f96afe93985578e41f9800cb84d7e881bb3aac1"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-8ooe7": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-8ooe7.md",
-      "hash": "c260b872783088285f4a839e03c6e3174ac7b4c5ea7b871fe4d3c6a4f5c9a181"
+      "hash": "1bcd75c947767dd7692988bc6f779926ecf144767e6add55c8591fcf3dae4eb4"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-khud": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/allvaluestrings-khud.md",
-      "hash": "f8c1a700f0b1031d1dfb699c2480a8da8b5c44f30a438c0f16372b45952c0c08"
+      "hash": "619d483907ab87ec260a210e4461b7a449a366b4eafb6fa3e1c3af71078cb3c9"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultcompletionkind-765mb": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultcompletionkind-765mb.md",
-      "hash": "02f980ac1e8d0efab596bcf82bc54f9e54d64715ca953d2779104a580779dd48"
+      "hash": "f6c7fc93b3fa4b22f5f926439982271bb45f0b523ced279e7fa794b222f34959"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultcompletionkind-9g6q1": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultcompletionkind-9g6q1.md",
-      "hash": "1a22cd469e5e6f343b0ebc2b6067f520631d02a7f221e141f9a0c188c8af690a"
+      "hash": "90885be47bbfda654ed95e7047f58f4e755dbb1cff927c5a5a4246c8e3479635"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultvaluedescription": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/defaultvaluedescription.md",
-      "hash": "4c81c0fb5fbd8d7c1d42a00e2fb198dd46cae3e7e4e6a03a11f67ce1bc3b8156"
+      "hash": "6b2c8f132bb999fffd0a2e427bf43d16295e01a4227b6a9374109733bb1a98e5"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/featureflag/expressiblebyargument-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/featureflag/expressiblebyargument-implementations.md",
-      "hash": "ba59419407e163a47271c7d07420d527505eb4d9cc45fe34116094944da378a9"
+      "hash": "7173a46a9f0ff56b2f8c6ac996b3540e39f9f6e7aac91e9bd13a11bc00ccb4ea"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode.md",
-      "hash": "e23510426de9a54978874a23efaa688d5bf5c3c4f4ce49ee1287a4ac0f4cf7a7"
+      "hash": "97d15bbe695d01d25e3118de9bd5f29e6c7be2fa4fdcd821a9ae5ed1ca660fae"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluedescriptions-1yv5n": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluedescriptions-1yv5n.md",
-      "hash": "3cd6ada3f40a9eadf8580cdbfec877f03f51ff0f4300f2a85c8443ec4cd28814"
+      "hash": "ca08dfe4c5f44066ffac067503e66c16db6b6c73644dfc00cac9054db79cbe71"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluedescriptions-5eo82": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluedescriptions-5eo82.md",
-      "hash": "121729ec10777a8559b7d2bb32ebcdc37af839eeec098055b79bc4fd4634ef0d"
+      "hash": "35fa13648b37dd2903a0247143ebe9df426ba68f4a7e571b6df0dd941a64f408"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-2su2x": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-2su2x.md",
-      "hash": "78045decc314f04086e4e2fbe6807e3997b45ff4ac0cb85297ed00333e452f00"
+      "hash": "1b7c3a4df339403a0dd347738305c46ee8dbfa1e318f773a2ca267b9837c6353"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-5gz8u": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-5gz8u.md",
-      "hash": "fc7fa8723eb83cd3d4eda054f74985412254e33c5a10c77af553981878164cf6"
+      "hash": "ee482245ac4560ca7f651c8822fff58faae49a3cd6674e8408f18c4d999ab415"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-5osy3": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/allvaluestrings-5osy3.md",
-      "hash": "d843388f6fe1f8fa51858e7670e0d0fdcb6fe909d05e21abecae8aaab480cfc2"
+      "hash": "a641c71e8c18a408c20e708a8dce49052759cb1acdcef88302d804c8e24bd5c1"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultcompletionkind-2waty": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultcompletionkind-2waty.md",
-      "hash": "d8ed4f4da17be3afd6fb555e4c111f375c6b2d357fa66f5bb97e917aa400c7d3"
+      "hash": "4779b2e200a9a3f4b0dbf07281a2260d257cfec9c1a03f77282b42733640b312"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultcompletionkind-7cvxy": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultcompletionkind-7cvxy.md",
-      "hash": "1260a3f5665ab5fafcb5cb6be539a6777b79272e2c97c28404c056e07736a8f6"
+      "hash": "ea4d9eafb15d3d446d75af7b99a78643ef2dde4384ec43f706c7626224ac2d2a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultvaluedescription": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/defaultvaluedescription.md",
-      "hash": "7bf780cd96c36183703409cb91b3cbc7c90d9d70cb5fc34e5465539a91ba0c93"
+      "hash": "9fb07bc70bc64b20b2e5bb339c7722e5f271364d6144ce88db8541f6b3e910aa"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/generatormode/expressiblebyargument-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/generatormode/expressiblebyargument-implementations.md",
-      "hash": "f14b21c2b54f100c863080c0290cc4b58b1b1bfdee7570d4edc874072df1bfc7"
+      "hash": "b8bba831fb603085ed02fa69e2c0e16807e2feb5365a5a50116f7a54db5e9cd8"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy.md",
-      "hash": "8a164c784f097c3c237377f444a98724de7ddeb2b90df7596bfff8481be6439a"
+      "hash": "521333ea917712c2f408c36eeb9399a7e7e17956824bf00e1a4258bbd96bf169"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluedescriptions-4307o": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluedescriptions-4307o.md",
-      "hash": "93d69ea0c71c8aa5caeaf98de70979ed5a2478f7a69f59c083e9fae9788b2708"
+      "hash": "98e8da99d939a270b2c0ed309b6775687a09691ab154b10a6d5a2354c5227982"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluedescriptions-4yga5": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluedescriptions-4yga5.md",
-      "hash": "537c708569f9dd3d61855346639889d9fb4dbac72e84659a5627bd113a593fe9"
+      "hash": "71a0a2c7ccfa78ace8b9f6032caf7e3b4a47950b70335416a404d7f7af7f5ba6"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-594ka": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-594ka.md",
-      "hash": "9f9c3655ed7f6ae11521d059eb3d198f5c8f9863c373d850c05f0a8fa94e6815"
+      "hash": "38b911bcdd6f90ed2aad55c8fc0c8d9f3546269882149472e607fd0f871d85e7"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-7ml76": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-7ml76.md",
-      "hash": "65914ca240a73db7a48ff00c72a849241d48fedd001cc7773940723864c32e93"
+      "hash": "1f6110fe22c23b49efb57d357323d09f7ef87a0257a64e1d3192d3da75bb1b04"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-fd45": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/allvaluestrings-fd45.md",
-      "hash": "34324adf50b9f283e7875a748df4f222022a24b3f58a36eb3da76de697dfb938"
+      "hash": "699df32374e257727b0b864d32af5601f6f3dca0cd8981c5e5026b1b7dd72f3f"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultcompletionkind-2gcf0": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultcompletionkind-2gcf0.md",
-      "hash": "beef7fae544ad1dd532e09414980f911ea1eecfe47ab0adde6ebc32067a5d863"
+      "hash": "0b4df5bfab66dc3bf8336ffbb24435f5d8ae0520a3657aeca677d3bc710fed46"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultcompletionkind-5yp36": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultcompletionkind-5yp36.md",
-      "hash": "75a251a73d242559a08cf8d73548401dffd08c3deb66057b9c76de905f37ad20"
+      "hash": "65874d6a8607b11d708264f6f0d47b3998f832d4e811107dcd72b31151ec4afc"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultvaluedescription": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/defaultvaluedescription.md",
-      "hash": "c2766464b2cc84f806f650896fe5f08a20e51ad25e0177a42459a88ef384e037"
+      "hash": "b68bda27ceefda0ba913d1aa0f9a0777886bd392dbcaaa85d014e5ec479a8eef"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/_openapigeneratorcore/namingstrategy/expressiblebyargument-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/_openapigeneratorcore/namingstrategy/expressiblebyargument-implementations.md",
-      "hash": "c4c04997593880d6dbdfbe7641fa94bc1606f63dd3952f4fd05993927d88981a"
+      "hash": "b5167fa39e234eaa6aa36c62068da67a7b248dee822a6af2b68551e2e998601a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/foundation": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation.md",
-      "hash": "14beba4d28fbb8e232f604e3db6c975d9bb1368aab4991e4b317ea7239d1dc97"
+      "hash": "6d017de7d46748407e7825cabf1b00393708a6cd2118258eb6745bad206fa5e5"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/foundation/url": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url.md",
-      "hash": "10826e7037f584c1a7cd8e11eb5fce3f7a90b2c7e47b831145233c9cd00872ec"
+      "hash": "ca66296bbd9903be0215108b71816cf4aa5581d86ff38e3db2f216b764984e21"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/foundation/url/allvaluedescriptions": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/allvaluedescriptions.md",
-      "hash": "0ba8a1f62055ce71bc77b354973a24c953e5487c4068f4ed28009c7fadc2b2e0"
+      "hash": "57d22f115e40eb4d60b96dbad41d9efb9bf8fbb5cfab10246f8bd177629c98bc"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/foundation/url/allvaluestrings": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/allvaluestrings.md",
-      "hash": "ddfa8ef88402a140b3bb7b389eb6c83c065528ebca113ebeb1309be43d7b60b3"
+      "hash": "7ee6dad26c000148150877c28ad8af9e9323eafea07bd4b7765d1eadb5db5528"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/foundation/url/defaultcompletionkind": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/defaultcompletionkind.md",
-      "hash": "68fe75479a4beade91dd78ca7f39a80ddd1bcffd1d66efb3f7af1c552546452c"
+      "hash": "60248b65cb5be0166f9dbcd93aa75a79fb1ce86f5e60ec027e71136ed3ee1e86"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/foundation/url/defaultvaluedescription": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/defaultvaluedescription.md",
-      "hash": "0605954a43e1022d6394f207ce0d0423ec3420a9f0e643738bd8d2a85000cacc"
+      "hash": "13a38b2706273bea3bf2f8f57a0091530abe28ede194b41225073a2cf1fa4d3a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/foundation/url/expressiblebyargument-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/expressiblebyargument-implementations.md",
-      "hash": "efd7f411c224e33028de79cc9600c2a20c4fed1dc112f62694df20489ea9c585"
+      "hash": "73220bb1859f780813a7d8d85e4177e7c59cf364c83d54b7eaee34a045da36bb"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/foundation/url/init(argument:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/init(argument).md",
-      "hash": "fdffa606232a8443e5d065ce9f14f078df65e68c4ebdb15b978db6c954b30069"
+      "hash": "413cd8a6d62a44713f20eeeef02b09229d189a0ae233059b997bc883772f5f6d"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/foundation/url/path()": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/foundation/url/path().md",
-      "hash": "e45eb299656bef70f64e2db30310c28c133c5d9ee366fd4592fa33af3a19be6d"
+      "hash": "b269d94eb71651bffa0394cbeebee80704569af80aa2ab5b6cbd857e03676929"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/handlefileoperation(at:filedescription:operation:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/handlefileoperation(at,filedescription,operation).md",
-      "hash": "3ba0a49916ffde27cb6209b82b8771ee8c67302536ea1d146be77f2de6fe4f2f"
+      "hash": "27bf7a5ac0ae700aca6297fb0ed7bf99cf4004043c56729c9597541d9c6f2153"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat.md",
-      "hash": "8711c94234bde7fc4e00364e3171116302341559cd7130ed1c0894ab24bb18f9"
+      "hash": "3091f22aab1e4e3824b32832cccb6eebd5eef0e3e5232d42d58de6195b5ae00d"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/!=(_:_:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/noteq(_,_).md",
-      "hash": "b8958b2c9065d075f6ca9ac35914c92ef3603f9cc53770b70390bb4538512374"
+      "hash": "941b5b1ece212f70106b7ab3db00225252c2564aa9e9b69a5abf5791d41a1dc4"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/allvaluedescriptions": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/allvaluedescriptions.md",
-      "hash": "9ead0a503351902abef04497190705fb3a5f2dfa0d39a6460d4b7244301fc109"
+      "hash": "aa4c6d8f6053b18aeaf4babeb94e00ca06f6d2c3f6fd2243a9b3604947ced779"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/allvaluestrings": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/allvaluestrings.md",
-      "hash": "086d26846240e200b7b920ac8a408c0568c9c16158526271ac9c1c977c1e384b"
+      "hash": "de6cd1054ebf1b95251257392a859db30320cee73137717ed171d64b8c67f26e"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/defaultcompletionkind": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/defaultcompletionkind.md",
-      "hash": "b1f7e2cc50d4a69d66c46af4a8781aa9f600192b38b52d626b1898d30b99b74a"
+      "hash": "ba119cde0e23c39f73089cbe29040638edc0afd1d1ab1e9f40046b248a491483"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/defaultvaluedescription": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/defaultvaluedescription.md",
-      "hash": "4e79080b000a65c1de9d10b7c3cabf3a93f448daae8b7081778d9ac179c1153a"
+      "hash": "42e720e3d05f6fe86d580f753a8fa484c7ae727b2feb71ea1a202a1cb90f1e74"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/equatable-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/equatable-implementations.md",
-      "hash": "4005ab0d886056fd14478f00857394c5eb7b376e678fbb3efa3a31f0818f677f"
+      "hash": "e17b69c1e897ad073800b59c87aed883e0b361ba7b9f29a83d433d9e54a11a24"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/expressiblebyargument-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/expressiblebyargument-implementations.md",
-      "hash": "22d38ec384f4c5195ec36bd34788ff71109dd098eaac191a720ff1a7615dd053"
+      "hash": "7fe084d8ecd4b4e4de5191c461f95eff919cadd60d0a43dff3cea9a9dcd32a32"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/hash(into:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/hash(into).md",
-      "hash": "1cb3412ed5827ba6545436bd90356b115b4a55fdaf2310b68154239c5f9c9186"
+      "hash": "68fcbec3ea516dec4f5aa5894c00e469bc2afce1c242bbbf491e6ec56d76c1ea"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/hashvalue": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/hashvalue.md",
-      "hash": "5baec091b91dc2122a6d271c3c45c3e77b396ce8899024537532c023dac00eb3"
+      "hash": "54ac4f295275f96c3d90b23c7dc75bee2b1c7098ad68c4abf0f333a0ef1f37cc"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/init(argument:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/init(argument).md",
-      "hash": "2e85b687a618e14a4921e3c9dddff3bf2432834130adb5e58baf58a1a6cea092"
+      "hash": "535109c6702d6f0fbf2d57cac449694f76faf6645c2e0d08043a66776c04e724"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/init(rawvalue:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/init(rawvalue).md",
-      "hash": "5e2eb6234fda23901dc620eacb4c2e62c1ee03d825fc73edb42fdeb9a31932ed"
+      "hash": "4cd5a2a56c4d6c7d8d8620b894c8dd31680b812a4879a42f5c95ed013c89a65b"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/json": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/json.md",
-      "hash": "83641dfc854ef8984ad91cf2aab3a219cbe819d12a0e7f6051e2fff68115a01f"
+      "hash": "449b73813521e28cc3ab76aeb7b09a9afed69afc8579031951988bf29e6b872c"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/rawrepresentable-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/rawrepresentable-implementations.md",
-      "hash": "ffa607351e9eccffc93f246eb435d09a057d192de3cfc34202530f9323ac7f8e"
+      "hash": "c53d321f3c84f38f4b7578eae6a31e6e73c89e8caa1ab416b0077bb8e09540a1"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/outputformat/yaml": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/outputformat/yaml.md",
-      "hash": "f71e05068e3550ce701c5be8135ec8e271c3d25508c9e3578621616c19f67d4c"
+      "hash": "839a71063dbdef7c597fc5d9fbe49dada5a838ee9648a7404205c6c62107b99a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource.md",
-      "hash": "9511eaed2e01aa71f68668414eb265fcacd13d3cc37593fa295270bbfad6394e"
+      "hash": "81796d1ee4daffbeb54dfe376bd69b728ca1907aea8d9727c82c49c360bcad5b"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/!=(_:_:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/noteq(_,_).md",
-      "hash": "98d62ec82cf00e94232f7122470f793385a49aa9a40e543349525b2c828676cf"
+      "hash": "40e908aca00b76d751b5320ec5c4f50b1fddac57979310bf9052a9e42c6dd2c2"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/allvaluedescriptions": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/allvaluedescriptions.md",
-      "hash": "2f29404cf01a75277855b3828dad9a9bb7525a408df32d63ca6b38dc14e50544"
+      "hash": "9baeeae2a8c59b8f3d725d7a3910837a9091eadd26b1a93e6b91948a1a2467fd"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/allvaluestrings": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/allvaluestrings.md",
-      "hash": "e6ce38e9b3064b9c772c958c15f5c38e1e89e8dfeff0bcd03c56f82ed6067eae"
+      "hash": "fcf5de137dd16f9e3c647f58dd9b44fdd3f1a261fa09c65a95290b08c17e02d7"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/build": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/build.md",
-      "hash": "f30a229e9444e2f9e0a122a9241929b95cb12d905b57adcaaa0cb1527fed8229"
+      "hash": "7498d398c99958602827aa3536df6322fbf98bc51581619d72d7fb704e2215a7"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/command": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/command.md",
-      "hash": "6c2128013a518c8d0559b28b36a0dfb4edf848df5cfa522b22ff9944d6f889cc"
+      "hash": "3fcf91759e6ada514b674878af242214eef42105a04819adbc2a9d21ab9bb183"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/defaultcompletionkind": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/defaultcompletionkind.md",
-      "hash": "da5a043342caf5f90cb00f616b7e521024309a5c7460f3bd1672df829c55e62c"
+      "hash": "4fe94b3f45206a33a6e6977b23666ca5a70ad0da23cc3ec87d9ed21a87a989b6"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/defaultvaluedescription": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/defaultvaluedescription.md",
-      "hash": "f91051e70db77de9f88d9185b59a1c3dd593f929b16bfa160741f7fb0f9abf4f"
+      "hash": "ef931ec3db35d33c8036543022ff2b71eacf9a289423de54c35c9112e4eb38de"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/encode(to:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/encode(to).md",
-      "hash": "58db9e416ddc278edf4e791b2338882b7814ca9a29e6f74b7ea22c2ddf7ac6e0"
+      "hash": "4bb487f528831a2d7676c612f502cd2b31eff040c641a70a5dfd2259a659b170"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/equatable-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/equatable-implementations.md",
-      "hash": "f169ae4ac918e416292f061124039f913c8710c946ef10992e01e083868a3e9f"
+      "hash": "beffa1ae86fd82bd1cf8c94231566bfc7b79e9ac74df4f55ce400e14f8c04b5a"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/expressiblebyargument-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/expressiblebyargument-implementations.md",
-      "hash": "028fe59be7063f9a64a76f0f53c26265fe801f9257f7d753fb35776df569762a"
+      "hash": "a102a87f39415f40e974b0037f914e4fb72d314126356ee4bdb3b898081a854e"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/hash(into:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/hash(into).md",
-      "hash": "6dfd9c837b73d9977960abbf1869694157c7698dd6d3a34292fd61deb9b5b586"
+      "hash": "77895444a80124204e2fa0634e31d32936f5b4eec4e688bd2a95d0fe3834e2d3"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/hashvalue": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/hashvalue.md",
-      "hash": "d0881f3fc7ae3bdd4e0181c1da14fb526529160b5d83b0e493bc8988b370e133"
+      "hash": "1817459fd880491bb22a36b400a271c2b1e884fce4a4b48e626af211512f0911"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/init(argument:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/init(argument).md",
-      "hash": "8b42d84ba25e771bf3f583835102c9e52b2ba5855dbb80852d6d30d961aab6fb"
+      "hash": "95e92d7df9a81f914df446942cc5adeaa915ba29804dd442b3d819f17cf1352d"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/init(from:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/init(from).md",
-      "hash": "ec6c2f362a648e07657861965a3d990fa9332c41a3b2a51168045b7726048057"
+      "hash": "c365adbb274d273faf6f81759e9d7c1c7ff6d572daf09eade2035b2fbe94e693"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/init(rawvalue:)": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/init(rawvalue).md",
-      "hash": "24e7f349f83257ad25d0722d4275ca3fec0b604a985bb8004d7b8152919929f7"
+      "hash": "ef4efe7267c152e794bb1db078233aede2663b0d5b44042ecd64e9084e96c462"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/pluginsource/rawrepresentable-implementations": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/pluginsource/rawrepresentable-implementations.md",
-      "hash": "45e25200f59cd5c55737d6f9447f352a1cfb351fbf61dbff6656899d80080023"
+      "hash": "2234b99a0eed32cb04948c15dcf524a212d0fe5bc1f2a0e7ce70a66c3e05d9d5"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/swift": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/swift.md",
-      "hash": "1a19b1cf5cb0aa7ed88f47149249dd3ade8245906fa7b0953ae2f60e7d5f1ea0"
+      "hash": "49845a252780344d18d76f6fbe9a0cc53912968c44e2eb7e91dccf3c8296bfff"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/swift/caseiterable": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/swift/caseiterable.md",
-      "hash": "8173c11ba044a581c60cccdc603655fc0bd75e2ab9d6f84b5ac7e8e089768fd7"
+      "hash": "bf8cc6cfd5092efac35321b0b497807f99d945f09883763140186f7721d4ccb4"
     },
     "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift_openapi_generator/swift/caseiterable/prettylisting": {
       "file_path": "documentation/SPI/swift-openapi-generator/swift_openapi_generator/swift/caseiterable/prettylisting.md",
-      "hash": "6098f21ff12a2ee2c98a26ecdb1603ea377123def12e7506187b69d48557e4ce"
+      "hash": "4e3528db47ef09b324acd13c6ad4c501d87e78607a0a130265ed9446a6b2ce4e"
     }
   },
   "metadata": {

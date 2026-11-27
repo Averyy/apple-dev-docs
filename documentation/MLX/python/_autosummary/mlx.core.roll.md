@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ro
 # mlx.core.roll
 
 ```python
-roll(a: array, shift: int | tuple[int], axis: None | int | tuple[int] = None, /, *, stream: StreamOrDevice = None) → array
+roll(a: array, /, shift: int | tuple[int], axis: None | int | tuple[int] = None, *, stream: StreamOrDevice = None) → array
 ```
 
 Roll array elements along a given axis.

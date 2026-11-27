@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.mu
 # mlx.core.multiply
 
 ```python
-multiply(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+multiply(a: scalar | array, b: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise multiplication.

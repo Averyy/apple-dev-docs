@@ -7358,7 +7358,7 @@
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/activityfamily": {
       "file_path": "documentation/SwiftUI/environmentvalues/activityfamily.md",
-      "hash": "cbcba8ecec13bf6e7e458b671f101928cc60bc2c7218c6b1f525c3b9dfb5ffc4"
+      "hash": "7f528a9ac13008b95135b0395534939d39bc03963ac8087ebc2e661398a4f8a4"
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/alloweddynamicrange": {
       "file_path": "documentation/SwiftUI/environmentvalues/alloweddynamicrange.md",
@@ -7794,7 +7794,7 @@
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/requestagerange": {
       "file_path": "documentation/SwiftUI/environmentvalues/requestagerange.md",
-      "hash": "9a4f88ae5576a79b7924c2d3ef27cf6d6c392a0fc769a7bef08c540c715d112c"
+      "hash": "3aeb25a7ade7e1e0de8cc9acf7eab267f92f90ba4f001d1ad966ba6f79026499"
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/requestappdeletion": {
       "file_path": "documentation/SwiftUI/environmentvalues/requestappdeletion.md",
@@ -7822,11 +7822,11 @@
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/showsignificantupdateacknowledgment": {
       "file_path": "documentation/SwiftUI/environmentvalues/showsignificantupdateacknowledgment.md",
-      "hash": "0c9fdedd3933e17a105f08eb639ded6341624d8792c4330d5cb2eac1bfcc1630"
+      "hash": "3fac9f359915a2f9ecfeb8ca71c1308e17c3e6cd7576f0512a8a891afbf8b622"
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/showswidgetcontainerbackground": {
       "file_path": "documentation/SwiftUI/environmentvalues/showswidgetcontainerbackground.md",
-      "hash": "ed673af5d1b849a0525d23dbed617036e646ba311270dcd4c3ea1d5cb4a94082"
+      "hash": "769f1e13efc41ef2d93d0fe5d69e15db76daa9bb1dd3bd2a46d71e1139a02c94"
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/showswidgetlabel": {
       "file_path": "documentation/SwiftUI/environmentvalues/showswidgetlabel.md",
@@ -7962,7 +7962,7 @@
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/widgetcontentmargins": {
       "file_path": "documentation/SwiftUI/environmentvalues/widgetcontentmargins.md",
-      "hash": "32f3d695359fdd67abec0feb162a83c9fa77e30a8c96d3dd4580fd1b17a74fa4"
+      "hash": "cdf238bd14839c3fbe07f181d8763d56decdbaca9bc1ecddc67d183cc412d9a4"
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/widgetfamily": {
       "file_path": "documentation/SwiftUI/environmentvalues/widgetfamily.md",
@@ -29974,7 +29974,7 @@
     },
     "https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:objecttype:predicate:trigger:completion:)": {
       "file_path": "documentation/SwiftUI/view/healthdataaccessrequest(store,objecttype,predicate,trigger,completion).md",
-      "hash": "fe4e37d8fc18fd1c31fc5989126ea317a2957b07eda991a9bb1ce62e581bedae"
+      "hash": "f9aa41594ca261cab1dfd6f55cdc036862fd545f579ecc7e65d4286e3d8f25e1"
     },
     "https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:readtypes:trigger:completion:)": {
       "file_path": "documentation/SwiftUI/view/healthdataaccessrequest(store,readtypes,trigger,completion).md",
@@ -30758,7 +30758,7 @@
     },
     "https://developer.apple.com/documentation/swiftui/view/onappintentexecution(_:perform:)": {
       "file_path": "documentation/SwiftUI/view/onappintentexecution(_,perform).md",
-      "hash": "16073964fd1ea13efaee0d0b9828c26c2e0a79e8b0440c093cb9722c37c6db30"
+      "hash": "d3e2c1bde8fb6fba67a2c9c563d653d8a29b80cdaf89c4fa7de5af81a97f6016"
     },
     "https://developer.apple.com/documentation/swiftui/view/onapplepaycouponcodechange(perform:)": {
       "file_path": "documentation/SwiftUI/view/onapplepaycouponcodechange(perform).md",
@@ -32782,7 +32782,7 @@
     },
     "https://developer.apple.com/documentation/swiftui/view/widgetcurvescontent(_:)": {
       "file_path": "documentation/SwiftUI/view/widgetcurvescontent(_).md",
-      "hash": "f5a669131e2bd034cdf20d794217843fb930b93f3fcaee69cb40aab3f2bcd39a"
+      "hash": "ce39fde9d47e9a0677d8ddd96230612da27fcfab9a8c13a40df58e164974ddd9"
     },
     "https://developer.apple.com/documentation/swiftui/view/widgetlabel(_:)": {
       "file_path": "documentation/SwiftUI/view/widgetlabel(_).md",
@@ -33530,7 +33530,7 @@
     },
     "https://developer.apple.com/documentation/swiftui/windowdraggesture": {
       "file_path": "documentation/SwiftUI/windowdraggesture.md",
-      "hash": "b9ac5168979d93f4741eabab381653ff5cdc9f27caa20cd540fe0407781a88e8"
+      "hash": "45b2372ece99b958f956f701466eedf879f1dd700d4f5ada6d1915053bf3da01"
     },
     "https://developer.apple.com/documentation/swiftui/windowdraggesture/init()": {
       "file_path": "documentation/SwiftUI/windowdraggesture/init().md",
@@ -41670,7 +41670,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/activityfamily.json": {
       "file_path": "documentation/SwiftUI/environmentvalues/activityfamily.md",
-      "hash": "cbcba8ecec13bf6e7e458b671f101928cc60bc2c7218c6b1f525c3b9dfb5ffc4"
+      "hash": "7f528a9ac13008b95135b0395534939d39bc03963ac8087ebc2e661398a4f8a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/alloweddynamicrange.json": {
       "file_path": "documentation/SwiftUI/environmentvalues/alloweddynamicrange.md",
@@ -42106,7 +42106,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/requestagerange.json": {
       "file_path": "documentation/SwiftUI/environmentvalues/requestagerange.md",
-      "hash": "9a4f88ae5576a79b7924c2d3ef27cf6d6c392a0fc769a7bef08c540c715d112c"
+      "hash": "3aeb25a7ade7e1e0de8cc9acf7eab267f92f90ba4f001d1ad966ba6f79026499"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/requestappdeletion.json": {
       "file_path": "documentation/SwiftUI/environmentvalues/requestappdeletion.md",
@@ -42134,11 +42134,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/showsignificantupdateacknowledgment.json": {
       "file_path": "documentation/SwiftUI/environmentvalues/showsignificantupdateacknowledgment.md",
-      "hash": "0c9fdedd3933e17a105f08eb639ded6341624d8792c4330d5cb2eac1bfcc1630"
+      "hash": "3fac9f359915a2f9ecfeb8ca71c1308e17c3e6cd7576f0512a8a891afbf8b622"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/showswidgetcontainerbackground.json": {
       "file_path": "documentation/SwiftUI/environmentvalues/showswidgetcontainerbackground.md",
-      "hash": "ed673af5d1b849a0525d23dbed617036e646ba311270dcd4c3ea1d5cb4a94082"
+      "hash": "769f1e13efc41ef2d93d0fe5d69e15db76daa9bb1dd3bd2a46d71e1139a02c94"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/showswidgetlabel.json": {
       "file_path": "documentation/SwiftUI/environmentvalues/showswidgetlabel.md",
@@ -42274,7 +42274,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/widgetcontentmargins.json": {
       "file_path": "documentation/SwiftUI/environmentvalues/widgetcontentmargins.md",
-      "hash": "32f3d695359fdd67abec0feb162a83c9fa77e30a8c96d3dd4580fd1b17a74fa4"
+      "hash": "cdf238bd14839c3fbe07f181d8763d56decdbaca9bc1ecddc67d183cc412d9a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/widgetfamily.json": {
       "file_path": "documentation/SwiftUI/environmentvalues/widgetfamily.md",
@@ -64290,7 +64290,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/healthdataaccessrequest(store:objecttype:predicate:trigger:completion:).json": {
       "file_path": "documentation/SwiftUI/view/healthdataaccessrequest(store,objecttype,predicate,trigger,completion).md",
-      "hash": "fe4e37d8fc18fd1c31fc5989126ea317a2957b07eda991a9bb1ce62e581bedae"
+      "hash": "f9aa41594ca261cab1dfd6f55cdc036862fd545f579ecc7e65d4286e3d8f25e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/healthdataaccessrequest(store:readtypes:trigger:completion:).json": {
       "file_path": "documentation/SwiftUI/view/healthdataaccessrequest(store,readtypes,trigger,completion).md",
@@ -65074,7 +65074,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/onappintentexecution(_:perform:).json": {
       "file_path": "documentation/SwiftUI/view/onappintentexecution(_,perform).md",
-      "hash": "16073964fd1ea13efaee0d0b9828c26c2e0a79e8b0440c093cb9722c37c6db30"
+      "hash": "d3e2c1bde8fb6fba67a2c9c563d653d8a29b80cdaf89c4fa7de5af81a97f6016"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/onapplepaycouponcodechange(perform:).json": {
       "file_path": "documentation/SwiftUI/view/onapplepaycouponcodechange(perform).md",
@@ -67098,7 +67098,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/widgetcurvescontent(_:).json": {
       "file_path": "documentation/SwiftUI/view/widgetcurvescontent(_).md",
-      "hash": "f5a669131e2bd034cdf20d794217843fb930b93f3fcaee69cb40aab3f2bcd39a"
+      "hash": "ce39fde9d47e9a0677d8ddd96230612da27fcfab9a8c13a40df58e164974ddd9"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/widgetlabel(_:)-7wguh.json": {
       "file_path": "documentation/SwiftUI/view/widgetlabel(_)-7wguh.md",
@@ -67846,7 +67846,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/windowdraggesture.json": {
       "file_path": "documentation/SwiftUI/windowdraggesture.md",
-      "hash": "b9ac5168979d93f4741eabab381653ff5cdc9f27caa20cd540fe0407781a88e8"
+      "hash": "45b2372ece99b958f956f701466eedf879f1dd700d4f5ada6d1915053bf3da01"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/windowdraggesture/init().json": {
       "file_path": "documentation/SwiftUI/windowdraggesture/init().md",

@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 # mlx.core.divide
 
 ```python
-divide(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+divide(a: scalar | array, b: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise division.

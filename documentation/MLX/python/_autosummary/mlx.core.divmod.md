@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 # mlx.core.divmod
 
 ```python
-divmod(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+divmod(a: scalar | array, b: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise quotient and remainder.

@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.is
 # mlx.core.isneginf
 
 ```python
-isneginf(a: array, stream: StreamOrDevice = None) → array
+isneginf(a: array, *, stream: StreamOrDevice = None) → array
 ```
 
 Return a boolean array indicating which elements are negative infinity.

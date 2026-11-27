@@ -57,7 +57,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/layers.html
 | [ReLU2](_autosummary/mlx.nn.ReLU2.md#mlx.nn.ReLU2)() | Applies the ReLU² activation function. |
 | [ReLU6](_autosummary/mlx.nn.ReLU6.md#mlx.nn.ReLU6)() | Applies the Rectified Linear Unit 6. |
 | [RNN](_autosummary/mlx.nn.RNN.md#mlx.nn.RNN)(input_size, hidden_size[, bias, ...]) | An Elman recurrent layer. |
-| [RoPE](_autosummary/mlx.nn.RoPE.md#mlx.nn.RoPE)(dims[, traditional, base, scale]) | Implements the rotary positional encoding. |
+| [RoPE](_autosummary/mlx.nn.RoPE.md#mlx.nn.RoPE)(dims[, traditional, base, scale, ...]) | Implements the rotary positional encoding. |
 | [SELU](_autosummary/mlx.nn.SELU.md#mlx.nn.SELU)() | Applies the Scaled Exponential Linear Unit. |
 | [Sequential](_autosummary/mlx.nn.Sequential.md#mlx.nn.Sequential)(*modules) | A layer that calls the passed callables in order. |
 | [ShardedToAllLinear](_autosummary/mlx.nn.ShardedToAllLinear.md#mlx.nn.ShardedToAllLinear)(input_dims, output_dims) | Each member of the group applies part of the affine transformation and then aggregates the results. |

@@ -33,7 +33,8 @@ struct TipViewStyleConfiguration
 ## See Also
 
 ### View Style
-- [func tipViewStyle(some TipViewStyle) -> some View\n](../SwiftUI/view/tipviewstyle%28_%29.md)
+- [func tipViewStyle(some TipViewStyle) -> some View
+](../SwiftUI/view/tipviewstyle%28_%29.md)
   Sets the given style for TipView within the view hierarchy.
 - [protocol TipViewStyle](./tipviewstyle.md)
   A type that applies custom appearance to all tips within a view hierarchy.

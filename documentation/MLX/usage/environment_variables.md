@@ -7,9 +7,11 @@ url: https://ml-explore.github.io/mlx/build/html/usage/environment_variables.htm
 # Environment Variables
 
 MLX uses environment variables to configure compilation, numerical precision,
-backend behavior, and distributed execution. Set them before starting the
-process. Many variables are read when the corresponding subsystem is first
-initialized and changing them later may have no effect.
+backend behavior, and distributed execution. They must be set before invoking
+any MLX API, and can not be changed later.
+
+For dynamically changing the configurations in the middle of program, use the
+[mlx.core.config.update()](../python/_autosummary/mlx.core.config.update.md#mlx.core.config.update) API.
 
 Boolean variables use `0` to disable and a nonzero integer to enable unless
 otherwise noted.
@@ -43,6 +45,15 @@ alias by JACCL.
 **MLX_RING_VERBOSE**
 : Enable verbose logging for the Ring backend. This variable is enabled by
 its presence.
+
+**MLX_RING_SOURCE_IPS**
+: A comma-separated list of local IP addresses, without spaces, that the Ring
+backend binds its outgoing connections to. The `i`-th address is used for
+the connection to the `i`-th address of the next rank in the host file, so
+the list must have one entry per address of the next rank. The operating
+system still selects the port. When unset, the operating system also selects
+the source address. Each process usually needs its own value because the
+addresses belong to the local host.
 
 **MLX_IBV_DEVICES**
 : The path to the JSON device-connectivity file used by JACCL.
@@ -88,6 +99,12 @@ long idle periods. Requires a Metal 3 GPU on macOS 15 or iOS 18 or later.
 **MLX_METAL_FAST_SYNCH**
 : Enable the faster Metal CPU/GPU synchronization path. The default is `0`.
 This requires Metal 3.2 or later (macOS 15 or later, or iOS 18 or later).
+
+**MLX_METAL_RUNTIME_COMPILE**
+: Allow building Metal libraries from source at runtime. The default is
+`1`. Set it to `0` to throw instead when a kernel needs a library that
+has not been loaded yet. Libraries loaded earlier, including ones loaded by
+name from a `.metallib`, are still used.
 
 **MLX_CONV_WINOGRAD**
 : Allow the Winograd algorithm for 3x3 `conv2d`. The default is `1`. Set
@@ -168,3 +185,10 @@ default is `1`.
 
 MLX also uses `CUDA_HOME` or `CUDA_PATH` to locate CUDA headers for runtime
 kernel compilation when they cannot be found in the Python environment.
+
+## CPU
+
+**MLX_CPU_CACHE_DIR**
+: Override the directory used to cache runtime-compiled CPU kernels. An unset
+or empty value uses `mlx/<version>/cpu` under the system temporary
+directory, which is the default.

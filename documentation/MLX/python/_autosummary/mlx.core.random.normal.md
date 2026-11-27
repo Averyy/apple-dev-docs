@@ -17,6 +17,11 @@ distribution is used. That means $x sim mathcal{N}(0, 1)$ for
 real numbers and $text{Re}(x),text{Im}(x) sim mathcal{N}(0,
 frac{1}{2})$ for complex numbers.
 
+Note
+
+Outputs are deterministic for a given key on a given machine, but
+they are not guaranteed to be bit-exact across GPU architectures.
+
 **Parameters:**
 
 - **shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)([int](https://docs.python.org/3/builtins/functions.html#int)), *optional*) – Shape of the output. Default: `()`.

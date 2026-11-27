@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.bi
 # mlx.core.bitwise_or
 
 ```python
-bitwise_or(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+bitwise_or(a: scalar | array, b: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise bitwise or.

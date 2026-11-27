@@ -73,7 +73,7 @@ Attributes
 | [dtype](mlx.core.array.dtype.md#mlx.core.array.dtype) | The array's [Dtype](mlx.core.Dtype.md#mlx.core.Dtype). |
 | [imag](mlx.core.array.imag.md#mlx.core.array.imag) | The imaginary part of a complex array. |
 | [itemsize](mlx.core.array.itemsize.md#mlx.core.array.itemsize) | The size of the array's datatype in bytes. |
-| `mT` | Equivalent to calling `self.transpose()` with the last two axes swapped. |
+| [mT](mlx.core.array.mT.md#mlx.core.array.mT) | Equivalent to calling `self.transpose()` with the last two axes swapped. |
 | [nbytes](mlx.core.array.nbytes.md#mlx.core.array.nbytes) | The number of bytes in the array. |
 | [ndim](mlx.core.array.ndim.md#mlx.core.array.ndim) | The array's dimension. |
 | [real](mlx.core.array.real.md#mlx.core.array.real) | The real part of a complex array. |

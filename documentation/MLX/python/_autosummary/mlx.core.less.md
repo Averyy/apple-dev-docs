@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.le
 # mlx.core.less
 
 ```python
-less(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+less(a: scalar | array, b: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise less than.

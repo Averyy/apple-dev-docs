@@ -16,9 +16,13 @@ Get information on floating-point types.
 __init__(self, arg: Dtype, /) → None
 ```
 
+```python
+__init__(self, arg: array, /) → None
+```
+
 Methods
 
-| [__init__](#mlx.core.finfo.__init__)(self, arg, /) |  |
+| [__init__](#mlx.core.finfo.__init__)(-> None) |  |
 | --- | --- |
 
 Attributes

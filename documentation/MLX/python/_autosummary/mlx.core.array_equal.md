@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 # mlx.core.array_equal
 
 ```python
-array_equal(a: scalar | array, b: scalar | array, equal_nan: bool = False, stream: StreamOrDevice = None) → array
+array_equal(a: scalar | array, b: scalar | array, *, equal_nan: bool = False, stream: StreamOrDevice = None) → array
 ```
 
 Array equality check.

@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 # mlx.core.count_nonzero
 
 ```python
-count_nonzero(a: array, /, *, axis: None | int | Sequence[int] = None, keepdims: bool = False, stream: StreamOrDevice = None) → array
+count_nonzero(a: array, /, axis: None | int | Sequence[int] = None, *, keepdims: bool = False, stream: StreamOrDevice = None) → array
 ```
 
 Count the number of non-zero elements along the given axis.

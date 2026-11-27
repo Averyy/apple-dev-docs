@@ -61,8 +61,7 @@ Observe the participant’s spatial state from the [`localParticipantState`](./l
   Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [class SystemCoordinator](../systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
-- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View
-](../../SwiftUI/view/groupactivityassociation%28_%29.md)
+- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View\n](../../SwiftUI/view/groupactivityassociation%28_%29.md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [class GroupActivityAssociationInteraction](../groupactivityassociationinteraction.md)
   An interaction configures a view’s association with the current SharePlay group activity.

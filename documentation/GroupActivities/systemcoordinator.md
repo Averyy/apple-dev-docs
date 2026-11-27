@@ -74,8 +74,7 @@ You choose what information to share among participants, and you choose how to m
   Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [SystemCoordinator.ParticipantState](./systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
-- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View
-](../SwiftUI/view/groupactivityassociation%28_%29.md)
+- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View\n](../SwiftUI/view/groupactivityassociation%28_%29.md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [class GroupActivityAssociationInteraction](./groupactivityassociationinteraction.md)
   An interaction configures a view’s association with the current SharePlay group activity.

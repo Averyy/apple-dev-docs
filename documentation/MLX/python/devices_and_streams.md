@@ -12,6 +12,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/devices_and_streams.html
 | [ThreadLocalStream](_autosummary/mlx.core.ThreadLocalStream.md#mlx.core.ThreadLocalStream) | A stream that will be unique per thread and can be used to run operations on a given device. |
 | [default_device](_autosummary/mlx.core.default_device.md#mlx.core.default_device)() | Get the default device. |
 | [set_default_device](_autosummary/mlx.core.set_default_device.md#mlx.core.set_default_device)(device) | Set the default device. |
+| [is_available](_autosummary/mlx.core.is_available.md#mlx.core.is_available)(device) | Check if a back-end is available for the given device. |
 | [default_stream](_autosummary/mlx.core.default_stream.md#mlx.core.default_stream)(device) | Get the device's default stream. |
 | [new_stream](_autosummary/mlx.core.new_stream.md#mlx.core.new_stream)(device) | Make a new stream on the given device. |
 | [new_thread_local_stream](_autosummary/mlx.core.new_thread_local_stream.md#mlx.core.new_thread_local_stream)(device) | Make a new stream that will be unique per thread. |

@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 # mlx.core.arange
 
 ```python
-arange(start: int | float, stop: None | int | float, step: None | int | float, dtype: Dtype | None = None, *, stream: StreamOrDevice = None) → array
+arange(start: int | float, stop: None | int | float, step: None | int | float = None, dtype: Dtype | None = None, *, stream: StreamOrDevice = None) → array
 ```
 
 ```python
@@ -16,7 +16,7 @@ arange(stop: int | float, step: None | int | float = None, dtype: Dtype | None =
 
 Overloaded function.
 
-1. `arange(start : int | float, stop : None | int | float, step : None | int | float, dtype: Dtype | None = None, *, stream: StreamOrDevice = None) -> array`
+1. `arange(start : int | float, stop : None | int | float, step : None | int | float = None, dtype: Dtype | None = None, *, stream: StreamOrDevice = None) -> array`
 
    > Generates ranges of numbers.
    > Generate numbers in the half-open interval `[start, stop)` in

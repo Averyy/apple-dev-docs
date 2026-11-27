@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.vi
 # mlx.core.view
 
 ```python
-view(a: scalar | array, dtype: Dtype, stream: StreamOrDevice = None) → array
+view(a: scalar | array, dtype: Dtype, *, stream: StreamOrDevice = None) → array
 ```
 
 View the array as a different type.

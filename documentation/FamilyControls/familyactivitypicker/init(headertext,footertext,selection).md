@@ -28,7 +28,8 @@ Creates a new activity picker with optional header and footer text.
 ### Creating activity pickers
 - [init(selection: Binding<FamilyActivitySelection>)](./init%28selection%29.md)
   Creates a new activity picker.
-- [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View\n](../../SwiftUI/view/familyactivitypicker%28title,headertext,footertext,ispresented,selection%29.md)
+- [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View
+](../../SwiftUI/view/familyactivitypicker%28title,headertext,footertext,ispresented,selection%29.md)
   Present an activity picker sheet for selecting apps and websites to manage.
 
 

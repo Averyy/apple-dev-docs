@@ -16,14 +16,19 @@ Get information on integer types.
 __init__(self, arg: Dtype, /) → None
 ```
 
+```python
+__init__(self, arg: array, /) → None
+```
+
 Methods
 
-| [__init__](#mlx.core.iinfo.__init__)(self, arg, /) |  |
+| [__init__](#mlx.core.iinfo.__init__)(-> None) |  |
 | --- | --- |
 
 Attributes
 
-| `dtype` | The [Dtype](mlx.core.Dtype.md#mlx.core.Dtype). |
+| `bits` | The number of bits occupied by the type. |
 | --- | --- |
+| `dtype` | The [Dtype](mlx.core.Dtype.md#mlx.core.Dtype). |
 | `max` | The largest representable number. |
 | `min` | The smallest representable number. |

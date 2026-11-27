@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ve
 # mlx.core.vecdot
 
 ```python
-vecdot(a: array, b: array, /, *, axis: int = -1, stream: StreamOrDevice = None) → array
+vecdot(a: array, b: array, /, axis: int = -1, *, stream: StreamOrDevice = None) → array
 ```
 
 Compute the vector dot product of two arrays along an axis.

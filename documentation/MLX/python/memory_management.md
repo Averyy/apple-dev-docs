@@ -13,6 +13,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/memory_management.html
 | [reset_peak_memory](_autosummary/mlx.core.reset_peak_memory.md#mlx.core.reset_peak_memory)() | Reset the peak memory to zero. |
 | [get_cache_memory](_autosummary/mlx.core.get_cache_memory.md#mlx.core.get_cache_memory)() | Get the cache size in bytes. |
 | [set_memory_limit](_autosummary/mlx.core.set_memory_limit.md#mlx.core.set_memory_limit)(limit) | Set the memory limit. |
+| [get_memory_limit](_autosummary/mlx.core.get_memory_limit.md#mlx.core.get_memory_limit)() | Get the current memory limit in bytes. |
 | [set_cache_limit](_autosummary/mlx.core.set_cache_limit.md#mlx.core.set_cache_limit)(limit) | Set the free cache limit. |
 | [set_wired_limit](_autosummary/mlx.core.set_wired_limit.md#mlx.core.set_wired_limit)(limit) | Set the wired size limit. |
 | [clear_cache](_autosummary/mlx.core.clear_cache.md#mlx.core.clear_cache)() | Clear the memory cache. |

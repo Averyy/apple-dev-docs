@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ro
 # mlx.core.round
 
 ```python
-round(a: array, /, decimals: int = 0, stream: StreamOrDevice = None) → array
+round(a: array, /, decimals: int = 0, *, stream: StreamOrDevice = None) → array
 ```
 
 Round to the given number of decimals.

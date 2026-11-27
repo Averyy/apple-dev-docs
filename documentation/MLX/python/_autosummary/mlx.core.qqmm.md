@@ -24,7 +24,7 @@ Notes
 If `w` is expected to receive gradients, it must be provided in
 non-quantized form.
 
-If `x` and w` are not quantized, their data types must be `float32`,
+If `x` and `w` are not quantized, their data types must be `float32`,
 `float16`, or `bfloat16`.
 If `w` is quantized, it must be packed in unsigned integers.
 `global_scale_x` and `global_scale_w` are only used for `nvfp4` quantization.
@@ -42,16 +42,15 @@ share a scale. See supported values and defaults in the
 `x` and `w`. See supported values and defaults in the
 [table of quantization modes](mlx.core.quantize.md#quantize-modes). Default: `None`.
 - **mode** ([str](https://docs.python.org/3/builtins/stdtypes.html#str), *optional*) – The quantization mode. Default: `"nvfp4"`.
-Supported modes are `nvfp4` and `mxfp8`. See the
+Supported modes are `nvfp4`, `mxfp4` and `mxfp8`. See the
 [table of quantization modes](mlx.core.quantize.md#quantize-modes) for details.
-- **global_scale** ([array](mlx.core.array.md#mlx.core.array), *optional*) – The per-input float32 scale used for x
+- **global_scale_x** ([array](mlx.core.array.md#mlx.core.array), *optional*) – The per-input float32 scale used for x
 with `"nvfp4"` quantization. Default: `None`.
 - **global_scale_w** ([array](mlx.core.array.md#mlx.core.array), *optional*) – The per-input float32 scale used for w
 with `"nvfp4"` quantization. Default: `None`.
 
 **Returns:**
 : The result of the multiplication of quantized `x` with quantized `w`.
-needed).
 
 **Return type:**
 : [array](mlx.core.array.md#mlx.core.array)

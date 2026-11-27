@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.as
 # mlx.core.astype
 
 ```python
-astype(a: array, dtype: Dtype, /, *, stream: StreamOrDevice = None) → array
+astype(a: array, /, dtype: Dtype, *, stream: StreamOrDevice = None) → array
 ```
 
 Cast the array to a specified type.

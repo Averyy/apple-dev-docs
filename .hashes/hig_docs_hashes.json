@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-11-20T08:06:37.832015",
+    "last_updated": "2026-11-27T08:03:14.633897",
     "total_files": 173,
     "source": "scrape_hig_docs.py",
     "render": {
@@ -59,9 +59,9 @@
       "last_updated": "2026-11-13T08:08:31.515943"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/layout.json": {
-      "hash": "bf64597fe88183fca2f3203341340d7a442c988fdf35b1822cfe78b7d33a58c2",
+      "hash": "b2780a85092cc278f763ef69dbfa3fc2b368f2b17477bc97ccc9a38b6a920d25",
       "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/layout.md",
-      "last_updated": "2026-11-20T08:06:10.644663"
+      "last_updated": "2026-11-27T08:02:41.612277"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/icons.json": {
       "hash": "d6718d1582dcb05aab844ea6e800a5514e1b7c49e49a47905c851c76418d706b",
@@ -264,9 +264,9 @@
       "last_updated": "2026-10-20T17:45:09.084957"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/offering-help.json": {
-      "hash": "95978c690c4f448b1b7c7554ce9d94d555e5f55048bd9d977f7af6471c5f80b0",
+      "hash": "380cc516a8bbddcee99f3791e24738e04e3663e9ff5d1f184a50810871e173b6",
       "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/offering-help.md",
-      "last_updated": "2026-11-20T08:06:16.937413"
+      "last_updated": "2026-11-27T08:02:49.982532"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/onboarding.json": {
       "hash": "5498f460b9b6c44e65b125d6b97acac2e79501ad5bc6cc271d48c2c1bcac396b",
@@ -499,9 +499,9 @@
       "last_updated": "2026-10-20T17:45:20.313130"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/maps.json": {
-      "hash": "33342e5ee43889cd091185d33ac2f400f91cc371cb5f077589f638182f97839a",
+      "hash": "12327ae2606a09ce54ae7c3bb25c55ee3790d8231512bb7a4aaae26cbef57657",
       "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/maps.md",
-      "last_updated": "2026-11-20T08:06:25.799894"
+      "last_updated": "2026-11-27T08:02:59.211760"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/nfc.json": {
       "hash": "36f623189526ce46a066ad959c7bd45af083f2fb7e5db98e6865253f5be5a707",
@@ -634,9 +634,9 @@
       "last_updated": "2026-10-20T17:45:25.496482"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/context-menus.json": {
-      "hash": "f3b88ffb43fbb3e293966f14a51b86f0da60f088a28df64a892a811570c12710",
+      "hash": "51365a16256a8b36f6737f987ce6abb556a7d49136229758131dcbf7918a98ea",
       "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/context-menus.md",
-      "last_updated": "2026-11-20T08:06:30.365382"
+      "last_updated": "2026-11-27T08:03:05.018421"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/dock-menus.json": {
       "hash": "8eb23f9a4666052518e61623f1f05dd0b49ecaa447f98e4cd2fb0c961e5b5435",
@@ -679,9 +679,9 @@
       "last_updated": "2026-10-20T17:45:27.708172"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sidebars.json": {
-      "hash": "1899e0f1298159086266757511e54eb88466e6effcf58a8554b03fb5bfcd5811",
+      "hash": "328eb1fa262898b6af51aa4c48b3e3208ecf333c4b52baaa32ad497026d0a792",
       "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/sidebars.md",
-      "last_updated": "2026-11-20T08:06:32.428582"
+      "last_updated": "2026-11-27T08:03:08.018953"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/tab-bars.json": {
       "hash": "ee330056545dad4ccd7b65de905523a1b676aa66475b6b20704d44821f8097b8",
@@ -699,9 +699,9 @@
       "last_updated": "2026-11-13T08:08:55.508197"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/alerts.json": {
-      "hash": "b62bbd27fe2577f337e796cda19ee9f5d872405e2f8cd824c97a4fee5119c772",
+      "hash": "fef4a8e5f3191c351a43b2cfd0206633994c1047024bbde0bff4ad8df8fe5871",
       "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/alerts.md",
-      "last_updated": "2026-11-20T08:06:33.034327"
+      "last_updated": "2026-11-27T08:03:08.932333"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/page-controls.json": {
       "hash": "e855a8c5daad8eabf7c0e9fc09c9ced28eeee7c8d79339a57c4bc0a794bab95c",
@@ -714,9 +714,9 @@
       "last_updated": "2026-10-20T17:45:29.215833"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/popovers.json": {
-      "hash": "bb73637bf9930a0fc67eebc53cc207c04dbb03fb208b502eac389d893a0b595b",
+      "hash": "1a861cd56fb739cf0bf10970622e13bc6bc2e0090f991a7014988e034ccf1f6a",
       "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/popovers.md",
-      "last_updated": "2026-11-20T08:06:33.484530"
+      "last_updated": "2026-11-27T08:03:09.527423"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/scroll-views.json": {
       "hash": "dae03a6a13d73453b4d58f4d6012757dfa740aee15c10d843617ec3bc0419124",
@@ -784,9 +784,9 @@
       "last_updated": "2026-10-20T17:45:32.160885"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/virtual-keyboards.json": {
-      "hash": "7e5964a56bb90654a57abbdab769aaad3c08e0aaf48f0b35117c96e677ae0339",
+      "hash": "5ce790d2594e6bf369c01a0dd63a13e46ac94005fd19d22a970b6501aaebd1b6",
       "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/virtual-keyboards.md",
-      "last_updated": "2026-11-20T08:06:35.655236"
+      "last_updated": "2026-11-27T08:03:12.145993"
     },
     "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/activity-rings.json": {
       "hash": "58f1e280dc3ce3497c17726038390a1d027162753de2ce4e8b4f1ea03c81ad70",

@@ -90,7 +90,7 @@
     },
     "https://developer.apple.com/documentation/xcode-release-notes/xcode-12-release-notes": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-12-release-notes.md",
-      "hash": "12a3a89b1d86014b87ee4a7aa8f639b81f1d0acd0fa16cab94cd13c49c48314d"
+      "hash": "d2c335b3f0c35603c1a9117ec8acd0e447594ac8696daef71a66b433b9f135f8"
     },
     "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_0_1-release-notes": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-12_0_1-release-notes.md",
@@ -114,7 +114,7 @@
     },
     "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-release-notes": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-12_5-release-notes.md",
-      "hash": "7e54fe73816dd298ce1886cb81adcddb1a78f6f6181b12c4c21bb1d8fe9bc711"
+      "hash": "90c6a744db7479d6c761a102daa6824faa140bce280d75669c775402886cf469"
     },
     "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5_1-release-notes": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-12_5_1-release-notes.md",
@@ -362,7 +362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12-release-notes.json": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-12-release-notes.md",
-      "hash": "12a3a89b1d86014b87ee4a7aa8f639b81f1d0acd0fa16cab94cd13c49c48314d"
+      "hash": "d2c335b3f0c35603c1a9117ec8acd0e447594ac8696daef71a66b433b9f135f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12_0_1-release-notes.json": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-12_0_1-release-notes.md",
@@ -386,7 +386,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12_5-release-notes.json": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-12_5-release-notes.md",
-      "hash": "7e54fe73816dd298ce1886cb81adcddb1a78f6f6181b12c4c21bb1d8fe9bc711"
+      "hash": "90c6a744db7479d6c761a102daa6824faa140bce280d75669c775402886cf469"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12_5_1-release-notes.json": {
       "file_path": "documentation/Xcode-Release-Notes/xcode-12_5_1-release-notes.md",

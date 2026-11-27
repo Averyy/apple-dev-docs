@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ha
 # mlx.core.hadamard_transform
 
 ```python
-hadamard_transform(a: array, scale: float | None = None, stream: StreamOrDevice = None) → array
+hadamard_transform(a: array, scale: float | None = None, *, stream: StreamOrDevice = None) → array
 ```
 
 Perform the Walsh-Hadamard transform along the final axis.

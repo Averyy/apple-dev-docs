@@ -38,7 +38,7 @@
     },
     "https://developer.apple.com/documentation/security/accessing-files-from-the-macos-app-sandbox": {
       "file_path": "documentation/Security/accessing-files-from-the-macos-app-sandbox.md",
-      "hash": "b6f950fda196f215e5e087ad6a9a1c9a6fe94b29b1d3d3b2a72474403720a778"
+      "hash": "71c367c3ebfd2ee4040d42c18db6cdd9feee34b07788f0140317fa70a11b3055"
     },
     "https://developer.apple.com/documentation/security/acl-authorization-keys": {
       "file_path": "documentation/Security/acl-authorization-keys.md",
@@ -16422,7 +16422,7 @@
     },
     "https://developer.apple.com/documentation/security/enabling-autofill-for-domain-bound-sms-codes": {
       "file_path": "documentation/Security/enabling-autofill-for-domain-bound-sms-codes.md",
-      "hash": "286c04d98097a7ef2c79d267a8513041f9bf1e68738b81110d898aa9e93d9b2b"
+      "hash": "acd3240a5c474ded32522db293ef878a91742616cced37bb8c72e6c8707f6149"
     },
     "https://developer.apple.com/documentation/security/enabling-password-autofill-on-a-text-input-view": {
       "file_path": "documentation/Security/enabling-password-autofill-on-a-text-input-view.md",
@@ -29342,7 +29342,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/security/accessing-files-from-the-macos-app-sandbox.json": {
       "file_path": "documentation/Security/accessing-files-from-the-macos-app-sandbox.md",
-      "hash": "b6f950fda196f215e5e087ad6a9a1c9a6fe94b29b1d3d3b2a72474403720a778"
+      "hash": "71c367c3ebfd2ee4040d42c18db6cdd9feee34b07788f0140317fa70a11b3055"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/acl-authorization-keys.json": {
       "file_path": "documentation/Security/acl-authorization-keys.md",
@@ -45726,7 +45726,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/security/enabling-autofill-for-domain-bound-sms-codes.json": {
       "file_path": "documentation/Security/enabling-autofill-for-domain-bound-sms-codes.md",
-      "hash": "286c04d98097a7ef2c79d267a8513041f9bf1e68738b81110d898aa9e93d9b2b"
+      "hash": "acd3240a5c474ded32522db293ef878a91742616cced37bb8c72e6c8707f6149"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/enabling-password-autofill-on-a-text-input-view.json": {
       "file_path": "documentation/Security/enabling-password-autofill-on-a-text-input-view.md",

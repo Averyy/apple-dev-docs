@@ -16,6 +16,9 @@ create sharded layers from existing [Modules](module.md#mlx.nn.Module).
 | [shard_inplace](_autosummary/mlx.nn.layers.distributed.shard_inplace.md#mlx.nn.layers.distributed.shard_inplace)(module, sharding, *[, ...]) | Shard a module in-place by updating its parameter dictionary with the sharded parameter dictionary. |
 | [fully_shard](_autosummary/mlx.nn.layers.distributed.fully_shard.md#mlx.nn.layers.distributed.fully_shard)(module, *[, group, compute_dtype]) | Wrap `module` in a [FullyShardedModule](_autosummary/mlx.nn.FullyShardedModule.md#mlx.nn.FullyShardedModule). |
 
+| [clip_grad_norm_sharded](_autosummary/mlx.nn.utils.clip_grad_norm_sharded.md#mlx.nn.utils.clip_grad_norm_sharded)(gradients, max_norm) | Clip the global norm of gradients that are sharded across a group. |
+| --- | --- |
+
 ## Layers
 
 | [AllToShardedLinear](_autosummary/mlx.nn.AllToShardedLinear.md#mlx.nn.AllToShardedLinear)(input_dims, output_dims) | Each member of the group applies part of the affine transformation such that the result is sharded across the group. |

@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.is
 # mlx.core.isinf
 
 ```python
-isinf(a: array, stream: StreamOrDevice = None) → array
+isinf(a: array, *, stream: StreamOrDevice = None) → array
 ```
 
 Return a boolean array indicating which elements are +/- inifnity.

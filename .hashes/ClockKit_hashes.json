@@ -14,7 +14,7 @@
     },
     "https://developer.apple.com/documentation/clockkit/building-complications-with-swiftui": {
       "file_path": "documentation/ClockKit/building-complications-with-swiftui.md",
-      "hash": "697ac836963ea59d340a79dd13a951b1f5a91ce0fdbe7251276a1ed34a0ede26"
+      "hash": "afd31b25bde02a30f3c6d29e05da816080734cb844005603970de9073184389a"
     },
     "https://developer.apple.com/documentation/clockkit/circular-complication-templates": {
       "file_path": "documentation/ClockKit/circular-complication-templates.md",
@@ -1446,7 +1446,7 @@
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangularfullview": {
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularfullview.md",
-      "hash": "2f84645987bd2503216f805c2f6cc1b9196ef92da481e288bb14c9944a31ea96"
+      "hash": "818e94f01ae98c00e623895b5d02f36ec2093df07706f25b2d876f72640be019"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangularfullview/content": {
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularfullview/content.md",
@@ -2766,7 +2766,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/building-complications-with-swiftui.json": {
       "file_path": "documentation/ClockKit/building-complications-with-swiftui.md",
-      "hash": "697ac836963ea59d340a79dd13a951b1f5a91ce0fdbe7251276a1ed34a0ede26"
+      "hash": "afd31b25bde02a30f3c6d29e05da816080734cb844005603970de9073184389a"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/circular-complication-templates.json": {
       "file_path": "documentation/ClockKit/circular-complication-templates.md",
@@ -4198,7 +4198,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangularfullview.json": {
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularfullview.md",
-      "hash": "2f84645987bd2503216f805c2f6cc1b9196ef92da481e288bb14c9944a31ea96"
+      "hash": "818e94f01ae98c00e623895b5d02f36ec2093df07706f25b2d876f72640be019"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangularfullview/content.json": {
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularfullview/content.md",

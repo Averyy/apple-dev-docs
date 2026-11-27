@@ -6,9 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/distributed.html
 
 # Distributed Communication
 
-MLX provides a distributed communication package using MPI. The MPI library is
-loaded at runtime; if MPI is available then distributed communication is also
-made available.
+MLX supports distributed communication with the MPI, Ring, JACCL, and NCCL
+backends. See [Distributed Communication](../usage/distributed.md#usage-distributed) for backend availability and setup.
 
 | [Group](_autosummary/mlx.core.distributed.Group.md#mlx.core.distributed.Group) | An [mlx.core.distributed.Group](_autosummary/mlx.core.distributed.Group.md#mlx.core.distributed.Group) represents a group of independent mlx processes that can communicate. |
 | --- | --- |

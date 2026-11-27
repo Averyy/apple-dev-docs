@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.le
 # mlx.core.left_shift
 
 ```python
-left_shift(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+left_shift(a: scalar | array, b: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise left shift.

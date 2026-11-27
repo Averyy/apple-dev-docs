@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.eq
 # mlx.core.equal
 
 ```python
-equal(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+equal(a: scalar | array, b: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise equality.

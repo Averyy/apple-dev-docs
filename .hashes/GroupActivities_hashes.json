@@ -2,11 +2,11 @@
   "hashes": {
     "https://developer.apple.com/documentation/GroupActivities": {
       "file_path": "documentation/GroupActivities/GroupActivities.md",
-      "hash": "d17d951c33dcd0275e3ce53a0e440805178d2a308a204919e385e54bad2c2253"
+      "hash": "25efd96504d0cb8cab05dc2e9695d4465d25fd00d39d6f4692b649a046c39d51"
     },
     "https://developer.apple.com/documentation/groupactivities/adding-spatial-persona-support-to-an-activity": {
       "file_path": "documentation/GroupActivities/adding-spatial-persona-support-to-an-activity.md",
-      "hash": "c63a5c55fea5456068089853849704fcc3e55f3c661bbdb4c1cf0975d6037aae"
+      "hash": "d87a4be4e07dfdfa76baafdff5ad747a922dced6af16565fb75fc6052122978e"
     },
     "https://developer.apple.com/documentation/groupactivities/broadcastoptions": {
       "file_path": "documentation/GroupActivities/broadcastoptions.md",
@@ -30,11 +30,11 @@
     },
     "https://developer.apple.com/documentation/groupactivities/configure-your-app-for-sharing-with-people-nearby": {
       "file_path": "documentation/GroupActivities/configure-your-app-for-sharing-with-people-nearby.md",
-      "hash": "6f9d71745e563a831fd372ba0b0440cde46e7e437d85baeb2d231919b26765d5"
+      "hash": "5b06d5bcc9c9a696ae27ccea3fb26725e0f3fb7e876c16f1795c2fe22cb2cca0"
     },
     "https://developer.apple.com/documentation/groupactivities/creating-a-collaborative-photo-gallery-with-shareplay": {
       "file_path": "documentation/GroupActivities/creating-a-collaborative-photo-gallery-with-shareplay.md",
-      "hash": "e558b3cee20131f45c8c57858ddb2f059b0623e8c4c34d2ad26ab0dbef5527d5"
+      "hash": "3cd4912e06dba0a7f863896e394f6f07389f62c744f73669785faef7f18b3078"
     },
     "https://developer.apple.com/documentation/groupactivities/custommessageidentifiable": {
       "file_path": "documentation/GroupActivities/custommessageidentifiable.md",
@@ -110,7 +110,7 @@
     },
     "https://developer.apple.com/documentation/groupactivities/groupactivityassociationinteraction": {
       "file_path": "documentation/GroupActivities/groupactivityassociationinteraction.md",
-      "hash": "c3428aa4066d1ddf60ad0760e61413d5f16e2ec444d86b761e5e36d2b0c6a2de"
+      "hash": "a75fec797949a212b88d959bbaa433cbed6341180e4b8b00ad50f62080e51737"
     },
     "https://developer.apple.com/documentation/groupactivities/groupactivityassociationinteraction/associationkind": {
       "file_path": "documentation/GroupActivities/groupactivityassociationinteraction/associationkind.md",
@@ -122,7 +122,7 @@
     },
     "https://developer.apple.com/documentation/groupactivities/groupactivityassociationkind": {
       "file_path": "documentation/GroupActivities/groupactivityassociationkind.md",
-      "hash": "7c265812d5a075caf6097b39c6593bcd45d1d73513f028b9eb09731349eb628c"
+      "hash": "f9678857d1babc1098c30677bb174febc1d4f0df0dde846c776f87c6a7558e66"
     },
     "https://developer.apple.com/documentation/groupactivities/groupactivityassociationkind/primary(_:)": {
       "file_path": "documentation/GroupActivities/groupactivityassociationkind/primary(_).md",
@@ -702,11 +702,11 @@
     },
     "https://developer.apple.com/documentation/groupactivities/promoting-shareplay-activities-from-your-apps-ui": {
       "file_path": "documentation/GroupActivities/promoting-shareplay-activities-from-your-apps-ui.md",
-      "hash": "e6a94a2108e95fdf58de728b3ce14a588521f6a970f90f36bd20588d96941857"
+      "hash": "8ed7709333cc5bb435af6d7873270b2d25829ba71cb38fd68c02e68de940f37e"
     },
     "https://developer.apple.com/documentation/groupactivities/sceneassociationbehavior": {
       "file_path": "documentation/GroupActivities/sceneassociationbehavior.md",
-      "hash": "b70884fa1a02150f4c0ca1ba88e18b6b4820971b2af70290b503b33ed0ddd5ce"
+      "hash": "be07adaa9495739148b4e2f8a9ba3ce705d8d9d00942dcd247c40ae30891f938"
     },
     "https://developer.apple.com/documentation/groupactivities/sceneassociationbehavior/content(_:)": {
       "file_path": "documentation/GroupActivities/sceneassociationbehavior/content(_).md",
@@ -898,7 +898,7 @@
     },
     "https://developer.apple.com/documentation/groupactivities/systemcoordinator": {
       "file_path": "documentation/GroupActivities/systemcoordinator.md",
-      "hash": "b0f017b04f6c92a7ec2cb700c526a329a347ddba5e5460cb7e2c8d39426f5dfb"
+      "hash": "ef7194e70aa980bf49040f43293c3215f65f72440c290dd4e701bb23c18acb5e"
     },
     "https://developer.apple.com/documentation/groupactivities/systemcoordinator/assignrole(_:)": {
       "file_path": "documentation/GroupActivities/systemcoordinator/assignrole(_).md",
@@ -958,7 +958,7 @@
     },
     "https://developer.apple.com/documentation/groupactivities/systemcoordinator/participantstate": {
       "file_path": "documentation/GroupActivities/systemcoordinator/participantstate.md",
-      "hash": "be1ea934aa0cd4d65444b1070254cbfe762af2b76c000238f159cf76aa60fe8e"
+      "hash": "eb53dffdb9e4736c9d158a58f5d88a0b0e3e3196af55922b118262cc8c94368a"
     },
     "https://developer.apple.com/documentation/groupactivities/systemcoordinator/participantstate/isspatial": {
       "file_path": "documentation/GroupActivities/systemcoordinator/participantstate/isspatial.md",
@@ -1018,11 +1018,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/GroupActivities.json": {
       "file_path": "documentation/GroupActivities/GroupActivities.md",
-      "hash": "d17d951c33dcd0275e3ce53a0e440805178d2a308a204919e385e54bad2c2253"
+      "hash": "25efd96504d0cb8cab05dc2e9695d4465d25fd00d39d6f4692b649a046c39d51"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/adding-spatial-persona-support-to-an-activity.json": {
       "file_path": "documentation/GroupActivities/adding-spatial-persona-support-to-an-activity.md",
-      "hash": "c63a5c55fea5456068089853849704fcc3e55f3c661bbdb4c1cf0975d6037aae"
+      "hash": "d87a4be4e07dfdfa76baafdff5ad747a922dced6af16565fb75fc6052122978e"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/broadcastoptions.json": {
       "file_path": "documentation/GroupActivities/broadcastoptions.md",
@@ -1046,11 +1046,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/configure-your-app-for-sharing-with-people-nearby.json": {
       "file_path": "documentation/GroupActivities/configure-your-app-for-sharing-with-people-nearby.md",
-      "hash": "6f9d71745e563a831fd372ba0b0440cde46e7e437d85baeb2d231919b26765d5"
+      "hash": "5b06d5bcc9c9a696ae27ccea3fb26725e0f3fb7e876c16f1795c2fe22cb2cca0"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/creating-a-collaborative-photo-gallery-with-shareplay.json": {
       "file_path": "documentation/GroupActivities/creating-a-collaborative-photo-gallery-with-shareplay.md",
-      "hash": "e558b3cee20131f45c8c57858ddb2f059b0623e8c4c34d2ad26ab0dbef5527d5"
+      "hash": "3cd4912e06dba0a7f863896e394f6f07389f62c744f73669785faef7f18b3078"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/custommessageidentifiable.json": {
       "file_path": "documentation/GroupActivities/custommessageidentifiable.md",
@@ -1126,7 +1126,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/groupactivityassociationinteraction.json": {
       "file_path": "documentation/GroupActivities/groupactivityassociationinteraction.md",
-      "hash": "c3428aa4066d1ddf60ad0760e61413d5f16e2ec444d86b761e5e36d2b0c6a2de"
+      "hash": "a75fec797949a212b88d959bbaa433cbed6341180e4b8b00ad50f62080e51737"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/groupactivityassociationinteraction/associationkind.json": {
       "file_path": "documentation/GroupActivities/groupactivityassociationinteraction/associationkind.md",
@@ -1138,7 +1138,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/groupactivityassociationkind.json": {
       "file_path": "documentation/GroupActivities/groupactivityassociationkind.md",
-      "hash": "7c265812d5a075caf6097b39c6593bcd45d1d73513f028b9eb09731349eb628c"
+      "hash": "f9678857d1babc1098c30677bb174febc1d4f0df0dde846c776f87c6a7558e66"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/groupactivityassociationkind/primary(_:).json": {
       "file_path": "documentation/GroupActivities/groupactivityassociationkind/primary(_).md",
@@ -1718,11 +1718,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/promoting-shareplay-activities-from-your-apps-ui.json": {
       "file_path": "documentation/GroupActivities/promoting-shareplay-activities-from-your-apps-ui.md",
-      "hash": "e6a94a2108e95fdf58de728b3ce14a588521f6a970f90f36bd20588d96941857"
+      "hash": "8ed7709333cc5bb435af6d7873270b2d25829ba71cb38fd68c02e68de940f37e"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/sceneassociationbehavior.json": {
       "file_path": "documentation/GroupActivities/sceneassociationbehavior.md",
-      "hash": "b70884fa1a02150f4c0ca1ba88e18b6b4820971b2af70290b503b33ed0ddd5ce"
+      "hash": "be07adaa9495739148b4e2f8a9ba3ce705d8d9d00942dcd247c40ae30891f938"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/sceneassociationbehavior/content(_:).json": {
       "file_path": "documentation/GroupActivities/sceneassociationbehavior/content(_).md",
@@ -1914,7 +1914,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/systemcoordinator.json": {
       "file_path": "documentation/GroupActivities/systemcoordinator.md",
-      "hash": "b0f017b04f6c92a7ec2cb700c526a329a347ddba5e5460cb7e2c8d39426f5dfb"
+      "hash": "ef7194e70aa980bf49040f43293c3215f65f72440c290dd4e701bb23c18acb5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/systemcoordinator/assignrole(_:).json": {
       "file_path": "documentation/GroupActivities/systemcoordinator/assignrole(_).md",
@@ -1974,7 +1974,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/systemcoordinator/participantstate.json": {
       "file_path": "documentation/GroupActivities/systemcoordinator/participantstate.md",
-      "hash": "be1ea934aa0cd4d65444b1070254cbfe762af2b76c000238f159cf76aa60fe8e"
+      "hash": "eb53dffdb9e4736c9d158a58f5d88a0b0e3e3196af55922b118262cc8c94368a"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/systemcoordinator/participantstate/isspatial.json": {
       "file_path": "documentation/GroupActivities/systemcoordinator/participantstate/isspatial.md",

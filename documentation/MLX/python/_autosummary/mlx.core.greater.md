@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.gr
 # mlx.core.greater
 
 ```python
-greater(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+greater(a: scalar | array, b: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise greater than.

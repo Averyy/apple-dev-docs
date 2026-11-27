@@ -8,7 +8,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 
 | [abs](_autosummary/mlx.core.abs.md#mlx.core.abs)(a, /, *[, stream]) | Element-wise absolute value. |
 | --- | --- |
-| [add](_autosummary/mlx.core.add.md#mlx.core.add)(a, b[, stream]) | Element-wise addition. |
+| [add](_autosummary/mlx.core.add.md#mlx.core.add)(a, b, *[, stream]) | Element-wise addition. |
 | [addmm](_autosummary/mlx.core.addmm.md#mlx.core.addmm)(c, a, b, /[, alpha, beta, stream]) | Matrix multiplication with addition and optional scaling. |
 | [all](_autosummary/mlx.core.all.md#mlx.core.all)(a, /[, axis, keepdims, stream]) | An and reduction over the given axes. |
 | [allclose](_autosummary/mlx.core.allclose.md#mlx.core.allclose)(a, b, /[, rtol, atol, equal_nan, ...]) | Approximate comparison of two arrays. |
@@ -25,18 +25,18 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | [argmin](_autosummary/mlx.core.argmin.md#mlx.core.argmin)(a, /[, axis, keepdims, stream]) | Indices of the minimum values along the axis. |
 | [argpartition](_autosummary/mlx.core.argpartition.md#mlx.core.argpartition)(a, /, kth[, axis, stream]) | Returns the indices that partition the array. |
 | [argsort](_autosummary/mlx.core.argsort.md#mlx.core.argsort)(a, /[, axis, stream]) | Returns the indices that sort the array. |
-| [array_equal](_autosummary/mlx.core.array_equal.md#mlx.core.array_equal)(a, b[, equal_nan, stream]) | Array equality check. |
+| [array_equal](_autosummary/mlx.core.array_equal.md#mlx.core.array_equal)(a, b, *[, equal_nan, stream]) | Array equality check. |
 | [asarray](_autosummary/mlx.core.asarray.md#mlx.core.asarray)(a[, dtype, copy]) | Convert the input to an array. |
 | [as_strided](_autosummary/mlx.core.as_strided.md#mlx.core.as_strided)(a, /[, shape, strides, offset, ...]) | Create a view into the array with the given shape and strides. |
-| [astype](_autosummary/mlx.core.astype.md#mlx.core.astype)(a, dtype, /, *[, stream]) | Cast the array to a specified type. |
+| [astype](_autosummary/mlx.core.astype.md#mlx.core.astype)(a, /, dtype, *[, stream]) | Cast the array to a specified type. |
 | [atleast_1d](_autosummary/mlx.core.atleast_1d.md#mlx.core.atleast_1d)(*arys[, stream]) | Convert all arrays to have at least one dimension. |
 | [atleast_2d](_autosummary/mlx.core.atleast_2d.md#mlx.core.atleast_2d)(*arys[, stream]) | Convert all arrays to have at least two dimensions. |
 | [atleast_3d](_autosummary/mlx.core.atleast_3d.md#mlx.core.atleast_3d)(*arys[, stream]) | Convert all arrays to have at least three dimensions. |
 | [bartlett](_autosummary/mlx.core.bartlett.md#mlx.core.bartlett)(M, *[, stream]) | Return the Bartlett window. |
-| [bitwise_and](_autosummary/mlx.core.bitwise_and.md#mlx.core.bitwise_and)(a, b[, stream]) | Element-wise bitwise and. |
-| [bitwise_invert](_autosummary/mlx.core.bitwise_invert.md#mlx.core.bitwise_invert)(a[, stream]) | Element-wise bitwise inverse. |
-| [bitwise_or](_autosummary/mlx.core.bitwise_or.md#mlx.core.bitwise_or)(a, b[, stream]) | Element-wise bitwise or. |
-| [bitwise_xor](_autosummary/mlx.core.bitwise_xor.md#mlx.core.bitwise_xor)(a, b[, stream]) | Element-wise bitwise xor. |
+| [bitwise_and](_autosummary/mlx.core.bitwise_and.md#mlx.core.bitwise_and)(a, b, *[, stream]) | Element-wise bitwise and. |
+| [bitwise_invert](_autosummary/mlx.core.bitwise_invert.md#mlx.core.bitwise_invert)(a, *[, stream]) | Element-wise bitwise inverse. |
+| [bitwise_or](_autosummary/mlx.core.bitwise_or.md#mlx.core.bitwise_or)(a, b, *[, stream]) | Element-wise bitwise or. |
+| [bitwise_xor](_autosummary/mlx.core.bitwise_xor.md#mlx.core.bitwise_xor)(a, b, *[, stream]) | Element-wise bitwise xor. |
 | [blackman](_autosummary/mlx.core.blackman.md#mlx.core.blackman)(M, *[, stream]) | Return the Blackman window. |
 | [block_masked_mm](_autosummary/mlx.core.block_masked_mm.md#mlx.core.block_masked_mm)(a, b, /[, block_size, ...]) | Matrix multiplication with block masking. |
 | [broadcast_arrays](_autosummary/mlx.core.broadcast_arrays.md#mlx.core.broadcast_arrays)(*arrays[, stream]) | Broadcast arrays against one another. |
@@ -64,18 +64,18 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | [cummin](_autosummary/mlx.core.cummin.md#mlx.core.cummin)(a, /[, axis, reverse, inclusive, stream]) | Return the cumulative minimum of the elements along the given axis. |
 | [cumprod](_autosummary/mlx.core.cumprod.md#mlx.core.cumprod)(a, /[, axis, reverse, inclusive, ...]) | Return the cumulative product of the elements along the given axis. |
 | [cumsum](_autosummary/mlx.core.cumsum.md#mlx.core.cumsum)(a, /[, axis, reverse, inclusive, ...]) | Return the cumulative sum of the elements along the given axis. |
-| [count_nonzero](_autosummary/mlx.core.count_nonzero.md#mlx.core.count_nonzero)(a, /, *[, axis, keepdims, stream]) | Count the number of non-zero elements along the given axis. |
+| [count_nonzero](_autosummary/mlx.core.count_nonzero.md#mlx.core.count_nonzero)(a, /[, axis, keepdims, stream]) | Count the number of non-zero elements along the given axis. |
 | [degrees](_autosummary/mlx.core.degrees.md#mlx.core.degrees)(a, /, *[, stream]) | Convert angles from radians to degrees. |
 | [depends](_autosummary/mlx.core.depends.md#mlx.core.depends)(inputs, dependencies) | Insert dependencies between arrays in the graph. |
 | [dequantize](_autosummary/mlx.core.dequantize.md#mlx.core.dequantize)(w, /, scales[, biases, ...]) | Dequantize the matrix `w` using quantization parameters. |
 | [diag](_autosummary/mlx.core.diag.md#mlx.core.diag)(a, /[, k, stream]) | Extract a diagonal or construct a diagonal matrix. |
 | [diagonal](_autosummary/mlx.core.diagonal.md#mlx.core.diagonal)(a[, offset, axis1, axis2, stream]) | Return specified diagonals. |
 | [diff](_autosummary/mlx.core.diff.md#mlx.core.diff)(a, /[, n, axis, stream]) | The n-th discrete difference along the given axis. |
-| [divide](_autosummary/mlx.core.divide.md#mlx.core.divide)(a, b[, stream]) | Element-wise division. |
-| [divmod](_autosummary/mlx.core.divmod.md#mlx.core.divmod)(a, b[, stream]) | Element-wise quotient and remainder. |
+| [divide](_autosummary/mlx.core.divide.md#mlx.core.divide)(a, b, *[, stream]) | Element-wise division. |
+| [divmod](_autosummary/mlx.core.divmod.md#mlx.core.divmod)(a, b, *[, stream]) | Element-wise quotient and remainder. |
 | [einsum](_autosummary/mlx.core.einsum.md#mlx.core.einsum)(subscripts, *operands[, stream]) | Perform the Einstein summation convention on the operands. |
 | [einsum_path](_autosummary/mlx.core.einsum_path.md#mlx.core.einsum_path)(subscripts, *operands) | Compute the contraction order for the given Einstein summation. |
-| [equal](_autosummary/mlx.core.equal.md#mlx.core.equal)(a, b[, stream]) | Element-wise equality. |
+| [equal](_autosummary/mlx.core.equal.md#mlx.core.equal)(a, b, *[, stream]) | Element-wise equality. |
 | [erf](_autosummary/mlx.core.erf.md#mlx.core.erf)(a, /, *[, stream]) | Element-wise error function. |
 | [erfinv](_autosummary/mlx.core.erfinv.md#mlx.core.erfinv)(a, /, *[, stream]) | Element-wise inverse of [erf()](_autosummary/mlx.core.erf.md#mlx.core.erf). |
 | [exp](_autosummary/mlx.core.exp.md#mlx.core.exp)(a, /, *[, stream]) | Element-wise exponential. |
@@ -85,15 +85,15 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | [flatten](_autosummary/mlx.core.flatten.md#mlx.core.flatten)(a, /[, start_axis, end_axis, stream]) | Flatten an array. |
 | [flip](_autosummary/mlx.core.flip.md#mlx.core.flip)(a, /[, axis, stream]) | Reverse the order of elements along the given axis. |
 | [floor](_autosummary/mlx.core.floor.md#mlx.core.floor)(a, /, *[, stream]) | Element-wise floor. |
-| [floor_divide](_autosummary/mlx.core.floor_divide.md#mlx.core.floor_divide)(a, b[, stream]) | Element-wise integer division. |
+| [floor_divide](_autosummary/mlx.core.floor_divide.md#mlx.core.floor_divide)(a, b, *[, stream]) | Element-wise integer division. |
 | [full](_autosummary/mlx.core.full.md#mlx.core.full)(shape, vals[, dtype, stream]) | Construct an array with the given value. |
 | [from_dlpack](_autosummary/mlx.core.from_dlpack.md#mlx.core.from_dlpack)(x, /, *[, copy]) | Create an array from an object that supports DLPack. |
 | [full_like](_autosummary/mlx.core.full_like.md#mlx.core.full_like)(a, vals[, dtype, stream]) | An array filled with `vals` with the same shape as the input. |
 | [from_fp8](_autosummary/mlx.core.from_fp8.md#mlx.core.from_fp8)(x[, dtype, stream]) | Convert the array from fp8 (e4m3) to another floating-point type. |
 | [gather_mm](_autosummary/mlx.core.gather_mm.md#mlx.core.gather_mm)(a, b, /[, lhs_indices, ...]) | Matrix multiplication with matrix-level gather. |
 | [gather_qmm](_autosummary/mlx.core.gather_qmm.md#mlx.core.gather_qmm)(x, w, /, scales[, biases, ...]) | Perform quantized matrix multiplication with matrix-level gather. |
-| [greater](_autosummary/mlx.core.greater.md#mlx.core.greater)(a, b[, stream]) | Element-wise greater than. |
-| [greater_equal](_autosummary/mlx.core.greater_equal.md#mlx.core.greater_equal)(a, b[, stream]) | Element-wise greater or equal. |
+| [greater](_autosummary/mlx.core.greater.md#mlx.core.greater)(a, b, *[, stream]) | Element-wise greater than. |
+| [greater_equal](_autosummary/mlx.core.greater_equal.md#mlx.core.greater_equal)(a, b, *[, stream]) | Element-wise greater or equal. |
 | [hadamard_transform](_autosummary/mlx.core.hadamard_transform.md#mlx.core.hadamard_transform)(a[, scale, stream]) | Perform the Walsh-Hadamard transform along the final axis. |
 | [hamming](_autosummary/mlx.core.hamming.md#mlx.core.hamming)(M, *[, stream]) | Return the Hamming window. |
 | [hanning](_autosummary/mlx.core.hanning.md#mlx.core.hanning)(M, *[, stream]) | Return the Hanning window. |
@@ -101,17 +101,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | [imag](_autosummary/mlx.core.imag.md#mlx.core.imag)(a, /, *[, stream]) | Returns the imaginary part of a complex array. |
 | [inner](_autosummary/mlx.core.inner.md#mlx.core.inner)(a, b, /, *[, stream]) | Ordinary inner product of vectors for 1-D arrays, in higher dimensions a sum product over the last axes. |
 | [isdtype](_autosummary/mlx.core.isdtype.md#mlx.core.isdtype)(dtype, kind) | Test whether a dtype belongs to one or more data type kinds. |
-| [isfinite](_autosummary/mlx.core.isfinite.md#mlx.core.isfinite)(a[, stream]) | Return a boolean array indicating which elements are finite. |
+| [isfinite](_autosummary/mlx.core.isfinite.md#mlx.core.isfinite)(a, *[, stream]) | Return a boolean array indicating which elements are finite. |
 | [isclose](_autosummary/mlx.core.isclose.md#mlx.core.isclose)(a, b, /[, rtol, atol, equal_nan, stream]) | Returns a boolean array where two arrays are element-wise equal within a tolerance. |
-| [isinf](_autosummary/mlx.core.isinf.md#mlx.core.isinf)(a[, stream]) | Return a boolean array indicating which elements are +/- inifnity. |
-| [isnan](_autosummary/mlx.core.isnan.md#mlx.core.isnan)(a[, stream]) | Return a boolean array indicating which elements are NaN. |
-| [isneginf](_autosummary/mlx.core.isneginf.md#mlx.core.isneginf)(a[, stream]) | Return a boolean array indicating which elements are negative infinity. |
-| [isposinf](_autosummary/mlx.core.isposinf.md#mlx.core.isposinf)(a[, stream]) | Return a boolean array indicating which elements are positive infinity. |
+| [isinf](_autosummary/mlx.core.isinf.md#mlx.core.isinf)(a, *[, stream]) | Return a boolean array indicating which elements are +/- inifnity. |
+| [isnan](_autosummary/mlx.core.isnan.md#mlx.core.isnan)(a, *[, stream]) | Return a boolean array indicating which elements are NaN. |
+| [isneginf](_autosummary/mlx.core.isneginf.md#mlx.core.isneginf)(a, *[, stream]) | Return a boolean array indicating which elements are negative infinity. |
+| [isposinf](_autosummary/mlx.core.isposinf.md#mlx.core.isposinf)(a, *[, stream]) | Return a boolean array indicating which elements are positive infinity. |
 | [issubdtype](_autosummary/mlx.core.issubdtype.md#mlx.core.issubdtype)(arg1, arg2) | Check if a [Dtype](_autosummary/mlx.core.Dtype.md#mlx.core.Dtype) or [DtypeCategory](_autosummary/mlx.core.DtypeCategory.md#mlx.core.DtypeCategory) is a subtype of another. |
 | [kron](_autosummary/mlx.core.kron.md#mlx.core.kron)(a, b, *[, stream]) | Compute the Kronecker product of two arrays `a` and `b`. |
-| [left_shift](_autosummary/mlx.core.left_shift.md#mlx.core.left_shift)(a, b[, stream]) | Element-wise left shift. |
-| [less](_autosummary/mlx.core.less.md#mlx.core.less)(a, b[, stream]) | Element-wise less than. |
-| [less_equal](_autosummary/mlx.core.less_equal.md#mlx.core.less_equal)(a, b[, stream]) | Element-wise less than or equal. |
+| [left_shift](_autosummary/mlx.core.left_shift.md#mlx.core.left_shift)(a, b, *[, stream]) | Element-wise left shift. |
+| [less](_autosummary/mlx.core.less.md#mlx.core.less)(a, b, *[, stream]) | Element-wise less than. |
+| [less_equal](_autosummary/mlx.core.less_equal.md#mlx.core.less_equal)(a, b, *[, stream]) | Element-wise less than or equal. |
 | [linspace](_autosummary/mlx.core.linspace.md#mlx.core.linspace)(start, stop[, num, endpoint, ...]) | Generate `num` evenly spaced numbers over interval `[start, stop]`. |
 | [load](_autosummary/mlx.core.load.md#mlx.core.load)(file, /[, format, return_metadata, stream]) | Load array(s) from a binary file. |
 | [log](_autosummary/mlx.core.log.md#mlx.core.log)(a, /, *[, stream]) | Element-wise natural logarithm. |
@@ -126,6 +126,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | [logical_xor](_autosummary/mlx.core.logical_xor.md#mlx.core.logical_xor)(a, b, /, *[, stream]) | Element-wise logical exclusive or. |
 | [logsumexp](_autosummary/mlx.core.logsumexp.md#mlx.core.logsumexp)(a, /[, axis, keepdims, stream]) | A log-sum-exp reduction over the given axes. |
 | [matmul](_autosummary/mlx.core.matmul.md#mlx.core.matmul)(a, b, /, *[, stream]) | Matrix multiplication. |
+| [matrix_transpose](_autosummary/mlx.core.matrix_transpose.md#mlx.core.matrix_transpose)(a, /, *[, stream]) | Transpose the last two dimensions of the array. |
 | [max](_autosummary/mlx.core.max.md#mlx.core.max)(a, /[, axis, keepdims, stream]) | A max reduction over the given axes. |
 | [maximum](_autosummary/mlx.core.maximum.md#mlx.core.maximum)(a, b, /, *[, stream]) | Element-wise maximum. |
 | [mean](_autosummary/mlx.core.mean.md#mlx.core.mean)(a, /[, axis, keepdims, stream]) | Compute the mean(s) over the given axes. |
@@ -135,10 +136,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | [minimum](_autosummary/mlx.core.minimum.md#mlx.core.minimum)(a, b, /, *[, stream]) | Element-wise minimum. |
 | [minmax](_autosummary/mlx.core.minmax.md#mlx.core.minmax)(a, /[, axis, keepdims, stream]) | Return the minimum and maximum over the given axes. |
 | [moveaxis](_autosummary/mlx.core.moveaxis.md#mlx.core.moveaxis)(a, /, source, destination, *[, stream]) | Move an axis to a new position. |
-| [multiply](_autosummary/mlx.core.multiply.md#mlx.core.multiply)(a, b[, stream]) | Element-wise multiplication. |
+| [multiply](_autosummary/mlx.core.multiply.md#mlx.core.multiply)(a, b, *[, stream]) | Element-wise multiplication. |
 | [nan_to_num](_autosummary/mlx.core.nan_to_num.md#mlx.core.nan_to_num)(a[, nan, posinf, neginf, stream]) | Replace NaN and Inf values with finite numbers. |
 | [negative](_autosummary/mlx.core.negative.md#mlx.core.negative)(a, /, *[, stream]) | Element-wise negation. |
-| [not_equal](_autosummary/mlx.core.not_equal.md#mlx.core.not_equal)(a, b[, stream]) | Element-wise not equal. |
+| [not_equal](_autosummary/mlx.core.not_equal.md#mlx.core.not_equal)(a, b, *[, stream]) | Element-wise not equal. |
 | [ones](_autosummary/mlx.core.ones.md#mlx.core.ones)(shape[, dtype, stream]) | Construct an array of ones. |
 | [ones_like](_autosummary/mlx.core.ones_like.md#mlx.core.ones_like)(a, /[, dtype, stream]) | An array of ones like the input. |
 | [outer](_autosummary/mlx.core.outer.md#mlx.core.outer)(a, b, /, *[, stream]) | Compute the outer product of two 1-D arrays, if the array's passed are not 1-D a flatten op will be run beforehand. |
@@ -155,18 +156,18 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | [radians](_autosummary/mlx.core.radians.md#mlx.core.radians)(a, /, *[, stream]) | Convert angles from degrees to radians. |
 | [real](_autosummary/mlx.core.real.md#mlx.core.real)(a, /, *[, stream]) | Returns the real part of a complex array. |
 | [reciprocal](_autosummary/mlx.core.reciprocal.md#mlx.core.reciprocal)(a, /, *[, stream]) | Element-wise reciprocal. |
-| [remainder](_autosummary/mlx.core.remainder.md#mlx.core.remainder)(a, b[, stream]) | Element-wise remainder of division. |
+| [remainder](_autosummary/mlx.core.remainder.md#mlx.core.remainder)(a, b, *[, stream]) | Element-wise remainder of division. |
 | [repeat](_autosummary/mlx.core.repeat.md#mlx.core.repeat)(array, repeats[, axis, stream]) | Repeat an array along a specified axis. |
 | [reshape](_autosummary/mlx.core.reshape.md#mlx.core.reshape)(a, /, shape, *[, stream]) | Reshape an array while preserving the size. |
 | [result_type](_autosummary/mlx.core.result_type.md#mlx.core.result_type)(*arrays_and_dtypes) | The type that results from applying type promotion to the inputs. |
-| [right_shift](_autosummary/mlx.core.right_shift.md#mlx.core.right_shift)(a, b[, stream]) | Element-wise right shift. |
-| [roll](_autosummary/mlx.core.roll.md#mlx.core.roll)(a, shift[, axis, stream]) | Roll array elements along a given axis. |
+| [right_shift](_autosummary/mlx.core.right_shift.md#mlx.core.right_shift)(a, b, *[, stream]) | Element-wise right shift. |
+| [roll](_autosummary/mlx.core.roll.md#mlx.core.roll)(a, /, shift[, axis, stream]) | Roll array elements along a given axis. |
 | [round](_autosummary/mlx.core.round.md#mlx.core.round)(a, /[, decimals, stream]) | Round to the given number of decimals. |
 | [rsqrt](_autosummary/mlx.core.rsqrt.md#mlx.core.rsqrt)(a, /, *[, stream]) | Element-wise reciprocal and square root. |
 | [save](_autosummary/mlx.core.save.md#mlx.core.save)(file, arr) | Save the array to a binary file in `.npy` format. |
 | [savez](_autosummary/mlx.core.savez.md#mlx.core.savez)(file, *args, **kwargs) | Save several arrays to a binary file in uncompressed `.npz` format. |
 | [savez_compressed](_autosummary/mlx.core.savez_compressed.md#mlx.core.savez_compressed)(file, *args, **kwargs) | Save several arrays to a binary file in compressed `.npz` format. |
-| [save_gguf](_autosummary/mlx.core.save_gguf.md#mlx.core.save_gguf)(file, arrays, metadata) | Save array(s) to a binary file in `.gguf` format. |
+| [save_gguf](_autosummary/mlx.core.save_gguf.md#mlx.core.save_gguf)(file, arrays[, metadata]) | Save array(s) to a binary file in `.gguf` format. |
 | [save_safetensors](_autosummary/mlx.core.save_safetensors.md#mlx.core.save_safetensors)(file, arrays[, metadata]) | Save array(s) to a binary file in `.safetensors` format. |
 | [searchsorted](_autosummary/mlx.core.searchsorted.md#mlx.core.searchsorted)(sorted_sequence, values, /[, ...]) | Find the indices that keep `sorted_sequence` sorted when inserting `values`. |
 | [sigmoid](_autosummary/mlx.core.sigmoid.md#mlx.core.sigmoid)(a, /, *[, stream]) | Element-wise logistic sigmoid. |
@@ -183,9 +184,9 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | [square](_autosummary/mlx.core.square.md#mlx.core.square)(a, /, *[, stream]) | Element-wise square. |
 | [squeeze](_autosummary/mlx.core.squeeze.md#mlx.core.squeeze)(a, /[, axis, stream]) | Remove length one axes from an array. |
 | [stack](_autosummary/mlx.core.stack.md#mlx.core.stack)(arrays[, axis, stream]) | Stacks the arrays along a new axis. |
-| [std](_autosummary/mlx.core.std.md#mlx.core.std)(a, /[, axis, keepdims, ddof, stream]) | Compute the standard deviation(s) over the given axes. |
+| [std](_autosummary/mlx.core.std.md#mlx.core.std)(a, /[, axis, keepdims, ddof, ...]) | Compute the standard deviation(s) over the given axes. |
 | [stop_gradient](_autosummary/mlx.core.stop_gradient.md#mlx.core.stop_gradient)(a, /, *[, stream]) | Stop gradients from being computed. |
-| [subtract](_autosummary/mlx.core.subtract.md#mlx.core.subtract)(a, b[, stream]) | Element-wise subtraction. |
+| [subtract](_autosummary/mlx.core.subtract.md#mlx.core.subtract)(a, b, *[, stream]) | Element-wise subtraction. |
 | [sum](_autosummary/mlx.core.sum.md#mlx.core.sum)(a, /[, axis, keepdims, stream]) | Sum reduce the array over the given axes. |
 | [swapaxes](_autosummary/mlx.core.swapaxes.md#mlx.core.swapaxes)(a, /, axis1, axis2, *[, stream]) | Swap two axes of an array. |
 | [take](_autosummary/mlx.core.take.md#mlx.core.take)(a, /, indices[, axis, stream]) | Take elements along an axis. |
@@ -205,9 +206,9 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | [unflatten](_autosummary/mlx.core.unflatten.md#mlx.core.unflatten)(a, /, axis, shape, *[, stream]) | Unflatten an axis of an array to a shape. |
 | [unique](_autosummary/mlx.core.unique.md#mlx.core.unique)(a, /, size[, return_index, ...]) | Returns the sorted unique elements of the flattened array. |
 | [unstack](_autosummary/mlx.core.unstack.md#mlx.core.unstack)(x, /, *[, axis, stream]) | Split an array into a sequence of arrays along the given axis. |
-| [vecdot](_autosummary/mlx.core.vecdot.md#mlx.core.vecdot)(a, b, /, *[, axis, stream]) | Compute the vector dot product of two arrays along an axis. |
-| [var](_autosummary/mlx.core.var.md#mlx.core.var)(a, /[, axis, keepdims, ddof, stream]) | Compute the variance(s) over the given axes. |
-| [view](_autosummary/mlx.core.view.md#mlx.core.view)(a, dtype[, stream]) | View the array as a different type. |
+| [vecdot](_autosummary/mlx.core.vecdot.md#mlx.core.vecdot)(a, b, /[, axis, stream]) | Compute the vector dot product of two arrays along an axis. |
+| [var](_autosummary/mlx.core.var.md#mlx.core.var)(a, /[, axis, keepdims, ddof, ...]) | Compute the variance(s) over the given axes. |
+| [view](_autosummary/mlx.core.view.md#mlx.core.view)(a, dtype, *[, stream]) | View the array as a different type. |
 | [where](_autosummary/mlx.core.where.md#mlx.core.where)(condition, x, y, /, *[, stream]) | Select from `x` or `y` according to `condition`. |
 | [zeros](_autosummary/mlx.core.zeros.md#mlx.core.zeros)(shape[, dtype, stream]) | Construct an array of zeros. |
 | [zeros_like](_autosummary/mlx.core.zeros_like.md#mlx.core.zeros_like)(a, /[, dtype, stream]) | An array of zeros like the input. |

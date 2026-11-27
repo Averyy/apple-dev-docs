@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.le
 # mlx.core.less_equal
 
 ```python
-less_equal(a: scalar | array, b: scalar | array, stream: StreamOrDevice = None) → array
+less_equal(a: scalar | array, b: scalar | array, *, stream: StreamOrDevice = None) → array
 ```
 
 Element-wise less than or equal.

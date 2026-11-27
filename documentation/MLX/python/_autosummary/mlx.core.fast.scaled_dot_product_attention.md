@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 # mlx.core.fast.scaled_dot_product_attention
 
 ```python
-scaled_dot_product_attention(q: array, k: array, v: array, *, scale: float, mask: None | str | array = None, sinks: array | None = None, force_fused: bool = False, stream: StreamOrDevice = None) → array
+scaled_dot_product_attention(q: array, k: array, v: array, *, scale: float, window_size: int = -1, mask: None | str | array = None, sinks: array | None = None, force_fused: bool = False, stream: StreamOrDevice = None) → array
 ```
 
 A fast implementation of multi-head attention: `O = softmax(Q @ K.T, dim=-1) @ V`.
@@ -40,6 +40,9 @@ In the following the dimensions are given by:
 - **k** ([array](mlx.core.array.md#mlx.core.array)) – Keys with shape `[B, N_kv, T_kv, D]`.
 - **v** ([array](mlx.core.array.md#mlx.core.array)) – Values with shape `[B, N_kv, T_kv, D]`.
 - **scale** ([float](https://docs.python.org/3/builtins/functions.html#float)) – Scale for queries (typically `1.0 / sqrt(q.shape(-1)`).
+- **window_size** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – The size of the sliding window. A
+query attends only to keys less than `window_size` positions
+away. Use `-1` for no window. Must not be `0`. Default: `-1`.
 - **mask** ([str](https://docs.python.org/3/builtins/stdtypes.html#str) *or* [array](mlx.core.array.md#mlx.core.array), *optional*) – The mask to apply to the
 query-key scores. The mask can be an array or a string indicating
 the mask type. The only supported string type is `"causal"`. If

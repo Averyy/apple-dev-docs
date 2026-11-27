@@ -163,3 +163,4 @@ parameters as the first argument to the function returned by
 | --- | --- |
 | [quantize](_autosummary/mlx.nn.quantize.md#mlx.nn.quantize)(model[, group_size, bits, mode, ...]) | Quantize the sub-modules of a module according to a predicate. |
 | [average_gradients](_autosummary/mlx.nn.average_gradients.md#mlx.nn.average_gradients)(gradients[, group, ...]) | Average the gradients across the distributed processes in the passed group. |
+| [utils.checkpoint](_autosummary/mlx.nn.utils.checkpoint.md#mlx.nn.utils.checkpoint)(module[, fn]) | Transform the passed callable to one that performs gradient checkpointing with respect to the trainable parameters of the module (and the callable's inputs). |

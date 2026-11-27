@@ -7,7 +7,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.va
 # mlx.core.var
 
 ```python
-var(a: array, /, axis: None | int | Sequence[int] = None, keepdims: bool = False, ddof: int = 0, *, stream: StreamOrDevice = None) → array
+var(a: array, /, axis: None | int | Sequence[int] = None, keepdims: bool = False, ddof: int = 0, *, correction: int | None = None, stream: StreamOrDevice = None) → array
 ```
 
 Compute the variance(s) over the given axes.
@@ -22,6 +22,8 @@ to reducing over the entire array.
 singleton dimensions, defaults to False.
 - **ddof** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – The divisor to compute the variance
 is `N - ddof`, defaults to 0.
+- **correction** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – If set, overrides `ddof`.
+Default: `None`.
 
 **Returns:**
 : The output array of variances.

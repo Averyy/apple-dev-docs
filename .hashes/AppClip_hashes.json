@@ -130,11 +130,11 @@
     },
     "https://developer.apple.com/documentation/appclip/recommending-your-app-to-app-clip-users": {
       "file_path": "documentation/AppClip/recommending-your-app-to-app-clip-users.md",
-      "hash": "272799a452a27e74e886a530a7f6c792b178ebd2ab8dc8207ba3e25cc7fe2ee1"
+      "hash": "dbc94b12eaec089e1bf177ff7c933e65295d3b347db60cb58f666776ad200c64"
     },
     "https://developer.apple.com/documentation/appclip/responding-to-invocations": {
       "file_path": "documentation/AppClip/responding-to-invocations.md",
-      "hash": "46687bc8ae149b04a22dd70aadbab270bec744d267eb9e5822a47ea2c2f59a3f"
+      "hash": "b928036a18852d6f1604fb0472b474d8c069bc0b32620ec73b303023410c1731"
     },
     "https://developer.apple.com/documentation/appclip/sharing-data-between-your-app-clip-and-your-full-app": {
       "file_path": "documentation/AppClip/sharing-data-between-your-app-clip-and-your-full-app.md",
@@ -278,11 +278,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/recommending-your-app-to-app-clip-users.json": {
       "file_path": "documentation/AppClip/recommending-your-app-to-app-clip-users.md",
-      "hash": "272799a452a27e74e886a530a7f6c792b178ebd2ab8dc8207ba3e25cc7fe2ee1"
+      "hash": "dbc94b12eaec089e1bf177ff7c933e65295d3b347db60cb58f666776ad200c64"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/responding-to-invocations.json": {
       "file_path": "documentation/AppClip/responding-to-invocations.md",
-      "hash": "46687bc8ae149b04a22dd70aadbab270bec744d267eb9e5822a47ea2c2f59a3f"
+      "hash": "b928036a18852d6f1604fb0472b474d8c069bc0b32620ec73b303023410c1731"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/sharing-data-between-your-app-clip-and-your-full-app.json": {
       "file_path": "documentation/AppClip/sharing-data-between-your-app-clip-and-your-full-app.md",
